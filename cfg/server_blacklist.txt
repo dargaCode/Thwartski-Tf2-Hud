@@ -1,0 +1,39 @@
+"serverblacklist"
+{
+	"server"
+	{
+		"name"		"NewbsTF2.com #05 NO CLASS LIMITS (24/7 2Fort) [Koans Kingdom]"
+		"date"		"1319620768"
+		"addr"		"199.230.104.4:27015"
+	}
+	"server"
+	{
+		"name"		"HellFortress"
+		"date"		"1321506796"
+		"addr"		"207.135.97.131:27015"
+	}
+	"server"
+	{
+		"name"		"Ozzy Furocity US-West #6 - 24/7 Saxton Hale [HLstatsX|Alltalk|V"
+		"date"		"1323219730"
+		"addr"		"66.150.155.92:27065"
+	}
+	"server"
+	{
+		"name"		"[TFF] Saxton Hale! FastDL|Amplifier|Taunt Crits"
+		"date"		"1323219741"
+		"addr"		"66.150.188.29:27015"
+	}
+	"server"
+	{
+		"name"		"[TFF] Saxton Hale! #2 FastDL|Amplifier|Taunt Crits"
+		"date"		"1323219757"
+		"addr"		"64.94.100.79:27015"
+	}
+	"server"
+	{
+		"name"		"Aliento's Micspam Kingdom"
+		"date"		"1323308204"
+		"addr"		"8.6.2.226:27015"
+	}
+}
