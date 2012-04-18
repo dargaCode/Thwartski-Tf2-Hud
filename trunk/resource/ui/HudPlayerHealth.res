@@ -102,111 +102,56 @@
 		"textAlignment"	"center"	
 		"font"			"HudFontHuge"
 		"fgcolor"		"Black"
-	}
-	"PlayerStatusClassImageBGFlame"
+	}		
+	
+		"PlayerStatusClassImageBGThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBGFlame"
-		"xpos"			"73"
-		"ypos"			"30"
+		"fieldName"		"PlayerStatusClassImageBGThwartski"
+		"xpos"			"100"
+		"ypos"			"31"
 		"zpos"			"-1"
-		"wide"			"25"
-		"tall"	 		"60"
+		"wide"			"24"
+		"tall"	 		"54"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
 		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
 		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
 		
 		"src_corner_height"		"40"				// pixels inside the image
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
 	}
-	"PlayerStatusClassImageBG2Flame"
+	"PlayerStatusClassImageBG2Thwartski"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBG2Flame"
-		"xpos"			"55"
-		"ypos"			"48"
+		"fieldName"		"PlayerStatusClassImageBG2Thwartski"
+		"xpos"			"85"
+		"ypos"			"46"
 		"zpos"			"-1"
-		"wide"			"60"
+		"wide"			"54"
 		"tall"	 		"24"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"				// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
-	}
-	"PlayerStatusClassImageBGPovo"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBGPovo"
-		"xpos"			"106"
-		"ypos"			"36"
-		"zpos"			"-1"
-		"wide"			"17"
-		"tall"	 		"48"
-		"autoResize"		"0"
-		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
 		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
 		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
 		
 		"src_corner_height"		"40"				// pixels inside the image
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
 	}
-	"PlayerStatusClassImageBG2Povo"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBG2Povo"
-		"xpos"			"90"
-		"ypos"			"52"
-		"zpos"			"-1"
-		"wide"			"48"
-		"tall"	 		"17"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"				// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
-	}			
 	
 	"PlayerStatusBleedImage"
 	{
