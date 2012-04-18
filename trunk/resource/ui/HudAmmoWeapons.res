@@ -1,4 +1,4 @@
-//based on commhud
+//based on commhud, inspired by oxide
 
 "Resource/UI/HudAmmoWeapons.res"
 {
