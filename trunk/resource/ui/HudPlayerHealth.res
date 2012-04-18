@@ -10,14 +10,16 @@
 		"xpos"			"c-368"//"c-378"	
 		"ypos"			"r114"//"r94"	
 		"zpos"			"2"
-		"wide"			"300"
+		"wide"			"400"//"300"
 		"tall"			"120"
 		"visible"		"1"
 		"enabled"		"1"	
-		"HealthBonusPosAdj"	"35"
-		"HealthDeathWarning"	"0.49"
+		"HealthBonusPosAdj"		"55"
+		"HealthDeathWarning"	"0.55"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 	}	
+	
+	//health bar filling
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -35,6 +37,8 @@
 	
 
 	}		
+	
+	//black background
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -52,6 +56,7 @@
 		"tall"			"48"		
 	
 	}	
+	
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -201,12 +206,13 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
-	}								
+	}			
+	
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusBleedImage"
-		"xpos"			"104"
+		"xpos"			"353"//"104"
 		"ypos"			"30"
 		"zpos"			"7"
 		"wide"			"32"
@@ -221,7 +227,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMilkImage"
-		"xpos"			"104"
+		"xpos"			"353"//"104"
 		"ypos"			"30"
 		"zpos"			"7"
 		"wide"			"32"
@@ -236,7 +242,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMarkedForDeathImage"
-		"xpos"			"104"
+		"xpos"			"353"//"104"
 		"ypos"			"30"
 		"zpos"			"7"
 		"wide"			"32"
