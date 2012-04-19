@@ -70,12 +70,10 @@
 		"fieldName"		"HudMedicCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r138"	[$WIN32]
-		"xpos_minmode"	"r100"	[$WIN32]
-		"ypos"			"r69"	[$WIN32]
-		"ypos_minmode"	"r34"	[$WIN32]
+		"xpos"			"c-100"	[$WIN32]
+		"ypos"			"r284"	[$WIN32]
 		"wide"			"200"
-		"tall"			"100"
+		"tall"			"250"
 	}
 	
 	HudDemomanCharge
@@ -428,22 +426,23 @@
 		"tall"	 "480"
 	}
 
+	//taken directly from commhud
 	HudDeathNotice
 	{
-		"fieldName" "HudDeathNotice"
-		"visible" "1"
-		"enabled" "1"
-		"xpos"	 "r640"	[$WIN32]
-		"ypos"	 "12"	[$WIN32]
-		"wide"	 "628"
-		"tall"	 "468"
+		"fieldName" 		"HudDeathNotice"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"	 		"r640"	[$WIN32]
+		"ypos"	 		"6"	[$WIN32]
+		"wide"	 		"628"
+		"tall"	 		"468"
 
-		"MaxDeathNotices" "4"
-		"IconScale"	  "0.35"
-		"LineHeight"	  "16"
-		"LineSpacing"	  "4"
-		"CornerRadius"	  "3"
-		"RightJustify"	  "1"	// If 1, draw notices from the right
+		"MaxDeathNotices" 	"12"
+		"IconScale"	  	"0.25"
+		"LineHeight"	  	"11"
+		"LineSpacing"	 	"1"
+		"CornerRadius"	 	"3"
+		"RightJustify"	  	"1"	// If 1, draw notices from the right
 		
 		"TextFont"		"Default"
 		
@@ -452,8 +451,8 @@
 		"IconColor"		"HudWhite"
 		"LocalPlayerColor"	"HUDBlack"
 
-		"BaseBackgroundColor"	"46 43 42 220"		[$WIN32]
-		"LocalBackgroundColor"	"245 229 196 200"	[$WIN32]
+		"BaseBackgroundColor"	"0 0 0 100"		[$WIN32]
+		"LocalBackgroundColor"	"255 255 255 200"	[$WIN32]
 	}
 
 	HudVehicle
