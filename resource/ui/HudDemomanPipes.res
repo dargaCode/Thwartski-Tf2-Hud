@@ -1,3 +1,5 @@
+// placed pipe count AND chargin targe
+
 "Resource/UI/HudDemomanPipes.res"
 {
 	"background"
@@ -10,7 +12,7 @@
 		"wide"			"76"
 		"wide_minmode"	"56"
 		"tall"			"38"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"	"0"
 		"enabled"		"1"
 		"image"			"../hud/misc_ammo_area_blue"
@@ -25,37 +27,37 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ChargeLabel"
-		"xpos"					"25"
-		"ypos"					"27"
+		"xpos"					"0"
+		"ypos"					"2"
 		"zpos"					"2"
-		"wide"					"41"
+		"wide"					"200"
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
 		"visible"				"1"
-		"visible_minmode"		"0"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"#TF_Charge"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"TFFontSmall"
+		"font"					"HudFontMediumSmallBold"
 	}
-
+	
+	
 	"ChargeMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ChargeMeter"
 		"font"					"Default"
-		"xpos"					"25"
-		"ypos"					"23"
+		"xpos"					"0"
+		"ypos"					"0"
 		"ypos_minmode"			"0"
 		"xpos_minmode"			"0"
 		"zpos"					"2"
-		"wide"					"40"
+		"wide"					"200"
 		"wide_minmode"			"50"
-		"tall"					"6"				
+		"tall"					"20"				
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"
