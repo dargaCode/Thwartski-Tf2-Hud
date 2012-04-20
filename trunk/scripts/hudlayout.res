@@ -919,14 +919,12 @@
 		"fieldName"		"HudDemomanPipes"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r162"	[$WIN32]
-		"xpos_minmode"	"r110"	[$WIN32]
-		"ypos"			"r52"	[$WIN32]
-		"ypos_minmode"	"r30"	[$WIN32]
-		"wide"			"100"
-		"tall"			"50"
+		"xpos"			"c-100"	[$WIN32]
+		"ypos"			"r76"	[$WIN32]
+		"wide"			"200"
+		"tall"			"250"
 	}	
-
+	
 	HudTeamGoal
 	{
 		"fieldName"				"HudTeamGoal"
