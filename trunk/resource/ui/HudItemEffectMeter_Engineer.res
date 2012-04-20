@@ -1,4 +1,4 @@
-//widowmaker count
+//frontier justice count
 
 "Resource/UI/HudItemEffectMeter_Engineer.res"
 {
