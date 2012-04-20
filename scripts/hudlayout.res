@@ -55,11 +55,11 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r162"	[$WIN32]
+		"xpos"			"c-100"	[$WIN32]
 		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r52"	[$WIN32]
 		"ypos_minmode"	"r50"	[$WIN32]
-		"wide"			"100"
+		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -81,14 +81,11 @@
 		"fieldName"		"HudDemomanCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
+		"xpos"			"c-100"	[$WIN32]
+		"ypos"			"r225"	[$WIN32]
 		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
-		"wide_minmode"	"50"
-		"tall"			"8"
+		"wide"			"200"
+		"tall"			"250"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}	
@@ -98,14 +95,14 @@
 		"fieldName"		"HudBowCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r21"	[$WIN32]
+		"xpos"			"c-100"	[$WIN32]
+		"xpos_minmode"	"r54"	[$WIN32]
+		"ypos"			"r54"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
 		"zpos"			"1"			// draw in front of ammo
-		"wide"			"60"
+		"wide"			"200"
 		"wide_minmode"	"50"
-		"tall"			"8"
+		"tall"			"20"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
