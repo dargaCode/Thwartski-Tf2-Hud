@@ -1,3 +1,5 @@
+//bazaar bargain count
+
 "Resource/UI/HudItemEffectMeter_Sniper.res"
 {
 	HudItemEffectMeter
@@ -5,9 +7,9 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"x_offset"		"40"
-		"xpos"			"r164"	[$WIN32]
-		"ypos"			"r51"	[$WIN32]
+//		"x_offset"		"40"
+		"xpos"			"c-45"	[$WIN32]
+		"ypos"			"r130"	[$WIN32]
 		"xpos_minmode"	"r30"	[$WIN32]
 		"ypos_minmode"	"r94"	[$WIN32]
 		"xpos"			"r194"	[$X360]
@@ -27,7 +29,7 @@
 		"zpos"			"0"
 		"wide"			"76"
 		"tall"			"44"
-		"visible"		"1"
+		"visible"		"0"
 		"visible_minmode"	"0"
 		"enabled"		"1"
 		"image"			"../hud/misc_ammo_area_blue"

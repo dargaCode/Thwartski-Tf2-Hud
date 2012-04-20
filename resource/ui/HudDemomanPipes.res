@@ -1,4 +1,4 @@
-// placed pipe count AND chargin targe
+// placed pipe count AND chargin targe meter
 
 "Resource/UI/HudDemomanPipes.res"
 {
@@ -28,7 +28,7 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"ChargeLabel"
 		"xpos"					"0"
-		"ypos"					"2"
+		"ypos"					"151"
 		"zpos"					"2"
 		"wide"					"200"
 		"tall"					"15"
@@ -51,7 +51,7 @@
 		"fieldName"				"ChargeMeter"
 		"font"					"Default"
 		"xpos"					"0"
-		"ypos"					"0"
+		"ypos"					"149"
 		"ypos_minmode"			"0"
 		"xpos_minmode"			"0"
 		"zpos"					"2"
@@ -71,7 +71,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"PipesPresentPanel"
-		"xpos"			"0"
+		"xpos"			"40"
 		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"100"
@@ -159,7 +159,7 @@
 		"zpos"			"1"
 		"wide"			"100"
 		"tall"			"50"
-		"visible"		"1"
+		"visible"		"0"
 		
 		"PipeIcon"
 		{
@@ -172,7 +172,7 @@
 			"wide_minmode"	"14"
 			"tall"			"20"
 			"tall_minmode"	"14"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../hud/ico_stickybomb_red_faded"
 			"scaleImage"	"1"
@@ -194,7 +194,7 @@
 			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"%activepipes%"
@@ -219,7 +219,7 @@
 			"tall_lodef"	"28"
 			"autoResize"	"1"
 			"pinCorner"		"2"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		"%activepipes%"

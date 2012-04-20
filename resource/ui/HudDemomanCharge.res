@@ -1,4 +1,4 @@
-//demoman sticky charge meter (which is also controlled by HudItemEffectMeter_Demoman)
+//demoman sticky charge meter (which is placed by HudItemEffectMeter_Demoman)
 
 "Resource/UI/HudDemomanCharge.res"
 {	

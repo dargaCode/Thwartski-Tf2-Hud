@@ -1,4 +1,4 @@
-//eyelander heads
+//eyelander count
 
 //inspired by more/revan/broesel
 
@@ -11,12 +11,12 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"xpos_minmode"	"r52"	[$WIN32]
-		"ypos"			"r225"	[$WIN32]
+		"ypos"			"r125"	[$WIN32]
 		"ypos_minmode"	"r54"	[$WIN32]
 		"xpos"			"r194"	[$X360]
 		"ypos"			"r74"	[$X360]
 		"wide"			"200"
-		"tall"			"250"
+		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
@@ -46,10 +46,10 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"0"
-		"ypos"					"10"
+		"xpos"					"80"
+		"ypos"					"22"
 		"zpos"					"2"
-		"wide"					"200"
+		"wide"					"41"
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
@@ -63,7 +63,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMediumSmallBold"
+		"font"					"TFFontSmall"
 	}
 	
 	"ItemEffectMeter"
@@ -92,8 +92,8 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"25"
-		"ypos"					"10"
+		"xpos"					"80"
+		"ypos"					"5"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
