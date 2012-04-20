@@ -1,3 +1,5 @@
+// cloak, jarate, ball, phlogger, sandvich, buff banner
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter

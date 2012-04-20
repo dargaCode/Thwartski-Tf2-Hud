@@ -1,3 +1,5 @@
+//eyelander heads
+
 "Resource/UI/HudItemEffectMeter_Demoman.res"
 {
 	HudItemEffectMeter
