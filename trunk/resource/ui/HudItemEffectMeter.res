@@ -1,5 +1,7 @@
 // cloak, jarate, ball, phlogger, sandvich, buff banner
 
+//inspired by broesel/maco/more/toasty
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter
