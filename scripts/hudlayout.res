@@ -917,7 +917,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r225"	[$WIN32]
+		"ypos"			"r284"	[$WIN32]
 		"wide"			"200"
 		"tall"			"250"
 	}	
