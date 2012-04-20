@@ -9,7 +9,7 @@
 		"enabled"		"1"
 //		"x_offset"		"40"
 		"xpos"			"c-45"	[$WIN32]
-		"ypos"			"r130"	[$WIN32]
+		"ypos"			"r118"	[$WIN32]
 		"xpos_minmode"	"r30"	[$WIN32]
 		"ypos_minmode"	"r94"	[$WIN32]
 		"xpos"			"r194"	[$X360]
