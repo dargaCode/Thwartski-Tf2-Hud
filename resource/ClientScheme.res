@@ -896,6 +896,18 @@ Scheme
 				"antialias" 	"1"
 			}
 		}	
+		
+		"HudFontSmallish"
+		{
+			"1"
+			{
+				"name"		"TF2"
+				"tall"		"16"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		"HudFontSmallishBold"
 		{
 			"1"
