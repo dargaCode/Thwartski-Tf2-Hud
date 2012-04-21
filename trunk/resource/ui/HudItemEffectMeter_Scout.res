@@ -1,3 +1,5 @@
+//drink
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter
@@ -59,6 +61,31 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontSmallestBold"//"HudFontMediumSmallBold"
+	}
+	
+	"LowerMeterLabelThwartski"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"LowerMeterLabelThwartski"
+		"xpos"					"0"
+		"ypos"					"7"
+		"zpos"					"3"
+		"wide"					"200"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"0"
+		"visible_minmode"		"1"
+		"ypos_minmode"			"0"
+		"xpos_minmode"			"-10"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"DRINK"
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontSmallestBold"//"HudFontMediumSmallBold"
+		"fgcolor" 	"0 0 0 100"
 	}
 
 	"ItemEffectMeter"

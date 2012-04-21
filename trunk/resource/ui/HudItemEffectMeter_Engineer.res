@@ -53,12 +53,13 @@
 		"visible"				"0"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"CRITS"//"#TF_Ball"
+		"labelText"				"CRITS"//"#TF_Ball"//overwriting text didn't work
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"TFFontSmall"
 	}
+	
 	"ItemEffectMeterLabelThwartski"
 	{
 		"ControlName"			"CExLabel"
@@ -79,7 +80,8 @@
 		"brighttext"			"0"
 		"font"					"TFFontSmall"
 	}
-
+	
+	
 	"ItemEffectMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
@@ -102,6 +104,7 @@
 		"brighttext"			"0"
 	}					
 	
+	
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
@@ -120,5 +123,27 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontMedium"
+		//"fgcolor"				"0 255 0 255"
+	}
+	
+	"CountShadowThwartski"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"CountShadowThwartski"
+		"xpos"					"26"
+		"ypos"					"11"
+		"zpos"					"1"
+		"wide"					"40"
+		"tall"					"20"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontMedium"
+		"fgcolor"				"Black"
 	}
 }
