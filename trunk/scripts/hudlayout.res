@@ -83,7 +83,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r225"	[$WIN32]
-		"zpos"			"1"			// draw in front of ammo
+		"zpos"			"0"
 		"wide"			"200"
 		"tall"			"250"
 		"MeterFG"		"White"
@@ -99,7 +99,7 @@
 		"xpos_minmode"	"r54"	[$WIN32]
 		"ypos"			"r54"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
-		"zpos"			"1"			// draw in front of ammo
+		"zpos"			"0"
 		"wide"			"200"
 		"wide_minmode"	"50"
 		"tall"			"20"
@@ -116,7 +116,7 @@
 		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
-		"zpos"			"1"			// draw in front of ammo
+		"zpos"			"0"
 		"wide"			"60"
 		"wide_minmode"	"50"
 		"tall"			"8"
@@ -779,7 +779,7 @@
 		"fieldName"				"WinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-150"
+		"xpos"					"c-145"
 		"ypos"					"313"//"310"//"295"//"255"
 		"wide"					"300"
 		"tall"					"215"
@@ -790,7 +790,7 @@
 		"fieldName"				"ArenaWinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-192"
+		"xpos"					"c-191"
 		"ypos"					"300"//"250"
 		"wide"					"450"
 		"tall"					"218"
