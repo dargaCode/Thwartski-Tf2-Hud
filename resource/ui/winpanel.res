@@ -60,7 +60,7 @@
 			"xpos"			"59"
 			"ypos"			"34"
 			"zpos"			"-1"
-			"wide"			"130"
+			"wide"			"131"
 			"tall"			"24"
 			"autoResize"	"1"
 			"pinCorner"		"0"
@@ -94,24 +94,7 @@
 			"draw_corner_height" 		"0"
 		}
 		
-		//remove the transparency from the team colors
-		"GreyShadedBarThwartski"
-		{
-			"ControlName"		"ImagePanel"
-			"fieldName"		"GreyShadedBarThwartski"
-			"xpos"			"59"
-			"ypos"			"34"
-			"zpos"			"-2"
-			"wide"			"260"
-			"tall"			"24"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"	
-			"fillcolor"		"88 88 88 255"
-			"PaintBackgroundType"	"0"
-		}
+
 		"BlueTeamLabel"
 		{
 			"ControlName"		"CExLabel"
@@ -391,15 +374,17 @@
 		"brighttext"		"0"
 		"fgcolor"		"White"
 	}
+	
+	//provides opacity behind the team colored bg
 	"ShadedBar"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"15"
-		"ypos"			"74"//"71"
+		"ypos"			"50"//"74"//"71"
 		"zpos"			"-2"
 		"wide"			"260"//"280"
-		"tall"			"84"
+		"tall"			"108"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -409,7 +394,7 @@
 		"PaintBackgroundType"	"0"
 	}
 	
-	//provides opacity behind the team colored bg
+	//team color
 	"ShadedBarTeamBGThwartski"
 	{
 		"ControlName"		"CTFImagePanel"

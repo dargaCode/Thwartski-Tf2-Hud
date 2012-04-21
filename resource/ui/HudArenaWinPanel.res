@@ -382,15 +382,17 @@
 		"brighttext"		"0"
 		"fgcolor"		"White"
 	}
+	
+	//provides opacity behind the team colored bg
 	"ShadedBar"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"15"
-		"ypos"			"74"//"71"
+		"ypos"			"50"//"74"//"71"
 		"zpos"			"0"
 		"wide"			"352"//"260"
-		"tall"			"94"
+		"tall"			"118"//"94"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -400,7 +402,7 @@
 		"PaintBackgroundType"	"0"
 	}
 	
-		//provides opacity behind the team colored bg
+	//team color
 	"ShadedBarTeamBGThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
