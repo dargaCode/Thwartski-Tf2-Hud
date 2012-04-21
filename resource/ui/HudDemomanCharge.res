@@ -28,7 +28,7 @@
 		"fieldName"				"DistanceLabelThwartski"
 		"xpos"					"0"
 		"ypos"					"171"
-		"zpos"					"0"
+		"zpos"					"-1"
 		"wide"					"200"
 		"tall"					"12"
 		"autoResize"			"1"
