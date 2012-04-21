@@ -53,10 +53,10 @@
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
 		}
-		"BlueScoreBG2"
+		"BlueScoreBGThwartski"
 		{
 			"ControlName"		"CTFImagePanel"
-			"fieldName"		"BlueScoreBG2"
+			"fieldName"		"BlueScoreBGThwartski"
 			"xpos"			"59"
 			"ypos"			"34"
 			"zpos"			"-1"
@@ -73,10 +73,10 @@
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
 		}
-		"RedScoreBG2"
+		"RedScoreBGThwartkski"
 		{
 			"ControlName"		"CTFImagePanel"
-			"fieldName"		"RedScoreBG2"
+			"fieldName"		"RedScoreBGThwartski"
 			"xpos"			"189"
 			"ypos"			"34"
 			"zpos"			"-1"
@@ -92,6 +92,25 @@
 			"src_corner_width"		"40"			
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
+		}
+		
+		//remove the transparency from the team colors
+		"GreyShadedBarThwartski"
+		{
+			"ControlName"		"ImagePanel"
+			"fieldName"		"GreyShadedBarThwartski"
+			"xpos"			"59"
+			"ypos"			"34"
+			"zpos"			"-2"
+			"wide"			"260"
+			"tall"			"24"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"	
+			"fillcolor"		"88 88 88 255"
+			"PaintBackgroundType"	"0"
 		}
 		"BlueTeamLabel"
 		{
