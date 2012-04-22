@@ -81,9 +81,9 @@ Scheme
 		
 		// Building HUD Specific
 		"LowHealthRed"		"255 0 0 255"
-		"ProgressOffWhite"	"251 235 202 255"
+		"ProgressOffWhite"	"0 255 0 255"//"251 235 202 255"
 		"ProgressBackground"	"46 43 42 240"
-		"HealthBgGrey"		"72 71 69 255"
+		"HealthBgGrey"		"46 43 42 240"//"72 71 69 255"
 		
 		"ProgressOffWhiteTransparent"	"251 235 202 128"
 		

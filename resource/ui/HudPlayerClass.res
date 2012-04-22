@@ -18,7 +18,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"25"	[$WIN32]
+		"xpos"			"30"//"25"	[$WIN32]
 		"xpos_minmode"	"15"	[$WIN32]
 		"ypos"			"r84"	[$WIN32]
 		"ypos_minmode"	"r54"	[$WIN32]
@@ -80,7 +80,7 @@
 		"ypos"			"r54"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
 		"zpos"			"1"		
-		"wide"			"100"
+		"wide"			"111"
 		"tall"			"46"
 		"visible"		"1"
 		"enabled"		"1"
