@@ -884,6 +884,20 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		
+		"HudFontAlmostSmall"
+		{
+			"1"
+			{
+				"name"		"TF2"
+				"tall"		"14"
+				"tall_lodef"	"16"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" 	"1"
+			}
+		}	
+		
 		"HudFontSmall"
 		{
 			"1"

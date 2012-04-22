@@ -84,11 +84,11 @@
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"MetalIcon"
-			"xpos"			"61"
-			"ypos"			"8"
+			"xpos"			"64"
+			"ypos"			"9"
 			"zpos"			"7"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"11"
+			"tall"			"11"
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
@@ -114,7 +114,7 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"HudFontSmallish"
+			"font"			"HudFontAlmostSmall"
 			"font_lodef"	"HudFontMedium"
 		}
 		

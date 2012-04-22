@@ -79,15 +79,16 @@
 		"wide"			"160"
 		"tall"			"31"
 		"visible"		"1"
-"MetalIcon"
+	
+	"MetalIcon"
 		{
 			"ControlName"	"CIconPanel"
 			"fieldName"		"MetalIcon"
-			"xpos"			"61"
-			"ypos"			"8"
+			"xpos"			"64"
+			"ypos"			"9"
 			"zpos"			"7"
-			"wide"			"14"
-			"tall"			"14"
+			"wide"			"11"
+			"tall"			"11"
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
@@ -99,7 +100,7 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"MetalCost"
-			"xpos"			"81"
+			"xpos"			"82"
 			"ypos"			"3"
 			"zpos"			"2"
 			"wide"			"55"
@@ -113,7 +114,7 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"HudFontSmallish"
+			"font"			"HudFontAlmostSmall"
 			"font_lodef"	"HudFontMedium"
 		}
 		
