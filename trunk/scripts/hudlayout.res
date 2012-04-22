@@ -287,7 +287,7 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"0"
+		"xpos"		"-6"
 		"xpos_hidef"		"32"
 		"xpos_lodef"		"40"
 		"ypos"		"0"
@@ -1051,7 +1051,7 @@
 		"enabled"				"1"
 		"xpos"					"0"
 		"ypos"					"180"
-		"wide"					"f10"	[$WIN32]
+		"wide"					"50"	[$WIN32]
 		"tall"					"100"
 	}
 
