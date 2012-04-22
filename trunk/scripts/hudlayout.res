@@ -72,6 +72,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r284"	[$WIN32]
+		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"250"
 	}
@@ -83,7 +84,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r225"	[$WIN32]
-		"zpos"			"0"
+		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"250"
 		"MeterFG"		"White"
@@ -99,7 +100,7 @@
 		"xpos_minmode"	"r54"	[$WIN32]
 		"ypos"			"r54"	[$WIN32]
 		"ypos_minmode"	"r40"	[$WIN32]
-		"zpos"			"0"
+		"zpos"			"1"
 		"wide"			"200"
 		"wide_minmode"	"50"
 		"tall"			"20"
@@ -918,6 +919,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r284"	[$WIN32]
+		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"250"
 	}	
