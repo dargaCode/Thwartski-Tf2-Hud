@@ -31,7 +31,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamBGThwartski"
-		"xpos"			"49"
+		"xpos"			"93"//"163"//"49"
 		"ypos"			"24"
 		"zpos"			"3"
 		"wide"			"103"
@@ -56,7 +56,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGThwartski"
-		"xpos"			"49"
+		"xpos"			"93"//"163"//"49"
 		"ypos"			"15"
 		"zpos"			"0"
 		"wide"			"103"
@@ -75,7 +75,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_blue"
-		"xpos"			"50"
+		"xpos"			"94"//"164"//"50"
 		"ypos"			"24"
 		"zpos"			"4"
 		"wide"			"100"
@@ -98,7 +98,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_red"
-		"xpos"			"50"
+		"xpos"			"94"//"164"//"50"
 		"ypos"			"24"
 		"zpos"			"4"
 		"wide"			"100"
@@ -122,10 +122,10 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
 		"font"			"TFFontMediumBold"
-		"xpos"			"29"
+		"xpos"			"73"//"143"//"29"
 		"ypos"			"15"
 		"zpos"			"1"
-		"wide"			"200"
+		"wide"			"640"
 		"tall"			"10"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -140,7 +140,7 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
-		"xpos"			"0"
+		"xpos"			"44"//"114"//"0"
 		"ypos"			"0"
 		"wide"			"100"
 		"tall"			"60"
@@ -157,10 +157,10 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
 		"font"			"DefaultVerySmall"
-		"xpos"			"52"
+		"xpos"			"96"//"66"//"52"
 		"ypos"			"25"	[$WIN32]
 		"zpos"			"5"
-		"wide"			"170"
+		"wide"			"280"
 		"tall"			"10"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -228,7 +228,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/eng_sel_item_movable"
-			"drawcolor"		"ProgressOffWhite"
+			"drawcolor"		"TanLight"
 			"scaleImage"	"1"
 		}
 
