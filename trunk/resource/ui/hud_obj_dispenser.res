@@ -200,10 +200,10 @@
 		{
 			"ControlName"	"CBuildingStatusAlertTray"
 			"fieldName"		"AlertTray"
-			"xpos"			"113"
+			"xpos"			"112"
 			"ypos"			"0"
 			"wide"			"34"
-			"tall"			"31"
+			"tall"			"32"
 			"visible"		"1"
 			"enabled"		"1"	
 			"icon"			"obj_status_alert_background"

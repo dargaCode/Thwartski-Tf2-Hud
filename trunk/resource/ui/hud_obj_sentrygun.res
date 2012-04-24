@@ -231,16 +231,16 @@
 		{
 			"ControlName"	"CBuildingStatusAlertTray"
 			"fieldName"		"AlertTray"
-			"xpos"			"114"
+			"xpos"			"112"
 			"ypos"			"0"
 			"ypos"			"0"
 			"zpos"			"-2"
 			"wide"			"44"
-			"tall"			"60"
+			"tall"			"61"
 			"visible"		"1"
 			"enabled"		"1"	
 			"icon"			"obj_status_alert_background_tall"
-		}
+		}		
 		
 		"WrenchIcon"
 		{
