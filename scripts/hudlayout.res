@@ -263,7 +263,7 @@
 		"xpos"		"c-126"
 		"ypos"		"330"//"300"
 		"wide"	 	"252"
-		"tall"	 	"35"
+		"tall"	 	"40"
 		"tall_minmode"	 	"28"
 		"priority"	"35"
 	}
