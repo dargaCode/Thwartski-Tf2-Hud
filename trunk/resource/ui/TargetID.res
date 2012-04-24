@@ -75,7 +75,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_blue"
-		"xpos"			"94"//"164"//"50"
+		"xpos"			"97"//"164"//"50"
 		"ypos"			"24"
 		"zpos"			"4"
 		"wide"			"100"
@@ -91,14 +91,14 @@
 		"src_corner_height"		"40"				// pixels inside the image
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"
+		"draw_corner_height" 	"0"
 	}
 
 	"TargetIDBG_Spec_Red"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_red"
-		"xpos"			"94"//"164"//"50"
+		"xpos"			"97"//"164"//"50"
 		"ypos"			"24"
 		"zpos"			"4"
 		"wide"			"100"
@@ -157,7 +157,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
 		"font"			"DefaultVerySmall"
-		"xpos"			"96"//"66"//"52"
+		"xpos"			"99"//"66"//"52"
 		"ypos"			"25"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"280"
