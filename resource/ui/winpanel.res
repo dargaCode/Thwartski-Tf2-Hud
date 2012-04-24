@@ -93,7 +93,6 @@
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
 		}
-		
 
 		"BlueTeamLabel"
 		{
@@ -130,7 +129,7 @@
 			"visible"		"0"
 			"enabled"		"1"
 			"fgcolor"		"Black"
-		}								
+		}				
 		"BlueTeamScore"
 		{
 			"ControlName"		"CExLabel"
@@ -381,10 +380,10 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ShadedBar"
 		"xpos"			"15"
-		"ypos"			"50"//"74"//"71"
+		"ypos"			"74"//"71"
 		"zpos"			"-2"
 		"wide"			"260"//"280"
-		"tall"			"108"
+		"tall"			"84"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
