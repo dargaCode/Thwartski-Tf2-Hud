@@ -110,7 +110,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGThwartski"
-		"xpos"			"27"
+		"xpos"			"26"
 		"ypos"			"15"
 		"zpos"			"7"
 		"wide"			"26"
@@ -127,10 +127,10 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TeamBGThwartski"
-		"xpos"			"27"
+		"xpos"			"26"
 		"ypos"			"24"
 		"zpos"			"9"
-		"wide"			"28"
+		"wide"			"29"
 		"tall"	 		"11"
 		"autoResize"		"1"
 		"pinCorner"		"0"
