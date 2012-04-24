@@ -14,7 +14,7 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/score_panel_blue_bg"
 		"scaleImage"	"1"
 	}
@@ -28,7 +28,7 @@
 		"wide"			"0"
 		"tall"			"0"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_notify_sixty_seconds"
 	}
