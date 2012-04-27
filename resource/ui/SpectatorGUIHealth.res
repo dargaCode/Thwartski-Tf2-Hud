@@ -30,36 +30,26 @@
 		"scaleImage"	"1"	
 	}	
 	
-	//extends cross bg to the right
-	"HealthImageThwartski1"
+	"CrossCoverupThwartski"
 	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"HealthImageThwartski1"
-		"xpos"			"19"
-		"ypos"			"15"
-		"zpos"			"3"
-		"wide"			"20"//"15"
-		"tall"			"20"//"15"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/health_bg"
-		"scaleImage"	"1"	
-	}	
-	//covers up the right arm of health cross
-	"HealthImageThwartski2"
-	{
-		"ControlName"	"ImagePanel"
-		"fieldName"		"HealthImageThwartski2"
-		"xpos"			"25"
-		"ypos"			"15"
-		"zpos"			"5"
-		"wide"			"20"//"15"
-		"tall"			"20"//"15"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/health_bg"
-		"scaleImage"	"1"	
-	}	
+		"ControlName"		"Imagepanel"
+		"fieldName"			"CrossCoverupThwartski"
+		"xpos"				"25"
+		"ypos"				"15"
+		"zpos"				"5"
+		"wide"				"80"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 255"
+		
+		"src_corner_height"		"90"//"23"
+		"src_corner_width"		"90"//"23"
+		
+		"draw_corner_width"		"0"//"6"
+		"draw_corner_height" 	"0"//"6"	
+	}
 	
 	"BuildingStatusHealthImageBG"
 	{
