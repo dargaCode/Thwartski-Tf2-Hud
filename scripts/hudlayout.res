@@ -247,7 +247,7 @@
 		"xpos"		"c126"
 		"ypos"		"350"//"250"
 		"wide"	 	"252"
-		"tall"	 	"38"
+		"tall"	 	"39"
 		"priority"	"40"
 		"priority_lodef" "35"
 		
