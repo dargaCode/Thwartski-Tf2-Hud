@@ -13,6 +13,7 @@
 		"tall"			"70"
 		"visible"		"1"
 
+		//deprecated
 		"BlueScoreBG"
 		{
 			"ControlName"		"ImagePanel"
@@ -33,6 +34,8 @@
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
 		}
+		
+		//deprecated
 		"RedScoreBG"
 		{
 			"ControlName"		"ImagePanel"
@@ -52,6 +55,24 @@
 			"src_corner_width"		"0"			
 			"draw_corner_width"		"0"				// screen size of the corners proportional
 			"draw_corner_height" 		"0"
+		}
+		
+		"TopBlackBGThwartski"
+		{
+			"ControlName"		"ImagePanel"
+			"fieldName"		"TopBlackBGThwartski"
+			"xpos"			"59"
+			"ypos"			"34"
+			"zpos"			"-4"
+			"wide"			"260"
+			"tall"			"24"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"	
+			"fillcolor"		"54 51 52 255"
+			"PaintBackgroundType"	"0"
 		}
 		"BlueScoreBGThwartski"
 		{
@@ -374,7 +395,6 @@
 		"fgcolor"		"White"
 	}
 	
-	//provides opacity behind the team colored bg
 	"ShadedBar"
 	{
 		"ControlName"		"ImagePanel"
@@ -389,52 +409,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 255"
-		"PaintBackgroundType"	"0"
-	}
-	
-	//team color
-	"ShadedBarTeamBGThwartski"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"ShadedBarTeamBGThwartski"
-		"xpos"			"15"
-		"ypos"			"74"//"71"
-		"zpos"			"-1"
-		"wide"			"260"//"280"
-		"tall"			"84"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"				// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
-	}
-	
-	//darkens the team color
-	"TopShadedBarThwartski"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"TopShadedBarThwartski"
-		"xpos"			"15"
-		"ypos"			"74"//"71"
-		"zpos"			"0"
-		"wide"			"260"//"280"
-		"tall"			"84"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 170"
+		"fillcolor"		"54 51 52 255"
 		"PaintBackgroundType"	"0"
 	}
 	
