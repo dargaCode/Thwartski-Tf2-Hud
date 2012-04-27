@@ -6,7 +6,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGThwartski"
-		"xpos"			"26"
+		"xpos"			"25"
 		"ypos"			"5"
 		"zpos"			"6"
 		"wide"			"191"
@@ -24,7 +24,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TeamBGThwartski"
-		"xpos"			"26"
+		"xpos"			"25"
 		"ypos"			"21"
 		"zpos"			"7"
 		"wide"			"160"
@@ -62,7 +62,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"4"
+		"xpos"			"5"
 		"ypos"			"5"
 		"zpos"			"3"
 		"wide"			"32"//"15"
@@ -114,7 +114,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"5"
+		"xpos"			"6"
 		"ypos"			"6"
 		"zpos"			"3"
 		"wide"			"30"//"13"
