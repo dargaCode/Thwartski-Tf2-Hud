@@ -2,15 +2,58 @@
 
 "Resource/UI/FreezePanelKillerHealth.res"
 {
+	"BlackBGThwartski"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"BlackBGThwartski"
+		"xpos"			"26"
+		"ypos"			"5"
+		"zpos"			"6"
+		"wide"			"191"
+		"tall"	 		"32"
+		"autoResize"		"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"0 0 0 255"
+		"PaintBackgroundType"	"0"
+	}
+	
+	//show the opposing team's color
+	"TeamBGThwartski"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"TeamBGThwartski"
+		"xpos"			"26"
+		"ypos"			"21"
+		"zpos"			"7"
+		"wide"			"160"
+		"tall"	 		"16"
+		"autoResize"		"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/color_panel_brown"
+		"scaleImage"		"1"
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_blu"//"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_red"//"../hud/color_panel_blu"
+		
+		"src_corner_height"		"40"			// pixels inside the image
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"			// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 		"0"		
+	}	
+	
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"8"
-		"ypos"			"8"
+		"xpos"			"7"
+		"ypos"			"7"
 		"zpos"			"4"
-		"wide"			"24"//"13"
-		"tall"			"24"//"13"
+		"wide"			"28"//"13"
+		"tall"			"28"//"13"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"	
@@ -19,16 +62,40 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"5"
+		"xpos"			"4"
 		"ypos"			"5"
 		"zpos"			"3"
-		"wide"			"30"//"15"
-		"tall"			"30"//"15"
+		"wide"			"32"//"15"
+		"tall"			"32"//"15"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/health_bg"
 		"scaleImage"	"1"	
 	}	
+	
+	
+	"CrossCoverupThwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"CrossCoverupThwartski"
+		"xpos"				"24"
+		"ypos"				"5"
+		"zpos"				"5"
+		"wide"				"80"
+		"tall"				"32"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 255"
+		
+		
+		"src_corner_height"		"90"//"23"
+		"src_corner_width"		"90"//"23"
+		
+		"draw_corner_width"		"0"//"6"
+		"draw_corner_height" 	"0"//"6"	
+	}
+	
 	"BuildingStatusHealthImageBG"  //gears behind sentry guns
 	{
 		"ControlName"	"ImagePanel"
@@ -43,16 +110,16 @@
 		"image"			"../hud/health_equip_bg"
 		"scaleImage"	"1"	
 	}	
-	"PlayerStatusHealthBonusImage" //overheal and damage highlight
+	"PlayerStatusHealthBonusImage" //overheal
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
 		"xpos"			"5"
-		"ypos"			"5"
+		"ypos"			"6"
 		"zpos"			"3"
 		"wide"			"30"//"13"
 		"tall"			"30"//"13"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
@@ -61,32 +128,18 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"28"
-		"ypos"			"26"
-		"zpos"			"6"
+		"xpos"			"30"
+		"ypos"			"6"//"20"
+		"zpos"			"8"
 		"wide"			"35"
-		"tall"			"10"
+		"tall"			"15"
 		"visible"		"1"
 		"enabled"		"1"
 		"labeltext"		"%Health%"
 		"textAlignment"	"west"
 		"font"			"hudfontsmallestbold"
-		"fgcolor"		"white"
-	}	
-	"PlayerStatusHealthValueShadow"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValueShadow"
-		"xpos"			"29"
-		"ypos"			"27"
-		"zpos"			"5"
-		"wide"			"35"
-		"tall"			"10"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor"		"Black"
-		"labeltext"		"%Health%"
-		"textAlignment"	"west"
-		"font"			"hudfontsmallestbold"		
+		"fgcolor"		"TanLight"
 	}		
+
+	
 }
