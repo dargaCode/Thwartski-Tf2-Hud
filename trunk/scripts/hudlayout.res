@@ -273,7 +273,7 @@
 		"fieldName" "BuildingStatus_Spy"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"0"	[$WIN32]
+		"xpos"		"-6"	[$WIN32]
 		"ypos"		"0"	[$WIN32]	
 		"wide"		"640"
 		"tall"		"480"
