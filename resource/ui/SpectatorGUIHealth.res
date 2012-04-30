@@ -1,4 +1,5 @@
-//based on Commhud
+//based on commhud
+//inspired by eve and revan
 
 "Resource/UI/SpectatorGUIHealth.res"
 {

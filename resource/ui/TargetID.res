@@ -1,3 +1,6 @@
+//based on commhud
+//inspired by eve and revan
+
 "Resource/UI/TargetID.res"
 {
 	"TargetIDBG"

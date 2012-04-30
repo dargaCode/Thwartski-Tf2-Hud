@@ -7,10 +7,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"c-368"//"c-378"	
-		"ypos"			"r114"//"r94"	
+		"xpos"			"c-368"//"c-368"	
+		"ypos"			"r108"//"r114"	
 		"zpos"			"2"
-		"wide"			"400"//"300"
+		"wide"			"400"//"400"
 		"tall"			"120"
 		"visible"		"1"
 		"enabled"		"1"	
@@ -62,7 +62,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
 		"xpos"			"177"	
-		"ypos"			"29"	
+		"ypos"			"23"//"29"	
 		"zpos"			"-2"
 		"wide"			"57"	
 		"tall"			"57"	
@@ -76,7 +76,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValuePovo"
 		"xpos"			"126"
-		"ypos"			"22"
+		"ypos"			"16"//"22"
 		"zpos"			"5"
 		"wide"			"160"
 		"tall"			"70"
@@ -92,7 +92,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadowPovo"
 		"xpos"			"128"
-		"ypos"			"24"
+		"ypos"			"18"//"24"
 		"zpos"			"4"
 		"wide"			"160"
 		"tall"			"70"
@@ -104,10 +104,10 @@
 		"fgcolor"		"Black"
 	}		
 	
-	"PlayerStatusClassImageBGThwartski"
+	"VerticalTeamColorThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBGThwartski"
+		"fieldName"		"VerticalTeamColorThwartski"
 		"xpos"			"100"
 		"ypos"			"31"
 		"zpos"			"-1"
@@ -128,10 +128,10 @@
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
 	}
-	"PlayerStatusClassImageBG2Thwartski"
+	"HorizontalTeamColorThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
-		"fieldName"		"PlayerStatusClassImageBG2Thwartski"
+		"fieldName"		"HorizontalTeamColorThwartski"
 		"xpos"			"85"
 		"ypos"			"46"
 		"zpos"			"-1"
