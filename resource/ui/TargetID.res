@@ -27,15 +27,15 @@
 		"draw_corner_height" 		"0"		
 	}
 	
-	"BlackBGThwartski"
+	"BlackBGTopThwartski"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"BlackBGThwartski"
-		"xpos"			"93"
+		"fieldName"		"BlackBGTopThwartski"
+		"xpos"			"70"
 		"ypos"			"15"
-		"zpos"			"0"
+		"zpos"			"-1"
 		"wide"			"120"
-		"tall"	 		"30"
+		"tall"	 		"20"
 		"autoResize"		"1"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -43,7 +43,22 @@
 		"fillcolor"		"0 0 0 255"
 		"PaintBackgroundType"	"0"
 	}
-	
+	"BlackBGBottomThwartski"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"BlackBGBottomThwartski"
+		"xpos"			"70"
+		"ypos"			"35"
+		"zpos"			"0"
+		"wide"			"120"
+		"tall"	 		"10"
+		"autoResize"		"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"0 0 0 255"
+		"PaintBackgroundType"	"0"
+	}
 	"DarkStripeThwartski"
 	{
 		"ControlName"		"ImagePanel"
@@ -52,7 +67,7 @@
 		"ypos"			"36"
 		"zpos"			"4"
 		"wide"			"120"
-		"tall"	 		"20"
+		"tall"	 		"10"
 		"autoResize"		"1"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -111,7 +126,7 @@
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
-		"font"			"TFFontMediumBold"
+		"font"			"HudFontTinyBold"//"TFFontMediumBold"
 		"xpos"			"73"
 		"ypos"			"26"
 		"zpos"			"5"
