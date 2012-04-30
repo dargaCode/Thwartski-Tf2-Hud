@@ -121,6 +121,7 @@
 			"font"			"HudFontMediumSmallBold"//"HudFontMedium"
 			"font_minmode"	"HudFontSmall"
 			"font_lodef"	"HudFontMediumBig"
+			//"fgcolor" 		"0 255 0 255"
 		}
 		"NumPipesLabelDropshadow"
 		{
