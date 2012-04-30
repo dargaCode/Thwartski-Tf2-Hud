@@ -2,6 +2,24 @@
 
 "Resource/UI/SpectatorGUIHealth.res"
 {
+
+	"BlackBGThwartski"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"BlackBGThwartski"
+		"xpos"			"26"
+		"ypos"			"15"
+		"zpos"			"7"
+		"wide"			"29"
+		"tall"	 		"30"
+		"autoResize"		"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"0 0 0 255"
+		"PaintBackgroundType"	"0"
+	}
+	
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -84,7 +102,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"30"
-		"ypos"			"24"
+		"ypos"			"15"
 		"zpos"			"10"
 		"wide"			"30"
 		"tall"			"10"
@@ -96,47 +114,5 @@
 		"fgcolor"		"0 0 0 255"
 	}	
 
-	"BlackBGThwartski"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"BlackBGThwartski"
-		"xpos"			"26"
-		"ypos"			"15"
-		"zpos"			"7"
-		"wide"			"26"
-		"tall"	 		"20"
-		"autoResize"		"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"		"0 0 0 255"
-		"PaintBackgroundType"	"0"
-	}
-	
-	"TeamBGThwartski"
-	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"TeamBGThwartski"
-		"xpos"			"26"
-		"ypos"			"24"
-		"zpos"			"9"
-		"wide"			"29"
-		"tall"	 		"11"
-		"autoResize"		"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_2_lodef"	"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		"teambg_3_lodef"	"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"			// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"			// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"		
-	}	
+
 }
