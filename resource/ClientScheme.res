@@ -116,7 +116,7 @@ Scheme
 		"ItemLimitedUse"						"0 160 0 255"
 		"ItemFlags"								"117 107 94 255"
 		
-		"QualityColorNormal"					"178 178 178 255"
+		"QualityColorNormal"					"235 235 235 255"//"178 178 178 255"
 		"QualityColorrarity1"					"77 116 85 255"
 		"QualityColorrarity2"					"141 131 75 255"
 		"QualityColorrarity3"					"112 85 15 255"
