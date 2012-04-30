@@ -4,15 +4,15 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG"
-		"xpos"			"352"
-		"ypos"			"324"
-		"zpos"			"1"
-		"wide"			"10"
-		"tall"	 		"2"
+		"xpos"			"70"//"163"//"49"
+		"ypos"			"26"
+		"zpos"			"3"
+		"wide"			"103"
+		"tall"	 		"11"
 		"autoResize"		"1"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
@@ -27,40 +27,15 @@
 		"draw_corner_height" 		"0"		
 	}
 	
-	"TeamBGThwartski"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"TeamBGThwartski"
-		"xpos"			"93"//"163"//"49"
-		"ypos"			"24"
-		"zpos"			"3"
-		"wide"			"103"
-		"tall"	 		"11"
-		"autoResize"		"1"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_brown"
-		"scaleImage"		"1"
-		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
-		"teambg_3"		"../hud/color_panel_blu"
-		
-		"src_corner_height"		"40"			// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"			// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"		
-	}
-	
 	"BlackBGThwartski"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGThwartski"
-		"xpos"			"93"//"163"//"49"
+		"xpos"			"93"
 		"ypos"			"15"
 		"zpos"			"0"
-		"wide"			"103"
-		"tall"	 		"20"
+		"wide"			"120"
+		"tall"	 		"30"
 		"autoResize"		"1"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -69,18 +44,33 @@
 		"PaintBackgroundType"	"0"
 	}
 	
-	
+	"DarkStripeThwartski"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"DarkStripeThwartski"
+		"xpos"			"70"
+		"ypos"			"36"
+		"zpos"			"4"
+		"wide"			"120"
+		"tall"	 		"20"
+		"autoResize"		"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"		"54 51 52 100"
+		"PaintBackgroundType"	"0"
+	}
 	
 	"TargetIDBG_Spec_Blue"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_blue"
-		"xpos"			"70"//"164"//"50"
-		"ypos"			"35"
+		"xpos"			"70"
+		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"99"
 		"tall"	 		"10"
-		"autoResize"		"1"
+		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
@@ -98,8 +88,8 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_red"
-		"xpos"			"70"//"164"//"50"
-		"ypos"			"35"
+		"xpos"			"70"
+		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"99"
 		"tall"	 		"10"
@@ -122,9 +112,9 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
 		"font"			"TFFontMediumBold"
-		"xpos"			"73"//"143"//"29"
-		"ypos"			"15"
-		"zpos"			"1"
+		"xpos"			"73"
+		"ypos"			"26"
+		"zpos"			"5"
 		"wide"			"640"
 		"tall"			"10"
 		"autoResize"		"0"
@@ -135,7 +125,8 @@
 		"textAlignment"		"North-West"
 		"dulltext"		"0"
 		"brighttext"		"0"
-	}	
+	}
+	
 	"SpectatorGUIHealth"
 	{
 		"ControlName"		"EditablePanel"
@@ -158,7 +149,7 @@
 		"fieldName"		"TargetDataLabel"
 		"font"			"DefaultVerySmall"
 		"xpos"			"99"//"66"//"52"
-		"ypos"			"25"	[$WIN32]
+		"ypos"			"15"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"280"
 		"tall"			"10"
