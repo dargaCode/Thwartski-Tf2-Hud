@@ -104,7 +104,7 @@
 		"fgcolor"		"Black"
 	}		
 	
-		"PlayerStatusClassImageBGThwartski"
+	"PlayerStatusClassImageBGThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBGThwartski"
