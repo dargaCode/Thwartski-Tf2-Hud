@@ -402,12 +402,12 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SpecCarriedImage"
-		"xpos"			"c-50"
-		"ypos"			"r137"	[$WIN32]
+		"xpos"			"c-34"
+		"ypos"			"r45"	[$WIN32]
 		"zpos"			"10"
-		"wide"			"100"
-		"tall"			"100"
-		"visible"		"0"
+		"wide"			"70"
+		"tall"			"70"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_carried_red"
 		"scaleImage"	"1"
