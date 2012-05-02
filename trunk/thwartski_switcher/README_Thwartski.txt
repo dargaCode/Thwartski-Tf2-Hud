@@ -12,7 +12,7 @@ ThwartskiHUD Steam Group:		http://steamcommunity.com/groups/thwartskihud
 //-------------------------------------------------------------------
 
 I'm a professional game designer who plays a decent amount of TF2.
-I don't play comp except really lowlevel stuff, but working on it.
+I don't play comp except really lowlevel stuff, but I'm working on it.
 
 I try to play every class as much as I can, especially for testing stuff like this.
 My current main is soldier, but originally was pyro, then sniper, then spy.
@@ -32,17 +32,19 @@ It worked out perfectly for me, and I think everyone should give it a try =)
 //-------------------------------------------------------------------
 
 It's silly to mess with scroll wheels and number keys in a game with so few 
-weapon slots. Every class has only three weapons, aside from the PDAs which 
-can be handled elsewhere. 
+weapon slots. Every class has only three weapons, aside from two classes with 
+PDAs (which can be handled elsewhere). 
 
-With three weapons, only two are possible options to switch to at any given time. 
+With three weapons, there is always one active and only two are possible options
+to switch to at any given time. 
+
 This means only 2 buttons are required for perfect weaponswapping.
 
-I repurpose the "lastwep" button tf2 already has to switch between the first 
+I repurpose the "lastwep" button TF2 already has to switch between the first 
 two weapons, and add another swap button to move between the second two weapons.
 
-For each weapon that is swapped to, custom crosshairs and visibility settings 
-are also defined. 
+For each weapon that is swapped to, the script also swaps in custom crosshairs 
+and visibility settings. 
 
 
 //-------------------------------------------------------------------
