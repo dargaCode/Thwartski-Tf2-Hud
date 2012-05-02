@@ -1,4 +1,4 @@
-Be sure to make sure you back up your config folder before playing around with this!
+Be sure to make sure you BACK UP YOUR CONFIG FOLDER before playing around with this!
 
 These settings are for Aron's Crosshair Switcher (http://tinyurl.com/7xzb6sk). 
 This program isn't required at all to use my scripts, it's just a nice way to plan your crosshairs. 
