@@ -7,7 +7,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG"
-		"xpos"			"70"//"163"//"49"
+		"xpos"			"84"//"70"//"163"//"49"
 		"ypos"			"26"
 		"zpos"			"3"
 		"wide"			"103"
@@ -34,7 +34,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGTopThwartski"
-		"xpos"			"70"
+		"xpos"			"84"//"70"
 		"ypos"			"15"
 		"zpos"			"-1"
 		"wide"			"120"
@@ -50,7 +50,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"BlackBGBottomThwartski"
-		"xpos"			"70"
+		"xpos"			"84"//"70"
 		"ypos"			"35"
 		"zpos"			"0"
 		"wide"			"120"
@@ -66,7 +66,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"DarkStripeThwartski"
-		"xpos"			"70"
+		"xpos"			"84"//"70"
 		"ypos"			"36"
 		"zpos"			"4"
 		"wide"			"120"
@@ -83,7 +83,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_blue"
-		"xpos"			"70"
+		"xpos"			"84"//"70"
 		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"99"
@@ -106,7 +106,7 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TargetIDBG_Spec_red"
-		"xpos"			"70"
+		"xpos"			"84"//"70"
 		"ypos"			"26"
 		"zpos"			"1"
 		"wide"			"99"
@@ -130,7 +130,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetNameLabel"
 		"font"			"HudFontTinyBold"//"TFFontMediumBold"
-		"xpos"			"73"
+		"xpos"			"87"//"73"
 		"ypos"			"26"
 		"zpos"			"5"
 		"wide"			"640"
@@ -149,7 +149,7 @@
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"		"SpectatorGUIHealth"
-		"xpos"			"44"//"114"//"0"
+		"xpos"			"58"//"44"//"114"//"0"
 		"ypos"			"-10"
 		"wide"			"100"
 		"tall"			"70"
@@ -166,7 +166,7 @@
 		"ControlName"		"Label"
 		"fieldName"		"TargetDataLabel"
 		"font"			"DefaultVerySmall"
-		"xpos"			"99"//"66"//"52"
+		"xpos"			"113"//"99"//"66"//"52"
 		"ypos"			"15"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"280"
