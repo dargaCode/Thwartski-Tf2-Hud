@@ -1,192 +1,135 @@
 //-------------------------------------------------------------------
-//							CONTACT INFO
+//						   CONTACT INFO
 //-------------------------------------------------------------------
 
 Email: 							thwartski@gmail.com
 ThwartskiHUD Project Page: 		http://code.google.com/p/thwartski-tf2-hud/
 ThwartskiHUD Steam Group:		http://steamcommunity.com/groups/thwartskihud
-
+Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 
 //-------------------------------------------------------------------
-//						 	  ABOUT ME
+//						  ABOUT THWARTSKI
 //-------------------------------------------------------------------
 
-I'm a professional game designer who plays a decent amount of TF2.
-I don't play comp except really lowlevel stuff, but I'm working on it.
+I'm a professional game designer who plays a decent amount of TF2. I don't have 
+a very spectacular competitive career, but I know enough to design for comp play.
 
-I try to play every class as much as I can, especially for testing stuff like this.
-My current main is soldier, but originally was pyro, then sniper, then spy.
-
+I try to play all nine classes so I can tailor things to each of them. My current 
+main is soldier. it was originally pyro, then engie, then sniper, then spy.
 
 //-------------------------------------------------------------------
 //						 ABOUT THE SWAPPER
 //-------------------------------------------------------------------
 
-I put together this combination of weapon swapping and crosshair swapping so 
-that I could finally turn off my viewmodels and be less distracted while playing. 
-It worked out perfectly for me, and I think everyone should give it a try =)
+The goal of this system is to get you playing TF2 without the distraction of viewmodels, 
+while remaining fully confident in which weapon you have equipped. 
 
+This works in three steps: 
+
+1. 	Getting you used to having a distinct crosshair for each class's weapon slot, which you
+	will recognize as a shorthand for that weapon.
+
+2.	Enabling you to control all weapon selection with only two keys, removing the need
+	for fumbling with scroll wheels or number keys. 
+	
+3.	Allowing you to begin turning off the viewmodels for certain crosshairs, until you
+	have hidden the viewmodels for all weapons (or for all but melee if you choose).
+	
+Using the two-button swapper system and hiding viewmodels is optional. However, after 
+three months using this system myself, I can say it has improved my game a lot.
 
 //-------------------------------------------------------------------
-//							HOW IT WORKS
+//						TWO-BUTTON SWAPPING
 //-------------------------------------------------------------------
 
-It's silly to mess with scroll wheels and number keys in a game with so few 
-weapon slots. Every class has only three weapons, aside from two classes with 
-PDAs (which can be handled elsewhere). 
-
-With three weapons, there is always one active and only two are possible options
-to switch to at any given time. 
-
-This means only 2 buttons are required for perfect weaponswapping.
+In a game with only three main weapons per class, there are only two weapons to
+switch to at any given time. This means only two buttons are required for perfect
+weapon swapping. 
 
 I repurpose the "lastwep" button TF2 already has to switch between the first 
 two weapons, and add another swap button to move between the second two weapons.
 
 For each weapon that is swapped to, the script also swaps in custom crosshairs 
-and visibility settings. 
+and visibility settings, if they've been defined for that class. 
 
+[Spies and Engineers have an extra slot or two to deal with, but I put in some
+special-casing to update the swapper when a PDA is selected.]
 
 //-------------------------------------------------------------------
 //						  SOLDIER EXAMPLE
 //-------------------------------------------------------------------
 
-Rocket launcher is selected automatically at spawn.
-Hitting Q repeatedly cycles between rocket launcher and shotgun (same as valve).
-Hitting E swaps to equalizer.
-Hitting E repeatedly cycles between equalizer and shotgun.
-Hitting Q swaps back to rocket launcher.
-etc.
+You can think of it in terms of cycling weapons: 
 
+	Q always cycles between Rocket Launcher and Shotgun, starting with Rocket Launcher.	
+	E always cycles between Equalizer and Shotgun, starting with Equalizer.
 
+Or it might be easier to think of it in terms of keys bound to weapons:
+
+	Rocket Launcher is always equipped by hitting Q.
+	Equalizer is always equipped by hitting E.
+	Shotgun is always equipped by hitting Q or E a second time.
+	
 //-------------------------------------------------------------------
 //						  HOW TO INSTALL
 //-------------------------------------------------------------------
 
-1. 
-	Rename your config folder to back it up.
+1.  Find your config folder and back it up. 
 
-	It should be something like: 
-	C:\Program Files (x86)\Steam\steamapps\[YOU]\team fortress 2\tf\cfg\
+	[It should be something like: 
+	C:\Program Files (x86)\Steam\steamapps\[YOU]\team fortress 2\tf\cfg\]
 
-2. 
-	Drag the thwartski-weaponswap folder into your \team fortress 2\tf\ folder.
 	
-3. 
-	Rename the thwartski-weaponswapper folder to "cfg".
+2.  Copy all these files into your config folder, replacing what was there.
 
-4. 
-	Restart the game and play around with the swapper.
+    [If you're super hardcore about one class and never play the others, it's
+	ok to delete the class-specific configs you don't want.]
 	
-5. 
-	If you like it, You can merge it with your old config folder.
-
-	I've removed as much as possible to separate config files, so there's
-	as little as possible to paste into your configs such as autoexec and spy.cfg.
-
-6. 
-	Send me feedback! 
-
-	A.	thwartski@gmail.com
-	B.	http://steamcommunity.com/groups/thwartskihud
-		This group is also where I'll be releasing my custom HUD soon.
 	
+3.  Load the game and start playing!
 	
 //-------------------------------------------------------------------
 //						 HOW TO CUSTOMIZE
 //-------------------------------------------------------------------
 
-1. 
-	In thwartski_weaponswap.cfg, rebind the 2 swap keys if you wish. 
-	
-	By default, they are bound to Q and E.
-	
-2.
-	In thwartski_crosshairs.cfg, modify the crosshairs and viewmodels if you wish.
-	
-	By default, viewmodels are turned off for everything except melee, but it can 
-	be easier to learn the system with them turned on if you play a lot of classes.
+As you edit your settings, you don't have to restart the game for them to take effect.
+Just save your config files and change classes to reset the system with your new changes.
 
-3.
-	In thwartski_weapons_[class].cfg, modify the primary/secondary/tertiary
-	weapon definitions for each class, if you wish.
+Each config has the sections that contain customization options marked with: **EDIT ME!**
+
+1. 	Use thwartski_wepswapper.cfg to rebind the two-button weaponswap keys. 
 	
-	I leave the Valve definitions there by default, but leave comments with my own 
-	recommendations (these are the settings I've been using the past few months). 
+	By default, they're bound to Q and E.
 	
-	Demo, Medic, and Spy are the three classes I recommend changing. 
 	
-4.
-	In thwartski_crosshairs.cfg and thwartski_weapons_[class].cfg, modify the 
-	crosshair category for each	weapon if you wish. 
+2.	Use thwartski_wepswapper_[classname].cfg to modify the primary/secondary/tertiary
+	weapon definitions for each class.
+	
+	For example, I recommend using medigun as medic's primary, and sticky launcher as demo's
+	primary. Any changes will apply to swapper buttons, number keys, and the scroll wheel.
+
+	
+3.  Use thwartski_crosshairs.cfg to modify the crosshairs and viewmodels.
+	
+	By default, viewmodels are turned on, so you can get used to the crosshairs and 
+	weapon swapping first. I recommend turning them off for all weapons but melee.
+
+	
+4.  Use thwartski_crosshairs.cfg and thwartski_wepswapper_[classname].cfg to modify the 
+	crosshair category for each	weapon. 
 	
 	I use the following four groupings:
 	
-	A.	Valve defaults for medigun, sapper, minigun, stickies, rockets, flames.
-	B.	"Precise" for sniper, pistols, revolver.
-	C.	"Spread" for shotguns, needles, smg, grenades.
-	D.	"Melee" for melee.
-	
-5.
-	In thwartski_weapons_pyro.cfg and thwartski_weapons_medic.cfg, modify the 
-	two weapons that have optional tracer effects:
-	
-	A.	Medigun has the heal beam connecting the medic to the heal target
-		visible by default.
-	B.	Flamethrower has its flames invisible by default. 
-	
-
-//-------------------------------------------------------------------
-//						   KNOWN ISSUES
-//-------------------------------------------------------------------
-
-There are two types of situation in which the crosshair switcher can become
-unsynchronized from the actual weapon equipped.
-
-
-//-------------------------------------------------------------------
-//					  UNSYNCHED CROSSHAIRS 1
-//-------------------------------------------------------------------
-
-Problem:
-	Because game doesn't actually inform the scripting language which weapon is
-	equipped, it is possible to tell the weaponswap system to swap crosshhairs 
-	when the weapon can't actually keep up. 
-
-Examples: 
-	Trying to swap to another weapon while the heavy's minigun is still spun up.
-	Trying to swap to a weapon that is on a cooldown (eg jarate, mad milk).
-	Trying to swap to a slot with no true weapon in it (eg razorback, gunboats).
-	Trying to swap to any weapon that is out of ammo.
-	Trying to swap to any weapon while dead.
-	Trying to swap to any weapon while taunting.
-	Trying to swap to any weapon while stunned.
-	Trying to swap to any weapon while bonking.
-	Trying to swap to any weapon during humiliation (if you lost).
-	
-Solution:
-	Just hit either swap button once (under valid conditions) to correctly 
-	update the system. Being careful during death and cooldowns prevent most 
-	problems.
-	
-	Some bad conditions (such as wearing gunboats) persist indefinitely.
-	Keeping your loadout in mind while playing is very important anyway, 
-	so this shouldn't be a problem for experienced players.
+		A.	"Valve" for medigun, sapper, minigun, stickies, rockets, flames.
+		B.	"Precise" for sniper, pistols, revolver.
+		C.	"Spread" for shotguns, needles, smg, grenades.
+		D.	"Melee" for melee.
 	
 	
-//-------------------------------------------------------------------
-//					   UNSYNCHED CROSSHAIRS 2
-//-------------------------------------------------------------------
-
-Problem:
-	Because class configs execute only once per class and not each spawn,
-	changing loadout while still alive can change weapons without updating
-	your crosshair.
-
-Example: 
-	You are in the spawn with your equalizer equipped, then change loadouts.
-	TF2 forces you back to your primary weapon on loadout change, while your 
-	crosshair still indicates equalizer.
-
-Solution:
-	Just hit either swap button once to correctly update it.
+5. 	If you turn off viewmodels, use thwartski_wepswapper_pyro.cfg and thwartski_wepswapper_medic.cfg
+	to turn on and off their optional tracer effects: 
+	
+		A.	Healing beam connecting the medigun to the heal target (visible by default). 	
+		B.	Flamethrower flames (visible by default). 
+	
+	
