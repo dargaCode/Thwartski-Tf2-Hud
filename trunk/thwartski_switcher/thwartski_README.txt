@@ -132,4 +132,7 @@ Each config has the sections that contain customization options marked with: **E
 		A.	Healing beam connecting the medigun to the heal target (visible by default). 	
 		B.	Flamethrower flames (visible by default). 
 	
+6. 	Change spy.cfg to point to thwartski_wepswapper_spy_advanced.cfg, if you're a spy who wants to 	
+	to things like hide the amby during reloading and disguise the crosshair growth. You know who you are.  
+	
 	
