@@ -1,17 +1,17 @@
 These settings are for Aron's Crosshair Switcher (http://tinyurl.com/7xzb6sk).
 
 Aron's app showed me how the crosshair settings work, and inspired me to use categories.
-This program isn't required at all to use my scripts, it's just a nice way to plan your crosshairs. 
+His program isn't required at all to use my scripts, it's just a nice way to plan your crosshairs. 
 
-These settings will give you an idea what my crosshairs look like, or help you decide how to tweak them. 
+These settings will give you an overview of my crosshair settings, or help you decide how to tweak them. 
 Just paste the following into the /settings/settings.ini file that's created after you run his app:
 
-***Be sure to make sure you BACK UP YOUR CFG FOLDER before playing around with this!***
+***Make sure to BACK UP YOUR CFG FOLDER before playing around with this!***
 -------------------------------------------------------------------------------------------------
 [Version]
 ver=1.8.0.0
 [Options]
-MinMode=1
+MinMode=0
 CreateCrosshair_Saved=1
 CreateCrosshair_Edited=1
 CrosshairManager_VerifyDeleting=1
