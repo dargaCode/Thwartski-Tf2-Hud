@@ -30,29 +30,26 @@
 		"icon"			"obj_status_background_disabled"
 		"iconColor"		"255 255 255 255"
 	}
-	
+		
 	"BackgroundThwartski"
 	{
-		"ControlName"	"CTFImagePanel"
-		"fieldName"		"BackgroundThwartski"
-		"xpos"			"6"
-		"ypos"			"2"
-		"zpos"			"-1"
-		"wide"			"111"//"120"
-		"tall"			"28"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/character_red_bg"
-		"scaleImage"	"1"	
-		"teambg_2"		"../hud/character_red_bg"
-		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
-		"teambg_3"		"../hud/character_blue_bg"
-		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
+		"ControlName"		"Imagepanel"
+		"fieldName"			"BackgroundThwartski"
+		"xpos"				"6"
+		"ypos"				"2"
+		"zpos"				"-1"
+		"wide"				"111"
+		"tall"				"28"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 255"
 		
-		"src_corner_height"		"40"				// pixels inside the image
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"	
+		"src_corner_height"		"90"//"23"
+		"src_corner_width"		"90"//"23"
+		
+		"draw_corner_width"		"0"//"6"
+		"draw_corner_height" 	"0"//"6"	
 	}
 	
 	"Icon_Dispenser"
@@ -148,6 +145,28 @@
 		"tall"			"31"
 		"visible"		"0"
 
+		"TeamBackgroundThwartski"
+		{
+			"ControlName"	"CTFImagePanel"
+			"fieldName"		"TeamBackgroundThwartski"
+			"xpos"			"6"
+			"ypos"			"2"
+			"zpos"			"-1"
+			"wide"			"111"//"120"
+			"tall"			"28"
+			"visible"		"1"
+			"enabled"		"1"
+			"image"			"../hud/character_red_bg"
+			"scaleImage"	"1"	
+			"teambg_2"		"../hud/character_red_bg"
+			"teambg_3"		"../hud/character_blue_bg"
+			
+			"src_corner_height"		"40"
+			"src_corner_width"		"40"			
+			"draw_corner_width"		"0"	
+			"draw_corner_height" 	"0"	
+		}
+		
 		"Icon_Upgrade_1"
 		{
 			"ControlName"	"CIconPanel"
