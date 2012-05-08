@@ -26,7 +26,7 @@
 		"fieldName"		"TeamBGThwartski"
 		"xpos"			"22"
 		"ypos"			"33"
-		"zpos"			"5"
+		"zpos"			"1"
 		"wide"			"56"
 		"tall"			"56"
 		"visible"		"1"
