@@ -4,22 +4,45 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemNameLabel"
-		"font"			"Default"
-		"xpos"			"6"
-		"ypos"			"0"
+		"font"			"HudFontSmallest"//"Default"
+		"xpos"			"22"
+		"ypos"			"16"
 		"zpos"			"1"
-		"wide"			"84"
+		"wide"			"56"
 		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#TF_Object_Sentry"
-		"labelText_lodef"		"#TF_Object_Sentry_360"
-		"textAlignment"	"Left"
+		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
+	
+	"TeamBGThwartski"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"TeamBGThwartski"
+		"xpos"			"22"
+		"ypos"			"33"
+		"zpos"			"5"
+		"wide"			"56"
+		"tall"			"56"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			""
+		"scaleImage"	"1"	
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_red"
+		"teambg_3"		"../hud/color_panel_blu"
+		
+		"src_corner_height"		"40"
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
+	}
+	
 	
 	"ItemBackground"	
 	{
@@ -37,6 +60,8 @@
 		"iconColor"		"TanLightTransparent"
 	}
 	
+	
+	
 	"CantBuildReason"
 	{	
 		"ControlName"	"CExLabel"
@@ -49,7 +74,7 @@
 		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"#Hud_Menu_Build_Already_Built"
 		"textAlignment"	"Center"
@@ -66,7 +91,7 @@
 		"zpos"			"1"
 		"wide"			"10"
 		"tall"			"10"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_metal"
@@ -86,7 +111,7 @@
 		"tall"			"13"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"%metal%"
 		"textAlignment"	"Left"	
@@ -120,7 +145,7 @@
 		"zpos"			"0"
 		"wide"			"18"
 		"tall"			"18"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
@@ -140,7 +165,7 @@
 		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"1"
 		"textAlignment"	"Center"
