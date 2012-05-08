@@ -45,7 +45,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_sentrygun_2"
-		"iconColor"		"64 64 64 255"
+		"iconColor"		"47 40 14 255"
 	}
 	
 	"IconDispenserThwartski"
@@ -60,7 +60,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_dispenser"
-		"iconColor"		"64 64 64 255"
+		"iconColor"		"47 40 14 255"
 	}
 	
 	"IconEntranceThwartski"
@@ -75,7 +75,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_tele_entrance"
-		"iconColor"		"64 64 64 255"
+		"iconColor"		"47 40 14 255"
 	}
 	
 	"IconExitThwartski"
@@ -90,7 +90,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"obj_status_tele_exit"
-		"iconColor"		"64 64 64 255"
+		"iconColor"		"47 40 14 255"
 	}
 	
 	

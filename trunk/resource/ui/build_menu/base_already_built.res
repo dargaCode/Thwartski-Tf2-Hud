@@ -59,28 +59,29 @@
 		"icon"			"hud_menu_item_bg_outline"
 		"iconColor"		"TanLightTransparent"
 	}
-	
-	
+		
 	
 	"CantBuildReason"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CantBuildReason"
-		"font"			"Default"
-		"xpos"			"10"
-		"ypos"			"48"
-		"zpos"			"2"
-		"wide"			"80"
-		"tall"			"18"
+	    "font"			"HudFontSmallest"//"Default"
+		"xpos"			"22"
+		"ypos"			"94"
+		"zpos"			"1"
+		"wide"			"56"
+		"tall"			"12"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#Hud_Menu_Build_Already_Built"
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
+		"fgcolor"		"84 80 35 255"
 	}
+	
 	
 	"MetalIcon"	
 	{
