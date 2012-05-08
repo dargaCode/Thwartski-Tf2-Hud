@@ -4,7 +4,6 @@
 	{	
 		"ControlName"	"CExLabel"
 		"font"			"HudFontSmallest"//"Default"
-		"font"			"Default"
 		"xpos"			"22"
 		"ypos"			"16"
 		"zpos"			"1"
