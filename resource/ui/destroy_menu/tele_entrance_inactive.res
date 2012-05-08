@@ -66,7 +66,7 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#Hud_Menu_Build_Already_Built"
+		"labelText"		"Not Yet Built"//"#Hud_Menu_Build_Already_Built"
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
