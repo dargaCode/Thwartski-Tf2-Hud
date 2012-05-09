@@ -1,4 +1,4 @@
-"Resource/UI/disguise_menu/demoman_red.res"
+"Resource/UI/disguise_menu/demoman_blue.res"
 {
 	"ItemNameLabel"
 	{	
@@ -19,6 +19,24 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
+	
+	"ShadedBarThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"ShadedBarThwartski"
+		"xpos"			"0"
+		"ypos"			"65"
+		"zpos"			"2"
+		"wide"			"45"
+		"tall"			"27"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"0 0 0 255"
+		"PaintBackgroundType"	"0"
+	}
 		
 	"ClassIcon"	
 	{
@@ -34,7 +52,7 @@
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_demoman_red"
 	}
-		
+	
 	"NumberBg"	
 	{
 		"ControlName"	"CIconPanel"
@@ -42,9 +60,9 @@
 		"xpos"			"15"
 		"ypos"			"90"
 		"zpos"			"0"
-		"wide"			"15"
-		"tall"			"15"
-		"visible"		"1"
+		"wide"			"0"
+		"tall"			"0"
+		"visible"		"0"
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
@@ -55,40 +73,40 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
-		"xpos"			"15"
-		"ypos"			"90"
-		"zpos"			"0"
-		"wide"			"15"
-		"tall"			"15"
+		"font"			"HudFontMediumBold"
+		"fgcolor"		"0 255 0 255"
+		"xpos"			"23"
+		"ypos"			"67"
+		"zpos"			"3"
+		"wide"			"40"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"labelText"		"1"
-		"textAlignment"	"Center"
+		"textAlignment"	"North-West"
 		"dulltext"		"1"
 		"brighttext"	"0"
 	}
-
+	
 	"NumberLabel"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"Default"
-		"fgcolor"		"Black"
+		"font"			"HudFontMediumBold"
+		"fgcolor"		"TanLight"
 		"xpos"			"15"
-		"ypos"			"90"
-		"zpos"			"0"
-		"wide"			"15"
-		"tall"			"15"
+		"ypos"			"67"
+		"zpos"			"3"
+		"wide"			"20"
+		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"4"
-		"textAlignment"	"Center"
+		"textAlignment"	"North-West"
 		"dulltext"		"1"
 		"brighttext"	"0"
 	}
