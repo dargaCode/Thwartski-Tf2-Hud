@@ -26,10 +26,10 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelValue"
-			"font"			"HudFontMediumSmall"
+			"font"			"HudFontTimer"
 			"fgcolor"		"TanLight"
 			"xpos"			"16"
-			"ypos"			"11"
+			"ypos"			"2"
 			"zpos"			"3"
 			"wide"			"78"
 			"tall"			"31"

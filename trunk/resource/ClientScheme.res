@@ -825,6 +825,20 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		
+		"HudFontTimer"
+		{
+			"1"
+			{
+				"name"		"TF2"
+				"tall"		"20"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
+		
 		"HudFontMediumSecondary"
 		{
 			"1"
