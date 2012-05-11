@@ -38,13 +38,13 @@
 		"fieldName" "HudKothTimeStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"c-100"
-		"ypos"	"0"
-		"wide"	"200"
-		"tall"	"60"
+		"xpos"	"c-150"
+		"ypos"	"r28"
+		"wide"	"300"
+		"tall"	"25"
 		
-		"blue_active_xpos"			"16"
-		"red_active_xpos"			"106"
+		"blue_active_xpos"			"55"
+		"red_active_xpos"			"167"
 	}	
 
 	HudItemEffectMeter
@@ -731,9 +731,9 @@
 		"tall"					"200"
 		"visible"				"1"
 		"enabled"				"1"
-		"separator_width"		"9"	// distance between the icons (including their backgrounds)
+		"separator_width"		"0"	// distance between the icons (including their backgrounds)
 		"separator_height"		"7"
-		"height_offset"			"0"	[$WIN32] // distance from the bottom of the panel
+		"height_offset"			"-5"	[$WIN32] // distance from the bottom of the panel
 	}
 
 	HudCapturePanel
