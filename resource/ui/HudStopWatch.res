@@ -16,11 +16,11 @@
 		"image"			"../HUD/tournament_panel_brown"
 
 
-		"src_corner_height"	"45"	
-		"src_corner_width"	"45"
+		"src_corner_height"	 "45"	
+		"src_corner_width"	 "45"
 		
-		"draw_corner_width"	"0"		
-		"draw_corner_height" 	""	
+		"draw_corner_width"	 "0"		
+		"draw_corner_height" "0"	
 	}
 	
 	"StopWatchBGThwartski"
