@@ -4,7 +4,7 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"BlueTimer"
-		"xpos"				"0"
+		"xpos"				"39"
 		"ypos"				"0"
 		"zpos"				"2"
 		"wide"				"100"
@@ -18,8 +18,8 @@
 			"fieldName"		"TimePanelValue"
 			"font"			"HudFontMediumSmall"
 			"fgcolor"		"TanLight"
-			"xpos"			"23"
-			"ypos"			"11"
+			"xpos"			"34"
+			"ypos"			"-3"
 			"zpos"			"3"
 			"wide"			"45"
 			"tall"			"31"
@@ -34,7 +34,7 @@
 	{
 		"ControlName"		"CTFHudTimeStatus"
 		"fieldName"			"RedTimer"
-		"xpos"				"90"
+		"xpos"				"151"
 		"ypos"				"0"
 		"zpos"				"2"
 		"wide"				"100"
@@ -50,8 +50,8 @@
 			"font_minmode"	"HudFontSmall"
 			"font_lodef"	"HudFontMedium"
 			"fgcolor"		"TanLight"
-			"xpos"			"23"
-			"ypos"			"11"
+			"xpos"			"34"
+			"ypos"			"-3"
 			"zpos"			"3"
 			"wide"			"45"
 			"tall"			"31"
@@ -66,14 +66,16 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"			"ActiveTimerBG"
-		"xpos"				"0"
-		"ypos"				"9"
-		"zpos"				"1"
+		"xpos"				"20"
+		"ypos"				"-3"
+		"zpos"				"3"
 		"wide"				"78"
-		"tall"				"33"
+		"tall"				"30"
 		"visible"			"0"
 		"enabled"			"1"
 		"image"				"../hud/objectives_timepanel_active_bg"	
 		"scaleImage"		"1"	
 	}
+	
+	
 }

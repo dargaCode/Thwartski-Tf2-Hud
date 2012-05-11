@@ -157,8 +157,6 @@
 		"font"			"ClockSubText"
 		"fgcolor"		"255 0 0 255"
 	}
-
-
 	
 	"SuddenDeathBG"
 	{
