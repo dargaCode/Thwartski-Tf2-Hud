@@ -75,7 +75,7 @@
 		"font"			"HudFontBiggerBold"
 		"xpos"			"83"
 		"ypos"			"40"//"30"
-		"wide"			"60"
+		"wide"			"80"
 		"tall"			"30"
 
 	}		
@@ -94,7 +94,7 @@
 		"font"			"HudFontBiggerBold"
 		"xpos"			"85"
 		"ypos"			"42"//"32"
-		"wide"			"60"
+		"wide"			"80"
 		"tall"			"30"
 	}									
 	"AmmoNoClip"

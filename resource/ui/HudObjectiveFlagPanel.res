@@ -23,7 +23,7 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"LeftSideBGThwartski"
 		"xpos"			"c-81"
-		"ypos"			"r37"	[$WIN32]
+		"ypos"			"r32"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"82"
 		"tall"			"30"
@@ -44,7 +44,7 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"RightSideBGThwartski"
 		"xpos"			"c-0"
-		"ypos"			"r37"	[$WIN32]
+		"ypos"			"r32"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"82"
 		"tall"			"30"
@@ -66,7 +66,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayingTo"
 		"xpos"			"c-18"	[$WIN32]
-		"ypos"			"r37"	[$WIN32]
+		"ypos"			"r32"	[$WIN32]
 		"zpos"			"4"
 		"wide"			"40"	[$WIN32]
 		"tall"			"30"
@@ -91,7 +91,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayingToBG"
 		"xpos"			"c-24"	[$WIN32]
-		"ypos"			"r35"	[$WIN32]
+		"ypos"			"r30"	[$WIN32]
 		"zpos"			"3"
 		"wide"			"48"	[$WIN32]
 		"tall"			"25"	[$WIN32]
@@ -117,7 +117,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"LeftSideBG"
 		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
+		"ypos"			"r70"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"280"
 		"tall"			"80"
@@ -137,7 +137,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"RightSideBG"
 		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
+		"ypos"			"r70"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"280"
 		"tall"			"80"
@@ -157,7 +157,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"OutlineBG"
 		"xpos"			"c-140"
-		"ypos"			"r75"	[$WIN32]
+		"ypos"			"r70"	[$WIN32]
 		"ypos"			"r96"	[$X360]
 		"zpos"			"2"
 		"wide"			"280"
@@ -178,14 +178,10 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueScore"
 		"xpos"			"c-84"
-		"ypos"			"r39"
-		"ypos_lodef"	"r88"
-		"ypos_hidef"	"r93"
+		"ypos"			"r34"
 		"zpos"			"8"
 		"wide"			"50"
 		"tall"			"35"
-		"tall_hidef"	"100"
-		"tall_lodef"	"75"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"east"	
@@ -204,14 +200,10 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"BlueScoreShadow"
 		"xpos"			"c-83"
-		"ypos"			"r38"
-		"ypos_lodef"	"r87"
-		"ypos_hidef"	"r92"
+		"ypos"			"r33"
 		"zpos"			"7"
 		"wide"			"50"
 		"tall"			"35"
-		"tall_hidef"	"100"
-		"tall_lodef"	"75"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"east"	
@@ -230,14 +222,10 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedScore"
 		"xpos"			"c36"
-		"ypos"			"r39"
-		"ypos_lodef"	"r88"
-		"ypos_hidef"	"r93"
+		"ypos"			"r34"
 		"zpos"			"8"
 		"wide"			"50"
 		"tall"			"35"
-		"tall_hidef"	"100"
-		"tall_lodef"	"75"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
@@ -256,14 +244,10 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"RedScoreShadow"
 		"xpos"			"c37"
-		"ypos"			"r38"
-		"ypos_lodef"	"r87"
-		"ypos_hidef"	"r92"
+		"ypos"			"r33"
 		"zpos"			"7"
 		"wide"			"50"
 		"tall"			"35"
-		"tall_hidef"	"100"
-		"tall_lodef"	"75"
 		"visible"		"1"
 		"enabled"		"1"
 		"textAlignment"	"west"	
@@ -282,7 +266,7 @@
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"OutlineImage"
 		"xpos"			"c-50"
-		"ypos"			"r127"	[$WIN32]
+		"ypos"			"r122"	[$WIN32]
 		"zpos"			"9"
 		"wide"			"100"
 		"tall"			"50"
@@ -297,7 +281,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"CarriedImage"
 		"xpos"			"c-34"
-		"ypos"			"r45"	[$WIN32]
+		"ypos"			"r40"	[$WIN32]
 		"zpos"			"10"
 		"wide"			"70"
 		"tall"			"70"
@@ -319,7 +303,7 @@
 		"ControlName"	"CTFFlagStatus"
 		"fieldName"		"BlueFlag"
 		"xpos"			"c-135"
-		"ypos"			"r45"	[$WIN32]
+		"ypos"			"r40"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"160"
 		"tall"			"90"
@@ -351,7 +335,7 @@
 		"ControlName"	"CTFFlagStatus"
 		"fieldName"		"RedFlag"
 		"xpos"			"c35"
-		"ypos"			"r45"	[$WIN32]
+		"ypos"			"r40"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"160"
 		"tall"			"90"
@@ -385,7 +369,7 @@
 		"fieldName"		"CaptureFlag"
 		"xpos"			"c-40"
 		"ypos"			"r95"	[$WIN32]
-		"ypos"			"r116"	[$X360]
+		"ypos"			"r111"	[$X360]
 		"zpos"			"5"
 		"wide"			"0"
 		"tall"			"0"
@@ -403,7 +387,7 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SpecCarriedImage"
 		"xpos"			"c-34"
-		"ypos"			"r45"	[$WIN32]
+		"ypos"			"r40"	[$WIN32]
 		"zpos"			"10"
 		"wide"			"70"
 		"tall"			"70"
