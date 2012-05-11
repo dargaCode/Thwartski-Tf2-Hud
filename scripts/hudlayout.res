@@ -44,10 +44,7 @@
 		"tall"	"60"
 		
 		"blue_active_xpos"			"16"
-		"blue_active_xpos_minmode"	"55"
-	
 		"red_active_xpos"			"106"
-		"red_active_xpos_minmode"	"105"
 	}	
 
 	HudItemEffectMeter
@@ -56,9 +53,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r52"	[$WIN32]
-		"ypos_minmode"	"r50"	[$WIN32]
 		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -97,12 +92,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
-		"xpos_minmode"	"r54"	[$WIN32]
 		"ypos"			"r54"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
 		"zpos"			"1"
 		"wide"			"200"
-		"wide_minmode"	"50"
 		"tall"			"20"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -114,12 +106,9 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"r80"	[$WIN32]
-		"xpos_minmode"	"r52"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
 		"zpos"			"0"
 		"wide"			"60"
-		"wide_minmode"	"50"
 		"tall"			"8"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -181,7 +170,6 @@
 		"fieldName"				"CHudAccountPanel"
 		"xpos"					"c-43"	[$WIN32]
 		"ypos"					"r290"	[$WIN32]
-		"ypos_minmode"			"r134"	[$WIN32]
 		"wide"					"100"
 		"tall"  				"225"
 		"visible" 				"1"
@@ -193,9 +181,7 @@
 	{
 		"fieldName"				"CHealthAccountPanel"
 		"xpos"					"145"
-		"xpos_minmode"			"61"
 		"ypos"					"r152"
-		"ypos_minmode"			"r134"
 		"wide"					"116"
 		"tall"  				"180"
 		"visible" 				"1"
@@ -264,7 +250,6 @@
 		"ypos"		"250"//"330"//"300"
 		"wide"	 	"252"
 		"tall"	 	"40"
-		"tall_minmode"	 	"28"
 		"priority"	"35"
 	}
 	
