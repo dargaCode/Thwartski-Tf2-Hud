@@ -7,7 +7,6 @@
 		"fieldName"		"HudPlayerClass"
 		"xpos"			"0"
 		"ypos"			"0"
-		"ypos_minmode"	"18"
 		"zpos"			"1"
 		"wide"			"f0"
 		"tall"			"480"
@@ -18,15 +17,13 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"30"//"25"	[$WIN32]
-		"xpos_minmode"	"15"	[$WIN32]
-		"ypos"			"r84"	[$WIN32]
-		"ypos_minmode"	"r54"	[$WIN32]
+		"xpos"			"30"
+		"xpos_minmode"	"3000"
+		"ypos"			"r84"
+		"xpos_minmode"	"3000"
 		"zpos"			"2"
 		"wide"			"75"
-		"wide_minmode"	"37"
 		"tall"			"75"
-		"tall_minmode"	"37"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/class_scoutred"
@@ -37,15 +34,13 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyImage"
-		"xpos"			"3"		[$WIN32]
-		"xpos_minmode"	"-5"	[$WIN32]
-		"ypos"			"r67"	[$WIN32]
-		"ypos_minmode"	"r44"	[$WIN32]
+		"xpos"			"3"	
+		"xpos_minmode"	"3000"
+		"ypos"			"r67"
+		"xpos_minmode"	"3000"
 		"zpos"			"2"
 		"wide"			"55"
-		"wide_minmode"	"27"
 		"tall"			"55"
-		"tall_minmode"	"27"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/class_spyred"
@@ -57,15 +52,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyOutlineImage"
-		"xpos"			"3"		[$WIN32]
-		"xpos_minmode"	"-5"	[$WIN32]
-		"ypos"			"r67"	[$WIN32]
-		"ypos_minmode"	"r44"	[$WIN32]
+		"xpos"			"3"	
+		"ypos"			"r67"
 		"zpos"			"7"
 		"wide"			"55"
-		"wide_minmode"	"27"
 		"tall"			"55"
-		"tall_minmode"	"27"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/class_spy_outline"
@@ -75,10 +66,10 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"9"		[$WIN32]
-		"xpos_minmode"	"-10"	[$WIN32]
-		"ypos"			"r54"	[$WIN32]
-		"ypos_minmode"	"r40"	[$WIN32]
+		"xpos"			"9"	
+		"xpos_minmode"	"3000"
+		"ypos"			"r54"
+		"xpos_minmode"	"3000"
 		"zpos"			"1"		
 		"wide"			"111"
 		"tall"			"46"
@@ -87,13 +78,11 @@
 		"image"			"../hud/character_red_bg"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/character_red_bg"
-		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
 		"teambg_3"		"../hud/character_blue_bg"
-		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 	}
 }
