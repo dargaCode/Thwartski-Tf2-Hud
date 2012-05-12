@@ -224,16 +224,15 @@
 			}
 		}	
 		
-		
 		"EscortItemImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"EscortItemImage"	
-			"xpos"			"30"
-			"ypos"			"97"
+			"xpos"			"29"
+			"ypos"			"98"
 			"zpos"			"0"
-			"wide"			"20"
-			"tall"			"20"
+			"wide"			"21"
+			"tall"			"19"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -269,7 +268,7 @@
 			"xpos"			"30"
 			"ypos"			"97"
 			"zpos"			"2"
-			"wide"			"20"
+			"wide"			"19"
 			"tall"			"14"
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -280,30 +279,53 @@
 			"image"			"../hud/color_panel_brown"
 			"scaleImage"	"1"
 			
-			"src_corner_height"		"90"
-			"src_corner_width"		"90"			
-			"draw_corner_width"		"0"
-			"draw_corner_height" 	"0"	
-			
 			"if_team_blue"
 			{
 				"image"			"../hud/color_panel_blu"
-				
-			"src_corner_height"		"90"
-			"src_corner_width"		"90"			
-			"draw_corner_width"		"0"
-			"draw_corner_height" 	"0"	
 			}		
 			
 			"if_team_red"
 			{
-				"image"			"../hud/color_panel_red"
+				"image"			"../hud/color_panel_red"	
 				
-			"src_corner_height"		"90"
-			"src_corner_width"		"90"			
-			"draw_corner_width"		"0"
-			"draw_corner_height" 	"0"	
-				
+			}
+			
+			"if_multiple_trains"
+			{
+				"xpos"			"11"
+				"ypos"			"43"
+				"wide"			"30"
+				"tall"			"30"
+			}						
+		}
+		
+		"BlackCartBGThwartski"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"BlackCartBGThwartski"	
+			"xpos"			"31"
+			"ypos"			"99"
+			"zpos"			"1"
+			"wide"			"16"
+			"tall"			"11"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"labelText"		""
+			"scaleImage"	"1"
+			"image"			""
+			"fillcolor"		"0 0 0 255"
+			
+			"if_team_blue"
+			{
+				"image"			""
+			}		
+			
+			"if_team_red"
+			{
+				"image"			""	
 			}
 			
 			"if_multiple_trains"
@@ -381,7 +403,7 @@
 		{
 			"ControlName"			"ImagePanel"
 			"fieldName"				"Speed_Backwards"	
-			"xpos"					"35"
+			"xpos"					"34"
 			"ypos"					"99"
 			"zpos"					"3"
 			"wide"					"10"
@@ -452,7 +474,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"CapNumPlayers"
 			"font"			"HudFontSmallest"
-			"xpos"			"26"
+			"xpos"			"25"
 			"ypos"			"99"
 			"zpos"			"4"
 			"wide"			"30"
@@ -490,9 +512,9 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"Blocked"	
-			"xpos"			"35"
-			"ypos"			"82"
-			"zpos"			"2"
+			"xpos"			"34"
+			"ypos"			"99"
+			"zpos"			"4"
 			"wide"			"10"
 			"tall"			"10"
 			"autoResize"	"0"
