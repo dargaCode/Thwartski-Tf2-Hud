@@ -78,11 +78,11 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HomeCPIcon"	
-		"xpos"			"65"		
-		"ypos"			"117"
+		"xpos"			"64"		
+		"ypos"			"116"
 		"zpos"			"1"
-		"wide"			"16"
-		"tall"			"16"
+		"wide"			"18"
+		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -128,7 +128,7 @@
 		
 		"if_multiple_trains_red"
 		{
-			"image"			"../hud/cart_track_neutral_opaque"//"../hud/cart_home_red_square"
+			"image"			"../hud/cart_home_red_square"
 		}
 		
 		"if_multiple_trains_blue"
@@ -142,10 +142,10 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"SimpleControlPointTemplate"	
 		"xpos"			"60"		
-		"ypos"			"116"	
+		"ypos"			"117"	
 		"zpos"			"1"
-		"wide"			"18"	
-		"tall"			"18"
+		"wide"			"16"	
+		"tall"			"16"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -170,7 +170,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"EscortItemPanel"
 		"xpos"			"0"
-		"ypos"			"8"
+		"ypos"			"9"
 		"zpos"			"2"
 		"wide"			"80"		
 		"tall"			"130"
