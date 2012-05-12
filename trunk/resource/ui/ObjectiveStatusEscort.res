@@ -205,7 +205,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"82"
+				"ypos"			"78"
 			}
 		}	
 		
@@ -371,11 +371,11 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"EscortItemImageAlert"	
-			"xpos"			"-4"
+			"xpos"			"15"
 			"ypos"			"38"
 			"zpos"			"0"
-			"wide"			"60"
-			"tall"			"30"
+			"wide"			"50"
+			"tall"			"25"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -387,8 +387,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"xpos"			"-5"
-				"ypos"			"75"
+				"ypos"			"71"
 			}
 		}
 		
@@ -424,7 +423,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"83"
+				"ypos"			"78"
 			}	
 		}
 		
@@ -478,7 +477,7 @@
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"82"
+				"ypos"			"78"
 			}	
 		}
 		
@@ -502,19 +501,18 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"22"
-				"wide"			"8"
-				"tall"			"8"
+				"xpos"			"35"
+
 			}
 			
 			"if_multiple_trains_top"
 			{
-				"ypos"			"46"
+				"ypos"			"45"
 			}	
 			
 			"if_multiple_trains_bottom"
 			{
-				"ypos"			"83"
+				"ypos"			"78"
 			}
 		}
 	
