@@ -162,7 +162,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"EscortItemPanel"
 		"xpos"			"0"
-		"ypos"			"9"
+		"ypos"			"10"
 		"zpos"			"20"
 		"wide"			"80"		
 		"tall"			"130"
