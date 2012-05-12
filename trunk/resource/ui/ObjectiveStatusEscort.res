@@ -58,8 +58,8 @@
 		"fieldName"		"ProgressBar"	
 		"xpos"			"73"
 		"ypos"			"123"
-		"zpos"			"4"
-		"wide"			"254"
+		"zpos"			"1"
+		"wide"			"200"
 		"tall"			"4"
 		"visible"		"0"
 		"enabled"		"1"
@@ -109,31 +109,23 @@
 		
 		"if_multiple_trains"
 		{
-			"xpos"			"59"
-			"zpos"			"5"
-			"wide"			"14"
-			"tall"			"14"
-			"image"			"../hud/cart_track_neutral_opaque"
+			"xpos"			"67"
+			"ypos"			"114"
+			"zpos"			"-10"
+			"wide"			"12"
+			"tall"			"12"
+			"image"			"../hud/cart_point_neutral_opaque"
 		}
 		
 		"if_multiple_trains_top"
 		{
-			"ypos"			"113"
-		}
+		//hide it so the one underneath will be behind the bottom cart
+		"ypos"			"1114"
+		}	
 		
 		"if_multiple_trains_bottom"
 		{
-			"ypos"			"113"
-		}
-		
-		"if_multiple_trains_red"
-		{
-			"image"			"../hud/cart_home_red_square"
-		}
-		
-		"if_multiple_trains_blue"
-		{
-			"image"			"../hud/cart_home_blue_square"
+
 		}
 	}
 	
@@ -171,18 +163,20 @@
 		"fieldName"		"EscortItemPanel"
 		"xpos"			"0"
 		"ypos"			"9"
-		"zpos"			"2"
+		"zpos"			"20"
 		"wide"			"80"		
 		"tall"			"130"
 		"visible"		"1"
 		"enabled"		"1"
-				
-		"if_multiple_trains"
+		
+		"if_multiple_trains_top"
 		{
-			"ypos"			"48"
-			"zpos"			"8"
-			"wide"			"52"
-			"tall"			"170"
+			"ypos"			"59"
+		}										
+		
+		"if_multiple_trains_bottom"
+		{
+			"ypos"			"49"
 		}
 		
 		"RecedeTime"
@@ -203,16 +197,7 @@
 			"textAlignment"	"center"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			//"fgcolor" 		"255 0 0 255"
-			
-			"if_multiple_trains"
-			{
-				"font"			"ItemFontAttribSmall"
-				"xpos"			"21"
-				"wide"			"11"
-				"tall"			"10"
-			}			
-			
+					
 			"if_multiple_trains_top"
 			{
 				"ypos"			"46"
@@ -254,10 +239,10 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"11"
+				"xpos"			"29"
 				"ypos"			"43"
-				"wide"			"30"
-				"tall"			"30"
+				"wide"			"21"
+				"tall"			"19"
 			}						
 		}
 		
@@ -289,14 +274,19 @@
 				"image"			"../hud/color_panel_red"	
 				
 			}
-			
-			"if_multiple_trains"
+
+
+			"if_multiple_trains_top"
 			{
-				"xpos"			"11"
 				"ypos"			"43"
-				"wide"			"30"
-				"tall"			"30"
-			}						
+			}	
+			
+			"if_multiple_trains_bottom"
+			{
+				"ypos"			"76"
+			}	
+
+			
 		}
 		
 		"BlackCartBGThwartski"
@@ -317,25 +307,28 @@
 			"scaleImage"	"1"
 			"image"			""
 			"fillcolor"		"0 0 0 255"
-			
-			"if_team_blue"
+
+			"if_multiple_trains_top"
 			{
-				"image"			""
-			}		
+				"xpos"			"32"
+				"ypos"			"44"
+				"wide"			"15"
+				"tall"			"12"
+			}	
 			
-			"if_team_red"
+			"if_multiple_trains_bottom"
 			{
-				"image"			""	
-			}
-			
-			"if_multiple_trains"
-			{
-				"xpos"			"11"
-				"ypos"			"43"
-				"wide"			"30"
-				"tall"			"30"
+				"xpos"			"32"
+				"ypos"			"77"
+				"zpos"			"2"
+				"wide"			"15"
+				"tall"			"13"
 			}						
 		}
+		
+		
+		
+		
 		
 		"EscortItemImageBottom"
 		{
@@ -367,10 +360,10 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"11"
+				"xpos"			"29"
 				"ypos"			"71"
-				"wide"			"30"
-				"tall"			"30"
+				"wide"			"21"
+				"tall"			"19"
 			}			
 		}
 		
@@ -421,14 +414,12 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"22"
-				"wide"			"8"
-				"tall"			"8"
+				"xpos"			"35"
 			}
 			
 			"if_multiple_trains_top"
 			{
-				"ypos"			"46"
+				"ypos"			"45"
 			}	
 			
 			"if_multiple_trains_bottom"
@@ -449,24 +440,7 @@
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"capture_icon_white"
-			"scaleImage"	"1"
-			
-			"if_multiple_trains"
-			{
-				"xpos"			"20"
-				"wide"			"5"
-				"tall"			"10"
-			}
-			
-			"if_multiple_trains_top"
-			{
-				"ypos"			"45"
-			}	
-			
-			"if_multiple_trains_bottom"
-			{
-				"ypos"			"81"
-			}	
+			"scaleImage"	"1"	
 		}
 
 		"CapNumPlayers"
@@ -499,7 +473,7 @@
 			
 			"if_multiple_trains_top"
 			{
-				"ypos"			"46"
+				"ypos"			"45"
 			}										
 			
 			"if_multiple_trains_bottom"
