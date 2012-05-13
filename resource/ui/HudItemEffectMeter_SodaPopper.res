@@ -6,9 +6,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r98"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"ypos"			"r95"	[$WIN32]
 		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -39,9 +37,9 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
-		"ypos"					"7"
+		"ypos"					"6"
 		"zpos"					"2"
-		"wide"					"200"
+		"wide"					"198"
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
@@ -49,32 +47,10 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"#TF_Ball"
-		"textAlignment"			"center"
+		"textAlignment"			"East"
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontSmallestBold"//"HudFontMediumSmallBold"
-	}
-
-	"UpperMeterLabelThwartski"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"UpperMeterLabelThwartski"
-		"xpos"					"0"
-		"ypos"					"7"
-		"zpos"					"3"
-		"wide"					"200"
-		"tall"					"15"
-		"autoResize"			"1"
-		"pinCorner"				"2"
-		"visible"				"0"
-		"enabled"				"1"
-		"tabPosition"			"0"
-		"labelText"				"HYPE"
-		"textAlignment"			"center"
-		"dulltext"				"0"
-		"brighttext"			"0"
-		"font"					"HudFontSmallestBold"//"HudFontMediumSmallBold"
-		"fgcolor" 	"0 0 0 100"
 	}
 	
 	"ItemEffectMeter"
@@ -86,7 +62,7 @@
 		"ypos"					"8"
 		"zpos"					"2"
 		"wide"					"200"
-		"tall"					"12"				
+		"tall"					"10"				
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"1"
