@@ -128,13 +128,34 @@
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
 	}
+	
+	"VerticalBlackBGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BlackCartBGThwartski"	
+		"xpos"			"100"
+		"ypos"			"31"
+		"zpos"			"-2"
+		"wide"			"24"
+		"tall"	 		"54"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		""
+		"scaleImage"	"1"
+		"image"			""
+		"fillcolor"		"0 0 0 255"
+	}
+	
 	"HorizontalTeamColorThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"HorizontalTeamColorThwartski"
 		"xpos"			"85"
 		"ypos"			"46"
-		"zpos"			"-1"
+		"zpos"			"-3"
 		"wide"			"54"
 		"tall"	 		"24"
 		"autoResize"		"0"
@@ -151,6 +172,26 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" 		"0"	
+	}
+
+	"HorizontalBlackBGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HorizontalBlackBGThwartski"	
+		"xpos"			"85"
+		"ypos"			"46"
+		"zpos"			"-4"
+		"wide"			"54"
+		"tall"	 		"24"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		""
+		"scaleImage"	"1"
+		"image"			""
+		"fillcolor"		"0 0 0 255"
 	}
 	
 	"PlayerStatusBleedImage"
