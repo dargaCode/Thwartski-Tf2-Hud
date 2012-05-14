@@ -1,4 +1,4 @@
-//bazaar bargain count
+//Bazaar Bargain headcount
 
 "Resource/UI/HudItemEffectMeter_Sniper.res"
 {

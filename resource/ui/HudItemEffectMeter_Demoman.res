@@ -1,4 +1,4 @@
-//eyelander count
+//Eyelander headcount
 
 //inspired by more/revan/broesel
 

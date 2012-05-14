@@ -1,4 +1,4 @@
-//frontier justice count
+//Frontier Justice headcount
 
 "Resource/UI/HudItemEffectMeter_Engineer.res"
 {
