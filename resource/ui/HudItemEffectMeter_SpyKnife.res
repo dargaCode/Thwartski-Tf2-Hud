@@ -6,9 +6,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r62"	[$WIN32]
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
+		"ypos"			"r60"	[$WIN32]
 		"wide"			"200"
 		"tall"			"50"
 		"MeterFG"		"White"
@@ -41,7 +39,7 @@
 		"xpos"					"0"
 		"ypos"					"7"
 		"zpos"					"2"
-		"wide"					"200"
+		"wide"					"198"
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
@@ -49,7 +47,7 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"#TF_Ball"
-		"textAlignment"			"center"
+		"textAlignment"			"east"
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontSmallestBold"//"HudFontMediumSmallBold"
