@@ -13,12 +13,6 @@
 		"enabled"			"1"
 		"progress_xpos"		"79"
 		"progress_wide"		"270"
-		
-		"if_multiple_trains"
-		{
-			"ypos"				"r200"
-			"tall"				"200"
-		}
 	}
 	
 	"LevelBar"
@@ -521,7 +515,7 @@
 			"ControlName"		"EditablePanel"
 			"fieldName"			"EscortTeardrop"
 			"xpos"				"13"
-			"ypos"				"13"		
+			"ypos"				"-10"		
 			"zpos"				"20"
 			"wide"				"100"			
 			"tall"				"65"		
@@ -530,10 +524,7 @@
 			
 			"if_multiple_trains"
 			{
-				"xpos"			"9"
-				"ypos"			"2"			
-				"wide"			"65"			
-				"tall"			"42"			
+			
 			}	
 						
 			"Teardrop"
@@ -545,7 +536,7 @@
 				"zpos"				"0"
 				"wide"				"54"				
 				"tall"				"65"
-				"visible"			"1"
+				"visible"			"0"
 				"enabled"			"1"
 				"scaleImage"		"1"
 				"icon"				"cappoint_progressbar_teardrop"
@@ -553,10 +544,7 @@
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"0"
-					"ypos"			"0"			
-					"wide"			"35"			
-					"tall"			"42"			
+			
 				}	
 			}
 
@@ -581,11 +569,7 @@
 				
 				"if_multiple_trains"
 				{
-					"font"			"DefaultVerySmall"
-					"xpos"			"0"
-					"ypos"			"3"			
-					"wide"			"35"			
-					"tall"			"28"			
+			
 				}	
 			}
 
@@ -606,10 +590,7 @@
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"2"
-					"ypos"			"2"			
-					"wide"			"31"			
-					"tall"			"31"			
+			
 				}	
 			}	
 			
@@ -633,10 +614,7 @@
 				
 				"if_multiple_trains"
 				{
-					"xpos"			"8"
-					"ypos"			"8"			
-					"wide"			"20"			
-					"tall"			"20"			
+		
 				}		
 			}			
 		}
