@@ -67,7 +67,6 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r284"	[$WIN32]
-		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"250"
 	}
@@ -79,7 +78,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"
 		"ypos"			"r52"
-		"zpos"			"1"
+		"zpos"			"-10"
 		"wide"			"200"
 		"tall"			"20"
 		"MeterFG"		"White"
@@ -93,7 +92,7 @@
 		"enabled"		"1"
 		"xpos"			"c-100"
 		"ypos"			"r52"
-		"zpos"			"1"
+		"zpos"			"-10"
 		"wide"			"200"
 		"tall"			"20"
 		"MeterFG"		"White"
@@ -107,7 +106,6 @@
 		"enabled"		"1"
 		"xpos"			"r80"	[$WIN32]
 		"ypos"			"r21"	[$WIN32]
-		"zpos"			"0"
 		"wide"			"60"
 		"tall"			"8"
 		"MeterFG"		"White"
@@ -727,6 +725,7 @@
 		"fieldName"				"HudControlPointIcons"
 		"xpos"					"0"
 		"ypos"					"410"
+		"zpos"					"2"
 		"wide"					"f0"
 		"tall"					"200"
 		"visible"				"1"
@@ -904,7 +903,6 @@
 		"enabled"		"1"
 		"xpos"			"c-100"	[$WIN32]
 		"ypos"			"r284"	[$WIN32]
-		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"250"
 	}	
