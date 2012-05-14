@@ -9,11 +9,11 @@
 		"fieldName"		"HudItemEffectMeter"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r125"	[$WIN32]
+		"xpos"			"c-45"	[$WIN32]
+		"ypos"			"r115"	[$WIN32]
 		"xpos"			"r194"	[$X360]
 		"ypos"			"r74"	[$X360]
-		"wide"			"200"
+		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
@@ -38,13 +38,33 @@
 		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"				
 	}
 	
-	//"heads"
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
-		"xpos"					"80"
-		"ypos"					"34"
+		"xpos"					"25"
+		"ypos"					"27"
+		"zpos"					"2"
+		"wide"					"41"
+		"tall"					"15"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"0"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"CRITS"//"#TF_Ball"//overwriting text didn't work
+		"textAlignment"			"center"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"TFFontSmall"
+	}
+	
+	"ItemEffectMeterLabelThwartski"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterLabelThwartski"
+		"xpos"					"25"
+		"ypos"					"27"
 		"zpos"					"2"
 		"wide"					"41"
 		"tall"					"15"
@@ -53,38 +73,40 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				""
+		"labelText"				"CRITS"//"#TF_Ball"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"TFFontSmall"
 	}
 	
+	
 	"ItemEffectMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
-		"xpos"					"0"
-		"ypos"					"8"
+		"xpos"					"25"
+		"ypos"					"23"
 		"zpos"					"2"
-		"wide"					"200"
-		"tall"					"20"				
+		"wide"					"40"
+		"tall"					"6"				
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"0"
-		"enabled"				"1"
+		"enabled"				"0"
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
-	}				
+	}					
+	
 	
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"80"
-		"ypos"					"17"
+		"xpos"					"25"
+		"ypos"					"10"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
@@ -97,14 +119,15 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"font"					"HudFontMedium"
+		//"fgcolor"				"0 255 0 255"
 	}
 	
 	"CountShadowThwartski"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"CountShadowThwartski"
-		"xpos"					"81"
-		"ypos"					"18"
+		"xpos"					"26"
+		"ypos"					"11"
 		"zpos"					"1"
 		"wide"					"40"
 		"tall"					"20"	
