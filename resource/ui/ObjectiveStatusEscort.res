@@ -514,9 +514,9 @@
 		{
 			"ControlName"		"EditablePanel"
 			"fieldName"			"EscortTeardrop"
-			"xpos"				"13"
-			"ypos"				"-10"		
-			"zpos"				"20"
+			"xpos"				"10"
+			"ypos"				"34"		
+			"zpos"				"10"
 			"wide"				"100"			
 			"tall"				"65"		
 			"visible"			"0"
@@ -524,8 +524,15 @@
 			
 			"if_multiple_trains"
 			{
-			
+				"xpos"				"10"//"32"
+				"ypos"				"-11"//"33"
 			}	
+			
+			"if_single_with_hills"
+			{
+				"xpos"				"12"
+				"ypos"				"34"
+			}
 						
 			"Teardrop"
 			{
