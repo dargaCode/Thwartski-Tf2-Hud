@@ -77,11 +77,11 @@
 		"fieldName"		"HudDemomanCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r225"	[$WIN32]
+		"xpos"			"c-100"
+		"ypos"			"r52"
 		"zpos"			"1"
 		"wide"			"200"
-		"tall"			"250"
+		"tall"			"20"
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}	
@@ -91,8 +91,8 @@
 		"fieldName"		"HudBowCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-100"	[$WIN32]
-		"ypos"			"r54"	[$WIN32]
+		"xpos"			"c-100"
+		"ypos"			"r52"
 		"zpos"			"1"
 		"wide"			"200"
 		"tall"			"20"
