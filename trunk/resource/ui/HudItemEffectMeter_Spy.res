@@ -1,4 +1,4 @@
-//diamondback count
+//Diamondback headcount
 
 "Resource/UI/HudItemEffectMeter_Spy.res"
 {
