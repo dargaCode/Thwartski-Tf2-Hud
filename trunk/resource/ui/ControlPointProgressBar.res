@@ -95,6 +95,6 @@
 		"enabled"	"1"
 		"scaleImage"	"1"
 		"icon"		"cappoint_progressbar_blocked"
-		"iconColor"	"255 255 255 255"
+		"iconColor"	"255 0 0 255"//"255 255 255 255"
 	}
 }

@@ -43,7 +43,7 @@
 		"ControlName"		"Panel"
 		"fieldName"		"bottombarblank"
 		"xpos"			"0"
-		"ypos"			"r8"
+		"ypos"			"r3"
 		"tall"			"0"		// this needs to match the size of BottomBar
 		"tall"			"0"	
 		"wide"			"0"
