@@ -208,7 +208,7 @@
 		"enabled"	"1"
 		"xpos"		"137"	[$WIN32]
 		"ypos"		"r43"	[$WIN32]
-		"wide"		"188"
+		"wide"		"180"
 		"tall"		"200"
 	}
 
@@ -258,8 +258,8 @@
 		"fieldName" "BuildingStatus_Spy"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"-6"	[$WIN32]
-		"ypos"		"0"	[$WIN32]	
+		"xpos"		"-18"
+		"ypos"		"-12"	
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -271,12 +271,8 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"-6"
-		"xpos_hidef"		"32"
-		"xpos_lodef"		"40"
-		"ypos"		"0"
-		"ypos_hidef"		"16"
-		"ypos_lodef"		"25"
+		"xpos"		"-18"
+		"ypos"		"-12"
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -1088,9 +1084,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudAchievementTracker"
-		"xpos"			"5"
+		"xpos"			"0"
 		"NormalY"		"10"
-		"EngineerY"		"170"
+		"EngineerY"		"158"
 		"zpos"			"2"
 		"wide"			"200"
 		"tall"			"280"
