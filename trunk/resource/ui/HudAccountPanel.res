@@ -7,12 +7,12 @@
 {
 	"CHudAccountPanel"
 	{
-		"delta_item_x"			"30"
-		"delta_item_start_y"	"130"//"105"
-		"delta_item_end_y"		"165"//"80"
+		"delta_item_x"			"80"//"60"
+		"delta_item_start_y"	"90"//"130"//"105"
+		"delta_item_end_y"		"145"//"165"//"80"
 		"PositiveColor"			"0 255 0 255"
 		"NegativeColor"			"255 0 0 255"
-		"delta_lifetime"		"1.5"
+		"delta_lifetime"		"1.25"
 		"delta_item_font"		"HudFontMediumSmall"//"HudFontMedium"
 	}
 	
@@ -30,9 +30,7 @@
 		"image"			"../hud/misc_ammo_area_blue"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/misc_ammo_area_red"
-		"teambg_2_lodef"	"../hud/misc_ammo_area_red_lodef"
 		"teambg_3"		"../hud/misc_ammo_area_blue"
-		"teambg_3_lodef"	"../hud/misc_ammo_area_blue_lodef"
 	}
 	
 	"MetalIcon"	
