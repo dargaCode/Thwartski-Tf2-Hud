@@ -170,7 +170,7 @@
 		"fieldName"				"CHudAccountPanel"
 		"xpos"					"c-43"	[$WIN32]
 		"ypos"					"r290"	[$WIN32]
-		"wide"					"100"
+		"wide"					"200"
 		"tall"  				"225"
 		"visible" 				"1"
 		"enabled" 				"1"
