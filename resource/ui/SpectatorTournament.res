@@ -27,7 +27,7 @@
 			"visible"		"0"
 			"wide"			"55"
 			"tall"			"33"
-			"zpos"			"1"
+			"zpos"			"10"
 			
 			"ClassBGThwartski"
 			{
