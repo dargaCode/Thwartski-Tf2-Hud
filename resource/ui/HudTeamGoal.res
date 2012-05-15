@@ -7,8 +7,8 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"320"
-		"tall"			"150"
+		"wide"			"160"
+		"tall"			"45"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -17,17 +17,22 @@
 		"scaleImage"		"1"
 		"teambg_2"		"../hud/death_panel_red_bg"
 		"teambg_3"		"../hud/death_panel_blue_bg"
+		
+		"src_corner_height"		"40"
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"
+		
 	}
 	"SwitchLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"SwitchLabel"
-		"font"			"HudFontSmallBold"
-		"xpos"			"80"
-		"ypos"			"20"
+		"font"			"HudFontSmallest"
+		"xpos"			"52"
+		"ypos"			"5"
 		"zpos"			"1"
-		"wide"			"220"	[$WIN32]
-		"wide"			"180"	[$X360]
+		"wide"			"110"	[$WIN32]
 		"tall"			"15"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -35,35 +40,32 @@
 		"enabled"		"1"
 		"wrap"			"1"
 		"labelText"		"#TF_teamswitch_attackers"
-		"textAlignment"		"North"
+		"textAlignment"		"north-west"
 	}
 	"GoalLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"GoalLabel"
-		"font"			"HudFontSmall"
-		"xpos"			"80"
-		"ypos"			"35"
+		"font"			"HudFontSmallest"
+		"xpos"			"52"
+		"ypos"			"5"
 		"zpos"			"1"
-		"wide"			"220"
-		"wide_hidef"	"200"
-		"wide_lodef"		"230"
+		"wide"			"110"
 		"tall"			"55"
-		"tall_lodef"	"60"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"wrap"			"1"
 		"labelText"		""
-		"textAlignment"		"North"
+		"textAlignment"		"north-west"
 	}
 	"GoalImage"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"GoalImage"
-		"xpos"			"27"
-		"ypos"			"25"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"45"
 		"tall"			"45"
@@ -73,5 +75,11 @@
 		"enabled"		"1"
 		"image"			"../hud/hud_icon_attack"
 		"scaleImage"		"1"
+		
+		"src_corner_height"		"6"
+		"src_corner_width"		"6"			
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"
+		
 	}
 }
