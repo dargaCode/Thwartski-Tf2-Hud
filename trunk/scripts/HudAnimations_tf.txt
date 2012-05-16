@@ -1,3 +1,6 @@
+//medic rainbow colors based on commhud
+
+
 // sample animation script
 //
 //
@@ -422,20 +425,37 @@ event HudTournamentSetupPanelClose
 
 event HudMedicCharged
 {
-	Animate	ChargeLabel 		FgColor		"Red"			Linear 0.0 0.2
-	Animate	ChargeLabel 		FgColor		"Orange"		Linear 0.2 0.2
-	Animate	ChargeLabel 		FgColor		"255 255 0 255"		Linear 0.4 0.2
-	Animate	ChargeLabel 		FgColor		"0 255 0 255"		Linear 0.6 0.2
-	Animate	ChargeLabel 		FgColor		"0 0 255 0"		Linear 0.8 0.2
-	Animate	ChargeLabel 		FgColor		"255 0 255 255"		Linear 1.0 0.2
 
-	Animate	ChargeMeter 		FgColor		"Red"			Linear 0.0 0.2
-	Animate	ChargeMeter 		FgColor		"Orange"		Linear 0.2 0.2
-	Animate	ChargeMeter 		FgColor		"255 255 0 255"		Linear 0.4 0.2
-	Animate	ChargeMeter 		FgColor		"0 255 0 255"		Linear 0.6 0.2
-	Animate	ChargeMeter 		FgColor		"0 0 255 0"		Linear 0.8 0.2
-	Animate	ChargeMeter 		FgColor		"255 0 255 255"		Linear 1.0 0.2
+	//switched order so top meter will be out of synch from the main bar.
 
+
+	Animate	ChargeLabelPercentThwartski 		FgColor		"0 255 0 255"		Spline 0.0 0.1 //green
+	Animate	ChargeLabelPercentThwartski 		FgColor		"0 255 155 255"		Spline 0.1 0.1 //blue green
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 255 255 255"		Spline 0.2 0.1 //aqua
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 155 255 255"		Spline 0.3 0.1 //turquoise
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 0 255 255"		Spline 0.4 0.1 //blue
+	Animate	ChargeLabelPercentThwartski			FgColor		"155 0 255 255"		Spline 0.5 0.1 //purple
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 255 255"		Spline 0.6 0.1 //fuscia
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 155 255"		Spline 0.7 0.1 //magenta
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 0 255"		Spline 0.8 0.1 //red
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 155 0 255"		Spline 0.9 0.1 //orange
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 1.0 0.1 //yellow
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 1.1 0.1 //lime green
+	
+
+	Animate	ChargeMeter 						FgColor		"0 255 0 255"		Spline 0.0 0.1 //green
+	Animate	ChargeMeter 						FgColor		"0 255 155 255"		Spline 0.1 0.1 //blue green
+	Animate	ChargeMeter 						FgColor		"0 255 255 255"		Spline 0.2 0.1 //aqua
+	Animate	ChargeMeter 						FgColor		"0 155 255 255"		Spline 0.3 0.1 //turquoise
+	Animate	ChargeMeter 						FgColor		"0 0 255 255"		Spline 0.4 0.1 //blue
+	Animate	ChargeMeter 						FgColor		"155 0 255 255"		Spline 0.5 0.1 //purple
+	Animate	ChargeMeter 						FgColor		"255 0 255 255"		Spline 0.6 0.1 //fuscia
+	Animate	ChargeMeter 						FgColor		"255 0 155 255"		Spline 0.7 0.1 //magenta
+	Animate	ChargeMeter 						FgColor		"255 0 0 255"		Spline 0.8 0.1 //red
+	Animate	ChargeMeter 						FgColor		"255 155 0 255"		Spline 0.9 0.1 //orange
+	Animate	ChargeMeter 						FgColor		"255 255 0 255"		Spline 1.0 0.1 //yellow
+	Animate	ChargeMeter 						FgColor		"255 255 0 255"		Spline 1.1 0.1 //lime green
+	
 	Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
 	Animate ScreenshotPanel		Position	"c-83 13"	Spline 0.001 0.2
 
@@ -453,8 +473,8 @@ event HudMedicChargedStop
 	StopEvent HudMedicCharged 0.0
 	StopEvent HudMedicChargedLoop 0.0
 	
-	Animate	ChargeLabel 	FgColor		"TanLight"		Linear 0.0 0.0001
-	Animate	ChargeMeter 	FgColor		"TanLight"		Linear 0.0 0.0001
+	Animate	ChargeLabelPercentThwartski 	FgColor		"0 255 0 255"		Linear 0.0 0.0001
+	Animate	ChargeMeter 					FgColor		"0 255 0 255"		Linear 0.0 0.0001
 }
 
 //====================================
