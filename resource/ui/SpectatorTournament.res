@@ -142,7 +142,7 @@
 				"font"			"defaultverysmall"
 				"xpos"			"3"
 				"ypos"			"23"
-				"zpos"			"5"
+				"zpos"			"2"
 				"wide"			"48"
 				"tall"			"8"
 				"autoResize"	"0"
