@@ -1,5 +1,7 @@
 //Cow mangler
 
+//meter tick marks inspired by eve hud
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter
@@ -41,7 +43,7 @@
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
 		"ypos"					"7"
-		"zpos"					"2"
+		"zpos"					"4"
 		"wide"					"198"
 		"tall"					"15"
 		"autoResize"			"1"
@@ -74,4 +76,66 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 	}					
+	
+	"Hatch20Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch25Thwartski"
+		"xpos"				"40"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch40Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch50Thwartski"
+		"xpos"				"80"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	
+	"Hatch60Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch50Thwartski"
+		"xpos"				"120"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch80Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch75Thwartski"
+		"xpos"				"160"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
 }

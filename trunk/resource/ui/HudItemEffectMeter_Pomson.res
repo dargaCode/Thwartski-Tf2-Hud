@@ -1,4 +1,7 @@
 "Resource/UI/HudItemEffectMeter_Pomson.res"
+
+//meter tick marks inspired by eve hud
+
 {
 	HudItemEffectMeter
 	{
@@ -39,7 +42,7 @@
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
 		"ypos"					"10"
-		"zpos"					"2"
+		"zpos"					"4"
 		"wide"					"198"
 		"tall"					"15"
 		"autoResize"			"1"
@@ -72,4 +75,50 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 	}					
+
+	"Hatch25Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch25Thwartski"
+		"xpos"				"50"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch50Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch50Thwartski"
+		"xpos"				"100"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch75Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch75Thwartski"
+		"xpos"				"150"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
 }

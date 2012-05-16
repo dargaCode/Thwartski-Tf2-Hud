@@ -1,5 +1,7 @@
 // Righteous Bison
 
+//meter tick marks inspired by eve hud
+
 "Resource/UI/HudItemEffectMeter.res"
 {
 	HudItemEffectMeter
@@ -41,8 +43,8 @@
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
 		"ypos"					"10"
-		"zpos"					"2"
-		"wide"					"198"
+		"zpos"					"4"
+		"wide"					"199"
 		"tall"					"15"
 		"autoResize"			"1"
 		"pinCorner"				"2"
@@ -73,5 +75,50 @@
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
-	}					
+	}	
+
+		"Hatch25Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch25Thwartski"
+		"xpos"				"50"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch50Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch50Thwartski"
+		"xpos"				"100"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
+	
+	"Hatch75Thwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"Hatch75Thwartski"
+		"xpos"				"150"
+		"ypos"				"8"
+		"zpos"				"3"
+		"wide"				"1"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"54 51 52 220"
+	}
 }
