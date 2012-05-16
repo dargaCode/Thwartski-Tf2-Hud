@@ -58,20 +58,38 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"c48"
-		"ypos"			"8"//"18"
+		"xpos"			"c46"
+		"ypos"			"8"
 		"wide"			"600"
 		"tall"			"19"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#game_respawntime_in_secs"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"font"			"HudFontMediumSmallSecondary"
-		"fgcolor"		"0 255 0 255"
 	}
 
+	"SpectatorLabelThwartski"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"		"SpectatorLabelThwartski"
+		"xpos"			"c-200"
+		"ypos"			"r90"
+		"wide"			"400"
+		"tall"			"60"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"spectating"
+		"textAlignment"		"center"
+		"font"			"HudFontBiggerBold"//"HudFontGiantBold"
+		"fgcolor"		"255 0 0 200"
+	}
+	
+	
 	"MapLabel"
 	{
 		"ControlName"		"CExLabel"
