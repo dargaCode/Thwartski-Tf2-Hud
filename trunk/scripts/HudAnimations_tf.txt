@@ -430,19 +430,18 @@ event HudMedicCharged
 
 
 	Animate	ChargeLabelPercentThwartski 		FgColor		"0 255 0 255"		Spline 0.0 0.1 //green
-	Animate	ChargeLabelPercentThwartski 		FgColor		"0 255 155 255"		Spline 0.1 0.1 //blue green
-	Animate	ChargeLabelPercentThwartski			FgColor		"0 255 255 255"		Spline 0.2 0.1 //aqua
-	Animate	ChargeLabelPercentThwartski			FgColor		"0 155 255 255"		Spline 0.3 0.1 //turquoise
-	Animate	ChargeLabelPercentThwartski			FgColor		"0 0 255 255"		Spline 0.4 0.1 //blue
-	Animate	ChargeLabelPercentThwartski			FgColor		"155 0 255 255"		Spline 0.5 0.1 //purple
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 0.1 0.1 //lime green	
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 0.2 0.1 //yellow
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 155 0 255"		Spline 0.3 0.1 //orange
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 0 255"		Spline 0.4 0.1 //red
+	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 155 255"		Spline 0.5 0.1 //magenta
 	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 255 255"		Spline 0.6 0.1 //fuscia
-	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 155 255"		Spline 0.7 0.1 //magenta
-	Animate	ChargeLabelPercentThwartski 		FgColor		"255 0 0 255"		Spline 0.8 0.1 //red
-	Animate	ChargeLabelPercentThwartski 		FgColor		"255 155 0 255"		Spline 0.9 0.1 //orange
-	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 1.0 0.1 //yellow
-	Animate	ChargeLabelPercentThwartski 		FgColor		"255 255 0 255"		Spline 1.1 0.1 //lime green
+	Animate	ChargeLabelPercentThwartski			FgColor		"155 0 255 255"		Spline 0.7 0.1 //purple
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 0 255 255"		Spline 0.8 0.1 //blue
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 155 255 255"		Spline 0.9 0.1 //turquoise
+	Animate	ChargeLabelPercentThwartski			FgColor		"0 255 255 255"		Spline 1.0 0.1 //aqua
+	Animate	ChargeLabelPercentThwartski 		FgColor		"0 255 155 255"		Spline 1.1 0.1 //blue green
 	
-
 	Animate	ChargeMeter 						FgColor		"0 255 0 255"		Spline 0.0 0.1 //green
 	Animate	ChargeMeter 						FgColor		"0 255 155 255"		Spline 0.1 0.1 //blue green
 	Animate	ChargeMeter 						FgColor		"0 255 255 255"		Spline 0.2 0.1 //aqua
