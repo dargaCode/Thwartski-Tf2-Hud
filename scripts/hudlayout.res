@@ -629,8 +629,9 @@
 		"fieldName" "HudVoiceSelfStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r42" 	[$WIN32]
-		"ypos" "355"	[$WIN32]
+		"xpos" "r68" 	[$WIN32]
+		"ypos" "r70"	[$WIN32]
+		"zpos" "2"
 		"wide" "32"
 		"tall" "32"
 	}
@@ -640,28 +641,28 @@
 		"fieldName" "HudVoiceStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r145" [$WIN32]
-		"ypos" "0" [$WIN32]
+		"xpos" "r88" [$WIN32]
+		"ypos" "0" 	[$WIN32]
 		"wide" "145"
-		"tall" "400"
+		"tall" "357"
 
 		"item_wide"	"135"
 		
 		"show_avatar"		"0"
 		
 		"show_dead_icon"	"1"
-		"dead_xpos"			"1"
-		"dead_ypos"			"0"
-		"dead_wide"			"16"
-		"dead_tall"			"16"
+		"dead_xpos"			"0"
+		"dead_ypos"			"2"
+		"dead_wide"			"12"
+		"dead_tall"			"12"
 		
-		"show_voice_icon"	"1"
+		"show_voice_icon"	"0"
 		"icon_ypos"			"0"
 		"icon_xpos"			"15"
-		"icon_tall"			"16"
-		"icon_wide"			"16"
+		"icon_tall"			"12"
+		"icon_wide"			"12"
 		
-		"text_xpos"			"33"
+		"text_xpos"			"12"
 	}
 
 	HudHintDisplay
