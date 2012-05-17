@@ -432,7 +432,6 @@
 		"zpos"			"2"
 		"wide"			"0"
 		"tall"			"0"
-		"tall_minmode"	"0"
 		"visible"		"0"
 		
 		"ScreenshotPanelBG"
