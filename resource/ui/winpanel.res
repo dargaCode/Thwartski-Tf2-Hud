@@ -470,7 +470,7 @@
 		"fillcolor"		"255 255 255 255"
 		"PaintBackgroundType"	"0"
 	}
-	"Player1Avatar"		[$WIN32]
+	"Player1Avatar"	
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player1Avatar"
@@ -489,10 +489,10 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player1Name"
-		"xpos"			"62"//"50"	[$WIN32]
+		"xpos"			"62"//"50"
 		"ypos"			"102"
 		"zpos"			"3"
-		"wide"			"126"	[$WIN32]
+		"wide"			"126"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -539,7 +539,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
-	"Player2Avatar"		[$WIN32]
+	"Player2Avatar"	
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player2Avatar"
@@ -558,10 +558,10 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player2Name"
-		"xpos"			"62"//"50"	[$WIN32]
+		"xpos"			"62"//"50"
 		"ypos"			"119" //"124"
 		"zpos"			"3"
-		"wide"			"126"	[$WIN32]
+		"wide"			"126"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -608,7 +608,7 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
-	"Player3Avatar"		[$WIN32]
+	"Player3Avatar"	
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"Player3Avatar"
@@ -627,10 +627,10 @@
 	{	
 		"ControlName"		"CExLabel"
 		"fieldName"		"Player3Name"
-		"xpos"			"62"//"50"	[$WIN32]
+		"xpos"			"62"//"50"
 		"ypos"			"136"//"146"
 		"zpos"			"3"
-		"wide"			"126"	[$WIN32]
+		"wide"			"126"
 		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"

@@ -81,7 +81,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"3"
-		"labelText"		"&3"	[$WIN32]
+		"labelText"		"&3"
 		"textAlignment"	"west"
 		"dulltext"		"0"
 		"brighttext"	"0"
@@ -121,7 +121,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"3"
-		"labelText"		"BLU"	[$WIN32]
+		"labelText"		"BLU"
 		"textAlignment"	"North"
 		"font"			"HudFontSmallBold"
 		"fgcolor"		"255 255 255 255"
@@ -179,7 +179,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"3"
-		"labelText"		"RED"	[$WIN32]
+		"labelText"		"RED"
 		"textAlignment"	"north"
 		"font"			"HudFontSmallBold"
 		"fgcolor"		"255 255 255 255"
@@ -236,7 +236,7 @@
 		"enabled"		"1"
 		"tabPosition"		"1"
 		"textAlignment"		"center"
-		"labelText"		"RANDOM"	[$WIN32]
+		"labelText"		"RANDOM"
 		"font"			"HudFontSmallest"
 		"fgcolor"		"255 255 255 255"
 	}
@@ -291,7 +291,7 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"2"
-		"labelText"		"SPECTATE"	[$WIN32]
+		"labelText"		"SPECTATE"
 		"textAlignment"	"center"
 		"font"			"HudFontSmallest"
 		"fgcolor"		"255 255 255 255"

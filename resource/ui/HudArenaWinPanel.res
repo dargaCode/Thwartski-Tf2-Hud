@@ -545,10 +545,10 @@
 		{	
 			"ControlName"		"CExLabel"
 			"fieldName"		"Player1Name"
-			"xpos"			"62"//"50"	[$WIN32]
+			"xpos"			"62"//"50"
 			"ypos"			"102"
 			"zpos"			"3"
-			"wide"			"126"	[$WIN32]
+			"wide"			"126"
 			"tall"			"20"
 			"autoResize"		"0"
 			"pinCorner"		"0"

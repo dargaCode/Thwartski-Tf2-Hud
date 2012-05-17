@@ -32,7 +32,7 @@
 		"xpos"			"52"
 		"ypos"			"5"
 		"zpos"			"1"
-		"wide"			"110"	[$WIN32]
+		"wide"			"110"
 		"tall"			"15"
 		"autoResize"		"0"
 		"pinCorner"		"0"
