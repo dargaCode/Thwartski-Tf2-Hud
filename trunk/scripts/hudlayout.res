@@ -403,13 +403,13 @@
 		"tall"	 "480"
 	}
 
-	//taken directly from commhud
+	//Based on commhud.
 	HudDeathNotice
 	{
 		"fieldName" 		"HudDeathNotice"
 		"visible" 			"1"
 		"enabled" 			"1"
-		"xpos"	 			"r640"	[$WIN32]
+		"xpos"	 			"r630"	[$WIN32]
 		"ypos"	 			"6"	[$WIN32]
 		"wide"	 			"628"
 		"tall"	 			"468"
