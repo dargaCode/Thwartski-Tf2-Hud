@@ -43,7 +43,7 @@
 		"ControlName"		"Panel"
 		"fieldName"		"bottombarblank"
 		"xpos"			"0"
-		"ypos"			"r3"
+		"ypos"			"r0"
 		"tall"			"0"		// this needs to match the size of BottomBar
 		"tall"			"0"	
 		"wide"			"0"
@@ -84,8 +84,8 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"spectating"
-		"textAlignment"		"center"
-		"font"			"HudFontBiggerBold"//"HudFontGiantBold"
+		"textAlignment"	"center"
+		"font"			"HudFontMediumBold"//"HudFontMediumBigBold"//"HudFontBiggerBold"//"HudFontGiantBold"
 		"fgcolor"		"255 0 0 200"
 	}
 	
