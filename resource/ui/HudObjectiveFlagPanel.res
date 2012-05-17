@@ -158,7 +158,6 @@
 		"fieldName"		"OutlineBG"
 		"xpos"			"c-140"
 		"ypos"			"r70"
-		"ypos"			"r96"	[$X360]
 		"zpos"			"2"
 		"wide"			"280"
 		"tall"			"80"
@@ -369,7 +368,6 @@
 		"fieldName"		"CaptureFlag"
 		"xpos"			"c-40"
 		"ypos"			"r95"
-		"ypos"			"r111"	[$X360]
 		"zpos"			"5"
 		"wide"			"0"
 		"tall"			"0"

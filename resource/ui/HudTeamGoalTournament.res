@@ -27,7 +27,6 @@
 		"ypos"			"135"
 		"zpos"			"1"
 		"wide"			""
-		"wide"			""	[$X360]
 		"tall"			"15"
 		"autoResize"		"0"
 		"pinCorner"		"0"
