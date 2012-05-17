@@ -101,9 +101,7 @@
 		"depressedfgColor_override" 		"255 255 255 255"
 		
 		"sound_armed"				"ui/item_info_mouseover.wav"
-		"sound_armed_minmode"		""
 		"sound_depressed"			"UI/buttonclickrelease.wav"
-		"sound_depressed_minmode"	""
 
 	}
 	
@@ -159,9 +157,7 @@
 		"armedFgColor_override" 		"255 255 255 255"
 		
 		"sound_armed"				"ui/item_info_mouseover.wav"
-		"sound_armed_minmode"		""
 		"sound_depressed"			"UI/buttonclickrelease.wav"
-		"sound_depressed_minmode"	""
 
 	}
 	
@@ -216,9 +212,7 @@
 		"armedFgColor_override" 		"255 255 255 255"
 
 		"sound_armed"				"ui/item_info_mouseover.wav"
-		"sound_armed_minmode"		""
 		"sound_depressed"			"UI/buttonclickrelease.wav"
-		"sound_depressed_minmode"	""
 
 
 	}
@@ -273,9 +267,7 @@
 		"depressedfgColor_override" 		"255 255 255 255"
 
 		"sound_armed"				"ui/item_info_mouseover.wav"
-		"sound_armed_minmode"		""
 		"sound_depressed"			"UI/buttonclickrelease.wav"
-		"sound_depressed_minmode"	""
 
 
 	}

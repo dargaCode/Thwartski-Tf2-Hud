@@ -14,7 +14,6 @@
 		"delta_item_font"		"HudFontSmallish"		
 		"delta_item_font_big"	"HudFontMedium"	
 		"visible"				"1"
-		"visible_minmode"		"1"
 	}
 	
 	"DamageAccountValueEve"
