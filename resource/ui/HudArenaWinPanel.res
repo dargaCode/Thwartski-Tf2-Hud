@@ -24,7 +24,6 @@
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../hud/winpanel_blue_bg_team"
-			"image_lodef"	"../hud/winpanel_blue_bg_team_lodef"
 			"scaleImage"		"1"
 			"src_corner_height"		"40"				// pixels inside the image
 			"src_corner_width"		"40"			
@@ -44,7 +43,6 @@
 			"visible"		"0"
 			"enabled"		"1"
 			"image"			"../hud/winpanel_red_bg_team"
-			"image_lodef"	"../hud/winpanel_red_bg_team_lodef"
 			"scaleImage"		"1"
 			"src_corner_height"		"40"				// pixels inside the image
 			"src_corner_width"		"40"			
@@ -65,7 +63,6 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/winpanel_blue_bg_team"
-			"image_lodef"	"../hud/winpanel_blue_bg_team_lodef"
 			"scaleImage"		"1"
 			"src_corner_height"		"40"				// pixels inside the image
 			"src_corner_width"		"40"			
@@ -85,7 +82,6 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../hud/winpanel_red_bg_team"
-			"image_lodef"	"../hud/winpanel_red_bg_team_lodef"
 			"scaleImage"		"1"
 			"src_corner_height"		"40"				// pixels inside the image
 			"src_corner_width"		"40"			

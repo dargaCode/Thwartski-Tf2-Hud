@@ -45,9 +45,7 @@
 		"image"			"../hud/character_red_bg"
 		"scaleImage"	"1"	
 		"teambg_2"		"../hud/character_red_bg"
-		"teambg_2_lodef"	"../hud/character_red_bg_lodef"
 		"teambg_3"		"../hud/character_blue_bg"
-		"teambg_3_lodef"	"../hud/character_blue_bg_lodef"
 		
 		"src_corner_height"		"40"				// pixels inside the image
 		"src_corner_width"		"40"			
