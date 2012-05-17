@@ -5,7 +5,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerClass"
-		"xpos"			"r96"
+		"xpos"			"0"
 		"ypos"			"18"
 		"zpos"			"1"
 		"wide"			"f0"
@@ -18,7 +18,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImageBG"
-		"xpos"			"10"	
+		"xpos"			"r87"	
 		"ypos"			"r44"
 		"zpos"			"1"		
 		"wide"			"87"
@@ -41,7 +41,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusClassImage"
-		"xpos"			"30"
+		"xpos"			"r67"
 		"ypos"			"r67"
 		"zpos"			"2"
 		"wide"			"48"
@@ -56,7 +56,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyImage"
-		"xpos"			"63"	
+		"xpos"			"r34"	
 		"ypos"			"r57"
 		"zpos"			"2"
 		"wide"			"36"
@@ -72,12 +72,12 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"PlayerStatusSpyOutlineImage"
-		"xpos"			"3"	
-		"ypos"			"r59"
+		"xpos"			"r34"
+		"ypos"			"r57"
 		"zpos"			"7"
-		"wide"			"55"
-		"tall"			"55"
-		"visible"		"0"
+		"wide"			"36"
+		"tall"			"36"
+		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/class_spy_outline"
 		"scaleImage"	"1"	
