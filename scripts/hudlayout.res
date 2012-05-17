@@ -651,10 +651,10 @@
 		"show_avatar"		"0"
 		
 		"show_dead_icon"	"1"
-		"dead_xpos"			"0"
-		"dead_ypos"			"2"
-		"dead_wide"			"12"
-		"dead_tall"			"12"
+		"dead_xpos"			"-9"
+		"dead_ypos"			"-2"
+		"dead_wide"			"20"
+		"dead_tall"			"20"
 		
 		"show_voice_icon"	"0"
 		"icon_ypos"			"0"
@@ -662,7 +662,7 @@
 		"icon_tall"			"12"
 		"icon_wide"			"12"
 		
-		"text_xpos"			"12"
+		"text_xpos"			"8"
 	}
 
 	HudHintDisplay
