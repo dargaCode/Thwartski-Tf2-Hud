@@ -351,7 +351,7 @@
 		"xpos"			"c20"
 		"ypos"			"c-36"
 		"zpos"			"4"
-		"wide"			"100" [$WIN32] 
+		"wide"			"100"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
