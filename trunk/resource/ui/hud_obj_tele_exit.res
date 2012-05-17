@@ -112,7 +112,6 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"HudFontAlmostSmall"
-			"font_lodef"	"HudFontMedium"
 		}
 		
 		"NotBuiltLabel"
