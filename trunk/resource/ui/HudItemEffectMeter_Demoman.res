@@ -11,8 +11,6 @@
 		"enabled"		"1"
 		"xpos"			"c-45"
 		"ypos"			"r115"
-		"xpos"			"r194"	[$X360]
-		"ypos"			"r74"	[$X360]
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"
