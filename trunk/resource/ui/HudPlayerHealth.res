@@ -198,8 +198,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusBleedImage"
-		"xpos"			"96"//"104"
-		"ypos"			"0"
+		"xpos"			"70"//"96"
+		"ypos"			"38"//"0"
 		"zpos"			"7"
 		"wide"			"32"
 		"tall"			"32"
@@ -213,8 +213,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMilkImage"
-		"xpos"			"96"//"104"
-		"ypos"			"0"
+		"xpos"			"70"//"96"
+		"ypos"			"38"//"0"
 		"zpos"			"7"
 		"wide"			"32"
 		"tall"			"32"
@@ -228,8 +228,8 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusMarkedForDeathImage"
-		"xpos"			"96"//"104"
-		"ypos"			"0"
+		"xpos"			"70"//"96"
+		"ypos"			"38"//"0"
 		"zpos"			"7"
 		"wide"			"32"
 		"tall"			"32"
