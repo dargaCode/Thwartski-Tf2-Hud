@@ -167,7 +167,7 @@
 		"fieldName"		"TargetDataLabel"
 		"font"			"DefaultVerySmall"
 		"xpos"			"113"//"99"//"66"//"52"
-		"ypos"			"15"	[$WIN32]
+		"ypos"			"15"
 		"zpos"			"5"
 		"wide"			"280"
 		"tall"			"10"

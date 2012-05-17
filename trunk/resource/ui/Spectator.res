@@ -96,11 +96,11 @@
 		"fieldName"		"MapLabel"
 		"font"			"HudFontSmall"
 		"font_hidef"		"HudFontMedium"
-		"xpos"			"r260"	[$WIN32]
-		"ypos"			"16"	[$WIN32]
+		"xpos"			"r260"
+		"ypos"			"16"
 		"xpos"			"r285"	[$X360]
 		"ypos"			"32"	[$X360]
-		"wide"			"240"	[$WIN32]
+		"wide"			"240"
 		"wide"			"220"	[$X360]
 		"tall"			"20"
 		"tall_hidef"		"30"
@@ -130,7 +130,7 @@
 		"zpos"			"2"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -146,16 +146,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
-		"xpos"			"5"		[$WIN32]
-		"ypos"			"10"	[$WIN32]
+		"xpos"			"5"	
+		"ypos"			"10"
 		"xpos"			"53"	[$X360]
 		"ypos"			"40"	[$X360]
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -168,16 +168,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"10"	[$WIN32]
+		"xpos"			"80"
+		"ypos"			"10"
 		"xpos"			"128"	[$X360]
 		"ypos"			"40"	[$X360]		
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]		
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -189,16 +189,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"xpos"			"5"
+		"ypos"			"20"
 		"xpos"			"53"	[$X360]
 		"ypos"			"50"	[$X360]		
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -210,16 +210,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"xpos"			"80"
+		"ypos"			"20"
 		"xpos"			"128"	[$X360]
 		"ypos"			"50"	[$X360]		
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]	
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -231,16 +231,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"xpos"			"5"
+		"ypos"			"30"
 		"xpos"			"53"	[$X360]
 		"ypos"			"60"	[$X360]		
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]		
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -252,16 +252,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"xpos"			"80"
+		"ypos"			"30"
 		"xpos"			"128"	[$X360]
 		"ypos"			"60"	[$X360]		
-		"wide"			"0"	[$WIN32]
+		"wide"			"0"
 		"wide"			"0"	[$X360]
 		"tall"			"0"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"0"	[$WIN32]
+		"visible"		"0"
 		"visible_minmode"		"0"
 		"visible"		"0"	[$X360]
 		"enabled"		"1"
@@ -291,7 +291,7 @@
 		"visible_minmode"		"0"
 		"enabled"		"1"
 		"labelText"		"%tip%"
-		"textAlignment"		"center"	[$WIN32]
+		"textAlignment"		"center"
 		"textAlignment"		"north-west"	[$X360]
 		"font"			"SpectatorKeyHints"
 		"font_hidef"	"HudFontSmall"
