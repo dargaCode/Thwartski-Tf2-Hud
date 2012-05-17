@@ -641,7 +641,7 @@
 		"fieldName" "HudVoiceStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r88" [$WIN32]
+		"xpos" "r87" [$WIN32]
 		"ypos" "0" 	[$WIN32]
 		"wide" "145"
 		"tall" "357"
