@@ -303,7 +303,7 @@
 		"ypos"			"102"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"280"	
+		"tall"			"168"	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
