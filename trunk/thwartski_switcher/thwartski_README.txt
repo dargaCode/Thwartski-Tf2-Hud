@@ -86,6 +86,10 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 	ok to delete the class-specific configs you don't want.]
 	
 	
+3.  Copy config.cfg from your backed up config folder into the new one.
+	This is the file that contains all your keybinds. 
+	
+	
 3.  Load the game and start playing!
 	
 //-------------------------------------------------------------------
@@ -96,6 +100,9 @@ As you edit your settings, you don't have to restart the game for them to take e
 Just save your config files and change classes to reset the system with your new changes.
 
 Each config has the sections that contain customization options marked with: **EDIT ME!**
+
+[If you've never edited a .cfg file before, you'll have to tell your operating system
+that you want to use Notepad to open it.]
 
 1. 	Use thwartski_wepswapper.cfg to rebind the two-button weaponswap keys. 
 	
