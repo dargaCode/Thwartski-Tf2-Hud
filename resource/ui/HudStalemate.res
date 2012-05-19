@@ -1,4 +1,6 @@
 "Resource/UI/HudStalemate.res"
+
+//This is actually sudden death, not stalemate.
 {
 	"HudStalemateBG"
 	{
@@ -7,32 +9,37 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
-		"wide"			"320"
-		"tall"			"150"
+		"wide"			"160"
+		"tall"			"41"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/death_panel_black_bg"
 		"scaleImage"		"1"
+		
+		"src_corner_height"		"40"
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"
 	}
 	"StalemateLabel"
 	{	
 		"ControlName"		"Label"
 		"fieldName"		"StalemateLabel"
-		"font"			"HudFontMedium"
-		"xpos"			"25"
-		"ypos"			"17"
+		"font"			"HudFontMediumSmall"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"280"
-		"tall"			"35"
+		"wide"			"160"
+		"tall"			"41"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"wrap"			"1"
-		"labelText"		"#TF_teambalanced"
-		"textAlignment"		"northwest"
+		"wrap"			"0"
+		"labelText"		"Sudden Death!"
+		"textAlignment"	"center"
 	}
 	"ReasonLabel"
 	{	
@@ -46,7 +53,7 @@
 		"tall"			"55"
 		"autoResize"		"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"wrap"			"1"
 		"labelText"		""
