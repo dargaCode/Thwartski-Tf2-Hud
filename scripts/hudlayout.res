@@ -119,7 +119,7 @@
 		"fieldName"		"HudBossHealth"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"c-100"
+		"xpos"			"c-84"
 		"ypos"			"42"
 		"zpos"			"0"			// draw in front of ammo
 		"wide"			"200"
