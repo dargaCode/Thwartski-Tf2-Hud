@@ -923,7 +923,7 @@
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-80"
+		"xpos"					"c180"//"c-80"
 		"ypos"					"55"
 		"wide"					"320"
 		"tall"					"100"
