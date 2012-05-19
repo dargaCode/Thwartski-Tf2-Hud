@@ -6,7 +6,7 @@
 		"fieldName"			"ObjectiveStatusFlagPanel"
 		"xpos"				"0"
 		"ypos"				"0"
-		"zpos"				"1"
+		"zpos"				"0"
 		"wide"				"f0"
 		"tall"				"480"
 		"visible"			"1"
@@ -18,14 +18,36 @@
 		}
 	}
 	
+	"BlackBGThwartskiLarge"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"BlackBGThwartskiLarge"
+		"xpos"				"c-85"
+		"ypos"				"r32"
+		"zpos"				"-1"
+		"wide"				"171"
+		"tall"				"30"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"0 0 0 255"
+		
+		"src_corner_height"		"90"//"23"
+		"src_corner_width"		"90"//"23"
+		
+		"draw_corner_width"		"0"//"6"
+		"draw_corner_height" 	"0"//"6"	
+	}
+	
+	
 	"LeftSideBGThwartski"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"LeftSideBGThwartski"
-		"xpos"			"c-81"
+		"xpos"			"c-85"
 		"ypos"			"r32"
 		"zpos"			"1"
-		"wide"			"82"
+		"wide"			"86"
 		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -46,7 +68,7 @@
 		"xpos"			"c-0"
 		"ypos"			"r32"
 		"zpos"			"1"
-		"wide"			"82"
+		"wide"			"86"
 		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -61,7 +83,83 @@
 		"draw_corner_height" 		"0"	
 	}
 	
-		"PlayingTo"
+	"SmallLeftBGThwartski"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"		"SmallLeftBGThwartski"
+		"xpos"			"c-93"
+		"ypos"			"r27"
+		"zpos"			"3"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/color_panel_blu"
+		"scaleImage"		"1"
+		
+		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 		"0"	
+	}
+	
+	"SmallRightBGThwartski"
+	{
+		"ControlName"		"CTFImagePanel"
+		"fieldName"		"SmallRightBGThwartski"
+		"xpos"			"c75"
+		"ypos"			"r27"
+		"zpos"			"3"
+		"wide"			"20"
+		"tall"			"20"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"../hud/color_panel_red"
+		"scaleImage"		"1"
+		
+		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_width"		"40"			
+		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 		"0"	
+	}
+	
+	"SmallBlackBGThwartskiLeft"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"SmallBlackBGThwartskiLeft"
+		"xpos"				"c-93"
+		"ypos"				"r27"
+		"zpos"				"3"
+		"wide"				"20"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"0 0 0 255"	
+	}
+	
+	"SmallBlackBGThwartskiRight"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"SmallBlackBGThwartskiRight"
+		"xpos"				"c75"
+		"ypos"				"r27"
+		"zpos"				"3"
+		"wide"				"20"
+		"tall"				"20"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"0 0 0 255"	
+	}
+	
+	
+	
+	"PlayingTo"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayingTo"
@@ -302,7 +400,7 @@
 		"fieldName"		"BlueFlag"
 		"xpos"			"c-135"
 		"ypos"			"r40"
-		"zpos"			"5"
+		"zpos"			"4"
 		"wide"			"160"
 		"tall"			"90"
 		"visible"		"1"
@@ -334,7 +432,7 @@
 		"fieldName"		"RedFlag"
 		"xpos"			"c35"
 		"ypos"			"r40"
-		"zpos"			"5"
+		"zpos"			"4"
 		"wide"			"160"
 		"tall"			"90"
 		"visible"		"1"
