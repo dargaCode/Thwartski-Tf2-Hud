@@ -305,7 +305,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"SpectatorLabelThwartski"
 		"xpos"			"c-200"
-		"ypos"			"24"
+		"ypos"			"r74"//"24"
 		"wide"			"400"
 		"tall"			"60"
 		"autoResize"	"0"
