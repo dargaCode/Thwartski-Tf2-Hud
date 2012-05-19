@@ -378,20 +378,22 @@ event OvertimeShow
 
 event HudSnapShotReminderIn
 {
-	Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
-	Animate ScreenshotPanel		Position	"c-83 13"	Spline 0.001 0.2
+	//Animate ScreenshotPanel		Position	"c-83 -50"	Linear 0.0 0.001
+	//Animate ScreenshotPanel		Position	"c-83 13"	Spline 0.001 0.2
 }
 
+//Keeping these turned off removes the little camera icon in the center of the freezecam.
+//Replay tip is still enabled, which keeps the reminder in the upper left corner. 
 event HudReplayReminderIn	// Places the replay reminder in the same place as the snapshot reminder
 {
-	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
-	Animate ReplayReminder		Position	"c-83 13"	Spline 0.001 0.2
+	//Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	//Animate ReplayReminder		Position	"c-83 13"	Spline 0.001 0.2
 }
 
 event HudReplayReminderIn2	// Puts the panel below the snapshot panel
 {
-	Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
-	Animate ReplayReminder		Position	"c-83 53"	Spline 0.001 0.2
+	//Animate ReplayReminder		Position	"c-83 -50"	Linear 0.0 0.001
+	//Animate ReplayReminder		Position	"c-83 53"	Spline 0.001 0.2
 }
 
 event HudReplayTipIn
