@@ -7,26 +7,41 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"5"
-		"wide"			"200"
-		"tall"			"50"
+		"wide"			"168"
+		"tall"			"18"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"image"			"../hud/halloween_bar_surround"
 		"scaleImage"	"1"					
 	}
 	
+	"BlackBGThwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"BlackBGThwartski"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"1"
+		"wide"				"168"
+		"tall"				"18"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"255 0 0 150"
+	}
+	
 	"HealthBarPanel"
 	{
 		"ControlName"		"EditablePanel"
 		"fieldName"			"HealthBarPanel"
-		"xpos"			"15"
-		"ypos"			"16"
-		"zpos"			"4"
-		"wide"			"168"
-		"tall"			"18"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"4"
+		"wide"				"168"
+		"tall"				"18"
 		"visible"			"1"
 		"enabled"			"1"
 		
@@ -36,7 +51,7 @@
 			"fieldName"		"BarImage"	
 			"xpos"			"0"
 			"ypos"			"0"
-			"zpos"			"5"
+			"zpos"			"2"
 			"wide"			"168"
 			"tall"			"18"
 			"autoResize"	"0"
@@ -47,6 +62,8 @@
 			"image"			"../hud/halloween_bar"
 			"scaleImage"	"1"					
 		}
+	
+
 	}				
 
 	"StunMeter"
