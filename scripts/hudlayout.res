@@ -907,7 +907,6 @@
 		"tall"					"100"
 	}
 
-
 	HudTeamGoalTournament
 	{
 		"fieldName"				"HudTeamGoalTournament"
@@ -924,10 +923,21 @@
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-160"
-		"ypos"					"75"
+		"xpos"					"c-80"
+		"ypos"					"55"
 		"wide"					"320"
 		"tall"					"100"
+	}
+	
+	"HudAlert"
+	{
+		"fieldName"				"HudAlert"
+		"visible"				"0"
+		"enable"				"1"
+		"xpos"					"c-80"
+		"ypos"					"105"//"55"
+		"wide"					"320"
+		"tall"					"150"
 	}
 
 	HudArenaNotification
@@ -1193,16 +1203,5 @@
 		"enabled"		"1"
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
-	}
-
-	"HudAlert"
-	{
-		"fieldName"		"HudAlert"
-		"visible"		"0"
-		"enable"		"1"
-		"xpos"			"c-160"
-		"ypos"			"100"
-		"wide"			"320"
-		"tall"			"150"
 	}
 }
