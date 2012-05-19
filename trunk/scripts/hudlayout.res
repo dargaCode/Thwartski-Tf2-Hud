@@ -939,6 +939,17 @@
 		"wide"					"320"
 		"tall"					"150"
 	}
+	
+	HudStalemate
+	{
+		"fieldName"				"HudStalemate"
+		"visible"				"0"
+		"enable"				"1"
+		"xpos"					"c-80"
+		"ypos"					"55"
+		"wide"					"320"
+		"tall"					"150"
+	}
 
 	HudArenaNotification
 	{
@@ -963,16 +974,7 @@
 		"zpos"					"99"
 	}
 
-	HudStalemate
-	{
-		"fieldName"				"HudStalemate"
-		"visible"				"0"
-		"enabled"				"1"
-		"xpos"					"c-160"
-		"ypos"					"65"
-		"wide"					"320"
-		"tall"					"100"
-	}
+
 	HudTournament
 	{
 		"fieldName"				"HudTournament"
