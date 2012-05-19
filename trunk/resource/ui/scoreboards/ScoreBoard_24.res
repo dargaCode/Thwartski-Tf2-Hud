@@ -86,13 +86,11 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
 		"xpos"			"c-277"
-		//"xpos"		"c-427"
-		"ypos"			"341"
+		"ypos"			"336"
 		"zpos"			"-10"
 		"wide"			"300"
-		//"wide"		"600"
 		"tall"			"70"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -146,7 +144,7 @@
 		"labelText"		"%playerscore%"
 		"textAlignment"		"Center"
 		"xpos"			"231"
-		"ypos"			"348"//"368"	
+		"ypos"			"343"	
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
@@ -439,7 +437,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
-		"ypos"			"364"//"395"
+		"ypos"			"359"
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"
@@ -645,7 +643,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
-		"ypos"			"281"//"301"
+		"ypos"			"276"
 		"zpos"			"5"
 		"wide"			"600"
 		"tall"			"448"
@@ -662,7 +660,7 @@
 			"labelText"		"%mapname%"
 			"textAlignment"		"center"
 			"xpos"			"228"
-			"ypos"			"20"//"0"
+			"ypos"			"25"
 			"zpos"			"13"
 			"wide"			"146"
 			"tall"			"20"
@@ -672,12 +670,6 @@
 			"enabled"		"1"
 			"fgcolor"		"236 227 203 255"
 		}	
-		
-
-
-
-
-			
 			
 		"Kills"
 		{
