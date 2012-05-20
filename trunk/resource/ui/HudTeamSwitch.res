@@ -31,7 +31,7 @@
 		"fieldName"		"SwitchLabel"
 		"font"			"HudFontSmallest"
 		"xpos"			"48"
-		"ypos"			"0"
+		"ypos"			"4"
 		"zpos"			"1"
 		"wide"			"110"
 		"tall"			"41"
@@ -41,17 +41,17 @@
 		"enabled"		"1"
 		"wrap"			"1"
 		"labelText"		"#TF_teambalanced"
-		"textAlignment"		"west"
+		"textAlignment"		"north-west"
 	}
 	
-	//?
+	//You are now on blue
 	"BalanceLabel"
 	{	
 	"ControlName"		"Label"
 	"fieldName"		"BalanceLabel"
 	"font"			"HudFontSmallest"
 	"xpos"			"48"
-	"ypos"			"0"
+	"ypos"			"28"
 	"zpos"			"1"
 	"wide"			"110"
 	"tall"			"41"
@@ -61,7 +61,7 @@
 	"enabled"		"1"
 	"wrap"			"1"
 	"labelText"		""
-	"textAlignment"		"west"
+	"textAlignment"		"south-west"
 	}
 	
 	"SwitchImage"
