@@ -891,7 +891,7 @@
 		"visible"				"0"
 		"enabled"				"0"
 		"xpos"					"c-80"
-		"ypos"					"55"
+		"ypos"					"48"
 		"wide"					"320"
 		"tall"					"100"
 	}
@@ -912,8 +912,8 @@
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c94"//"c-80"
-		"ypos"					"55"
+		"xpos"					"c-80"
+		"ypos"					"48"
 		"wide"					"320"
 		"tall"					"100"
 	}
@@ -924,7 +924,8 @@
 		"visible"				"0"
 		"enable"				"1"
 		"xpos"					"c-80"
-		"ypos"					"55"
+		"ypos"					"48"
+		"zpos"					"-1"		
 		"wide"					"320"
 		"tall"					"150"
 	}
@@ -934,8 +935,8 @@
 		"fieldName"				"HudStalemate"
 		"visible"				"0"
 		"enable"				"1"
-		"xpos"					"c-252"
-		"ypos"					"55"
+		"xpos"					"c90"//"c-94"
+		"ypos"					"48"
 		"wide"					"320"
 		"tall"					"150"
 	}
@@ -946,7 +947,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-95"
-		"ypos"					"106"//"55"
+		"ypos"					"94"//"106"
 		"wide"					"320"
 		"tall"					"150"
 	}
