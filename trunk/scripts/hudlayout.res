@@ -781,7 +781,7 @@
 		"fieldName"				"FreezePanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"-25"
+		"xpos"					"-1"
 		"ypos"					"98"
 		"wide"					"f0"
 		"tall"					"480"
