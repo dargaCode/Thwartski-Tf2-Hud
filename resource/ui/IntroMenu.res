@@ -150,18 +150,41 @@
 	{
 		"ControlName"	"CTFVideoPanel"
 		"fieldName"		"VideoPanel"
-		"xpos"			"c-150"
-		"ypos"			"c-112"
+		"xpos"			"c56"//"c-150"
+		"ypos"			"c-75"//"c-112"
 		"zpos"			"3"		
-		"wide"			"0"
-		"tall"			"0"
+		"wide"			"200"
+		"tall"			"150"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"start_delay"	"0.0"//"2.0"
+		"end_delay"		"0.0"//"2.0"
+	}
+	
+	"VideoCaption"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"VideoCaption"
+		"xpos"			"c56"
+		"ypos"			"c80"
+		"zpos"			"6"
+		"wide"			"200"
+		"tall"			"70"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
-		"enabled"		"0"
-		"start_delay"	"0.0"
-		"end_delay"		"0.0"
+		"enabled"		"1"
+		"labelText"		""
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"IntroMenuCaption"
+		"fgcolor"		"White"
+		"wrap"			"1"
 	}
+	
 	
 	"MenuBG"
 	{
@@ -208,28 +231,5 @@
 				"default"		"1"
 			}
 		}
-	}					
-	
-	"VideoCaption"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"VideoCaption"
-		"xpos"			"c-145"
-		"ypos"			"c40"
-		"zpos"			"6"
-		"wide"			"0"
-		"tall"			"0"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"labelText"		" "
-		"textAlignment"	"center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"font"			"IntroMenuCaption"
-		"fgcolor"		"White"
-		"wrap"			"1"
-	}
-	
+	}						
 }
