@@ -781,8 +781,8 @@
 		"fieldName"				"FreezePanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"-25"//"0"
-		"ypos"					"100"//"10"//"12"//"0"
+		"xpos"					"-25"
+		"ypos"					"98"
 		"wide"					"f0"
 		"tall"					"480"
 	}
@@ -888,8 +888,8 @@
 	HudTeamGoal
 	{
 		"fieldName"				"HudTeamGoal"
-		"visible"				"1"
-		"enabled"				"1"
+		"visible"				"0"
+		"enabled"				"0"
 		"xpos"					"c-80"
 		"ypos"					"55"
 		"wide"					"320"
@@ -946,7 +946,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-95"
-		"ypos"					"105"//"55"
+		"ypos"					"106"//"55"
 		"wide"					"320"
 		"tall"					"150"
 	}
