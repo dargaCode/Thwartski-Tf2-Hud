@@ -31,19 +31,15 @@
 		"tabPosition"		"0"
 	}
 
-	"Skip" [$WIN32] 
+	"Skip"
 	{
 		"ControlName"		"CExButton"
 		"fieldName"		"Skip"
-		"xpos"			"r190"
-		"xpos_lodef"			"r222"
-		"xpos_hidef"			"r232"
-		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
+		"xpos"			"c-52"
+		"ypos"			"c-52"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"104"
+		"tall"			"104"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -56,21 +52,20 @@
 		"wrap"		"0"
 		"command"		"skip"
 		"font"			"MenuSmallFont"
+		
+		"sound_armed"				"ui/item_info_mouseover.wav"
+		"sound_depressed"			"UI/buttonclickrelease.wav"
 	}
 
-	"Continue" [$WIN32] 
+	"Continue"
 	{
 		"ControlName"		"CExButton"
 		"fieldName"		"Continue"
-		"xpos"			"r190"
-		"xpos_lodef"			"r222"
-		"xpos_hidef"			"r232"
-		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
+		"xpos"			"c-52"
+		"ypos"			"c-52"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"104"
+		"tall"			"104"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"0"
@@ -83,24 +78,24 @@
 		"wrap"		"0"
 		"command"		"skip"
 		"font"			"MenuSmallFont"
+		
+		"sound_armed"				"ui/item_info_mouseover.wav"
+		"sound_depressed"			"UI/buttonclickrelease.wav"
 	}
 	
-	"Back" [$WIN32] 
+	"Back"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"Back"
 		"xpos"			"40"
-		"xpos_hidef"			"50"
 		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"#TF_Back"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -110,22 +105,19 @@
 		"fgcolor"		"Black"
 	}
 
-	"ReplayVideo" [$WIN32] 
+	"ReplayVideo"
 	{
 		"ControlName"	"CExButton"
 		"fieldName"		"ReplayVideo"
 		"xpos"			"40"
-		"xpos_hidef"			"50"
 		"ypos"			"r40"
-		"ypos_lodef"			"r64"
-		"ypos_hidef"			"r54"
 		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"30"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"labelText"		"#TF_ReplayIntro"
 		"textAlignment"	"center"
 		"dulltext"		"0"
@@ -141,16 +133,12 @@
 		"fieldName"		"ShadedBar"
 		"xpos"			"0"
 		"ypos"			"r50"
-		"ypos_lodef"			"r74"
-		"ypos_hidef"			"r65"
 		"zpos"			"5"
 		"wide"			"f0"
 		"tall"			"50"
-		"tall_lodef"			"74"
-		"tall_hidef"			"65"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
@@ -162,8 +150,8 @@
 	{
 		"ControlName"	"CTFVideoPanel"
 		"fieldName"		"VideoPanel"
-		"xpos"			"c-145"
-		"ypos"			"c-183"
+		"xpos"			"c-150"
+		"ypos"			"c-112"
 		"zpos"			"3"		
 		"wide"			"300"
 		"tall"			"225"
@@ -171,8 +159,8 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"start_delay"	"2.0"
-		"end_delay"		"2.0"
+		"start_delay"	"0.0"
+		"end_delay"		"0.0"
 	}
 	
 	"MenuBG"
@@ -186,7 +174,7 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"fov"			"20"
 		
@@ -198,8 +186,6 @@
 			"angles_y" "180"
 			"angles_z" "0"
 			"origin_x" "290"
-			"origin_x_lodef" "320"
-			"origin_x_hidef" "310"
 			"origin_y" "0"
 			"origin_z" "-39"
 			
@@ -235,7 +221,7 @@
 		"tall"			"70"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
+		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		" "
 		"textAlignment"	"center"
@@ -246,35 +232,4 @@
 		"wrap"			"1"
 	}
 	
-	"Footer" [$X360]
-	{
-		"ControlName"		"CTFFooter"
-		"fieldName"			"Footer"
-		"zpos"				"6"
-		"tall"				"80"
-		"button_separator"	"10"
-		"button_separator_lodef"	"5"
-		"buttongap"			"50"
-		"textadjust"		"3"
-		"buttonoffsety"		"20"
-		"buttonoffsety_hidef"		"0"
-		"buttonoffsety_lodef"		"18"
-		"fonttext"			"MatchmakingDialogMenuLarge"
-		"fonttext_lodef"			"MatchmakingDialogMenuSmall"
-		"fgcolor"			"HudOffWhite" 	
-		
-		"button"
-		{
-			"name"		"intro"
-			"text"		"#GameUI_Back"
-			"icon"		"#GameUI_Icons_B_BUTTON"	
-		}
-		
-		"button"
-		{
-			"name"		"continue"
-			"text"		"#Button_SkipIntro_360"
-			"icon"		"#GameUI_Icons_A_BUTTON"	
-		}
-	}	
 }
