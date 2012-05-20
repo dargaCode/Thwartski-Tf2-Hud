@@ -935,8 +935,9 @@
 		"fieldName"				"HudStalemate"
 		"visible"				"0"
 		"enable"				"1"
-		"xpos"					"c90"//"c-94"
+		"xpos"					"c-94"
 		"ypos"					"48"
+		"zpos"					"-2"
 		"wide"					"320"
 		"tall"					"150"
 	}
