@@ -775,17 +775,6 @@
 		"wide"					"450"
 		"tall"					"218"
 	}
-
-	StatPanel
-	{
-		"fieldName"				"StatPanel"
-		"visible"				"1"
-		"enabled"				"1"
-		"xpos"					"c-133"
-		"ypos"				"270"
-		"wide"					"266"
-		"tall"					"120"
-	}
 	
 	FreezePanel
 	{
@@ -923,7 +912,7 @@
 		"fieldName"				"HudTeamSwitch"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c180"//"c-80"
+		"xpos"					"c94"//"c-80"
 		"ypos"					"55"
 		"wide"					"320"
 		"tall"					"100"
@@ -935,7 +924,7 @@
 		"visible"				"0"
 		"enable"				"1"
 		"xpos"					"c-80"
-		"ypos"					"105"//"55"
+		"ypos"					"55"
 		"wide"					"320"
 		"tall"					"150"
 	}
@@ -945,11 +934,23 @@
 		"fieldName"				"HudStalemate"
 		"visible"				"0"
 		"enable"				"1"
-		"xpos"					"c-80"
+		"xpos"					"c-252"
 		"ypos"					"55"
 		"wide"					"320"
 		"tall"					"150"
 	}
+	
+	StatPanel
+	{
+		"fieldName"				"StatPanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"c-95"
+		"ypos"					"105"//"55"
+		"wide"					"320"
+		"tall"					"150"
+	}
+	
 
 	HudArenaNotification
 	{
