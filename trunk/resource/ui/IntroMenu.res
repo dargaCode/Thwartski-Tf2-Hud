@@ -31,6 +31,28 @@
 		"tabPosition"		"0"
 	}
 
+	"TitleThwartski"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"TitleThwartski"
+		"xpos"			"c-150"
+		"ypos"			"c-112"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"26"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"Intro Video"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"HudFontMedium"
+		"fgcolor"		"255 255 255 255"
+	}	
+	
+	
 	"Skip"
 	{
 		"ControlName"		"CExButton"
@@ -151,7 +173,7 @@
 		"ControlName"	"CTFVideoPanel"
 		"fieldName"		"VideoPanel"
 		"xpos"			"c74"
-		"ypos"			"c-98"
+		"ypos"			"c-52"
 		"zpos"			"3"		
 		"wide"			"200"
 		"tall"			"150"
@@ -168,7 +190,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"VideoCaption"
 		"xpos"			"c74"
-		"ypos"			"c60"
+		"ypos"			"c104"
 		"zpos"			"6"
 		"wide"			"200"
 		"tall"			"70"
