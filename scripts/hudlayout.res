@@ -637,7 +637,7 @@
 		"fieldName" "HudVoiceStatus"
 		"visible" "1"
 		"enabled" "1"
-		"xpos" "r87" [$WIN32]
+		"xpos" "r87"
 		"ypos" "0" 
 		"wide" "145"
 		"tall" "357"
@@ -1033,7 +1033,7 @@
 		"tall"					"100"
 	}
 
-	CriticalPanel [$WIN32]
+	CriticalPanel
 	{
 		"fieldName"				"CriticalPanel"		
 		"visible"				"1"
@@ -1044,7 +1044,7 @@
 		"tall"					"25"
 	}
 	
-	HudArenaClassLayout [$WIN32]
+	HudArenaClassLayout
 	{
 		"fieldName"				"HudArenaClassLayout"		
 		"visible"				"1"
@@ -1055,7 +1055,7 @@
 		"tall"					"320"
 	}
 	
-	HudArenaVsPanel [$WIN32]
+	HudArenaVsPanel
 	{
 		"fieldName"				"HudArenaVsPanel"		
 		"visible"				"1"
@@ -1066,7 +1066,7 @@
 		"tall"					"240"
 	}
 	
-	HudArenaPlayerCount [$WIN32]
+	HudArenaPlayerCount
 	{
 		"fieldName"				"HudArenaPlayerCount"		
 		"visible"				"1"
