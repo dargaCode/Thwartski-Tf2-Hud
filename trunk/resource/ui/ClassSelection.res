@@ -19,12 +19,11 @@
 		"teambg_1"		"../hud/color_panel_blu"
 		"teambg_2"		"../hud/color_panel_red"
 		"teambg_3"		"../hud/color_panel_blu"
+		
 		"src_corner_height"		"20"
 		"src_corner_width"		"20"
-		
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"
-	
 	}
 
 	"CancelButton"
@@ -150,9 +149,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"scout"
 	{
@@ -233,9 +231,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"
+		"draw_corner_height" 	"0"
 	}
 	"soldier"
 	{
@@ -317,9 +314,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"pyro"
 	{
@@ -401,9 +397,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"demoman"
 	{
@@ -486,9 +481,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}	
 	"heavyweapons"
 	{
@@ -569,9 +563,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"
+		"draw_corner_height" 	"0"
 	}
 	"engineer"
 	{
@@ -653,9 +646,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"medic"
 	{
@@ -736,9 +728,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height"	"0"	
 	}
 	"sniper"
 	{
@@ -819,9 +810,8 @@
 		
 		"src_corner_height"		"90"
 		"src_corner_width"		"90"
-		
 		"draw_corner_width"		"0"
-		"draw_corner_height" 		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"spy"
 	{
@@ -970,7 +960,6 @@
 		
 		"src_corner_height"		"20"
 		"src_corner_width"		"20"
-		
 		"draw_corner_width"		"4"
 		"draw_corner_height" 	"4"	
 	}
@@ -1380,7 +1369,6 @@
 		
 		"src_corner_height"		"23"
 		"src_corner_width"		"23"
-		
 		"draw_corner_width"		"5"	
 		"draw_corner_height" 	"5"	
 	}
@@ -1574,7 +1562,6 @@
 		
 		"src_corner_height"		"23"
 		"src_corner_width"		"23"
-		
 		"draw_corner_width"		"3"
 		"draw_corner_height" 	"3"	
 	}	

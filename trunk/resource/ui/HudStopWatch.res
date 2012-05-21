@@ -15,10 +15,8 @@
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_brown"
 
-
 		"src_corner_height"	 "45"	
 		"src_corner_width"	 "45"
-		
 		"draw_corner_width"	 "0"		
 		"draw_corner_height" "0"	
 	}
@@ -35,13 +33,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 		"scaleImage"		"1"	
-		"fillcolor"			"0 0 0 255"
-		
-		"src_corner_height"		"90"//"23"
-		"src_corner_width"		"90"//"23"
-		
-		"draw_corner_width"		"0"//"6"
-		"draw_corner_height" 	"0"//"6"	
+		"fillcolor"			"0 0 0 255"	
 	}
 	
 
@@ -161,12 +153,10 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_timepanel_suddendeath"
-
-
-		"src_corner_height"	"45"				// pixels inside the image
-		"src_corner_width"	"45"
 		
-		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
+		"src_corner_height"		"45"
+		"src_corner_width"		"45"
+		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
 	}
 

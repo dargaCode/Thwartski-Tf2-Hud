@@ -29,10 +29,11 @@
 			"enabled"		"0"
 			"image"			"../hud/winpanel_blue_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"0"				// pixels inside the image
+			
+			"src_corner_height"		"0"
 			"src_corner_width"		"0"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		
 		//deprecated
@@ -51,10 +52,11 @@
 			"enabled"		"0"
 			"image"			"../hud/winpanel_red_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"0"				// pixels inside the image
+			
+			"src_corner_height"		"0"
 			"src_corner_width"		"0"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		
 		"TopBlackBGThwartski"
@@ -89,10 +91,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_blue_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		"RedScoreBGThwartkski"
 		{
@@ -109,10 +112,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_red_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 
 		"BlueTeamLabel"

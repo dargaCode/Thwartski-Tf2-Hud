@@ -25,10 +25,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_blue_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		"RedScoreBG"
 		{
@@ -44,10 +45,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_red_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		
 		"BlueScoreBG2"
@@ -64,10 +66,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_blue_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		"RedScoreBG2"
 		{
@@ -83,10 +86,11 @@
 			"enabled"		"1"
 			"image"			"../hud/winpanel_red_bg_team"
 			"scaleImage"		"1"
-			"src_corner_height"		"40"				// pixels inside the image
+			
+			"src_corner_height"		"40"
 			"src_corner_width"		"40"			
-			"draw_corner_width"		"0"				// screen size of the corners proportional
-			"draw_corner_height" 		"0"
+			"draw_corner_width"		"0"
+			"draw_corner_height" 	"0"
 		}
 		"BlueTeamLabel"
 		{
@@ -214,10 +218,9 @@
 			"image"			"../HUD/tournament_panel_black"
 			"scaleImage"		"1"
 	
-			"src_corner_height"	"23"				// pixels inside the image
-			"src_corner_width"	"23"
-		
-			"draw_corner_width"	"6"				// screen size of the corners ( and sides ), proportional
+			"src_corner_height"		"23"
+			"src_corner_width"		"23"
+			"draw_corner_width"		"6"
 			"draw_corner_height" 	"6"	
 		}	
 
