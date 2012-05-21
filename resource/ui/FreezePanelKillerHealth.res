@@ -39,10 +39,10 @@
 		"teambg_2"		"../hud/color_panel_blu"//"../hud/color_panel_red"
 		"teambg_3"		"../hud/color_panel_red"//"../hud/color_panel_blu"
 		
-		"src_corner_height"		"40"			// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"			// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"		
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"		
 	}	
 	
 	"PlayerStatusHealthImage"
@@ -86,14 +86,7 @@
 		"visible"			"1"
 		"enabled"			"1"
 		"scaleImage"		"1"	
-		"fillcolor"			"54 51 52 255"
-		
-		
-		"src_corner_height"		"90"//"23"
-		"src_corner_width"		"90"//"23"
-		
-		"draw_corner_width"		"0"//"6"
-		"draw_corner_height" 	"0"//"6"	
+		"fillcolor"			"54 51 52 255"	
 	}
 	
 	"BuildingStatusHealthImageBG"  //gears behind sentry guns

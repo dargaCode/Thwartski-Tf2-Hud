@@ -57,12 +57,6 @@
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"54 51 52 255"
-		
-		"src_corner_height"		"90"//"23"
-		"src_corner_width"		"90"//"23"
-		
-		"draw_corner_width"		"0"//"6"
-		"draw_corner_height" 	"0"//"6"	
 	}
 	
 	

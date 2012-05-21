@@ -50,10 +50,10 @@
 		"image"			"../hud/color_panel_blu"
 		"scaleImage"		"1"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 	}
 	"RightSideBGThwartski"
 	{
@@ -71,10 +71,10 @@
 		"image"			"../hud/color_panel_red"
 		"scaleImage"		"1"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 	}
 	
 	"SmallLeftBGThwartski"
@@ -93,10 +93,10 @@
 		"image"			"../hud/color_panel_blu"
 		"scaleImage"		"1"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	
 	"SmallRightBGThwartski"
@@ -115,10 +115,10 @@
 		"image"			"../hud/color_panel_red"
 		"scaleImage"		"1"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 	}
 	
 	"SmallBlackBGThwartskiLeft"
@@ -192,10 +192,10 @@
 		"image"			"../hud/objectives_flagpanel_bg_playingto"
 		"scaleImage"	"1"	
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"
+		"draw_corner_width"		"0"	
+		"draw_corner_height" 	"0"
 		
 		"if_hybrid"
 		{

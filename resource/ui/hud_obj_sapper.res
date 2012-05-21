@@ -47,9 +47,9 @@
 		"teambg_2"		"../hud/character_red_bg"
 		"teambg_3"		"../hud/character_blue_bg"
 		
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
 	}
 	

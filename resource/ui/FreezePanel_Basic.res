@@ -295,16 +295,9 @@
 				"tall"				"16"//"29"
 				"visible"			"1"
 				"enabled"			"1"
-				"image"				""//"../hud/color_panel_brown"
+				"image"				""
 				"scaleImage"		"1"	
 				"fillcolor"		"0 0 0 255"
-				
-				
-				"src_corner_height"		"90"//"23"
-				"src_corner_width"		"90"//"23"
-				
-				"draw_corner_width"		"0"//"6"
-				"draw_corner_height" 	"0"//"6"	
 			}
 			
 			"NemesisLabelThwartski"

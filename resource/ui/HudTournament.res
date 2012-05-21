@@ -17,10 +17,10 @@
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_brown"
 
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 
 	}
 	"TournamentLabel"
@@ -57,10 +57,10 @@
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_blu"
 
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"
+		"draw_corner_height" 	"0"	
 	}
 	"TournamentBLUELabel"
 	{	
@@ -114,10 +114,10 @@
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_red"
 
-		"src_corner_height"		"40"				// pixels inside the image
+		"src_corner_height"		"40"
 		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 		"0"	
+		"draw_corner_width"		"0"	
+		"draw_corner_height" 	"0"	
 	}
 	"TournamentREDLabel"
 	{	
@@ -190,11 +190,9 @@
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_brown"
 
-
-		"src_corner_height"	"23"				// pixels inside the image
-		"src_corner_width"	"23"
-		
-		"draw_corner_width"	"8"				// screen size of the corners ( and sides ), proportional
+		"src_corner_height"		"23"
+		"src_corner_width"		"23"
+		"draw_corner_width"		"8"
 		"draw_corner_height" 	"8"	
 	}
 	"TournamentInstructionsLabel"
