@@ -25,7 +25,7 @@
 		"xpos"				"c-85"
 		"ypos"				"r32"
 		"zpos"				"-1"
-		"wide"				"171"
+		"wide"				"172"
 		"tall"				"30"
 		"visible"			"1"
 		"enabled"			"1"
@@ -62,7 +62,7 @@
 		"xpos"			"c-0"
 		"ypos"			"r32"
 		"zpos"			"1"
-		"wide"			"86"
+		"wide"			"87"
 		"tall"			"30"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -76,82 +76,6 @@
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
 	}
-	
-	"SmallLeftBGThwartski"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SmallLeftBGThwartski"
-		"xpos"			"c-93"
-		"ypos"			"r27"
-		"zpos"			"3"
-		"wide"			"20"
-		"tall"			"20"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_blu"
-		"scaleImage"		"1"
-		
-		"src_corner_height"		"40"
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"	
-		"draw_corner_height" 	"0"	
-	}
-	
-	"SmallRightBGThwartski"
-	{
-		"ControlName"		"CTFImagePanel"
-		"fieldName"		"SmallRightBGThwartski"
-		"xpos"			"c75"
-		"ypos"			"r27"
-		"zpos"			"3"
-		"wide"			"20"
-		"tall"			"20"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"../hud/color_panel_red"
-		"scaleImage"		"1"
-		
-		"src_corner_height"		"40"
-		"src_corner_width"		"40"			
-		"draw_corner_width"		"0"
-		"draw_corner_height" 	"0"	
-	}
-	
-	"SmallBlackBGThwartskiLeft"
-	{
-		"ControlName"		"Imagepanel"
-		"fieldName"			"SmallBlackBGThwartskiLeft"
-		"xpos"				"c-93"
-		"ypos"				"r27"
-		"zpos"				"3"
-		"wide"				"20"
-		"tall"				"20"
-		"visible"			"1"
-		"enabled"			"1"
-		"scaleImage"		"1"	
-		"fillcolor"			"0 0 0 255"	
-	}
-	
-	"SmallBlackBGThwartskiRight"
-	{
-		"ControlName"		"Imagepanel"
-		"fieldName"			"SmallBlackBGThwartskiRight"
-		"xpos"				"c75"
-		"ypos"				"r27"
-		"zpos"				"3"
-		"wide"				"20"
-		"tall"				"20"
-		"visible"			"1"
-		"enabled"			"1"
-		"scaleImage"		"1"	
-		"fillcolor"			"0 0 0 255"	
-	}
-	
-	
 	
 	"PlayingTo"
 	{
