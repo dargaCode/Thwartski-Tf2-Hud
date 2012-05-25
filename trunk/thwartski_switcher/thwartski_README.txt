@@ -26,7 +26,7 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 //-------------------------------------------------------------------
 
 I'm a professional game designer who plays a decent amount of TF2. My comp ability
-is still low, but believe I know enough to design for high level comp play.
+is still low, but believe I know enough to design for high level comp players.
 
 I try to play all nine classes so I can tailor things to each of them. My current 
 main is soldier. It was originally pyro, then engie, then sniper, then spy.
