@@ -8,14 +8,28 @@ ThwartskiHUD Steam Group:		http://steamcommunity.com/groups/thwartskihud
 Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 
 //-------------------------------------------------------------------
+//						  HOW TO INSTALL
+//-------------------------------------------------------------------
+
+1.  Copy all these files from this folder to your cfg folder, replacing what was there. 
+	If you've created any custom configs, you should back them up first. 
+
+	[C:\Program Files (x86)\Steam\steamapps\[YOU]\team fortress 2\tf\cfg\]
+	
+    [If you're super hardcore about one class and never play the others, you can
+	delete the class-specific configs you don't want and the system will still work.]
+
+2.  Load the game and start playing!
+
+//-------------------------------------------------------------------
 //						  ABOUT THWARTSKI
 //-------------------------------------------------------------------
 
-I'm a professional game designer who plays a decent amount of TF2. I don't have 
-a very spectacular competitive career, but I know enough to design for comp play.
+I'm a professional game designer who plays a decent amount of TF2. My comp ability
+is still low, but believe I know enough to design for high level comp play.
 
 I try to play all nine classes so I can tailor things to each of them. My current 
-main is soldier. it was originally pyro, then engie, then sniper, then spy.
+main is soldier. It was originally pyro, then engie, then sniper, then spy.
 
 //-------------------------------------------------------------------
 //						 ABOUT THE SWAPPER
@@ -69,28 +83,6 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 	Rocket Launcher is always equipped by hitting Q.
 	Equalizer is always equipped by hitting E.
 	Shotgun is always equipped by hitting Q or E a second time.
-	
-//-------------------------------------------------------------------
-//						  HOW TO INSTALL
-//-------------------------------------------------------------------
-
-1.  Find your config folder and back it up. 
-
-	[It should be something like: 
-	C:\Program Files (x86)\Steam\steamapps\[YOU]\team fortress 2\tf\cfg\]
-
-	
-2.  Copy all these files into your config folder, replacing what was there.
-
-    [If you're super hardcore about one class and never play the others, it's
-	ok to delete the class-specific configs you don't want.]
-	
-	
-3.  Copy config.cfg from your backed up config folder into the new one.
-	This is the file that contains all your keybinds. 
-	
-	
-3.  Load the game and start playing!
 	
 //-------------------------------------------------------------------
 //						 HOW TO CUSTOMIZE
