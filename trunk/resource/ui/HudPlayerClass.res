@@ -36,6 +36,20 @@
 		"draw_corner_height" 	"0"	
 	}
 	
+	"BlackBGThwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"BlackBGThwartski"
+		"xpos"				"r87"	
+		"ypos"				"r44"
+		"zpos"				"0"		
+		"wide"				"87"
+		"tall"				"32"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"0 0 0 255"
+	}
 	
 	"PlayerStatusClassImage"
 	{
