@@ -1,0 +1,127 @@
+//-------------------------------------------------------------------
+//				    HOW DO I INSTALL THE SWAPPER
+//-------------------------------------------------------------------
+
+
+
+
+
+
+
+//-------------------------------------------------------------------
+//				    WHY CAN'T I REBIND MY KEYS?
+//-------------------------------------------------------------------
+
+
+
+
+
+
+//-------------------------------------------------------------------
+//      I ONLY PLAY ONE CLASS, CAN I DELETE THIS OTHER JUNK?
+//-------------------------------------------------------------------
+
+
+    [If you're super hardcore about one class and never play the others, you can
+	delete the class-specific configs you don't want and the system will still work.]
+	
+	
+	
+	
+//-------------------------------------------------------------------
+//				    HOW CAN I EDIT A .CFG FILE?
+//-------------------------------------------------------------------
+	
+	
+//-------------------------------------------------------------------
+//				   WHY DOES MY CAMERA LOOK DIFFERENT?
+//-------------------------------------------------------------------
+	
+	
+//-------------------------------------------------------------------
+//				   WHY DO MY ARMS LOOK DIFFERENT?
+//-------------------------------------------------------------------	
+	
+	
+	
+	
+//-------------------------------------------------------------------
+//						 HOW TO CUSTOMIZE
+//-------------------------------------------------------------------
+
+As you edit your settings, you don't have to restart the game for them to take effect.
+Just save your config files and change classes to reset the system with your new changes.
+
+Each config has the sections that contain customization options marked with: **EDIT ME!**
+
+[If you've never edited a .cfg file before, you'll have to tell your operating system
+that you want to use Notepad to open it.]
+
+1. 	Use thwartski_wepswapper.cfg to rebind the two-button weaponswap keys. 
+	
+	By default, they're bound to Q and E.
+	
+	
+//-------------------------------------------------------------------
+//				  DO I HAVE TO RESTART THE GAME?
+//-------------------------------------------------------------------
+	
+	
+
+	
+//-------------------------------------------------------------------
+//				  CAN I CHANGE MY WEAPON ORDER?
+//-------------------------------------------------------------------
+	
+	
+2.	Use thwartski_wepswapper_[classname].cfg to modify the primary/secondary/tertiary
+	weapon definitions for each class.
+	
+	For example, I recommend using medigun as medic's primary, and sticky launcher as demo's
+	primary. Any changes will apply to swapper buttons, number keys, and the scroll wheel.
+
+//-------------------------------------------------------------------
+//				  HOW DO I TURN OFF MY VIEWMODELS?
+//-------------------------------------------------------------------
+	
+	
+3.  Use thwartski_crosshairs.cfg to modify the crosshairs and viewmodels.
+	
+	By default, viewmodels are turned on, so you can get used to the crosshairs and 
+	weapon swapping first. I recommend turning them off for all weapons but melee.
+
+	5. 	If you turn off viewmodels, use thwartski_wepswapper_pyro.cfg and thwartski_wepswapper_medic.cfg
+	to turn on and off their optional tracer effects: 
+	
+		A.	Healing beam connecting the medigun to the heal target (visible by default). 	
+		B.	Flamethrower flames (visible by default). 
+	
+	
+	
+//-------------------------------------------------------------------
+//				  HOW DO I CHANGE MY CROSSHAIRS?
+//-------------------------------------------------------------------
+	
+	
+4.  Use thwartski_crosshairs.cfg and thwartski_wepswapper_[classname].cfg to modify the 
+	crosshair category for each	weapon. 
+	
+	I use the following four groupings:
+	
+		A.	"Valve" for medigun, sapper, minigun, stickies, rockets, flames.
+		B.	"Precise" for sniper, pistols, revolver.
+		C.	"Spread" for shotguns, needles, smg, grenades.
+		D.	"Melee" for melee.
+	
+//-------------------------------------------------------------------
+//				  HOW DO I USE THE ADVANCED SPY CONFIG
+//-------------------------------------------------------------------
+
+	
+6. 	Change spy.cfg to point to thwartski_wepswapper_spy_advanced.cfg, if you're a spy who wants to 	
+	to things like hide the amby during reloading and disguise the crosshair growth. You know who you are.  
+	
+
+//-------------------------------------------------------------------
+//				  WHAT ARE THESE "ARON SETTINGS" FOR?
+//-------------------------------------------------------------------
