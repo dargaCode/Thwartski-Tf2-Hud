@@ -1,15 +1,23 @@
 "blank"					"=========================="
-"blank"					"MUST DELETE THWARTSKI_BINDS.CFG FIRST!"
+"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
 "blank"					"=========================="
 
 "leftswap"   			"Swap Slot 1/2                (Q)"
 "rightswap"				"Swap Slot 2/3                (E)"
 
+"blank"					"=========================="
+"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
+"blank"					"=========================="
+
 "equipprimary"			"Equip 1st Slot                 (1)"
 "equipsecondary"		"Equip 2nd Slot                (2)"
-"equiptertiary"			"Equip 3rd Slot                (3)"
-"equipslot4"			"Equip 4th Slot                (4)"
-"equipslot5"			"Equip 5th Slot                (5)"
+"equiptertiary"			"Equip 3rd Slot                 (3)"
+"equipslot4"			"Equip 4th Slot                 (4)"
+"equipslot5"			"Equip 5th Slot                 (5)"
+
+"blank"					"=========================="
+"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
+"blank"					"=========================="
 
 "scrollswapup"			"Scroll Slots Forward      (MWHEELUP)"
 "scrollswapdown"		"Scroll Slots Backward    (MWHEELDOWN)"
