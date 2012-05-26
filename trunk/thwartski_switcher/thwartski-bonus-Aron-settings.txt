@@ -1,13 +1,14 @@
-These settings are for Aron's Crosshair Switcher (http://tinyurl.com/7xzb6sk).
+//***DON'T ACTUALLY GENERATE NEW CONFIGS WITH THIS TOOL OR THE SWAPPER WONT WORK***
 
-Aron's app showed me how the crosshair settings work, and inspired me to use categories.
-His program isn't required at all to use my scripts, it's just a nice way to plan your crosshairs. 
+//These settings are for Aron's Crosshair Switcher (http://tinyurl.com/7xzb6sk).
 
-These settings will give you an overview of my crosshair settings, or help you decide how to tweak them. 
-Just paste the following into the /settings/settings.ini file that's created after you run his app:
+//Aron's app showed me how the crosshair settings work, and inspired me to use categories.
+//His program isn't required at all to use my scripts, it's just a nice way to plan your crosshairs. 
 
-***Make sure to BACK UP YOUR CFG FOLDER before playing around with this!***
--------------------------------------------------------------------------------------------------
+//These settings will give you an overview of my crosshair settings, or help you decide how to tweak them. 
+/Just paste the following into the /settings/settings.ini file that's created after you run his app:
+
+//-------------------------------------------------------------------------------------------------
 [Version]
 ver=1.8.0.0
 [Options]
