@@ -1,6 +1,6 @@
-//This folder defines the in-game keybind categories in the Edit Settings menu.
+//This script defines the in-game keybind categories in the Edit Settings menu.
 //I've added it so that players who don't understand config editing can easily rebind
-//their keys, but they'll just reset unless thwartski_binds.cfg is deleted.
+//their keys, but they'll just revert every time unless thwartski_binds.cfg is deleted.
 
 "blank"					"=========================="
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
@@ -8,6 +8,16 @@
 
 "leftswap"   			"Swap Slot 1/2                (Q)"
 "rightswap"				"Swap Slot 2/3                (E)"
+"voicemenu 0 0"			"Call for Medic                 (R)"
+
+"blank"					"=========================="
+"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
+"blank"					"=========================="
+
+"+thwartskiattack"		"Attack                           (MOUSE1)"
+"+thwartskiattack2"		"Special/Attack2              (MOUSE2)"
+"+thwartskijump"		"Jump                            (SPACE)"
+//													^Don't line these up or they'll look misaligned in game (non-monospaced font).
 
 "blank"					"=========================="
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
@@ -23,8 +33,9 @@
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
 "blank"					"=========================="
 
-"scrollswapup"			"Scroll Slots Forward      (MWHEELUP)"
-"scrollswapdown"		"Scroll Slots Backward    (MWHEELDOWN)"
+"scrollswapup"			"Scroll Slots Forward       (MWHEELUP)"
+"scrollswapdown"		"Scroll Slots Backward     (MWHEELDOWN)"
+
 
 "blank"			"=========================="
 "blank"			"#Valve_Movement_Title"
@@ -33,7 +44,9 @@
 "+back"			"#Valve_Move_Back"
 "+moveleft"		"#Valve_Move_Left"
 "+moveright"	"#Valve_Move_Right"
-"+jump"			"#Valve_Jump"
+
+//Moving out to a replacement, above.
+//"+jump"			"#Valve_Jump"
 "+duck"			"#Valve_Duck"
 "+moveup"		"#Valve_Swim_Up"
 "+movedown"		"#Valve_Swim_Down"
@@ -48,7 +61,9 @@
 "voice_menu_1"	"#TF_Voice_Menu_A"
 "voice_menu_2"	"#TF_Voice_Menu_B"
 "voice_menu_3"	"#TF_Voice_Menu_C"
-"voicemenu 0 0"	"#TF_Call_For_Medic"
+
+//Moving up to thwartski binds section since I override it.
+//"voicemenu 0 0"	"#TF_Call_For_Medic"
 "blank"			"=========================="
 "blank"			"#TF_Title"
 "blank"			"=========================="
@@ -70,17 +85,21 @@
 "blank"			"=========================="
 "blank"			"#TF_ClassSpecific_Keys"
 "blank"			"=========================="
-"+attack2"		"#TF_ClassSkill_Demoman"
-"+attack2"		"#TF_ClassSkill_Heavy"
-"+attack2"		"#TF_ClassSkill_Medic"
-"+attack2"		"#TF_ClassSkill_Sniper"
-"+attack2"		"#TF_ClassSkill_Spy"
+
+//Moving out to a replacement, above.
+//"+attack2"		"#TF_ClassSkill_Demoman"
+//"+attack2"		"#TF_ClassSkill_Heavy"
+//"+attack2"		"#TF_ClassSkill_Medic"
+//"+attack2"		"#TF_ClassSkill_Sniper"
+//"+attack2"		"#TF_ClassSkill_Spy"
 "lastdisguise"	"#TF_ClassSkill_Spy_LastDisguise"
 "disguiseteam"	"#TF_ClassSkill_Spy_DisguiseTeam"
 "blank"			"=========================="
 "blank"			"#Valve_Combat_Title"
 "blank"			"=========================="
-"+attack"		"#Valve_Primary_Attack"
+
+//Moving out to a replacement, above.
+//"+attack"		"#Valve_Primary_Attack"
 "+reload"		"#Valve_Reload_Weapon"
 "invprev"		"#Valve_Previous_Weapon"
 "invnext"		"#Valve_Next_Weapon"
