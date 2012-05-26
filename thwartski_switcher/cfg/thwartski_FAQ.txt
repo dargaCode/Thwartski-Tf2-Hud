@@ -1,127 +1,134 @@
 //-------------------------------------------------------------------
-//				    HOW DO I INSTALL THE SWAPPER
+//				  1. HOW DO I INSTALL THE SWAPPER?
 //-------------------------------------------------------------------
 
-
-
-
-
-
+See thwartski_README.txt
 
 //-------------------------------------------------------------------
-//				    WHY CAN'T I REBIND MY KEYS?
+//				2. WHY CAN'T I REBIND MY KEYS IN-GAME?
 //-------------------------------------------------------------------
 
+If you want to rebind your swapper keys through the in-game settings menu, 
+you first have to delete thwartski_binds.cfg from the cfg folder.
 
-
-
-
+Otherwise they'll just reset every time the game loads or you change classes.
 
 //-------------------------------------------------------------------
-//      I ONLY PLAY ONE CLASS, CAN I DELETE THIS OTHER JUNK?
+//			  3. WHERE CAN I CHANGE MY BINDS IN CONFIGS?
 //-------------------------------------------------------------------
+	
+You can use the method described above to change them without editing a config file.
 
-
-    [If you're super hardcore about one class and never play the others, you can
-	delete the class-specific configs you don't want and the system will still work.]
-	
-	
-	
-	
-//-------------------------------------------------------------------
-//				    HOW CAN I EDIT A .CFG FILE?
-//-------------------------------------------------------------------
-	
-	
-//-------------------------------------------------------------------
-//				   WHY DOES MY CAMERA LOOK DIFFERENT?
-//-------------------------------------------------------------------
-	
-	
-//-------------------------------------------------------------------
-//				   WHY DO MY ARMS LOOK DIFFERENT?
-//-------------------------------------------------------------------	
-	
-	
-	
-	
-//-------------------------------------------------------------------
-//						 HOW TO CUSTOMIZE
-//-------------------------------------------------------------------
-
-As you edit your settings, you don't have to restart the game for them to take effect.
-Just save your config files and change classes to reset the system with your new changes.
+If you're comfortable editing configs, you can find the binds in /cfg/thwartski_binds.cfg
 
 Each config has the sections that contain customization options marked with: **EDIT ME!**
 
-[If you've never edited a .cfg file before, you'll have to tell your operating system
-that you want to use Notepad to open it.]
+//-------------------------------------------------------------------
+//				   4. HOW CAN I EDIT A .CFG FILE?
+//-------------------------------------------------------------------
+	
+Right click on a config file and select Open. If you've never edited a cfg file before, 
+you should see an option to select which software to open it with. 
 
-1. 	Use thwartski_wepswapper.cfg to rebind the two-button weaponswap keys. 
-	
-	By default, they're bound to Q and E.
-	
-	
+Select Notepad (PC) or TextEdit (OSX) and check the option to remember this setting.
+//						     FEEDBACK
 //-------------------------------------------------------------------
-//				  DO I HAVE TO RESTART THE GAME?
-//-------------------------------------------------------------------
-	
-	
-
-	
-//-------------------------------------------------------------------
-//				  CAN I CHANGE MY WEAPON ORDER?
-//-------------------------------------------------------------------
-	
-	
-2.	Use thwartski_wepswapper_[classname].cfg to modify the primary/secondary/tertiary
-	weapon definitions for each class.
-	
-	For example, I recommend using medigun as medic's primary, and sticky launcher as demo's
-	primary. Any changes will apply to swapper buttons, number keys, and the scroll wheel.
-
-//-------------------------------------------------------------------
-//				  HOW DO I TURN OFF MY VIEWMODELS?
-//-------------------------------------------------------------------
-	
-	
-3.  Use thwartski_crosshairs.cfg to modify the crosshairs and viewmodels.
-	
-	By default, viewmodels are turned on, so you can get used to the crosshairs and 
-	weapon swapping first. I recommend turning them off for all weapons but melee.
-
-	5. 	If you turn off viewmodels, use thwartski_wepswapper_pyro.cfg and thwartski_wepswapper_medic.cfg
-	to turn on and off their optional tracer effects: 
-	
-		A.	Healing beam connecting the medigun to the heal target (visible by default). 	
-		B.	Flamethrower flames (visible by default). 
-	
-	
-	
-//-------------------------------------------------------------------
-//				  HOW DO I CHANGE MY CROSSHAIRS?
-//-------------------------------------------------------------------
-	
-	
-4.  Use thwartski_crosshairs.cfg and thwartski_wepswapper_[classname].cfg to modify the 
-	crosshair category for each	weapon. 
-	
-	I use the following four groupings:
-	
-		A.	"Valve" for medigun, sapper, minigun, stickies, rockets, flames.
-		B.	"Precise" for sniper, pistols, revolver.
-		C.	"Spread" for shotguns, needles, smg, grenades.
-		D.	"Melee" for melee.
-	
-//-------------------------------------------------------------------
-//				  HOW DO I USE THE ADVANCED SPY CONFIG
+//				 5. DO I HAVE TO RESTART MY GAME?
 //-------------------------------------------------------------------
 
-	
-6. 	Change spy.cfg to point to thwartski_wepswapper_spy_advanced.cfg, if you're a spy who wants to 	
-	to things like hide the amby during reloading and disguise the crosshair growth. You know who you are.  
-	
+The first time you install the swapper, you'll need to restart TF2. 
+
+After that, if you're editing something, all you have to so is save the config
+and change classes. Then the configs will all be reloaded with the new settings. 
+
+If you change anything in /cfg/autoexec.cfg though, you'll have to restart the game.
 
 //-------------------------------------------------------------------
-//				  WHAT ARE THESE "ARON SETTINGS" FOR?
+//			    6. WHY DOES MY CAMERA LOOK DIFFERENT?
 //-------------------------------------------------------------------
+
+I changed your field of view (fov) to give you more peripheral vision.
+
+I felt bad messing with it since it's not strictly part of this system, but it will
+make a huge difference to your gameplay and I recommend giving it a try.
+
+If you want to change it back, just go to /cfg/autoexec.cfg and edit the fov_desired
+number (the comments will help you).
+
+//-------------------------------------------------------------------
+//				 7. WHY DO MY ARMS LOOK DIFFERENT?
+//-------------------------------------------------------------------	
+	
+Similarly, I changed the fov for viewmodels so they're not so obtrusive.
+
+If you want to change them back to the valve defaults, open 
+/cfg/thwartski_wepswapper_crosshairs.cfg and search for "defaultfov"
+
+//-------------------------------------------------------------------
+//				  8. CAN I CHANGE MY WEAPON ORDER?
+//-------------------------------------------------------------------
+	
+Use thwartski_wepswapper_[classname].cfg to modify the primary/secondary/tertiary
+weapon definitions for each class.
+	
+For example, I recommend using medigun as medic's primary, and sticky launcher as demo's
+primary. Any changes will apply to swapper buttons, number keys, and the scroll wheel.
+
+//-------------------------------------------------------------------
+//			    9. HOW DO I TURN OFF MY VIEWMODELS?
+//-------------------------------------------------------------------
+	
+Open /cfg/thwartski_crosshairs.cfg and look under the section marked VIEWMODELS.
+
+I recommend turning off all gun viewmodels but leaving on melee, so I've separated
+the options out into two pieces. Just follow the instructions in the comments. 
+
+//-------------------------------------------------------------------
+//		   10. HOW CAN I HIDE MY PYRO FLAMES OR HEAL BEAM?
+//-------------------------------------------------------------------
+
+Your healing beam and pyro flames are visible by default, even when viewmodels 
+are turned off. 
+
+Edit /cfg/thwartski_wepswapper_pyro.cfg and /cfg/thwartski_wepswapper_medic.cfg to
+see and modify these options. 
+
+[However they can only be hidden if viewmodels are already turned off.]
+	
+//-------------------------------------------------------------------
+//				11. HOW DO I CHANGE MY CROSSHAIRS?
+//-------------------------------------------------------------------
+
+/cfg/thwartski_crosshairs.cfg contains the definitions for each of the 4 crosshair 
+categories I use. I use the following four groupings:
+
+	A.	"Valve" for medigun, sapper, minigun, stickies, rockets, flames.
+	B.	"Precise" for sniper, pistols, revolver.
+	C.	"Spread" for shotguns, needles, smg, grenades.
+	D.	"Melee" for melee.
+	
+Each /cfg/thwartski_wepswapper_[classname].cfg assigns a crosshair category for each 
+weapon slot. 
+
+You can create as many new categories as you want, or reassign weapons between
+the existing categories. 
+
+//-------------------------------------------------------------------
+//			  12. WHAT ARE THESE "ARON SETTINGS" FOR?
+//-------------------------------------------------------------------
+
+Aron's Crosshair Switcher has a really nice visual editor that you can use to plan out
+your crosshairs. 
+
+Since I used it to plan out my 4 categories, I included my settings so you can use them
+as a starting point for modifying your own if you want.
+
+//-------------------------------------------------------------------
+//		      13. HOW DO I USE THE ADVANCED SPY CONFIG?
+//-------------------------------------------------------------------
+
+Change /cfg/spy.cfg to point to /cfg/thwartski_wepswapper_spy_advanced.cfg to spy.cfg
+
+This is for spies who want to have special settings for their weapon visibility when firing, 
+and changing crosshairs to minimize the ambassador cooldown distraction. You know who you are.  
+	

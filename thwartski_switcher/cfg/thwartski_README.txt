@@ -23,20 +23,24 @@ saving a copy of your CFG folder will save your configs from being overwritten.]
 3.  Copy the SCRIPTS folder from this folder into your TF folder. There is only
 	one file in it and it probably won't need to be overwritten.
 	
-4. 	Load the game and rebind your call for medic key if it was on E before.
+4. 	Load the game and rebind your "call medic" key if it was on E before.
 	The system uses Q and E by default to swap weapons. To change that, see FAQ.
 	
 5.  Start playing!
 
 //-------------------------------------------------------------------
-//						  ABOUT THWARTSKI
+//						  	 THANK YOU
 //-------------------------------------------------------------------
 
-I'm a professional game designer who plays a decent amount of TF2. My comp ability
-is still low, but believe I know enough to design for high level comp players.
+I was inspired by Aron's Crosshair Switcher quite a bit, and learned a lot about how
+Valve's crosshair system works from looking at his configs: 
+http://tinyurl.com/7xzb6sk
 
-I try to play all nine classes so I can tailor things to each of them. My current 
-main is soldier. It was originally pyro, then engie, then sniper, then spy.
+Zeldajunki and Saberreap both helped me fix a lot of problems that were confusing or
+unclear with their usertesting feedback. 	
+
+I got some good ideas from Stabby's spy scripts, which I used in the advanced spy config:
+http://tinyurl.com/78gjvk7
 
 //-------------------------------------------------------------------
 //						 ABOUT THE SWAPPER
@@ -91,4 +95,12 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 	Equalizer is always equipped by hitting E.
 	Shotgun is always equipped by hitting Q or E a second time.
 	
-	
+//-------------------------------------------------------------------
+//						  ABOUT THWARTSKI
+//-------------------------------------------------------------------
+
+I'm a professional game designer who plays a decent amount of TF2. My comp ability
+is still low, but believe I know enough to design for high level comp players.
+
+I try to play all nine classes so I can tailor things to each of them. My current 
+main is soldier. It was originally pyro, then engie, then sniper, then spy.
