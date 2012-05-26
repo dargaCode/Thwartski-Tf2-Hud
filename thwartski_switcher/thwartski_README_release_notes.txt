@@ -3,19 +3,24 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v0.9.2 (BETA) - May 25, 2012.
+Thwartski Weapon Swapper v0.9.5 (BETA) - May 25, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-Cleanup for bad states in the advanced spy config (+attack stuck on etc).
-Updated README and install instructions.
-General comments and cleanup.
+Reworked the system so that players who don't know how to edit .cfg files can still
+	rebind their hotkeys (by deleting one file and using the in-game settings menu).
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
+
+v0.9.2 (BETA) - May 25, 2012.
+
+	Cleanup for bad states in the advanced spy config (+attack stuck on etc).
+	Updated README and install instructions.
+	General comments and cleanup.
 
 v0.9.1 (BETA) - May 17, 2012.
 

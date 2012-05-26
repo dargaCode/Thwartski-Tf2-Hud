@@ -11,15 +11,22 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 //						  HOW TO INSTALL
 //-------------------------------------------------------------------
 
-1.  Copy all these files from this folder to your cfg folder, replacing what was there. 
-	If you've created any custom configs, you should back them up first. 
+[These steps assume you've never edited a config before, but if you have, 
+saving a copy of your CFG folder will save your configs from being overwritten.]
 
-	[C:\Program Files (x86)\Steam\steamapps\[YOU]\team fortress 2\tf\cfg\]
+1.  Find your TF2 folder. It will be something like: 
+	C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\tf\
+
+2.  Copy the CFG folder from this folder into your TF folder. Confirm that 
+	you want to merge with your existing CFG folder and overwrite all the files. 
 	
-    [If you're super hardcore about one class and never play the others, you can
-	delete the class-specific configs you don't want and the system will still work.]
-
-2.  Load the game and start playing!
+3.  Copy the SCRIPTS folder from this folder into your TF folder. There is only
+	one file in it and it probably won't need to be overwritten.
+	
+4. 	Load the game and rebind your call for medic key if it was on E before.
+	The system uses Q and E by default to swap weapons. To change that, see FAQ.
+	
+5.  Start playing!
 
 //-------------------------------------------------------------------
 //						  ABOUT THWARTSKI
@@ -83,55 +90,5 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 	Rocket Launcher is always equipped by hitting Q.
 	Equalizer is always equipped by hitting E.
 	Shotgun is always equipped by hitting Q or E a second time.
-	
-//-------------------------------------------------------------------
-//						 HOW TO CUSTOMIZE
-//-------------------------------------------------------------------
-
-As you edit your settings, you don't have to restart the game for them to take effect.
-Just save your config files and change classes to reset the system with your new changes.
-
-Each config has the sections that contain customization options marked with: **EDIT ME!**
-
-[If you've never edited a .cfg file before, you'll have to tell your operating system
-that you want to use Notepad to open it.]
-
-1. 	Use thwartski_wepswapper.cfg to rebind the two-button weaponswap keys. 
-	
-	By default, they're bound to Q and E.
-	
-	
-2.	Use thwartski_wepswapper_[classname].cfg to modify the primary/secondary/tertiary
-	weapon definitions for each class.
-	
-	For example, I recommend using medigun as medic's primary, and sticky launcher as demo's
-	primary. Any changes will apply to swapper buttons, number keys, and the scroll wheel.
-
-	
-3.  Use thwartski_crosshairs.cfg to modify the crosshairs and viewmodels.
-	
-	By default, viewmodels are turned on, so you can get used to the crosshairs and 
-	weapon swapping first. I recommend turning them off for all weapons but melee.
-
-	
-4.  Use thwartski_crosshairs.cfg and thwartski_wepswapper_[classname].cfg to modify the 
-	crosshair category for each	weapon. 
-	
-	I use the following four groupings:
-	
-		A.	"Valve" for medigun, sapper, minigun, stickies, rockets, flames.
-		B.	"Precise" for sniper, pistols, revolver.
-		C.	"Spread" for shotguns, needles, smg, grenades.
-		D.	"Melee" for melee.
-	
-	
-5. 	If you turn off viewmodels, use thwartski_wepswapper_pyro.cfg and thwartski_wepswapper_medic.cfg
-	to turn on and off their optional tracer effects: 
-	
-		A.	Healing beam connecting the medigun to the heal target (visible by default). 	
-		B.	Flamethrower flames (visible by default). 
-	
-6. 	Change spy.cfg to point to thwartski_wepswapper_spy_advanced.cfg, if you're a spy who wants to 	
-	to things like hide the amby during reloading and disguise the crosshair growth. You know who you are.  
 	
 	
