@@ -23,10 +23,9 @@ saving a copy of your CFG folder will save your configs from being overwritten.]
 3.  Copy the SCRIPTS folder from this folder into your TF folder. There is only
 	one file in it and it probably won't need to be overwritten.
 	
-4. 	Load the game and rebind your "call medic" key if it was on E before.
-	The system uses Q and E by default to swap weapons. To change that, see FAQ.
+4. 	You may want to rebind your keys from the defaults I have set (see FAQ).
 	
-5.  Start playing!
+5.  Have fun!
 
 //-------------------------------------------------------------------
 //						  	 THANK YOU
