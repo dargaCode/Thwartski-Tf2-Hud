@@ -31,7 +31,7 @@ Right click on a config file and select Open. If you've never edited a cfg file 
 you should see an option to select which software to open it with. 
 
 Select Notepad (PC) or TextEdit (OSX) and check the option to remember this setting.
-//						     FEEDBACK
+
 //-------------------------------------------------------------------
 //				 5. DO I HAVE TO RESTART MY GAME?
 //-------------------------------------------------------------------
