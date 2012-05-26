@@ -1,3 +1,7 @@
+//This folder defines the in-game keybind categories in the Edit Settings menu.
+//I've added it so that players who don't understand config editing can easily rebind
+//their keys, but they'll just reset unless thwartski_binds.cfg is deleted.
+
 "blank"					"=========================="
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
 "blank"					"=========================="
