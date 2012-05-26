@@ -3,7 +3,7 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v1.0.0 (RELEASE!) - May 25, 2012.
+Thwartski Weapon Swapper v1.0.0 (RELEASE!) - May 26, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
