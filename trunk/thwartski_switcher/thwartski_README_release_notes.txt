@@ -3,18 +3,22 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v1.0.0 (RELEASE!) - May 26, 2012.
+Thwartski Weapon Swapper v1.0.1 (RELEASE!) - May 27, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-Reworked the system so that players who don't know how to edit .cfg files can still
-	rebind their hotkeys (by deleting one file and using the in-game settings menu).
+Fixed a but that prevented spectate commands from working if the player hadn't chosen a class yet.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
+
+v1.0.0 (RELEASE!) - May 26, 2012.
+
+	Reworked the system so that players who don't know how to edit .cfg files can still
+	rebind their hotkeys (by deleting one file and using the in-game settings menu).
 
 v0.9.2 (BETA) - May 25, 2012.
 
