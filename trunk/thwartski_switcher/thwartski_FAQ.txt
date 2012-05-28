@@ -114,7 +114,17 @@ You can create as many new categories as you want, or reassign weapons between
 the existing categories. 
 
 //-------------------------------------------------------------------
-//			  12. WHAT ARE THESE "ARON SETTINGS" FOR?
+//     12. HOW DO I GET MY CROUCHJUMP SCRIPT TO WORK WITH THIS?
+//-------------------------------------------------------------------
+
+By popular demand, I've integrated a version of The404Error's crouchjump script.
+
+It's off by default; Edit /cfg/thwartski_wepswapper_crouchjump.cfg to turn it on.
+
+I even added a toggle script you can bind to a key to enable/disable it while in game. 
+
+//-------------------------------------------------------------------
+//			  13. WHAT ARE THESE "ARON SETTINGS" FOR?
 //-------------------------------------------------------------------
 
 Aron's Crosshair Switcher has a really nice visual editor that you can use to plan out
@@ -124,7 +134,7 @@ Since I used it to plan out my 4 categories, I included my settings so you can u
 as a starting point for modifying your own if you want.
 
 //-------------------------------------------------------------------
-//		      13. HOW DO I USE THE ADVANCED SPY CONFIG?
+//		      14. HOW DO I USE THE ADVANCED SPY CONFIG?
 //-------------------------------------------------------------------
 
 Change /cfg/spy.cfg to point to /cfg/thwartski_wepswapper_spy_advanced.cfg to spy.cfg
