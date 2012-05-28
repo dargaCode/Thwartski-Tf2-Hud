@@ -35,11 +35,14 @@ I was inspired by Aron's Crosshair Switcher quite a bit, and learned a lot about
 Valve's crosshair system works from looking at his configs: 
 http://tinyurl.com/7xzb6sk
 
-Zeldajunki and Saberreap both helped me fix a lot of problems that were confusing or
-unclear with their usertesting feedback. 	
+Usertesting feedback from Saberreap, Zeldajunki, and AndyJ helped me fix a lot of things
+that were confusing, broken, or unclear. 	
 
 I got some good ideas from Stabby's spy scripts, which I used in the advanced spy config:
 http://tinyurl.com/78gjvk7
+
+I've also incorporated a modified version of The404Error's popular Crouch Jump Script:
+http://gamebanana.com/tf2/scripts/2499
 
 //-------------------------------------------------------------------
 //						 ABOUT THE SWAPPER
