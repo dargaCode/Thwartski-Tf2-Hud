@@ -56,10 +56,10 @@
 	{
 		"ControlName"		"Imagepanel"
 		"fieldName"			"BlackBGThwartski"
-		"xpos"				"74"	
+		"xpos"				"83"	
 		"ypos"				"12"
 		"zpos"				"3"		
-		"wide"				"52"
+		"wide"				"34"
 		"tall"				"8"
 		"visible"			"1"
 		"enabled"			"1"
