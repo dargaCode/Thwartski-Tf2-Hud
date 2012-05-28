@@ -24,7 +24,7 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"ChargeLabel"
 		"xpos"					"0"
-		"ypos"					"217"
+		"ypos"					"213"
 		"zpos"					"4"
 		"wide"					"200"
 		"tall"					"12"
@@ -45,14 +45,14 @@
 		"ControlName"		"Imagepanel"
 		"fieldName"			"BlackBGThwartski"
 		"xpos"				"73"	
-		"ypos"				"217"
+		"ypos"				"213"
 		"zpos"				"3"		
 		"wide"				"54"
 		"tall"				"12"
 		"visible"			"1"
 		"enabled"			"1"
 		"scaleImage"		"1"	
-		"fillcolor"			"46 43 42 200"
+		"fillcolor"			"46 43 42 150"
 	}
 	
 	
