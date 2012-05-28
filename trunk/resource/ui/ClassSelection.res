@@ -865,7 +865,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numScout%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 	
@@ -885,7 +885,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSoldier%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 
@@ -905,7 +905,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numPyro%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 
@@ -925,7 +925,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numDemoman%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 
@@ -945,7 +945,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numHeavy%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 
@@ -965,7 +965,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numEngineer%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 	"numMedic"
@@ -984,7 +984,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numMedic%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 	"numSniper"
@@ -1003,7 +1003,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSniper%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}	
 	"numSpy"
@@ -1022,7 +1022,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSpy%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"255 0 0 255"
 	}
 	
@@ -1044,7 +1044,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numScout%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 	
@@ -1064,7 +1064,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSoldier%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 
@@ -1084,7 +1084,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numPyro%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 
@@ -1104,7 +1104,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numDemoman%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 
@@ -1124,7 +1124,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numHeavy%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 
@@ -1144,7 +1144,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numEngineer%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 	"numMedicShadowThwartski"
@@ -1163,7 +1163,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numMedic%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 	"numSniperShadowThwartski"
@@ -1182,7 +1182,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSniper%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}	
 	"numSpyShadowThwartski"
@@ -1201,7 +1201,7 @@
 		"tabPosition"	"0"
 		"labelText"		"%numSpy%"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumBig"
+		"font"			"HudFontMedium"
 		"fgcolor"		"0 0 0 255"
 	}
 
@@ -1250,7 +1250,7 @@
 		"enabled"		"1"
 		"labelText"		"#TF_SelectAClass"
 		"textAlignment"	"center"
-		"font"			"HudFontMediumSmallBold"		//"HUDFontMediumBold"
+		"font"			"HudFontMediumSmallBold"		//"HudFontMedium"
 		"fgcolor"		"white"
 	}	
 	"TeamLabelShadow"
