@@ -9,11 +9,11 @@ Thwartski Weapon Swapper v1.0.2 (RELEASE) - May 28, 2012.
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Added integrated support for a crouchjumpig script, since they're so popular and it 
+	1) Added integrated support for a crouchjumping script, since they're so popular and it 
 	was difficult to get working with my previous version. (See thwartski_wepswapper_crouchjump.cfg)
 	
 	2) Removed almost all of my autoexec content to its own file (thwartski_autoexec.cfg), 
-	so it could be integrated with a performance config by only pasting one line.
+	so it could be integrated with performance configs more easily.
 	
 	Thanks to AndyJ for feedback!
 	
