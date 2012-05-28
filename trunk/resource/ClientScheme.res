@@ -1012,6 +1012,21 @@ Scheme
 				"antialias" "1"
 			}
 		}
+		
+		//Cow Mangler Meter
+		"HudFontSuperTinyBold"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"8"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
+		
 		"PerformanceModeSmall"
 		{
 			"1"

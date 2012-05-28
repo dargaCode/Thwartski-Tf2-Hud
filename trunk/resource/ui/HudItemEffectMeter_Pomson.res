@@ -39,20 +39,20 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
-		"ypos"					"10"
-		"zpos"					"4"
-		"wide"					"198"
-		"tall"					"15"
+		"ypos"					"8"
+		"zpos"					"5"
+		"wide"					"200"
+		"tall"					"20"
 		"autoResize"			"1"
 		"pinCorner"				"2"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"#TF_Ball"
-		"textAlignment"			"east"
+		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMediumSmallBold"
+		"font"					"HudFontSmallBold"
 	}
 
 	"ItemEffectMeter"
@@ -72,7 +72,22 @@
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
-	}					
+	}	
+
+	"BlackBGThwartski"
+	{
+		"ControlName"		"Imagepanel"
+		"fieldName"			"BlackBGThwartski"
+		"xpos"				"72"	
+		"ypos"				"12"
+		"zpos"				"4"		
+		"wide"				"56"
+		"tall"				"12"
+		"visible"			"1"
+		"enabled"			"1"
+		"scaleImage"		"1"	
+		"fillcolor"			"46 43 42 255"
+	}
 
 	"Hatch25Thwartski"
 	{
