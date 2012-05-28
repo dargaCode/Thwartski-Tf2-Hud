@@ -39,7 +39,7 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterLabel"
 		"xpos"					"0"
-		"ypos"					"16"
+		"ypos"					"12"
 		"zpos"					"4"
 		"wide"					"200"
 		"tall"					"12"
@@ -52,7 +52,7 @@
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontSmallBold"//"HudFontMediumSmallBold"
+		"font"					"HudFontSmallBold"
 	}
 	
 	"BlackBGThwartski"
@@ -60,14 +60,14 @@
 		"ControlName"		"Imagepanel"
 		"fieldName"			"BlackBGThwartski"
 		"xpos"				"74"	
-		"ypos"				"16"
+		"ypos"				"12"
 		"zpos"				"3"		
 		"wide"				"52"
 		"tall"				"12"
 		"visible"			"1"
 		"enabled"			"1"
 		"scaleImage"		"1"	
-		"fillcolor"			"46 43 42 200"
+		"fillcolor"			"46 43 42 150"
 	}
 
 	"ItemEffectMeter"
