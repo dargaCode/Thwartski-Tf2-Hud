@@ -69,7 +69,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
-		"labelText"				"CRITS"//"#TF_Ball"
+		"labelText"				"HEADS"//"#TF_Ball"
 		"textAlignment"			"center"
 		"dulltext"				"0"
 		"brighttext"			"0"
@@ -96,13 +96,12 @@
 		"brighttext"			"0"
 	}					
 	
-	
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
 		"xpos"					"25"
-		"ypos"					"10"
+		"ypos"					"11"
 		"zpos"					"2"
 		"wide"					"40"
 		"tall"					"20"	
@@ -111,11 +110,11 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
+		"textAlignment"			"south"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMedium"
-		//"fgcolor"				"0 255 0 255"
+		"font"					"HudFontTimer"
+		"fgcolor"				"0 255 0 255"
 	}
 	
 	"CountShadowThwartski"
@@ -123,7 +122,7 @@
 		"ControlName"			"CExLabel"
 		"fieldName"				"CountShadowThwartski"
 		"xpos"					"26"
-		"ypos"					"11"
+		"ypos"					"12"
 		"zpos"					"1"
 		"wide"					"40"
 		"tall"					"20"	
@@ -132,10 +131,10 @@
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"north"
+		"textAlignment"			"south"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"HudFontMedium"
+		"font"					"HudFontTimer"
 		"fgcolor"				"Black"
 	}
 }
