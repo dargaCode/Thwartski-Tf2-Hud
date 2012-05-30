@@ -254,8 +254,8 @@
 		"fieldName" "BuildingStatus_Spy"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"-18"
-		"ypos"		"-12"	
+		"xpos"		"-12"//"-18"
+		"ypos"		"-9"//"-12"	
 		"wide"		"640"
 		"tall"		"480"
 		
@@ -267,8 +267,8 @@
 		"fieldName" "BuildingStatus_Engineer"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"-18"
-		"ypos"		"-12"
+		"xpos"		"-12"//"-18"
+		"ypos"		"-9"//"-12"
 		"wide"		"640"
 		"tall"		"480"
 		
