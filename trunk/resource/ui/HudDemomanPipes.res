@@ -40,6 +40,7 @@
 		"font"					"HudFontSmallBold"
 	}
 	
+	//Have to hide since it shows up even when the shield isn't equipped.
 	"BlackBGThwartski"
 	{
 		"ControlName"		"Imagepanel"
@@ -49,7 +50,7 @@
 		"zpos"				"3"		
 		"wide"				"54"
 		"tall"				"12"
-		"visible"			"1"
+		"visible"			"0"
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"46 43 42 150"
@@ -121,7 +122,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"font"			"HudFontMediumSmallBold"//"HudFontMedium"
-			//"fgcolor" 		"0 255 0 255"
+			"fgcolor" 		"0 255 0 255"
 		}
 		"NumPipesLabelDropshadow"
 		{
