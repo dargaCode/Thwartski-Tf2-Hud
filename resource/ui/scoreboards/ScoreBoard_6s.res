@@ -303,7 +303,7 @@
 		"ypos"			"101"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"120"	
+		"tall"			"126"	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -320,7 +320,7 @@
 		"ypos"			"101"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"120"	
+		"tall"			"126"	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -1195,9 +1195,7 @@
 			"enabled"		"1"
 		}
 
-	
-
-			"KillsLabel"
+		"KillsLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"KillsLabel"
