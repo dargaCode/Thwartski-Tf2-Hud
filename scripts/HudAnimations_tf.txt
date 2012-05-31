@@ -342,7 +342,7 @@ event HudSpyDisguiseChanged
 	//Animate PlayerStatusSpyOutlineImage	Position	"c-200 c-200"	Linear 0.0 0.2
 	//Animate PlayerStatusSpyOutlineImage	Size		"400 400"		Linear 0.0 0.2
 	
-	Animate PlayerStatusSpyOutlineImage		Position	"c142 c-184"	Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Position	"c100 c-184"	Linear 0.0 0.2
 	Animate PlayerStatusSpyOutlineImage		Size		"330 330"		Linear 0.0 0.2
 
 	RunEvent HudSpyDisguiseHide	0.7
