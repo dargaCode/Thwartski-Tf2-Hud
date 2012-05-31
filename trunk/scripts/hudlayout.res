@@ -204,9 +204,9 @@
 		"fieldName" "DisguiseStatus"
 		"visible"	"1"
 		"enabled"	"1"
-		"xpos"		"137"
+		"xpos"		"c-290"
 		"ypos"		"r43"
-		"wide"		"180"
+		"wide"		"181"
 		"tall"		"200"
 	}
 
