@@ -11,8 +11,6 @@
 		"wide"			"f0"
 		"tall"			"480"
 		
-//		"bgcolor_override"	"0 0 0 240"
-		
 		"update_url"	"http://store.steampowered.com/news/?filter=updates&appids=440"
 		"blog_url"		"http://www.teamfortress.com/"
 		
@@ -152,7 +150,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFLogoImage"
-		"xpos"			"c-330"//"c-290"
+		"xpos"			"100"//"c-330"
 		"ypos"			"48"
 		"zpos"			"-99"
 		"wide"			"256"
@@ -167,7 +165,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TFCharacterImage"
-		"xpos"			"c-240"
+		"xpos"			"r620"//"c-240"
 		"ypos"			"-80"
 		"zpos"			"-99"
 		"wide"			"600"
@@ -181,7 +179,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"GamesBGPanel"
-		"xpos"			"c-330"//"c-290"
+		"xpos"			"98"//"c-330"//"c-290"
 		"ypos"			"122"
 		"zpos"			"-1"
 		"wide"			"260"
@@ -199,7 +197,7 @@
 		"font"			"HudFontSmallBold"
 		"labelText"		"Games"//"#MMenu_Play"
 		"textAlignment"	"west"
-		"xpos"			"c-318"//"c-278"
+		"xpos"			"110"//"c-318"//"c-278"
 		"ypos"			"123"
 		"wide"			"140"
 		"tall"			"30"
@@ -268,7 +266,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"TrainingMiniButton"
-		"xpos"			"c-100"//"c-60"
+		"xpos"			"329"//"c-100"//"c-60"
 		"ypos"			"183"
 		"zpos"			"30"
 		"wide"			"20"
@@ -330,7 +328,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"QuickPlayMiniButton"
-		"xpos"			"c-100"//"c-60"
+		"xpos"			"329"//"c-100"//"c-60"
 		"ypos"			"153"//"154"
 		"zpos"			"30"
 		"wide"			"20"
@@ -391,7 +389,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"StoreMiniButton"
-		"xpos"			"c-100"//"c-60"
+		"xpos"			"329"//"c-100"//"c-60"
 		"ypos"			"256"
 		"zpos"			"30"
 		"wide"			"20"
@@ -453,7 +451,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"DemoMiniButton"
-		"xpos"			"c-100"//"c-60"
+		"xpos"			"329"//"c-100"//"c-60"
 		"ypos"			"359"
 		"zpos"			"30"
 		"wide"			"20"
@@ -515,8 +513,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_ShowButtonPanel"
-		"xpos"			"c200"
-		"ypos"			"40"
+		"xpos"			"r100"//"c200"
+		"ypos"			"20"
 		"zpos"			"1"
 		"wide"			"32"
 		"tall"			"32"
@@ -923,8 +921,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c165"
-		"ypos"			"40"
+		"xpos"			"r135"//"r235"//"c165"
+		"ypos"			"20"
 		"zpos"			"1"
 		"wide"			"32"
 		"tall"			"32"
@@ -1168,7 +1166,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CharacterSetupButton"
-		"xpos"			"c-325"//"c-285"
+		"xpos"			"102"//"c-325"//"c-285"
 		"ypos"			"253"
 		"zpos"			"11"
 		"wide"			"270"
@@ -1228,7 +1226,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"AchievementButton"
-		"xpos"			"c-325"//"c-285"
+		"xpos"			"102"//"c-325"//"c-285"
 		"ypos"			"283"
 		"zpos"			"11"
 		"wide"			"270"
@@ -1288,7 +1286,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ReplayBrowserButton"
-		"xpos"			"c-325"//"c-285"
+		"xpos"			"102"//"c-325"//"c-285"
 		"ypos"			"356"
 		"zpos"			"11"
 		"wide"			"270"
@@ -1349,7 +1347,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RewardsBGPanel"
-		"xpos"			"c-330"//"c-290"
+		"xpos"			"98"//"c-330"//"c-290"
 		"ypos"			"225"
 		"zpos"			"-1"
 		"wide"			"260"
@@ -1365,7 +1363,7 @@
 		"font"			"HudFontSmallBold"
 		"labelText"		"Rewards"//"#MMenu_Customize"
 		"textAlignment"	"west"
-		"xpos"			"c-318"//"c-278"
+		"xpos"			"110"//"c-318"//"c-278"
 		"ypos"			"226"
 		"wide"			"140"
 		"tall"			"30"
@@ -1380,7 +1378,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RecordingsBGPanel"
-		"xpos"			"c-330"//"c-290"
+		"xpos"			"98"//"c-330"//"c-290"
 		"ypos"			"329"
 		"zpos"			"-1"
 		"wide"			"260"
@@ -1396,7 +1394,7 @@
 		"font"			"HudFontSmallBold"
 		"labelText"		"Recordings"//"#MMenu_Create"
 		"textAlignment"	"west"
-		"xpos"			"c-318"//"c-278"
+		"xpos"			"110"//"c-318"//"c-278"
 		"ypos"			"328"
 		"wide"			"140"
 		"tall"			"30"
@@ -1523,7 +1521,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ServerBrowserButton"
-		"xpos"			"c-325"//"c-285"
+		"xpos"			"102"//"c-325"//"c-285"
 		"ypos"			"150"
 		"zpos"			"11"
 		"wide"			"270"
@@ -1585,7 +1583,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CreateServerButton"
-		"xpos"			"c-325"//"c-285"
+		"xpos"			"102"//"c-325"//"c-285"
 		"ypos"			"180"
 		"zpos"			"11"
 		"wide"			"270"
@@ -1646,7 +1644,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVoteButton"
-		"xpos"			"c-173"
+		"xpos"			"257"//"c-173"
 		"ypos"			"128"
 		"zpos"			"12"
 		"wide"			"26"
@@ -1707,7 +1705,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MutePlayersButton"
-		"xpos"			"c-151"
+		"xpos"			"279"//"c-151"
 		"ypos"			"128"
 		"zpos"			"12"
 		"wide"			"26"
@@ -1768,7 +1766,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ReportAbuseButton"
-		"xpos"			"c-129"
+		"xpos"			"301"//"c-129"
 		"ypos"			"128"
 		"zpos"			"12"
 		"wide"			"26"
@@ -2159,7 +2157,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"SettingsButton"
-		"xpos"			"c150"//"c14"
+		"xpos"			"c140"//"c150"//"c14"
 		"ypos"			"437"
 		"zpos"			"1"
 		"wide"			"150"
@@ -2204,7 +2202,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"QuitButton"
-		"xpos"			"c-300"
+		"xpos"			"c-290"//"c-300"
 		"ypos"			"437"
 		"zpos"			"1"
 		"wide"			"150"
@@ -2247,7 +2245,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"DisconnectButton"
-		"xpos"			"c-300"
+		"xpos"			"c-290"//"c-300"
 		"ypos"			"437"
 		"zpos"			"1"
 		"wide"			"150"
