@@ -102,13 +102,13 @@
 		
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"left"		
+		"textAlignment"	"center"		
 		"labelText"		"%Ammo%"		
 		"zpos"			"5"
 		"fgcolor"		"White"
 		
 		"font"			"HUDFontHuge"
-		"xpos"			"13"
+		"xpos"			"-4"
 		"ypos"			"0"
 		"wide"			"160"
 		"tall"			"70"
@@ -120,13 +120,13 @@
 		
 		"visible"		"0"
 		"enabled"		"1"
-		"textAlignment"	"left"		
+		"textAlignment"	"center"		
 		"labelText"		"%Ammo%"
 		"zpos"			"5"
 		"fgcolor"		"Black"		
 		
 		"font"			"HudFontHuge"
-		"xpos"			"15"
+		"xpos"			"-2"
 		"ypos"			"3"
 		"wide"			"160"
 		"tall"			"70"		
