@@ -85,7 +85,7 @@
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
-		"xpos"			"c-277"
+		"xpos"			"150"
 		"ypos"			"279"
 		"zpos"			"-10"
 		"wide"			"300"
