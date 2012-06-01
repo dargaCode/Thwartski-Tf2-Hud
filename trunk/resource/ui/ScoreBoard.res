@@ -22,7 +22,7 @@
 		"nemesis_width"		"14"//"15"	
 		"class_width"		"14"//"15"	
 		"score_width"		"26"
-		"ping_width"		"23"	
+		"ping_width"		"23"		
 	}
 	"BlueScoreBG"
 	{
@@ -339,7 +339,7 @@
 		"xpos"			"20"
 		"ypos"			"c+48"	
 		"zpos"			"4"
-		"wide"			"580"
+		"wide"			"560"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
