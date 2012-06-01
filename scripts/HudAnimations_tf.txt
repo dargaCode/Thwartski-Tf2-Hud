@@ -583,9 +583,21 @@ event TeamsFullArrowAnimateEnd
 
 event TrainingHudBounce
 {
-	Animate ObjectiveStatusTraining	Position		"c-160 r187"		Linear 0 0
-	Animate ObjectiveStatusTraining	Position		"c-160 r127"		Bounce 0.0 2.0
+	//Animate ObjectiveStatusTraining	Position		"c-132 r187"		Linear 0 0
+	//Animate ObjectiveStatusTraining	Position		"c-132 r127"		Bounce 0.0 1.0
+	
+	Animate HudTrainingMsgBG			Size			"274 74"			Linear 0.0 0.1
+	Animate HudTrainingMsgBG			Position		"15 15"				Linear 0.0 0.1
+	
+	RunEvent TrainingHudBounceBack		0.1
 }
+
+event TrainingHudBounceBack
+{
+	Animate HudTrainingMsgBG			Size			"264 64"			Linear 0.1 0.2
+	Animate HudTrainingMsgBG			Position		"20 20"				Linear 0.1 0.2
+}
+
 
 event TrainingPressSpacebarBlink
 {
