@@ -70,11 +70,11 @@
 	{
 		"ControlName"	"HTML"
 		"fieldName"		"HTMLMessage"
-		"xpos"			"c74"
-		"ypos"			"c-111"
-		"zpos"			"1"
-		"wide"			"300"
-		"tall"			"251"
+		"xpos"			"c-260"
+		"ypos"			"r360"
+		"zpos"			"7"
+		"wide"			"520"
+		"tall"			"360"
 		"autoResize"	"1"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -110,6 +110,35 @@
 		"sound_depressed"			"UI/buttonclickrelease.wav"
 
 	}
+	
+	"okButtonThwartski"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"okButtonThwartski"
+		"xpos"			"c-52"
+		"ypos"			"r26"
+		"zpos"			"8"
+		"wide"			"104"
+		"tall"			"26"
+		"autoResize"	"0"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"CONTINUE"
+		"textAlignment"	"Center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"wrap"			"0"
+		"command"		"okay"
+		"default"		"1"
+		"font"			"HudFontSmall"
+
+		"sound_armed"				"ui/item_info_mouseover.wav"
+		"sound_depressed"			"UI/buttonclickrelease.wav"
+
+	}
+	
 	
 	"MenuBG"
 	{
