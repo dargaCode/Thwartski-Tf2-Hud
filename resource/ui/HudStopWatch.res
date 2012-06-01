@@ -127,7 +127,7 @@
 		"font"			"DefaultVerySmall"
 		"labelText"		"%stopwatchlabel%"
 		"textAlignment"		"west"
-		"xpos"			"79"
+		"xpos"			"78"
 		"ypos"			"6"
 		"zpos"			"4"
 		"wide"			"45"
