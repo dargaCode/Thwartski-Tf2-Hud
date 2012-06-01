@@ -571,9 +571,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
-		"xpos"			"c0"
-		"ypos"			"28"
-		"zpos"			"1"
+		"xpos"			"c-10"
+		"ypos"			"40"
+		"zpos"			"50"
 		"wide"			"300"
 		"tall"			"360"
 		"visible"		"0"
@@ -1014,8 +1014,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
-		"xpos"			"c0"
-		"ypos"			"102"
+		"xpos"			"r135"//"c0"
+		"ypos"			"r312"//"102"
 		"zpos"			"1"
 		"wide"			"210"
 		"tall"			"80"
