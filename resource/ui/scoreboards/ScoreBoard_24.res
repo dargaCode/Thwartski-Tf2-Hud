@@ -339,7 +339,7 @@
 		"xpos"			"20"
 		"ypos"			"c+48"	
 		"zpos"			"4"
-		"wide"			"580"
+		"wide"			"560"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
