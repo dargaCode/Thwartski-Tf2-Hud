@@ -1412,10 +1412,8 @@ Scheme
 			"1"
 			{
 				"name"		"Verdana"
-				"tall"		"13"
-				"tall_hidef"	"14"
-				"tall_lodef"	"17"
-				"weight"	"800"
+				"tall"		"10"
+				"weight"	"400"
 				"additive"	"0"
 				"antialias" 	"1"
 			}
