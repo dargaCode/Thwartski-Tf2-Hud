@@ -89,37 +89,11 @@
 		"fieldName"		"ok"
 		"xpos"			"c-52"
 		"ypos"			"c-52"
-		"zpos"			"6"
-		"wide"			"104"
-		"tall"			"104"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"CONTINUE"
-		"textAlignment"	"Center"
-		"dulltext"		"0"
-		"brighttext"	"0"
-		"wrap"			"0"
-		"command"		"okay"
-		"default"		"1"
-		"font"			"HudFontSmall"
-
-		"sound_armed"				"ui/item_info_mouseover.wav"
-		"sound_depressed"			"UI/buttonclickrelease.wav"
-
-	}
-	
-	"okButtonThwartski"
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"okButtonThwartski"
-		"xpos"			"c-52"
-		"ypos"			"r26"
+		"ypos_minmode"	"r26"
 		"zpos"			"8"
 		"wide"			"104"
-		"tall"			"26"
+		"tall"			"104"
+		"tall_minmode"	"26"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -138,8 +112,7 @@
 		"sound_depressed"			"UI/buttonclickrelease.wav"
 
 	}
-	
-	
+
 	"MenuBG"
 	{
 		"ControlName"	"CTFImagePanel"
