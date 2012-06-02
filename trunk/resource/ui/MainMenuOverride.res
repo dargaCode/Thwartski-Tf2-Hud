@@ -1014,8 +1014,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_Panel"
-		"xpos"			"c35"//"r280"//"c0"
-		"ypos"			"r312"//"102"
+		"xpos"			"c42"
+		"ypos"			"122"
 		"zpos"			"1"
 		"wide"			"210"
 		"tall"			"80"
