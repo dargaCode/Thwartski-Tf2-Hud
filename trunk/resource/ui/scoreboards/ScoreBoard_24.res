@@ -86,7 +86,7 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
 		"xpos"			"150"
-		"ypos"			"336"
+		"ypos"			"330"
 		"zpos"			"-10"
 		"wide"			"300"
 		"tall"			"70"
@@ -95,7 +95,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"	
-		"fillcolor"		"0 0 0 220" //153	
+		"fillcolor"		"0 0 0 255" //220	
 		"PaintBackgroundType"	"0"
 	
 	}
@@ -144,7 +144,7 @@
 		"labelText"		"%playerscore%"
 		"textAlignment"		"Center"
 		"xpos"			"231"
-		"ypos"			"343"	
+		"ypos"			"337"	
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
@@ -293,7 +293,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}							
-							
+
 	"BluePlayerList"
 	{
 		"ControlName"	"SectionedListPanel"
@@ -437,7 +437,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
-		"ypos"			"359"
+		"ypos"			"353"
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"
@@ -643,7 +643,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
-		"ypos"			"276"
+		"ypos"			"270"
 		"zpos"			"5"
 		"wide"			"600"
 		"tall"			"448"
@@ -660,7 +660,7 @@
 			"labelText"		"%mapname%"
 			"textAlignment"		"center"
 			"xpos"			"228"
-			"ypos"			"25"
+			"ypos"			"31"
 			"zpos"			"13"
 			"wide"			"146"
 			"tall"			"20"
