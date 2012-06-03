@@ -18,7 +18,8 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 	Overwrite all files. 
 	
 3.  24 player scoreboard is used by default. To select another, go to:
-	paste the one you want from the SCOREBOARDS folder to the \RESOURCE\UI\ folder. 
+	paste the one you want from the \THWARTSKI_SCOREBOARDS\ folder 
+	to the \RESOURCE\UI\ folder. 
 	
 4.  Have fun!
 
