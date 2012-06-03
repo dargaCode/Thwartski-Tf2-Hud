@@ -10,7 +10,6 @@
 //		"x_offset"		"40"
 		"xpos"			"c-45"
 		"ypos"			"r121"
-		"zpos"			"0"
 		"wide"			"100"
 		"tall"			"50"
 		"MeterFG"		"White"

@@ -8,7 +8,6 @@
 		"fieldName"		"Background"
 		"xpos"			"2"
 		"ypos"			"71"
-		"zpos"			"-1"
 		"wide"			"98"
 		"tall"	 		"12"
 		"autoResize"	"0"
