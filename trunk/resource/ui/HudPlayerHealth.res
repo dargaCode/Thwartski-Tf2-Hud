@@ -7,7 +7,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"c-382"//"c-368"	
+		"xpos"			"c-368"//"c-368"	
 		"ypos"			"r117"//"r114"	
 		"zpos"			"2"
 		"wide"			"400"//"400"
@@ -61,7 +61,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"181"	
+		"xpos"			"175"	
 		"ypos"			"32"//"29"	
 		"zpos"			"-2"
 		"wide"			"57"	
@@ -75,7 +75,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValuePovo"
-		"xpos"			"130"
+		"xpos"			"124"
 		"ypos"			"25"
 		"zpos"			"5"
 		"wide"			"160"
@@ -91,7 +91,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadowPovo"
-		"xpos"			"132"
+		"xpos"			"126"
 		"ypos"			"27"
 		"zpos"			"4"
 		"wide"			"160"

@@ -108,7 +108,7 @@
 		"fgcolor"		"White"
 		
 		"font"			"HUDFontHuge"
-		"xpos"			"-4"
+		"xpos"			"-8"
 		"ypos"			"0"
 		"wide"			"160"
 		"tall"			"70"
@@ -126,7 +126,7 @@
 		"fgcolor"		"Black"		
 		
 		"font"			"HudFontHuge"
-		"xpos"			"-2"
+		"xpos"			"-6"
 		"ypos"			"3"
 		"wide"			"160"
 		"tall"			"70"		
