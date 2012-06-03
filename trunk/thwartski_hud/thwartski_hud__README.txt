@@ -14,22 +14,19 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 1.  Find your TF2 folder. It will be something like: 
 	C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\
 
-2.  Copy the \TF\ folder from this folder into your \TEAM FORTRESS 2\ folder. 
+2.  Copy \TF\ from this folder into your \TEAM FORTRESS 2\ folder. 
 	Overwrite all files. 
 	
-3.  24 player scoreboard is used by default. To select another, go to:
-	paste the one you want from the \THWARTSKI_SCOREBOARDS\ folder 
-	to the \RESOURCE\UI\ folder. 
-	
-4.  Have fun!
+3.  Have fun!
 
 //-------------------------------------------------------------------
 //						  	 THANK YOU
 //-------------------------------------------------------------------
 
-Thanks to T-Triple-8, Baka-Baka, MCG, Dooman, and Archer for feedback so far.
+Thanks to Saberreap, OpticBarrel, Snakeyface, T-Triple-8, Baka-Baka, MCG, 
+Dooman, and Archer for feedback.
 
-Thanks to Flame for his documentation on hud editing.  
+Thanks to Flame for his documentation on how to edit hud files.  
 
 //-------------------------------------------------------------------
 //						ABOUT THWARTSKI HUD
