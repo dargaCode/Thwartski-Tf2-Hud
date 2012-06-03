@@ -72,7 +72,7 @@
 		
 		"font"			"HudFontBiggerBold"
 		"xpos"			"83"
-		"ypos"			"40"//"30"
+		"ypos"			"40"
 		"wide"			"80"
 		"tall"			"30"
 
@@ -91,7 +91,7 @@
 		
 		"font"			"HudFontBiggerBold"
 		"xpos"			"85"
-		"ypos"			"42"//"32"
+		"ypos"			"42"
 		"wide"			"80"
 		"tall"			"30"
 	}									
