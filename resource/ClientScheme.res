@@ -692,8 +692,7 @@ Scheme
 			"1"
 			{
 				"name"		"TF2"
-				"tall"		"24"
-				"tall_lodef"	"80"
+				"tall"		"12"
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
@@ -702,7 +701,7 @@ Scheme
 			"2"
 			{
 				"name"		"TF2"
-				"tall"		"32"
+				"tall"		"14"
 				"tall_hidef"	"120"
 				"weight"	"500"
 				"additive"	"0"
@@ -712,7 +711,7 @@ Scheme
 			"3"
 			{
 				"name"		"TF2"
-				"tall"		"44"
+				"tall"		"16"
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
@@ -749,16 +748,53 @@ Scheme
 				"antialias" "1"
 			}
 		}
-
-		"HudFontHUGE"
+		
+		"HudFontHuge"
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"80"
+				"name"		"TF2 BUILD"
+				"tall"		"58"
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
+				"yres"		"480 599"
+			}
+			"2"
+			{
+				"name"		"TF2 BUILD"
+				"tall"		"74"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"600 767"
+			}
+			"3"
+			{
+				"name"		"TF2 BUILD"
+				"tall"		"94"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"768 1023"
+			}
+			"4"
+			{
+				"name"		"TF2 BUILD"
+				"tall"		"192"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"1024 1199"
+			}
+			"5"
+			{
+				"name"		"TF2 BUILD"
+				"tall"		"192"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"1200 10000"
 			}
 		}
 		
@@ -766,14 +802,51 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"35"
-				"tall_lodef"	"40"
+				"name"		"TF2"
+				"tall"		"24"
 				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
+				"yres"		"480 599"
+			}
+			"2"
+			{
+				"name"		"TF2"
+				"tall"		"34"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"600 767"
+			}
+			"3"
+			{
+				"name"		"TF2"
+				"tall"		"46"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"768 1023"
+			}
+			"4"
+			{
+				"name"		"TF2"
+				"tall"		"78"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"1024 1199"
+			}
+			"5"
+			{
+				"name"		"TF2"
+				"tall"		"78"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+				"yres"		"1200 10000"
 			}
 		}
+		
 
 		"HudFontBig"
 		{
