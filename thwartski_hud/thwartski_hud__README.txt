@@ -33,7 +33,7 @@ Thanks to Flame for his documentation on how to edit hud files.
 //-------------------------------------------------------------------
 
 Thwartski Hud is for advanced users of TF2 who want a simpler UI with fewer 
-fancy images, fullscreen backgrounds, and less explanatory text.
+fancy images, fullscreen backgrounds, and explanatory texboxes.
 
 It emphasizes important tactical information as much as possible, and minimizes 
 strategic information to where it's not so obtrusive. 
