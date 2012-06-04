@@ -32,11 +32,14 @@ Thanks to Flame for his documentation on how to edit hud files.
 //						ABOUT THWARTSKI HUD
 //-------------------------------------------------------------------
 
-Thwartski Hud is for advanced users of TF2 who don't need to see every little piece of explanatory text. 
+Thwartski Hud is for advanced users of TF2 who want a simpler UI with fewer 
+fancy images, fullscreen backgrounds, and less explanatory text.
 
-It emphasizes important tactical information as much as possible, and minimizes strategic information to where it's not so obtrusive. 
+It emphasizes important tactical information as much as possible, and minimizes 
+strategic information to where it's not so obtrusive. 
 
-Inspired by and incorporating the best bits of the following huds: Broesel, CommHud, Eve, FrankenHud, Maco, Oxide, RevanXP, Toasty.
+Thwartski Hud is inspired by and incorporates the best bits of 6 huds: 
+Broesel, CommHud, Eve, FrankenHud, Maco, Oxide, RevanXP, and Toasty.
 	
 //-------------------------------------------------------------------
 //						  ABOUT THWARTSKI

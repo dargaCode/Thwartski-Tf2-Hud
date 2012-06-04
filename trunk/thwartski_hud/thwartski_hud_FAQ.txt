@@ -1,28 +1,50 @@
 //-------------------------------------------------------------------
-//				  1. HOW DO I INSTALL THE HUD?
+//			       1. HOW DO I INSTALL THE HUD?
 //-------------------------------------------------------------------
 
 See thwartski_hud__README.txt
 
 //-------------------------------------------------------------------
-//				2. HOW DO I CHANGE MY SCOREBOARD?
+//			     2. HOW DO I CHANGE MY SCOREBOARD?
 //-------------------------------------------------------------------
 
 32-player scoreboard is used by default. 
 
-To use a smaller one, go to \RESOURCE\THWARTSKI_SCOREBOARDS\ to find 
+To use a smaller one, go to \UI\THWARTSKI_SCOREBOARDS\ to find 
 the version of ScoreBoard.res you want, and then paste it into the 
 \RESOURCE\UI\ folder, overwriting the file. 
 	
 //-------------------------------------------------------------------
-//		 3. THERE'S A BUTTON BLOCKING MY BACKPACK/MOTD!
+//	      2. I CAN'T SEE BOTH TEAMS ON MY TOURNAMENT HUD!
 //-------------------------------------------------------------------
 
-If you want to use the html motd (most likely to look at someone's backpack), 
-you can set "cl_hud_minmode 1" in your console or autoexec. 
+The 16:9/16:10 tournament hud is used by default, and is too wide for
+some smaller resolutions. 
 
-Minmode moves the button from the center of the screen to the bottom where it's 
-out of the way of the html. 
+To use the 4:3 tournament hud, go to \UI\THWARTSKI_TOURNAMENT_HUDS\ 
+to find the version you want, and then paste it into the \RESOURCE\UI\
+folder, overwriting the file. 	
+
+//-------------------------------------------------------------------
+//		       3. THERE'S A BUTTON BLOCKING MY MOTD!
+//-------------------------------------------------------------------
+
+By default, the continue button is right in the center of the screen, which
+blocks the html motd. 
+
+If you have html motds turned on, you can set "cl_hud_minmode 1" in your 
+console or autoexec to move that button.  
 
 That's the only thing Thwartski Hud ever uses minmode for. 
+
+//-------------------------------------------------------------------
+//	    4. CAN I GET RID OF THOSE ANNOYING MOTD INSTRUCTIONS?
+//-------------------------------------------------------------------
+
+If you're tired of seeing the red text reminding you how to move that button
+out of the way of the motd, you can replace the file to remove it. 
+
+To use the motd with no instructions, go to \UI\THWARTSKI_MOTDS\ 
+to find the version you want, and then paste it into the \RESOURCE\UI\
+folder, overwriting the file. 	
 
