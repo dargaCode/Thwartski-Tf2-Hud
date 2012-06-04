@@ -71,7 +71,7 @@
 		"ControlName"	"HTML"
 		"fieldName"		"HTMLMessage"
 		"xpos"			"c-260"
-		"ypos"			"r360"
+		"ypos"			"c-180"
 		"zpos"			"7"
 		"wide"			"520"
 		"tall"			"360"
@@ -82,18 +82,38 @@
 		"tabPosition"	"0"
 		"paintborder"	"0"
 	}
+
+	"MoveButtonThwartski"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MoveButtonThwartski"
+		"xpos"			"8"
+		"ypos"			"11"//"r76"
+		"wide"			"400"
+		"tall"			"20"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"Move button: cl_hud_minmode 1"
+		"textAlignment"	"west"
+		"font"			"HudFontTinyBold"
+		"fgcolor"		"255 0 0 200"
+	}
 	
 	"ok"
 	{
 		"ControlName"		"CExButton"
 		"fieldName"		"ok"
 		"xpos"			"c-52"
+		"xpos_minmode"	"c-67"
 		"ypos"			"c-52"
-		"ypos_minmode"	"r26"
+		"ypos_minmode"	"r60"
 		"zpos"			"8"
 		"wide"			"104"
+		"wide_minmode"	"134"
 		"tall"			"104"
-		"tall_minmode"	"26"
+		"tall_minmode"	"60"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -110,7 +130,6 @@
 
 		"sound_armed"				"ui/item_info_mouseover.wav"
 		"sound_depressed"			"UI/buttonclickrelease.wav"
-
 	}
 
 	"MenuBG"
