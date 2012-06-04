@@ -23,8 +23,8 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 //						  	 THANK YOU
 //-------------------------------------------------------------------
 
-Thanks to Saberreap, OpticBarrel, Snakeyface, T-Triple-8, Baka-Baka, MCG, 
-Dooman, and Archer for feedback.
+Thanks to AndyJ, Saberreap, OpticBarrel, Snakeyface, T-Triple-8, Baka-Baka, 
+MCG, Dooman, and Archer for feedback so far.
 
 Thanks to Flame for his documentation on how to edit hud files.  
 
