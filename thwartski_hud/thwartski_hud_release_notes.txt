@@ -9,14 +9,14 @@ Thwartski Hud v0.9.2 (BETA) - June 3, 2012.
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Reworked MOTD and added instructions for minmode.
-	
-	2) Adjusted spectator text for Gravelpit.
+	1) Adjusted spectator text for Gravelpit.
 
-	3) Added alternate versions of MOTD and Tournament Hud
+	2) Fixed capture points interfering with scout bars on Gravelpit.
+
+	3)	Reworked MOTD and added instructions for minmode.
 	
-	4) 
-		
+	4) Added alternate versions of MOTD and Tournament Hud
+	
 	Thanks to AndyJ for feedback!
 	
 //-------------------------------------------------------------------
