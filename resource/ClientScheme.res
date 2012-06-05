@@ -802,7 +802,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"24"
 				"weight"	"500"
 				"additive"	"0"
@@ -811,7 +811,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"34"
 				"weight"	"500"
 				"additive"	"0"
@@ -820,7 +820,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"46"
 				"weight"	"500"
 				"additive"	"0"
@@ -829,7 +829,7 @@ Scheme
 			}
 			"4"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"78"
 				"weight"	"500"
 				"additive"	"0"
@@ -838,7 +838,7 @@ Scheme
 			}
 			"5"
 			{
-				"name"		"TF2"
+				"name"		"TF2 Build"
 				"tall"		"78"
 				"weight"	"500"
 				"additive"	"0"
