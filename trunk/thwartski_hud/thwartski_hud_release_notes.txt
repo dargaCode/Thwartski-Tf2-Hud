@@ -3,25 +3,26 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v0.9.2 (BETA) - June 3, 2012.
+Thwartski Hud v0.9.3 (BETA) - June 4, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Adjusted spectator text for Gravelpit.
-
-	2) Fixed capture points interfering with scout bars on Gravelpit.
-
-	3)	Reworked MOTD and added instructions for minmode.
-	
-	4) Added alternate versions of MOTD and Tournament Hud
-	
-	Thanks to AndyJ for feedback!
+	1) Fixed reserve ammo using the wrong font. 
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
+
+v0.9.2 (BETA) - June 3, 2012.
+
+	1) Adjusted spectator text for Gravelpit.
+	2) Fixed capture points interfering with scout bars on Gravelpit.
+	3)	Reworked MOTD and added instructions for minmode.
+	4) Added alternate versions of MOTD and Tournament Hud
+	
+	Thanks to AndyJ for feedback!
 
 v0.9.1 (BETA) - June 2, 2012.
 
