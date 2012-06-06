@@ -440,7 +440,7 @@
 		{	
 			"ControlName"	"CExLabel"
 			"fieldName"		"CapNumPlayers"
-			"font"			"HudFontSmallest"
+			"font"			"CapPlayerFontSmall"
 			"xpos"			"25"
 			"ypos"			"99"
 			"zpos"			"4"
