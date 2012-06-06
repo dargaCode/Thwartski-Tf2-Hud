@@ -64,7 +64,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_metal"
-		"iconColor"		"TanLight"
+		"iconColor"		"0 255 0 255"
 	}
 	
 	"MetalIconShadowThwartski"	
@@ -88,7 +88,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
 		"font"			"HudFontSmall"
-		"fgcolor"		"TanLight"
+		"fgcolor"		"0 255 0 255"
 		"xpos"			"49"
 		"ypos"			"94"
 		"zpos"			"1"
