@@ -3,19 +3,27 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v0.9.5 (BETA) - June 5, 2012.
+Thwartski Hud v0.9.6 (BETA) - June 6, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Fixed cap points not displaying an icon when being capped with less than 2x. 
-	
-	Thanks to T-Triple-8 for finding this bug!
+	1) Adjusted pda text for available engineer buildings. 
+	2) Fixed cart cap fonts for payload race.
+	3) Adjusted spy disguise info to work better at all resolutions.
+	4) Added low ammo warning. 
+	5) Increased opacity for loadout quickswitch background.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
+	
+v0.9.5 (BETA) - June 5, 2012.
+
+	1) Fixed cap points not displaying an icon when being capped with less than 2x. 
+	
+	Thanks to T-Triple-8 for finding this bug!
 	
 v0.9.3 (BETA) - June 4, 2012.
 	
@@ -25,7 +33,7 @@ v0.9.2 (BETA) - June 3, 2012.
 
 	1) Adjusted spectator text for Gravelpit.
 	2) Fixed capture points interfering with scout bars on Gravelpit.
-	3)	Reworked MOTD and added instructions for minmode.
+	3) Reworked MOTD and added instructions for minmode.
 	4) Added alternate versions of MOTD and Tournament Hud
 	
 	Thanks to AndyJ for feedback!
