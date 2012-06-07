@@ -1,7 +1,0 @@
-	
-//-------------------------------------------------------------------
-//						   KNOWN ISSUES
-//-------------------------------------------------------------------
-
-I'm trying to track down a bug where sometimes cap points don't show the number of people capping them. 
-
