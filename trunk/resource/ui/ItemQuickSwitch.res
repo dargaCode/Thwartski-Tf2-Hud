@@ -16,7 +16,7 @@
 		"settitlebarvisible"	"0"
 		
 		"PaintBackgroundType"	"2"
-		"bgcolor_override"	"0 0 0 175"
+		"bgcolor_override"	"0 0 0 220"
 		
 		"itempanel_xpos"	"0"
 		"itempanel_ydelta"	"0"
