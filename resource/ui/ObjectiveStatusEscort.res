@@ -458,10 +458,7 @@
 			
 			"if_multiple_trains"
 			{
-				"font"			"ItemFontAttribSmall"
-				"xpos"			"25"
-				"wide"			"30"
-				"tall"			"10"
+			
 			}			
 			
 			"if_multiple_trains_top"
