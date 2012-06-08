@@ -16,7 +16,6 @@
 
 "+thwartskiattack"		"Attack                           (MOUSE1)"
 "+thwartskiattack2"		"Special/Attack2              (MOUSE2)"
-"+thwartskijump"		"Jump                            (SPACE)"
 //													^Don't line these up or they'll look misaligned in game (non-monospaced font).
 
 "blank"					"=========================="
