@@ -45,7 +45,7 @@
 "+moveright"	"#Valve_Move_Right"
 
 //Moving out to a replacement, above.
-//"+jump"			"#Valve_Jump"
+"+jump"			"#Valve_Jump"
 "+duck"			"#Valve_Duck"
 "+moveup"		"#Valve_Swim_Up"
 "+movedown"		"#Valve_Swim_Down"
