@@ -24,7 +24,7 @@ Thwartski Weapon Swapper v1.1.0 (RELEASE) - June 7, 2012.
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v1.0.2 (RELEASE) - May 28, 2012.
+v1.0.2 (RELEASE) - May 28, 2012.
 
 	1) Added integrated support for a crouchjumping script, since they're so popular and it 
 	was difficult to get working with my previous version. (See thwartski_wepswapper_crouchjump.cfg)
