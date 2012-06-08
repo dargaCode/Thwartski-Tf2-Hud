@@ -3,11 +3,28 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v1.0.2 (RELEASE) - May 28, 2012.
+Thwartski Weapon Swapper v1.1.0 (RELEASE) - June 7, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
+
+	1) Added customizeable crosshair colors per weaponslot. By default, primary is green, 
+	secondary is blue, and tertiary is yellow. 
+
+	2) Created performance.cfg, an easy place to paste performance configs without causing
+	any trouble with the wepswapper. 
+	
+	3) Removed all scripting related to the jump button, including the crouchjump script. 
+	It was being used by only one class and causing lots of extra complexity for users. 
+	
+	Thanks to AndyJ for feedback!
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+
+Thwartski Weapon Swapper v1.0.2 (RELEASE) - May 28, 2012.
 
 	1) Added integrated support for a crouchjumping script, since they're so popular and it 
 	was difficult to get working with my previous version. (See thwartski_wepswapper_crouchjump.cfg)
@@ -16,10 +33,6 @@ Thwartski Weapon Swapper v1.0.2 (RELEASE) - May 28, 2012.
 	so it could be integrated with performance configs more easily.
 	
 	Thanks to AndyJ for feedback!
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 
 v1.0.1 (RELEASE) - May 27, 2012.
 	
