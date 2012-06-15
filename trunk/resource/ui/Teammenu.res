@@ -67,6 +67,25 @@
 		"brighttext"	"1"
 	}
 	
+	"BGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGThwartski"
+		"xpos"			"c-52"
+		"ypos"			"c-52"
+		"zpos"			"0"
+		"wide"			"104"
+		"tall"			"104"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"54 51 52 255"
+		"PaintBackgroundType"	"0"
+	}
+	
+	
 	"teambutton0"
 	{
 		"ControlName"	"CTFTeamButton"
@@ -88,7 +107,7 @@
 		"paintborder"	"1"
 		"command"		"jointeam blue"
 		"team"				"3"		// team blue
-		"associated_model"	"bluebutton"
+		"associated_model"	""
 		"hover"				""
 		"font"			"Hud"
 		"fgcolor"		"0 0 0 0"
@@ -146,7 +165,7 @@
 		"paintborder"	"0"
 		"command"		"jointeam red"
 		"team"				"2"		// team red
-		"associated_model"	"reddoor"	
+		"associated_model"	""	
 		"hover"				""
 		"font"			"Hud"
 		"fgcolor"		"0 0 0 0"
@@ -240,7 +259,7 @@
 		"ControlName"	"CTFTeamButton"
 		"fieldName"		"teambutton3"
 		"xpos"			"c-52"
-		"ypos"			"c+26"
+		"ypos"			"c26"
 		"zpos"			"5"
 		"wide"			"104"
 		"tall"			"26"
