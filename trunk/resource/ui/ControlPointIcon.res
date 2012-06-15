@@ -33,11 +33,11 @@
 		"xpos"			"-110"
 		"ypos"			"0"
 		"zpos"			"3"
-		"wide"			"6"
-		"tall"			"18"
+		"wide"			"10"
+		"tall"			"16"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"capture_icon"
+		"image"			"capture_icon"//"capture_icon_white"
 		"scaleImage"	"1"
 	}
 
@@ -46,7 +46,7 @@
 		"ControlName"	"Label"
 		"fieldName"		"CapNumPlayers"
 		"font"			"CapPlayerFont"//"CapPlayerFontSmall"
-		"xpos"			"0"
+		"xpos"			"-1"
 		"ypos"			"0"
 		"zpos"			"4"
 		"wide"			"21"
