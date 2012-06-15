@@ -39,7 +39,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	"c-150"
-		"ypos"	"r26"
+		"ypos"	"r22"
 		"wide"	"300"
 		"tall"	"25"
 		
@@ -954,8 +954,8 @@
 		"fieldName"				"HudArenaNotification"
 		"visible"				"0"
 		"enabled"				"1"
-		"xpos"					"c-160"
-		"ypos"					"75"
+		"xpos"					"c-80"
+		"ypos"					"48"
 		"wide"					"320"
 		"tall"					"150"
 	}
@@ -966,7 +966,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"xpos"					"c-15"
-		"ypos"					"442"
+		"ypos"					"r23"
 		"wide"					"30"
 		"tall"					"30"
 		"zpos"					"99"
