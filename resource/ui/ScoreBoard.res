@@ -335,28 +335,30 @@
 		"fieldName"		"Spectators"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%spectators%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"20"
 		"ypos"			"c+121"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 	}	
+	
+	//Arena
 	"SpectatorsInQueue"
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"SpectatorsInQueue"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%waitingtoplay%"
-		"textAlignment"		"west"
+		"textAlignment"	"east"
 		"xpos"			"20"
 		"ypos"			"c+121"	
 		"zpos"			"4"
-		"wide"			"580"
+		"wide"			"560"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -386,19 +388,16 @@
 		"fieldName"		"ServerTimeLeft"
 		"font"			"ScoreboardTiny"
 		"labelText"		"%servertimeleft%"
-		"textAlignment"		"east"
-		"xpos"			"328"
+		"textAlignment"	"east"
+		"xpos"			"20"
 		"ypos"			"373"
-		"wide"			"250"
+		"wide"			"560"
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"	
 		"enabled"		"1"
 	}
-
-
-	
 	
 	"ClassImage"
 	{
