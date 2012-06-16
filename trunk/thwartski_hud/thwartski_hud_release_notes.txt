@@ -3,7 +3,7 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v0.9.6 (BETA) - June 6, 2012.
+Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 16, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
@@ -12,8 +12,8 @@ Thwartski Hud v0.9.6 (BETA) - June 6, 2012.
 	1) Fixed health and ammo fonts for OSX.
 	2) Adjusted KOTH panel to work with new cap point size.
 	3) Fixed missing health warning on kill cam.
-	4) Added Arena support.
-	5) 
+	4) Adjusted animations for overheal, low health, and low ammo.
+	5) Added Arena support.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
