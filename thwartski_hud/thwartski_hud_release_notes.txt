@@ -9,15 +9,23 @@ Thwartski Hud v0.9.6 (BETA) - June 6, 2012.
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
+	1) Fixed health and ammo fonts for OSX.
+	2) Adjusted KOTH panel to work with new cap point size.
+	3) Fixed missing health warning on kill cam.
+	4) Added Arena support.
+	5) 
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+	
+v0.9.6 (BETA) - June 6, 2012.	
+	
 	1) Adjusted pda text for available engineer buildings. 
 	2) Fixed cart cap fonts for payload race.
 	3) Adjusted spy disguise info to work better at all resolutions.
 	4) Added low ammo warning. 
 	5) Increased opacity for loadout quickswitch background.
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 	
 v0.9.5 (BETA) - June 5, 2012.
 
