@@ -13,8 +13,8 @@ Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
 	2) Adjusted KOTH panel to work with new cap point size.
 	3) Fixed missing health warning on kill cam.
 	4) Adjusted animations for overheal, low health, and low ammo.
-	5) Added Arena support.
-	6) Adjusted tournament ready-up dialog.
+	5) Adjusted placement of tournament ready-up dialog.
+	6) Added Arena support.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
