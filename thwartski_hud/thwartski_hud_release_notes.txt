@@ -3,7 +3,7 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 16, 2012.
+Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
@@ -14,6 +14,7 @@ Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 16, 2012.
 	3) Fixed missing health warning on kill cam.
 	4) Adjusted animations for overheal, low health, and low ammo.
 	5) Added Arena support.
+	6) Adjusted tournament ready-up dialog.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
