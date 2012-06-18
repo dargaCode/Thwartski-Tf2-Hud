@@ -15,7 +15,7 @@ the version of ScoreBoard.res you want, and then paste it into the
 \RESOURCE\UI\ folder, overwriting the file. 
 	
 //-------------------------------------------------------------------
-//	      2. I CAN'T SEE BOTH TEAMS ON MY TOURNAMENT HUD!
+//	     2. WHY IS ONE TEAM CUT OFF FROM MY TOURNAMENT HUD?
 //-------------------------------------------------------------------
 
 The 16:9/16:10 tournament hud is used by default, and is too wide for
@@ -26,7 +26,7 @@ to find the version you want, and then paste it into the \RESOURCE\UI\
 folder, overwriting the file. 	
 
 //-------------------------------------------------------------------
-//		       3. THERE'S A BUTTON BLOCKING MY MOTD!
+//		     3. WHY IS THERE A BUTTON BLOCKING MY MOTD?
 //-------------------------------------------------------------------
 
 By default, the continue button is right in the center of the screen, which
@@ -47,4 +47,13 @@ out of the way of the motd, you can replace the file to remove it.
 To use the motd with no instructions, go to \UI\THWARTSKI_MOTDS\ 
 to find the version you want, and then paste it into the \RESOURCE\UI\
 folder, overwriting the file. 	
+
+//-------------------------------------------------------------------
+//	             5. HOW DO I CHANGE MY CROSSHAIRS?
+//-------------------------------------------------------------------
+
+Thwartski Hud won't change your crosshairs at all. You can modify your
+crosshairs and viewmodels with my other mod, Thwartski Weapon Swapper:
+
+http://code.google.com/p/thwartski-tf2-hud/ 	
 
