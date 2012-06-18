@@ -16,6 +16,8 @@ Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
 	5) Adjusted placement of tournament ready-up dialog.
 	6) Added Arena support.
 	
+	Thanks to Tobias Funke for feedback!
+	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
