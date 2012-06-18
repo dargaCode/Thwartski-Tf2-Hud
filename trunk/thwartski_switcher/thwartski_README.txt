@@ -101,8 +101,9 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 //						  ABOUT THWARTSKI
 //-------------------------------------------------------------------
 
-I'm a professional game designer who plays a decent amount of TF2. My comp ability
-is still low, but believe I know enough to design for high level comp players.
+I'm a professional game designer who loves TF2 and tinkering with stuff like this.
+My comp career is nothing impressive, but I know enough to design for comp play.
 
-I try to play all nine classes so I can tailor things to each of them. My current 
-main is soldier. It was originally pyro, then engie, then sniper, then spy.
+I'm one of those people who has jumped around a lot between classes. My main is 
+soldier (pocket), but I originally mained pyro, then engie, then sniper, then spy.
+
