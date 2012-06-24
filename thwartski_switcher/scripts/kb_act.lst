@@ -32,6 +32,7 @@
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
 "blank"					"=========================="
 
+"thwartskilastwep"		"#Valve_Last_Weapon_Used"
 "scrollswapup"			"Scroll Slots Forward       (MWHEELUP)"
 "scrollswapdown"		"Scroll Slots Backward     (MWHEELDOWN)"
 
@@ -102,7 +103,8 @@
 "+reload"		"#Valve_Reload_Weapon"
 "invprev"		"#Valve_Previous_Weapon"
 "invnext"		"#Valve_Next_Weapon"
-"lastinv"		"#Valve_Last_Weapon_Used"
+//Moving out to a replacement, above.
+//"lastinv"		"#Valve_Last_Weapon_Used"
 "slot1"			"#Valve_Weapon_Category_1"
 "slot2"			"#Valve_Weapon_Category_2"
 "slot3" 		"#Valve_Weapon_Category_3"
