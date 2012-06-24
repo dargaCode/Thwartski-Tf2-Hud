@@ -6,20 +6,16 @@
 "blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
 "blank"					"=========================="
 
-"leftswap"   			"Swap Slot 1/2                (Q)"
-"rightswap"				"Swap Slot 2/3                (E)"
+"leftswap"   			"Swap 1st/2nd Slot          (Q)"
+"rightswap"				"Swap 2nd/3rd Slot          (E)"
 "voicemenu 0 0"			"Call for Medic                 (R)"
-
-"blank"					"=========================="
-"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
-"blank"					"=========================="
+//													     ^Don't line these up or they'll look misaligned in game (non-monospaced font).
 
 "+thwartskiattack"		"Attack                           (MOUSE1)"
 "+thwartskiattack2"		"Special/Attack2              (MOUSE2)"
-//													^Don't line these up or they'll look misaligned in game (non-monospaced font).
 
 "blank"					"=========================="
-"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
+"blank"					"VALVE-STYLE SWAPPING-DELETE THWARTSKI_BINDS.CFG!"
 "blank"					"=========================="
 
 "equipprimary"			"Equip 1st Slot                 (1)"
@@ -27,15 +23,9 @@
 "equiptertiary"			"Equip 3rd Slot                 (3)"
 "equipslot4"			"Equip 4th Slot                 (4)"
 "equipslot5"			"Equip 5th Slot                 (5)"
-
-"blank"					"=========================="
-"blank"					"DELETE THWARTSKI_BINDS.CFG BEFORE CHANGING!"
-"blank"					"=========================="
-
-"thwartskilastwep"		"#Valve_Last_Weapon_Used"
+"thwartskilastwep"		"Equip Last Weapon         (Q)"
 "scrollswapup"			"Scroll Slots Forward       (MWHEELUP)"
 "scrollswapdown"		"Scroll Slots Backward     (MWHEELDOWN)"
-
 
 "blank"			"=========================="
 "blank"			"#Valve_Movement_Title"
