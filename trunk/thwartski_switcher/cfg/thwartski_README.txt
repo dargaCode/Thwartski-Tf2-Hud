@@ -11,8 +11,8 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 //						  HOW TO INSTALL
 //-------------------------------------------------------------------
 
-[These steps assume you've never edited a config before, but if you have, 
-saving a copy of your CFG folder will save your configs from being overwritten.]
+[These steps assume you've never edited your configs before, but if you have, 
+you should first save a backup copy of your cfg folder before replacing it.]
 
 1.  Find your TF2 folder. It will be something like: 
 	C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\tf\
@@ -35,14 +35,11 @@ I was inspired by Aron's Crosshair Switcher quite a bit, and learned a lot about
 Valve's crosshair system works from looking at his configs: 
 http://tinyurl.com/7xzb6sk
 
-Usertesting feedback from Saberreap, Zeldajunki, and AndyJ helped me fix a lot of things
+Feedback from Saberreap, Zeldajunki, AndyJ, and Lane helped me fix a lot of things
 that were confusing, broken, or unclear. 	
 
 I got some good ideas from Stabby's spy scripts, which I used in the advanced spy config:
 http://tinyurl.com/78gjvk7
-
-I've also incorporated a modified version of The404Error's popular Crouch Jump Script:
-http://gamebanana.com/tf2/scripts/2499
 
 //-------------------------------------------------------------------
 //						 ABOUT THE SWAPPER
@@ -59,11 +56,11 @@ This works in three steps:
 2.	Enabling you to control all weapon selection with only two keys, removing the need
 	for fumbling with scroll wheels or number keys. 
 	
-3.	Allowing you to begin turning off the viewmodels for certain crosshairs, until you
-	have hidden the viewmodels for all weapons (or for all but melee if you choose).
+3.	Allowing you to turning off the viewmodels for all weapons, or all weapons except 
+	melee (which I recommend due to melee timing differences between classes).
 	
 Using the two-button swapper system and hiding viewmodels is optional. However, after 
-three months using this system myself, I can say it has improved my game a lot.
+several months using this system myself, I can say it has improved my game a lot.
 
 //-------------------------------------------------------------------
 //						TWO-BUTTON SWAPPING
@@ -77,7 +74,7 @@ I repurpose the "lastwep" button TF2 already has to switch between the first
 two weapons, and add another swap button to move between the second two weapons.
 
 For each weapon that is swapped to, the script also swaps in custom crosshairs 
-and visibility settings, if they've been defined for that class. 
+and viewmodel visibility settings, if they've been defined for that class. 
 
 [Spies and Engineers have an extra slot or two to deal with, but I put in some
 special-casing to update the swapper when a PDA is selected.]
@@ -101,8 +98,9 @@ Or it might be easier to think of it in terms of keys bound to weapons:
 //						  ABOUT THWARTSKI
 //-------------------------------------------------------------------
 
-I'm a professional game designer who plays a decent amount of TF2. My comp ability
-is still low, but believe I know enough to design for high level comp players.
+I'm a professional game designer who loves TF2 and tinkering with stuff like this.
+My comp career is nothing impressive, but I know enough to design for comp play.
 
-I try to play all nine classes so I can tailor things to each of them. My current 
-main is soldier. It was originally pyro, then engie, then sniper, then spy.
+I'm one of those people who has jumped around a lot between classes. My main is 
+soldier (pocket), but I originally mained pyro, then engie, then sniper, then spy.
+
