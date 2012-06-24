@@ -9,14 +9,15 @@ Thwartski Weapon Swapper v1.1.1 (RELEASE) - June 24, 2012.
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Added support for a "last weapon used" command for players who don't want to use
+	1) Added support for a "last weapon used" functionality for players who don't want to use
 	the two button swapping system.
 
-	2) Fixed a mistake in the demoman config which was reordering the weapon slots. 
+	2) Broke keybinds into two sections: two-button swapping (recommended), and Valve-style swapping.
 	
-	3) 
+	3) Fixed a mistake in thwartski_wepswapper_demo.cfg which was reordering the weapon slots.
+	(If you liked having sticky launcher as primary, you can always change the slot order).	
 	
-	Thanks to Archer for feedback!
+	Thanks to Lane for feedback!
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
