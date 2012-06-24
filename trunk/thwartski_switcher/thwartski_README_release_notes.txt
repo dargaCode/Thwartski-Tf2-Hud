@@ -3,11 +3,26 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Weapon Swapper v1.1.0 (RELEASE) - June 7, 2012.
+Thwartski Weapon Swapper v1.1.1 (RELEASE) - June 24, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
+
+	1) Added support for a "last weapon used" command for players who don't want to use
+	the two button swapping system.
+
+	2) Fixed a mistake in the demoman config which was reordering the weapon slots. 
+	
+	3) 
+	
+	Thanks to Archer for feedback!
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+
+v1.1.0 (RELEASE) - June 7, 2012.
 
 	1) Added customizeable crosshair colors per weaponslot. By default, primary is green, 
 	secondary is blue, and tertiary is yellow. 
@@ -19,10 +34,6 @@ Thwartski Weapon Swapper v1.1.0 (RELEASE) - June 7, 2012.
 	It was being used by only one class and causing lots of extra complexity for users. 
 	
 	Thanks to AndyJ for feedback!
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 
 v1.0.2 (RELEASE) - May 28, 2012.
 
