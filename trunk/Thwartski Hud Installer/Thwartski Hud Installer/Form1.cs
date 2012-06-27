@@ -65,9 +65,5 @@ namespace Thwartski_Hud_Installer
             }
         }
 
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
     }
 }
