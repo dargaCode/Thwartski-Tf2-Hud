@@ -1573,6 +1573,22 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"wave"	"player/taunt_foot_stomp.wav"
 }
+"Taunt.PyroBalloonicorn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"soundlevel"  	"SNDLVL_75dB"		
+	"wave"	"player/taunt_pyro_balloonicorn.wav"
+
+}
+"Taunt.PyroHellicorn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"soundlevel"  	"SNDLVL_75dB"		
+	"wave"	"player/taunt_pyro_hellicorn.wav"
+}
+
 
 
 //-----------------------------------------------------------------------------
@@ -1968,4 +1984,37 @@
 		"wave"		"items\scout_boombox_04.wav"
 		"wave"		"items\scout_boombox_05.wav"
 	}
+}
+
+"BlastJump.Whistle"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_85dB"
+	"volume"		"0.8"
+	"wave"			"misc/grenade_jump_lp_01.wav"
+}
+
+"pyro.music_backpack"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_85dB"
+	"wave"		")items/pyro_music_tube.wav"
+}
+
+"BlastJump.Whistle"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.75"
+	"wave"			"misc/grenade_jump_lp_01.wav"
+}
+
+
+"pyro.music_backpack"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_85dB"
+	"wave"		")items/pyro_music_tube.wav"
 }

@@ -1918,6 +1918,7 @@
 	"wave"		"weapons/tomislav_wind_up.wav"
 }
 
+// ------------------------------------------------------------------------------------ //
 // MINIGUN
 // ------------------------------------------------------------------------------------ //
 "Weapon_Minigun.Reload"
@@ -5617,7 +5618,7 @@
 "Icicle.Deploy"
 {
 	"channel"		"CHAN_STATIC"
-	"soundlevel"	"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
 	"pitch"			"PITCH_NORM"
 	"volume"		"1.0"
 	"wave"			")weapons/icicle_deploy.wav"
@@ -5881,4 +5882,187 @@
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	".4"
 	"wave"		")weapons\mittens_punch.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Dumpster Rocket Launcher
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_DumpsterRocket.Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"		"1"
+	"pitch"			"100"
+	"wave"			"weapons/dumpster_rocket_reload.wav"
+}
+
+"Weapon_DumpsterRocket.Reload_FP"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"		"1"
+	"pitch"			"100"
+	"wave"			")weapons/dumpster_rocket_reload_fp.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Rainblower
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_Rainblower.FireStart"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_start.wav"
+}
+
+"Weapon_Rainblower.FireLoop"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_loop.wav"
+}
+
+"Weapon_Rainblower.FireEnd"	
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_end.wav"
+
+}
+
+"Weapon_Rainblower.FireHit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_hit.wav"
+}
+
+"Weapon_Rainblower.PilotLoop"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		")weapons/rainblower/rainblower_pilot.wav"
+}
+
+"Weapon_Rainblower.Fire"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_start.wav"
+}
+
+"Weapon_Rainblower.WindDown"	
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/rainblower/rainblower_end.wav"
+
+}
+
+// ------------------------------------------------------------------------------------ //
+// Meet the Pyro, Doomsday, Public Enemy Pack, Urban Pro
+// ------------------------------------------------------------------------------------ //
+"Weapon_PickPocket_Pistol.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_pistol.wav"
+}
+
+"Weapon_PickPocket_Pistol.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_pistol_crit.wav"
+}
+
+"Weapon_Brawler_Blaster.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_shotgun.wav"
+}
+
+"Weapon_Brawler_Blaster.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_scout_shotgun_crit.wav"
+}
+
+"Weapon_ProSniperRifle.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_98dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_sniper_rifle.wav"
+}
+
+"Weapon_ProSniperRifle.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_98dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_sniper_rifle_crit.wav"
+}
+
+"Weapon_UrbanProfessional.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_sniper_smg.wav"
+}
+
+"Weapon_UrbanProfessional.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_sniper_smg_crit.wav"
+}
+
+"Weapon_Does_Dumpster.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_rocket_launcher.wav"
+}
+
+"Weapon_Does_Dumpster.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_rocket_launcher_crit.wav"
+}
+
+"Weapon_ScorchShot.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_flare_gun.wav"
+}
+
+"Weapon_ScorchShot.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/doom_flare_gun_crit.wav"
 }

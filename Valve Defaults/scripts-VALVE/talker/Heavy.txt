@@ -1342,3 +1342,15 @@ Rule PlayerPositiveHeavy
 	Response PlayerTauntsHeavy
 }
 // Modified to be an extension of the 'positive' voice command.
+
+Response RocketDestroyedHeavy
+{
+	scene "scenes/Player/Heavy/low/3979.vcd" 
+	scene "scenes/Player/Heavy/low/3980.vcd" 
+	scene "scenes/Player/Heavy/low/3982.vcd" 
+}
+Rule RocketDestroyedHeavy
+{
+	criteria ConceptRocketDestroyed 50PercentChance IsHeavy
+	Response RocketDestroyedHeavy
+}

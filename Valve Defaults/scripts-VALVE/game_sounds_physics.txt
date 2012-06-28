@@ -3859,3 +3859,17 @@
 		"wave"		"items\pegleg_02.wav"
 	}
 }
+
+"Chest.Step"
+{
+	"soundlevel"	"SNDLVL_96dB"
+	"pitch"			"95,105"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"		"\weapons\knife_open1.wav"
+		"wave"		"\weapons\knife_open2.wav"
+		"wave"		"\weapons\knife_open8.wav"
+		"wave"		"\weapons\knife_open7.wav"
+	}
+}

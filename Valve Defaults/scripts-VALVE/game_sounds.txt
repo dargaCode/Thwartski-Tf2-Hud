@@ -656,7 +656,7 @@
 
 "Game.Overtime"
 {
-	"channel"	"CHAN_VOICE"
+	"channel"	"CHAN_VOICE2"
 	"volume"	"1"
 	"soundlevel"	"SNDLVL_140dB"
 	"pitch"		"PITCH_NORM"
@@ -1371,3 +1371,189 @@
 
 	"wave"		")misc\cp_harbor_red_whistle.wav"
 }
+
+// ------------------------------------------------------------------------------------ //
+// DOOMSDAY
+// ------------------------------------------------------------------------------------ //
+
+"doomsday.alarm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	
+	"wave"		")ambient\alarms\doomsday_lift_alarm.wav"
+}
+
+"doomsday.lift_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_lift_start.wav"
+}
+
+"doomsday.lift_loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_lift_loop.wav"
+}
+
+"doomsday.lift_stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_lift_stop.wav"
+}
+
+
+"doomsday.cap_spinstart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_spin_start.wav"
+}
+
+"doomsday.cap_spinloop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_spin_loop.wav"
+}
+
+"doomsday.cap_spin_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_spin_end.wav"
+}
+
+"doomsday.cap_open_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_open_start.wav"
+}
+
+"doomsday.cap_open_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_open_end.wav"
+}
+
+"doomsday.cap_close_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_close_start.wav"
+}
+
+"doomsday.cap_close_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_cap_close_end.wav"
+}
+
+"doomsday.cap_close_quick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_cap_close_quick.wav"
+}
+
+"doomsday.warhead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_warhead.wav"
+}
+
+"doomsday.pickupwarhead"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_30dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\doomsday_pickup.wav"
+}
+
+"doomsday.radiation"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_50dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_radiation.wav"
+}
+
+"doomsday.blank"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		"misc\blank.wav"
+}
+
+"doomsday.launch"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_missile_launch.wav"
+}
+
+"doomsday.launch_exp"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	
+	"wave"		")misc\doomsday_missile_explosion.wav"
+}
+

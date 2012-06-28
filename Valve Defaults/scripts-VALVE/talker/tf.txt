@@ -29,6 +29,18 @@
 	{
 		scene "scenes/player/pyro/low/taunt02.vcd"
 	}
+	response "PyroTauntRainblower"
+	{
+		scene "scenes/player/pyro/low/taunt_bubbles.vcd"
+	}
+	response "PyroTauntScorchShot"
+	{
+		scene "scenes/player/pyro/low/taunt_scorch_shot.vcd"
+	}
+	response "PyroTauntLollichop"
+	{
+		scene "scenes/player/pyro/low/taunt_lollichop.vcd"
+	}
 	response "PyroTauntHalloween"
 	{
 		scene "scenes/player/pyro/low/taunt06.vcd"
@@ -73,6 +85,21 @@
 	{
 		criteria ConceptPlayerTaunt IsPyro WeaponIsFlaregun
 		response PyroTauntItem1
+	}
+	rule PyroTauntPlayerRainblower
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsRainblower
+		response PyroTauntRainblower
+	}
+	rule PyroTauntPlayerScorchShot
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsScorchShot
+		response PyroTauntScorchShot
+	}
+	rule PyroTauntPlayerLollichop
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsLollichop
+		response PyroTauntLollichop
 	}
 	rule PyroTauntHalloween
 	{
@@ -1044,9 +1071,14 @@
 		criteria ConceptPlayerTaunt IsScout WeaponIsShortstop
 		response ScoutTauntSecondary
 	}
-	rule ScoutTauntWinger
+	rule ScoutTauntPEPBrawlerBlaster
 	{
-		criteria ConceptPlayerTaunt IsScout WeaponIsWinger
+		criteria ConceptPlayerTaunt IsScout WeaponIsPEPBrawlerBlaster
+		response ScoutTauntPrimaryDouble
+	}
+	rule ScoutTauntHandgunScoutSecondary
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsHandgunScoutSecondary
 		response ScoutTauntSecondary
 	}
 	rule ScoutTauntMadMilk
@@ -1057,6 +1089,11 @@
 	rule ScoutTauntHolyMackerel
 	{
 		criteria ConceptPlayerTaunt IsScout WeaponIsHolyMackerel
+		response ScoutTauntMelee
+	}
+	rule ScoutTauntUnarmedCombat
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsUnarmedCombat
 		response ScoutTauntMelee
 	}
 	rule ScoutTauntHalloween
@@ -2012,5 +2049,16 @@
 		criteria ConceptTauntHeroicPose IsMedic
 		response MedicTauntHeroicPose
 	}
+	
+	response "PyroTauntArmageddon"
+	{
+		scene "scenes/player/pyro/low/taunt_laugh.vcd"
+	}
+	rule PyroTauntArmageddon
+	{
+		criteria ConceptTauntPyroArmageddon IsPyro
+		response PyroTauntArmageddon
+	}
+
 	
 //============================================================================================================
