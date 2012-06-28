@@ -250,6 +250,7 @@ criterion "ConceptHighFiveReady" "Concept" "TLK_HIGHFIVE_READY" required
 criterion "ConceptTauntReplay" "Concept" "TLK_TAUNT_REPLAY" required
 criterion "ConceptTauntLaugh" "Concept" "TLK_TAUNT_LAUGH" required
 criterion "ConceptTauntHeroicPose" "Concept" "TLK_TAUNT_HEROIC_POSE" required
+criterion "ConceptTauntPyroArmageddon" "Concept" "TLK_TAUNT_PYRO_ARMAGEDDON" required
 
 criterion "IsOnOffense" "teamrole" "offense" required
 criterion "IsOnDefense" "teamrole" "defense" required
@@ -411,6 +412,7 @@ criterion "ItemIsGoldenWrench" "item_name" "Golden Wrench" "required" weight 10
 criterion "WeaponIsShortstop" "item_name" "The Shortstop" "required" weight 10
 criterion "WeaponIsMadMilk" "item_name" "Mad Milk" "required" weight 10
 criterion "WeaponIsHolyMackerel" "item_name" "The Holy Mackerel" "required" weight 10
+criterion "WeaponIsUnarmedCombat" "item_name" "Unarmed Combat" "required" weight 10
 criterion "WeaponIsKatana" "playerweapon" "tf_weapon_katana" "required" weight 10
 criterion "WeaponIsSashimono" "item_name" "The Concheror" "required" weight 10
 criterion "WeaponIsSaxxy" "item_name" "Saxxy" "required" weight 10
@@ -448,7 +450,6 @@ criterion "WeaponIsShiv" "item_name" "The Tribalman's Shiv" "required" weight 10
 criterion "WeaponIsGunbai" "item_name" "The Fan O'War" "required" weight 10
 criterion "WeaponIsNotMediGun" "playerweapon" "!=tf_weapon_medigun" "required" weight 10
 criterion "WeaponIsSodaPopper" "item_name" "The Soda Popper" "required" weight 10
-criterion "WeaponIsWinger" "item_name" "The Winger" "required" weight 10
 criterion "WeaponIsAtomizer" "item_name" "The Atomizer" "required" weight 10
 criterion "WeaponIsBazaarBargain" "item_name" "The Bazaar Bargain" "required" weight 10
 criterion "WeaponIsCowMangler" "item_name" "The Cow Mangler 5000" "required" weight 10
@@ -473,6 +474,11 @@ criterion "WeaponIsPomson" "item_name" "The Pomson 6000" "required" weight 10
 criterion "WeaponIsManmelter" "item_name" "The Manmelter" "required" weight 10
 criterion "WeaponIsWrapAssassin" "item_name" "The Wrap Assassin" "required" weight 10
 criterion "WeaponIsSpycicle" "item_name" "The Spy-cicle" "required" weight 10
+criterion "WeaponIsRainblower" "item_name" "The Rainblower" "required" weight 10
+criterion "WeaponIsScorchShot" "item_name" "The Scorch Shot" "required" weight 10
+criterion "WeaponIsLollichop" "item_name" "The Lollichop" "required" weight 10
+criterion "WeaponIsPEPBrawlerBlaster" "playerweapon" "tf_weapon_pep_brawler_blaster" "required" weight 10
+criterion "WeaponIsHandgunScoutSecondary" "playerweapon" "tf_weapon_handgun_scout_secondary" "required" weight 10
 
 //Custom healed concept and critical hit
 criterion "IsBeingHealed" "beinghealed" "1" "required"
@@ -543,7 +549,7 @@ criterion "DuelTargetIsSpy" "dueltargetclass" "Spy" required
 criterion "DuelTargetIsEngineer" "dueltargetclass" "Engineer" required
 
 
-       
+criterion "ConceptRocketDestroyed" "Concept" "TLK_ROCKET_DESTOYED" required 
 
 
 // Test rules

@@ -2634,5 +2634,86 @@
 				"width"		"96"
 				"height"	"32"	
 		}
+		"lollichop"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"608"
+				"width"		"96"
+				"height"	"32"	
+		}
+		"scorchshot"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"640"
+				"width"		"96"
+				"height"	"32"	
+		}
+		"rainblower"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"672"
+				"width"		"96"
+				"height"	"32"	
+		}
+		"pro_smg"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"705"
+				"width"		"64"
+				"height"	"31"
+		}
+		"pep_pistol"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"737"
+				"width"		"48"
+				"height"	"31"
+		}
+		"armageddon"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"769"
+				"width"		"96"
+				"height"	"31"
+		}
+		"pro_rifle"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"256"
+				"y"		"125"
+				"width"		"128"
+				"height"	"35"
+		}
+		"pep_brawlerblaster"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"256"
+				"y"		"161"
+				"width"		"128"
+				"height"	"31"
+		}
+		"dumpster_device"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"256"
+				"y"		"187"
+				"width"		"128"
+				"height"	"36"
+		}
 	}
 }

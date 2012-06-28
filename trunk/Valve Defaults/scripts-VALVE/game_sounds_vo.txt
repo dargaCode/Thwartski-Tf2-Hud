@@ -782,7 +782,7 @@
 
 "Announcer.Cart.Warning"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -806,7 +806,7 @@
 "Announcer.Cart.FinalWarning"
 
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -829,7 +829,7 @@
 
 "Announcer.TournamentModeStart"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -846,7 +846,7 @@
 
 "Announcer.Success"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -861,7 +861,7 @@
 
 "Announcer.Failure"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -872,7 +872,7 @@
 
 "Announcer.AttackControlPoints"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -883,7 +883,7 @@
 
 "Announcer.CaptureControlPoints"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -894,7 +894,7 @@
 
 "Announcer.CaptureIntel"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -905,7 +905,7 @@
 
 "Announcer.ControlPointContested"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -921,7 +921,7 @@
 
 "Announcer.DefendControlPoints"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -932,7 +932,7 @@
 
 "Announcer.DefendIntel"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -943,7 +943,7 @@
 
 "Announcer.RoundBegins10Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -954,7 +954,7 @@
 
 "Announcer.RoundBegins1Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -965,7 +965,7 @@
 
 "Announcer.RoundBegins20Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -976,7 +976,7 @@
 
 "Announcer.RoundBegins2Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -987,7 +987,7 @@
 
 "Announcer.RoundBegins30Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -998,7 +998,7 @@
 
 "Announcer.RoundBegins3Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1009,7 +1009,7 @@
 
 "Announcer.RoundBegins4Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1020,7 +1020,7 @@
 
 "Announcer.RoundBegins5Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1031,7 +1031,7 @@
 
 "Announcer.RoundBegins60Seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1042,7 +1042,7 @@
 
 "Announcer.RoundEnds10seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1053,7 +1053,7 @@
 
 "Announcer.RoundEnds1seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1064,7 +1064,7 @@
 
 "Announcer.RoundEnds20seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1075,7 +1075,7 @@
 
 "Announcer.RoundEnds2minutes"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1086,7 +1086,7 @@
 
 "Announcer.RoundEnds2seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1097,7 +1097,7 @@
 
 "Announcer.RoundEnds30seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1108,7 +1108,7 @@
 
 "Announcer.RoundEnds3seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1119,7 +1119,7 @@
 
 "Announcer.RoundEnds4seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1130,7 +1130,7 @@
 
 "Announcer.RoundEnds5minutes"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1141,7 +1141,7 @@
 
 "Announcer.RoundEnds5seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1152,7 +1152,7 @@
 
 "Announcer.RoundEnds60seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1163,7 +1163,7 @@
 
 "Announcer.RoundEnds6seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1174,7 +1174,7 @@
 
 "Announcer.RoundEnds7seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1185,7 +1185,7 @@
 
 "Announcer.RoundEnds8seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1196,7 +1196,7 @@
 
 "Announcer.RoundEnds9seconds"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1207,7 +1207,7 @@
 
 "Announcer.TimeAdded"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1218,7 +1218,7 @@
 
 "Announcer.TimeAddedForEnemy"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1229,7 +1229,7 @@
 
 "Announcer.TimeAwarded"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1240,7 +1240,7 @@
 
 "Announcer.TimeAwardedCongrats"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1251,7 +1251,7 @@
 
 "Announcer.TimeAwardedForTeam"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1267,7 +1267,7 @@
 
 "Announcer.TimeAwardedSuccess"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1278,7 +1278,7 @@
 
 "AttackDefend.Captured"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1300,7 +1300,7 @@
 
 "AttackDefend.EnemyCaptured"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1311,7 +1311,7 @@
 
 "AttackDefend.EnemyDropped"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1322,7 +1322,7 @@
 
 "AttackDefend.EnemyReturned"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1333,7 +1333,7 @@
 
 "AttackDefend.EnemyStolen"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1344,7 +1344,7 @@
 
 "AttackDefend.TeamCaptured"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1355,7 +1355,7 @@
 
 "AttackDefend.TeamDropped"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1366,7 +1366,7 @@
 
 "AttackDefend.TeamReturned"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1377,7 +1377,7 @@
 
 "AttackDefend.TeamStolen"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1388,7 +1388,7 @@
 
 "CaptureFlag.EnemyCaptured"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1404,7 +1404,7 @@
 
 "CaptureFlag.EnemyDropped"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1414,13 +1414,12 @@
 	{
 		"wave"	"vo/intel_enemydropped.wav"
 		"wave"	"vo/intel_enemydropped2.wav"
-		"wave"	"vo/intel_enemydropped3.wav"
 	}
 }
 
 "CaptureFlag.EnemyReturned"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1436,7 +1435,7 @@
 
 "CaptureFlag.EnemyStolen"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1464,7 +1463,7 @@
 
 "CaptureFlag.TeamCaptured"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1475,7 +1474,7 @@
 
 "CaptureFlag.TeamDropped"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1490,7 +1489,7 @@
 
 "CaptureFlag.TeamReturned"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1501,7 +1500,7 @@
 
 "CaptureFlag.TeamStolen"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -1512,7 +1511,7 @@
 
 "ControlPoint.CaptureWarn"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -7551,6 +7550,102 @@
 	"soundlevel"	"SNDLVL_NONE"
 
 	"wave"			"vo/invade_intel_teamstolen.wav"
+}
+
+"Resource.EnemyDropped"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/intel_enemydropped.wav"
+		"wave"	"vo/intel_enemydropped2.wav"
+	}
+}
+
+"Resource.EnemyStolen"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/intel_enemystolen.wav"
+		"wave"	"vo/intel_enemystolen2.wav"
+		"wave"	"vo/intel_enemystolen3.wav"
+		"wave"	"vo/intel_enemystolen4.wav"
+	}
+}
+ 
+"Resource.EnemyReturned"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/intel_enemyreturned.wav"
+		"wave"	"vo/intel_enemyreturned2.wav"
+		"wave"	"vo/intel_enemyreturned3.wav"
+	}
+}
+
+"Resource.FlagSpawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"items/itembk2.wav"
+}
+
+"Resource.TeamDropped"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/intel_teamdropped.wav"
+		"wave"	"vo/intel_teamdropped2.wav"
+	}
+}
+
+"Resource.TeamStolen"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"vo/intel_teamstolen.wav"
+}
+
+"Resource.TeamReturned"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"vo/intel_teamreturned.wav"
 }
 
 "Medic.ActivateCharge01"
@@ -23214,7 +23309,7 @@
 //-----------------------------------------------------------------------------
 "Announcer.AM_CapEnabledRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23232,7 +23327,7 @@
 
 "Announcer.AM_CapEnabled01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23241,7 +23336,7 @@
 
 "Announcer.AM_CapEnabled02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23250,7 +23345,7 @@
 
 "Announcer.AM_CapEnabled03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23259,7 +23354,7 @@
 
 "Announcer.AM_CapEnabled04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23268,7 +23363,7 @@
 
 "Announcer.AM_CapIncite01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23277,7 +23372,7 @@
 
 "Announcer.AM_CapIncite02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23286,7 +23381,7 @@
 
 "Announcer.AM_CapIncite03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23295,7 +23390,7 @@
 
 "Announcer.AM_CapIncite04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23304,7 +23399,7 @@
 
 "Announcer.AM_CapIncite05"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23313,7 +23408,7 @@
 
 "Announcer.AM_CapIncite06"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23322,7 +23417,7 @@
 
 "Announcer.AM_FirstBloodRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23339,7 +23434,7 @@
 
 "Announcer.AM_FirstBloodFinally"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23348,7 +23443,7 @@
 
 "Announcer.AM_FirstBloodFast"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23358,7 +23453,7 @@
 
 "Announcer.AM_FirstBlood01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23367,7 +23462,7 @@
 
 "Announcer.AM_FirstBlood03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23376,7 +23471,7 @@
 
 "Announcer.AM_FirstBlood05"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23385,7 +23480,7 @@
 
 "Announcer.AM_FirstBlood02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23394,7 +23489,7 @@
 
 "Announcer.AM_FirstBlood04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23403,7 +23498,7 @@
 
 "Announcer.AM_FirstBlood06"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23412,7 +23507,7 @@
 
 "Announcer.AM_FlawlessDefeatRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23429,7 +23524,7 @@
 
 "Announcer.AM_FlawlessVictoryRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23445,7 +23540,7 @@
 
 "Announcer.AM_FlawlessDefeat02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23454,7 +23549,7 @@
 
 "Announcer.AM_FlawlessDefeat01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23463,7 +23558,7 @@
 
 "Announcer.AM_FlawlessDefeat03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23472,7 +23567,7 @@
 
 "Announcer.AM_FlawlessDefeat04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23481,7 +23576,7 @@
 
 "Announcer.AM_FlawlessVictory01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23490,7 +23585,7 @@
 
 "Announcer.AM_FlawlessVictory02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23499,7 +23594,7 @@
 
 "Announcer.AM_FlawlessVictory03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23508,7 +23603,7 @@
 
 "Announcer.AM_GameStarting01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23517,7 +23612,7 @@
 
 "Announcer.AM_GameStarting02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23526,7 +23621,7 @@
 
 "Announcer.AM_GameStarting03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23535,7 +23630,7 @@
 
 "Announcer.AM_GameStarting04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23544,7 +23639,7 @@
 
 "Announcer.AM_GameStarting05"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23553,7 +23648,7 @@
 
 "Announcer.AM_KillStreak01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23562,7 +23657,7 @@
 
 "Announcer.AM_KillStreak02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23571,7 +23666,7 @@
 
 "Announcer.AM_KillStreak03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23580,7 +23675,7 @@
 
 "Announcer.AM_KillStreak04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23589,7 +23684,7 @@
 
 "Announcer.AM_KillStreak05"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23598,7 +23693,7 @@
 
 "Announcer.AM_KillStreak06"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23607,7 +23702,7 @@
 
 "Announcer.AM_KillStreak07"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23616,7 +23711,7 @@
 
 "Announcer.AM_KillStreak08"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23625,7 +23720,7 @@
 
 "Announcer.AM_KillStreak09"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23634,7 +23729,7 @@
 
 "Announcer.AM_KillStreak10"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23643,7 +23738,7 @@
 
 "Announcer.AM_KillStreak11"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23652,7 +23747,7 @@
 
 "Announcer.AM_LastManAlive02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23661,7 +23756,7 @@
 
 "Announcer.AM_LastManAlive03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23670,7 +23765,7 @@
 
 "Announcer.AM_LastManAlive01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23679,7 +23774,7 @@
 
 "Announcer.AM_LastManAlive04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23688,7 +23783,7 @@
 
 "Announcer.AM_LastManForfeit01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23697,7 +23792,7 @@
 
 "Announcer.AM_LastManForfeit02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23706,7 +23801,7 @@
 
 "Announcer.AM_LastManForfeit03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23715,7 +23810,7 @@
 
 "Announcer.AM_LastManForfeit04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23724,7 +23819,7 @@
 
 "Announcer.AM_RoundStartRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23740,7 +23835,7 @@
 
 "Announcer.AM_RoundStart01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23749,7 +23844,7 @@
 
 "Announcer.AM_RoundStart02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23758,7 +23853,7 @@
 
 "Announcer.AM_RoundStart03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23767,7 +23862,7 @@
 
 "Announcer.AM_RoundStart04"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23776,7 +23871,7 @@
 
 "Announcer.AM_TeamScrambleRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -23792,7 +23887,7 @@
 
 "Announcer.AM_TeamScramble03"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23801,7 +23896,7 @@
 
 "Announcer.AM_TeamScramble02"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -23810,7 +23905,7 @@
 
 "Announcer.AM_TeamScramble01"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"1.000"
 	"pitch"		"PITCH_NORM"
 	"soundlevel"		"SNDLVL_95dB"
@@ -26783,7 +26878,7 @@
 
 "Announcer.TrKillTargetRandom"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE2"
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 
@@ -28202,4 +28297,345 @@
 	"volume"		"1.000"
 	"soundlevel"		"SNDLVL_85dB"
 	"wave"		")vo/wolf_howl_03.wav"
+}
+"Announcer.SD_Nags_GetFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_misc_nags01.wav"
+		"wave"	"vo/announcer_sd_misc_nags02.wav"
+		"wave"	"vo/announcer_sd_misc_nags03.wav"
+	}
+}
+
+"Announcer.SD_Nags_CapFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_misc_nags04.wav"
+		"wave"	"vo/announcer_sd_misc_nags05.wav"
+	}
+}
+
+// Level triggered?
+"Announcer.SD_Rocket_PreLaunch"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_monkeynaut_start01.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_start02.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_start03.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_start04.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_start05.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_start06.wav"
+	}
+}
+
+// Level triggered?
+"Announcer.SD_Rocket_Launched"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_monkeynaut_end01.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end02.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end03.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end04.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end05.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end06.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end07.wav"
+	}
+}
+
+// Level triggered?
+"Announcer.SD_Rocket_Crash"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash01.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash02.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash03.wav"
+		"wave"	"vo/announcer_sd_monkeynaut_end_crash04.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_OurTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession01.wav"
+		"wave"	"vo/announcer_sd_possession16.wav"
+		"wave"	"vo/announcer_sd_possession21.wav"
+		"wave"	"vo/announcer_sd_possession24.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_OurTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession25.wav"
+		"wave"	"vo/announcer_sd_possession28.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_OurTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_generic_success_fail01.wav"
+	}
+}
+
+// Level triggered
+"Announcer.SD_OurTeamLaunched"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_launch01.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_TheirTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession03.wav"		
+		"wave"	"vo/announcer_sd_possession07.wav"
+		"wave"	"vo/announcer_sd_possession13.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_TheirTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_possession10.wav"
+		"wave"	"vo/announcer_sd_possession19.wav"
+	}
+}
+
+// Code triggered
+"Announcer.SD_TheirTeamCapped"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_generic_success_fail04.wav"
+	}
+}
+
+// Level triggered
+"Announcer.SD_TheirTeamLaunched"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_launch02.wav"
+	}
+}
+
+//
+"Announcer.SD_TheirFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings03.wav"
+	}
+}
+
+//
+"Announcer.SD_OurFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings05.wav"
+	}
+}
+
+//
+"Announcer.SD_TheyAreAboutToLaunch"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings01.wav"
+		"wave"	"vo/announcer_sd_rocket_warnings04.wav"
+		"wave"	"vo/announcer_sd_rocket_warnings08.wav"
+	}
+}
+
+//
+"Announcer.SD_WeAreAboutToLaunch"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_rocket_warnings02.wav"
+		"wave"	"vo/announcer_sd_rocket_warnings06.wav"		
+		"wave"	"vo/announcer_sd_rocket_warnings07.wav"
+	}
+}
+
+//
+"Announcer.SD_RoundStart"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_round_start04.wav"
+	}
+}
+
+//
+"Announcer.SD_FlagAvailableIn3"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_round_start05.wav"
+	}
+}
+//
+"Announcer.SD_FlagAvailableGo"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_misc_nags01.wav"
+		"wave"	"vo/announcer_sd_misc_nags02.wav"
+		"wave"	"vo/announcer_sd_misc_nags03.wav"
+	}
+}
+
+//
+"Announcer.SD_FlagAboutToReturn"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_self_destruct01.wav"
+		"wave"	"vo/announcer_sd_self_destruct02.wav"
+		"wave"	"vo/announcer_sd_self_destruct03.wav"
+	}
+}
+
+//
+"Announcer.SD_FlagReturned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_sd_drop_site01.wav"
+		"wave"	"vo/announcer_sd_drop_site04.wav"
+	}
 }
