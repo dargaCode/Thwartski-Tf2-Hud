@@ -38,6 +38,11 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 	
 	"LeftBlackBGThwartski"
@@ -53,6 +58,11 @@
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"0 0 0 255"
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 	
 	"RightSideBGThwartski"
@@ -75,6 +85,11 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 	
 	"RightBlackBGThwartski"
@@ -90,6 +105,11 @@
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"0 0 0 255"
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 	
 	
@@ -113,6 +133,10 @@
 		"wrap"			"1"
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -141,6 +165,10 @@
 		{
 			"visible"	"0"
 		}
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 	
 	"LeftSideBG"
@@ -158,6 +186,10 @@
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -181,6 +213,10 @@
 		{
 			"visible"	"0"
 		}
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 		
 	"OutlineBG"
@@ -201,6 +237,7 @@
 		{
 			"visible"	"0"
 		}
+		
 	}
 	
 	"BlueScore"
@@ -220,6 +257,10 @@
 		"fgcolor"		"TanLight"
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -245,6 +286,10 @@
 		{
 			"visible"	"0"
 		}
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 							
 	"RedScore"
@@ -264,6 +309,10 @@
 		"fgcolor"		"TanLight"		
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -289,6 +338,10 @@
 		{
 			"visible"	"0"
 		}
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 
 	"OutlineImage"
@@ -304,6 +357,11 @@
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_carried_outline"
 		"scaleImage"	"1"	
+		
+		"if_specialdelivery"
+		{
+
+		}
 	}		
 	
 	"CarriedImage"
@@ -323,6 +381,11 @@
 		"if_hybrid"
 		{
 			"ypos"		"r142"
+		}
+		
+		"if_specialdelivery"
+		{
+
 		}
 	}		
 	
@@ -358,6 +421,11 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_specialdelivery"
+		{
+			"xpos"			"c-50"
+		}
 	}
 			
 	"RedFlag"
@@ -390,6 +458,10 @@
 		{
 			"visible"	"0"
 		}
+		"if_specialdelivery"
+		{
+			"xpos"			"c-50"
+		}
 	}	
 		
 	//don't need directions back to base
@@ -397,17 +469,22 @@
 	{
 		"ControlName"	"CTFArrowPanel"
 		"fieldName"		"CaptureFlag"
-		"xpos"			"c-40"
-		"ypos"			"r95"
-		"zpos"			"5"
-		"wide"			"0"
-		"tall"			"0"
+		"xpos"			"c20"
+		"ypos"			"r44"
+		"zpos"			"4"
+		"wide"			"160"
+		"tall"			"90"
 		"visible"		"0"
 		"enabled"		"1"
 		
 		"if_hybrid"
 		{
 			"ypos"		"r100"
+		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"1"
 		}
 	}
 	
