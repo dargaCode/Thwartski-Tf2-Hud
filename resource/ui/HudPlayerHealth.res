@@ -239,4 +239,19 @@
 		"image"			"../vgui/marked_for_death"
 		"fgcolor"		"TanDark"
 	}
+		"PlayerStatusMarkedForDeathSilentImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerStatusMarkedForDeathSilentImage"
+		"xpos"			"70"
+		"ypos"			"48"
+		"zpos"			"7"
+		"wide"			"31"
+		"tall"			"31"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"image"			"../vgui/marked_for_death"
+		"fgcolor"		"TanDark"
+	}
 }
