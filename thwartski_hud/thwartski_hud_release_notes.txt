@@ -3,12 +3,22 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
+Thwartski Hud v1.0.1 (PUBLIC RELEASE) - June 28, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
+	1) Added support for the Special Delivery game mode.
+	2) Added support for the Hitman's Heatmaker.
+	3) Updated health and ammo UI to work with the new update.
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+	
+v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
+	
 	1) Fixed health and ammo fonts for OSX.
 	2) Adjusted KOTH panel to work with new cap point size.
 	3) Fixed missing health warning on kill cam.
@@ -17,10 +27,6 @@ Thwartski Hud v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
 	6) Added Arena support.
 	
 	Thanks to Tobias Funke for feedback!
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 	
 v0.9.6 (BETA) - June 6, 2012.	
 	
