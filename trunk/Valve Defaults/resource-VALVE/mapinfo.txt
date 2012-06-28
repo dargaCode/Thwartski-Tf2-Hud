@@ -1,0 +1,111 @@
+"Resource\mapinfo.res"
+{
+	"cp_fastlane"
+	{
+		"maptoken"				"Map Token Fastlane"
+		"communitymap"			"1"
+		"authors"			"#cp_fastlane_authors"
+	}
+	"ctf_turbine"
+	{
+		"maptoken"				"Map Token Turbine"
+		"communitymap"			"1"
+		"authors"			"#ctf_turbine_authors"
+	}
+	"cp_steel"
+	{
+		"maptoken"				"Map Token Steel"
+		"communitymap"			"1"
+		"authors"			"#cp_steel_authors"
+	}
+	"cp_egypt_final"
+	{
+		"maptoken"				"Map Token Egypt"
+		"communitymap"			"1"
+		"authors"			"#cp_egypt_final_authors"
+	}
+	"cp_junction_final"
+	{
+		"maptoken"				"Map Token Junction"
+		"communitymap"			"1"
+		"authors"			"#cp_junction_final_authors"
+	}
+	"arena_watchtower"
+	{
+		"maptoken"				"Map Token Watchtower"
+		"communitymap"			"1"
+		"authors"			"#arena_watchtower_authors"
+	}
+	"pl_hoodoo_final"
+	{
+		"maptoken"				"Map Token Hoodoo"
+		"communitymap"			"1"
+		"authors"			"#pl_hoodoo_final_authors"
+	}
+	"arena_offblast_final"
+	{
+		"maptoken"				"Map Token Offblast"
+		"communitymap"			"1"
+		"authors"			"#arena_offblast_final_authors"
+	}
+	"cp_yukon_final"
+	{
+		"maptoken"				"Map Token Yukon"
+		"communitymap"			"1"
+		"authors"			"#cp_yukon_final_authors"
+	}
+	"koth_harvest_final"
+	{
+		"maptoken"				"Map Token Harvest"
+		"communitymap"			"1"
+		"authors"			"#koth_harvest_final_authors"
+	}
+	"cp_freight_final1"
+	{
+		"maptoken"				"Map Token Freight"
+		"communitymap"			"1"
+		"authors"			"#cp_freight_final1_authors"
+	}
+	"cp_coldfront"
+	{
+		"maptoken"				"Map Token Coldfront"
+		"communitymap"			"1"
+		"authors"			"#cp_coldfront_authors"
+	}
+	"cp_mountainlab"
+	{
+		"maptoken"				"Map Token Mountain Lab"
+		"communitymap"			"1"
+		"authors"			"#cp_mountainlab"
+	}
+	"cp_manor_event"
+	{
+		"maptoken"				"Map Token Manor Event"
+		"communitymap"			"1"
+		"authors"			"#cp_manor_event_authors"
+	}
+	"plr_nightfall"
+	{
+		"maptoken"				"Map Token Nightfall"
+		"communitymap"			"1"
+		"authors"				"#plr_nightfall_authors"
+	}
+	"pl_frontier"
+	{
+		"maptoken"				"Map Token Frontier"
+		"communitymap"			"1"
+		"authors"				"#pl_frontier_authors"
+	}
+	"koth_lakeside"
+	{
+		"maptoken"				"Map Token Lakeside"
+		"communitymap"			"1"
+		"authors"				"#koth_lakeside_authors"
+	}
+	"cp_gullywash_final1"
+	{
+		"maptoken"				"Map Token Gullywash"
+		"communitymap"			"1"
+		"authors"				"#cp_gullywash_final1_authors"
+	}
+}
