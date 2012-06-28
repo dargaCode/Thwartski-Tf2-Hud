@@ -1,0 +1,10 @@
+"matchgroups"
+{
+	"global" // North America - US West
+	{
+		"channel"	"Global"
+		"group" "0"
+		"display_name" "#tf_matchgroup_global"
+	}
+}
+
