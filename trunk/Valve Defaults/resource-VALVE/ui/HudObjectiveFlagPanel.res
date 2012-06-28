@@ -37,6 +37,11 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}
 		
 	"RightSideBG"
@@ -54,6 +59,11 @@
 		"image"			"../hud/objectives_flagpanel_bg_right"
 		"scaleImage"	"1"	
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -75,6 +85,11 @@
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -106,6 +121,11 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 		
 	"BlueScoreShadow"
@@ -131,6 +151,11 @@
 		"fgcolor"		"Black"
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -162,6 +187,11 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 		
 	"RedScoreShadow"
@@ -187,6 +217,11 @@
 		"fgcolor"		"Black"		
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -227,6 +262,11 @@
 		{
 			"ypos"		"r142"
 		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"r142"
+		}
 	}		
 	
 	"PlayingTo"
@@ -254,6 +294,11 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
 	}	
 			
 	"PlayingToBG"
@@ -276,6 +321,11 @@
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
 		{
 			"visible"	"0"
 		}
@@ -308,6 +358,11 @@
 		"if_hybrid_double"
 		{
 			"xpos"		"c-115"
+		}
+
+		"if_specialdelivery"
+		{
+			"ypos"		"r100"
 		}
 		
 		"if_no_flags"
@@ -344,6 +399,11 @@
 		{
 			"xpos"		"c-45"
 		}
+
+		"if_specialdelivery"
+		{
+			"ypos"		"r100"
+		}
 		
 		"if_no_flags"
 		{
@@ -365,6 +425,11 @@
 		"enabled"		"1"
 		
 		"if_hybrid"
+		{
+			"ypos"		"r100"
+		}
+		
+		"if_specialdelivery"
 		{
 			"ypos"		"r100"
 		}

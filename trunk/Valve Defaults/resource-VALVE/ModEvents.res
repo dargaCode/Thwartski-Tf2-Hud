@@ -60,6 +60,7 @@
 		"death_flags"	"short" //death flags.
 		"silent_kill"	"bool"
 		"playerpenetratecount"	"short"
+		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
 		
 	//	"dominated"	"short"		// did killer dominate victim with this kill
 	//	"assister_dominated" "short"	// did assister dominate victim with this kill
@@ -316,6 +317,7 @@
 		"player"	"short"			// player this event involves
 		"carrier"	"short"			// the carrier if needed
 		"eventtype"	"short"			// pick up, capture, defend, dropped
+		"home"		"byte"			// whether or not the flag was home (only set for TF_FLAGEVENT_PICKUP) 
 	}
 	"teamplay_win_panel"		
 	{
@@ -412,6 +414,8 @@
 
 	"flagstatus_update"
 	{
+		"userid"	"short"		// user ID of the player who now has the flag
+		"entindex"	"long"	// ent index of flag
 	}
 
 	"player_stats_updated"
@@ -841,17 +845,19 @@
 
 	"rocket_jump"
 	{
-		"userid"	"short"	
+		"userid"	"short"
+		"playsound"	"bool"
 	}
 	
 	"rocket_jump_landed"
 	{
-		"userid"	"short"	
+		"userid"	"short"
 	}
 	
 	"sticky_jump"
 	{
 		"userid"	"short"	
+		"playsound"	"bool"
 	}
 	
 	"sticky_jump_landed"
@@ -971,6 +977,7 @@
 		"stun_flags"	"short"	// victim's stun flags at the moment of death
 		"death_flags"	"short" //death flags.
 		"silent_kill"	"bool"
+		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
 	}
 	
 	// clone of "fish_notice" (...clone of "player_death")
@@ -989,6 +996,7 @@
 		"stun_flags"	"short"	// victim's stun flags at the moment of death
 		"death_flags"	"short" //death flags.
 		"silent_kill"	"bool"
+		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
 	}
 	
 	"pumpkin_lord_summoned"
@@ -1078,6 +1086,21 @@
 	{
 		"attacker"	"short"		// entindex of the attacker
 		"victim"	"short"		// entindex of the victim
+		"zone_id"	"short"		// type of area (0 for general, 1 for capture zone)
+	}
+
+	"recalculate_holidays"
+	{
+	}
+
+	"doomsday_rocket_open"
+	{
+		"team"		"byte"		// which team opened the rocket
+	}
+
+	"remove_nemesis_relationships"
+	{
+		"player"		"short"		// entindex of the player who should reset
 	}
 }
 
