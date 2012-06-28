@@ -385,7 +385,7 @@
 		
 		"if_specialdelivery"
 		{
-
+			"ypos"		"r38"
 		}
 	}		
 	
@@ -424,7 +424,7 @@
 		
 		"if_specialdelivery"
 		{
-			"xpos"			"c-50"
+			"xpos"			"c-51"
 		}
 	}
 			
@@ -460,7 +460,7 @@
 		}
 		"if_specialdelivery"
 		{
-			"xpos"			"c-50"
+			"xpos"			"c-51"
 		}
 	}	
 		
@@ -472,19 +472,14 @@
 		"xpos"			"c20"
 		"ypos"			"r44"
 		"zpos"			"4"
-		"wide"			"160"
-		"tall"			"90"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
 		
 		"if_hybrid"
 		{
 			"ypos"		"r100"
-		}
-		
-		"if_specialdelivery"
-		{
-			"visible"	"1"
 		}
 	}
 	
