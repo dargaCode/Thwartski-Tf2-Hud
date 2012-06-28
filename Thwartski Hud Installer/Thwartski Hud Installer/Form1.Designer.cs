@@ -31,7 +31,7 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.folderBrowserTextBox = new System.Windows.Forms.TextBox();
             this.folderBrowserButton = new System.Windows.Forms.Button();
-            this.install = new System.Windows.Forms.Button();
+            this.installButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -47,7 +47,6 @@
             // 
             this.folderBrowserDialog1.Description = "Select the \\Team Fortress 2\\ folder from your \\Steam\\Steamapps\\USERNAME\\ folder.";
             this.folderBrowserDialog1.ShowNewFolderButton = false;
-            this.folderBrowserDialog1.HelpRequest += new System.EventHandler(this.folderBrowserDialog1_HelpRequest);
             // 
             // folderBrowserTextBox
             // 
@@ -68,14 +67,15 @@
             this.folderBrowserButton.UseVisualStyleBackColor = true;
             this.folderBrowserButton.Click += new System.EventHandler(this.folderBrowserButton_Click);
             // 
-            // install
+            // installButton
             // 
-            this.install.Location = new System.Drawing.Point(193, 462);
-            this.install.Name = "install";
-            this.install.Size = new System.Drawing.Size(132, 49);
-            this.install.TabIndex = 2;
-            this.install.Text = "button2";
-            this.install.UseVisualStyleBackColor = true;
+            this.installButton.Location = new System.Drawing.Point(193, 462);
+            this.installButton.Name = "installButton";
+            this.installButton.Size = new System.Drawing.Size(132, 49);
+            this.installButton.TabIndex = 2;
+            this.installButton.Text = "Ready to Install!";
+            this.installButton.UseVisualStyleBackColor = true;
+            this.installButton.Click += new System.EventHandler(this.installButton_Click);
             // 
             // label1
             // 
@@ -149,7 +149,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.install);
+            this.Controls.Add(this.installButton);
             this.Controls.Add(this.folderBrowserButton);
             this.Controls.Add(this.folderBrowserTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -169,7 +169,7 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TextBox folderBrowserTextBox;
         private System.Windows.Forms.Button folderBrowserButton;
-        private System.Windows.Forms.Button install;
+        private System.Windows.Forms.Button installButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
