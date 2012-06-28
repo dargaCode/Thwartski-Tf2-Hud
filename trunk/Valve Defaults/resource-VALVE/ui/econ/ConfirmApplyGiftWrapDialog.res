@@ -219,6 +219,25 @@
 		"fgcolor_override" "200 80 60 255"
 	}
 
+	"ConfirmLabelStrange"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ConfirmLabelStrange"
+		"font"			"HudFontSmall"
+		"labelText"		"#ToolGiftWrapConfirmStrange"
+		"textAlignment"	"center"
+		"xpos"			"20"
+		"ypos"			"80"
+		"zpos"			"0"
+		"wide"			"360"
+		"tall"			"60"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"fgcolor_override" "200 80 60 255"
+	}
+
 	"CancelButton"
 	{
 		"ControlName"	"CExButton"
