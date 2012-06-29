@@ -20,10 +20,13 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
-        /// Take a guess where the right folder is, and set it as the default location if it exists.
+        /// Take a guess where the right folder is, and set it as the default browser location if it exists.
         /// </summary>
         private void SetDefaultFolder()
         {
+
+            //clean these up a bit into variables so it's not so redundant?
+
             string DefaultFolder32Bit = @"C:\Program Files (x86)\Steam\steamapps";
             string DefaultFolder64Bit = @"C:\Program Files\Steam\steamapps";
 
@@ -69,12 +72,20 @@ namespace Thwartski_Hud_Installer
         private void installButton_Click(object sender, EventArgs e)
         {
             string assetPath = @"e:\Userdata\Desktop\bullshit";
-            string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf\DELETEME FAKE RESOURCE";
+            string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";
+
+            string backupPath = installPath + @"\_HUD BACKUPS";
 
             DirectoryInfo assetFolder = new DirectoryInfo(assetPath);
             DirectoryInfo installFolder = new DirectoryInfo(installPath);
 
-            backupFolder(installPath);
+            //Iterate through all the folders in the source asset folder and back up all of them before copying.
+            DirectoryInfo[] assetSubFolders = assetFolder.GetDirectories();
+            foreach (DirectoryInfo assetSubFolder in assetSubFolders)
+            {
+                backupAndDeleteFolder(assetSubFolder, installPath, backupPath);
+            }
+
 
             CopyFilesAndFolders(assetFolder, installFolder);
 
@@ -84,22 +95,26 @@ namespace Thwartski_Hud_Installer
 
 
         /// <summary>
-        /// Back up the folder with a timestamp.
+        /// Back up the folder with a timestamp, then delete it and all its contents.
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        static void backupFolder(string sourcePath)
+        static void backupAndDeleteFolder(DirectoryInfo folderName, string sourcePath, string backupPath)
         {
-            string backupPath = String.Format("{0}_Backup_Date-{1:yyyy-MM-dd_}Time.{2:HH.mm.ss}", sourcePath, DateTime.Now, DateTime.Now);
 
-            DirectoryInfo existingFolder = new DirectoryInfo(sourcePath);
+            string existingCompletePath = String.Format(@"{0}\{1}", sourcePath, folderName);
+            string backupCompletePath = String.Format(@"{0}\Date-{1:yyyy-MM-dd_}Time.{2:HH.mm.ss}\{3}", backupPath, DateTime.Now, DateTime.Now, folderName);
 
-            DirectoryInfo backupFolder = new DirectoryInfo(backupPath);
+            DirectoryInfo existingFolder = new DirectoryInfo(existingCompletePath);
+            DirectoryInfo backupFolder = new DirectoryInfo(backupCompletePath);
 
             if (existingFolder.Exists)
             {
                 //If the player hasn't deleted it, back the folder up.
                 CopyFilesAndFolders(existingFolder, backupFolder);
+
+                Directory.Delete(existingCompletePath, true);
+
             }
         }
       
