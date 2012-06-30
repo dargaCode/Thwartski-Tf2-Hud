@@ -12,6 +12,16 @@ namespace Thwartski_Hud_Installer
 {
     public partial class Form1 : Form
     {
+        static Boolean createBackupFolders = false;
+
+        static string assetPath = @"e:\Userdata\Desktop\bullshit";
+        static string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";
+        static string backupPath = installPath + @"\_HUD BACKUPS";
+
+        static DirectoryInfo assetFolder = new DirectoryInfo(assetPath);
+        static DirectoryInfo installFolder = new DirectoryInfo(installPath);
+
+
         public Form1()
         {
             InitializeComponent();
@@ -69,39 +79,61 @@ namespace Thwartski_Hud_Installer
             }
         }
 
+        private void backupCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (backupCheckbox.Checked)
+            {
+                createBackupFolders = true;
+            }
+            else
+            {
+                createBackupFolders = false;
+            }
+
+        }
+
+
         private void installButton_Click(object sender, EventArgs e)
         {
-            string assetPath = @"e:\Userdata\Desktop\bullshit";
-            string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";
+            //delete the destination files
+            wipeHudFiles();
 
-            string backupPath = installPath + @"\_HUD BACKUPS";
+            //install the new hud files
+            copyFilesAndFolders(assetFolder, installFolder);
 
-            DirectoryInfo assetFolder = new DirectoryInfo(assetPath);
-            DirectoryInfo installFolder = new DirectoryInfo(installPath);
+            MessageBox.Show("Done!");
+        }
 
+        private void uninstallButton_Click(object sender, EventArgs e)
+        {
+            //delete the destination files
+            wipeHudFiles();
+
+            MessageBox.Show("Done!");
+        }
+
+        /// <summary>
+        /// Backup and delete all relevant files from the install directory.
+        /// </summary>
+        /// <param name="sourceFolder"></param>
+        /// <param name="destinationFolder"></param>
+        static void wipeHudFiles()
+        {
             //Iterate through all the folders in the source asset folder and back up all of them before copying.
             DirectoryInfo[] assetSubFolders = assetFolder.GetDirectories();
             foreach (DirectoryInfo assetSubFolder in assetSubFolders)
             {
-                backupAndDeleteFolder(assetSubFolder, installPath, backupPath);
+                backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders);
             }
-
-
-            CopyFilesAndFolders(assetFolder, installFolder);
-
-            MessageBox.Show("Done!");
-
         }
-
 
         /// <summary>
         /// Back up the folder with a timestamp, then delete it and all its contents.
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        static void backupAndDeleteFolder(DirectoryInfo folderName, string sourcePath, string backupPath)
+        static void backupAndDeleteFolder(string sourcePath, DirectoryInfo folderName, string backupPath, bool backupDesired)
         {
-
             string existingCompletePath = String.Format(@"{0}\{1}", sourcePath, folderName);
             string backupCompletePath = String.Format(@"{0}\Date-{1:yyyy-MM-dd_}Time.{2:HH.mm.ss}\{3}", backupPath, DateTime.Now, DateTime.Now, folderName);
 
@@ -110,21 +142,23 @@ namespace Thwartski_Hud_Installer
 
             if (existingFolder.Exists)
             {
-                //If the player hasn't deleted it, back the folder up.
-                CopyFilesAndFolders(existingFolder, backupFolder);
+                //If the player hasn't deleted it, and they checked the option, back the folder up.
+                if (backupDesired)
+                {
+                    copyFilesAndFolders(existingFolder, backupFolder);
+                }
 
+                //delete existing hud file either way
                 Directory.Delete(existingCompletePath, true);
-
             }
         }
-      
 
         /// <summary>
         /// Copy all files and folders to a new location, overwriting all files.
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        static void CopyFilesAndFolders(DirectoryInfo sourceFolder, DirectoryInfo destinationFolder)
+        static void copyFilesAndFolders(DirectoryInfo sourceFolder, DirectoryInfo destinationFolder)
         {
             if (!destinationFolder.Exists)
             {
@@ -155,9 +189,9 @@ namespace Thwartski_Hud_Installer
                 string destinationSubFolder = Path.Combine(destinationFolder.FullName, sourceSubFolder.Name);
 
                 // Call CopyDirectory() recursively. 
-                CopyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
+                copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
-        } 
+        }
 
 
     }
