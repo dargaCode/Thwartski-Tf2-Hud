@@ -32,21 +32,21 @@ namespace Thwartski_Hud_Installer
         static string scoreboardPub32Image = "ScoreBoard_Pub32.jpg";
 
         //paths for installing files
-        static string assetPath = @"e:\Userdata\Desktop\bullshit";
-        static string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";
-        static string backupPath = installPath + @"\_HUD BACKUPS";
+        static string assetPath = @"e:\Userdata\Desktop\bullshit\tf\";  //eventually needs to be relative from the exe file
+
+        static string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";  //eventually needs to be defined by the file browser
 
         static DirectoryInfo assetFolder = new DirectoryInfo(assetPath);
         static DirectoryInfo installFolder = new DirectoryInfo(installPath);
 
         //paths for copying custom files
-        static string aspectFile = "";
-        static string scoreboardFile = "";
+        static string customAssetPath = assetPath + @"\DELETEME FAKE RESOURCE\ui\Thwartski Hud Options\";
+        static string customInstallPath = installPath + @"\DELETEME FAKE RESOURCE\ui\";
 
-        static string customAssetPath = assetPath + @"\DELETEME I WILL NOT BE BACKED UP\";
-        static string customInstallPath = installPath + @"\CUSTOM\";
+        static string aspectAssetFile = "";
+        static string scoreboardAssetFile = "";
 
-        static string aspectFileDestination =customInstallPath + "Spectator_Tournament.res";
+        static string aspectFileDestination =customInstallPath + "SpectatorTournament.res";
         static string scoreboardFileDestination = customInstallPath + "ScoreBoard.res";
 
         //names for copying custom files
@@ -56,6 +56,9 @@ namespace Thwartski_Hud_Installer
         static string scoreboardComp9File = "ScoreBoard_Comp9.res";
         static string scoreboardPub24File = "ScoreBoard_Pub24.res";
         static string scoreboardPub32File = "ScoreBoard_Pub32.res";
+
+        //path for saving backups
+        static string backupPath = installPath + @"\_HUD BACKUPS";
 
 
         public Form1()
@@ -150,13 +153,13 @@ namespace Thwartski_Hud_Installer
             {
                 aspectImageBox.Load(customAssetPath + aspectNormalImage);
 
-                aspectFile = customAssetPath + aspectNormalFile;
+                aspectAssetFile = customAssetPath + aspectNormalFile;
             }
             else if (Convert.ToString(aspectSelector.SelectedItem) == aspectWidescreenText)
             {
                 aspectImageBox.Load(customAssetPath + aspectWidescreenImage);
 
-                aspectFile = customAssetPath + aspectWidescreenFile;
+                aspectAssetFile = customAssetPath + aspectWidescreenFile;
             }
         }
 
@@ -167,25 +170,25 @@ namespace Thwartski_Hud_Installer
             {
                 scoreboardImage.Load(customAssetPath + scoreboardComp6Image);
 
-                scoreboardFile = customAssetPath + scoreboardComp6File;
+                scoreboardAssetFile = customAssetPath + scoreboardComp6File;
             }
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp9Text)
             {
                 scoreboardImage.Load(customAssetPath + scoreboardComp9Image);
 
-                scoreboardFile = customAssetPath + scoreboardComp9File;
+                scoreboardAssetFile = customAssetPath + scoreboardComp9File;
             }
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub24Text)
             {
                 scoreboardImage.Load(customAssetPath + scoreboardPub24Image);
 
-                scoreboardFile = customAssetPath + scoreboardPub24File;
+                scoreboardAssetFile = customAssetPath + scoreboardPub24File;
             }
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub32Test)
             {
                 scoreboardImage.Load(customAssetPath + scoreboardPub32Image);
 
-                scoreboardFile = customAssetPath + scoreboardPub32File;
+                scoreboardAssetFile = customAssetPath + scoreboardPub32File;
             }
         }
 
@@ -199,8 +202,8 @@ namespace Thwartski_Hud_Installer
             copyFilesAndFolders(assetFolder, installFolder);
 
             //copy the custom files
-            System.IO.File.Copy(aspectFile, aspectFileDestination, true);
-            System.IO.File.Copy(scoreboardFile, scoreboardFileDestination, true);
+            System.IO.File.Copy(aspectAssetFile, aspectFileDestination, true);
+            System.IO.File.Copy(scoreboardAssetFile, scoreboardFileDestination, true);
 
             MessageBox.Show("Hud Installed!");
         }

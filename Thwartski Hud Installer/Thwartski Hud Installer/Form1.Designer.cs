@@ -94,7 +94,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.folderBrowserButton, 2);
             this.folderBrowserButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.folderBrowserButton.Location = new System.Drawing.Point(430, 43);
+            this.folderBrowserButton.Location = new System.Drawing.Point(428, 43);
             this.folderBrowserButton.Name = "folderBrowserButton";
             this.folderBrowserButton.Size = new System.Drawing.Size(89, 21);
             this.folderBrowserButton.TabIndex = 1;
@@ -109,7 +109,7 @@
             this.folderBrowserTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.folderBrowserTextBox.Location = new System.Drawing.Point(23, 44);
             this.folderBrowserTextBox.Name = "folderBrowserTextBox";
-            this.folderBrowserTextBox.Size = new System.Drawing.Size(401, 20);
+            this.folderBrowserTextBox.Size = new System.Drawing.Size(399, 20);
             this.folderBrowserTextBox.TabIndex = 0;
             this.folderBrowserTextBox.Text = "C:\\Program Files (x86)\\Steam\\steamapps\\YOUR_USERNAME\\team fortress 2";
             // 
@@ -143,7 +143,7 @@
             this.aspectSelector.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aspectSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.aspectSelector.FormattingEnabled = true;
-            this.aspectSelector.Location = new System.Drawing.Point(219, 256);
+            this.aspectSelector.Location = new System.Drawing.Point(218, 256);
             this.aspectSelector.Name = "aspectSelector";
             this.aspectSelector.Size = new System.Drawing.Size(104, 21);
             this.aspectSelector.TabIndex = 14;
@@ -167,7 +167,7 @@
             this.aspectImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aspectImageBox.Location = new System.Drawing.Point(118, 105);
             this.aspectImageBox.Name = "aspectImageBox";
-            this.aspectImageBox.Size = new System.Drawing.Size(306, 145);
+            this.aspectImageBox.Size = new System.Drawing.Size(304, 145);
             this.aspectImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aspectImageBox.TabIndex = 10;
             this.aspectImageBox.TabStop = false;
@@ -178,7 +178,7 @@
             this.scoreboardImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardImage.Location = new System.Drawing.Point(118, 321);
             this.scoreboardImage.Name = "scoreboardImage";
-            this.scoreboardImage.Size = new System.Drawing.Size(306, 145);
+            this.scoreboardImage.Size = new System.Drawing.Size(304, 145);
             this.scoreboardImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.scoreboardImage.TabIndex = 19;
             this.scoreboardImage.TabStop = false;
@@ -188,9 +188,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.installButton, 3);
             this.installButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.installButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.installButton.Location = new System.Drawing.Point(274, 549);
+            this.installButton.Location = new System.Drawing.Point(273, 549);
             this.installButton.Name = "installButton";
-            this.installButton.Size = new System.Drawing.Size(210, 50);
+            this.installButton.Size = new System.Drawing.Size(209, 50);
             this.installButton.TabIndex = 2;
             this.installButton.Text = "INSTALL";
             this.installButton.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@
             this.scoreboardSelector.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.scoreboardSelector.FormattingEnabled = true;
-            this.scoreboardSelector.Location = new System.Drawing.Point(219, 472);
+            this.scoreboardSelector.Location = new System.Drawing.Point(218, 472);
             this.scoreboardSelector.Name = "scoreboardSelector";
             this.scoreboardSelector.Size = new System.Drawing.Size(104, 21);
             this.scoreboardSelector.TabIndex = 20;
@@ -215,7 +215,7 @@
             this.uninstallButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uninstallButton.Location = new System.Drawing.Point(58, 549);
             this.uninstallButton.Name = "uninstallButton";
-            this.uninstallButton.Size = new System.Drawing.Size(210, 50);
+            this.uninstallButton.Size = new System.Drawing.Size(209, 50);
             this.uninstallButton.TabIndex = 18;
             this.uninstallButton.Text = "Uninstall";
             this.uninstallButton.UseVisualStyleBackColor = true;
@@ -233,7 +233,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel1.Controls.Add(this.uninstallButton, 2, 10);
             this.tableLayoutPanel1.Controls.Add(this.scoreboardSelector, 4, 8);
             this.tableLayoutPanel1.Controls.Add(this.installButton, 5, 10);
