@@ -12,7 +12,24 @@ namespace Thwartski_Hud_Installer
 {
     public partial class Form1 : Form
     {
+        //boolean for backup checkbox
         static Boolean createBackupFolders = false;
+
+        //Strings for comboboxes
+        static string aspectNormalText = "Normal";
+        static string aspectWidescreenText = "Widescreen";
+        static string scoreboardComp6Text = "Comp 6s";
+        static string scoreboardComp9Text = "Highlander";
+        static string scoreboardPub24Text = "Pub 24";
+        static string scoreboardPub32Test = "Pub 32";
+
+        //names of image files for comboboxes
+        static string aspectNormalImage = "SpectatorTournament_Normal.jpg";
+        static string aspectWidescreenImage = "SpectatorTournament_Widescreen.jpg";
+        static string scoreboardComp6Image = "ScoreBoard_Comp6.jpg";
+        static string scoreboardComp9Image = "ScoreBoard_Comp9.jpg";
+        static string scoreboardPub24Image = "ScoreBoard_Pub24.jpg";
+        static string scoreboardPub32Image = "ScoreBoard_Pub32.jpg";
 
         //paths for installing files
         static string assetPath = @"e:\Userdata\Desktop\bullshit";
@@ -23,22 +40,43 @@ namespace Thwartski_Hud_Installer
         static DirectoryInfo installFolder = new DirectoryInfo(installPath);
 
         //paths for copying custom files
-        static string aspectRatioFile = "";
+        static string aspectFile = "";
         static string scoreboardFile = "";
 
-        static string aspectRatioFileDestination = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf\CUSTOM\_aspectratio.jpg";
-        static string scoreboardFileDestination = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf\CUSTOM\_scoreboard.jpg";
+        static string customAssetPath = assetPath + @"\DELETEME I WILL NOT BE BACKED UP\";
+        static string customInstallPath = installPath + @"\CUSTOM\";
+
+        static string aspectFileDestination =customInstallPath + "Spectator_Tournament.res";
+        static string scoreboardFileDestination = customInstallPath + "ScoreBoard.res";
+
+        //names for copying custom files
+        static string aspectNormalFile = "SpectatorTournament_Normal.res";
+        static string aspectWidescreenFile = "SpectatorTournament_Widescreen.res";
+        static string scoreboardComp6File = "ScoreBoard_Comp6.res";
+        static string scoreboardComp9File = "ScoreBoard_Comp9.res";
+        static string scoreboardPub24File = "ScoreBoard_Pub24.res";
+        static string scoreboardPub32File = "ScoreBoard_Pub32.res";
 
 
         public Form1()
         {
             InitializeComponent();
+
+            //try to guess at an install directory
             SetDefaultFolder();
+
+            //arrays of combobox strings
+            string[] aspects = {aspectNormalText, aspectWidescreenText};
+            string[] scoreboards = {scoreboardComp6Text, scoreboardComp9Text, scoreboardPub24Text, scoreboardPub32Test};
+
+            //populate the comboboxes with the correct options
+            aspectSelector.Items.AddRange(aspects);
+            scoreboardSelector.Items.AddRange(scoreboards);
 
             //default values for options
             backupCheckbox.Checked = true;
-            aspectRatioSelector.SelectedItem = "Blonde";
-            scoreboardSelector.SelectedItem = "Swanson";
+            aspectSelector.SelectedItem = aspectWidescreenText;
+            scoreboardSelector.SelectedItem = scoreboardPub24Text;
 
         }
 
@@ -48,7 +86,7 @@ namespace Thwartski_Hud_Installer
         private void SetDefaultFolder()
         {
 
-            //clean these up a bit into variables so it's not so redundant?
+            //clean these up a bit into variables so it's not so redundant
 
             string DefaultFolder32Bit = @"C:\Program Files (x86)\Steam\steamapps";
             string DefaultFolder64Bit = @"C:\Program Files\Steam\steamapps";
@@ -105,47 +143,49 @@ namespace Thwartski_Hud_Installer
 
         }
 
-        private void aspectRatioSelector_SelectedIndexChanged(object sender, EventArgs e)
+        //assign the right image to be copied, depending on the combobox's selection
+        private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (aspectRatioSelector.SelectedItem == "Blonde")
+            if (Convert.ToString(aspectSelector.SelectedItem) == aspectNormalText)
             {
-                aspectRatioImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\blonde.jpg");
+                aspectImageBox.Load(customAssetPath + aspectNormalImage);
 
-                aspectRatioFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\blonde.jpg";
+                aspectFile = customAssetPath + aspectNormalFile;
             }
-            else if (aspectRatioSelector.SelectedItem == "Brunette")
+            else if (Convert.ToString(aspectSelector.SelectedItem) == aspectWidescreenText)
             {
-                aspectRatioImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\brunette.jpg");
+                aspectImageBox.Load(customAssetPath + aspectWidescreenImage);
 
-                aspectRatioFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\brunette.jpg";
+                aspectFile = customAssetPath + aspectWidescreenFile;
             }
         }
 
+        //assign the right image to be copied, depending on the combobox's selection
         private void scoreboardSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (scoreboardSelector.SelectedItem == "Jeep")
+            if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp6Text)
             {
-                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\jeep.jpg");
+                scoreboardImage.Load(customAssetPath + scoreboardComp6Image);
 
-                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\jeep.jpg";
+                scoreboardFile = customAssetPath + scoreboardComp6File;
             }
-            else if (scoreboardSelector.SelectedItem == "Royal")
+            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp9Text)
             {
-                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\royal.jpg");
+                scoreboardImage.Load(customAssetPath + scoreboardComp9Image);
 
-                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\royal.jpg";
+                scoreboardFile = customAssetPath + scoreboardComp9File;
             }
-            else if (scoreboardSelector.SelectedItem == "Swanson")
+            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub24Text)
             {
-                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\swanson.jpg");
+                scoreboardImage.Load(customAssetPath + scoreboardPub24Image);
 
-                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\swanson.jpg";
+                scoreboardFile = customAssetPath + scoreboardPub24File;
             }
-            else if (scoreboardSelector.SelectedItem == "Zissou")
+            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub32Test)
             {
-                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\zissou.jpg");
+                scoreboardImage.Load(customAssetPath + scoreboardPub32Image);
 
-                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\zissou.jpg";
+                scoreboardFile = customAssetPath + scoreboardPub32File;
             }
         }
 
@@ -159,10 +199,10 @@ namespace Thwartski_Hud_Installer
             copyFilesAndFolders(assetFolder, installFolder);
 
             //copy the custom files
-            System.IO.File.Copy(aspectRatioFile, aspectRatioFileDestination, true);
+            System.IO.File.Copy(aspectFile, aspectFileDestination, true);
             System.IO.File.Copy(scoreboardFile, scoreboardFileDestination, true);
 
-            MessageBox.Show("Done!");
+            MessageBox.Show("Hud Installed!");
         }
 
         private void uninstallButton_Click(object sender, EventArgs e)
@@ -170,7 +210,7 @@ namespace Thwartski_Hud_Installer
             //delete the destination files
             wipeHudFiles();
 
-            MessageBox.Show("Done!");
+            MessageBox.Show("Hud Files Removed!");
         }
 
         /// <summary>
