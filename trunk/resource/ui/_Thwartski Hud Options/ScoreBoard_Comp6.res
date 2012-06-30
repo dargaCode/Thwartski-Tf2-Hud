@@ -1,3 +1,5 @@
+//Scoreboard - Competitive (6-person teams)
+
 //inspired by maco
 
 "Resource/UI/Scoreboard.res"

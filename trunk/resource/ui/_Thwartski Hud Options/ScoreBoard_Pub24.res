@@ -1,3 +1,5 @@
+//Scoreboard - Pub Server (12-Person Teams)
+
 //inspired by maco
 
 "Resource/UI/Scoreboard.res"
