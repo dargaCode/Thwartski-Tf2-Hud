@@ -40,8 +40,8 @@ namespace Thwartski_Hud_Installer
         static DirectoryInfo installFolder = new DirectoryInfo(installPath);
 
         //paths for copying custom files
-        static string customAssetPath = assetPath + @"\DELETEME FAKE RESOURCE\ui\Thwartski Hud Options\";
-        static string customInstallPath = installPath + @"\DELETEME FAKE RESOURCE\ui\";
+        static string customAssetPath = assetPath + @"\DELETEME RESOURCE\ui\_Thwartski Hud Options\";
+        static string customInstallPath = installPath + @"\DELETEME RESOURCE\ui\";
 
         static string aspectAssetFile = "";
         static string scoreboardAssetFile = "";
