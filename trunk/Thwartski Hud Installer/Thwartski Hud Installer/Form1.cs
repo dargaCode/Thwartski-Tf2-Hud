@@ -254,6 +254,5 @@ namespace Thwartski_Hud_Installer
             }
         }
 
-
     }
 }
