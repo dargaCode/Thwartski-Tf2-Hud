@@ -14,6 +14,7 @@ namespace Thwartski_Hud_Installer
     {
         static Boolean createBackupFolders = false;
 
+        //paths for installing files
         static string assetPath = @"e:\Userdata\Desktop\bullshit";
         static string installPath = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf";
         static string backupPath = installPath + @"\_HUD BACKUPS";
@@ -21,11 +22,23 @@ namespace Thwartski_Hud_Installer
         static DirectoryInfo assetFolder = new DirectoryInfo(assetPath);
         static DirectoryInfo installFolder = new DirectoryInfo(installPath);
 
+        //paths for copying custom files
+        static string aspectRatioFile = "";
+        static string scoreboardFile = "";
+
+        static string aspectRatioFileDestination = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf\CUSTOM\_aspectratio.jpg";
+        static string scoreboardFileDestination = @"C:\Program Files (x86)\Steam\steamapps\mdarga\team fortress 2\tf\CUSTOM\_scoreboard.jpg";
+
 
         public Form1()
         {
             InitializeComponent();
             SetDefaultFolder();
+
+            //default values for options
+            backupCheckbox.Checked = true;
+            aspectRatioSelector.SelectedItem = "Blonde";
+            scoreboardSelector.SelectedItem = "Swanson";
 
         }
 
@@ -92,6 +105,50 @@ namespace Thwartski_Hud_Installer
 
         }
 
+        private void aspectRatioSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (aspectRatioSelector.SelectedItem == "Blonde")
+            {
+                aspectRatioImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\blonde.jpg");
+
+                aspectRatioFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\blonde.jpg";
+            }
+            else if (aspectRatioSelector.SelectedItem == "Brunette")
+            {
+                aspectRatioImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\brunette.jpg");
+
+                aspectRatioFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\brunette.jpg";
+            }
+        }
+
+        private void scoreboardSelector_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (scoreboardSelector.SelectedItem == "Jeep")
+            {
+                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\jeep.jpg");
+
+                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\jeep.jpg";
+            }
+            else if (scoreboardSelector.SelectedItem == "Royal")
+            {
+                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\royal.jpg");
+
+                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\royal.jpg";
+            }
+            else if (scoreboardSelector.SelectedItem == "Swanson")
+            {
+                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\swanson.jpg");
+
+                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\swanson.jpg";
+            }
+            else if (scoreboardSelector.SelectedItem == "Zissou")
+            {
+                scoreboardImage.Load(@"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\zissou.jpg");
+
+                scoreboardFile = @"e:\Userdata\Desktop\bullshit\DELETEME I WILL NOT BE BACKED UP\zissou.jpg";
+            }
+        }
+
 
         private void installButton_Click(object sender, EventArgs e)
         {
@@ -100,6 +157,10 @@ namespace Thwartski_Hud_Installer
 
             //install the new hud files
             copyFilesAndFolders(assetFolder, installFolder);
+
+            //copy the custom files
+            System.IO.File.Copy(aspectRatioFile, aspectRatioFileDestination, true);
+            System.IO.File.Copy(scoreboardFile, scoreboardFileDestination, true);
 
             MessageBox.Show("Done!");
         }

@@ -34,15 +34,15 @@
             this.installButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.aspectRatioImage = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.aspectRatioSelector = new System.Windows.Forms.ComboBox();
             this.backupCheckbox = new System.Windows.Forms.CheckBox();
             this.uninstallButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.scoreboardSelector = new System.Windows.Forms.ComboBox();
+            this.scoreboardImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.aspectRatioImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardImage)).BeginInit();
             this.SuspendLayout();
             // 
             // folderBrowserDialog1
@@ -98,13 +98,14 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "What shape is your monitor?";
             // 
-            // pictureBox2
+            // aspectRatioImage
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(178, 109);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(166, 93);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
+            this.aspectRatioImage.Location = new System.Drawing.Point(178, 109);
+            this.aspectRatioImage.Name = "aspectRatioImage";
+            this.aspectRatioImage.Size = new System.Drawing.Size(166, 93);
+            this.aspectRatioImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.aspectRatioImage.TabIndex = 10;
+            this.aspectRatioImage.TabStop = false;
             // 
             // label3
             // 
@@ -115,35 +116,22 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Which scoreboard do you prefer?";
             // 
-            // comboBox1
+            // aspectRatioSelector
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(198, 208);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(198, 405);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(178, 292);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 93);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.aspectRatioSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.aspectRatioSelector.FormattingEnabled = true;
+            this.aspectRatioSelector.Items.AddRange(new object[] {
+            "Blonde",
+            "Brunette"});
+            this.aspectRatioSelector.Location = new System.Drawing.Point(198, 208);
+            this.aspectRatioSelector.Name = "aspectRatioSelector";
+            this.aspectRatioSelector.Size = new System.Drawing.Size(121, 21);
+            this.aspectRatioSelector.TabIndex = 14;
+            this.aspectRatioSelector.SelectedIndexChanged += new System.EventHandler(this.aspectRatioSelector_SelectedIndexChanged);
             // 
             // backupCheckbox
             // 
             this.backupCheckbox.AutoSize = true;
-            this.backupCheckbox.Checked = true;
-            this.backupCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.backupCheckbox.Location = new System.Drawing.Point(178, 452);
             this.backupCheckbox.Name = "backupCheckbox";
             this.backupCheckbox.Size = new System.Drawing.Size(146, 17);
@@ -163,19 +151,43 @@
             this.uninstallButton.UseVisualStyleBackColor = true;
             this.uninstallButton.Click += new System.EventHandler(this.uninstallButton_Click);
             // 
+            // scoreboardSelector
+            // 
+            this.scoreboardSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.scoreboardSelector.FormattingEnabled = true;
+            this.scoreboardSelector.Items.AddRange(new object[] {
+            "Jeep",
+            "Royal",
+            "Swanson",
+            "Zissou"});
+            this.scoreboardSelector.Location = new System.Drawing.Point(198, 405);
+            this.scoreboardSelector.Name = "scoreboardSelector";
+            this.scoreboardSelector.Size = new System.Drawing.Size(121, 21);
+            this.scoreboardSelector.TabIndex = 20;
+            this.scoreboardSelector.SelectedIndexChanged += new System.EventHandler(this.scoreboardSelector_SelectedIndexChanged);
+            // 
+            // scoreboardImage
+            // 
+            this.scoreboardImage.Location = new System.Drawing.Point(178, 306);
+            this.scoreboardImage.Name = "scoreboardImage";
+            this.scoreboardImage.Size = new System.Drawing.Size(166, 93);
+            this.scoreboardImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.scoreboardImage.TabIndex = 19;
+            this.scoreboardImage.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(547, 558);
+            this.Controls.Add(this.scoreboardSelector);
+            this.Controls.Add(this.scoreboardImage);
             this.Controls.Add(this.uninstallButton);
             this.Controls.Add(this.backupCheckbox);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.aspectRatioSelector);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.aspectRatioImage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.installButton);
@@ -186,8 +198,8 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thwartski Hud Installer";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aspectRatioImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,13 +213,13 @@
         private System.Windows.Forms.Button installButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox aspectRatioImage;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox aspectRatioSelector;
         private System.Windows.Forms.CheckBox backupCheckbox;
         private System.Windows.Forms.Button uninstallButton;
+        private System.Windows.Forms.ComboBox scoreboardSelector;
+        private System.Windows.Forms.PictureBox scoreboardImage;
     }
 }
 
