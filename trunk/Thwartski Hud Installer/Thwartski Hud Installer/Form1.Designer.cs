@@ -39,6 +39,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backupCheckbox = new System.Windows.Forms.CheckBox();
+            this.uninstallButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             this.folderBrowserTextBox.Name = "folderBrowserTextBox";
             this.folderBrowserTextBox.Size = new System.Drawing.Size(439, 20);
             this.folderBrowserTextBox.TabIndex = 0;
-            this.folderBrowserTextBox.Text = "C:\\Program Files (x86)\\Steam\\steamapps\\USERNAME\\team fortress 2";
+            this.folderBrowserTextBox.Text = "C:\\Program Files (x86)\\Steam\\steamapps\\YOUR_USERNAME\\team fortress 2";
             // 
             // folderBrowserButton
             // 
@@ -69,11 +71,12 @@
             // 
             // installButton
             // 
-            this.installButton.Location = new System.Drawing.Point(193, 462);
+            this.installButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.installButton.Location = new System.Drawing.Point(264, 486);
             this.installButton.Name = "installButton";
             this.installButton.Size = new System.Drawing.Size(132, 49);
             this.installButton.TabIndex = 2;
-            this.installButton.Text = "Ready to Install!";
+            this.installButton.Text = "INSTALL";
             this.installButton.UseVisualStyleBackColor = true;
             this.installButton.Click += new System.EventHandler(this.installButton_Click);
             // 
@@ -136,12 +139,38 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // backupCheckbox
+            // 
+            this.backupCheckbox.AutoSize = true;
+            this.backupCheckbox.Checked = true;
+            this.backupCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.backupCheckbox.Location = new System.Drawing.Point(178, 452);
+            this.backupCheckbox.Name = "backupCheckbox";
+            this.backupCheckbox.Size = new System.Drawing.Size(146, 17);
+            this.backupCheckbox.TabIndex = 17;
+            this.backupCheckbox.Text = "Back up existing hud files";
+            this.backupCheckbox.UseVisualStyleBackColor = true;
+            this.backupCheckbox.CheckedChanged += new System.EventHandler(this.backupCheckbox_CheckedChanged);
+            // 
+            // uninstallButton
+            // 
+            this.uninstallButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uninstallButton.Location = new System.Drawing.Point(126, 486);
+            this.uninstallButton.Name = "uninstallButton";
+            this.uninstallButton.Size = new System.Drawing.Size(132, 49);
+            this.uninstallButton.TabIndex = 18;
+            this.uninstallButton.Text = "Uninstall";
+            this.uninstallButton.UseVisualStyleBackColor = true;
+            this.uninstallButton.Click += new System.EventHandler(this.uninstallButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(547, 545);
+            this.ClientSize = new System.Drawing.Size(547, 558);
+            this.Controls.Add(this.uninstallButton);
+            this.Controls.Add(this.backupCheckbox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -177,6 +206,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox backupCheckbox;
+        private System.Windows.Forms.Button uninstallButton;
     }
 }
 
