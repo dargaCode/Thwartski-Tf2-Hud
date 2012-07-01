@@ -42,15 +42,13 @@
             this.scoreboardSelector = new System.Windows.Forms.ComboBox();
             this.uninstallButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.folderBrowserLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspectImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardImage)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // folderBrowserDialog1
@@ -78,7 +76,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(541, 23);
-            this.tableLayoutPanel2.TabIndex = 21;
+            this.tableLayoutPanel2.TabIndex = 4;
             // 
             // backupCheckbox
             // 
@@ -87,7 +85,7 @@
             this.backupCheckbox.Location = new System.Drawing.Point(195, 3);
             this.backupCheckbox.Name = "backupCheckbox";
             this.backupCheckbox.Size = new System.Drawing.Size(161, 17);
-            this.backupCheckbox.TabIndex = 17;
+            this.backupCheckbox.TabIndex = 4;
             this.backupCheckbox.Text = "Back up existing hud files";
             this.backupCheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.backupCheckbox.UseVisualStyleBackColor = true;
@@ -138,7 +136,7 @@
             this.aspectSelector.Location = new System.Drawing.Point(218, 256);
             this.aspectSelector.Name = "aspectSelector";
             this.aspectSelector.Size = new System.Drawing.Size(104, 21);
-            this.aspectSelector.TabIndex = 14;
+            this.aspectSelector.TabIndex = 2;
             this.aspectSelector.SelectedIndexChanged += new System.EventHandler(this.aspectSelector_SelectedIndexChanged);
             // 
             // label3
@@ -184,7 +182,7 @@
             this.installButton.Location = new System.Drawing.Point(273, 549);
             this.installButton.Name = "installButton";
             this.installButton.Size = new System.Drawing.Size(209, 50);
-            this.installButton.TabIndex = 2;
+            this.installButton.TabIndex = 15;
             this.installButton.Text = "INSTALL";
             this.installButton.UseVisualStyleBackColor = true;
             this.installButton.Click += new System.EventHandler(this.installButton_Click);
@@ -198,7 +196,7 @@
             this.scoreboardSelector.Location = new System.Drawing.Point(218, 472);
             this.scoreboardSelector.Name = "scoreboardSelector";
             this.scoreboardSelector.Size = new System.Drawing.Size(104, 21);
-            this.scoreboardSelector.TabIndex = 20;
+            this.scoreboardSelector.TabIndex = 3;
             this.scoreboardSelector.SelectedIndexChanged += new System.EventHandler(this.scoreboardSelector_SelectedIndexChanged);
             // 
             // uninstallButton
@@ -211,6 +209,7 @@
             this.uninstallButton.Name = "uninstallButton";
             this.uninstallButton.Size = new System.Drawing.Size(209, 50);
             this.uninstallButton.TabIndex = 18;
+            this.uninstallButton.TabStop = false;
             this.uninstallButton.Text = "Uninstall";
             this.uninstallButton.UseVisualStyleBackColor = true;
             this.uninstallButton.Click += new System.EventHandler(this.uninstallButton_Click);
@@ -239,7 +238,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.folderBrowserButton, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.splitContainer1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -259,28 +258,29 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(547, 614);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
-            // splitContainer1
+            // tableLayoutPanel3
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.splitContainer1, 7);
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 35);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.folderBrowserLabel);
-            this.splitContainer1.Size = new System.Drawing.Size(419, 29);
-            this.splitContainer1.SplitterDistance = 25;
-            this.splitContainer1.TabIndex = 22;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 7);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.966587F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.03341F));
+            this.tableLayoutPanel3.Controls.Add(this.folderBrowserLabel, 1, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 35);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(419, 29);
+            this.tableLayoutPanel3.TabIndex = 25;
             // 
             // folderBrowserLabel
             // 
             this.folderBrowserLabel.BackColor = System.Drawing.Color.LightPink;
             this.folderBrowserLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.folderBrowserLabel.Location = new System.Drawing.Point(0, 8);
+            this.folderBrowserLabel.Location = new System.Drawing.Point(27, 8);
             this.folderBrowserLabel.Name = "folderBrowserLabel";
-            this.folderBrowserLabel.Size = new System.Drawing.Size(390, 21);
-            this.folderBrowserLabel.TabIndex = 1;
+            this.folderBrowserLabel.Size = new System.Drawing.Size(389, 21);
+            this.folderBrowserLabel.TabIndex = 25;
             this.folderBrowserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Form1
@@ -302,9 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardImage)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -325,7 +323,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button folderBrowserButton;
         private System.Windows.Forms.CheckBox backupCheckbox;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label folderBrowserLabel;
     }
 }
