@@ -56,7 +56,8 @@ namespace Thwartski_Hud_Installer
         static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
 
         //paths for installing files
-        static string assetPath =                       @"e:\Userdata\Desktop\bullshit\tf\";  //eventually needs to be relative from the exe file
+        //static string assetPath =                      @"e:\Userdata\Desktop\bullshit\tf\";  //eventually needs to be relative from the exe file
+        static string assetPath =                       @"Installer Files\";
         static string customAssetPath =                 assetPath + @"DELETEME RESOURCE\ui\_Thwartski Hud Options\";
         static string installPath;                      //written at runtime
         static string installPathSubFolder =            @"tf\";
