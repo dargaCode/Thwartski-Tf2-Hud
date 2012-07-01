@@ -51,7 +51,6 @@
             // 
             // folderBrowserDialog1
             // 
-            this.folderBrowserDialog1.Description = "Select the \\Team Fortress 2\\ folder from your \\Steam\\Steamapps\\USERNAME\\ folder.";
             this.folderBrowserDialog1.ShowNewFolderButton = false;
             // 
             // tableLayoutPanel2
@@ -187,6 +186,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.installButton, 3);
             this.installButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.installButton.Enabled = false;
             this.installButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.installButton.Location = new System.Drawing.Point(273, 549);
             this.installButton.Name = "installButton";
@@ -212,6 +212,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.uninstallButton, 3);
             this.uninstallButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uninstallButton.Enabled = false;
             this.uninstallButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uninstallButton.Location = new System.Drawing.Point(58, 549);
             this.uninstallButton.Name = "uninstallButton";
@@ -277,6 +278,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thwartski Hud Installer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspectImageBox)).EndInit();
