@@ -268,7 +268,7 @@ namespace Thwartski_Hud_Installer
             else
             {
                 //no obvious steam install was found
-                folderBrowserTextBox.Text = unknownTeamFortress2Location;
+                folderBrowserLabel.Text = unknownTeamFortress2Location;
                 folderBrowserDialog1.Description = unknownFolderBrowserDesc;
             }
 
@@ -345,7 +345,7 @@ namespace Thwartski_Hud_Installer
 
             //update the textbox and folder browser with the partial path to get the player started.
             folderBrowserDialog1.SelectedPath = steamappsFolder;
-            folderBrowserTextBox.Text = partialTeamFortress2Location;
+            folderBrowserLabel.Text = partialTeamFortress2Location;
 
             //change the text in the folder browser dialog
             folderBrowserDialog1.Description = partialFolderBrowserDesc;
@@ -374,8 +374,8 @@ namespace Thwartski_Hud_Installer
             backupPath = installPath + backupPathSubFolder;
 
             //update the install path box
-            folderBrowserTextBox.Text = validTeamFortress2Location;
-            folderBrowserTextBox.BackColor = Color.White;
+            folderBrowserLabel.Text = validTeamFortress2Location;
+            folderBrowserLabel.BackColor = Color.White;
 
             //update the folder browser dialog
             folderBrowserDialog1.SelectedPath = validTeamFortress2Location;
@@ -467,6 +467,7 @@ namespace Thwartski_Hud_Installer
                 copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
         }
+
 
 
        
