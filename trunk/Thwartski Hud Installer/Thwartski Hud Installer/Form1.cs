@@ -203,6 +203,9 @@ namespace Thwartski_Hud_Installer
         //actually install the hud or update the installation with new custom files
         private void installButton_Click(object sender, EventArgs e)
         {
+            //disable all buttons
+            tableLayoutPanel1.Enabled = false;
+
             //Used for iterating through file and folder lists
             DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
 
@@ -216,14 +219,23 @@ namespace Thwartski_Hud_Installer
             System.IO.File.Copy(aspectAssetFile, aspectFileDestination, true);
             System.IO.File.Copy(scoreboardAssetFile, scoreboardFileDestination, true);
 
+            //enable all buttons
+            tableLayoutPanel1.Enabled = true;
+
             MessageBox.Show("Hud Installed!");
         }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
         private void uninstallButton_Click(object sender, EventArgs e)
         {
+            //disable all buttons
+            tableLayoutPanel1.Enabled = false;
+
             //delete the destination files
             wipeHudFiles();
+
+            //enable all buttons
+            tableLayoutPanel1.Enabled = true;
 
             MessageBox.Show("Hud Files Removed!");
         }
