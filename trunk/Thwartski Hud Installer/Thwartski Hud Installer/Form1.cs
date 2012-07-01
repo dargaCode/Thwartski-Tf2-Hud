@@ -58,7 +58,7 @@ namespace Thwartski_Hud_Installer
         //paths for installing files
         //static string assetPath =                      @"e:\Userdata\Desktop\bullshit\tf\";  //eventually needs to be relative from the exe file
         static string assetPath =                       @"Installer Files\";
-        static string customAssetPath =                 assetPath + @"DELETEME RESOURCE\ui\_Thwartski Hud Options\";
+        static string customAssetPath =                 assetPath + @"Resource\ui\_Thwartski Hud Options\";
         static string installPath;                      //written at runtime
         static string installPathSubFolder =            @"tf\";
 
@@ -75,7 +75,7 @@ namespace Thwartski_Hud_Installer
         static string scoreboardAssetFile;              //written at runtime
 
         //full destinations for both custom files
-        static string installPathCustomSubfolder =      @"DELETEME RESOURCE\ui\";
+        static string installPathCustomSubfolder =      @"Resource\ui\";
         static string aspectFileInstallFilename =       "SpectatorTournament.res";
         static string scoreboardFileInstallFilename =   "ScoreBoard.res";
         static string customInstallPath;                //written at runtime
@@ -85,6 +85,11 @@ namespace Thwartski_Hud_Installer
         //path for saving backups
         static string backupPathSubFolder =             @"_HUD BACKUPS\";
         static string backupPath;                       //written at runtime
+
+        //text for install/uninstall complete
+        static string installCompleteMessage =          "Thwartski Hud is now installed!";
+        static string uninstallCompleteMessage =        "All hud files reverted to Valve defaults.";
+
 
         //used for cycling through assetfolder directory
         static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
@@ -223,7 +228,7 @@ namespace Thwartski_Hud_Installer
             //enable all buttons
             tableLayoutPanel1.Enabled = true;
 
-            MessageBox.Show("Hud Installed!");
+            MessageBox.Show(installCompleteMessage);
         }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
@@ -238,7 +243,7 @@ namespace Thwartski_Hud_Installer
             //enable all buttons
             tableLayoutPanel1.Enabled = true;
 
-            MessageBox.Show("Hud Files Removed!");
+            MessageBox.Show(uninstallCompleteMessage);
         }
 
 
@@ -395,11 +400,15 @@ namespace Thwartski_Hud_Installer
         /// <param name="destinationFolder"></param>
         static void wipeHudFiles()
         {
+            //Establish backup time so different folders can't straddle multiple seconds. (this actually has been happening)
+            string timestampFolderName = String.Format(@"\Date-{0:yyyy-MM-dd_}Time.{1:HH.mm.ss}\", DateTime.Now, DateTime.Now);
+            //MessageBox.Show(timestampFolderName);
+
             //Iterate through all the folders in the source asset folder and back up all of them before copying.
             DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
             foreach (DirectoryInfo assetSubFolder in assetSubFolders)
             {
-                backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders);
+                backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders, timestampFolderName);
             }
         }
 
@@ -408,10 +417,10 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        static void backupAndDeleteFolder(string sourcePath, DirectoryInfo folderName, string backupPath, bool backupDesired)
+        static void backupAndDeleteFolder(string sourcePath, DirectoryInfo folderName, string backupPath, bool backupDesired, string backupFolderName)
         {
-            string existingCompletePath = String.Format(@"{0}\{1}", sourcePath, folderName);
-            string backupCompletePath = String.Format(@"{0}\Date-{1:yyyy-MM-dd_}Time.{2:HH.mm.ss}\{3}", backupPath, DateTime.Now, DateTime.Now, folderName);
+            string existingCompletePath = sourcePath + folderName;
+            string backupCompletePath = backupPath + backupFolderName + folderName;
 
             DirectoryInfo existingFolderDir = new DirectoryInfo(existingCompletePath);
             DirectoryInfo backupFolderDir = new DirectoryInfo(backupCompletePath);
