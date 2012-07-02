@@ -17,6 +17,10 @@ namespace Thwartski_Hud_Installer
         //boolean for backup checkbox
         static Boolean createBackupFolders = false;
 
+        //which custom sourcefiles to copy
+        static byte[] aspectAssetFile;                  //written at runtime
+        static byte[] scoreboardAssetFile;              //written at runtime
+
         //strings for comboboxes
         static string aspectNormalText =                "Normal";
         static string aspectWidescreenText =            "Widescreen";
@@ -24,14 +28,6 @@ namespace Thwartski_Hud_Installer
         static string scoreboardComp9Text =             "Highlander";
         static string scoreboardPub24Text =             "Pub 24";
         static string scoreboardPub32Test =             "Pub 32";
-
-        //names of image files for comboboxes
-        static string aspectNormalImage =               "SpectatorTournament_Normal.jpg";
-        static string aspectWidescreenImage =           "SpectatorTournament_Widescreen.jpg";
-        static string scoreboardComp6Image =            "ScoreBoard_Comp6.jpg";
-        static string scoreboardComp9Image =            "ScoreBoard_Comp9.jpg";
-        static string scoreboardPub24Image =            "ScoreBoard_Pub24.jpg";
-        static string scoreboardPub32Image =            "ScoreBoard_Pub32.jpg";
 
         //paths for populating the folder browser
         static string defaultSteamappsFolder32Bit =     @"C:\Program Files (x86)\Steam\steamapps\";
@@ -44,9 +40,9 @@ namespace Thwartski_Hud_Installer
 
         //paths for browsing folders
         static string partialTeamFortress2Location;     //written at runtime
+        static string unknownTeamFortress2Location =    unknownSteamappsFolder + unknownSteamUser + teamFortress2Folder;
 
         //error message for folder browser
-        static string unknownTeamFortress2Location =    unknownSteamappsFolder + unknownSteamUser + teamFortress2Folder;
         static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
 
         //descriptions for the folder browser
@@ -55,23 +51,12 @@ namespace Thwartski_Hud_Installer
         static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
 
         //paths for installing files
-        //static string assetPath =                      @"e:\Userdata\Desktop\bullshit\tf\";  //eventually needs to be relative from the exe file
         static string assetPath =                       @"Installer Files\";
-        static string customAssetPath =                 assetPath + @"Resource\ui\_Thwartski Hud Options\";
         static string installPath;                      //written at runtime
         static string installPathSubFolder =            @"\tf\";
 
-        //filenames for copying custom files
-        static string aspectNormalFile =                "SpectatorTournament_Normal.res";
-        static string aspectWidescreenFile =            "SpectatorTournament_Widescreen.res";
-        static string scoreboardComp6File =             "ScoreBoard_Comp6.res";
-        static string scoreboardComp9File =             "ScoreBoard_Comp9.res";
-        static string scoreboardPub24File =             "ScoreBoard_Pub24.res";
-        static string scoreboardPub32File =             "ScoreBoard_Pub32.res";
-
-        //which custom sourcefiles to copy
-        static string aspectAssetFile;                  //written at runtime
-        static string scoreboardAssetFile;              //written at runtime
+        //used for cycling through assetfolder directory
+        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
 
         //full destinations for both custom files
         static string installPathCustomSubfolder =      @"Resource\ui\";
@@ -87,11 +72,7 @@ namespace Thwartski_Hud_Installer
 
         //text for install/uninstall complete
         static string installCompleteMessage =          "Thwartski Hud is now installed!";
-        static string uninstallCompleteMessage =        "All hud files reverted to Valve defaults.";
-
-
-        //used for cycling through assetfolder directory
-        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
+        static string uninstallCompleteMessage =        "All Hud files are now reverted to Valve defaults.";
 
 
         //FORM EVENTS BELOW THIS POINT
@@ -151,7 +132,6 @@ namespace Thwartski_Hud_Installer
                 {
                     MessageBox.Show(badFolderSelectedMessage);
                 }
-
             }
         }
 
@@ -178,16 +158,20 @@ namespace Thwartski_Hud_Installer
             //normal aspect ratio
             if (Convert.ToString(aspectSelector.SelectedItem) == aspectNormalText)
             {
-                //load image and select asset file
-                aspectImageBox.Load(customAssetPath + aspectNormalImage);
-                aspectAssetFile = customAssetPath + aspectNormalFile;
+                //load image resource
+                aspectImageBox.Image = Properties.Resources.aspectImageNormal;
+
+                //load the matching file into a bit array for later copying
+                aspectAssetFile = Properties.Resources.aspectFileNormal;
             }
             //widescreen aspect ratio
             else if (Convert.ToString(aspectSelector.SelectedItem) == aspectWidescreenText)
             {
-                //load image and select asset file
-                aspectImageBox.Load(customAssetPath + aspectWidescreenImage);
-                aspectAssetFile = customAssetPath + aspectWidescreenFile;
+                //load image resource
+                aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
+
+                //load the matching file into a bit array for later copying
+                aspectAssetFile = Properties.Resources.aspectFileWidescreen;
             }
             //save settings
             Properties.Settings.Default.comboBoxAspect = aspectSelector.SelectedIndex;
@@ -199,30 +183,38 @@ namespace Thwartski_Hud_Installer
             //comp6 scoreboard
             if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp6Text)
             {
-                //load image and select asset file
-                scoreboardImage.Load(customAssetPath + scoreboardComp6Image);
-                scoreboardAssetFile = customAssetPath + scoreboardComp6File;
+                //load image resource
+                scoreboardImage.Image = Properties.Resources.scoreboardImageComp6;
+
+                //load the matching file into a bit array for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFileComp6;
             }
             //comp9 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp9Text)
             {
-                //load image and select asset file
-                scoreboardImage.Load(customAssetPath + scoreboardComp9Image);
-                scoreboardAssetFile = customAssetPath + scoreboardComp9File;
+                //load image resource
+                scoreboardImage.Image = Properties.Resources.scoreboardImageComp9;
+
+                //load the matching file into a bit array for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFileComp9;
             }
             //pub24 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub24Text)
             {
-                //load image and select asset file
-                scoreboardImage.Load(customAssetPath + scoreboardPub24Image);
-                scoreboardAssetFile = customAssetPath + scoreboardPub24File;
+                //load image resource
+                scoreboardImage.Image = Properties.Resources.scoreboardImagePub24;
+
+                //load the matching file into a bit array for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24;
             }
             //pub32 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub32Test)
             {
-                //load image and select asset file
-                scoreboardImage.Load(customAssetPath + scoreboardPub32Image);
-                scoreboardAssetFile = customAssetPath + scoreboardPub32File;
+                //load image resource
+                scoreboardImage.Image = Properties.Resources.scoreboardImagePub32;
+
+                //load the matching file into a bit array for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32;
             }
             //save settings
             Properties.Settings.Default.comboBoxScoreboard = scoreboardSelector.SelectedIndex;
@@ -243,9 +235,9 @@ namespace Thwartski_Hud_Installer
             //install the new hud files
             copyFilesAndFolders(assetFolderDir, installFolderDir);
 
-            //copy the custom files
-            System.IO.File.Copy(aspectAssetFile, aspectFileDestination, true);
-            System.IO.File.Copy(scoreboardAssetFile, scoreboardFileDestination, true);
+            //copy the custom files from the byte array to the custom install file location
+            File.WriteAllBytes(aspectFileDestination, aspectAssetFile);
+            File.WriteAllBytes(scoreboardFileDestination, scoreboardAssetFile);
 
             //enable all buttons
             tableLayoutPanel1.Enabled = true;
