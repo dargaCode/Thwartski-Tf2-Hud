@@ -118,9 +118,10 @@ namespace Thwartski_Hud_Installer
             scoreboardSelector.Items.AddRange(scoreboards);
 
             //default values for each combobox and checkbox
-            backupCheckbox.Checked = true;
-            aspectSelector.SelectedItem = aspectWidescreenText;
-            scoreboardSelector.SelectedItem = scoreboardPub24Text;
+            backupCheckbox.Checked = Properties.Settings.Default.saveBackups;
+            aspectSelector.SelectedIndex = Properties.Settings.Default.comboBoxAspect;
+            scoreboardSelector.SelectedIndex = Properties.Settings.Default.comboBoxScoreboard;
+
         }
 
 
@@ -151,59 +152,72 @@ namespace Thwartski_Hud_Installer
         {
             if (backupCheckbox.Checked)
             {
+                //update global variable and settings
                 createBackupFolders = true;
+                Properties.Settings.Default.saveBackups = true;
             }
             else
             {
+                //update global variable and settings
                 createBackupFolders = false;
+                Properties.Settings.Default.saveBackups = false;
             }
-
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
         private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //normal aspect ratio
             if (Convert.ToString(aspectSelector.SelectedItem) == aspectNormalText)
             {
-                //normal aspect ratio
+                //load image and select asset file
                 aspectImageBox.Load(customAssetPath + aspectNormalImage);
                 aspectAssetFile = customAssetPath + aspectNormalFile;
             }
+            //widescreen aspect ratio
             else if (Convert.ToString(aspectSelector.SelectedItem) == aspectWidescreenText)
             {
-                //widescreen aspect ratio
+                //load image and select asset file
                 aspectImageBox.Load(customAssetPath + aspectWidescreenImage);
                 aspectAssetFile = customAssetPath + aspectWidescreenFile;
             }
+            //save settings
+            Properties.Settings.Default.comboBoxAspect = aspectSelector.SelectedIndex;
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
         private void scoreboardSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //comp6 scoreboard
             if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp6Text)
             {
-                //comp6 scoreboard
+                //load image and select asset file
                 scoreboardImage.Load(customAssetPath + scoreboardComp6Image);
                 scoreboardAssetFile = customAssetPath + scoreboardComp6File;
             }
+            //comp9 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp9Text)
             {
-                //comp9 scoreboard
+                //load image and select asset file
                 scoreboardImage.Load(customAssetPath + scoreboardComp9Image);
                 scoreboardAssetFile = customAssetPath + scoreboardComp9File;
             }
+            //pub24 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub24Text)
             {
-                //pub24 scoreboard
+                //load image and select asset file
                 scoreboardImage.Load(customAssetPath + scoreboardPub24Image);
                 scoreboardAssetFile = customAssetPath + scoreboardPub24File;
             }
+            //pub32 scoreboard
             else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub32Test)
             {
-                //pub32 scoreboard
+                //load image and select asset file
                 scoreboardImage.Load(customAssetPath + scoreboardPub32Image);
                 scoreboardAssetFile = customAssetPath + scoreboardPub32File;
             }
+            //save settings
+            Properties.Settings.Default.comboBoxScoreboard = scoreboardSelector.SelectedIndex;
         }
 
         //actually install the hud or update the installation with new custom files
@@ -228,6 +242,7 @@ namespace Thwartski_Hud_Installer
             //enable all buttons
             tableLayoutPanel1.Enabled = true;
 
+            //show text message
             MessageBox.Show(installCompleteMessage);
         }
 
@@ -243,9 +258,15 @@ namespace Thwartski_Hud_Installer
             //enable all buttons
             tableLayoutPanel1.Enabled = true;
 
+            //show text message
             MessageBox.Show(uninstallCompleteMessage);
         }
 
+        //save settings on program close
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
 
         //CUSTOM METHODS BELOW THIS POINT
         
@@ -477,6 +498,8 @@ namespace Thwartski_Hud_Installer
                 copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
         }
+
+
 
 
 
