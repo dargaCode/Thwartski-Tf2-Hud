@@ -38,12 +38,11 @@ namespace Thwartski_Hud_Installer
         static string defaultSteamappsFolder64Bit =     @"C:\Program Files\Steam\steamapps\";
         static string unknownSteamappsFolder =          @"\YOUR_STEAM_FOLDER\steamapps\";
         static string unknownSteamUser =                @"YOUR_USERNAME";
-        static string teamFortress2Folder =             @"\team fortress 2\";
+        static string teamFortress2Folder =             @"\team fortress 2";
         static string steamappsFolder;                  //written at runtime
         static string steamUser;                        //written at runtime
 
         //paths for browsing folders
-        static string validTeamFortress2Location;       //written at runtime
         static string partialTeamFortress2Location;     //written at runtime
 
         //error message for folder browser
@@ -60,7 +59,7 @@ namespace Thwartski_Hud_Installer
         static string assetPath =                       @"Installer Files\";
         static string customAssetPath =                 assetPath + @"Resource\ui\_Thwartski Hud Options\";
         static string installPath;                      //written at runtime
-        static string installPathSubFolder =            @"tf\";
+        static string installPathSubFolder =            @"\tf\";
 
         //filenames for copying custom files
         static string aspectNormalFile =                "SpectatorTournament_Normal.res";
@@ -106,9 +105,6 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
-            //try to guess at a default install directory
-            SetDefaultFolder();
-
             //create arrays of combobox strings
             string[] aspects = { aspectNormalText, aspectWidescreenText };
             string[] scoreboards = { scoreboardComp6Text, scoreboardComp9Text, scoreboardPub24Text, scoreboardPub32Test };
@@ -117,13 +113,26 @@ namespace Thwartski_Hud_Installer
             aspectSelector.Items.AddRange(aspects);
             scoreboardSelector.Items.AddRange(scoreboards);
 
-            //default values for each combobox and checkbox
+            //load settings for comboxes and checkboxes
             backupCheckbox.Checked = Properties.Settings.Default.saveBackups;
             aspectSelector.SelectedIndex = Properties.Settings.Default.comboBoxAspect;
             scoreboardSelector.SelectedIndex = Properties.Settings.Default.comboBoxScoreboard;
 
+            //decide whether to use the saved install path setting or to start generating one
+            string savedBrowserPath = Properties.Settings.Default.folderBrowserPath;
+            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith("team fortress 2"))
+            {
+                //allow the hud to be installed at the saved location
+                enableInstall(savedBrowserPath);
+                //MessageBox.Show("saved location good: " + savedBrowserPath);
+            }
+            else
+            {
+                //try to guess at a default install directory
+                SetDefaultFolder();
+                //MessageBox.Show("saved location no good: " + savedBrowserPath);
+            }
         }
-
 
         //browse for valid install locations
         private void folderBrowserButton_Click(object sender, EventArgs e)
@@ -135,8 +144,7 @@ namespace Thwartski_Hud_Installer
                 //the player selected a valid folder
                 if (folderBrowserDialog1.SelectedPath.EndsWith("team fortress 2"))
                 {
-                    validTeamFortress2Location = folderBrowserDialog1.SelectedPath;
-                    enableInstall();
+                    enableInstall(folderBrowserDialog1.SelectedPath);
                 }
                 //the player didn't select a valid folder
                 else
@@ -268,6 +276,7 @@ namespace Thwartski_Hud_Installer
             Properties.Settings.Default.Save();
         }
 
+
         //CUSTOM METHODS BELOW THIS POINT
         
 
@@ -298,7 +307,6 @@ namespace Thwartski_Hud_Installer
                 folderBrowserLabel.Text = unknownTeamFortress2Location;
                 folderBrowserDialog1.Description = unknownFolderBrowserDesc;
             }
-
         }
 
         /// <summary>
@@ -311,7 +319,6 @@ namespace Thwartski_Hud_Installer
             DirectoryInfo[] steamUserFolders = possibleSteamUserFoldersDir.GetDirectories();
 
             //cycle through the steamapps folders in the default location, and eliminate obvious mismatches
-
             foreach (DirectoryInfo steamUserFolder in steamUserFolders)
             {
                 //MessageBox.Show(Convert.ToString(steamUser));
@@ -347,8 +354,7 @@ namespace Thwartski_Hud_Installer
                         //MessageBox.Show(steamUser + " is the userfolder");
                         
                         //allow install at this location
-                        validTeamFortress2Location = Convert.ToString(possibleTeamFortress2PathDir);
-                        enableInstall();
+                        enableInstall(Convert.ToString(possibleTeamFortress2PathDir));
 
                         //stop cycling through steam users
                         return;
@@ -359,10 +365,8 @@ namespace Thwartski_Hud_Installer
                     {
                         //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder + "doesn't exist");
                     }
-
                 }
             }
-
             //failed to find a steam user with tf2 obviously installed
             //MessageBox.Show("no users were found with " + teamFortress2Folder);
 
@@ -376,21 +380,18 @@ namespace Thwartski_Hud_Installer
 
             //change the text in the folder browser dialog
             folderBrowserDialog1.Description = partialFolderBrowserDesc;
-
-            //force the player to browse for a folder immediately on load
-            //folderBrowserButton_Click(folderBrowserButton, EventArgs.Empty); 
         }
 
         /// <summary>
         /// Once a valid location has been identified, allow the user to install.
         /// </summary>
-        private void enableInstall()
+        private void enableInstall(string validInstallLocation)
         {
-            //MessageBox.Show(validTeamFortress2Location + " is the location to install");
+            //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //REBUILD STRINGS FOR GLOBAL VARIABLES
                 //where the install files will be going
-            installPath = validTeamFortress2Location + installPathSubFolder;
+            installPath = validInstallLocation + installPathSubFolder;
                 //where the custom files will be going
             customInstallPath = installPath + installPathCustomSubfolder;
                 //what the spectator hud file will go and what it will be called
@@ -401,12 +402,16 @@ namespace Thwartski_Hud_Installer
             backupPath = installPath + backupPathSubFolder;
 
             //update the install path box
-            folderBrowserLabel.Text = validTeamFortress2Location;
+            folderBrowserLabel.Text = validInstallLocation;
             folderBrowserLabel.BackColor = Color.White;
 
             //update the folder browser dialog
-            folderBrowserDialog1.SelectedPath = validTeamFortress2Location;
+            folderBrowserDialog1.SelectedPath = validInstallLocation;
             folderBrowserDialog1.Description = validFolderBrowserDesc;
+
+            //update the install path setting
+            Properties.Settings.Default.folderBrowserPath = validInstallLocation;
+            //MessageBox.Show("changing path setting: " + Properties.Settings.Default.folderBrowserPath);
 
             //enable buttons
             installButton.Enabled = true;
@@ -498,7 +503,6 @@ namespace Thwartski_Hud_Installer
                 copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
         }
-
 
 
 

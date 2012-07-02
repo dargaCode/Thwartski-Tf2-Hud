@@ -58,5 +58,17 @@ namespace Thwartski_Hud_Installer.Properties {
                 this["comboBoxScoreboard"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string folderBrowserPath {
+            get {
+                return ((string)(this["folderBrowserPath"]));
+            }
+            set {
+                this["folderBrowserPath"] = value;
+            }
+        }
     }
 }
