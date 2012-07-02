@@ -231,61 +231,14 @@ namespace Thwartski_Hud_Installer
             //disable all buttons
             tableLayoutPanel1.Enabled = false;
 
-            //Used for iterating through file and folder lists
-            DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
-
-            //exception handling in case the file deletion does not work
-            try
+            //attempt to install the hud
+            if (installHud())
             {
-                //delete the destination files
-                wipeHudFiles();
-
-                //install the new hud files
-                copyFilesAndFolders(assetFolderDir, installFolderDir);
-
-                //copy the custom files from the byte array to the custom install file location
-                File.WriteAllBytes(aspectFileDestination, aspectAssetFile);
-                File.WriteAllBytes(scoreboardFileDestination, scoreboardAssetFile);
-            }
-            catch (System.IO.DirectoryNotFoundException)
-            {
-                //happens when the gameassets folder has been deleted or moved away from the exe
-                MessageBox.Show(exceptionAssetsMissing);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.UnauthorizedAccessException)
-            {
-                //happens when tf2 is running (and therefore keeping the font files in use).
-                MessageBox.Show(exceptionGameRunning);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.IO.IOException)
-            {
-                //usually happens when the user tries to delete a folder they are viewing.
-                MessageBox.Show(exceptionFolderOpen);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                MessageBox.Show(problem.Message);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            finally
-            {
-                //enable all buttons, even if the operation failed.
-                tableLayoutPanel1.Enabled = true;
-            }
-            //show the success message (but only if it actually succeeded)
-            MessageBox.Show(installCompleteMessage);
+                //show the success message (but only if it actually succeeded)
+                MessageBox.Show(installCompleteMessage);
+            } 
+            //enable all buttons, even if the operation failed.
+            tableLayoutPanel1.Enabled = true;
         }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
@@ -294,51 +247,14 @@ namespace Thwartski_Hud_Installer
             //disable all buttons
             tableLayoutPanel1.Enabled = false;
 
-            //exception handling in case the file deletion does not work
-            try
+            //attempt to delete the destination files
+            if (wipeHudFiles())
             {
-                //delete the destination files
-                wipeHudFiles();
-            }
-            catch (System.IO.DirectoryNotFoundException)
-            {
-                //happens when the gameassets folder has been deleted or moved away from the exe
-                MessageBox.Show(exceptionAssetsMissing);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.UnauthorizedAccessException)
-            {
-                //happens when tf2 is running (and therefore keeping the font files in use).
-                MessageBox.Show(exceptionGameRunning);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.IO.IOException)
-            {
-                //usually happens when the user tries to delete a folder they are viewing.
-                MessageBox.Show(exceptionFolderOpen);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                MessageBox.Show(problem.Message);
-
-                //stop the function before it can give the success message.
-                return;
-            }
-            finally 
-            {
-                //enable all buttons, even if the operation failed.
-                tableLayoutPanel1.Enabled = true;
-            }
-            //show the success message (but only if it actually succeeded)
-            MessageBox.Show(uninstallCompleteMessage);
+                //show the success message (but only if the function returned true)
+                MessageBox.Show(uninstallCompleteMessage);
+            } 
+            //enable all buttons, even if the function failed.
+            tableLayoutPanel1.Enabled = true;
         }
 
         //save settings on program close
@@ -495,18 +411,56 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        static void wipeHudFiles()
+        public bool wipeHudFiles()
         {
             //Establish backup time so different folders can't straddle multiple seconds. (this actually has been happening)
             string timestampFolderName = String.Format(@"\Date-{0:yyyy-MM-dd_}Time.{1:HH.mm.ss}\", DateTime.Now, DateTime.Now);
             //MessageBox.Show(timestampFolderName);
 
-            //Iterate through all the folders in the source asset folder and back up all of them before copying.
-            DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
-            foreach (DirectoryInfo assetSubFolder in assetSubFolders)
+            //exception handling for file deletion
+            try
             {
-                backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders, timestampFolderName);
+                //Iterate through all the folders in the source asset folder and back up all of them before copying.
+                DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
+                foreach (DirectoryInfo assetSubFolder in assetSubFolders)
+                {
+                    backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders, timestampFolderName);
+                }
             }
+            catch (System.IO.DirectoryNotFoundException)
+            {
+                //happens when the gameassets folder has been deleted or moved away from the exe
+                MessageBox.Show(exceptionAssetsMissing);
+
+                //stop the function, send false back to stop the rest of the button functionality.
+                return false;
+            }
+            catch (System.UnauthorizedAccessException)
+            {
+                //happens when tf2 is running (and therefore keeping the font files in use).
+                MessageBox.Show(exceptionGameRunning);
+
+                //stop the function, send false back to stop the rest of the button functionality.
+                return false;
+            }
+            catch (System.IO.IOException)
+            {
+                //usually happens when the user tries to delete a folder they are viewing.
+                MessageBox.Show(exceptionFolderOpen);
+
+                //stop the function, send false back to stop the rest of the button functionality.
+                return false;
+            }
+            catch (System.Exception problem)
+            {
+                //generic exception for unexpected case
+                MessageBox.Show(problem.Message);
+
+                //stop the function, send false back to stop the rest of the button functionality.
+                return false;
+            }
+            //if everything worked with no exceptions, return true
+            return true;
         }
 
         /// <summary>
@@ -533,6 +487,71 @@ namespace Thwartski_Hud_Installer
                 //delete existing hud file either way
                 Directory.Delete(existingCompletePath, true);
             }
+        }
+
+        /// <summary>
+        /// Attempt to install the hud.
+        /// </summary>
+        /// <param name="sourceFolder"></param>
+        /// <param name="destinationFolder"></param>
+        public bool installHud()
+        {
+
+            //Used for iterating through file and folder lists
+            DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
+
+            //attempt to delete the destination files (contains its own exception handling)
+            if (!wipeHudFiles())
+            {
+                //wiping the hud failed; immediately return false
+                return false;
+            }
+            else
+            {
+                //exception handling for installing the hud
+                try
+                {
+                    //wiping the hud succeeded. attempt to install the new hud files
+                    copyFilesAndFolders(assetFolderDir, installFolderDir);
+
+                    //copy the custom files from the byte array to the custom install file location
+                    File.WriteAllBytes(aspectFileDestination, aspectAssetFile);
+                }
+                catch (System.IO.DirectoryNotFoundException)
+                {
+                    //happens when the gameassets folder has been deleted or moved away from the exe
+                    MessageBox.Show(exceptionAssetsMissing);
+
+                    //stop the function, send false back to stop the rest of the button functionality.
+                    return false;
+                }
+                catch (System.UnauthorizedAccessException)
+                {
+                    //happens when tf2 is running (and therefore keeping the font files in use).
+                    MessageBox.Show(exceptionGameRunning);
+
+                    //stop the function, send false back to stop the rest of the button functionality.
+                    return false;
+                }
+                catch (System.IO.IOException)
+                {
+                    //usually happens when the user tries to delete a folder they are viewing.
+                    MessageBox.Show(exceptionFolderOpen);
+
+                    //stop the function, send false back to stop the rest of the button functionality.
+                    return false;
+                }
+                catch (System.Exception problem)
+                {
+                    //generic exception for unexpected case
+                    MessageBox.Show(problem.Message);
+
+                    //stop the function, send false back to stop the rest of the button functionality.
+                    return false;
+                }
+            }
+            //uninstalling and installing worked with no exceptions; return true
+            return true;
         }
 
         /// <summary>
