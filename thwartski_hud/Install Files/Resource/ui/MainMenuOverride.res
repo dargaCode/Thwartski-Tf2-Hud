@@ -1,3 +1,5 @@
+//modified from valve, inspired by eve, frankenhud, more (which included the demoui), and pvhud (which included hud buttons)
+
 "Resource/UI/MainMenuOverride.res"
 {
 	MainMenuOverride
@@ -1162,6 +1164,36 @@
 			"tabPosition"	"0"
 		}
 	}	
+	"RewardsBGPanel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"RewardsBGPanel"
+		"xpos"			"98"//"c-330"//"c-290"
+		"ypos"			"225"
+		"zpos"			"-1"
+		"wide"			"260"
+		"tall"			"90"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"border"		"MainMenuBGBorder"
+	}
+	"RewardsLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"RewardsLabel"
+		"font"			"HudFontSmallBold"
+		"labelText"		"Rewards"//"#MMenu_Customize"
+		"textAlignment"	"west"
+		"xpos"			"110"//"c-318"//"c-278"
+		"ypos"			"226"
+		"wide"			"140"
+		"tall"			"30"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fgcolor_override"	"235 227 203 255"
+	}
 	"CharacterSetupButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1221,7 +1253,6 @@
 			}		
 		}
 	}
-
 	"AchievementButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1281,7 +1312,137 @@
 			}		
 		}
 	}
-	
+	"RecordingsBGPanel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"RecordingsBGPanel"
+		"xpos"			"98"//"c-330"//"c-290"
+		"ypos"			"329"
+		"zpos"			"-1"
+		"wide"			"260"
+		"tall"			"61"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"border"		"MainMenuBGBorder"
+	}
+	//faked as a button to allow it to be hidden when ingame
+	"FakeRecordingLabelButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"FakeRecordingLabelButton"
+		"xpos"			"110"
+		"ypos"			"331"
+		"zpos"			"11"
+		"wide"			"140"
+		"tall"			"30"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"125"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"//"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			
+			"border_default"	""
+			"border_armed"		""
+			"paintbackground"	"0"
+			
+			"fgcolor_override"	"235 227 203 255"
+			"defaultFgColor_override" "235 227 203 255"
+			"armedFgColor_override" "235 227 203 255"
+			"depressedFgColor_override" "235 227 203 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"0"
+				"ypos"			"0"
+				"zpos"			"1"
+				"wide"			"0"
+				"tall"			"0"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
+	}
+	//faked as a button to allow it to be hidden on the main menu
+	"FakeScoreboardLabelButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"FakeScoreboardLabelButton"
+		"xpos"			"110"
+		"ypos"			"331"
+		"zpos"			"11"
+		"wide"			"140"
+		"tall"			"30"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"125"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"//"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			
+			"border_default"	""
+			"border_armed"		""
+			"paintbackground"	"0"
+			
+			"fgcolor_override"	"235 227 203 255"
+			"defaultFgColor_override" "235 227 203 255"
+			"armedFgColor_override" "235 227 203 255"
+			"depressedFgColor_override" "235 227 203 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
+	}
 	"ReplayBrowserButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1341,69 +1502,131 @@
 			}		
 		}
 	}
-	
-	
-	"RewardsBGPanel"
+	"MinmodeScoreboardButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"RewardsBGPanel"
-		"xpos"			"98"//"c-330"//"c-290"
-		"ypos"			"225"
-		"zpos"			"-1"
-		"wide"			"260"
-		"tall"			"90"
+		"fieldname"		"MinmodeScoreBoardButton"
+		"xpos"			"102"
+		"ypos"			"356"
+		"zpos"			"11"
+		"wide"			"134"
+		"tall"			"36"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"125"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"//"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"//"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"0"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
 	}
-	"RewardsLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"RewardsLabel"
-		"font"			"HudFontSmallBold"
-		"labelText"		"Rewards"//"#MMenu_Customize"
-		"textAlignment"	"west"
-		"xpos"			"110"//"c-318"//"c-278"
-		"ypos"			"226"
-		"wide"			"140"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override"	"235 227 203 255"
-	}
-
-	"RecordingsBGPanel"
+    "MaxmodeScoreboardButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"RecordingsBGPanel"
-		"xpos"			"98"//"c-330"//"c-290"
-		"ypos"			"329"
-		"zpos"			"-1"
-		"wide"			"260"
-		"tall"			"61"
+		"fieldname"		"MaxmodeScoreBoardButton"
+		"xpos"			"227"
+		"ypos"			"356"
+		"zpos"			"11"
+		"wide"			"134"
+		"tall"			"36"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"125"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"//"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"//"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
 	}
-	"RecordingsLabel"
-	{
-		"ControlName"	"CExLabel"
-		"fieldName"		"RecordingsLabel"
-		"font"			"HudFontSmallBold"
-		"labelText"		"Recordings"//"#MMenu_Create"
-		"textAlignment"	"west"
-		"xpos"			"110"//"c-318"//"c-278"
-		"ypos"			"328"
-		"wide"			"140"
-		"tall"			"30"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"fgcolor_override"	"235 227 203 255"
-	}
+	
+	
+	
+	
+	
+	
+	
 	
 	"ShowPromoCodesButton"
 	{
