@@ -1,3 +1,5 @@
+//Spectator Tournament Hud - Widescreen (16:9 or 16:10 Aspect Ratios)
+
 //based on commhud
 
 "Resource/UI/SpectatorTournament.res"

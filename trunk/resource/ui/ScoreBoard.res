@@ -1,3 +1,5 @@
+//Scoreboard - Pub Server (12-Person Teams)
+
 //inspired by maco
 
 "Resource/UI/Scoreboard.res"
@@ -9,7 +11,7 @@
 		"xpos"			"c-300"
 		"ypos"			"c-224"
 		"wide"			"600"
-		"tall"			"490"
+		"tall"			"448"
 
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -71,7 +73,7 @@
 		"ypos"			"10"
 		"zpos"			"-1"
 		"wide"			"573"//"600"
-		"tall"			"384"
+		"tall"			"311"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -86,11 +88,11 @@
 		"ControlName"		"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
 		"xpos"			"150"
-		"ypos"			"406"	
+		"ypos"			"330"
 		"zpos"			"-10"
 		"wide"			"300"
 		"tall"			"70"
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -108,7 +110,7 @@
 		"ypos"			"64"
 		"zpos"			"3"
 		"wide"			"1"
-		"tall"			"299"
+		"tall"			"227"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -144,7 +146,7 @@
 		"labelText"		"%playerscore%"
 		"textAlignment"		"Center"
 		"xpos"			"231"
-		"ypos"			"413"
+		"ypos"			"337"	
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
@@ -293,7 +295,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}							
-							
+
 	"BluePlayerList"
 	{
 		"ControlName"	"SectionedListPanel"
@@ -302,7 +304,7 @@
 		"ypos"			"51"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"400"	
+		"tall"			"238"	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -319,7 +321,7 @@
 		"ypos"			"51"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"400"	
+		"tall"			"238"	
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -335,9 +337,9 @@
 		"fieldName"		"Spectators"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%spectators%"
-		"textAlignment"	"west"
+		"textAlignment"		"west"
 		"xpos"			"20"
-		"ypos"			"c+121"	
+		"ypos"			"c+48"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
@@ -346,8 +348,6 @@
 		"visible"		"1"
 		"enabled"		"1"
 	}	
-	
-	//Arena
 	"SpectatorsInQueue"
 	{
 		"ControlName"		"CExLabel"
@@ -356,7 +356,7 @@
 		"labelText"		"%waitingtoplay%"
 		"textAlignment"	"east"
 		"xpos"			"20"
-		"ypos"			"c+121"	
+		"ypos"			"c+48"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
@@ -374,7 +374,7 @@
 		"labelText"		"%server%"
 		"textAlignment"		"west"
 		"xpos"			"20"
-		"ypos"			"374"
+		"ypos"			"301"
 		"wide"			"300"
 		"tall"			"20"
 		"autoResize"		"0"
@@ -388,9 +388,9 @@
 		"fieldName"		"ServerTimeLeft"
 		"font"			"ScoreboardTiny"
 		"labelText"		"%servertimeleft%"
-		"textAlignment"	"east"
+		"textAlignment"		"east"
 		"xpos"			"20"
-		"ypos"			"373"
+		"ypos"			"300"
 		"wide"			"560"
 		"tall"			"20"
 		"autoResize"	"0"
@@ -398,13 +398,16 @@
 		"visible"		"1"	
 		"enabled"		"1"
 	}
+
+
+	
 	
 	"ClassImage"
 	{
 		"ControlName"		"ImagePanel"
 		"fieldName"		"ClassImage"
 		"xpos"			"22"
-		"ypos"			"423"	
+		"ypos"			"350"	
 		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
@@ -421,7 +424,7 @@
 		"labelText"		"%playername%"
 		"textAlignment"		"west"
 		"xpos"			"115"
-		"ypos"			"450"	
+		"ypos"			"377"	
 		"zpos"			"3"
 		"wide"			"325"	
 		"tall"			"20"
@@ -436,7 +439,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
-		"ypos"			"429"
+		"ypos"			"353"
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"
@@ -453,7 +456,7 @@
 			"labelText"		"#TF_ScoreBoard_Dueling"
 			"textAlignment"		"center"
 			"xpos"			"250"
-			"ypos"			"2"
+			"ypos"			"2	"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
@@ -642,7 +645,7 @@
 		"ControlName"		"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
-		"ypos"			"346"
+		"ypos"			"270"
 		"zpos"			"5"
 		"wide"			"600"
 		"tall"			"448"
@@ -659,7 +662,7 @@
 			"labelText"		"%mapname%"
 			"textAlignment"		"center"
 			"xpos"			"228"
-			"ypos"			"28"
+			"ypos"			"31"
 			"zpos"			"13"
 			"wide"			"146"
 			"tall"			"20"
@@ -669,12 +672,6 @@
 			"enabled"		"1"
 			"fgcolor"		"236 227 203 255"
 		}	
-		
-
-
-
-
-			
 			
 		"Kills"
 		{
