@@ -1,8 +1,7 @@
-//modified from valve, inspired by eve, frankenhud, and more (who included the demoui)
+//modified from valve, inspired by eve, frankenhud, more (which included the demoui), and pvhud (which included hud buttons)
 
 "GameMenu" [$WIN32]
 {
-
 	"ServerBrowserButton"
 	{
 		"label" "#MMenu_BrowseServers" 
@@ -12,7 +11,12 @@
 		//"subimage" "glyph_workshop_view" //bigger magnifying glass lense
 		"OnlyAtMenu" "0"
 	} 
-
+	"QuickPlayMiniButton"
+	{
+		"command" "quickplay"
+		"OnlyAtMenu" "0"
+		"tooltip" "Quickplay"
+	}
 	"CreateServerButton"
 	{
 		"label" "#GameUI_GameMenu_CreateServer" 
@@ -20,14 +24,24 @@
 		"subimage" "glyph_create"
 		"OnlyAtMenu" "0"
 	}
-	
+	"TrainingMiniButton"
+	{
+		"command" "offlinepractice"
+		"OnlyAtMenu" "0"
+		"tooltip" "#TF_Training"
+	}
 	"CharacterSetupButton"
 	{
 		"label" "Manage Items"//"#MMenu_CharacterSetup"
 		"command" "engine open_charinfo"
 		"subimage" "glyph_items"
 	}
-	
+	"StoreMiniButton"
+	{
+		"command" "engine open_store"
+		"OnlyAtMenu" "0"
+		"tooltip" "#MMenu_Shop"
+	}
 	"AchievementButton"
 	{
 		"label" "View Achievements"
@@ -35,42 +49,65 @@
 		"subimage"	"icon_checkbox"
 	}
 	
+	
+	
+	
+	
+	
+	//faked this label as a button so that it can have special settings applied to it
+	"FakeRecordingLabelButton"
+    {
+        "label" "Recordings"
+		//breaks without a command so it just echoes a blank string to console
+        "command"   "engine echo "
+		//only shown at main menu so that it can be replaced by scoreboard buttons ingame
+		"OnlyAtMenu"    "1"
+    }
 	"ReplayBrowserButton"
 	{
 		"label" "Edit Replays"//"#GameUI_GameMenu_ReplayDemos"
 		"command" "engine replay_reloadbrowser"
 		"subimage" "glyph_tv"
+		//only shown at main menu so that it can be replaced by scoreboard buttons in game
+		"OnlyAtMenu"    "1"
 	}
-
-	
-	"QuickPlayMiniButton"
-	{
-		"command" "quickplay"
-		"OnlyAtMenu" "0"
-		"tooltip" "Quickplay"
-	}
-
-	"TrainingMiniButton"
-	{
-		"command" "offlinepractice"
-		"OnlyAtMenu" "0"
-		"tooltip" "#TF_Training"
-	}
-
-	"StoreMiniButton"
-	{
-		"command" "engine open_store"
-		"OnlyAtMenu" "0"
-		"tooltip" "#MMenu_Shop"
-	}	
-	
 	"DemoMiniButton"
 	{
-
 		"command" "engine demoui"
-		"OnlyAtMenu" "0"
 		"tooltip" "Play Demos"
+		//only shown at main menu so that it can be replaced by scoreboard buttons in game
+		"OnlyAtMenu"    "1"
 	}
+	//faked this label as a button so that it can have special settings applied to it
+	"FakeScoreboardLabelButton"
+    {
+        "label" "Scoreboards"
+		//breaks without a command so it just echoes a blank string to console
+        "command"   "engine echo "
+		//only shown ingame so it can be replaced by recordings on the main menu
+		"OnlyInGame"    "1"
+    }
+    "MinmodeScoreboardButton"
+    {
+        "label" "Minmode"
+		//turns off the minmode hud, which changes the scoreboard
+        "command"   "engine cl_hud_minmode 1"
+		//only shown ingame so it can be replaced by recordings on the main menu
+		"OnlyInGame"    "1"
+    }
+    "MaxmodeScoreboardButton"
+    {
+        "label" "Maxmode"
+		//turns on the minmode hud, which changes the scoreboard
+        "command"   "engine cl_hud_minmode 0"
+		//only shown ingame so it can be replaced by recordings on the main menu
+		"OnlyInGame"    "1"
+    }
+
+	
+	
+	
+
 
 	// These buttons are only shown while in-game
 	// and also are positioned by MainMenuOverride.res
