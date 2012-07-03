@@ -8,3 +8,4 @@ e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thw
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Debug\Thwartski Hud Installer.exe
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Debug\Thwartski Hud Installer.pdb
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\bin\Debug\Thwartski Hud Installer.exe.config
+e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Debug\Thwartski_Hud_Installer.Form2.resources

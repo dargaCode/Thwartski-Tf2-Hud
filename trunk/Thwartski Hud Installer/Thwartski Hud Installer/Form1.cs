@@ -46,9 +46,10 @@ namespace Thwartski_Hud_Installer
         static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
 
         //error message for exception handling
-        static string exceptionFolderOpen =             "The previous hud installation could not be deleted. Please make sure your hud folders are closed.";
-        static string exceptionGameRunning =            "The previous hud installation could not be deleted. Please make sure TF2 is not running.";
-        static string exceptionAssetsMissing =          "The hud source files could not be found! Please re-download the installer or replace any deleted files.";
+        //Environment.NewLine for non-escaped linebreaks
+        static string exceptionFolderOpen =             "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
+        static string exceptionGameRunning =            "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
+        static string exceptionAssetsMissing =          "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
 
         //descriptions for the folder browser
         static string unknownFolderBrowserDesc =        @"Please select " + unknownTeamFortress2Location;
@@ -56,7 +57,7 @@ namespace Thwartski_Hud_Installer
         static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
 
         //paths for installing files
-        static string assetPath =                       @"Installer Files\";
+        static string assetPath =                       @"Install Files\";
         static string installPath;                      //written at runtime
         static string installPathSubFolder =            @"\tf\";
 
@@ -75,9 +76,8 @@ namespace Thwartski_Hud_Installer
         static string backupPathSubFolder =             @"_HUD BACKUPS\";
         static string backupPath;                       //written at runtime
 
-        //text for install/uninstall complete
-        static string installCompleteMessage =          "Thwartski Hud is now installed!";
-        static string uninstallCompleteMessage =        "All Hud files are now reverted to Valve defaults.";
+        //text for uninstall complete
+        static string uninstallCompleteMessage = "All hud files are now reverted to Valve defaults. \n \nBackups of hud files can be found in ";
 
 
         //FORM EVENTS BELOW THIS POINT
@@ -234,10 +234,24 @@ namespace Thwartski_Hud_Installer
             //attempt to install the hud
             if (installHud())
             {
-                //show the success message (but only if it actually succeeded)
-                MessageBox.Show(installCompleteMessage);
-            } 
-            //enable all buttons, even if the operation failed.
+                //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
+                Form2 installSuccessForm = new Form2(this, installPath);
+
+                //show form2 only if the install succeeded
+                installSuccessForm.Show();
+                //buttons will be enabled when the success form is closed
+            }
+            else
+            {
+                //enable all buttons if the operation failed.
+                tableLayoutPanel1.Enabled = true;
+            }
+        }
+
+        //public custom event called by form2 as it closes
+        public void Form1_ReenabledByForm2(object sender, EventArgs e)
+        {
+            //enable all buttons
             tableLayoutPanel1.Enabled = true;
         }
 
@@ -251,7 +265,7 @@ namespace Thwartski_Hud_Installer
             if (wipeHudFiles())
             {
                 //show the success message (but only if the function returned true)
-                MessageBox.Show(uninstallCompleteMessage);
+                MessageBox.Show(uninstallCompleteMessage + teamFortress2Folder + installPathSubFolder + backupPathSubFolder);
             } 
             //enable all buttons, even if the function failed.
             tableLayoutPanel1.Enabled = true;
@@ -593,8 +607,6 @@ namespace Thwartski_Hud_Installer
                 copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
         }
-
-
 
 
        
