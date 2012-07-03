@@ -5,6 +5,20 @@
 See thwartski_hud__README.txt
 
 //-------------------------------------------------------------------
+//						  HOW TO INSTALL
+//-------------------------------------------------------------------
+
+1.  Find your Team Fortress 2 folder. It will be something like: 
+	C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\
+
+2.  Copy \TF\ from this folder into your \TEAM FORTRESS 2\ folder. 
+	When prompted, Merge all folders, and Copy and Replace all files. 
+	
+3.  Have fun!
+
+
+
+//-------------------------------------------------------------------
 //			     2. HOW DO I CHANGE MY SCOREBOARD?
 //-------------------------------------------------------------------
 
