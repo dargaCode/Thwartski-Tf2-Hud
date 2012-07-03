@@ -88,6 +88,13 @@ namespace Thwartski_Hud_Installer.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap mainMenuImage {
+            get {
+                object obj = ResourceManager.GetObject("mainMenuImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static byte[] scoreboardFileComp6 {
             get {
                 object obj = ResourceManager.GetObject("scoreboardFileComp6", resourceCulture);
