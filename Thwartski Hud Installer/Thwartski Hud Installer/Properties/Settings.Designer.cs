@@ -26,48 +26,60 @@ namespace Thwartski_Hud_Installer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool saveBackups {
+        public bool settingSaveBackups {
             get {
-                return ((bool)(this["saveBackups"]));
+                return ((bool)(this["settingSaveBackups"]));
             }
             set {
-                this["saveBackups"] = value;
+                this["settingSaveBackups"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public int comboBoxAspect {
+        public int settingComboboxAspect {
             get {
-                return ((int)(this["comboBoxAspect"]));
+                return ((int)(this["settingComboboxAspect"]));
             }
             set {
-                this["comboBoxAspect"] = value;
+                this["settingComboboxAspect"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int comboBoxScoreboard {
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int settingComboboxMaxmode {
             get {
-                return ((int)(this["comboBoxScoreboard"]));
+                return ((int)(this["settingComboboxMaxmode"]));
             }
             set {
-                this["comboBoxScoreboard"] = value;
+                this["settingComboboxMaxmode"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int settingComboboxMinmode {
+            get {
+                return ((int)(this["settingComboboxMinmode"]));
+            }
+            set {
+                this["settingComboboxMinmode"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string folderBrowserPath {
+        public string settingFolderBrowserPath {
             get {
-                return ((string)(this["folderBrowserPath"]));
+                return ((string)(this["settingFolderBrowserPath"]));
             }
             set {
-                this["folderBrowserPath"] = value;
+                this["settingFolderBrowserPath"] = value;
             }
         }
     }

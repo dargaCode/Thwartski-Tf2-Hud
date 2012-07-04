@@ -20,6 +20,7 @@ namespace Thwartski_Hud_Installer
         //which custom sourcefiles to copy
         static byte[] aspectAssetFile;                  //written at runtime
         static byte[] scoreboardAssetFile;              //written at runtime
+        static byte[] menuAssetFile;                    //written at runtime
 
         //strings for comboboxes
         static string aspectNormalText =                "Normal";
@@ -57,20 +58,24 @@ namespace Thwartski_Hud_Installer
         static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
 
         //paths for installing files
-        static string assetPath =                       @"Install Files\";
+        static string assetPathRelative =               @"Install Files\";
         static string installPath;                      //written at runtime
         static string installPathSubFolder =            @"\tf\";
 
         //used for cycling through assetfolder directory
-        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
+        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPathRelative);
 
-        //full destinations for both custom files
-        static string installPathCustomSubfolder =      @"Resource\ui\";
+        //full destinations for custom install files
+        static string installPathResourceSubfolder =    @"resource\";
+        static string installPathUiSubfolder =          @"ui\";
         static string aspectFileInstallFilename =       "SpectatorTournament.res";
         static string scoreboardFileInstallFilename =   "ScoreBoard.res";
-        static string customInstallPath;                //written at runtime
+        static string menuFileInstallFilename =         "GameMenu.res";
+        static string customInstallPathResource;        //written at runtime
+        static string customInstallPathUi;              //written at runtime
         static string aspectFileDestination;            //written at runtime
         static string scoreboardFileDestination;        //written at runtime
+        static string menuFileDestination;              //written at runtime
 
         //path for saving backups
         static string backupPathSubFolder =             @"_HUD BACKUPS\";
@@ -93,19 +98,22 @@ namespace Thwartski_Hud_Installer
         {
             //create arrays of combobox strings
             string[] aspects = { aspectNormalText, aspectWidescreenText };
-            string[] scoreboards = { scoreboardComp6Text, scoreboardComp9Text, scoreboardPub24Text, scoreboardPub32Test };
+            string[] scoreboardsMaxmode = { scoreboardPub24Text, scoreboardPub32Test };
+            string[] scoreboardsMinmode = { scoreboardComp6Text, scoreboardComp9Text };
 
             //populate the comboboxes with the correct options
             aspectSelector.Items.AddRange(aspects);
-            scoreboardSelector.Items.AddRange(scoreboards);
+            scoreboardSelectorMaxmode.Items.AddRange(scoreboardsMaxmode);
+            scoreboardSelectorMinmode.Items.AddRange(scoreboardsMinmode);
 
             //load settings for comboxes and checkboxes
-            backupCheckbox.Checked = Properties.Settings.Default.saveBackups;
-            aspectSelector.SelectedIndex = Properties.Settings.Default.comboBoxAspect;
-            scoreboardSelector.SelectedIndex = Properties.Settings.Default.comboBoxScoreboard;
+            backupCheckbox.Checked = Properties.Settings.Default.settingSaveBackups;
+            aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
+            scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
+            scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
 
             //decide whether to use the saved install path setting or to start generating one
-            string savedBrowserPath = Properties.Settings.Default.folderBrowserPath;
+            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
             if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith("team fortress 2"))
             {
                 //allow the hud to be installed at the saved location
@@ -147,13 +155,13 @@ namespace Thwartski_Hud_Installer
             {
                 //update global variable and settings
                 createBackupFolders = true;
-                Properties.Settings.Default.saveBackups = true;
+                Properties.Settings.Default.settingSaveBackups = true;
             }
             else
             {
                 //update global variable and settings
                 createBackupFolders = false;
-                Properties.Settings.Default.saveBackups = false;
+                Properties.Settings.Default.settingSaveBackups = false;
             }
         }
 
@@ -161,7 +169,7 @@ namespace Thwartski_Hud_Installer
         private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
             //normal aspect ratio
-            if (Convert.ToString(aspectSelector.SelectedItem) == aspectNormalText)
+            if (aspectSelector.SelectedIndex == 0)
             {
                 //load image resource
                 aspectImageBox.Image = Properties.Resources.aspectImageNormal;
@@ -170,7 +178,7 @@ namespace Thwartski_Hud_Installer
                 aspectAssetFile = Properties.Resources.aspectFileNormal;
             }
             //widescreen aspect ratio
-            else if (Convert.ToString(aspectSelector.SelectedItem) == aspectWidescreenText)
+            else if (aspectSelector.SelectedIndex == 1)
             {
                 //load image resource
                 aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
@@ -178,53 +186,73 @@ namespace Thwartski_Hud_Installer
                 //load the matching file into a bit array for later copying
                 aspectAssetFile = Properties.Resources.aspectFileWidescreen;
             }
+            //something went wrong
+            else
+            {
+                MessageBox.Show("debug: variable index out of range! aspect=" + aspectSelector.SelectedIndex);
+            }
             //save settings
-            Properties.Settings.Default.comboBoxAspect = aspectSelector.SelectedIndex;
+            Properties.Settings.Default.settingComboboxAspect = aspectSelector.SelectedIndex;
         }
 
-        //assign the correct image to be copied, depending on the combobox's selection
-        private void scoreboardSelector_SelectedIndexChanged(object sender, EventArgs e)
+        //assign the correct image to the imagebox, depending on the combobox's selection
+        private void scoreboardSelectorMaxmode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //comp6 scoreboard
-            if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp6Text)
-            {
-                //load image resource
-                scoreboardImage.Image = Properties.Resources.scoreboardImageComp6;
-
-                //load the matching file into a bit array for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFileComp6;
-            }
-            //comp9 scoreboard
-            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardComp9Text)
-            {
-                //load image resource
-                scoreboardImage.Image = Properties.Resources.scoreboardImageComp9;
-
-                //load the matching file into a bit array for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFileComp9;
-            }
             //pub24 scoreboard
-            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub24Text)
+            if (scoreboardSelectorMaxmode.SelectedIndex == 0)
             {
                 //load image resource
-                scoreboardImage.Image = Properties.Resources.scoreboardImagePub24;
+                scoreboardPictureboxMaxmode.Image = Properties.Resources.scoreboardImagePub24;
 
-                //load the matching file into a bit array for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24;
+                //check both comboboxes and identify the right scoreboard files
+                determineScoreboardFiles();
             }
             //pub32 scoreboard
-            else if (Convert.ToString(scoreboardSelector.SelectedItem) == scoreboardPub32Test)
+            else if (scoreboardSelectorMaxmode.SelectedIndex == 1)
             {
                 //load image resource
-                scoreboardImage.Image = Properties.Resources.scoreboardImagePub32;
+                scoreboardPictureboxMaxmode.Image = Properties.Resources.scoreboardImagePub32;
 
-                //load the matching file into a bit array for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32;
+                //check both comboboxes and identify the right scoreboard files
+                determineScoreboardFiles();
+            }
+            //something went wrong
+            else
+            {
+                MessageBox.Show("debug: variable index out of range! maxmode=" + scoreboardSelectorMaxmode.SelectedIndex);
             }
             //save settings
-            Properties.Settings.Default.comboBoxScoreboard = scoreboardSelector.SelectedIndex;
+            Properties.Settings.Default.settingComboboxMaxmode = scoreboardSelectorMaxmode.SelectedIndex;
         }
+        //assign the correct image to the imagebox, depending on the combobox's selection
+        private void scoreboardSelectorMinmode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //comp6 scoreboard
+            if (scoreboardSelectorMinmode.SelectedIndex == 0)
+            {
+                //load image resource
+                scoreboardPictureboxMinmode.Image = Properties.Resources.scoreboardImageComp6;
 
+                //check both comboboxes and identify the right scoreboard files
+                determineScoreboardFiles();
+            }
+            //comp9 scoreboard
+            else if (scoreboardSelectorMinmode.SelectedIndex == 1)
+            {
+                //load image resource
+                scoreboardPictureboxMinmode.Image = Properties.Resources.scoreboardImageComp9;
+
+                //check both comboboxes and identify the right scoreboard files
+                determineScoreboardFiles();
+            }
+            //something went wrong
+            else
+            {
+                MessageBox.Show("debug: variable index out of range! minmode=" + scoreboardSelectorMinmode.SelectedIndex);
+            }
+            //save settings
+            Properties.Settings.Default.settingComboboxMinmode = scoreboardSelectorMinmode.SelectedIndex;
+        }
         //actually install the hud or update the installation with new custom files
         private void installButton_Click(object sender, EventArgs e)
         {
@@ -384,6 +412,54 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
+        /// Based on the settings for the two scoreboard comboboxes, determine which files to install.
+        /// </summary>
+        private void determineScoreboardFiles()
+        {
+            int maxmodeIndex = scoreboardSelectorMaxmode.SelectedIndex;
+            int minmodeIndex = scoreboardSelectorMinmode.SelectedIndex;
+
+            //pub24 maxmode, comp6 minmode
+            if (maxmodeIndex == 0 && minmodeIndex == 0)
+            {
+                //load the corresponding files into bit arrays for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24Comp6;
+                menuAssetFile = Properties.Resources.menuFilePub24Comp6;
+                //MessageBox.Show("pub24/comp6");
+            }
+            //pub24 maxmode, comp9 minmode
+            else if (maxmodeIndex == 0 && minmodeIndex == 1)
+            {
+                //load the corresponding files into bit arrays for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24Comp9;
+                menuAssetFile = Properties.Resources.menuFilePub24Comp9;
+                //MessageBox.Show("pub24/comp9");
+            }
+            //pub32 maxmode, comp6 minmode
+            else if (maxmodeIndex == 1 && minmodeIndex == 0)
+            {
+                //load the corresponding files into bit arrays for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32Comp6;
+                menuAssetFile = Properties.Resources.menuFilePub32Comp6;
+                //MessageBox.Show("pub32/comp6");
+            }
+            //pub32 maxmode, comp9 minmode
+            else if (maxmodeIndex == 1 && minmodeIndex == 1)
+            {
+                //load the corresponding files into bit arrays for later copying
+                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32Comp9;
+                menuAssetFile = Properties.Resources.menuFilePub32Comp9;
+                //MessageBox.Show("pub32/comp9");
+            }
+            //something went wrong
+            else
+            {
+                //this case is triggered legitimately when the initial values are being set and the second is -1
+                //the error messages in each combobox event above should handle everything else
+            }
+        }
+
+        /// <summary>
         /// Once a valid location has been identified, allow the user to install.
         /// </summary>
         private void enableInstall(string validInstallLocation)
@@ -391,16 +467,29 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //REBUILD STRINGS FOR GLOBAL VARIABLES
-                //where the install files will be going
+
+            //where the install files will be going
             installPath = validInstallLocation + installPathSubFolder;
-                //where the custom files will be going
-            customInstallPath = installPath + installPathCustomSubfolder;
-                //what the spectator hud file will go and what it will be called
-            aspectFileDestination = customInstallPath + aspectFileInstallFilename;
-                //what the scoreboard file will go and what it will be called
-            scoreboardFileDestination = customInstallPath + scoreboardFileInstallFilename;
-                //where the backup files will be going
+            //where the custom menu file will be going
+            customInstallPathResource = installPath + installPathResourceSubfolder;
+            //where the other custom files will be going
+            customInstallPathUi = customInstallPathResource + installPathUiSubfolder;
+            //where the menu file will be going and what it will be called
+            menuFileDestination = customInstallPathResource + menuFileInstallFilename;
+            //where the spectator hud file will be going and what it will be called
+            aspectFileDestination = customInstallPathUi + aspectFileInstallFilename;
+            //where the scoreboard file will be going and what it will be called
+            scoreboardFileDestination = customInstallPathUi + scoreboardFileInstallFilename;
+            //where the backup files will be going
             backupPath = installPath + backupPathSubFolder;
+
+            //MessageBox.Show("installPath: " + installPath);
+            //MessageBox.Show("customInstallPathResource: " + customInstallPathResource);
+            //MessageBox.Show("customInstallPathUi: " + customInstallPathUi);
+            //MessageBox.Show("menuFileDestination: " + menuFileDestination);
+            //MessageBox.Show("aspectFileDestination: " + aspectFileDestination);
+            //MessageBox.Show("scoreboardFileDestination: " + scoreboardFileDestination);
+            //MessageBox.Show("backupPath: " + backupPath);
 
             //update the install path box
             folderBrowserLabel.Text = validInstallLocation;
@@ -411,7 +500,7 @@ namespace Thwartski_Hud_Installer
             folderBrowserDialog1.Description = validFolderBrowserDesc;
 
             //update the install path setting
-            Properties.Settings.Default.folderBrowserPath = validInstallLocation;
+            Properties.Settings.Default.settingFolderBrowserPath = validInstallLocation;
             //MessageBox.Show("changing path setting: " + Properties.Settings.Default.folderBrowserPath);
 
             //enable buttons
@@ -510,7 +599,6 @@ namespace Thwartski_Hud_Installer
         /// <param name="destinationFolder"></param>
         public bool installHud()
         {
-
             //Used for iterating through file and folder lists
             DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
 
@@ -529,7 +617,9 @@ namespace Thwartski_Hud_Installer
                     copyFilesAndFolders(assetFolderDir, installFolderDir);
 
                     //copy the custom files from the byte array to the custom install file location
+                    File.WriteAllBytes(menuFileDestination, menuAssetFile);
                     File.WriteAllBytes(aspectFileDestination, aspectAssetFile);
+                    File.WriteAllBytes(scoreboardFileDestination, scoreboardAssetFile);
                 }
                 catch (System.IO.DirectoryNotFoundException)
                 {
@@ -607,6 +697,10 @@ namespace Thwartski_Hud_Installer
                 copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
             }
         }
+
+
+
+
 
 
        

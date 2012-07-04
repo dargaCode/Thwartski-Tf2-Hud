@@ -95,30 +95,58 @@ namespace Thwartski_Hud_Installer.Properties {
             }
         }
         
-        internal static byte[] scoreboardFileComp6 {
+        internal static byte[] menuFilePub24Comp6 {
             get {
-                object obj = ResourceManager.GetObject("scoreboardFileComp6", resourceCulture);
+                object obj = ResourceManager.GetObject("menuFilePub24Comp6", resourceCulture);
                 return ((byte[])(obj));
             }
         }
         
-        internal static byte[] scoreboardFileComp9 {
+        internal static byte[] menuFilePub24Comp9 {
             get {
-                object obj = ResourceManager.GetObject("scoreboardFileComp9", resourceCulture);
+                object obj = ResourceManager.GetObject("menuFilePub24Comp9", resourceCulture);
                 return ((byte[])(obj));
             }
         }
         
-        internal static byte[] scoreboardFilePub24 {
+        internal static byte[] menuFilePub32Comp6 {
             get {
-                object obj = ResourceManager.GetObject("scoreboardFilePub24", resourceCulture);
+                object obj = ResourceManager.GetObject("menuFilePub32Comp6", resourceCulture);
                 return ((byte[])(obj));
             }
         }
         
-        internal static byte[] scoreboardFilePub32 {
+        internal static byte[] menuFilePub32Comp9 {
             get {
-                object obj = ResourceManager.GetObject("scoreboardFilePub32", resourceCulture);
+                object obj = ResourceManager.GetObject("menuFilePub32Comp9", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        internal static byte[] scoreboardFilePub24Comp6 {
+            get {
+                object obj = ResourceManager.GetObject("scoreboardFilePub24Comp6", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        internal static byte[] scoreboardFilePub24Comp9 {
+            get {
+                object obj = ResourceManager.GetObject("scoreboardFilePub24Comp9", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        internal static byte[] scoreboardFilePub32Comp6 {
+            get {
+                object obj = ResourceManager.GetObject("scoreboardFilePub32Comp6", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        internal static byte[] scoreboardFilePub32Comp9 {
+            get {
+                object obj = ResourceManager.GetObject("scoreboardFilePub32Comp9", resourceCulture);
                 return ((byte[])(obj));
             }
         }
