@@ -14,7 +14,9 @@
 		"ypos"			"c-224"
 		"wide"			"600"
 		"tall"			"448"
-
+		
+		
+		
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -37,6 +39,9 @@
 		"zpos"			"2"
 		"wide"			"286"
 		"tall"			"54"
+		
+		
+		
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -57,6 +62,9 @@
 		"zpos"			"2"
 		"wide"			"286"//"300"
 		"tall"			"54"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -76,6 +84,9 @@
 		"zpos"			"-1"
 		"wide"			"573"//"600"
 		"tall"			"311"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -94,6 +105,9 @@
 		"zpos"			"-10"
 		"wide"			"300"
 		"tall"			"70"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -113,6 +127,9 @@
 		"zpos"			"3"
 		"wide"			"1"
 		"tall"			"227"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -131,6 +148,9 @@
 		"zpos"			"3"
 		"wide"			"464"
 		"tall"			"1"
+		
+		
+		
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -152,6 +172,9 @@
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -170,6 +193,9 @@
 		"zpos"			"3"	
 		"wide"			"250"
 		"tall"			"34"
+		
+		
+		
 		"autoResize"    "0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -187,6 +213,9 @@
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"55"
+		
+		
+		
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -205,6 +234,9 @@
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -222,6 +254,9 @@
 		"zpos"			"3"
 		"wide"			"286"//"100"
 		"tall"			"29"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -240,6 +275,9 @@
 		"zpos"			"3"	
 		"wide"			"250"
 		"tall"			"34"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -257,6 +295,9 @@
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"55"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -275,6 +316,9 @@
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -292,6 +336,9 @@
 		"zpos"			"3"
 		"wide"			"286"//"100"
 		"tall"			"29"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -307,6 +354,9 @@
 		"zpos"			"1"
 		"wide"			"290"
 		"tall"			"238"	
+		
+		
+		
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -324,6 +374,9 @@
 		"zpos"			"1"
 		"wide"			"290"
 		"tall"			"238"	
+		
+		
+		
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -345,6 +398,9 @@
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -362,6 +418,9 @@
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -379,6 +438,9 @@
 		"ypos"			"301"
 		"wide"			"300"
 		"tall"			"20"
+		
+		
+		
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"	
@@ -395,6 +457,9 @@
 		"ypos"			"300"
 		"wide"			"560"
 		"tall"			"20"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"	
@@ -413,6 +478,9 @@
 		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
+		
+		
+		
 		"visible"		"0"
 		"enabled"		"1"
 		//"image"			"../hud/class_scoutred"
@@ -430,6 +498,9 @@
 		"zpos"			"3"
 		"wide"			"325"	
 		"tall"			"20"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
@@ -445,6 +516,9 @@
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -462,6 +536,9 @@
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -477,6 +554,9 @@
 			"zpos"			"2"
 			"wide"			"32"
 			"tall"			"32"
+		
+		
+		
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../backpack/player/items/crafting/icon_dueling"
@@ -491,6 +571,9 @@
 			"ypos"			"0"
 			"wide"			"200"
 			"tall"			"53"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -505,6 +588,9 @@
 				"zpos"			"-1"
 				"wide"			"36"
 				"tall"			"36"
+		
+		
+		
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
 				"bgcolor_override"	"117 107 94 255"
@@ -518,6 +604,9 @@
 				"zpos"			"0"
 				"wide"			"32"
 				"tall"			"32"
+		
+		
+		
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			""
@@ -534,6 +623,9 @@
 				"zpos"			"2"
 				"wide"			"100"
 				"tall"			"18"
+		
+		
+		
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -554,6 +646,9 @@
 				"zpos"			"3"
 				"wide"			"100"
 				"tall"			"20"
+		
+		
+		
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -570,6 +665,9 @@
 			"ypos"			"0"
 			"wide"			"200"
 			"tall"			"53"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -584,6 +682,9 @@
 				"zpos"			"-1"
 				"wide"			"36"
 				"tall"			"36"
+		
+		
+		
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
 				"bgcolor_override"	"117 107 94 255"
@@ -597,6 +698,9 @@
 				"zpos"			"0"
 				"wide"			"32"
 				"tall"			"32"
+		
+		
+		
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			""
@@ -613,6 +717,9 @@
 				"zpos"			"2"
 				"wide"			"100"
 				"tall"			"18"
+		
+		
+		
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -633,6 +740,9 @@
 				"zpos"			"3"
 				"wide"			"200"
 				"tall"			"20"
+		
+		
+		
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -651,6 +761,9 @@
 		"zpos"			"5"
 		"wide"			"600"
 		"tall"			"448"
+		
+		
+		
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -668,6 +781,9 @@
 			"zpos"			"13"
 			"wide"			"146"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -687,6 +803,9 @@
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"40"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -704,6 +823,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"40"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -722,6 +844,9 @@
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"40"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -737,6 +862,9 @@
 			"zpos"			"3"
 			"wide"			"1"
 			"tall"			"50"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -756,6 +884,9 @@
 			"zpos"			"3"
 			"wide"			"1"
 			"tall"			"50"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -778,6 +909,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -797,6 +931,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -815,6 +952,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -834,6 +974,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -851,6 +994,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -869,6 +1015,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -886,6 +1035,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -903,6 +1055,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -921,6 +1076,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -941,6 +1099,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -958,6 +1119,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -976,6 +1140,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -996,6 +1163,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1013,6 +1183,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1031,6 +1204,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1049,6 +1225,9 @@
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1066,6 +1245,9 @@
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1083,6 +1265,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1100,6 +1285,9 @@
 			"zpos"			"5"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1117,6 +1305,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"		"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1135,6 +1326,9 @@
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1152,6 +1346,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1169,6 +1366,9 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1186,6 +1386,9 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"		"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1206,6 +1409,9 @@
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -1223,6 +1429,9 @@
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -1240,6 +1449,9 @@
 			"zpos"			"3"
 			"wide"			"145"
 			"tall"			"20"
+		
+		
+		
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
