@@ -1,6 +1,6 @@
 //Scoreboard - Pub Server (16-Person Teams)
 
-//inspired by maco
+//inspired by maco (layout) and pvhud (minmode)
 
 "Resource/UI/Scoreboard.res"
 {
