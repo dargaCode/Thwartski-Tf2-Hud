@@ -1502,70 +1502,11 @@
 			}		
 		}
 	}
-	"MinmodeScoreboardButton"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldname"		"MinmodeScoreBoardButton"
-		"xpos"			"102"
-		"ypos"			"356"
-		"zpos"			"11"
-		"wide"			"134"
-		"tall"			"36"
-		"visible"		"1"
-		"PaintBackgroundType"	"2"
-		"SubButton"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"SubButton"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"125"
-			"tall"			"26"
-			"autoResize"	"0"
-			"pinCorner"		"3"
-			"visible"		"1"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"textinsetx"	"0"//"25"
-			"use_proportional_insets" "1"
-			"font"			"HudFontSmallBold"
-			"textAlignment"	"center"//"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"default"		"1"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
-			
-			"border_default"	"MainMenuButtonDefault"
-			"border_armed"		"MainMenuButtonArmed"
-			"paintbackground"	"0"
-			
-			"defaultFgColor_override" "46 43 42 255"
-			"armedFgColor_override" "235 226 202 255"
-			"depressedFgColor_override" "46 43 42 255"
-			
-			"image_drawcolor"	"117 107 94 255"
-			"image_armedcolor"	"235 226 202 255"
-			"SubImage"
-			{
-				"ControlName"	"ImagePanel"
-				"fieldName"		"SubImage"
-				"xpos"			"6"
-				"ypos"			"6"
-				"zpos"			"1"
-				"wide"			"14"
-				"tall"			"14"
-				"visible"		"0"
-				"enabled"		"1"
-				"scaleImage"	"1"
-			}		
-		}
-	}
     "MaxmodeScoreboardButton"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MaxmodeScoreBoardButton"
-		"xpos"			"227"
+		"xpos"			"102"
 		"ypos"			"356"
 		"zpos"			"11"
 		"wide"			"134"
@@ -1620,7 +1561,66 @@
 			}		
 		}
 	}
-	
+		"MinmodeScoreboardButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"MinmodeScoreBoardButton"
+		"xpos"			"227"
+		"ypos"			"356"
+		"zpos"			"11"
+		"wide"			"134"
+		"tall"			"36"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"125"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"0"//"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"//"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"0"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
+	}
+
 	
 	
 	
