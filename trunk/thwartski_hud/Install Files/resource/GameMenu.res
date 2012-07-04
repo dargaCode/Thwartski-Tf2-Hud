@@ -1,3 +1,7 @@
+//GameMenu with buttons for custom scoreboards based on cl_hud_minmode
+//Maxmode = Pub32
+//Minmode = Comp9
+
 //modified from valve, inspired by eve, frankenhud, more (which included the demoui), and pvhud (which included hud buttons)
 
 "GameMenu" [$WIN32]
@@ -87,19 +91,19 @@
 		//only shown ingame so it can be replaced by recordings on the main menu
 		"OnlyInGame"    "1"
     }
-    "MinmodeScoreboardButton"
+	"MaxmodeScoreboardButton"
     {
-        "label" "Minmode"
-		//turns off the minmode hud, which changes the scoreboard
-        "command"   "engine cl_hud_minmode 1"
+        "label" "32 Players"
+		//turns on the minmode hud, which changes the scoreboard
+        "command"   "engine cl_hud_minmode 0"
 		//only shown ingame so it can be replaced by recordings on the main menu
 		"OnlyInGame"    "1"
     }
-    "MaxmodeScoreboardButton"
+    "MinmodeScoreboardButton"
     {
-        "label" "Maxmode"
-		//turns on the minmode hud, which changes the scoreboard
-        "command"   "engine cl_hud_minmode 0"
+        "label" "18 Players"
+		//turns off the minmode hud, which changes the scoreboard
+        "command"   "engine cl_hud_minmode 1"
 		//only shown ingame so it can be replaced by recordings on the main menu
 		"OnlyInGame"    "1"
     }
