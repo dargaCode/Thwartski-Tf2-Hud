@@ -25,7 +25,7 @@ namespace Thwartski_Hud_Installer
         //strings for comboboxes
         static string aspectNormalText =                "Normal";
         static string aspectWidescreenText =            "Widescreen";
-        static string scoreboardComp6Text =             "Comp 6s";
+        static string scoreboardComp6Text =             "Competitive";
         static string scoreboardComp9Text =             "Highlander";
         static string scoreboardPub24Text =             "Pub 24";
         static string scoreboardPub32Test =             "Pub 32";
