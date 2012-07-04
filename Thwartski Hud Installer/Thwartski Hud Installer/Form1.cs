@@ -12,80 +12,101 @@ namespace Thwartski_Hud_Installer
 {
     public partial class Form1 : Form
     {
+
+
         //TONS OF GLOBAL VARIABLES, MOSTLY STRINGS
+
+
 
         //boolean for backup checkbox
         static Boolean createBackupFolders = false;
 
-        //which custom sourcefiles to copy
-        static byte[] aspectAssetFile;                  //written at runtime
-        static byte[] scoreboardAssetFile;              //written at runtime
-        static byte[] menuAssetFile;                    //written at runtime
+        //status updates and error messages
+        //Environment.NewLine for non-escaped linebreaks
+        static string exceptionFolderOpen =             "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
+        static string exceptionGameRunning =            "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
+        static string exceptionAssetsMissing =          "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
+        static string uninstallCompleteMessage =        "All hud files are now reverted to Valve defaults. \n \nBackups of hud files can be found in ";
 
-        //strings for comboboxes
+        //display text for comboboxes arrays
         static string aspectNormalText =                "Normal";
         static string aspectWidescreenText =            "Widescreen";
         static string scoreboardComp6Text =             "Competitive";
         static string scoreboardComp9Text =             "Highlander";
         static string scoreboardPub24Text =             "Pub 24";
         static string scoreboardPub32Test =             "Pub 32";
-
+        
         //paths for populating the folder browser
         static string defaultSteamappsFolder32Bit =     @"C:\Program Files (x86)\Steam\steamapps\";
         static string defaultSteamappsFolder64Bit =     @"C:\Program Files\Steam\steamapps\";
         static string unknownSteamappsFolder =          @"\YOUR_STEAM_FOLDER\steamapps\";
         static string unknownSteamUser =                @"YOUR_USERNAME";
-        static string teamFortress2Folder =             @"\team fortress 2";
+        static string teamFortress2Subfolder =          @"\team fortress 2";
         static string steamappsFolder;                  //written at runtime
         static string steamUser;                        //written at runtime
 
         //paths for browsing folders
         static string partialTeamFortress2Location;     //written at runtime
-        static string unknownTeamFortress2Location =    unknownSteamappsFolder + unknownSteamUser + teamFortress2Folder;
+        static string unknownTeamFortress2Location =    unknownSteamappsFolder + unknownSteamUser + teamFortress2Subfolder;
 
-        //error message for folder browser
+        //forder browser descriptions and errors
+        static string unknownFolderBrowserDesc =        @"Please select " + unknownTeamFortress2Location;
+        static string partialFolderBrowserDesc =        @"Please select your \steamapps\" + unknownSteamUser + teamFortress2Subfolder + " folder";
+        static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
         static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
 
-        //error message for exception handling
-        //Environment.NewLine for non-escaped linebreaks
-        static string exceptionFolderOpen =             "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
-        static string exceptionGameRunning =            "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
-        static string exceptionAssetsMissing =          "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
-
-        //descriptions for the folder browser
-        static string unknownFolderBrowserDesc =        @"Please select " + unknownTeamFortress2Location;
-        static string partialFolderBrowserDesc =        @"Please select your \steamapps\" + unknownSteamUser + teamFortress2Folder + " folder";
-        static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
-
-        //paths for installing files
-        static string assetPathRelative =               @"Install Files\";
+        //paths for copying assets and installing them
+        static string assetPath =                       @"Install Files\"; //relative to exe
         static string installPath;                      //written at runtime
-        static string installPathSubFolder =            @"\tf\";
-
-        //used for cycling through assetfolder directory
-        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPathRelative);
-
-        //full destinations for custom install files
+        static string installPathTfSubFolder =          @"\tf\";
         static string installPathResourceSubfolder =    @"resource\";
         static string installPathUiSubfolder =          @"ui\";
-        static string aspectFileInstallFilename =       "SpectatorTournament.res";
-        static string scoreboardFileInstallFilename =   "ScoreBoard.res";
-        static string menuFileInstallFilename =         "GameMenu.res";
+        static string assetOptionsPath =                assetPath + installPathResourceSubfolder + installPathUiSubfolder + @"_Thwartski Hud Options\";
+        static string backupPath;                       //written at runtime
+        static string backupSubFolder =                 @"_HUD BACKUPS\";
+
+        //used for cycling through assetfolder directory
+        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
+
+        //names of custom asset files for aspect options
+        static string aspectAssetFileNormal =           "SpectatorTournament_Normal.res";
+        static string aspectAssetFileWidescreen =       "SpectatorTournament_Widescreen.res";
+
+        //names of custom asset files for scoreboard options
+        static string scoreboardAssetFilePub24Comp6 =   "ScoreBoard_Pub24Comp6.res";
+        static string scoreboardAssetFilePub24Comp9 =   "ScoreBoard_Pub24Comp9.res";
+        static string scoreboardAssetFilePub32Comp6 =   "ScoreBoard_Pub32Comp6.res";
+        static string scoreboardAsserFilePub32Comp9 =   "ScoreBoard_Pub32Comp9.res";
+
+        //names of custom asset files for menu options
+        static string menuAssetFilePub24Comp6 =         "GameMenu_Pub24Comp6.res";
+        static string menuAssetFilePub24Comp9 =         "GameMenu_Pub24Comp9.res";
+        static string menuAssetFilePub32Comp6 =         "GameMenu_Pub32Comp6.res";
+        static string menuAssetFilePub32Comp9 =         "GameMenu_Pub32Comp9.res";
+
+        //which custom assets were selected to be installed in the comboboxes
+        static string aspectSelectedAssetFile;          //written at runtime
+        static string scoreboardSelectedAssetFile;      //written at runtime
+        static string menuSelectedAssetFile;            //written at runtime
+        static string aspectSelectedAssetPath;          //written at runtime
+        static string scoreboardSelectedAssetPath;      //written at runtime
+        static string menuSelectedAssetPath;            //written at runtime
+
+        //names of custom install files to write the asset options to
+        static string aspectInstallFile =               "SpectatorTournament.res";
+        static string scoreboardInstallFile =           "ScoreBoard.res";
+        static string menuInstallFile =                 "GameMenu.res";
+
         static string customInstallPathResource;        //written at runtime
         static string customInstallPathUi;              //written at runtime
         static string aspectFileDestination;            //written at runtime
         static string scoreboardFileDestination;        //written at runtime
         static string menuFileDestination;              //written at runtime
 
-        //path for saving backups
-        static string backupPathSubFolder =             @"_HUD BACKUPS\";
-        static string backupPath;                       //written at runtime
-
-        //text for uninstall complete
-        static string uninstallCompleteMessage = "All hud files are now reverted to Valve defaults. \n \nBackups of hud files can be found in ";
 
 
         //FORM EVENTS BELOW THIS POINT
+
 
 
         public Form1()
@@ -175,7 +196,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageNormal;
 
                 //load the matching file into a bit array for later copying
-                aspectAssetFile = Properties.Resources.aspectFileNormal;
+                aspectSelectedAssetFile = aspectAssetFileNormal;
             }
             //widescreen aspect ratio
             else if (aspectSelector.SelectedIndex == 1)
@@ -184,7 +205,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
 
                 //load the matching file into a bit array for later copying
-                aspectAssetFile = Properties.Resources.aspectFileWidescreen;
+                aspectSelectedAssetFile = aspectAssetFileWidescreen;
             }
             //something went wrong
             else
@@ -193,6 +214,8 @@ namespace Thwartski_Hud_Installer
             }
             //save settings
             Properties.Settings.Default.settingComboboxAspect = aspectSelector.SelectedIndex;
+            //rebuild text strings
+            assembleStrings();
         }
 
         //assign the correct image to the imagebox, depending on the combobox's selection
@@ -223,6 +246,8 @@ namespace Thwartski_Hud_Installer
             }
             //save settings
             Properties.Settings.Default.settingComboboxMaxmode = scoreboardSelectorMaxmode.SelectedIndex;
+            //rebuild text strings
+            assembleStrings();
         }
         //assign the correct image to the imagebox, depending on the combobox's selection
         private void scoreboardSelectorMinmode_SelectedIndexChanged(object sender, EventArgs e)
@@ -252,6 +277,8 @@ namespace Thwartski_Hud_Installer
             }
             //save settings
             Properties.Settings.Default.settingComboboxMinmode = scoreboardSelectorMinmode.SelectedIndex;
+            //rebuild text strings
+            assembleStrings();
         }
         //actually install the hud or update the installation with new custom files
         private void installButton_Click(object sender, EventArgs e)
@@ -293,7 +320,7 @@ namespace Thwartski_Hud_Installer
             if (wipeHudFiles())
             {
                 //show the success message (but only if the function returned true)
-                MessageBox.Show(uninstallCompleteMessage + teamFortress2Folder + installPathSubFolder + backupPathSubFolder);
+                MessageBox.Show(uninstallCompleteMessage + teamFortress2Subfolder + installPathTfSubFolder + backupSubFolder);
             } 
             //enable all buttons, even if the function failed.
             tableLayoutPanel1.Enabled = true;
@@ -306,8 +333,10 @@ namespace Thwartski_Hud_Installer
         }
 
 
+
         //CUSTOM METHODS BELOW THIS POINT
         
+
 
         /// <summary>
         /// Take a guess where the right folder is, and set it as the default browser location if it exists.
@@ -371,7 +400,7 @@ namespace Thwartski_Hud_Installer
                 else
                 {
                     //whatever's left is likely to be a userfolder.
-                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + teamFortress2Folder);
+                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + teamFortress2Subfolder);
 
                     //the possible user contains the right folders
                     if (possibleTeamFortress2PathDir.Exists)
@@ -401,7 +430,7 @@ namespace Thwartski_Hud_Installer
 
             //build the partial path
             steamUser = unknownSteamUser;
-            partialTeamFortress2Location = steamappsFolder + steamUser + teamFortress2Folder;
+            partialTeamFortress2Location = steamappsFolder + steamUser + teamFortress2Subfolder;
 
             //update the textbox and folder browser with the partial path to get the player started.
             folderBrowserDialog1.SelectedPath = steamappsFolder;
@@ -423,32 +452,32 @@ namespace Thwartski_Hud_Installer
             if (maxmodeIndex == 0 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24Comp6;
-                menuAssetFile = Properties.Resources.menuFilePub24Comp6;
+                scoreboardSelectedAssetFile = scoreboardAssetFilePub24Comp6;
+                menuSelectedAssetFile = menuAssetFilePub24Comp6;
                 //MessageBox.Show("pub24/comp6");
             }
             //pub24 maxmode, comp9 minmode
             else if (maxmodeIndex == 0 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub24Comp9;
-                menuAssetFile = Properties.Resources.menuFilePub24Comp9;
+                scoreboardSelectedAssetFile = scoreboardAssetFilePub24Comp9;
+                menuSelectedAssetFile = menuAssetFilePub24Comp9;
                 //MessageBox.Show("pub24/comp9");
             }
             //pub32 maxmode, comp6 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32Comp6;
-                menuAssetFile = Properties.Resources.menuFilePub32Comp6;
+                scoreboardSelectedAssetFile = scoreboardAssetFilePub32Comp6;
+                menuSelectedAssetFile = menuAssetFilePub32Comp6;
                 //MessageBox.Show("pub32/comp6");
             }
             //pub32 maxmode, comp9 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardAssetFile = Properties.Resources.scoreboardFilePub32Comp9;
-                menuAssetFile = Properties.Resources.menuFilePub32Comp9;
+                scoreboardSelectedAssetFile = scoreboardAsserFilePub32Comp9;
+                menuSelectedAssetFile = menuAssetFilePub32Comp9;
                 //MessageBox.Show("pub32/comp9");
             }
             //something went wrong
@@ -466,30 +495,11 @@ namespace Thwartski_Hud_Installer
         {
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
-            //REBUILD STRINGS FOR GLOBAL VARIABLES
+            //global variable used for actually installing the files
+            installPath = validInstallLocation + installPathTfSubFolder;
 
-            //where the install files will be going
-            installPath = validInstallLocation + installPathSubFolder;
-            //where the custom menu file will be going
-            customInstallPathResource = installPath + installPathResourceSubfolder;
-            //where the other custom files will be going
-            customInstallPathUi = customInstallPathResource + installPathUiSubfolder;
-            //where the menu file will be going and what it will be called
-            menuFileDestination = customInstallPathResource + menuFileInstallFilename;
-            //where the spectator hud file will be going and what it will be called
-            aspectFileDestination = customInstallPathUi + aspectFileInstallFilename;
-            //where the scoreboard file will be going and what it will be called
-            scoreboardFileDestination = customInstallPathUi + scoreboardFileInstallFilename;
-            //where the backup files will be going
-            backupPath = installPath + backupPathSubFolder;
-
-            //MessageBox.Show("installPath: " + installPath);
-            //MessageBox.Show("customInstallPathResource: " + customInstallPathResource);
-            //MessageBox.Show("customInstallPathUi: " + customInstallPathUi);
-            //MessageBox.Show("menuFileDestination: " + menuFileDestination);
-            //MessageBox.Show("aspectFileDestination: " + aspectFileDestination);
-            //MessageBox.Show("scoreboardFileDestination: " + scoreboardFileDestination);
-            //MessageBox.Show("backupPath: " + backupPath);
+            //prepare the rest of the the strings for install paths, filenames, etc.
+            assembleStrings();
 
             //update the install path box
             folderBrowserLabel.Text = validInstallLocation;
@@ -506,6 +516,40 @@ namespace Thwartski_Hud_Installer
             //enable buttons
             installButton.Enabled = true;
             uninstallButton.Enabled = true;
+        }
+
+        /// <summary>
+        /// Build all the strings for global variables such as install paths and filenames 
+        /// </summary>
+        private void assembleStrings()
+        {
+            //the paths of the custom asset files
+            aspectSelectedAssetPath = assetOptionsPath + aspectSelectedAssetFile;
+            scoreboardSelectedAssetPath = assetOptionsPath + scoreboardSelectedAssetFile;
+            menuSelectedAssetPath = assetOptionsPath + menuSelectedAssetFile;
+            
+            //the paths the custom asset files will be installed to
+            customInstallPathResource = installPath + installPathResourceSubfolder;
+            customInstallPathUi = customInstallPathResource + installPathUiSubfolder;
+
+            //the names and paths of the custom install files
+            menuFileDestination = customInstallPathResource + menuInstallFile;
+            aspectFileDestination = customInstallPathUi + aspectInstallFile;
+            scoreboardFileDestination = customInstallPathUi + scoreboardInstallFile;
+
+            //the path for backup files
+            backupPath = installPath + backupSubFolder;
+
+            //MessageBox.Show("installPath: \n" + installPath);
+            //MessageBox.Show("aspectSelectedAssetPath: \n" + aspectSelectedAssetPath);
+            //MessageBox.Show("scoreboardSelectedAssetPath: \n" + scoreboardSelectedAssetPath);
+            //MessageBox.Show("menuSelectedAssetPath: \n" + menuSelectedAssetPath);
+            //MessageBox.Show("customInstallPathResource: \n" + customInstallPathResource);
+            //MessageBox.Show("customInstallPathUi: \n" + customInstallPathUi);
+            //MessageBox.Show("menuFileDestination: \n" + menuFileDestination);
+            //MessageBox.Show("aspectFileDestination: \n" + aspectFileDestination);
+            //MessageBox.Show("scoreboardFileDestination: \n" + scoreboardFileDestination);
+            //MessageBox.Show("backupPath: \n" + backupPath);
         }
 
 
@@ -616,10 +660,15 @@ namespace Thwartski_Hud_Installer
                     //wiping the hud succeeded. attempt to install the new hud files
                     copyFilesAndFolders(assetFolderDir, installFolderDir);
 
-                    //copy the custom files from the byte array to the custom install file location
-                    File.WriteAllBytes(menuFileDestination, menuAssetFile);
-                    File.WriteAllBytes(aspectFileDestination, aspectAssetFile);
-                    File.WriteAllBytes(scoreboardFileDestination, scoreboardAssetFile);
+                    //copy the custom files from their asset location to their install location
+                    System.IO.File.Copy(menuSelectedAssetPath, menuFileDestination, true);
+                    System.IO.File.Copy(aspectSelectedAssetPath, aspectFileDestination, true);
+                    System.IO.File.Copy(scoreboardSelectedAssetPath, scoreboardFileDestination, true);
+
+                    //MessageBox.Show(assetFolderDir + " to " + installFolderDir);
+                    //MessageBox.Show(menuSelectedAssetPath + " to " + menuFileDestination);
+                    //MessageBox.Show(aspectSelectedAssetPath + " to " + aspectFileDestination);
+                    //MessageBox.Show(scoreboardSelectedAssetPath + " to " + scoreboardFileDestination);
                 }
                 catch (System.IO.DirectoryNotFoundException)
                 {

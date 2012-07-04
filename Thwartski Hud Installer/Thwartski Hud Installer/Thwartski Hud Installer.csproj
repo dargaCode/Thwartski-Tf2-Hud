@@ -92,20 +92,6 @@
     <None Include="bin\Debug\images\ScoreBoard_Pub32.res" />
     <None Include="bin\Debug\images\SpectatorTournament_Normal.res" />
     <None Include="bin\Debug\images\SpectatorTournament_widescreen.res" />
-    <None Include="bin\Debug\_resourceFiles\GameMenu_Pub24Comp6.res" />
-    <None Include="bin\Debug\_resourceFiles\GameMenu_Pub24Comp9.res" />
-    <None Include="bin\Debug\_resourceFiles\GameMenu_Pub32Comp6.res" />
-    <None Include="bin\Debug\_resourceFiles\GameMenu_Pub32Comp9.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Comp6.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Comp9.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub24.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub24Comp6.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub24Comp9.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub32.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub32Comp6.res" />
-    <None Include="bin\Debug\_resourceFiles\ScoreBoard_Pub32Comp9.res" />
-    <None Include="bin\Debug\_resourceFiles\SpectatorTournament_Normal.res" />
-    <None Include="bin\Debug\_resourceFiles\SpectatorTournament_widescreen.res" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
