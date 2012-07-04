@@ -93,7 +93,7 @@
     }
 	"MaxmodeScoreboardButton"
     {
-        "label" "Pub 24"
+        "label" "32 Players"
 		//turns on the minmode hud, which changes the scoreboard
         "command"   "engine cl_hud_minmode 0"
 		//only shown ingame so it can be replaced by recordings on the main menu
@@ -101,7 +101,7 @@
     }
     "MinmodeScoreboardButton"
     {
-        "label" "Highlander"
+        "label" "18 Players"
 		//turns off the minmode hud, which changes the scoreboard
         "command"   "engine cl_hud_minmode 1"
 		//only shown ingame so it can be replaced by recordings on the main menu
