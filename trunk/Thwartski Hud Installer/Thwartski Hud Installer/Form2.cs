@@ -62,7 +62,7 @@ namespace Thwartski_Hud_Installer
         //when the success form is closed
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //enable all buttons on the main form
+            //enable form contents on the main form
             this.mainForm.Form1_ReenabledByForm2(null, null);
         }
 

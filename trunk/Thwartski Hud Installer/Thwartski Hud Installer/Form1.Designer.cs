@@ -34,13 +34,13 @@
             this.backupCheckbox = new System.Windows.Forms.CheckBox();
             this.folderBrowserButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.aspectLabel = new System.Windows.Forms.Label();
             this.aspectSelector = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.scoreboardMaxmodeLabel = new System.Windows.Forms.Label();
             this.installButton = new System.Windows.Forms.Button();
             this.uninstallButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.scoreboardMinmodeLabel = new System.Windows.Forms.Label();
             this.scoreboardSelectorMinmode = new System.Windows.Forms.ComboBox();
             this.scoreboardSelectorMaxmode = new System.Windows.Forms.ComboBox();
             this.scoreboardPictureboxMaxmode = new System.Windows.Forms.PictureBox();
@@ -122,24 +122,27 @@
             this.label1.Text = "Please select your Team Fortress 2 folder:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // aspectLabel
             // 
-            this.label2.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label2, 10);
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(541, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "What shape is your monitor?";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.aspectLabel.AutoSize = true;
+            this.aspectLabel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel1.SetColumnSpan(this.aspectLabel, 10);
+            this.aspectLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aspectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aspectLabel.Location = new System.Drawing.Point(3, 78);
+            this.aspectLabel.Name = "aspectLabel";
+            this.aspectLabel.Size = new System.Drawing.Size(541, 24);
+            this.aspectLabel.TabIndex = 6;
+            this.aspectLabel.Text = "What shape is your monitor?";
+            this.aspectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // aspectSelector
             // 
+            this.aspectSelector.BackColor = System.Drawing.SystemColors.Window;
             this.tableLayoutPanel1.SetColumnSpan(this.aspectSelector, 2);
             this.aspectSelector.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aspectSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.aspectSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aspectSelector.FormattingEnabled = true;
             this.aspectSelector.Location = new System.Drawing.Point(216, 256);
             this.aspectSelector.Name = "aspectSelector";
@@ -147,18 +150,18 @@
             this.aspectSelector.TabIndex = 2;
             this.aspectSelector.SelectedIndexChanged += new System.EventHandler(this.aspectSelector_SelectedIndexChanged);
             // 
-            // label3
+            // scoreboardMaxmodeLabel
             // 
-            this.label3.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label3, 3);
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 295);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 23);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Default Scoreboard";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scoreboardMaxmodeLabel.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.scoreboardMaxmodeLabel, 3);
+            this.scoreboardMaxmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMaxmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreboardMaxmodeLabel.Location = new System.Drawing.Point(58, 295);
+            this.scoreboardMaxmodeLabel.Name = "scoreboardMaxmodeLabel";
+            this.scoreboardMaxmodeLabel.Size = new System.Drawing.Size(208, 23);
+            this.scoreboardMaxmodeLabel.TabIndex = 12;
+            this.scoreboardMaxmodeLabel.Text = "Default Scoreboard:";
+            this.scoreboardMaxmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // installButton
             // 
@@ -172,7 +175,7 @@
             this.installButton.TabIndex = 15;
             this.installButton.Text = "INSTALL";
             this.installButton.UseVisualStyleBackColor = true;
-            this.installButton.Click += new System.EventHandler(this.installButton_Click);
+            this.installButton.Click += new System.EventHandler(this.installButton_InstallClick);
             // 
             // uninstallButton
             // 
@@ -202,7 +205,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.22449F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.142859F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.label4, 5, 6);
+            this.tableLayoutPanel1.Controls.Add(this.scoreboardMinmodeLabel, 5, 6);
             this.tableLayoutPanel1.Controls.Add(this.scoreboardSelectorMinmode, 6, 8);
             this.tableLayoutPanel1.Controls.Add(this.uninstallButton, 2, 10);
             this.tableLayoutPanel1.Controls.Add(this.scoreboardSelectorMaxmode, 3, 8);
@@ -210,9 +213,9 @@
             this.tableLayoutPanel1.Controls.Add(this.scoreboardPictureboxMaxmode, 2, 7);
             this.tableLayoutPanel1.Controls.Add(this.scoreboardPictureboxMinmode, 4, 7);
             this.tableLayoutPanel1.Controls.Add(this.aspectImageBox, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 6);
+            this.tableLayoutPanel1.Controls.Add(this.scoreboardMaxmodeLabel, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.aspectSelector, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.aspectLabel, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.folderBrowserButton, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
@@ -222,32 +225,32 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 12;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.216629F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.21663F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.929871F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.210629F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.35728F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.419048F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.062812F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.35728F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.076369F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.076371F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.442771F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.927299F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(547, 614);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
-            // label4
+            // scoreboardMinmodeLabel
             // 
-            this.label4.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 3);
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(272, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 23);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Minmode Scoreboard";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scoreboardMinmodeLabel.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.scoreboardMinmodeLabel, 3);
+            this.scoreboardMinmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMinmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreboardMinmodeLabel.Location = new System.Drawing.Point(272, 295);
+            this.scoreboardMinmodeLabel.Name = "scoreboardMinmodeLabel";
+            this.scoreboardMinmodeLabel.Size = new System.Drawing.Size(208, 23);
+            this.scoreboardMinmodeLabel.TabIndex = 28;
+            this.scoreboardMinmodeLabel.Text = "Minmode Scoreboard:";
+            this.scoreboardMinmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // scoreboardSelectorMinmode
             // 
@@ -344,7 +347,6 @@
             this.Text = "Thwartski Hud Installer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.DoubleClick += new System.EventHandler(this.Form1_ReenabledByForm2);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -366,9 +368,9 @@
         private System.Windows.Forms.Button installButton;
         private System.Windows.Forms.PictureBox scoreboardPictureboxMaxmode;
         private System.Windows.Forms.PictureBox aspectImageBox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label scoreboardMaxmodeLabel;
         private System.Windows.Forms.ComboBox aspectSelector;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label aspectLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button folderBrowserButton;
         private System.Windows.Forms.CheckBox backupCheckbox;
@@ -377,7 +379,7 @@
         private System.Windows.Forms.ComboBox scoreboardSelectorMaxmode;
         private System.Windows.Forms.PictureBox scoreboardPictureboxMinmode;
         private System.Windows.Forms.ComboBox scoreboardSelectorMinmode;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label scoreboardMinmodeLabel;
     }
 }
 
