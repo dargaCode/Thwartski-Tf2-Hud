@@ -15,7 +15,10 @@
 		"wide"			"600"
 		"tall"			"448"
 		
-		
+		"xpos_minmode"			"c-300"
+		"ypos_minmode"			"c-224"
+		"wide_minmode"			"600"
+		"tall_minmode"			"444"	
 		
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -40,7 +43,10 @@
 		"wide"			"286"
 		"tall"			"54"
 		
-		
+		"xpos_minmode"			"14"//"0"
+		"ypos_minmode"			"10"
+		"wide_minmode"			"286"
+		"tall_minmode"			"54"	
 		
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -63,7 +69,10 @@
 		"wide"			"286"//"300"
 		"tall"			"54"
 		
-		
+		"xpos_minmode"			"301"
+		"ypos_minmode"			"10"
+		"wide_minmode"			"286"//"300"
+		"tall_minmode"			"54"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -85,7 +94,10 @@
 		"wide"			"573"//"600"
 		"tall"			"311"
 		
-		
+		"xpos_minmode"			"14"//"0"
+		"ypos_minmode"			"10"
+		"wide_minmode"			"573"
+		"tall_minmode"			"254"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -106,7 +118,10 @@
 		"wide"			"300"
 		"tall"			"70"
 		
-		
+		"xpos_minmode"			"150"
+		"ypos_minmode"			"284"	
+		"wide_minmode"			"300"
+		"tall_minmode"			"70"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -128,7 +143,10 @@
 		"wide"			"1"
 		"tall"			"227"
 		
-		
+		"xpos_minmode"			"300"
+		"ypos_minmode"			"64"
+		"wide_minmode"			"1"
+		"tall_minmode"			"170"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -149,7 +167,10 @@
 		"wide"			"464"
 		"tall"			"1"
 		
-		
+		"xpos_minmode"			"115"
+		"ypos_minmode"			"397"	
+		"wide_minmode"			"464"
+		"tall_minmode"			"1"	
 		
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -173,7 +194,10 @@
 		"wide"			"140"
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"231"
+		"ypos_minmode"			"291"
+		"wide_minmode"			"140"
+		"tall_minmode"			"20"	
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -194,7 +218,10 @@
 		"wide"			"250"
 		"tall"			"34"
 		
-		
+		"xpos_minmode"			"24"//"15"
+		"ypos_minmode"			"10"//"28"
+		"wide_minmode"			"250"
+		"tall_minmode"			"34"		
 		
 		"autoResize"    "0"
 		"pinCorner"		"0"
@@ -213,8 +240,11 @@
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"55"
-		
-		
+
+		"xpos_minmode"			"194"
+		"ypos_minmode"			"10" 
+		"wide_minmode"			"100"
+		"tall_minmode"			"55"		
 		
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -235,7 +265,10 @@
 		"wide"			"100"
 		"tall"			"55"
 		
-		
+		"xpos_minmode"			"195"
+		"ypos_minmode"			"11" 
+		"wide_minmode"			"100"
+		"tall_minmode"			"55"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -255,7 +288,10 @@
 		"wide"			"286"//"100"
 		"tall"			"29"
 		
-		
+		"xpos_minmode"			"14"//"110"	
+		"ypos_minmode"			"35"
+		"wide_minmode"			"286"//"100"
+		"tall_minmode"			"29"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -276,7 +312,10 @@
 		"wide"			"250"
 		"tall"			"34"
 		
-		
+		"xpos_minmode"			"328"//"448"
+		"ypos_minmode"			"10"//"28"
+		"wide_minmode"			"250"
+		"tall_minmode"			"34"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -296,7 +335,10 @@
 		"wide"			"100"
 		"tall"			"55"
 		
-		
+		"xpos_minmode"			"310"
+		"ypos_minmode"			"10" 
+		"wide_minmode"			"100"
+		"tall_minmode"			"55"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -317,7 +359,10 @@
 		"wide"			"100"
 		"tall"			"55"
 		
-		
+		"xpos_minmode"			"311"
+		"ypos_minmode"			"11"
+		"wide_minmode"			"100"
+		"tall_minmode"			"55"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -337,7 +382,10 @@
 		"wide"			"286"//"100"
 		"tall"			"29"
 		
-		
+		"xpos_minmode"			"301"//"375"
+		"ypos_minmode"			"35"
+		"wide_minmode"			"286"//"100"
+		"tall_minmode"			"29"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -355,7 +403,10 @@
 		"wide"			"290"
 		"tall"			"238"	
 		
-		
+		"xpos_minmode"			"12"//"6"
+		"ypos_minmode"			"51"
+		"wide_minmode"			"290"
+		"tall_minmode"			"182"			
 		
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -375,7 +426,10 @@
 		"wide"			"290"
 		"tall"			"238"	
 		
-		
+		"xpos_minmode"			"299"//"305"
+		"ypos_minmode"			"51"
+		"wide_minmode"			"290"
+		"tall_minmode"			"182"		
 		
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -399,7 +453,10 @@
 		"wide"			"560"
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"20"
+		"ypos_minmode"			"c-9"	
+		"wide_minmode"			"560"
+		"tall_minmode"			"20"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -419,7 +476,10 @@
 		"wide"			"560"
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"20"
+		"ypos_minmode"			"c-9"	
+		"wide_minmode"			"560"
+		"tall_minmode"			"20"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -439,7 +499,10 @@
 		"wide"			"300"
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"20"
+		"ypos_minmode"			"244"
+		"wide_minmode"			"300"
+		"tall_minmode"			"20"		
 		
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -458,7 +521,10 @@
 		"wide"			"560"
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"20"
+		"ypos_minmode"			"243"
+		"wide_minmode"			"560"
+		"tall_minmode"			"20"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -479,7 +545,10 @@
 		"wide"			"0"
 		"tall"			"0"
 		
-		
+		"xpos_minmode"			"22"
+		"ypos_minmode"			"350"	
+		"wide_minmode"			"0"
+		"tall_minmode"			"0"		
 		
 		"visible"		"0"
 		"enabled"		"1"
@@ -499,7 +568,10 @@
 		"wide"			"325"	
 		"tall"			"20"
 		
-		
+		"xpos_minmode"			"115"
+		"ypos_minmode"			"377"	
+		"wide_minmode"			"325"	
+		"tall_minmode"			"20"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -517,7 +589,10 @@
 		"wide"			"600"
 		"tall"			"53"
 		
-		
+		"xpos_minmode"			"0"
+		"ypos_minmode"			"307"
+		"wide_minmode"			"600"
+		"tall_minmode"			"53"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -537,7 +612,11 @@
 			"wide"			"100"
 			"tall"			"20"
 		
-		
+			"textAlignment"		"center"
+			"xpos_minmode"			"250"
+			"ypos_minmode"			"2"
+			"wide_minmode"			"100"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -555,7 +634,10 @@
 			"wide"			"32"
 			"tall"			"32"
 		
-		
+			"xpos_minmode"			"284"
+			"ypos_minmode"			"15"
+			"wide_minmode"			"32"
+			"tall_minmode"			"32"				
 		
 			"visible"		"1"
 			"enabled"		"1"
@@ -572,7 +654,10 @@
 			"wide"			"200"
 			"tall"			"53"
 		
-		
+			"xpos_minmode"			"75"
+			"ypos_minmode"			"0"
+			"wide_minmode"			"200"
+			"tall_minmode"			"53"
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -589,7 +674,10 @@
 				"wide"			"36"
 				"tall"			"36"
 		
-		
+				"xpos_minmode"			"157"
+				"ypos_minmode"			"7"
+				"wide_minmode"			"36"
+				"tall_minmode"			"36"		
 		
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
@@ -605,7 +693,10 @@
 				"wide"			"32"
 				"tall"			"32"
 		
-		
+				"xpos_minmode"			"159"
+				"ypos_minmode"			"9"
+				"wide_minmode"			"32"
+				"tall_minmode"			"32"		
 		
 				"visible"		"1"
 				"enabled"		"1"
@@ -624,7 +715,10 @@
 				"wide"			"100"
 				"tall"			"18"
 		
-		
+				"xpos_minmode"			"50"
+				"ypos_minmode"			"7"
+				"wide_minmode"			"100"
+				"tall_minmode"			"18"	
 		
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -647,7 +741,10 @@
 				"wide"			"100"
 				"tall"			"20"
 		
-		
+				"xpos_minmode"			"50"
+				"ypos_minmode"			"23"
+				"wide_minmode"			"100"
+				"tall_minmode"			"20"		
 		
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -666,7 +763,10 @@
 			"wide"			"200"
 			"tall"			"53"
 		
-		
+			"xpos_minmode"			"325"
+			"ypos_minmode"			"0"
+			"wide_minmode"			"200"
+			"tall_minmode"			"53"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -683,7 +783,10 @@
 				"wide"			"36"
 				"tall"			"36"
 		
-		
+				"xpos_minmode"			"7"
+				"ypos_minmode"			"7"
+				"wide_minmode"			"36"
+				"tall_minmode"			"36"		
 		
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
@@ -699,7 +802,10 @@
 				"wide"			"32"
 				"tall"			"32"
 		
-		
+				"xpos_minmode"			"9"
+				"ypos_minmode"			"9"
+				"wide_minmode"			"32"
+				"tall_minmode"			"32"		
 		
 				"visible"		"1"
 				"enabled"		"1"
@@ -718,7 +824,10 @@
 				"wide"			"100"
 				"tall"			"18"
 		
-		
+				"xpos_minmode"			"50"
+				"ypos_minmode"			"7"
+				"wide_minmode"			"100"
+				"tall_minmode"			"18"		
 		
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -741,7 +850,10 @@
 				"wide"			"200"
 				"tall"			"20"
 		
-		
+				"xpos_minmode"			"50"
+				"ypos_minmode"			"23"
+				"wide_minmode"			"200"
+				"tall_minmode"			"20"		
 		
 				"autoResize"	"0"
 				"pinCorner"		"0"
@@ -762,7 +874,10 @@
 		"wide"			"600"
 		"tall"			"448"
 		
-		
+		"xpos_minmode"			"0"
+		"ypos_minmode"			"224"
+		"wide_minmode"			"600"
+		"tall_minmode"			"448"		
 		
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -782,7 +897,10 @@
 			"wide"			"146"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"228"
+			"ypos_minmode"			"20"//"0"
+			"wide_minmode"			"146"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -804,7 +922,10 @@
 			"wide"			"100"
 			"tall"			"40"
 		
-		
+			"xpos_minmode"			"196"
+			"ypos_minmode"			"87"	
+			"wide_minmode"			"100"
+			"tall_minmode"			"40"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -824,7 +945,10 @@
 			"wide"			"40"
 			"tall"			"40"
 		
-		
+			"xpos_minmode"			"282"
+			"ypos_minmode"			"87"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"40"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -845,7 +969,10 @@
 			"wide"			"100"
 			"tall"			"40"
 		
-		
+			"xpos_minmode"			"308"
+			"ypos_minmode"			"87"	
+			"wide_minmode"			"100"
+			"tall_minmode"			"40"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -863,7 +990,10 @@
 			"wide"			"1"
 			"tall"			"50"
 		
-		
+			"xpos_minmode"			"223"
+			"ypos_minmode"			"70"
+			"wide_minmode"			"1"
+			"tall_minmode"			"50"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -885,7 +1015,10 @@
 			"wide"			"1"
 			"tall"			"50"
 		
-		
+			"xpos_minmode"			"376"
+			"ypos_minmode"			"70"
+			"wide_minmode"			"1"
+			"tall_minmode"			"50"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -910,7 +1043,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"159"		
+			"ypos_minmode"			"80"//"60"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -932,7 +1068,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"	
+			"ypos_minmode"			"80"//"60"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -952,8 +1091,11 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-		
-		
+
+			"xpos_minmode"			"159"		
+			"ypos_minmode"			"90"//"70"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"			
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -975,7 +1117,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"	
+			"ypos_minmode"			"90"//"70"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -993,9 +1138,12 @@
 			"ypos"			"60"//"80"	
 			"zpos"			"3"
 			"wide"			"40"
-			"tall"			"20"
-		
-		
+			"tall"			"20"	
+
+			"xpos_minmode"			"159"	
+			"ypos_minmode"			"60"//"80"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1016,7 +1164,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"
+			"ypos_minmode"			"60"//"80"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1036,7 +1187,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"159"	
+			"ypos_minmode"			"70"//"90"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1056,7 +1210,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"
+			"ypos_minmode"			"70"//"90"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1077,7 +1234,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"159"		
+			"ypos_minmode"			"100"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1100,7 +1260,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"	
+			"ypos_minmode"			"100"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1120,7 +1283,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"159"	
+			"ypos_minmode"			"110"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1141,7 +1307,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"179"	
+			"ypos_minmode"			"110"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1164,7 +1333,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"	
+			"ypos_minmode"			"60"	
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1184,7 +1356,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"	
+			"ypos_minmode"			"60"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1205,7 +1380,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"	
+			"ypos_minmode"			"70"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1226,7 +1404,10 @@
 			"wide"			"40"	
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"	
+			"ypos_minmode"			"70"	
+			"wide_minmode"			"40"	
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1246,7 +1427,10 @@
 			"wide"			"40"	
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"	
+			"ypos_minmode"			"80"	
+			"wide_minmode"			"40"	
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1266,7 +1450,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"	
+			"ypos_minmode"			"80"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1286,7 +1473,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"
+			"ypos_minmode"			"90"
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1306,7 +1496,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"
+			"ypos_minmode"			"90"
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"		"0"
 			"pinCorner"		"0"
@@ -1327,7 +1520,10 @@
 			"wide"			"40"	
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"	
+			"ypos_minmode"			"100"	
+			"wide_minmode"			"40"	
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1347,7 +1543,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"	
+			"ypos_minmode"			"100"	
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1367,7 +1566,10 @@
 			"wide"			"40"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"387"
+			"ypos_minmode"			"110"
+			"wide_minmode"			"40"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1387,7 +1589,10 @@
 			"wide"			"35"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"405"
+			"ypos_minmode"			"110"
+			"wide_minmode"			"35"
+			"tall_minmode"			"20"		
 		
 			"autoResize"		"0"
 			"pinCorner"		"0"
@@ -1410,7 +1615,10 @@
 			"wide"			"95"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"0"
+			"ypos_minmode"			"0"	
+			"wide_minmode"			"95"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1430,7 +1638,10 @@
 			"wide"			"95"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"0"
+			"ypos_minmode"			"0"	
+			"wide_minmode"			"95"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
@@ -1450,7 +1661,10 @@
 			"wide"			"145"
 			"tall"			"20"
 		
-		
+			"xpos_minmode"			"0"
+			"ypos_minmode"			"0"
+			"wide_minmode"			"145"
+			"tall_minmode"			"20"		
 		
 			"autoResize"	"0"
 			"pinCorner"		"0"
