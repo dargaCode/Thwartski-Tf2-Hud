@@ -86,12 +86,6 @@
     <None Include="app1.manifest">
       <SubType>Designer</SubType>
     </None>
-    <None Include="bin\Debug\images\ScoreBoard_Comp6.res" />
-    <None Include="bin\Debug\images\ScoreBoard_Comp9.res" />
-    <None Include="bin\Debug\images\ScoreBoard_Pub24.res" />
-    <None Include="bin\Debug\images\ScoreBoard_Pub32.res" />
-    <None Include="bin\Debug\images\SpectatorTournament_Normal.res" />
-    <None Include="bin\Debug\images\SpectatorTournament_widescreen.res" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,24 +95,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\ScoreBoard_Comp6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\ScoreBoard_Comp9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\ScoreBoard_Pub24.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\ScoreBoard_Pub32.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\SpectatorTournament_Normal.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\images\SpectatorTournament_Widescreen.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\_resourceImages\ScoreBoard_Comp6.jpg" />
