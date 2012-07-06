@@ -81,5 +81,11 @@ namespace Thwartski_Hud_Installer
             }
         }
 
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            //close form2
+            this.Close();
+        }
+
     }
 }
