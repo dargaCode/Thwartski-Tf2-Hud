@@ -21,11 +21,13 @@ namespace Thwartski_Hud_Installer
         //boolean for backup checkbox
         static Boolean createBackupFolders = false;
 
-        //status updates and error messages
+        //exception messages
         //Environment.NewLine for non-escaped linebreaks
-        static string exceptionFolderOpen =             "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
-        static string exceptionGameRunning =            "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
-        static string exceptionAssetsMissing =          "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
+        static string exceptionFolderOpen = "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
+        static string exceptionGameRunning = "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
+        static string exceptionAssetsMissing = "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
+
+        //success messages
         static string updateSettingsCompleteMessage =   "Your custom options have been installed.";
         static string uninstallCompleteMessage =        "All hud files are now reverted to Valve defaults. \n \nBackups of hud files can be found in ";
 
@@ -40,7 +42,7 @@ namespace Thwartski_Hud_Installer
         //display text for install button modes
         static string installMode =                     "Install Hud";
         static string updateMode =                      "Update Options";
-        static string disabledMode =                    "Nothing to Install";
+        static string disabledMode =                    "Already Installed";
         
         //paths for populating the folder browser
         static string defaultSteamappsFolder32Bit =     @"C:\Program Files (x86)\Steam\steamapps\";
@@ -61,15 +63,19 @@ namespace Thwartski_Hud_Installer
         static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
         static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
 
+        //see where the exe is running from
+        static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath); 
+        
         //paths for copying assets and installing them
-        static string assetPath =                       @"Install Files\"; //relative to exe
-        static string installPath;                      //written at runtime
+        static string assetPath =                       exeFolder + @"\Install Files\";
         static string installPathTfSubFolder =          @"\tf\";
         static string installPathResourceSubfolder =    @"resource\";
         static string installPathUiSubfolder =          @"ui\";
-        static string assetOptionsPath =                assetPath + installPathResourceSubfolder + installPathUiSubfolder + @"_Thwartski Hud Options\";
-        static string backupPath;                       //written at runtime
+        static string installPath;                      //written at runtime
+        static string assetOptionsSubfolder =           @"_Thwartski Hud Options\";
+        static string assetOptionsPath;                 //written at runtime
         static string backupSubFolder =                 @"_HUD BACKUPS\";
+        static string backupPath;                       //written at runtime
 
         //used for cycling through assetfolder directory
         static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
@@ -111,8 +117,9 @@ namespace Thwartski_Hud_Installer
         static string menuFileDestination;              //written at runtime
 
         //file and path to let the buttons know the hud is installed
-        static string installCheckerDestination;        //written at runtime
         static string installCheckerFile =              "Thwartski Hud Installed.txt";
+        static string installCheckerDestination;        //written at runtime
+
 
 
         //FORM EVENTS BELOW THIS POINT
@@ -174,7 +181,7 @@ namespace Thwartski_Hud_Installer
                 //the player didn't select a valid folder
                 else
                 {
-                    MessageBox.Show(badFolderSelectedMessage);
+                    errorWindow(badFolderSelectedMessage);
                 }
             }
         }
@@ -218,7 +225,7 @@ namespace Thwartski_Hud_Installer
             //something went wrong
             else
             {
-                MessageBox.Show("debug: variable index out of range! aspect=" + aspectSelector.SelectedIndex);
+                errorWindow("debug: variable index out of range! aspect=" + aspectSelector.SelectedIndex);
             }
 
             //update the text strings, buttons, etc.
@@ -243,7 +250,7 @@ namespace Thwartski_Hud_Installer
             //something went wrong
             else
             {
-                MessageBox.Show("debug: variable index out of range! maxmode=" + scoreboardSelectorMaxmode.SelectedIndex);
+                errorWindow("debug: variable index out of range! maxmode=" + scoreboardSelectorMaxmode.SelectedIndex);
             }
             //check both comboboxes and identify the right scoreboard files
             updateScoreboardFiles();
@@ -269,7 +276,7 @@ namespace Thwartski_Hud_Installer
             //something went wrong
             else
             {
-                MessageBox.Show("debug: variable index out of range! minmode=" + scoreboardSelectorMinmode.SelectedIndex);
+                errorWindow("debug: variable index out of range! minmode=" + scoreboardSelectorMinmode.SelectedIndex);
             }
 
             //check both comboboxes and identify the right scoreboard files
@@ -345,12 +352,13 @@ namespace Thwartski_Hud_Installer
             {
                 //show the success message (but only if the function returned true)
                 MessageBox.Show(uninstallCompleteMessage + teamFortress2Subfolder + installPathTfSubFolder + backupSubFolder);
+
+                //update and save the custom file settings
+                saveOptions();
             }
             //enable form contents, even if the function failed.
             tableLayoutPanel1.Enabled = true;
 
-            //update and save the custom file settings
-            saveOptions();
         }
 
         //save settings on program close
@@ -551,6 +559,7 @@ namespace Thwartski_Hud_Installer
         private void updateStrings()
         {
             //the paths of the custom asset files
+            assetOptionsPath = assetPath + installPathResourceSubfolder + installPathUiSubfolder + assetOptionsSubfolder;
             aspectSelectedAssetPath = assetOptionsPath + aspectSelectedAssetFile;
             scoreboardSelectedAssetPath = assetOptionsPath + scoreboardSelectedAssetFile;
             menuSelectedAssetPath = assetOptionsPath + menuSelectedAssetFile;
@@ -571,6 +580,7 @@ namespace Thwartski_Hud_Installer
             backupPath = installPath + backupSubFolder;
 
             //MessageBox.Show("installPath: \n" + installPath);
+            //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);
             //MessageBox.Show("aspectSelectedAssetPath: \n" + aspectSelectedAssetPath);
             //MessageBox.Show("scoreboardSelectedAssetPath: \n" + scoreboardSelectedAssetPath);
             //MessageBox.Show("menuSelectedAssetPath: \n" + menuSelectedAssetPath);
@@ -718,44 +728,74 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         private void installButtonMode(string modeSetting)
         {
+            //defining fonts to use for bolding and unbolding the button text
+            Font unboldedButtonFont = new Font(installButton.Font, FontStyle.Regular);
+            Font boldedButtonFont = new Font(installButton.Font, FontStyle.Bold);
+
             //install mode
             if (modeSetting == installMode)
             {
+                //update the button text to match the mode
                 installButton.Text = modeSetting;
 
+                //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
                 this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
 
+                //change the install button click event to the normal install event
                 this.installButton.Click += new System.EventHandler(this.installButton_InstallClick);
 
+                //enable the install button
                 installButton.Enabled = true;
+
+                //bold the install button
+                installButton.Font = boldedButtonFont;
+                //unbold the uninstall button
+                uninstallButton.Font = unboldedButtonFont;
             }
             //update options mode
             else if (modeSetting == updateMode)
             {
+                //update the button text to match the mode
                 installButton.Text = modeSetting;
 
+                //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
                 this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
 
+                //change the install button click event to the special update event
                 this.installButton.Click += new System.EventHandler(this.installButton_UpdateClick);
 
+                //enable the install button
                 installButton.Enabled = true;
+
+                //bold the install button
+                installButton.Font = boldedButtonFont;
+                //unbold the uninstall button
+                uninstallButton.Font = unboldedButtonFont;
             }
             //disabled mode
             else if (modeSetting == disabledMode)
             {
+                //update the button text to match the mode
                 installButton.Text = modeSetting;
 
+                //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
                 this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
 
+                //disable the install button
                 installButton.Enabled = false;
+
+                //unbold the install button
+                installButton.Font = unboldedButtonFont;
+                //bold the uninstall button
+                uninstallButton.Font = boldedButtonFont;
             }
             //something broke
             else
             {
-                MessageBox.Show("debug: invalid install mode \n" + modeSetting);
+                errorWindow("debug: invalid install mode! modesetting=" + modeSetting);
             }
         }
 
@@ -828,13 +868,18 @@ namespace Thwartski_Hud_Installer
                     //create a dummy text file to let the launcher know the hud is installed
                     if (!isHudInstalled())
                     {
-                        System.IO.File.Create(installCheckerDestination);
+                        //create the file, but just close it without writing any text inside
+                        using (StreamWriter versionFile = new StreamWriter(installCheckerDestination))
+                        {
+                            versionFile.Close();
+                            versionFile.Dispose();
+                        }
                     }
                 }
                 catch (System.IO.DirectoryNotFoundException)
                 {
                     //happens when the gameassets folder has been deleted or moved away from the exe
-                    MessageBox.Show(exceptionAssetsMissing);
+                    errorWindow(exceptionAssetsMissing);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -842,7 +887,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.UnauthorizedAccessException)
                 {
                     //happens when tf2 is running (and therefore keeping the font files in use).
-                    MessageBox.Show(exceptionGameRunning);
+                    errorWindow(exceptionGameRunning);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -850,7 +895,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.IO.IOException)
                 {
                     //usually happens when the user tries to delete a folder they are viewing.
-                    MessageBox.Show(exceptionFolderOpen);
+                    errorWindow(exceptionFolderOpen);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -858,7 +903,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.Exception problem)
                 {
                     //generic exception for unexpected case
-                    MessageBox.Show(problem.Message);
+                    errorWindow(problem.Message);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -898,7 +943,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                MessageBox.Show(exceptionAssetsMissing);
+                errorWindow(exceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -906,7 +951,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                MessageBox.Show(exceptionGameRunning);
+                errorWindow(exceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -914,7 +959,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                MessageBox.Show(exceptionFolderOpen);
+                errorWindow(exceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -922,7 +967,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                MessageBox.Show(problem.Message);
+                errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1016,18 +1061,11 @@ namespace Thwartski_Hud_Installer
                 //MessageBox.Show(menuSelectedAssetPath + " to " + menuFileDestination);
                 //MessageBox.Show(aspectSelectedAssetPath + " to " + aspectFileDestination);
                 //MessageBox.Show(scoreboardSelectedAssetPath + " to " + scoreboardFileDestination);
-
-                //create a dummy text file to let the launcher know the hud is installed
-                if (!isHudInstalled())
-                {
-                    System.IO.File.Create(installCheckerDestination);
-                }
-
             }
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                MessageBox.Show(exceptionAssetsMissing);
+                errorWindow(exceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1035,7 +1073,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                MessageBox.Show(exceptionGameRunning);
+                errorWindow(exceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1043,7 +1081,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                MessageBox.Show(exceptionFolderOpen);
+                errorWindow(exceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1051,7 +1089,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                MessageBox.Show(problem.Message);
+                errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1061,7 +1099,15 @@ namespace Thwartski_Hud_Installer
             return true;
         }
 
-        
+        /// <summary>
+        /// Show a special error window with a sound and a custom message.
+        /// </summary>
+        /// <param name="exceptionMessage"></param>
+        private void errorWindow(string exceptionMessage)
+        {
+            //open a special messagebox with Error as the window text and an icon
+            MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+        }
        
     }
 }
