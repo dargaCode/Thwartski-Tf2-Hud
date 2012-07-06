@@ -18,18 +18,40 @@ namespace Thwartski_Hud_Installer
 
 
 
+        //defining tooltips for the form
+        static ToolTip HudInstallerTooltips = new ToolTip();
+
         //boolean for backup checkbox
         static Boolean createBackupFolders = false;
 
+        //double new line for easily combining multi-line strings
+        static string newNewLine =                      Environment.NewLine + Environment.NewLine;
+
+        //tooltip messages
+        static string tooltipFolderBrowse =             String.Format(@"{1}{0}{2}", newNewLine, @"Use the Browse button to select your 'Team Fortress 2' folder.",           @"(You'll find it under \YOUR STEAM FOLDER\steamapps\YOUR STEAM USERNAME.)");
+        static string tooltipAspectRatio =              String.Format(@"{1}{0}{2}", newNewLine, @"This will position your spectator hud correctly for competitive games.",   @"(Enable by checking 'Use Advanced Spectator Hud' under Advanced Options.)");
+        static string tooltipMaxmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing on pub servers?",               @"(Switch scoreboards using the buttons on your in-game escape menu.)");
+        static string tooltipMinmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing competitive games?",            @"(Switch scoreboards using the buttons on your in-game escape menu.)");
+        static string tooltipBackups =                  String.Format(@"{1}",       newNewLine, @"saving backups",                                                           @"(second line hidden)");
+
+        //install/uninstall button tooltips for fresh uninstall
+        static string tooltipInstallFreshMode =         String.Format(@"{1}{0}{2}", newNewLine, @"Install Thwartski Hud with the selected options.",                         @"(If you have custom hud files installed, they'll be backed up first.)");
+        static string tooltipUninstallFreshMode =       String.Format(@"{1}{0}{2}", newNewLine, @"Uninstall Thwartski Hud and restore Valve's default hud files.",           @"(Thwartski Hud won't be backed up, but you can easily reinstall it.)");
+        //install/uninstall button tooltips for updating options
+        static string tooltipInstallUpdateMode =        String.Format(@"{1}{0}{2}", newNewLine, @"Update the modified options only.",                                        @"(Unlike installing, this action can be performed with the game running.)");
+        static string tooltipUninstallUpdateMode =      String.Format(@"{1}",       newNewLine, @"Ignore the modified options and uninstall Thwartski Hud.",                 @"(second line hidden)");
+        //default install/uninstall button tooltips
+        static string tooltipInstallButton =            tooltipInstallFreshMode;    //overridden in installButtonMode
+        static string tooltipUninstallButton =          tooltipInstallUpdateMode;   //overridden in installButtonMode
+
         //exception messages
-        //Environment.NewLine for non-escaped linebreaks
-        static string exceptionFolderOpen = "The previous hud installation could not be deleted! \n \nPlease make sure your hud folders are closed.";
-        static string exceptionGameRunning = "The previous hud installation could not be deleted! \n \nPlease make sure TF2 is not running.";
-        static string exceptionAssetsMissing = "The hud source files could not be found! \n \nPlease re-download the installer or replace any deleted files.";
+        static string exceptionFolderOpen =             String.Format(@"{1}{0}{2}", newNewLine, @"The previous hud installation could not be deleted!",                     @"Please make sure your hud folders are closed.");
+        static string exceptionGameRunning =            String.Format(@"{1}{0}{2}", newNewLine, @"The previous hud installation could not be deleted!",                     @"Please make sure TF2 is not running.");
+        static string exceptionAssetsMissing =          String.Format(@"{1}{0}{2}", newNewLine, @"The Thwartski Hud source files could not be found!",                      @"Please re-download the installer or replace any deleted files.");
 
         //success messages
         static string updateSettingsCompleteMessage =   "Your custom options have been installed.";
-        static string uninstallCompleteMessage =        "All hud files are now reverted to Valve defaults. \n \nBackups of hud files can be found in ";
+        static string uninstallCompleteMessage =        "All hud files are now reverted to Valve defaults.";
 
         //display text for comboboxes arrays
         static string aspectNormalText =                "Normal";
@@ -40,7 +62,7 @@ namespace Thwartski_Hud_Installer
         static string scoreboardPub32Test =             "32 Player";
 
         //display text for install button modes
-        static string installMode =                     "Install Hud";
+        static string freshMode =                       "Install Hud";
         static string updateMode =                      "Update Options";
         static string disabledMode =                    "Already Installed";
         
@@ -134,6 +156,9 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
+            //generate tooltips for the form
+            updateTooltips();
+
             //create arrays of combobox strings
             string[] aspects = { aspectNormalText, aspectWidescreenText };
             string[] scoreboardsMaxmode = { scoreboardPub24Text, scoreboardPub32Test };
@@ -289,7 +314,7 @@ namespace Thwartski_Hud_Installer
         private void installButton_InstallClick(object sender, EventArgs e)
         {
             //disable form contents
-            tableLayoutPanel1.Enabled = false;
+            form1LayoutPanel.Enabled = false;
 
             //attempt to install the hud
             if (installHud())
@@ -304,7 +329,7 @@ namespace Thwartski_Hud_Installer
             else
             {
                 //enable form contents, even if the operation failed.
-                tableLayoutPanel1.Enabled = true;
+                form1LayoutPanel.Enabled = true;
             }
 
             //save the options to the settings file
@@ -315,7 +340,7 @@ namespace Thwartski_Hud_Installer
         private void installButton_UpdateClick(object sender, EventArgs e)
         {
             //disable form contents
-            tableLayoutPanel1.Enabled = false;
+            form1LayoutPanel.Enabled = false;
 
             //attempt to update the custom files (has its own validation)
             if (updateCustomFiles())
@@ -324,7 +349,7 @@ namespace Thwartski_Hud_Installer
             }
 
             //enable form contents
-            tableLayoutPanel1.Enabled = true;
+            form1LayoutPanel.Enabled = true;
 
             //save the options to the settings file
             saveOptions();
@@ -335,7 +360,7 @@ namespace Thwartski_Hud_Installer
         public void Form1_ReenabledByForm2(object sender, EventArgs e)
         {
             //enable form content
-            tableLayoutPanel1.Enabled = true;
+            form1LayoutPanel.Enabled = true;
 
             //update and save the custom file settings
             saveOptions();
@@ -345,19 +370,19 @@ namespace Thwartski_Hud_Installer
         private void uninstallButton_Click(object sender, EventArgs e)
         {
             //disable form contents
-            tableLayoutPanel1.Enabled = false;
+            form1LayoutPanel.Enabled = false;
 
             //attempt to delete the destination files
             if (wipeHudFiles())
             {
                 //show the success message (but only if the function returned true)
-                MessageBox.Show(uninstallCompleteMessage + teamFortress2Subfolder + installPathTfSubFolder + backupSubFolder);
+                MessageBox.Show(uninstallCompleteMessage);
 
                 //update and save the custom file settings
                 saveOptions();
             }
             //enable form contents, even if the function failed.
-            tableLayoutPanel1.Enabled = true;
+            form1LayoutPanel.Enabled = true;
 
         }
 
@@ -398,7 +423,7 @@ namespace Thwartski_Hud_Installer
             else
             {
                 //no obvious steam install was found
-                folderBrowserLabel.Text = unknownTeamFortress2Location;
+                folderBrowserBoxLabel.Text = unknownTeamFortress2Location;
                 folderBrowserDialog1.Description = unknownFolderBrowserDesc;
             }
         }
@@ -470,7 +495,7 @@ namespace Thwartski_Hud_Installer
 
             //update the textbox and folder browser with the partial path to get the player started.
             folderBrowserDialog1.SelectedPath = steamappsFolder;
-            folderBrowserLabel.Text = partialTeamFortress2Location;
+            folderBrowserBoxLabel.Text = partialTeamFortress2Location;
 
             //change the text in the folder browser dialog
             folderBrowserDialog1.Description = partialFolderBrowserDesc;
@@ -490,8 +515,8 @@ namespace Thwartski_Hud_Installer
             updateStrings();
 
             //update the install path box
-            folderBrowserLabel.Text = validInstallLocation;
-            folderBrowserLabel.BackColor = Color.White;
+            folderBrowserBoxLabel.Text = validInstallLocation;
+            folderBrowserBoxLabel.BackColor = Color.White;
 
             //update the folder browser dialog
             folderBrowserDialog1.SelectedPath = validInstallLocation;
@@ -698,8 +723,8 @@ namespace Thwartski_Hud_Installer
             //the hud is not currently installed
             else
             {
-                //installmode is the default functionality of allowing a fresh install
-                installButtonMode(installMode);
+                //freshMode is the default functionality of allowing a fresh install
+                installButtonMode(freshMode);
 
                 //disable uninstall when nothing to uninstall
                 uninstallButton.Enabled = false;
@@ -732,8 +757,8 @@ namespace Thwartski_Hud_Installer
             Font unboldedButtonFont = new Font(installButton.Font, FontStyle.Regular);
             Font boldedButtonFont = new Font(installButton.Font, FontStyle.Bold);
 
-            //install mode
-            if (modeSetting == installMode)
+            //fresh mode
+            if (modeSetting == freshMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
@@ -752,6 +777,13 @@ namespace Thwartski_Hud_Installer
                 installButton.Font = boldedButtonFont;
                 //unbold the uninstall button
                 uninstallButton.Font = unboldedButtonFont;
+
+                //update tooltips for fresh mode
+                tooltipInstallButton = tooltipInstallFreshMode;
+                tooltipUninstallButton = tooltipUninstallFreshMode;
+
+                //generate tooltips with the updated strings
+                updateTooltips();
             }
             //update options mode
             else if (modeSetting == updateMode)
@@ -773,6 +805,13 @@ namespace Thwartski_Hud_Installer
                 installButton.Font = boldedButtonFont;
                 //unbold the uninstall button
                 uninstallButton.Font = unboldedButtonFont;
+
+                //update tooltips for update mode
+                tooltipInstallButton = tooltipInstallUpdateMode;
+                tooltipUninstallButton = tooltipUninstallUpdateMode;
+
+                //generate tooltips with the updated strings
+                updateTooltips();
             }
             //disabled mode
             else if (modeSetting == disabledMode)
@@ -791,12 +830,51 @@ namespace Thwartski_Hud_Installer
                 installButton.Font = unboldedButtonFont;
                 //bold the uninstall button
                 uninstallButton.Font = boldedButtonFont;
+
+                //update tooltips for disabled mode
+                tooltipInstallButton = tooltipInstallFreshMode;
+                tooltipUninstallButton = tooltipUninstallFreshMode;
+                
+                //generate tooltips with the updated strings
+                updateTooltips();
+
             }
             //something broke
             else
             {
                 errorWindow("debug: invalid install mode! modesetting=" + modeSetting);
             }
+        }
+
+        /// <summary>
+        /// Generate tooltips or update them if strings have changed
+        /// </summary>
+        private void updateTooltips()
+        {
+            //clear all the tooltips so duplicates can't be created
+            HudInstallerTooltips.RemoveAll();
+
+            //assign browser tooltips
+            HudInstallerTooltips.SetToolTip(this.browseFolderInstructionsLabel, tooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.folderBrowserBoxLabel, tooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.folderBrowserButton, tooltipFolderBrowse);
+            //assign aspect ratio tooltips
+            HudInstallerTooltips.SetToolTip(this.aspectImageBox, tooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectLabel, tooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectSelector, tooltipAspectRatio);
+            //assign maxmode scoreboard tooltips
+            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMaxmode, tooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, tooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMaxmode, tooltipMaxmode);
+            //assign minmode scoreboard tooltips
+            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMinmode, tooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, tooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMinmode, tooltipMinmode);
+            //assign install and uninstall tooltips
+            HudInstallerTooltips.SetToolTip(this.installButton, tooltipInstallButton);
+            HudInstallerTooltips.SetToolTip(this.uninstallButton, tooltipUninstallButton);
+            //assign backup tooltip
+            HudInstallerTooltips.SetToolTip(this.backupCheckbox, tooltipBackups);
         }
 
         /// <summary>

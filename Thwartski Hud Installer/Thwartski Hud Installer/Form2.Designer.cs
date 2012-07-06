@@ -33,21 +33,21 @@
             this.releaseNotesButton = new System.Windows.Forms.Button();
             this.readmeButton = new System.Windows.Forms.Button();
             this.faqButton = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.form2LayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.okButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.aspectImageBox)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.form2LayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // aspectImageBox
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.aspectImageBox, 3);
+            this.form2LayoutPanel.SetColumnSpan(this.aspectImageBox, 3);
             this.aspectImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aspectImageBox.Image = global::Thwartski_Hud_Installer.Properties.Resources.mainMenuImage;
             this.aspectImageBox.Location = new System.Drawing.Point(15, 16);
             this.aspectImageBox.Name = "aspectImageBox";
-            this.aspectImageBox.Size = new System.Drawing.Size(441, 257);
+            this.aspectImageBox.Size = new System.Drawing.Size(444, 257);
             this.aspectImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.aspectImageBox.TabIndex = 11;
             this.aspectImageBox.TabStop = false;
@@ -57,7 +57,7 @@
             this.releaseNotesButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.releaseNotesButton.Location = new System.Drawing.Point(15, 315);
             this.releaseNotesButton.Name = "releaseNotesButton";
-            this.releaseNotesButton.Size = new System.Drawing.Size(143, 45);
+            this.releaseNotesButton.Size = new System.Drawing.Size(144, 45);
             this.releaseNotesButton.TabIndex = 1;
             this.releaseNotesButton.Text = "Release Notes";
             this.releaseNotesButton.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // readmeButton
             // 
             this.readmeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.readmeButton.Location = new System.Drawing.Point(164, 315);
+            this.readmeButton.Location = new System.Drawing.Point(165, 315);
             this.readmeButton.Name = "readmeButton";
-            this.readmeButton.Size = new System.Drawing.Size(143, 45);
+            this.readmeButton.Size = new System.Drawing.Size(144, 45);
             this.readmeButton.TabIndex = 2;
             this.readmeButton.Text = "Readme";
             this.readmeButton.UseVisualStyleBackColor = true;
@@ -77,48 +77,48 @@
             // faqButton
             // 
             this.faqButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.faqButton.Location = new System.Drawing.Point(313, 315);
+            this.faqButton.Location = new System.Drawing.Point(315, 315);
             this.faqButton.Name = "faqButton";
-            this.faqButton.Size = new System.Drawing.Size(143, 45);
+            this.faqButton.Size = new System.Drawing.Size(144, 45);
             this.faqButton.TabIndex = 3;
             this.faqButton.Text = "Frequently Asked Questions";
             this.faqButton.UseVisualStyleBackColor = true;
             this.faqButton.Click += new System.EventHandler(this.faqButton_Click);
             // 
-            // tableLayoutPanel1
+            // form2LayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel1.Controls.Add(this.aspectImageBox, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.releaseNotesButton, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.readmeButton, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.faqButton, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.okButton, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.79984F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.092771F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.516947F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.42312F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 4F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.167318F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(474, 406);
-            this.tableLayoutPanel1.TabIndex = 16;
+            this.form2LayoutPanel.ColumnCount = 5;
+            this.form2LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.form2LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.form2LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.form2LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.form2LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.form2LayoutPanel.Controls.Add(this.aspectImageBox, 1, 1);
+            this.form2LayoutPanel.Controls.Add(this.releaseNotesButton, 1, 4);
+            this.form2LayoutPanel.Controls.Add(this.readmeButton, 2, 4);
+            this.form2LayoutPanel.Controls.Add(this.faqButton, 3, 4);
+            this.form2LayoutPanel.Controls.Add(this.okButton, 3, 6);
+            this.form2LayoutPanel.Controls.Add(this.label1, 1, 3);
+            this.form2LayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.form2LayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.form2LayoutPanel.Name = "form2LayoutPanel";
+            this.form2LayoutPanel.RowCount = 8;
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 68.79984F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.092771F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.516947F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.42312F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 4F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.167318F));
+            this.form2LayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
+            this.form2LayoutPanel.Size = new System.Drawing.Size(474, 406);
+            this.form2LayoutPanel.TabIndex = 16;
             // 
             // okButton
             // 
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.okButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.okButton.Location = new System.Drawing.Point(366, 370);
+            this.okButton.Location = new System.Drawing.Point(369, 370);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(90, 25);
             this.okButton.TabIndex = 0;
@@ -128,12 +128,12 @@
             // 
             // label1
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.label1, 3);
+            this.form2LayoutPanel.SetColumnSpan(this.label1, 3);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 284);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(441, 28);
+            this.label1.Size = new System.Drawing.Size(444, 28);
             this.label1.TabIndex = 17;
             this.label1.Text = "Thwartski Hud has been successfully installed!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -144,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.okButton;
             this.ClientSize = new System.Drawing.Size(474, 406);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.form2LayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -154,7 +154,7 @@
             this.Text = "Success";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.aspectImageBox)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.form2LayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -165,7 +165,7 @@
         private System.Windows.Forms.Button releaseNotesButton;
         private System.Windows.Forms.Button readmeButton;
         private System.Windows.Forms.Button faqButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel form2LayoutPanel;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Label label1;
     }
