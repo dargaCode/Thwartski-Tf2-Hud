@@ -21,9 +21,6 @@ namespace Thwartski_Hud_Installer
         //defining tooltips for the form
         static ToolTip HudInstallerTooltips = new ToolTip();
 
-        //boolean for backup checkbox
-        static Boolean createBackupFolders = false;
-
         //double new line for easily combining multi-line strings
         static string newNewLine =                      Environment.NewLine + Environment.NewLine;
 
@@ -32,8 +29,6 @@ namespace Thwartski_Hud_Installer
         static string tooltipAspectRatio =              String.Format(@"{1}{0}{2}", newNewLine, @"This will position your spectator hud correctly for competitive games.",  @"(Enable by checking 'Use Advanced Spectator Hud' under Advanced Options.)");
         static string tooltipMaxmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing on pub servers?",              @"(Switch scoreboards using the buttons on your in-game escape menu.)");
         static string tooltipMinmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing competitive games?",           @"(Switch scoreboards using the buttons on your in-game escape menu.)");
-        static string tooltipBackups =                  String.Format(@"{1}",       newNewLine, @"saving backups",                                                          @"(second line hidden)");
-
         //install/uninstall button tooltips for fresh uninstall
         static string tooltipInstallFreshMode =         String.Format(@"{1}{0}{2}", newNewLine, @"Install Thwartski Hud with the selected options.",                        @"(If you have custom hud files installed, they'll be backed up first.)");
         static string tooltipUninstallFreshMode =       String.Format(@"{1}{0}{2}", newNewLine, @"Uninstall Thwartski Hud and restore Valve's default hud files.",          @"(Thwartski Hud won't be backed up, but you can easily reinstall it.)");
@@ -103,6 +98,9 @@ namespace Thwartski_Hud_Installer
 
         //used for cycling through assetfolder directory
         static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
+
+        //array of filenames that valve automatically generates, so they can be left out from backups
+        static string[] forcedValveFiles = { "game.ico", "tf.ttf", "tf2.ttf", "tf2build.ttf", "tf2professor.ttf", "tf2secondary.ttf", "tfd.ttf" };
 
         //names of custom asset files for aspect options
         static string aspectAssetFileNormal =           "SpectatorTournament_Normal.res";
@@ -174,8 +172,7 @@ namespace Thwartski_Hud_Installer
             scoreboardSelectorMaxmode.Items.AddRange(scoreboardsMaxmode);
             scoreboardSelectorMinmode.Items.AddRange(scoreboardsMinmode);
 
-            //load settings for comboxes and checkboxes
-            backupCheckbox.Checked = Properties.Settings.Default.settingSaveBackups;
+            //load settings for comboxes
             aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
             scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
             scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
@@ -215,22 +212,6 @@ namespace Thwartski_Hud_Installer
                 }
             }
         }
-
-        //enable or disable creating backups when modifying hud files
-        private void backupCheckbox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (backupCheckbox.Checked)
-            {
-                //update global variable  (but not settings)
-                createBackupFolders = true;
-            }
-            else
-            {
-                //update global variable (but not settings)
-                createBackupFolders = false;
-            }
-        }
-
         //assign the correct image to be copied, depending on the combobox's selection
         private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -387,8 +368,8 @@ namespace Thwartski_Hud_Installer
             //disable form contents
             form1LayoutPanel.Enabled = false;
 
-            //attempt to delete the destination files
-            if (wipeHudFiles())
+            //attempt to delete the destination files (without saving backups)
+            if (wipeHudFiles(false))
             {
                 //show the success message (but only if the function returned true)
                 MessageBox.Show(uninstallCompleteMessage);
@@ -875,8 +856,6 @@ namespace Thwartski_Hud_Installer
             //assign install and uninstall tooltips
             HudInstallerTooltips.SetToolTip(this.installButton, tooltipInstallButton);
             HudInstallerTooltips.SetToolTip(this.uninstallButton, tooltipUninstallButton);
-            //assign backup tooltip
-            HudInstallerTooltips.SetToolTip(this.backupCheckbox, tooltipBackups);
         }
 
         /// <summary>
@@ -887,11 +866,10 @@ namespace Thwartski_Hud_Installer
             //the settings aren't saved until this method is run so the current options can be compared to the saved settings
             //and the install button can be enabled when options have changed.
 
-            //update the settings for each combobox and checkbox options (the folder browser path is saved right as it changes)
+            //update the settings for each combobox option (the folder browser path is saved right as it changes)
             Properties.Settings.Default.settingComboboxAspect = aspectSelector.SelectedIndex;
             Properties.Settings.Default.settingComboboxMaxmode = scoreboardSelectorMaxmode.SelectedIndex;
             Properties.Settings.Default.settingComboboxMinmode = scoreboardSelectorMinmode.SelectedIndex;
-            Properties.Settings.Default.settingSaveBackups = createBackupFolders;
 
             //now actually save the settings
             Properties.Settings.Default.Save();
@@ -908,11 +886,10 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         private void revertOptions()
         {
-            //update the settings for each combobox and checkbox options (the folder browser path is saved right as it changes)
+            //update the settings for each combobox options (the folder browser path is saved right as it changes)
             aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
             scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
             scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-            createBackupFolders = Properties.Settings.Default.settingSaveBackups;
 
             //update options so that modified options won't remain highlighted
             detectOptionsChanges();
@@ -931,8 +908,11 @@ namespace Thwartski_Hud_Installer
             //Used for iterating through file and folder lists
             DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
 
-            //attempt to delete the destination files (contains its own exception handling)
-            if (!wipeHudFiles())
+            //delete the files that are automatically created on game launch
+            deleteForcedValveFiles();
+
+            //attempt to delete the destination files (and save backups)
+            if (!wipeHudFiles(true))
             {
                 //wiping the hud failed; immediately return false
                 return false;
@@ -1005,9 +985,9 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        public bool wipeHudFiles()
+        public bool wipeHudFiles(bool saveBackups)
         {
-            //Establish backup time so different folders can't straddle multiple seconds. (this actually has been happening)
+            //Establish backup time once so different folders can't straddle multiple seconds. (this actually has been happening)
             string timestampFolderName = String.Format(@"\Date-{0:yyyy-MM-dd_}Time.{1:HH.mm.ss}\", DateTime.Now, DateTime.Now);
             //MessageBox.Show(timestampFolderName);
 
@@ -1018,7 +998,7 @@ namespace Thwartski_Hud_Installer
                 DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
                 foreach (DirectoryInfo assetSubFolder in assetSubFolders)
                 {
-                    backupAndDeleteFolder(installPath, assetSubFolder, backupPath, createBackupFolders, timestampFolderName);
+                    backupAndDeleteFolder(installPath, assetSubFolder, backupPath, saveBackups, timestampFolderName);
                 }
             }
             catch (System.IO.DirectoryNotFoundException)
@@ -1058,6 +1038,45 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
+        /// Delete the valve files which are created on game launch, so they don't trigger a pointless backup.
+        /// </summary>
+        static void deleteForcedValveFiles()
+        {
+            //shorter local string name for readability
+            string Resource = customInstallPathResource;
+
+            //one large try for everything since this fail isn't important
+            try
+            {
+                //go through the list of valve fonts/icons and delete them if they exist
+                foreach (string forcedValveFile in forcedValveFiles)
+                {
+                    if (File.Exists(Resource + forcedValveFile))
+                    {
+                        File.Delete(Resource + forcedValveFile);
+                        //MessageBox.Show("deleting " + ValveFile);
+                    }
+                }
+                //if resources exists but is empty, delete it so it won't generate a useless backup for one empty folder
+                if (Directory.Exists(Resource))
+                {
+                    //MessageBox.Show(String.Format(@"{0} has {1} files and {2} folders after cleanup", Resource, Convert.ToString(Directory.GetFiles(Resource).Length), Convert.ToString(Directory.GetDirectories(Resource).Length)));
+
+                    if (Directory.GetDirectories(Resource).Length == 0 && Directory.GetFiles(Resource).Length == 0)
+                    {
+                        Directory.Delete(Resource);
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                //swallowing this exception
+                //if this method fails to do its job, an unnecessary backup may be created, but that's it
+                //it's not worth warning the user about
+            }
+        }
+
+        /// <summary>
         /// Back up the folder with a timestamp, then delete it and all its contents.
         /// </summary>
         /// <param name="sourceFolder"></param>
@@ -1072,12 +1091,11 @@ namespace Thwartski_Hud_Installer
 
             if (existingFolderDir.Exists)
             {
-                //If the player hasn't deleted it, and they checked the option, back the folder up.
+                //If the player hasn't deleted it, and a request for backups has been passed in, back the folder up.
                 if (backupDesired)
                 {
                     copyFilesAndFolders(existingFolderDir, backupFolderDir);
                 }
-
                 //delete existing hud file either way
                 Directory.Delete(existingCompletePath, true);
             }
