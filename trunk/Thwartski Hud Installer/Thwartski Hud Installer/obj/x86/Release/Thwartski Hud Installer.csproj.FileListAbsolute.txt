@@ -1,11 +1,12 @@
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\bin\Release\Thwartski Hud Installer.exe
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\bin\Release\Thwartski Hud Installer.pdb
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\ResolveAssemblyReference.cache
-e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski_Hud_Installer.Form1.resources
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski_Hud_Installer.Properties.Resources.resources
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\GenerateResource.read.1.tlog
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\GenerateResource.write.1.tlog
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski Hud Installer.exe
 e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski Hud Installer.pdb
 e:\Userdata\My Documents\Visual Studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\bin\Release\Thwartski Hud Installer.exe.config
-E:\Userdata\My Documents\Visual Studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski_Hud_Installer.Form2.resources
+e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\bin\Release\ICSharpCode.SharpZipLib.dll
+e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski_Hud_Installer.mainForm.resources
+e:\userdata\my documents\visual studio 2010\Projects\Thwartski Hud Installer\Thwartski Hud Installer\obj\x86\Release\Thwartski_Hud_Installer.successForm.resources

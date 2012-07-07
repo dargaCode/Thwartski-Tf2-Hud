@@ -10,7 +10,7 @@ using System.Diagnostics;
 
 namespace Thwartski_Hud_Installer
 {
-    public partial class Form2 : Form
+    public partial class successForm : Form
     {
         //global variable strings
         
@@ -25,12 +25,12 @@ namespace Thwartski_Hud_Installer
         static string exceptionDocumentationMissing = "The documentation file could not be found! \n \nYou may need to reinstall the hud if other files are missing.";
 
         //somehow making Form1 accessible from by form2
-        private Form1 mainForm = null;
+        private mainForm mainForm = null;
         //making form2 accept an argument from the form that created it
-        public Form2(Form callingForm, string installationLocation)
+        public successForm(Form callingForm, string installationLocation)
         {
             //need to understand "as" better
-            mainForm = callingForm as Form1;
+            mainForm = callingForm as mainForm;
             InitializeComponent();
 
             //update the documentation path so text files can be loaded

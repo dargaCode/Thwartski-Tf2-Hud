@@ -1,6 +1,6 @@
 ﻿namespace Thwartski_Hud_Installer
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.browseFolderInstructionsLabel = new System.Windows.Forms.Label();
             this.aspectLabel = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.folderBrowserButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.folderBrowserBoxLabel = new System.Windows.Forms.Label();
+            this.downloadButton = new System.Windows.Forms.Button();
             this.form1LayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMaxmode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMinmode)).BeginInit();
@@ -153,7 +154,7 @@
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeLabel, 5, 7);
             this.form1LayoutPanel.Controls.Add(this.scoreboardSelectorMinmode, 6, 8);
             this.form1LayoutPanel.Controls.Add(this.uninstallButton, 1, 9);
@@ -167,6 +168,7 @@
             this.form1LayoutPanel.Controls.Add(this.aspectLabel, 3, 4);
             this.form1LayoutPanel.Controls.Add(this.browseFolderInstructionsLabel, 2, 0);
             this.form1LayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 1);
+            this.form1LayoutPanel.Controls.Add(this.downloadButton, 4, 8);
             this.form1LayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.form1LayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.form1LayoutPanel.Name = "form1LayoutPanel";
@@ -302,7 +304,19 @@
             this.folderBrowserBoxLabel.TabIndex = 32;
             this.folderBrowserBoxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Form1
+            // downloadButton
+            // 
+            this.form1LayoutPanel.SetColumnSpan(this.downloadButton, 2);
+            this.downloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.downloadButton.Location = new System.Drawing.Point(195, 479);
+            this.downloadButton.Name = "downloadButton";
+            this.downloadButton.Size = new System.Drawing.Size(106, 38);
+            this.downloadButton.TabIndex = 31;
+            this.downloadButton.Text = "Download Test";
+            this.downloadButton.UseVisualStyleBackColor = true;
+            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
+            // 
+            // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -312,7 +326,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thwartski Hud Installer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
@@ -348,6 +362,7 @@
         private System.Windows.Forms.Button folderBrowserButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label folderBrowserBoxLabel;
+        private System.Windows.Forms.Button downloadButton;
     }
 }
 

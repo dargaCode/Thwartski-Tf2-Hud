@@ -1,6 +1,6 @@
 ﻿namespace Thwartski_Hud_Installer
 {
-    partial class Form2
+    partial class successForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(successForm));
             this.aspectImageBox = new System.Windows.Forms.PictureBox();
             this.releaseNotesButton = new System.Windows.Forms.Button();
             this.readmeButton = new System.Windows.Forms.Button();
