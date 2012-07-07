@@ -69,11 +69,11 @@
             this.backupsLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.32603F));
             this.backupsLayoutPanel.Controls.Add(this.backupCheckbox, 1, 0);
             this.backupsLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backupsLayoutPanel.Location = new System.Drawing.Point(160, 574);
+            this.backupsLayoutPanel.Location = new System.Drawing.Point(158, 574);
             this.backupsLayoutPanel.Name = "backupsLayoutPanel";
             this.backupsLayoutPanel.RowCount = 1;
             this.backupsLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.backupsLayoutPanel.Size = new System.Drawing.Size(202, 25);
+            this.backupsLayoutPanel.Size = new System.Drawing.Size(198, 25);
             this.backupsLayoutPanel.TabIndex = 4;
             // 
             // backupCheckbox
@@ -81,7 +81,7 @@
             this.backupCheckbox.AutoSize = true;
             this.backupCheckbox.Dock = System.Windows.Forms.DockStyle.Top;
             this.backupCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backupCheckbox.Location = new System.Drawing.Point(26, 3);
+            this.backupCheckbox.Location = new System.Drawing.Point(24, 3);
             this.backupCheckbox.Name = "backupCheckbox";
             this.backupCheckbox.Size = new System.Drawing.Size(150, 19);
             this.backupCheckbox.TabIndex = 4;
@@ -94,9 +94,9 @@
             // 
             this.form1LayoutPanel.SetColumnSpan(this.folderBrowserButton, 2);
             this.folderBrowserButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.folderBrowserButton.Location = new System.Drawing.Point(420, 43);
+            this.folderBrowserButton.Location = new System.Drawing.Point(413, 43);
             this.folderBrowserButton.Name = "folderBrowserButton";
-            this.folderBrowserButton.Size = new System.Drawing.Size(79, 21);
+            this.folderBrowserButton.Size = new System.Drawing.Size(78, 21);
             this.folderBrowserButton.TabIndex = 1;
             this.folderBrowserButton.Text = "Browse";
             this.folderBrowserButton.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             this.form1LayoutPanel.SetColumnSpan(this.browseFolderInstructionsLabel, 6);
             this.browseFolderInstructionsLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.browseFolderInstructionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.browseFolderInstructionsLabel.Location = new System.Drawing.Point(108, 17);
+            this.browseFolderInstructionsLabel.Location = new System.Drawing.Point(107, 17);
             this.browseFolderInstructionsLabel.Name = "browseFolderInstructionsLabel";
-            this.browseFolderInstructionsLabel.Size = new System.Drawing.Size(306, 15);
+            this.browseFolderInstructionsLabel.Size = new System.Drawing.Size(300, 15);
             this.browseFolderInstructionsLabel.TabIndex = 3;
             this.browseFolderInstructionsLabel.Text = "Please select your Team Fortress 2 folder:";
             this.browseFolderInstructionsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,9 +122,9 @@
             this.form1LayoutPanel.SetColumnSpan(this.aspectLabel, 4);
             this.aspectLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aspectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aspectLabel.Location = new System.Drawing.Point(160, 229);
+            this.aspectLabel.Location = new System.Drawing.Point(158, 229);
             this.aspectLabel.Name = "aspectLabel";
-            this.aspectLabel.Size = new System.Drawing.Size(202, 25);
+            this.aspectLabel.Size = new System.Drawing.Size(198, 25);
             this.aspectLabel.TabIndex = 6;
             this.aspectLabel.Text = "What shape is your monitor?";
             this.aspectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,9 +137,9 @@
             this.aspectSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.aspectSelector.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aspectSelector.FormattingEnabled = true;
-            this.aspectSelector.Location = new System.Drawing.Point(212, 257);
+            this.aspectSelector.Location = new System.Drawing.Point(209, 257);
             this.aspectSelector.Name = "aspectSelector";
-            this.aspectSelector.Size = new System.Drawing.Size(98, 21);
+            this.aspectSelector.Size = new System.Drawing.Size(96, 21);
             this.aspectSelector.TabIndex = 2;
             this.aspectSelector.SelectedIndexChanged += new System.EventHandler(this.aspectSelector_SelectedIndexChanged);
             // 
@@ -151,7 +151,7 @@
             this.scoreboardMaxmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scoreboardMaxmodeLabel.Location = new System.Drawing.Point(56, 449);
             this.scoreboardMaxmodeLabel.Name = "scoreboardMaxmodeLabel";
-            this.scoreboardMaxmodeLabel.Size = new System.Drawing.Size(202, 21);
+            this.scoreboardMaxmodeLabel.Size = new System.Drawing.Size(198, 21);
             this.scoreboardMaxmodeLabel.TabIndex = 12;
             this.scoreboardMaxmodeLabel.Text = "Pub Server Scoreboard:";
             this.scoreboardMaxmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,9 +162,9 @@
             this.installButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.installButton.Enabled = false;
             this.installButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.installButton.Location = new System.Drawing.Point(264, 517);
+            this.installButton.Location = new System.Drawing.Point(260, 517);
             this.installButton.Name = "installButton";
-            this.installButton.Size = new System.Drawing.Size(202, 51);
+            this.installButton.Size = new System.Drawing.Size(198, 51);
             this.installButton.TabIndex = 15;
             this.installButton.Text = "Install Hud";
             this.installButton.UseVisualStyleBackColor = true;
@@ -178,7 +178,7 @@
             this.uninstallButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uninstallButton.Location = new System.Drawing.Point(56, 517);
             this.uninstallButton.Name = "uninstallButton";
-            this.uninstallButton.Size = new System.Drawing.Size(202, 51);
+            this.uninstallButton.Size = new System.Drawing.Size(198, 51);
             this.uninstallButton.TabIndex = 18;
             this.uninstallButton.TabStop = false;
             this.uninstallButton.Text = "Uninstall Hud";
@@ -199,7 +199,7 @@
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.78452F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.78266F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.865629F));
-            this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeLabel, 6, 7);
             this.form1LayoutPanel.Controls.Add(this.scoreboardSelectorMinmode, 7, 8);
             this.form1LayoutPanel.Controls.Add(this.uninstallButton, 2, 9);
@@ -240,9 +240,9 @@
             this.form1LayoutPanel.SetColumnSpan(this.scoreboardMinmodeLabel, 4);
             this.scoreboardMinmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardMinmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreboardMinmodeLabel.Location = new System.Drawing.Point(264, 449);
+            this.scoreboardMinmodeLabel.Location = new System.Drawing.Point(260, 449);
             this.scoreboardMinmodeLabel.Name = "scoreboardMinmodeLabel";
-            this.scoreboardMinmodeLabel.Size = new System.Drawing.Size(202, 21);
+            this.scoreboardMinmodeLabel.Size = new System.Drawing.Size(198, 21);
             this.scoreboardMinmodeLabel.TabIndex = 28;
             this.scoreboardMinmodeLabel.Text = "Competitive Scoreboard:";
             this.scoreboardMinmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,9 +253,9 @@
             this.scoreboardSelectorMinmode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardSelectorMinmode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.scoreboardSelectorMinmode.FormattingEnabled = true;
-            this.scoreboardSelectorMinmode.Location = new System.Drawing.Point(316, 473);
+            this.scoreboardSelectorMinmode.Location = new System.Drawing.Point(311, 473);
             this.scoreboardSelectorMinmode.Name = "scoreboardSelectorMinmode";
-            this.scoreboardSelectorMinmode.Size = new System.Drawing.Size(98, 21);
+            this.scoreboardSelectorMinmode.Size = new System.Drawing.Size(96, 21);
             this.scoreboardSelectorMinmode.TabIndex = 27;
             this.scoreboardSelectorMinmode.SelectedIndexChanged += new System.EventHandler(this.scoreboardSelectorMinmode_SelectedIndexChanged);
             // 
@@ -265,9 +265,9 @@
             this.scoreboardSelectorMaxmode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardSelectorMaxmode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.scoreboardSelectorMaxmode.FormattingEnabled = true;
-            this.scoreboardSelectorMaxmode.Location = new System.Drawing.Point(108, 473);
+            this.scoreboardSelectorMaxmode.Location = new System.Drawing.Point(107, 473);
             this.scoreboardSelectorMaxmode.Name = "scoreboardSelectorMaxmode";
-            this.scoreboardSelectorMaxmode.Size = new System.Drawing.Size(98, 21);
+            this.scoreboardSelectorMaxmode.Size = new System.Drawing.Size(96, 21);
             this.scoreboardSelectorMaxmode.TabIndex = 3;
             this.scoreboardSelectorMaxmode.SelectedIndexChanged += new System.EventHandler(this.scoreboardSelectorMaxmode_SelectedIndexChanged);
             // 
@@ -277,7 +277,7 @@
             this.scoreboardPictureboxMaxmode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.scoreboardPictureboxMaxmode.Location = new System.Drawing.Point(56, 301);
             this.scoreboardPictureboxMaxmode.Name = "scoreboardPictureboxMaxmode";
-            this.scoreboardPictureboxMaxmode.Size = new System.Drawing.Size(202, 145);
+            this.scoreboardPictureboxMaxmode.Size = new System.Drawing.Size(198, 145);
             this.scoreboardPictureboxMaxmode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.scoreboardPictureboxMaxmode.TabIndex = 19;
             this.scoreboardPictureboxMaxmode.TabStop = false;
@@ -286,9 +286,9 @@
             // 
             this.form1LayoutPanel.SetColumnSpan(this.scoreboardPictureboxMinmode, 4);
             this.scoreboardPictureboxMinmode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardPictureboxMinmode.Location = new System.Drawing.Point(264, 301);
+            this.scoreboardPictureboxMinmode.Location = new System.Drawing.Point(260, 301);
             this.scoreboardPictureboxMinmode.Name = "scoreboardPictureboxMinmode";
-            this.scoreboardPictureboxMinmode.Size = new System.Drawing.Size(202, 145);
+            this.scoreboardPictureboxMinmode.Size = new System.Drawing.Size(198, 145);
             this.scoreboardPictureboxMinmode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.scoreboardPictureboxMinmode.TabIndex = 26;
             this.scoreboardPictureboxMinmode.TabStop = false;
@@ -297,9 +297,9 @@
             // 
             this.form1LayoutPanel.SetColumnSpan(this.aspectImageBox, 6);
             this.aspectImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aspectImageBox.Location = new System.Drawing.Point(108, 81);
+            this.aspectImageBox.Location = new System.Drawing.Point(107, 81);
             this.aspectImageBox.Name = "aspectImageBox";
-            this.aspectImageBox.Size = new System.Drawing.Size(306, 145);
+            this.aspectImageBox.Size = new System.Drawing.Size(300, 145);
             this.aspectImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.aspectImageBox.TabIndex = 10;
             this.aspectImageBox.TabStop = false;
@@ -316,7 +316,7 @@
             this.browserLayoutPanel.Name = "browserLayoutPanel";
             this.browserLayoutPanel.RowCount = 1;
             this.browserLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.browserLayoutPanel.Size = new System.Drawing.Size(391, 29);
+            this.browserLayoutPanel.Size = new System.Drawing.Size(384, 29);
             this.browserLayoutPanel.TabIndex = 25;
             // 
             // folderBrowserBoxLabel
@@ -325,7 +325,7 @@
             this.folderBrowserBoxLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.folderBrowserBoxLabel.Location = new System.Drawing.Point(10, 8);
             this.folderBrowserBoxLabel.Name = "folderBrowserBoxLabel";
-            this.folderBrowserBoxLabel.Size = new System.Drawing.Size(378, 21);
+            this.folderBrowserBoxLabel.Size = new System.Drawing.Size(371, 21);
             this.folderBrowserBoxLabel.TabIndex = 25;
             this.folderBrowserBoxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
