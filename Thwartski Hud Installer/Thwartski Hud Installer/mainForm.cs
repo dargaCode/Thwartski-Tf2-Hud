@@ -7,10 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using System.Net;
+using ICSharpCode.SharpZipLib.Zip;
+using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 
 namespace Thwartski_Hud_Installer
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
 
 
@@ -86,7 +89,7 @@ namespace Thwartski_Hud_Installer
         static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath); 
         
         //paths for copying assets and installing them
-        static string assetPath =                       exeFolder + @"\Install Files\";
+        static string assetPath =                       exeFolder + @"\Asset Files\";
         static string installPathTfSubFolder =          @"\tf\";
         static string installPathResourceSubfolder =    @"resource\";
         static string installPathUiSubfolder =          @"ui\";
@@ -151,7 +154,7 @@ namespace Thwartski_Hud_Installer
 
 
 
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
         }
@@ -306,7 +309,7 @@ namespace Thwartski_Hud_Installer
             if (installHud())
             {
                 //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
-                Form2 installSuccessForm = new Form2(this, installPath);
+                successForm installSuccessForm = new successForm(this, installPath);
 
                 //show form2 only if the install succeeded
                 installSuccessForm.Show();
@@ -392,8 +395,10 @@ namespace Thwartski_Hud_Installer
 
 
         //CUSTOM METHODS BELOW THIS POINT
-        
 
+
+
+  
 
         /// <summary>
         /// Take a guess where the right folder is, and set it as the default browser location if it exists.
@@ -1227,6 +1232,107 @@ namespace Thwartski_Hud_Installer
             //if the game is launching properly, allow the app to close
             return true;
         }
+
+
+        //testing for downloading and upzipping files
+
+        private void downloadButton_Click(object sender, EventArgs e)
+        {
+            downloadAssets();
+
+            //MessageBox.Show("download done");
+
+            string zipFile = assetPath + "Asset Files.zip";
+            string unZipTarget = assetPath;
+
+            unZip(zipFile, unZipTarget);
+
+            MessageBox.Show("unzip done");
+
+        }
+
+        /// <summary>
+        /// Download the hud assets
+        /// </summary>
+        /// <returns></returns>
+        public bool downloadAssets()
+        {
+
+            if (!assetFolderDir.Exists)
+            {
+                assetFolderDir.Create();
+            }
+
+
+
+            try
+            {
+                using (var client = new WebClient())
+                {
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.0_test.zip", assetPath + "Asset Files.zip");
+                }
+            }
+            catch (System.Exception problem)
+            {
+                //generic exception for unexpected case
+                errorWindow(problem.Message);
+
+                //stop the function, send false back to stop the rest of the button functionality.
+                return false;
+            }
+
+            return true;
+        }
+
+
+        public static void unZip(string sourceZipFile, string DestinationFolder)     
+        {
+            using (ZipInputStream s = new ZipInputStream(File.OpenRead(sourceZipFile)))
+            {
+
+                ZipEntry theEntry;
+                while ((theEntry = s.GetNextEntry()) != null)
+                {
+
+                    string directoryName = Path.GetDirectoryName(theEntry.Name);
+                    string fileName = Path.GetFileName(theEntry.Name);
+
+                    // create directory
+                    if (directoryName.Length > 0)
+                    {
+                        Directory.CreateDirectory(DestinationFolder + directoryName);
+                    }
+
+                    if (fileName != String.Empty)
+                    {
+                        using (FileStream streamWriter = File.Create(DestinationFolder + theEntry.Name))
+                        {
+
+                            int size = 2048;
+                            byte[] data = new byte[2048];
+                            while (true)
+                            {
+                                size = s.Read(data, 0, data.Length);
+                                if (size > 0)
+                                {
+                                    streamWriter.Write(data, 0, size);
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
 
     }
 }
