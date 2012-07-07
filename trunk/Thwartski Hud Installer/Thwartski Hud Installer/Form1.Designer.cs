@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.backupsLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.folderBrowserButton = new System.Windows.Forms.Button();
             this.browseFolderInstructionsLabel = new System.Windows.Forms.Label();
             this.aspectLabel = new System.Windows.Forms.Label();
@@ -57,21 +56,6 @@
             // folderBrowserDialog1
             // 
             this.folderBrowserDialog1.ShowNewFolderButton = false;
-            // 
-            // backupsLayoutPanel
-            // 
-            this.backupsLayoutPanel.ColumnCount = 3;
-            this.form1LayoutPanel.SetColumnSpan(this.backupsLayoutPanel, 4);
-            this.backupsLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.67397F));
-            this.backupsLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
-            this.backupsLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.32603F));
-            this.backupsLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backupsLayoutPanel.Location = new System.Drawing.Point(165, 574);
-            this.backupsLayoutPanel.Name = "backupsLayoutPanel";
-            this.backupsLayoutPanel.RowCount = 1;
-            this.backupsLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.backupsLayoutPanel.Size = new System.Drawing.Size(210, 25);
-            this.backupsLayoutPanel.TabIndex = 4;
             // 
             // folderBrowserButton
             // 
@@ -148,7 +132,7 @@
             this.installButton.Location = new System.Drawing.Point(273, 517);
             this.installButton.Name = "installButton";
             this.installButton.Size = new System.Drawing.Size(210, 51);
-            this.installButton.TabIndex = 15;
+            this.installButton.TabIndex = 0;
             this.installButton.Text = "Install Hud";
             this.installButton.UseVisualStyleBackColor = true;
             this.installButton.Click += new System.EventHandler(this.installButton_InstallClick);
@@ -162,8 +146,7 @@
             this.uninstallButton.Location = new System.Drawing.Point(57, 517);
             this.uninstallButton.Name = "uninstallButton";
             this.uninstallButton.Size = new System.Drawing.Size(210, 51);
-            this.uninstallButton.TabIndex = 18;
-            this.uninstallButton.TabStop = false;
+            this.uninstallButton.TabIndex = 5;
             this.uninstallButton.Text = "Uninstall Hud";
             this.uninstallButton.UseVisualStyleBackColor = true;
             this.uninstallButton.Click += new System.EventHandler(this.uninstallButton_Click);
@@ -197,7 +180,6 @@
             this.form1LayoutPanel.Controls.Add(this.browseFolderInstructionsLabel, 3, 0);
             this.form1LayoutPanel.Controls.Add(this.folderBrowserButton, 9, 1);
             this.form1LayoutPanel.Controls.Add(this.browserLayoutPanel, 1, 1);
-            this.form1LayoutPanel.Controls.Add(this.backupsLayoutPanel, 4, 10);
             this.form1LayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.form1LayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.form1LayoutPanel.Name = "form1LayoutPanel";
@@ -239,7 +221,7 @@
             this.scoreboardSelectorMinmode.Location = new System.Drawing.Point(327, 473);
             this.scoreboardSelectorMinmode.Name = "scoreboardSelectorMinmode";
             this.scoreboardSelectorMinmode.Size = new System.Drawing.Size(102, 21);
-            this.scoreboardSelectorMinmode.TabIndex = 27;
+            this.scoreboardSelectorMinmode.TabIndex = 4;
             this.scoreboardSelectorMinmode.SelectedIndexChanged += new System.EventHandler(this.scoreboardSelectorMinmode_SelectedIndexChanged);
             // 
             // scoreboardSelectorMaxmode
@@ -340,7 +322,6 @@
         #endregion
 
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.TableLayoutPanel backupsLayoutPanel;
         private System.Windows.Forms.TableLayoutPanel form1LayoutPanel;
         private System.Windows.Forms.Button uninstallButton;
         private System.Windows.Forms.Button installButton;
