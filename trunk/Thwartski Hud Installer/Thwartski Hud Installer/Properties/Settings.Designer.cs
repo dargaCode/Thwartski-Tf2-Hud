@@ -25,18 +25,6 @@ namespace Thwartski_Hud_Installer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool settingSaveBackups {
-            get {
-                return ((bool)(this["settingSaveBackups"]));
-            }
-            set {
-                this["settingSaveBackups"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int settingComboboxAspect {
             get {
