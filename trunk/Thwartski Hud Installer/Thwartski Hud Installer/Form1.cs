@@ -28,21 +28,23 @@ namespace Thwartski_Hud_Installer
         static string newNewLine =                      Environment.NewLine + Environment.NewLine;
 
         //tooltip messages
-        static string tooltipFolderBrowse =             String.Format(@"{1}{0}{2}", newNewLine, @"Use the Browse button to select your 'Team Fortress 2' folder.",           @"(You'll find it under \YOUR STEAM FOLDER\steamapps\YOUR STEAM USERNAME.)");
-        static string tooltipAspectRatio =              String.Format(@"{1}{0}{2}", newNewLine, @"This will position your spectator hud correctly for competitive games.",   @"(Enable by checking 'Use Advanced Spectator Hud' under Advanced Options.)");
-        static string tooltipMaxmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing on pub servers?",               @"(Switch scoreboards using the buttons on your in-game escape menu.)");
-        static string tooltipMinmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing competitive games?",            @"(Switch scoreboards using the buttons on your in-game escape menu.)");
-        static string tooltipBackups =                  String.Format(@"{1}",       newNewLine, @"saving backups",                                                           @"(second line hidden)");
+        static string tooltipFolderBrowse =             String.Format(@"{1}{0}{2}", newNewLine, @"Use the Browse button to select your 'Team Fortress 2' folder.",          @"(You'll find it under \YOUR STEAM FOLDER\steamapps\YOUR STEAM USERNAME.)");
+        static string tooltipAspectRatio =              String.Format(@"{1}{0}{2}", newNewLine, @"This will position your spectator hud correctly for competitive games.",  @"(Enable by checking 'Use Advanced Spectator Hud' under Advanced Options.)");
+        static string tooltipMaxmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing on pub servers?",              @"(Switch scoreboards using the buttons on your in-game escape menu.)");
+        static string tooltipMinmode =                  String.Format(@"{1}{0}{2}", newNewLine, @"Which scoreboard will you use when playing competitive games?",           @"(Switch scoreboards using the buttons on your in-game escape menu.)");
+        static string tooltipBackups =                  String.Format(@"{1}",       newNewLine, @"saving backups",                                                          @"(second line hidden)");
 
         //install/uninstall button tooltips for fresh uninstall
-        static string tooltipInstallFreshMode =         String.Format(@"{1}{0}{2}", newNewLine, @"Install Thwartski Hud with the selected options.",                         @"(If you have custom hud files installed, they'll be backed up first.)");
-        static string tooltipUninstallFreshMode =       String.Format(@"{1}{0}{2}", newNewLine, @"Uninstall Thwartski Hud and restore Valve's default hud files.",           @"(Thwartski Hud won't be backed up, but you can easily reinstall it.)");
+        static string tooltipInstallFreshMode =         String.Format(@"{1}{0}{2}", newNewLine, @"Install Thwartski Hud with the selected options.",                        @"(If you have custom hud files installed, they'll be backed up first.)");
+        static string tooltipUninstallFreshMode =       String.Format(@"{1}{0}{2}", newNewLine, @"Uninstall Thwartski Hud and restore Valve's default hud files.",          @"(Thwartski Hud won't be backed up, but you can easily reinstall it.)");
         //install/uninstall button tooltips for updating options
-        static string tooltipInstallUpdateMode =        String.Format(@"{1}{0}{2}", newNewLine, @"Update the modified options only.",                                        @"(Unlike installing, this action can be performed with the game running.)");
-        static string tooltipUninstallUpdateMode =      String.Format(@"{1}",       newNewLine, @"Ignore the modified options and uninstall Thwartski Hud.",                 @"(second line hidden)");
+        static string tooltipInstallOptionsMode =       String.Format(@"{1}{0}{2}", newNewLine, @"Update the modified options only.",                                       @"(Unlike installing, this action can be performed with the game running.)");
+        static string tooltipUninstallOptionsMode =     String.Format(@"{1}",       newNewLine, @"Ignore the modified options and uninstall Thwartski Hud.",                @"(second line hidden)");
+        //install button tooltip for launching game
+        static string tooltipInstallLaunchMode =        String.Format(@"{1}",       newNewLine, @"Launch TF2 and close the installer.",                                     @"(second line hidden)");
         //default install/uninstall button tooltips
         static string tooltipInstallButton =            tooltipInstallFreshMode;    //overridden in installButtonMode
-        static string tooltipUninstallButton =          tooltipInstallUpdateMode;   //overridden in installButtonMode
+        static string tooltipUninstallButton =          tooltipInstallOptionsMode;  //overridden in installButtonMode
 
         //exception messages
         static string exceptionFolderOpen =             String.Format(@"{1}{0}{2}", newNewLine, @"The previous hud installation could not be deleted!",                     @"Please make sure your hud folders are closed.");
@@ -63,8 +65,8 @@ namespace Thwartski_Hud_Installer
 
         //display text for install button modes
         static string freshMode =                       "Install Hud";
-        static string updateMode =                      "Update Options";
-        static string disabledMode =                    "Already Installed";
+        static string optionsMode =                     "Save Options";
+        static string launchMode =                      "Launch TF2";
         
         //paths for populating the folder browser
         static string defaultSteamappsFolder32Bit =     @"C:\Program Files (x86)\Steam\steamapps\";
@@ -141,6 +143,9 @@ namespace Thwartski_Hud_Installer
         //file and path to let the buttons know the hud is installed
         static string installCheckerFile =              "Thwartski Hud Installed.txt";
         static string installCheckerDestination;        //written at runtime
+
+        //string for launching tf2
+        static string teamFortressLaunchCommand =       "steam://rungameid/440";
 
 
 
@@ -337,7 +342,7 @@ namespace Thwartski_Hud_Installer
         }
 
         //actually install the hud or update the installation with new custom files
-        private void installButton_UpdateClick(object sender, EventArgs e)
+        private void installButton_OptionsClick(object sender, EventArgs e)
         {
             //disable form contents
             form1LayoutPanel.Enabled = false;
@@ -355,6 +360,15 @@ namespace Thwartski_Hud_Installer
             saveOptions();
         }
 
+        //when there is nothing to install or save, launch the game
+        private void installButton_LaunchClick(object sender, EventArgs e)
+        {
+            //launch the game
+            launchGame();
+
+            //close form1
+            this.Close();
+        }
 
         //public custom event called by form2 as it closes
         public void Form1_ReenabledByForm2(object sender, EventArgs e)
@@ -710,14 +724,14 @@ namespace Thwartski_Hud_Installer
                 //if the hud is installed but options have changed, install button has special rules
                 if (detectOptionsChanges())
                 {
-                    //update mode changes the event on the button and its text
-                    installButtonMode(updateMode);
+                    //options mode changes the event on the button and its text
+                    installButtonMode(optionsMode);
                 }
                 //if the hud is installed and no options have changed, it's redundant
                 else
                 {
-                    //disabled mode cleans up extra events from the buttons and disables it
-                    installButtonMode(disabledMode);
+                    //launch mode changes the event on the button and its text
+                    installButtonMode(launchMode);
                 }
             }
             //the hud is not currently installed
@@ -753,10 +767,6 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         private void installButtonMode(string modeSetting)
         {
-            //defining fonts to use for bolding and unbolding the button text
-            Font unboldedButtonFont = new Font(installButton.Font, FontStyle.Regular);
-            Font boldedButtonFont = new Font(installButton.Font, FontStyle.Bold);
-
             //fresh mode
             if (modeSetting == freshMode)
             {
@@ -765,18 +775,14 @@ namespace Thwartski_Hud_Installer
 
                 //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
 
                 //change the install button click event to the normal install event
                 this.installButton.Click += new System.EventHandler(this.installButton_InstallClick);
 
                 //enable the install button
                 installButton.Enabled = true;
-
-                //bold the install button
-                installButton.Font = boldedButtonFont;
-                //unbold the uninstall button
-                uninstallButton.Font = unboldedButtonFont;
 
                 //update tooltips for fresh mode
                 tooltipInstallButton = tooltipInstallFreshMode;
@@ -786,59 +792,54 @@ namespace Thwartski_Hud_Installer
                 updateTooltips();
             }
             //update options mode
-            else if (modeSetting == updateMode)
+            else if (modeSetting == optionsMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
 
                 //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
 
-                //change the install button click event to the special update event
-                this.installButton.Click += new System.EventHandler(this.installButton_UpdateClick);
+                //change the install button click event to the special options event
+                this.installButton.Click += new System.EventHandler(this.installButton_OptionsClick);
 
                 //enable the install button
                 installButton.Enabled = true;
 
-                //bold the install button
-                installButton.Font = boldedButtonFont;
-                //unbold the uninstall button
-                uninstallButton.Font = unboldedButtonFont;
-
-                //update tooltips for update mode
-                tooltipInstallButton = tooltipInstallUpdateMode;
-                tooltipUninstallButton = tooltipUninstallUpdateMode;
+                //update tooltips for options mode
+                tooltipInstallButton = tooltipInstallOptionsMode;
+                tooltipUninstallButton = tooltipUninstallOptionsMode;
 
                 //generate tooltips with the updated strings
                 updateTooltips();
             }
-            //disabled mode
-            else if (modeSetting == disabledMode)
+            //launch mode
+            else if (modeSetting == launchMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
 
                 //clean up old events on the install button
                 this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_UpdateClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
+                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
 
-                //disable the install button
-                installButton.Enabled = false;
+                //change the install button click event to the special update event
+                this.installButton.Click += new System.EventHandler(this.installButton_LaunchClick);
 
-                //unbold the install button
-                installButton.Font = unboldedButtonFont;
-                //bold the uninstall button
-                uninstallButton.Font = boldedButtonFont;
+                //enable the install button
+                installButton.Enabled = true;
 
-                //update tooltips for disabled mode
-                tooltipInstallButton = tooltipInstallFreshMode;
+                //update tooltips for launch mode
+                tooltipInstallButton = tooltipInstallLaunchMode;
                 tooltipUninstallButton = tooltipUninstallFreshMode;
-                
+
                 //generate tooltips with the updated strings
                 updateTooltips();
-
             }
+
             //something broke
             else
             {
@@ -1186,6 +1187,12 @@ namespace Thwartski_Hud_Installer
             //open a special messagebox with Error as the window text and an icon
             MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
         }
-       
+
+        private void launchGame()
+        {
+            //launch tf2
+            System.Diagnostics.Process.Start(teamFortressLaunchCommand);
+        }
+
     }
 }
