@@ -363,11 +363,12 @@ namespace Thwartski_Hud_Installer
         //when there is nothing to install or save, launch the game
         private void installButton_LaunchClick(object sender, EventArgs e)
         {
-            //launch the game
-            launchGame();
-
-            //close form1
-            this.Close();
+            //try to launch the game
+            if (launchGame())
+            {
+                //close form1
+                this.Close();
+            }
         }
 
         //public custom event called by form2 as it closes
@@ -979,6 +980,7 @@ namespace Thwartski_Hud_Installer
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
                 }
+                //generic exception catch
                 catch (System.Exception problem)
                 {
                     //generic exception for unexpected case
@@ -1187,11 +1189,25 @@ namespace Thwartski_Hud_Installer
             //open a special messagebox with Error as the window text and an icon
             MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
         }
-
-        private void launchGame()
+        //launch the game and close the installer
+        public bool launchGame()
         {
-            //launch tf2
-            System.Diagnostics.Process.Start(teamFortressLaunchCommand);
+            try
+            {
+                //launch tf2
+                System.Diagnostics.Process.Start(teamFortressLaunchCommand);
+            }
+            //not sure what can go wrong here
+            catch (System.Exception problem)
+            {
+                //generic exception for unexpected case
+                errorWindow(problem.Message);
+
+                //return false so the app doesn't close
+                return false;
+            }
+            //if the game is launching properly, allow the app to close
+            return true;
         }
 
     }
