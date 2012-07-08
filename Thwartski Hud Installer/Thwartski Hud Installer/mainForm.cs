@@ -86,10 +86,10 @@ namespace Thwartski_Hud_Installer
         static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
 
         //see where the exe is running from
-        static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath); 
+        static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\"; 
         
         //paths for copying assets and installing them
-        static string assetPath =                       exeFolder + @"\Asset Files\";
+        static string assetPath =                       exeFolder + @"Thwartski Hud Install Files\";
         static string installPathTfSubFolder =          @"\tf\";
         static string installPathResourceSubfolder =    @"resource\";
         static string installPathUiSubfolder =          @"ui\";
@@ -147,6 +147,11 @@ namespace Thwartski_Hud_Installer
 
         //string for launching tf2
         static string teamFortressLaunchCommand =       "steam://rungameid/440";
+
+
+
+        static string dllFileLocation =                 exeFolder + "ICSharpCode.SharpZipLib.dll";
+        static string zipFileLocation =                 assetPath + "AssetFiles.zip";
 
 
 
@@ -1234,6 +1239,14 @@ namespace Thwartski_Hud_Installer
         }
 
 
+
+
+
+
+
+
+
+
         //testing for downloading and upzipping files
 
         private void downloadButton_Click(object sender, EventArgs e)
@@ -1242,35 +1255,48 @@ namespace Thwartski_Hud_Installer
 
             //MessageBox.Show("download done");
 
-            string zipFile = assetPath + "Asset Files.zip";
-            string unZipTarget = assetPath;
 
-            unZip(zipFile, unZipTarget);
+            unZip(zipFileLocation, exeFolder);
 
-            MessageBox.Show("unzip done");
+            //MessageBox.Show("unzip done");
+
+            if (File.Exists(zipFileLocation))
+            {
+                File.Delete(zipFileLocation);
+            }
+
+            MessageBox.Show("cleanup done");
+
+
 
         }
 
         /// <summary>
-        /// Download the hud assets
+        /// Download the hud assets and dll if necessary
         /// </summary>
         /// <returns></returns>
         public bool downloadAssets()
         {
 
-            if (!assetFolderDir.Exists)
-            {
-                assetFolderDir.Create();
-            }
-
-
 
             try
             {
+                if (!assetFolderDir.Exists)
+                {
+                    assetFolderDir.Create();
+                }
+
+
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.0_test.zip", assetPath + "Asset Files.zip");
+                    if (!File.Exists(dllFileLocation))
+                    {
+                        client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/ICSharpCode.SharpZipLib.dll", dllFileLocation);
+                    }
+
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", zipFileLocation);
                 }
+
             }
             catch (System.Exception problem)
             {
@@ -1285,7 +1311,7 @@ namespace Thwartski_Hud_Installer
         }
 
 
-        public static void unZip(string sourceZipFile, string DestinationFolder)     
+        public static void unZip(string sourceZipFile, string DestinationFolder)
         {
             using (ZipInputStream s = new ZipInputStream(File.OpenRead(sourceZipFile)))
             {
