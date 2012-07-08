@@ -150,7 +150,6 @@ namespace Thwartski_Hud_Installer
 
 
 
-        static string dllFileLocation =                 exeFolder + "ICSharpCode.SharpZipLib.dll";
         static string zipFileLocation =                 assetPath + "AssetFiles.zip";
 
 
@@ -1289,11 +1288,6 @@ namespace Thwartski_Hud_Installer
 
                 using (var client = new WebClient())
                 {
-                    if (!File.Exists(dllFileLocation))
-                    {
-                        client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/ICSharpCode.SharpZipLib.dll", dllFileLocation);
-                    }
-
                     client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", zipFileLocation);
                 }
 
