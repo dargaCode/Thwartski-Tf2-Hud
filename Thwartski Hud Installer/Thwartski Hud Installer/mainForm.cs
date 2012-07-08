@@ -152,6 +152,10 @@ namespace Thwartski_Hud_Installer
 
         static string zipFileLocation =                 assetPath + "AssetFiles.zip";
 
+        static Version currentAssetVersion;
+        static Version latestAssetVersion;
+        static Version currentInstallVersion;
+
 
 
         //FORM EVENTS BELOW THIS POINT
@@ -1247,34 +1251,95 @@ namespace Thwartski_Hud_Installer
 
 
         //testing for downloading and upzipping files
-
         private void downloadButton_Click(object sender, EventArgs e)
         {
-            downloadAssets();
 
-            //MessageBox.Show("download done");
-
-
-            unZip(zipFileLocation, exeFolder);
-
-            //MessageBox.Show("unzip done");
-
-            if (File.Exists(zipFileLocation))
+            if (assetUpdateRequired())
             {
-                File.Delete(zipFileLocation);
+                updateAssets();
+                MessageBox.Show("assets updated");
+            }
+            else
+            {
+                MessageBox.Show("assets not updated");
             }
 
-            MessageBox.Show("cleanup done");
+            if (installUpdateRequired())
+            {
+                //new mode and event for install button
 
-
+                MessageBox.Show("install button - update mode");
+            }
+            else
+            {
+                MessageBox.Show("install button - normal mode");
+            }
 
         }
 
+        public bool assetUpdateRequired()
+        {
+
+            Version latestAssetVersion = new Version("2.0.2");
+            Version currentAssetVersion = new Version("2.0.1");
+            Version currentInstallVersion = new Version("2.0.0");
+
+
+            MessageBox.Show("asset version comparison: " + Convert.ToString((currentAssetVersion.CompareTo(latestAssetVersion))));
+
+            if ((currentAssetVersion.CompareTo(latestAssetVersion)) < 0)
+            {
+                MessageBox.Show("assets out of date");
+                return true;
+            }
+            else if ((currentAssetVersion.CompareTo(latestAssetVersion)) == 0)
+            {
+                MessageBox.Show("assets match the latest version");
+                return false;
+            }
+            else
+            {
+                errorWindow("debug: current assets newer than latest assets");
+                return false;
+            }
+
+        }
+
+        public bool installUpdateRequired()
+        {
+            Version latestAssetVersion = new Version("2.0.2");
+            Version currentAssetVersion = new Version("2.0.1");
+            Version currentInstallVersion = new Version("2.0.0");
+
+
+            MessageBox.Show("install version comparison: " + Convert.ToString((currentInstallVersion.CompareTo(currentAssetVersion))));
+
+            if ((currentInstallVersion.CompareTo(currentAssetVersion)) < 0)
+            {
+                MessageBox.Show("install out of date");
+                return true;
+            }
+            else if ((currentInstallVersion.CompareTo(currentAssetVersion)) == 0)
+            {
+                MessageBox.Show("install matches the latest version");
+                return false;
+            }
+            else
+            {
+                errorWindow("debug: current install newer than latest assets");
+                return false;
+            }
+        }
+
+
+
         /// <summary>
-        /// Download the hud assets and dll if necessary
+        /// Download the hud assets
         /// </summary>
         /// <returns></returns>
-        public bool downloadAssets()
+        public bool updateAssets()
+
+            //this probably shouldn't be a bool
         {
 
 
@@ -1290,6 +1355,16 @@ namespace Thwartski_Hud_Installer
                 {
                     client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", zipFileLocation);
                 }
+
+
+                unZip(zipFileLocation, exeFolder);
+
+
+                if (File.Exists(zipFileLocation))
+                {
+                    File.Delete(zipFileLocation);
+                }
+
 
             }
             catch (System.Exception problem)
