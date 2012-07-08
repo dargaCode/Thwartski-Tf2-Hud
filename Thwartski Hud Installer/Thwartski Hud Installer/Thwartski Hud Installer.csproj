@@ -123,7 +123,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)ILMerge\ILMerge.exe" /out:"$(SolutionDir)deploy\$(TargetFileName)" "$(TargetDir)$(TargetFileName)" "$(TargetDir)*.dll" /target:exe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework64\v4.0.30319" /wildcards</PostBuildEvent>
+    <PostBuildEvent>"$(SolutionDir)Thwartski Hud Installer\ILMerge\ILMerge.exe" /out:"$(SolutionDir)deploy\$(TargetFileName)" "$(TargetDir)$(TargetFileName)" "$(TargetDir)*.dll" /target:exe /targetplatform:"v4, C:\Windows\Microsoft.NET\Framework64\v4.0.30319" /wildcards</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
