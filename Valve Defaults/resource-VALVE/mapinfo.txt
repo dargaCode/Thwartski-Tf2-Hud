@@ -108,4 +108,10 @@
 		"communitymap"			"1"
 		"authors"				"#cp_gullywash_final1_authors"
 	}
+	"koth_king"
+	{
+		"maptoken"				"Map Token Kong King"
+		"communitymap"			"1"
+		"authors"				"#koth_king_authors"
+	}
 }
