@@ -6066,3 +6066,146 @@
 	"volume"	"1.0"
 	"wave"		")weapons/doom_flare_gun_crit.wav"
 }
+
+//-----------------------------------------//
+// Cleaver
+//-----------------------------------------//
+"Cleaver.ImpactFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\cleaver_hit_01.wav"
+		"wave"		")weapons\cleaver_hit_02.wav"
+		"wave"		")weapons\cleaver_hit_03.wav"
+		"wave"		")weapons\cleaver_hit_04.wav"
+		"wave"		")weapons\cleaver_hit_05.wav"
+		"wave"		")weapons\cleaver_hit_06.wav"
+		"wave"		")weapons\cleaver_hit_07.wav"
+	}
+}
+
+"Cleaver.ImpactWorld"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\cleaver_hit_world_01.wav"
+		"wave"		")weapons\cleaver_hit_world_02.wav"
+		"wave"		")weapons\cleaver_hit_world_03.wav"
+		"wave"		")weapons\cleaver_hit_world_04.wav"
+		"wave"		")weapons\cleaver_hit_world_05.wav"
+	}
+}
+
+//-----------------------------------------//
+// Neon Sign
+//-----------------------------------------//
+"Neon_Sign.ImpactFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\neon_sign_hit_01.wav"
+		"wave"		")weapons\neon_sign_hit_02.wav"
+		"wave"		")weapons\neon_sign_hit_03.wav"
+		"wave"		")weapons\neon_sign_hit_04.wav"
+	}
+}
+
+"Neon_Sign.ImpactWorld"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\neon_sign_hit_world_01.wav"
+		"wave"		")weapons\neon_sign_hit_world_02.wav"
+		"wave"		")weapons\neon_sign_hit_world_03.wav"
+		"wave"		")weapons\neon_sign_hit_world_04.wav"
+	}
+}
+
+//-----------------------------------------//
+// SD Sapper
+//-----------------------------------------//
+"Weapon_sd_sapper.Timer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\spy_tape_01.wav"
+		"wave"		")weapons\spy_tape_02.wav"
+		"wave"		")weapons\spy_tape_03.wav"
+		"wave"		")weapons\spy_tape_04.wav"
+		"wave"		")weapons\spy_tape_05.wav"
+	}
+}
+
+//-----------------------------------------//
+// Dragon Minigun
+//-----------------------------------------//
+"Dragon_Minigun.Spin"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"wave"		")weapons/dragon_gun_motor_loop_dry.wav"
+}
+
+"Dragon_Minigun.WindUp"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/dragon_gun_motor_start.wav"
+}
+
+"Dragon_Minigun.WindDown"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/dragon_gun_motor_stop.wav"
+}
+
+"Dragon_Minigun.Fire"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/dragon_gun_motor_loop.wav"
+}
+
+"Dragon_Minigun.FireCrit"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/dragon_gun_motor_loop_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// CSGO AWP
+// ------------------------------------------------------------------------------------ //
+"Weapon_AWP.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/csgo_awp_shoot.wav"
+}

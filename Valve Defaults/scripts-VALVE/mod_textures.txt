@@ -2715,5 +2715,41 @@
 				"width"		"128"
 				"height"	"36"
 		}
+		"long_heatmaker"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"800"
+				"width"		"96"
+				"height"	"31"
+		}
+		"annihilator"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"832"
+				"width"		"96"
+				"height"	"31"
+		}
+		"guillotine"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"864"
+				"width"		"96"
+				"height"	"31"
+		}
+		"recorder"
+		{
+			"dfile"	"HUD/d_images_v3"
+				"dnegfile"	"HUD/dneg_images_v3"
+				"x"		"0"
+				"y"		"896"
+				"width"		"96"
+				"height"	"31"
+		}
 	}
 }

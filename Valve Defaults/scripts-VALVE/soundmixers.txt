@@ -29,6 +29,7 @@
 //	group name				name substring		substring	chan			sndlvl_min	sndlvl_max	priority Is Ducked	Ducking	Percent	 Threshold
 //  ---------				------------------	---------	-----------		----------	----------	-------- --------	-------	-------	 ---------
 	
+	"MVM_All"				"mvm/"		""			""				""			""			"50"		"0"		"0"		"100"	"40"
 
 	"bullethit"				"impact_bullet"		""			""				""			""			"50"		"0"		"0"		"100"	"40"
 	"bulletmiss"			"nearmiss"			""			""				""			""			"50"		"0"		"0"		"100"	"40"
@@ -128,6 +129,7 @@
 
 //	group name				mix value
 //  --------				---------
+	"MVM_All"    			"1.0"
 	"Explosions"			"0.90"
 	"Player_Weapons_Loud"	"1.0"
 	"Player_Suit"			"0.56"
@@ -149,6 +151,7 @@
 {
 //	group name			mix value
 //  --------			---------
+	"MVM_All"    			"1.0"
 	"Explosions"		"1.0"
 	"Physics"			"0.7"
 	"Ambient"			"0.7"
@@ -192,6 +195,7 @@
 //	group name			mix value
 //  --------			---------
 
+	"MVM_All"    			"1.0"
 	"NPC_Voice"			"1.0"
 	"Dialog"			"1.0"			
 	"Alyx_Dialog"		"1.0"
@@ -207,6 +211,7 @@
 //	group name			mix value
 //  --------			---------
 
+	"MVM_All"    			"1.0"
 	"NPC_Voice"			"0.72"
 	"Dialog"			"0.72"			
 	"Alyx_Dialog"		"0.72"
@@ -222,6 +227,7 @@
 //	group name			mix value
 //  --------			---------
 
+	"MVM_All"    			"1.0"
 	"FreezeCam"			"0.72"
 	"WinSounds"			"0.72"
 	"FlagWarnings"			"0.72"

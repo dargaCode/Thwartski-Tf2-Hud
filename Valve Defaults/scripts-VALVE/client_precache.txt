@@ -35,6 +35,7 @@ precache
 	"scriptsound"	"Hud.PointCaptured"
 	"scriptsound"	"Announcer.SecurityAlert"
 	"scriptsound"	"Game.HappyBirthdayNoiseMaker"
+	"scriptsound"	"MVM.BombWarning"
 
 	"model"			"sprites/white.vmt"
 	"model"			"sprites/physbeam.vmt"
