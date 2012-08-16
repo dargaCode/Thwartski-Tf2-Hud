@@ -111,29 +111,6 @@
 			"sound_released"	"UI/buttonclickrelease.wav"
 		}
 	
-		"FavoritesCheckButton"
-		{
-			"ControlName"	"CheckButton"
-			"fieldName"		"FavoritesCheckButton"
-			"xpos"			"20"
-			"ypos"			"290"
-			"zpos"			"2"
-			"wide"			"200"
-			"tall"			"25"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"1"
-			"tabPosition"	"0"
-			"labelText"		"#TF_Quickplay_Favorites"
-			"textAlignment"	"west"
-			"dulltext"		"0"
-			"brighttext"	"0"
-			"wrap"			"0"
-			"font"			"HudFontSmallest"
-			"selected_fgcolor_override" "255 0 0 255"
-		}
-
 		"ModeInfoContainer"
 		{
 			"ControlName"	"EditablePanel"
@@ -313,7 +290,7 @@
 			"ControlName"	"CExButton"
 			"fieldName"		"NextPageButton"
 			"xpos"			"367"
-			"ypos"			"155"
+			"ypos"			"150"
 			"zpos"			"10"
 			"wide"			"20"
 			"tall"			"40"
