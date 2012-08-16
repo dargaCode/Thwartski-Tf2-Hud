@@ -727,3 +727,46 @@ event DamagedPlayer
 {
 	// empty
 }
+
+//===========================================
+
+event SpyWarningFlash
+{
+	Animate	EnemyCountImageBG	BgColor	"RedSolid"		Linear 0.0 0.01
+	Animate	EnemyCountImageBG	BgColor	"TanLight"		Linear 0.21 0.01
+	
+	RunEvent	SpyWarningFlashLoop		0.42
+}
+
+event SpyWarningFlashLoop
+{
+	RunEvent SpyWarningFlash			0.0
+}
+ 
+event SpyWarningFlashEnd
+{
+	StopEvent SpyWarningFlash			0.0
+	StopEvent SpyWarningFlashLoop		0.0
+}
+
+event HudReadyPulse
+{
+	Animate	TournamentInstructionsLabel 	FgColor		"TanLight"		Linear 0.0 0.1
+	Animate	TournamentInstructionsLabel 	FgColor		"RedSolid"		Linear 0.3 0.4
+
+	RunEvent HudReadyPulseLoop	0.5
+}
+
+event HudReadyPulseLoop
+{
+	RunEvent HudReadyPulse			0.0
+}
+
+event HudReadyPulseEnd
+{
+	Animate	TournamentInstructionsLabel 	FgColor		"TanLight"		Linear 0.0 0.1
+	
+	StopEvent HudReadyPulse			0.0
+	StopEvent HudReadyPulseLoop		0.0
+}
+
