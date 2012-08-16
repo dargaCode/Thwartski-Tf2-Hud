@@ -37,6 +37,21 @@
 		"player"	"short"		// entindex of the player
 	}	
 
+	"mm_lobby_chat"
+	{
+		"steamid"	"string"	// steamID (64-bit value converted to string) of user who said the thing
+		"text"	"string"	// Their chat message
+		"type"	"short"	// What sort of message?  (Some "system" messages are sent by lobby leader)
+	}
+	"mm_lobby_member_join"
+	{
+		"steamid"	"string"	// steamID (64-bit value converted to string) of user who joined
+	}
+	"mm_lobby_member_leave"
+	{
+		"steamid"	"string"	// steamID (64-bit value converted to string) of user who joined
+		"flags"	"long"	// Bitfield of EChatMemberStateChange flags describing who entered or left
+	}
 	"player_changeclass"
 	{
 		"userid"	"short"		// user ID who changed class
@@ -479,6 +494,10 @@
 		"newname"	"string"	// players new name
 	}
 
+	"tournament_enablecountdown"
+	{
+	}
+	
 	"player_calledformedic"
 	{
 		"userid"	"short"
@@ -604,6 +623,7 @@
 		"attacker" "short"
 		"damageamount" "short"
 		"custom"	"short"
+		"showdisguisedcrit" "bool"	// if our attribute specifically crits disguised enemies we need to show it on the client
 		"crit" "bool"
 		"minicrit" "bool"
 		"allseecrit" "bool"
@@ -668,6 +688,13 @@
 		"player_6_healing"	"short"
 		"player_6_lifetime"	"short"
 		"player_6_kills"	"short"
+	}
+	
+	"pve_win_panel"		
+	{
+		"panel_style"		"byte"		// for client to determine layout		
+		"winning_team"		"byte"		
+		"winreason"		"byte"		// the reason the team won
 	}
 	
 	"air_dash"
@@ -1077,6 +1104,23 @@
 		"source_entindex"	"short"
 	}
 
+	"player_upgraded"
+	{
+	}
+
+	"player_buyback"
+	{
+		"player"		"short"
+		"cost"			"short"
+	}
+
+	"player_used_powerup_bottle"
+	{
+		"player"		"short"
+		"type"			"short"
+		"time"			"float"	
+	}
+
 	"christmas_gift_grab"
 	{
 		"userid"	"short"
@@ -1088,9 +1132,26 @@
 		"victim"	"short"		// entindex of the victim
 		"zone_id"	"short"		// type of area (0 for general, 1 for capture zone)
 	}
+	"party_updated"
+	{
+	}
+	"lobby_updated"
+	{
+	}
+	
+	"mvm_mission_update"
+	{
+		"class"		"short"
+		"count"		"short"
+	}
 
 	"recalculate_holidays"
 	{
+	}
+	
+	"player_currency_changed"
+	{
+		"currency"		"short"
 	}
 
 	"doomsday_rocket_open"
@@ -1101,6 +1162,91 @@
 	"remove_nemesis_relationships"
 	{
 		"player"		"short"		// entindex of the player who should reset
+	}
+
+	"mvm_creditbonus_wave"
+	{
+	}
+
+	"mvm_creditbonus_all"
+	{
+	}
+
+	"mvm_creditbonus_all_advanced"
+	{
+	}
+
+	"mvm_quick_sentry_upgrade"
+	{
+		"player"		"short"		// entindex of the player
+	}
+
+	"mvm_tank_destroyed_by_players"
+	{
+	}
+
+	"mvm_kill_robot_delivering_bomb"
+	{
+		"player"		"short"		// entindex of the player
+	}
+
+	"mvm_pickup_currency"
+	{
+		"player"		"short"		// entindex of the player
+		"currency"		"short"
+	}
+
+	"mvm_bomb_carrier_killed"
+	{
+		"level"			"short"		// upgrade level of the carrier
+	}
+
+	"mvm_sentrybuster_detonate"
+	{
+		"player"		"short"		// entindex of the target player
+		"det_x"			"float"		// origin of the sentry buster
+		"det_y"			"float"
+		"det_z"			"float"
+	}
+
+	"mvm_scout_marked_for_death"
+	{
+		"player"		"short"		// entindex of the player
+	}
+
+	"mvm_medic_powerup_shared"
+	{
+		"player"		"short"		// entindex of the player
+	}
+
+	"mvm_begin_wave"
+	{
+		"wave_index"	"short"
+		"max_waves"		"short"
+		"advanced"		"short"		
+	}
+	
+	"mvm_wave_complete"
+	{
+	}
+
+	"mvm_mission_complete"
+	{
+		"mission"		"string"
+	}
+
+	"mvm_bomb_reset_by_player"
+	{
+		"player"		"short"
+	}
+
+	"mvm_bomb_alarm_triggered"
+	{
+	}
+
+	"mvm_bomb_deploy_reset_by_player"
+	{
+		"player"		"short"
 	}
 }
 
