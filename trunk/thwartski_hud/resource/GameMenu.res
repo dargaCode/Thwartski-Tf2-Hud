@@ -10,11 +10,19 @@
 	{
 		"label" "#MMenu_BrowseServers" 
 		"command" "OpenServerBrowser"
-		"subimage" "glyph_server"
-		"subimage" "glyph_server_browser"
+		"subimage" "glyph_multiplayer"
+		//"subimage" "glyph_server"
+		//"subimage" "glyph_server_browser"
 		//"subimage" "glyph_workshop_view" //bigger magnifying glass lense
 		"OnlyAtMenu" "0"
 	} 
+	"CoopMiniButton"
+	{
+		"command" "playpve"
+		"OnlyAtMenu" "0"
+		"tooltip" "CO-OP"//"Mann vs Machine"
+	}
+	
 	"QuickPlayMiniButton"
 	{
 		"command" "quickplay"
