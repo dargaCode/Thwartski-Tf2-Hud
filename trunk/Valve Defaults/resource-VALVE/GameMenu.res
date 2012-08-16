@@ -2,9 +2,9 @@
 {
 	"QuickplayButton"
 	{
-		"label" "#MMenu_StartPlaying" 
+		"label" "#MMenu_PlayMultiplayer" 
 		"command" "quickplay"
-		"subimage" "glyph_server"
+		"subimage" "glyph_multiplayer"
 		"OnlyAtMenu" "1"
 	}
 	"QuickplayChangeButton"
@@ -14,9 +14,16 @@
 		"subimage" "glyph_server"
 		"OnlyInGame" "1"
 	}
+	"PlayPVEButton"
+	{
+		"label" "#MMenu_PlayCoop" 
+		"command" "playpve"
+		"subimage" "glyph_coop"
+		"OnlyAtMenu" "1"
+	}
 	"ServerBrowserButton"
 	{
-		"label" "#MMenu_BrowseServers" 
+		"label" "#MMenu_Servers" 
 		"command" "OpenServerBrowser"
 		"subimage" "glyph_server_browser"
 		"OnlyAtMenu" "1"
