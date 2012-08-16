@@ -26,7 +26,18 @@
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_briefcase"
 		"scaleImage"	"1"	
+		
+		"if_mvm"
+		{
+			"xpos"			"62"
+			"ypos"			"21"
+			"wide"			"38"
+			"tall"			"38"
+		}	
 	}				
+	
+
+	
 	"StatusIcon"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -40,5 +51,10 @@
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_ico_flag_home"
 		"scaleImage"	"1"	
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
 	}	
 }
