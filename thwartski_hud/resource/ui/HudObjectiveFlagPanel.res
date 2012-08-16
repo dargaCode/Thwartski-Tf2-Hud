@@ -39,6 +39,11 @@
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -85,6 +90,11 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"	
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
 		
 		"if_specialdelivery"
 		{
@@ -136,6 +146,12 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -165,6 +181,12 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -238,6 +260,16 @@
 			"visible"	"0"
 		}
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
+		"if_specialdelivery"
+		{
+			"visible"	"0"
+		}
+		
 	}
 	
 	"BlueScore"
@@ -260,6 +292,12 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -286,6 +324,12 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -312,6 +356,12 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -338,6 +388,13 @@
 		{
 			"visible"	"0"
 		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -381,6 +438,11 @@
 		"if_hybrid"
 		{
 			"ypos"		"r142"
+		}
+		
+		"if_mvm"
+		{
+			"visible"	"0"
 		}
 		
 		"if_specialdelivery"

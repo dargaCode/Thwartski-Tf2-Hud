@@ -271,6 +271,21 @@
 		"PaintBackgroundType"	"2"
 	}
 	
+	HudMannVsMachineStatus
+	{
+		"fieldName" "HudMannVsMachineStatus"
+		"visible"	"1"
+		"enabled"	"1"
+		"xpos"		"0"
+		"ypos"		"0"
+		"zpos"		"1"
+		"wide"		"f0"
+		"tall"		"480"
+		
+		"PaintBackgroundType"	"2"
+	}
+	
+	
 	HudProgressBar
 	{
 		"fieldName" "HudProgressBar"
@@ -771,6 +786,17 @@
 		"tall"					"218"
 	}
 	
+	PVEWinPanel
+	{
+		"fieldName"				"PVEWinPanel"
+		"visible"				"1"
+		"enabled"				"1"
+		"xpos"					"c-150"
+		"ypos"					"255"
+		"wide"					"300"
+		"tall"					"215"
+	}
+	
 	FreezePanel
 	{
 		"fieldName"				"FreezePanel"
@@ -818,6 +844,17 @@
 		"ypos"					"10"
 		"wide"					"292"
 		"tall"					"64"
+	}
+	
+	"HudUpgradePanel"
+	{
+		"fieldName"		"HudUpgradePanel"
+		"visible"		"0"
+		"enable"		"1"
+		"xpos"			"c-200"
+		"ypos"			"260"
+		"wide"			"400"
+		"tall"			"160"		
 	}
 
 	"HudChat"
@@ -898,6 +935,7 @@
 		"enabled"				"1"
 		"xpos"					"c-204"
 		"ypos"					"14"
+		"zpos"					"2"
 		"wide"					"320"
 		"tall"					"245"
 	}
