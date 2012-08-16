@@ -326,6 +326,71 @@
 			}				
 		}		
 	}
+	
+	"CoopMiniButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"CoopMiniButton"
+		"xpos"			"309"//"329"
+		"ypos"			"153"
+		"zpos"			"30"
+		"wide"			"20"
+		"tall"			"20"
+		"visible"		"1"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"20"
+			"tall"			"20"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"100"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuMiniButtonDefault"
+			"border_armed"		"MainMenuMiniButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "46 43 42 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"235 226 202 255"
+			"image_armedcolor"	"235 226 202 255"
+			
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"4"
+				"ypos"			"4"
+				"zpos"			"1"
+				"wide"			"12"
+				"tall"			"12"
+				"visible"		"1"
+				"enabled"		"1"
+				"image" 		"glyph_coop"
+				"scaleImage"	"1"
+			}				
+		}		
+	}
+	
+	
+	
 	"QuickPlayMiniButton"
 	{
 		"ControlName"	"EditablePanel"
@@ -1867,11 +1932,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVoteButton"
-		"xpos"			"257"//"c-173"
+		"xpos"			"245"//"247"//"289"
 		"ypos"			"128"
 		"zpos"			"12"
-		"wide"			"26"
-		"tall"			"26"
+		"wide"			"20"
+		"tall"			"20"
 		"visible"		"1"
 
 		"SubButton"
@@ -1928,11 +1993,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MutePlayersButton"
-		"xpos"			"279"//"c-151"
+		"xpos"			"266"//"268"//"309"
 		"ypos"			"128"
 		"zpos"			"12"
-		"wide"			"26"
-		"tall"			"26"
+		"wide"			"20"
+		"tall"			"20"
 		"visible"		"1"
 
 		"SubButton"
@@ -1989,11 +2054,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"ReportAbuseButton"
-		"xpos"			"301"//"c-129"
-		"ypos"			"128"
+		"xpos"			"287"//"289"//"329"
+		"ypos"			"128"//"153"
 		"zpos"			"12"
-		"wide"			"26"
-		"tall"			"26"
+		"wide"			"20"
+		"tall"			"20"
 		"visible"		"1"
 
 		"SubButton"
