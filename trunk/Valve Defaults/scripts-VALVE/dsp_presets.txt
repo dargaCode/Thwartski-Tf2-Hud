@@ -961,6 +961,21 @@
 							{  PTC	2.4		20.0		20.0 } 
 }
 
+{	135	LINEAR	0.2 0.7	0.0  0.0  80 0.5						// *** TEST NEW DSP PRESETS HERE ***
+							// AMP	gain	vthresh	distmix	vfeed
+							{  AMP	8.0		0.005	0.8		1.0} 
+							{  AMP	0.65	1.0		0.0		0.0}
+
+							// CRS	lfowav	rate	depth	mix					
+							{  CRS	SAW		5		1.0		0.9 }
+							
+							// PTC	pitch	timeslice	xfade
+							{  PTC	0.7		20.0		20.0 } 
+							
+							// RVA size	 min   	#dly	feedbk	gain	cutoff	fpar fmod rate w  d  h    fw    fd  fh ftap
+							{  RVA 0.0	0.0  	100		0.0		2.0		4000	1	   0  0.0  48 192 64  0.97 -0.4 0.4   0} 
+}
+
 /////////////////////////////////////////////////////
 // description of parameters for all processor types:
 /////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-soundscapes_manifest
+	soundscapes_manifest
 {
 
 		"file"		"scripts/soundscapes.txt"
@@ -33,4 +33,8 @@ soundscapes_manifest
 		"file"		"scripts/soundscapes_lakeside.txt"
 		"file"		"scripts/soundscapes_barnblitz.txt"
 		"file"		"scripts/soundscapes_harbor.txt"
-}
+		"file"		"scripts/soundscapes_deathpit.txt"
+		"file"		"scripts/soundscapes_mannworks.txt"
+		"file"		"scripts/soundscapes_cactusvalley.txt"
+		"file"		"scripts/soundscapes_soho.txt"
+}	
