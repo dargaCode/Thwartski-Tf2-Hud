@@ -944,3 +944,386 @@ Rule PlayerPositiveMedic
 	Response PlayerPositiveMedic
 	Response PlayerTauntsMedic
 }
+
+//--------------------------------------------------------------------------------------------------------------
+// MvM Speech
+//--------------------------------------------------------------------------------------------------------------
+Response MvMBombDroppedMedic
+{
+	scene "scenes/Player/Medic/low/4205.vcd" 
+	scene "scenes/Player/Medic/low/4204.vcd" 
+}
+Rule MvMBombDroppedMedic
+{
+	criteria ConceptMvMBombDropped 5PercentChance IsMvMDefender IsMedic 
+	Response MvMBombDroppedMedic
+}
+
+Response MvMBombCarrierUpgrade1Medic
+{
+	scene "scenes/Player/Medic/low/4200.vcd" 
+}
+Rule MvMBombCarrierUpgrade1Medic
+{
+	criteria ConceptMvMBombCarrierUpgrade1 5PercentChance IsMvMDefender IsMedic 
+	Response MvMBombCarrierUpgrade1Medic
+}
+
+Response MvMBombCarrierUpgrade2Medic
+{
+	scene "scenes/Player/Medic/low/4201.vcd" 
+}
+Rule MvMBombCarrierUpgrade2Medic
+{
+	criteria ConceptMvMBombCarrierUpgrade2 5PercentChance IsMvMDefender IsMedic 
+	Response MvMBombCarrierUpgrade2Medic
+}
+
+Response MvMBombCarrierUpgrade3Medic
+{
+	scene "scenes/Player/Medic/low/4202.vcd" 
+}
+Rule MvMBombCarrierUpgrade3Medic
+{
+	criteria ConceptMvMBombCarrierUpgrade3 5PercentChance IsMvMDefender IsMedic 
+	Response MvMBombCarrierUpgrade3Medic
+}
+
+Response MvMDefenderDiedScoutMedic
+{
+	scene "scenes/Player/Medic/low/4173.vcd" 
+}
+Rule MvMDefenderDiedScoutMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimScout IsMedic 
+	Response MvMDefenderDiedScoutMedic
+}
+
+Response MvMDefenderDiedSpyMedic
+{
+	scene "scenes/Player/Medic/low/4174.vcd" 
+}
+Rule MvMDefenderDiedSpyMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSpy IsMedic 
+	Response MvMDefenderDiedSpyMedic
+}
+
+Response MvMDefenderDiedHeavyMedic
+{
+	scene "scenes/Player/Medic/low/4175.vcd" 
+}
+Rule MvMDefenderDiedHeavyMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimHeavy IsMedic 
+	Response MvMDefenderDiedHeavyMedic
+}
+
+Response MvMDefenderDiedSoldierMedic
+{
+	scene "scenes/Player/Medic/low/4176.vcd" 
+}
+Rule MvMDefenderDiedSoldierMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSoldier IsMedic 
+	Response MvMDefenderDiedSoldierMedic
+}
+
+Response MvMDefenderDiedMedicMedic
+{
+	scene "scenes/Player/Medic/low/4177.vcd" 
+}
+Rule MvMDefenderDiedMedicMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimMedic IsMedic 
+	Response MvMDefenderDiedMedicMedic
+}
+
+Response MvMDefenderDiedDemomanMedic
+{
+	scene "scenes/Player/Medic/low/4178.vcd" 
+}
+Rule MvMDefenderDiedDemomanMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimDemoman IsMedic 
+	Response MvMDefenderDiedDemomanMedic
+}
+
+Response MvMDefenderDiedPyroMedic
+{
+	scene "scenes/Player/Medic/low/4179.vcd" 
+}
+Rule MvMDefenderDiedPyroMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimPyro IsMedic 
+	Response MvMDefenderDiedPyroMedic
+}
+
+Response MvMDefenderDiedSniperMedic
+{
+	scene "scenes/Player/Medic/low/4180.vcd" 
+}
+Rule MvMDefenderDiedSniperMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSniper IsMedic 
+	Response MvMDefenderDiedSniperMedic
+}
+
+Response MvMDefenderDiedEngineerMedic
+{
+	scene "scenes/Player/Medic/low/4181.vcd" 
+}
+Rule MvMDefenderDiedEngineerMedic
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimEngineer IsMedic 
+	Response MvMDefenderDiedEngineerMedic
+}
+
+Response MvMFirstBombPickupMedic
+{
+	scene "scenes/Player/Medic/low/4197.vcd" 
+	scene "scenes/Player/Medic/low/4199.vcd" 
+}
+Rule MvMFirstBombPickupMedic
+{
+	criteria ConceptMvMFirstBombPickup 5PercentChance IsMvMDefender IsMedic
+	Response MvMFirstBombPickupMedic
+}
+
+Response MvMBombPickupMedic
+{
+	scene "scenes/Player/Medic/low/4196.vcd" 
+}
+Rule MvMBombPickupMedic
+{
+	criteria ConceptMvMBombPickup 5PercentChance IsMvMDefender IsMedic
+	Response MvMBombPickupMedic
+}
+
+Response MvMSniperCalloutMedic
+{
+	scene "scenes/Player/Medic/low/4183.vcd" 
+}
+Rule MvMSniperCalloutMedic
+{
+	criteria ConceptMvMSniperCallout 50PercentChance IsMvMDefender IsMedic
+	Response MvMSniperCalloutMedic
+}
+
+Response MvMSentryBusterMedic
+{
+	scene "scenes/Player/Medic/low/4212.vcd" 
+}
+Rule MvMSentryBusterMedic
+{
+	criteria ConceptMvMSentryBuster 50PercentChance IsMvMDefender IsMedic
+	Response MvMSentryBusterMedic
+}
+
+Response MvMSentryBusterDownMedic
+{
+	scene "scenes/Player/Medic/low/4213.vcd" 
+}
+Rule MvMSentryBusterDownMedic
+{
+	criteria ConceptMvMSentryBusterDown 20PercentChance IsMvMDefender IsMedic
+	Response MvMSentryBusterDownMedic
+}
+
+Response MvMLastManStandingMedic
+{
+	scene "scenes/Player/Medic/low/4182.vcd" 
+}
+Rule MvMLastManStandingMedic
+{
+	criteria ConceptMvMLastManStanding 20PercentChance IsMvMDefender IsMedic
+	Response MvMLastManStandingMedic
+}
+
+Response MvMEncourageMoneyMedic
+{
+	scene "scenes/Player/Medic/low/4188.vcd" 
+	scene "scenes/Player/Medic/low/4189.vcd" 
+	scene "scenes/Player/Medic/low/4324.vcd" 
+}
+Rule MvMEncourageMoneyMedic
+{
+	criteria ConceptMvMEncourageMoney 50PercentChance IsMvMDefender IsMedic
+	Response MvMEncourageMoneyMedic
+}
+
+Response MvMEncourageUpgradeMedic
+{
+	scene "scenes/Player/Medic/low/4193.vcd" 
+	scene "scenes/Player/Medic/low/4194.vcd" 
+	scene "scenes/Player/Medic/low/4195.vcd" 
+}
+Rule MvMEncourageUpgradeMedic
+{
+	criteria ConceptMvMEncourageUpgrade 50PercentChance IsMvMDefender IsMedic
+	Response MvMEncourageUpgradeMedic
+}
+
+Response MvMUpgradeCompleteMedic
+{
+	scene "scenes/Player/Medic/low/4190.vcd" 
+	scene "scenes/Player/Medic/low/4191.vcd" 
+	scene "scenes/Player/Medic/low/4192.vcd" 
+	scene "scenes/Player/Medic/low/4325.vcd" 
+}
+Rule MvMUpgradeCompleteMedic
+{
+	criteria ConceptMvMUpgradeComplete 5PercentChance IsMvMDefender IsMedic
+	Response MvMUpgradeCompleteMedic
+}
+
+Response MvMGiantCalloutMedic
+{
+	scene "scenes/Player/Medic/low/4214.vcd" 
+}
+Rule MvMGiantCalloutMedic
+{
+	criteria ConceptMvMGiantCallout 20PercentChance IsMvMDefender IsMedic
+	Response MvMGiantCalloutMedic
+}
+
+Response MvMGiantHasBombMedic
+{
+	scene "scenes/Player/Medic/low/4217.vcd" 
+}
+Rule MvMGiantHasBombMedic
+{
+	criteria ConceptMvMGiantHasBomb 20PercentChance IsMvMDefender IsMedic
+	Response MvMGiantHasBombMedic
+}
+
+Response MvMSappedRobotMedic
+{
+	scene "scenes/Player/Medic/low/4184.vcd" 
+	scene "scenes/Player/Medic/low/4185.vcd" 
+}
+Rule MvMSappedRobotMedic
+{
+	criteria ConceptMvMSappedRobot 50PercentChance IsMvMDefender IsMedic
+	Response MvMSappedRobotMedic
+}
+
+Response MvMTankCalloutMedic
+{
+	scene "scenes/Player/Medic/low/4206.vcd" 
+}
+Rule MvMTankCalloutMedic
+{
+	criteria ConceptMvMTankCallout 50PercentChance IsMvMDefender IsMedic
+	Response MvMTankCalloutMedic
+}
+
+Response MvMTankDeployingMedic
+{
+	scene "scenes/Player/Medic/low/4210.vcd" 
+}
+Rule MvMTankDeployingMedic
+{
+	criteria ConceptMvMTankDeploying 50PercentChance IsMvMDefender IsMedic
+	Response MvMTankDeployingMedic
+}
+
+Response MvMAttackTheTankMedic
+{
+	scene "scenes/Player/Medic/low/4207.vcd" 
+	scene "scenes/Player/Medic/low/4208.vcd" 
+	scene "scenes/Player/Medic/low/4209.vcd" 
+}
+Rule MvMAttackTheTankMedic
+{
+	criteria ConceptMvMAttackTheTank 50PercentChance IsMvMDefender IsMedic
+	Response MvMAttackTheTankMedic
+}
+
+Response MvMTauntMedic
+{
+	scene "scenes/Player/Medic/low/4186.vcd" 
+}
+Rule MvMTauntMedic
+{
+	criteria ConceptMvMTaunt 50PercentChance IsMvMDefender IsMedic
+	Response MvMTauntMedic
+}
+
+Response MvMWaveStartMedic
+{
+	scene "scenes/Player/Medic/low/4109.vcd" 
+}
+Rule MvMWaveStartMedic
+{
+	criteria ConceptMvMWaveStart 50PercentChance IsMvMDefender IsMedic
+	Response MvMWaveStartMedic
+}
+
+Response MvMWaveWinMedic
+{
+	scene "scenes/Player/Medic/low/4163.vcd" 
+	scene "scenes/Player/Medic/low/4164.vcd" 
+	scene "scenes/Player/Medic/low/4165.vcd" 
+}
+Rule MvMWaveWinMedic
+{
+	criteria ConceptMvMWaveWin 50PercentChance IsMvMDefender IsMedic
+	Response MvMWaveWinMedic
+}
+
+Response MvMWaveLoseMedic
+{
+	scene "scenes/Player/Medic/low/4166.vcd" 
+	scene "scenes/Player/Medic/low/4167.vcd" 
+	scene "scenes/Player/Medic/low/4168.vcd" 
+	scene "scenes/Player/Medic/low/4323.vcd" 
+}
+Rule MvMWaveLoseMedic
+{
+	criteria ConceptMvMWaveLose 50PercentChance IsMvMDefender IsMedic
+	Response MvMWaveLoseMedic
+}
+
+Response MvMMoneyPickupMedic
+{
+	scene "scenes/Player/Medic/low/4187.vcd" 
+}
+Rule MvMMoneyPickupMedic
+{
+	criteria ConceptMvMMoneyPickup 5PercentChance IsMvMDefender IsMedic
+	Response MvMMoneyPickupMedic
+}
+
+Response MvMGiantKilledMedic
+{
+	scene "scenes/Player/Medic/low/4218.vcd" 
+}
+Rule MvMGiantKilledMedic
+{
+	criteria ConceptMvMGiantKilled 50PercentChance IsMvMDefender IsMedic
+	Response MvMGiantKilledMedic
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

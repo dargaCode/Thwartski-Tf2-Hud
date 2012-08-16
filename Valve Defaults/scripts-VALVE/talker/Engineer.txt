@@ -1303,3 +1303,349 @@ Rule PlayerPositiveEngineer
 	criteria ConceptPlayerPositive IsEngineer
 	Response PlayerPositiveEngineer
 }
+
+//--------------------------------------------------------------------------------------------------------------
+// MvM Speech
+//--------------------------------------------------------------------------------------------------------------
+Response MvMBombDroppedEngineer
+{
+	scene "scenes/Player/Engineer/low/4144.vcd" 
+	scene "scenes/Player/Engineer/low/4145.vcd" 
+}
+Rule MvMBombDroppedEngineer
+{
+	criteria ConceptMvMBombDropped 5PercentChance IsMvMDefender IsEngineer 
+	Response MvMBombDroppedEngineer
+}
+
+Response MvMBombCarrierUpgrade1Engineer
+{
+	scene "scenes/Player/Engineer/low/4140.vcd" 
+}
+Rule MvMBombCarrierUpgrade1Engineer
+{
+	criteria ConceptMvMBombCarrierUpgrade1 5PercentChance IsMvMDefender IsEngineer 
+	Response MvMBombCarrierUpgrade1Engineer
+}
+
+Response MvMBombCarrierUpgrade2Engineer
+{
+	scene "scenes/Player/Engineer/low/4141.vcd" 
+}
+Rule MvMBombCarrierUpgrade2Engineer
+{
+	criteria ConceptMvMBombCarrierUpgrade2 5PercentChance IsMvMDefender IsEngineer 
+	Response MvMBombCarrierUpgrade2Engineer
+}
+
+Response MvMDefenderDiedScoutEngineer
+{
+	scene "scenes/Player/Engineer/low/4110.vcd" 
+}
+Rule MvMDefenderDiedScoutEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimScout IsEngineer 
+	Response MvMDefenderDiedScoutEngineer
+}
+
+Response MvMDefenderDiedSpyEngineer
+{
+	scene "scenes/Player/Engineer/low/4111.vcd" 
+}
+Rule MvMDefenderDiedSpyEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSpy IsEngineer
+	Response MvMDefenderDiedSpyEngineer
+}
+
+Response MvMDefenderDiedHeavyEngineer
+{
+	scene "scenes/Player/Engineer/low/4112.vcd" 
+}
+Rule MvMDefenderDiedHeavyEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimHeavy IsEngineer
+	Response MvMDefenderDiedHeavyEngineer
+}
+
+Response MvMDefenderDiedSoldierEngineer
+{
+	scene "scenes/Player/Engineer/low/4113.vcd" 
+}
+Rule MvMDefenderDiedSoldierEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSoldier IsEngineer
+	Response MvMDefenderDiedSoldierEngineer
+}
+
+Response MvMDefenderDiedMedicEngineer
+{
+	scene "scenes/Player/Engineer/low/4114.vcd" 
+}
+Rule MvMDefenderDiedMedicEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimMedic IsEngineer
+	Response MvMDefenderDiedMedicEngineer
+}
+
+Response MvMDefenderDiedDemomanEngineer
+{
+	scene "scenes/Player/Engineer/low/4115.vcd" 
+}
+Rule MvMDefenderDiedDemomanEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimDemoman IsEngineer 
+	Response MvMDefenderDiedDemomanEngineer
+}
+
+Response MvMDefenderDiedPyroEngineer
+{
+	scene "scenes/Player/Engineer/low/4116.vcd" 
+}
+Rule MvMDefenderDiedPyroEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimPyro IsEngineer
+	Response MvMDefenderDiedPyroEngineer
+}
+
+Response MvMDefenderDiedSniperEngineer
+{
+	scene "scenes/Player/Engineer/low/4117.vcd" 
+}
+Rule MvMDefenderDiedSniperEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSniper IsEngineer
+	Response MvMDefenderDiedSniperEngineer
+}
+
+Response MvMDefenderDiedEngineerEngineer
+{
+	scene "scenes/Player/Engineer/low/4118.vcd" 
+}
+Rule MvMDefenderDiedEngineerEngineer
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimEngineer IsEngineer
+	Response MvMDefenderDiedEngineerEngineer
+}
+
+Response MvMFirstBombPickupEngineer
+{
+	scene "scenes/Player/Engineer/low/4137.vcd" 
+	scene "scenes/Player/Engineer/low/4139.vcd" 
+}
+Rule MvMFirstBombPickupEngineer
+{
+	criteria ConceptMvMFirstBombPickup 5PercentChance IsMvMDefender IsEngineer
+	Response MvMFirstBombPickupEngineer
+}
+
+Response MvMBombPickupEngineer
+{
+	scene "scenes/Player/Engineer/low/4136.vcd" 
+}
+Rule MvMBombPickupEngineer
+{
+	criteria ConceptMvMBombPickup 5PercentChance IsMvMDefender IsEngineer
+	Response MvMBombPickupEngineer
+}
+
+Response MvMSniperCalloutEngineer
+{
+	scene "scenes/Player/Engineer/low/4120.vcd" 
+}
+Rule MvMSniperCalloutEngineer
+{
+	criteria ConceptMvMSniperCallout 50PercentChance IsMvMDefender IsEngineer
+	Response MvMSniperCalloutEngineer
+}
+
+Response MvMSentryBusterEngineer
+{
+	scene "scenes/Player/Engineer/low/4155.vcd" 
+}
+Rule MvMSentryBusterEngineer
+{
+	criteria ConceptMvMSentryBuster 50PercentChance IsMvMDefender IsEngineer
+	Response MvMSentryBusterEngineer
+}
+
+Response MvMSentryBusterDownEngineer
+{
+	scene "scenes/Player/Engineer/low/4156.vcd" 
+}
+Rule MvMSentryBusterDownEngineer
+{
+	criteria ConceptMvMSentryBusterDown 20PercentChance IsMvMDefender IsEngineer
+	Response MvMSentryBusterDownEngineer
+}
+
+Response MvMLastManStandingEngineer
+{
+	scene "scenes/Player/Engineer/low/4119.vcd" 
+}
+Rule MvMLastManStandingEngineer
+{
+	criteria ConceptMvMLastManStanding 20PercentChance IsMvMDefender IsEngineer
+	Response MvMLastManStandingEngineer
+}
+
+Response MvMEncourageMoneyEngineer
+{
+	scene "scenes/Player/Engineer/low/4128.vcd" 
+	scene "scenes/Player/Engineer/low/4129.vcd" 
+	scene "scenes/Player/Engineer/low/4130.vcd" 
+}
+Rule MvMEncourageMoneyEngineer
+{
+	criteria ConceptMvMEncourageMoney 50PercentChance IsMvMDefender IsEngineer
+	Response MvMEncourageMoneyEngineer
+}
+
+Response MvMEncourageUpgradeEngineer
+{
+	scene "scenes/Player/Engineer/low/4135.vcd" 
+}
+Rule MvMEncourageUpgradeEngineer
+{
+	criteria ConceptMvMEncourageUpgrade 50PercentChance IsMvMDefender IsEngineer
+	Response MvMEncourageUpgradeEngineer
+}
+
+Response MvMUpgradeCompleteEngineer
+{
+	scene "scenes/Player/Engineer/low/4131.vcd" 
+	scene "scenes/Player/Engineer/low/4133.vcd" 
+}
+Rule MvMUpgradeCompleteEngineer
+{
+	criteria ConceptMvMUpgradeComplete 5PercentChance IsMvMDefender IsEngineer
+	Response MvMUpgradeCompleteEngineer
+}
+
+Response MvMGiantCalloutEngineer
+{
+	scene "scenes/Player/Engineer/low/4157.vcd" 
+	scene "scenes/Player/Engineer/low/4158.vcd" 
+}
+Rule MvMGiantCalloutEngineer
+{
+	criteria ConceptMvMGiantCallout 20PercentChance IsMvMDefender IsEngineer
+	Response MvMGiantCalloutEngineer
+}
+
+Response MvMGiantHasBombEngineer
+{
+	scene "scenes/Player/Engineer/low/4162.vcd" 
+}
+Rule MvMGiantHasBombEngineer
+{
+	criteria ConceptMvMGiantHasBomb 20PercentChance IsMvMDefender IsEngineer
+	Response MvMGiantHasBombEngineer
+}
+
+Response MvMSappedRobotEngineer
+{
+	scene "scenes/Player/Engineer/low/4121.vcd" 
+	scene "scenes/Player/Engineer/low/4122.vcd" 
+}
+Rule MvMSappedRobotEngineer
+{
+	criteria ConceptMvMSappedRobot 50PercentChance IsMvMDefender IsEngineer
+	Response MvMSappedRobotEngineer
+}
+
+Response MvMCloseCallEngineer
+{
+	scene "scenes/Player/Engineer/low/4143.vcd" 
+}
+Rule MvMCloseCallEngineer
+{
+	criteria ConceptMvMCloseCall 50PercentChance IsMvMDefender IsEngineer
+	Response MvMCloseCallEngineer
+}
+
+Response MvMTankCalloutEngineer
+{
+	scene "scenes/Player/Engineer/low/4146.vcd" 
+}
+Rule MvMTankCalloutEngineer
+{
+	criteria ConceptMvMTankCallout 50PercentChance IsMvMDefender IsEngineer
+	Response MvMTankCalloutEngineer
+}
+
+Response MvMTankDeadEngineer
+{
+	scene "scenes/Player/Engineer/low/4152.vcd" 
+}
+Rule MvMTankDeadEngineer
+{
+	criteria ConceptMvMTankDead 50PercentChance IsMvMDefender IsEngineer
+	Response MvMTankDeadEngineer
+}
+
+Response MvMTankDeployingEngineer
+{
+	scene "scenes/Player/Engineer/low/4151.vcd" 
+}
+Rule MvMTankDeployingEngineer
+{
+	criteria ConceptMvMTankDeploying 50PercentChance IsMvMDefender IsEngineer
+	Response MvMTankDeployingEngineer
+}
+
+Response MvMAttackTheTankEngineer
+{
+	scene "scenes/Player/Engineer/low/4147.vcd" 
+}
+Rule MvMAttackTheTankEngineer
+{
+	criteria ConceptMvMAttackTheTank 50PercentChance IsMvMDefender IsEngineer
+	Response MvMAttackTheTankEngineer
+}
+
+Response MvMTauntEngineer
+{
+	scene "scenes/Player/Engineer/low/4123.vcd" 
+	scene "scenes/Player/Engineer/low/4127.vcd" 
+}
+Rule MvMTauntEngineer
+{
+	criteria ConceptMvMTaunt 50PercentChance IsMvMDefender IsEngineer
+	Response MvMTauntEngineer
+}
+
+Response MvMWaveStartEngineer
+{
+	scene "scenes/Player/Engineer/low/4109.vcd" 
+}
+Rule MvMWaveStartEngineer
+{
+	criteria ConceptMvMWaveStart 50PercentChance IsMvMDefender IsEngineer
+	Response MvMWaveStartEngineer
+}
+
+Response MvMWaveWinEngineer
+{
+	scene "scenes/Player/Engineer/low/4095.vcd" 
+	scene "scenes/Player/Engineer/low/4096.vcd" 
+	scene "scenes/Player/Engineer/low/4097.vcd" 
+	scene "scenes/Player/Engineer/low/4098.vcd" 
+	scene "scenes/Player/Engineer/low/4321.vcd" 
+}
+Rule MvMWaveWinEngineer
+{
+	criteria ConceptMvMWaveWin 50PercentChance IsMvMDefender IsEngineer
+	Response MvMWaveWinEngineer
+}
+
+Response MvMWaveLoseEngineer
+{
+	scene "scenes/Player/Engineer/low/4099.vcd" 
+	scene "scenes/Player/Engineer/low/4100.vcd" 
+}
+Rule MvMWaveLoseEngineer
+{
+	criteria ConceptMvMWaveLose 50PercentChance IsMvMDefender IsEngineer
+	Response MvMWaveLoseEngineer
+}

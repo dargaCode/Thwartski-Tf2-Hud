@@ -411,6 +411,7 @@ criterion "WeaponIsRobotArm" "item_name" "The Gunslinger" "required" weight 10
 criterion "ItemIsGoldenWrench" "item_name" "Golden Wrench" "required" weight 10
 criterion "WeaponIsShortstop" "item_name" "The Shortstop" "required" weight 10
 criterion "WeaponIsMadMilk" "item_name" "Mad Milk" "required" weight 10
+criterion "WeaponIsSDCleaver" "item_name" "The Flying Guillotine" "required" weight 10
 criterion "WeaponIsHolyMackerel" "item_name" "The Holy Mackerel" "required" weight 10
 criterion "WeaponIsUnarmedCombat" "item_name" "Unarmed Combat" "required" weight 10
 criterion "WeaponIsKatana" "playerweapon" "tf_weapon_katana" "required" weight 10
@@ -479,6 +480,7 @@ criterion "WeaponIsScorchShot" "item_name" "The Scorch Shot" "required" weight 1
 criterion "WeaponIsLollichop" "item_name" "The Lollichop" "required" weight 10
 criterion "WeaponIsPEPBrawlerBlaster" "playerweapon" "tf_weapon_pep_brawler_blaster" "required" weight 10
 criterion "WeaponIsHandgunScoutSecondary" "playerweapon" "tf_weapon_handgun_scout_secondary" "required" weight 10
+criterion "WeaponIsAnnihilator" "item_name" "The Neon Annihilator" "required" weight 10
 
 //Custom healed concept and critical hit
 criterion "IsBeingHealed" "beinghealed" "1" "required"
@@ -550,6 +552,39 @@ criterion "DuelTargetIsEngineer" "dueltargetclass" "Engineer" required
 
 
 criterion "ConceptRocketDestroyed" "Concept" "TLK_ROCKET_DESTOYED" required 
+
+// MvM criterion
+criterion "IsMvMDefender" "IsMvMDefender" "1" required
+criterion "ConceptMvMBombDropped" "Concept" "TLK_MVM_BOMB_DROPPED" required  
+criterion "ConceptMvMBombCarrierUpgrade1" "Concept" "TLK_MVM_BOMB_CARRIER_UPGRADE1" required  
+criterion "ConceptMvMBombCarrierUpgrade2" "Concept" "TLK_MVM_BOMB_CARRIER_UPGRADE2" required  
+criterion "ConceptMvMBombCarrierUpgrade3" "Concept" "TLK_MVM_BOMB_CARRIER_UPGRADE3" required  
+criterion "ConceptMvMDefenderDied" "Concept" "TLK_MVM_DEFENDER_DIED" required  
+criterion "ConceptMvMFirstBombPickup" "Concept" "TLK_MVM_FIRST_BOMB_PICKUP" required  
+criterion "ConceptMvMBombPickup" "Concept" "TLK_MVM_BOMB_PICKUP" required 
+criterion "ConceptMvMSentryBuster" "Concept" "TLK_MVM_SENTRY_BUSTER" required 
+criterion "ConceptMvMSentryBusterDown" "Concept" "TLK_MVM_SENTRY_BUSTER_DOWN" required 
+criterion "ConceptMvMSniperCallout" "Concept" "TLK_MVM_SNIPER_CALLOUT" required 
+criterion "ConceptMvMLastManStanding" "Concept" "TLK_MVM_LAST_MAN_STANDING" required 
+criterion "ConceptMvMEncourageMoney" "Concept" "TLK_MVM_ENCOURAGE_MONEY" required 
+criterion "ConceptMvMMoneyPickup" "Concept" "TLK_MVM_MONEY_PICKUP" required 
+criterion "ConceptMvMEncourageUpgrade" "Concept" "TLK_MVM_ENCOURAGE_UPGRADE" required 
+criterion "ConceptMvMUpgradeComplete" "Concept" "TLK_MVM_UPGRADE_COMPLETE" required 
+criterion "ConceptMvMGiantCallout" "Concept" "TLK_MVM_GIANT_CALLOUT" required 
+criterion "ConceptMvMGiantHasBomb" "Concept" "TLK_MVM_GIANT_HAS_BOMB" required 
+criterion "ConceptMvMGiantKilled" "Concept" "TLK_MVM_GIANT_KILLED" required 
+criterion "ConceptMvMGiantKilledTeammate" "Concept" "TLK_MVM_GIANT_KILLED_TEAMMATE" required 
+criterion "ConceptMvMSappedRobot" "Concept" "TLK_MVM_SAPPED_ROBOT" required 
+criterion "ConceptMvMCloseCall" "Concept" "TLK_MVM_CLOSE_CALL" required 
+criterion "ConceptMvMTankCallout" "Concept" "TLK_MVM_TANK_CALLOUT" required 
+criterion "ConceptMvMTankDead" "Concept" "TLK_MVM_TANK_DEAD" required 
+criterion "ConceptMvMTankDeploying" "Concept" "TLK_MVM_TANK_DEPLOYING" required 
+criterion "ConceptMvMAttackTheTank" "Concept" "TLK_MVM_ATTACK_THE_TANK" required 
+criterion "ConceptMvMTaunt" "Concept" "TLK_MVM_TAUNT" required 
+criterion "ConceptMvMWaveStart" "Concept" "TLK_MVM_WAVE_START" required 
+criterion "ConceptMvMWaveWin" "Concept" "TLK_MVM_WAVE_WIN" required 
+criterion "ConceptMvMWaveLose" "Concept" "TLK_MVM_WAVE_LOSE" required 
+criterion "ConceptMvMDeployRage" "Concept" "TLK_MVM_DEPLOY_RAGE" required 
 
 
 // Test rules
