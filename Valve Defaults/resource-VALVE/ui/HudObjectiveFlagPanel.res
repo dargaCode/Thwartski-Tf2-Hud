@@ -38,6 +38,11 @@
 			"visible"	"0"
 		}
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -58,7 +63,13 @@
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_bg_right"
 		"scaleImage"	"1"	
+		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_mvm"
 		{
 			"visible"	"0"
 		}
@@ -85,6 +96,11 @@
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_mvm"
 		{
 			"visible"	"0"
 		}
@@ -122,6 +138,11 @@
 			"visible"	"0"
 		}
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -151,6 +172,11 @@
 		"fgcolor"		"Black"
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_mvm"
 		{
 			"visible"	"0"
 		}
@@ -188,6 +214,11 @@
 			"visible"	"0"
 		}
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -217,6 +248,11 @@
 		"fgcolor"		"Black"		
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_mvm"
 		{
 			"visible"	"0"
 		}
@@ -295,6 +331,11 @@
 			"visible"	"0"
 		}
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -321,6 +362,11 @@
 		"scaleImage"	"1"	
 		
 		"if_hybrid"
+		{
+			"visible"	"0"
+		}
+		
+		"if_mvm"
 		{
 			"visible"	"0"
 		}
