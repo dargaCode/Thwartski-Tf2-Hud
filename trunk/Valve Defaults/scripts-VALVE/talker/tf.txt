@@ -147,7 +147,16 @@
 		criteria ConceptPlayerTaunt IsPyro WeaponIsManmelter
 		response PyroTauntSecondary
 	}
-	
+
+	Response "PyroTauntAnnihilator"
+	{
+		scene "scenes/player/pyro/low/annihilator_taunt.vcd"	
+	}
+	Rule PyroTauntAnnihilator
+	{
+		criteria ConceptPlayerTaunt IsPyro WeaponIsAnnihilator
+		response PyroTauntAnnihilator
+	}	
 
 //============================================================================================================
 
@@ -1084,6 +1093,11 @@
 	rule ScoutTauntMadMilk
 	{
 		criteria ConceptPlayerTaunt IsScout WeaponIsMadMilk
+		response ScoutTauntSecondary
+	}
+	rule ScoutTauntSDCleaver
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsSDCleaver
 		response ScoutTauntSecondary
 	}
 	rule ScoutTauntHolyMackerel

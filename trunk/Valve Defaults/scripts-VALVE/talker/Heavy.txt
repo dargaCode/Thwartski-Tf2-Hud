@@ -1343,6 +1343,363 @@ Rule PlayerPositiveHeavy
 }
 // Modified to be an extension of the 'positive' voice command.
 
+//--------------------------------------------------------------------------------------------------------------
+// MvM Speech
+//--------------------------------------------------------------------------------------------------------------
+Response MvMBombDroppedHeavy
+{
+	scene "scenes/Player/Heavy/low/4009.vcd" 
+}
+Rule MvMBombDroppedHeavy
+{
+	criteria ConceptMvMBombDropped 5PercentChance IsMvMDefender IsHeavy 
+	Response MvMBombDroppedHeavy
+}
+
+Response MvMBombCarrierUpgrade1Heavy
+{
+	scene "scenes/Player/Heavy/low/4005.vcd" 
+}
+Rule MvMBombCarrierUpgrade1Heavy
+{
+	criteria ConceptMvMBombCarrierUpgrade1 5PercentChance IsMvMDefender IsHeavy 
+	Response MvMBombCarrierUpgrade1Heavy
+}
+
+Response MvMBombCarrierUpgrade2Heavy
+{
+	scene "scenes/Player/Heavy/low/4006.vcd" 
+}
+Rule MvMBombCarrierUpgrade2Heavy
+{
+	criteria ConceptMvMBombCarrierUpgrade2 5PercentChance IsMvMDefender IsHeavy 
+	Response MvMBombCarrierUpgrade2Heavy
+}
+
+Response MvMDefenderDiedEngineerHeavy
+{
+	scene "scenes/Player/Heavy/low/3962.vcd" 
+}
+Rule MvMDefenderDiedEngineerHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimEngineer IsHeavy 
+	Response MvMDefenderDiedEngineerHeavy
+}
+
+Response MvMDefenderDiedSpyHeavy
+{
+	scene "scenes/Player/Heavy/low/3963.vcd" 
+}
+Rule MvMDefenderDiedSpyHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSpy IsHeavy 
+	Response MvMDefenderDiedSpyHeavy
+}
+
+Response MvMDefenderDiedScoutHeavy
+{
+	scene "scenes/Player/Heavy/low/3964.vcd" 
+}
+Rule MvMDefenderDiedScoutHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimScout IsHeavy 
+	Response MvMDefenderDiedScoutHeavy
+}
+
+Response MvMDefenderDiedHeavyHeavy
+{
+	scene "scenes/Player/Heavy/low/3965.vcd" 
+}
+Rule MvMDefenderDiedHeavyHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimHeavy IsHeavy 
+	Response MvMDefenderDiedHeavyHeavy
+}
+
+Response MvMDefenderDiedDemomanHeavy
+{
+	scene "scenes/Player/Heavy/low/3966.vcd" 
+}
+Rule MvMDefenderDiedDemomanHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimDemoman IsHeavy 
+	Response MvMDefenderDiedDemomanHeavy
+}
+
+Response MvMDefenderDiedSniperHeavy
+{
+	scene "scenes/Player/Heavy/low/3967.vcd" 
+}
+Rule MvMDefenderDiedSniperHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSniper IsHeavy 
+	Response MvMDefenderDiedSniperHeavy
+}
+
+Response MvMDefenderDiedPyroHeavy
+{
+	scene "scenes/Player/Heavy/low/3968.vcd" 
+}
+Rule MvMDefenderDiedPyroHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimPyro IsHeavy 
+	Response MvMDefenderDiedPyroHeavy
+}
+
+Response MvMDefenderDiedMedicHeavy
+{
+	scene "scenes/Player/Heavy/low/3969.vcd" 
+}
+Rule MvMDefenderDiedMedicHeavy
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimMedic IsHeavy 
+	Response MvMDefenderDiedMedicHeavy
+}
+
+Response MvMFirstBombPickupHeavy
+{
+	scene "scenes/Player/Heavy/low/4004.vcd" 
+}
+Rule MvMFirstBombPickupHeavy
+{
+	criteria ConceptMvMFirstBombPickup 5PercentChance IsMvMDefender IsHeavy
+	Response MvMFirstBombPickupHeavy
+}
+
+Response MvMBombPickupHeavy
+{
+	scene "scenes/Player/Heavy/low/4003.vcd"
+	scene "scenes/Player/Heavy/low/4004.vcd"  
+}
+Rule MvMBombPickupHeavy
+{
+	criteria ConceptMvMBombPickup 5PercentChance IsMvMDefender IsHeavy
+	Response MvMBombPickupHeavy
+}
+
+Response MvMSniperCalloutHeavy
+{
+	scene "scenes/Player/Heavy/low/3972.vcd" 
+}
+Rule MvMSniperCalloutHeavy
+{
+	criteria ConceptMvMSniperCallout 50PercentChance IsMvMDefender IsHeavy
+	Response MvMSniperCalloutHeavy
+}
+
+Response MvMSentryBusterHeavy
+{
+	scene "scenes/Player/Heavy/low/4018.vcd" 
+}
+Rule MvMSentryBusterHeavy
+{
+	criteria ConceptMvMSentryBuster 50PercentChance IsMvMDefender IsHeavy
+	Response MvMSentryBusterHeavy
+}
+
+Response MvMSentryBusterDownHeavy
+{
+	scene "scenes/Player/Heavy/low/4019.vcd" 
+}
+Rule MvMSentryBusterDownHeavy
+{
+	criteria ConceptMvMSentryBusterDown 20PercentChance IsMvMDefender IsHeavy
+	Response MvMSentryBusterDownHeavy
+}
+
+Response MvMLastManStandingHeavy
+{
+	scene "scenes/Player/Heavy/low/3970.vcd" 
+	scene "scenes/Player/Heavy/low/3971.vcd" 
+}
+Rule MvMLastManStandingHeavy
+{
+	criteria ConceptMvMLastManStanding 20PercentChance IsMvMDefender IsHeavy
+	Response MvMLastManStandingHeavy
+}
+
+Response MvMEncourageMoneyHeavy
+{
+	scene "scenes/Player/Heavy/low/3988.vcd" 
+	scene "scenes/Player/Heavy/low/3989.vcd" 
+	scene "scenes/Player/Heavy/low/3990.vcd" 
+	scene "scenes/Player/Heavy/low/3991.vcd" 
+}
+Rule MvMEncourageMoneyHeavy
+{
+	criteria ConceptMvMEncourageMoney 50PercentChance IsMvMDefender IsHeavy
+	Response MvMEncourageMoneyHeavy
+}
+
+Response MvMEncourageUpgradeHeavy
+{
+	scene "scenes/Player/Heavy/low/4000.vcd" 
+	scene "scenes/Player/Heavy/low/4001.vcd" 
+	scene "scenes/Player/Heavy/low/4002.vcd" 
+}
+Rule MvMEncourageUpgradeHeavy
+{
+	criteria ConceptMvMEncourageUpgrade 50PercentChance IsMvMDefender IsHeavy
+	Response MvMEncourageUpgradeHeavy
+}
+
+Response MvMUpgradeCompleteHeavy
+{
+	scene "scenes/Player/Heavy/low/3992.vcd" 
+	scene "scenes/Player/Heavy/low/3993.vcd" 
+	scene "scenes/Player/Heavy/low/3994.vcd" 
+	scene "scenes/Player/Heavy/low/3995.vcd" 
+	scene "scenes/Player/Heavy/low/3996.vcd" 
+	scene "scenes/Player/Heavy/low/3997.vcd" 
+
+}
+Rule MvMUpgradeCompleteHeavy
+{
+	criteria ConceptMvMUpgradeComplete 5PercentChance IsMvMDefender IsHeavy
+	Response MvMUpgradeCompleteHeavy
+}
+
+Response MvMGiantCalloutHeavy
+{
+	scene "scenes/Player/Heavy/low/4020.vcd" 
+}
+Rule MvMGiantCalloutHeavy
+{
+	criteria ConceptMvMGiantCallout 20PercentChance IsMvMDefender IsHeavy
+	Response MvMGiantCalloutHeavy
+}
+
+Response MvMGiantHasBombHeavy
+{
+	scene "scenes/Player/Heavy/low/4024.vcd" 
+}
+Rule MvMGiantHasBombHeavy
+{
+	criteria ConceptMvMGiantHasBomb 20PercentChance IsMvMDefender IsHeavy
+	Response MvMGiantHasBombHeavy
+}
+
+Response MvMSappedRobotHeavy
+{
+	scene "scenes/Player/Heavy/low/3975.vcd" 
+	scene "scenes/Player/Heavy/low/3976.vcd" 
+}
+Rule MvMSappedRobotHeavy
+{
+	criteria ConceptMvMSappedRobot 50PercentChance IsMvMDefender IsHeavy
+	Response MvMSappedRobotHeavy
+}
+
+Response MvMCloseCallHeavy
+{
+	scene "scenes/Player/Heavy/low/4007.vcd" 
+	scene "scenes/Player/Heavy/low/4008.vcd" 
+}
+Rule MvMCloseCallHeavy
+{
+	criteria ConceptMvMCloseCall 50PercentChance IsMvMDefender IsHeavy
+	Response MvMCloseCallHeavy
+}
+
+Response MvMTankCalloutHeavy
+{
+	scene "scenes/Player/Heavy/low/4011.vcd" 
+}
+Rule MvMTankCalloutHeavy
+{
+	criteria ConceptMvMTankCallout 50PercentChance IsMvMDefender IsHeavy
+	Response MvMTankCalloutHeavy
+}
+
+Response MvMTankDeadHeavy
+{
+	scene "scenes/Player/Heavy/low/4017.vcd" 
+}
+Rule MvMTankDeadHeavy
+{
+	criteria ConceptMvMTankDead 50PercentChance IsMvMDefender IsHeavy
+	Response MvMTankDeadHeavy
+}
+
+Response MvMTankDeployingHeavy
+{
+	scene "scenes/Player/Heavy/low/4016.vcd" 
+}
+Rule MvMTankDeployingHeavy
+{
+	criteria ConceptMvMTankDeploying 50PercentChance IsMvMDefender IsHeavy
+	Response MvMTankDeployingHeavy
+}
+
+Response MvMAttackTheTankHeavy
+{
+	scene "scenes/Player/Heavy/low/4012.vcd" 
+	scene "scenes/Player/Heavy/low/4013.vcd" 
+}
+Rule MvMAttackTheTankHeavy
+{
+	criteria ConceptMvMAttackTheTank 50PercentChance IsMvMDefender IsHeavy
+	Response MvMAttackTheTankHeavy
+}
+
+Response MvMTauntHeavy
+{
+	scene "scenes/Player/Heavy/low/3977.vcd" 
+	scene "scenes/Player/Heavy/low/3978.vcd" 
+}
+Rule MvMTauntHeavy
+{
+	criteria ConceptMvMTaunt 50PercentChance IsMvMDefender IsHeavy
+	Response MvMTauntHeavy
+}
+
+Response MvMWaveWinHeavy
+{
+	scene "scenes/Player/Heavy/low/3949.vcd" 
+	scene "scenes/Player/Heavy/low/3950.vcd" 
+	scene "scenes/Player/Heavy/low/3951.vcd" 
+	scene "scenes/Player/Heavy/low/3952.vcd" 
+	scene "scenes/Player/Heavy/low/3953.vcd" 
+}
+Rule MvMWaveWinHeavy
+{
+	criteria ConceptMvMWaveWin 50PercentChance IsMvMDefender IsHeavy
+	Response MvMWaveWinHeavy
+}
+
+Response MvMGiantKilledHeavy
+{
+	scene "scenes/Player/Heavy/low/4023.vcd" 
+}
+Rule MvMGiantKilledHeavy
+{
+	criteria ConceptMvMGiantKilled 50PercentChance IsMvMDefender IsHeavy
+	Response MvMGiantKilledHeavy
+}
+
+Response MvMGiantKilledTeammateHeavy
+{
+	scene "scenes/Player/Heavy/low/4022.vcd" 
+}
+Rule MvMGiantKilledTeammateHeavy
+{
+	criteria ConceptMvMGiantKilledTeammate 50PercentChance IsMvMDefender IsHeavy
+	Response MvMGiantKilledTeammateHeavy
+}
+
+Response MvMDeployRageHeavy
+{
+	scene "scenes/Player/Heavy/low/3983.vcd" 
+	scene "scenes/Player/Heavy/low/3985.vcd" 
+	scene "scenes/Player/Heavy/low/3986.vcd" 
+	scene "scenes/Player/Heavy/low/3987.vcd" 
+}
+Rule MvMDeployRageHeavy
+{
+	criteria ConceptMvMDeployRage 50PercentChance IsMvMDefender IsHeavy
+	Response MvMDeployRageHeavy
+}
+
 Response RocketDestroyedHeavy
 {
 	scene "scenes/Player/Heavy/low/3979.vcd" 

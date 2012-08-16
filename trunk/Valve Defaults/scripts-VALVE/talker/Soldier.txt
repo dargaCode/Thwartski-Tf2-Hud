@@ -1211,3 +1211,373 @@ Rule PlayerKilledDominatingRobotSoldier
 	ApplyContext "IsDominating:1:10"
 	Response PlayerKilledDominatingRobotSoldier
 }
+
+//--------------------------------------------------------------------------------------------------------------
+// MvM Speech
+//--------------------------------------------------------------------------------------------------------------
+Response MvMBombDroppedSoldier
+{
+	scene "scenes/Player/Soldier/low/4284.vcd" 
+	scene "scenes/Player/Soldier/low/4285.vcd" 
+}
+Rule MvMBombDroppedSoldier
+{
+	criteria ConceptMvMBombDropped 5PercentChance IsMvMDefender IsSoldier 
+	Response MvMBombDroppedSoldier
+}
+
+Response MvMBombCarrierUpgrade1Soldier
+{
+	scene "scenes/Player/Soldier/low/4280.vcd" 
+}
+Rule MvMBombCarrierUpgrade1Soldier
+{
+	criteria ConceptMvMBombCarrierUpgrade1 5PercentChance IsMvMDefender IsSoldier 
+	Response MvMBombCarrierUpgrade1Soldier
+}
+
+Response MvMBombCarrierUpgrade2Soldier
+{
+	scene "scenes/Player/Soldier/low/4281.vcd" 
+}
+Rule MvMBombCarrierUpgrade2Soldier
+{
+	criteria ConceptMvMBombCarrierUpgrade2 5PercentChance IsMvMDefender IsSoldier 
+	Response MvMBombCarrierUpgrade2Soldier
+}
+
+Response MvMBombCarrierUpgrade3Soldier
+{
+	scene "scenes/Player/Soldier/low/4282.vcd" 
+}
+Rule MvMBombCarrierUpgrade3Soldier
+{
+	criteria ConceptMvMBombCarrierUpgrade3 5PercentChance IsMvMDefender IsSoldier 
+	Response MvMBombCarrierUpgrade3Soldier
+}
+
+Response MvMDefenderDiedScoutSoldier
+{
+	scene "scenes/Player/Soldier/low/4246.vcd" 
+}
+Rule MvMDefenderDiedScoutSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimScout IsSoldier 
+	Response MvMDefenderDiedScoutSoldier
+}
+
+Response MvMDefenderDiedSpySoldier
+{
+	scene "scenes/Player/Soldier/low/4247.vcd" 
+}
+Rule MvMDefenderDiedSpySoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSpy IsSoldier 
+	Response MvMDefenderDiedSpySoldier
+}
+
+Response MvMDefenderDiedHeavySoldier
+{
+	scene "scenes/Player/Soldier/low/4248.vcd" 
+}
+Rule MvMDefenderDiedHeavySoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimHeavy IsSoldier 
+	Response MvMDefenderDiedHeavySoldier
+}
+
+Response MvMDefenderDiedSoldierSoldier
+{
+	scene "scenes/Player/Soldier/low/4249.vcd" 
+}
+Rule MvMDefenderDiedSoldierSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSoldier IsSoldier 
+	Response MvMDefenderDiedSoldierSoldier
+}
+
+Response MvMDefenderDiedMedicSoldier
+{
+	scene "scenes/Player/Soldier/low/4250.vcd" 
+}
+Rule MvMDefenderDiedMedicSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimMedic IsSoldier 
+	Response MvMDefenderDiedMedicSoldier
+}
+
+Response MvMDefenderDiedDemomanSoldier
+{
+	scene "scenes/Player/Soldier/low/4251.vcd" 
+}
+Rule MvMDefenderDiedDemomanSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimDemoman IsSoldier 
+	Response MvMDefenderDiedDemomanSoldier
+}
+
+Response MvMDefenderDiedPyroSoldier
+{
+	scene "scenes/Player/Soldier/low/4252.vcd" 
+}
+Rule MvMDefenderDiedPyroSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimPyro IsSoldier 
+	Response MvMDefenderDiedPyroSoldier
+}
+
+Response MvMDefenderDiedSniperSoldier
+{
+	scene "scenes/Player/Soldier/low/4253.vcd" 
+}
+Rule MvMDefenderDiedSniperSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimSniper IsSoldier 
+	Response MvMDefenderDiedSniperSoldier
+}
+
+Response MvMDefenderDiedEngineerSoldier
+{
+	scene "scenes/Player/Soldier/low/4254.vcd" 
+}
+Rule MvMDefenderDiedEngineerSoldier
+{
+	criteria ConceptMvMDefenderDied 50PercentChance IsMvMDefender IsVictimEngineer IsSoldier 
+	Response MvMDefenderDiedEngineerSoldier
+}
+
+Response MvMFirstBombPickupSoldier
+{
+	scene "scenes/Player/Soldier/low/4277.vcd" 
+	scene "scenes/Player/Soldier/low/4279.vcd" 
+}
+Rule MvMFirstBombPickupSoldier
+{
+	criteria ConceptMvMFirstBombPickup 5PercentChance IsMvMDefender IsSoldier
+	Response MvMFirstBombPickupSoldier
+}
+
+Response MvMBombPickupSoldier
+{
+	scene "scenes/Player/Soldier/low/4276.vcd" 
+}
+Rule MvMBombPickupSoldier
+{
+	criteria ConceptMvMBombPickup 5PercentChance IsMvMDefender IsSoldier
+	Response MvMBombPickupSoldier
+}
+
+Response MvMSniperCalloutSoldier
+{
+	scene "scenes/Player/Soldier/low/4258.vcd" 
+}
+Rule MvMSniperCalloutSoldier
+{
+	criteria ConceptMvMSniperCallout 50PercentChance IsMvMDefender IsSoldier
+	Response MvMSniperCalloutSoldier
+}
+
+Response MvMSentryBusterSoldier
+{
+	scene "scenes/Player/Soldier/low/4295.vcd" 
+}
+Rule MvMSentryBusterSoldier
+{
+	criteria ConceptMvMSentryBuster 50PercentChance IsMvMDefender IsSoldier
+	Response MvMSentryBusterSoldier
+}
+
+Response MvMSentryBusterDownSoldier
+{
+	scene "scenes/Player/Soldier/low/4296.vcd" 
+}
+Rule MvMSentryBusterDownSoldier
+{
+	criteria ConceptMvMSentryBusterDown 20PercentChance IsMvMDefender IsSoldier
+	Response MvMSentryBusterDownSoldier
+}
+
+Response MvMLastManStandingSoldier
+{
+	scene "scenes/Player/Soldier/low/4255.vcd" 
+	scene "scenes/Player/Soldier/low/4257.vcd" 
+}
+Rule MvMLastManStandingSoldier
+{
+	criteria ConceptMvMLastManStanding 20PercentChance IsMvMDefender IsSoldier
+	Response MvMLastManStandingSoldier
+}
+
+Response MvMEncourageMoneySoldier
+{
+	scene "scenes/Player/Soldier/low/4270.vcd" 
+}
+Rule MvMEncourageMoneySoldier
+{
+	criteria ConceptMvMEncourageMoney 50PercentChance IsMvMDefender IsSoldier
+	Response MvMEncourageMoneySoldier
+}
+
+Response MvMEncourageUpgradeSoldier
+{
+	scene "scenes/Player/Soldier/low/4274.vcd" 
+}
+Rule MvMEncourageUpgradeSoldier
+{
+	criteria ConceptMvMEncourageUpgrade 50PercentChance IsMvMDefender IsSoldier
+	Response MvMEncourageUpgradeSoldier
+}
+
+Response MvMUpgradeCompleteSoldier
+{
+	scene "scenes/Player/Soldier/low/4271.vcd" 
+	scene "scenes/Player/Soldier/low/4272.vcd" 
+	scene "scenes/Player/Soldier/low/4273.vcd" 
+}
+Rule MvMUpgradeCompleteSoldier
+{
+	criteria ConceptMvMUpgradeComplete 5PercentChance IsMvMDefender IsSoldier
+	Response MvMUpgradeCompleteSoldier
+}
+
+Response MvMGiantCalloutSoldier
+{
+	scene "scenes/Player/Soldier/low/4297.vcd" 
+	scene "scenes/Player/Soldier/low/4301.vcd"
+}
+Rule MvMGiantCalloutSoldier
+{
+	criteria ConceptMvMGiantCallout 20PercentChance IsMvMDefender IsSoldier
+	Response MvMGiantCalloutSoldier
+}
+
+Response MvMGiantHasBombSoldier
+{
+	scene "scenes/Player/Soldier/low/4302.vcd" 
+	scene "scenes/Player/Soldier/low/4303.vcd" 
+}
+Rule MvMGiantHasBombSoldier
+{
+	criteria ConceptMvMGiantHasBomb 20PercentChance IsMvMDefender IsSoldier
+	Response MvMGiantHasBombSoldier
+}
+
+Response MvMSappedRobotSoldier
+{
+	scene "scenes/Player/Soldier/low/4259.vcd" 
+	scene "scenes/Player/Soldier/low/4260.vcd" 
+}
+Rule MvMSappedRobotSoldier
+{
+	criteria ConceptMvMSappedRobot 50PercentChance IsMvMDefender IsSoldier
+	Response MvMSappedRobotSoldier
+}
+
+Response MvMCloseCallSoldier
+{
+	scene "scenes/Player/Soldier/low/4283.vcd" 
+}
+Rule MvMCloseCallSoldier
+{
+	criteria ConceptMvMCloseCall 50PercentChance IsMvMDefender IsSoldier
+	Response MvMCloseCallSoldier
+}
+
+Response MvMTankCalloutSoldier
+{
+	scene "scenes/Player/Soldier/low/4287.vcd" 
+	scene "scenes/Player/Soldier/low/4288.vcd" 
+}
+Rule MvMTankCalloutSoldier
+{
+	criteria ConceptMvMTankCallout 50PercentChance IsMvMDefender IsSoldier
+	Response MvMTankCalloutSoldier
+}
+
+Response MvMTankDeadSoldier
+{
+	scene "scenes/Player/Soldier/low/4293.vcd" 
+	scene "scenes/Player/Soldier/low/4294.vcd" 
+}
+Rule MvMTankDeadSoldier
+{
+	criteria ConceptMvMTankDead 50PercentChance IsMvMDefender IsSoldier
+	Response MvMTankDeadSoldier
+}
+
+Response MvMTankDeployingSoldier
+{
+	scene "scenes/Player/Soldier/low/4292.vcd" 
+}
+Rule MvMTankDeployingSoldier
+{
+	criteria ConceptMvMTankDeploying 50PercentChance IsMvMDefender IsSoldier
+	Response MvMTankDeployingSoldier
+}
+
+Response MvMAttackTheTankSoldier
+{
+	scene "scenes/Player/Soldier/low/4289.vcd" 
+	scene "scenes/Player/Soldier/low/4290.vcd" 
+	scene "scenes/Player/Soldier/low/4291.vcd" 
+}
+Rule MvMAttackTheTankSoldier
+{
+	criteria ConceptMvMAttackTheTank 50PercentChance IsMvMDefender IsSoldier
+	Response MvMAttackTheTankSoldier
+}
+
+Response MvMTauntSoldier
+{
+	scene "scenes/Player/Soldier/low/4262.vcd" 
+	scene "scenes/Player/Soldier/low/4263.vcd" 
+	scene "scenes/Player/Soldier/low/4264.vcd" 
+	scene "scenes/Player/Soldier/low/4265.vcd" 
+	scene "scenes/Player/Soldier/low/4266.vcd" 
+	scene "scenes/Player/Soldier/low/4267.vcd" 
+}
+Rule MvMTauntSoldier
+{
+	criteria ConceptMvMTaunt 50PercentChance IsMvMDefender IsSoldier
+	Response MvMTauntSoldier
+}
+
+Response MvMWaveWinSoldier
+{
+	scene "scenes/Player/Soldier/low/4231.vcd" 
+	scene "scenes/Player/Soldier/low/4232.vcd" 
+	scene "scenes/Player/Soldier/low/4233.vcd" 
+	scene "scenes/Player/Soldier/low/4234.vcd" 
+	scene "scenes/Player/Soldier/low/4235.vcd" 
+}
+Rule MvMWaveWinSoldier
+{
+	criteria ConceptMvMWaveWin 50PercentChance IsMvMDefender IsSoldier
+	Response MvMWaveWinSoldier
+}
+
+Response MvMWaveLoseSoldier
+{
+	scene "scenes/Player/Soldier/low/4236.vcd" 
+	scene "scenes/Player/Soldier/low/4237.vcd" 
+	scene "scenes/Player/Soldier/low/4238.vcd" 
+	scene "scenes/Player/Soldier/low/4239.vcd" 
+	scene "scenes/Player/Soldier/low/4240.vcd" 
+}
+Rule MvMWaveLoseSoldier
+{
+	criteria ConceptMvMWaveLose 50PercentChance IsMvMDefender IsSoldier
+	Response MvMWaveLoseSoldier
+}
+
+Response MvMMoneyPickupSoldier
+{
+	scene "scenes/Player/Soldier/low/4269.vcd" 
+}
+Rule MvMMoneyPickupSoldier
+{
+	criteria ConceptMvMMoneyPickup 5PercentChance IsMvMDefender IsSoldier
+	Response MvMMoneyPickupSoldier
+}
+
+
