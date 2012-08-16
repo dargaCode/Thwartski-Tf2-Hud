@@ -219,7 +219,7 @@
 		{
 			"ControlName"	"Label"
 			"fieldName"		"Option2CountLabel"
-			"xpos"			"64"
+			"xpos"			"74"
 			"ypos"			"113"
 			"wide"			"16"
 			"tall"			"16"
