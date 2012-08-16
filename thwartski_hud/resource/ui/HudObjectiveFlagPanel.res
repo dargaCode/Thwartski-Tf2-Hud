@@ -64,6 +64,11 @@
 		"scaleImage"		"1"	
 		"fillcolor"			"0 0 0 255"
 		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
+		
 		"if_specialdelivery"
 		{
 			"visible"	"0"
@@ -115,6 +120,11 @@
 		"enabled"			"1"
 		"scaleImage"		"1"	
 		"fillcolor"			"0 0 0 255"
+		
+		"if_mvm"
+		{
+			"visible"	"0"
+		}
 		
 		"if_specialdelivery"
 		{

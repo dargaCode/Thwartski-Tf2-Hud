@@ -17,11 +17,11 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"Briefcase"
-		"xpos"			"65"
-		"ypos"			"28"
+		"xpos"			"41"
+		"ypos"			"13"
 		"zpos"			"1"
-		"wide"			"30"
-		"tall"			"30"
+		"wide"			"20"
+		"tall"			"20"
 		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../hud/objectives_flagpanel_briefcase"
@@ -29,14 +29,9 @@
 		
 		"if_mvm"
 		{
-			"xpos"			"62"
-			"ypos"			"21"
-			"wide"			"38"
-			"tall"			"38"
+			"visible"		"1"
 		}	
 	}				
-	
-
 	
 	"StatusIcon"
 	{
