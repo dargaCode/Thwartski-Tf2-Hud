@@ -33,7 +33,7 @@ Scheme
 		"TransparentYellow"	"251 235 202 140"
 		//"Black"				"0 0 0 255"
 		//Changed black to a NTSC safe color
-		
+		"GreenSolid"		 "76 107 34 255"
 		"Black"				"46 43 42 255"
 		"TransparentBlack"	"0 0 0 196"
 		"TransparentLightBlack"	"0 0 0 90"
@@ -48,7 +48,8 @@ Scheme
 		"HudWhite"			"255 255 255 255"
 		"HudOffWhite"		"200 187 161 255"
 		"HudBlack"			"65 65 65 255"
-		
+		"ProgressBarBlue"	"91 122 142 255"
+		"CreditsGreen"		"94 150 49 255"
 		"Gray"				"178 178 178 255"
 
 		"Blank"				"0 0 0 0"
@@ -137,6 +138,17 @@ Scheme
 		"LighterRed"							"220 100 80 255"
 		"LighterDarkBrown"						"59 54 48 255"
 		"DarkBrown"								"41 37 38 255"
+		
+		"UpgradeDefaultFg"		"87 82 74 255"
+		"UpgradeDefaultBg"		"111 104 94 255"
+		"UpgradeArmedFg"		"194 96 47 255"
+		"UpgradeArmedBg"		"239 128 73 255"
+		"UpgradeDepressedFg"	"204 106 57 255"
+		"UpgradeDepressedBg"	"249 138 83 255"
+		"UpgradeSelectedFg"		"204 106 57 255"
+		"UpgradeSelectedBg"		"249 138 83 255"
+		"UpgradeDisabledFg"		"64 59 52 255"
+		"UpgradeDisabledBg"		"79 77 68 255"
 	}
 
 	///////////////////// BASE SETTINGS ////////////////////////
@@ -649,6 +661,18 @@ Scheme
 			}
 		}
 
+		"PlayerPanelPlayerName"
+		{
+			"1"
+			{
+				"name"		"Verdana"
+				"tall"		"6"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		
 		HudHintText
 		{
 			"1"
