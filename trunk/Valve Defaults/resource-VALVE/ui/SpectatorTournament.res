@@ -9,12 +9,11 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"enabled"		"1"
-		
+				
 		"team1_player_base_offset_x"		"-75"
 		"team1_player_base_y"				"0"
 		"team1_player_delta_x"				"-47"
 		"team1_player_delta_y"				"0"
-		
 		"team2_player_base_offset_x"		"25"
 		"team2_player_base_y"				"0"
 		"team2_player_delta_x"				"47"
@@ -27,6 +26,9 @@
 			"tall"			"33"
 			"zpos"			"1"
 			
+			"color_ready"	"0 255 0 220"
+			"color_notready"	"0 0 0 220"
+										  			
 			"playername"
 			{
 				"ControlName"	"CExLabel"
@@ -43,6 +45,15 @@
 				"labelText"		"%playername%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
+					
+				if_mvm
+				{
+					"xpos"				"0"
+					"ypos"				"25"
+					"wide"				"55"
+					"textAlignment"		"center"
+					"font"				"PlayerPanelPlayerName"
+				}
 			}
 			
 			"classimage"
@@ -58,6 +69,35 @@
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
 				"scaleImage"	"1"	
+				
+				if_mvm
+				{
+					"xpos"			"5"
+					"ypos"			"4"
+					"wide"			"20"
+					"tall"			"20"
+					"image"			"../vgui/hud_connecting"
+				}
+			}
+			
+			"classimagebg"
+			{
+				"ControlName"		"Panel"
+				"fieldName"		"classimagebg"
+				"xpos"			"5"
+				"ypos"			"4"
+				"zpos"			"2"
+				"wide"			"20"
+				"tall"			"20"
+				"visible"		"0"
+				"enabled"		"1"
+				"bgcolor_override"		"Black"
+				"PaintBackgroundType"	"0"
+				
+				if_mvm
+				{
+					"visible"		"1"
+				}
 			}
 			
 			"HealthIcon"
@@ -76,7 +116,56 @@
 				"TFFont"					"HudFontSmallest"
 				"HealthDeathWarningColor"	"HUDDeathWarning"
 				"TextColor"					"HudOffWhite"
-			}	
+			}
+			
+			"ReadyBG"
+			{
+				"ControlName"		"ScalableImagePanel"
+				"fieldName"		"ReadyBG"
+				"xpos"			"30"
+				"ypos"			"6"
+				"zpos"			"-1"
+				"wide"			"16"
+				"tall"			"16"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"0"
+				"enabled"		"1"
+				"image"			"../HUD/tournament_panel_brown"
+
+				"src_corner_height"	"22"				// pixels inside the image
+				"src_corner_width"	"22"
+			
+				"draw_corner_width"	"3"				// screen size of the corners ( and sides ), proportional
+				"draw_corner_height" 	"3"
+				
+				if_mvm
+				{
+					"visible"		"1"
+				}	
+			}
+			
+			"ReadyImage"
+			{
+				"ControlName"		"ImagePanel"
+				"fieldName"		"ReadyImage"
+				"xpos"			"32"
+				"ypos"			"8"
+				"zpos"			"0"
+				"wide"			"12"
+				"tall"			"12"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"0"
+				"enabled"		"1"
+				"image"			"hud/checkmark"
+				"scaleImage"		"1"
+
+				if_mvm
+				{
+					"visible"		"1"
+				}
+			}
 			
 			"respawntime"
 			{
@@ -86,14 +175,19 @@
 				"xpos"			"30"
 				"ypos"			"18"
 				"zpos"			"5"
-				"wide"			"15"
+				"wide"			"23"
 				"tall"			"10"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%respawntime%"
-				"textAlignment"	"north"
+				"textAlignment"	"west"
 				//"fgcolor"		"235 226 202 255"
+				
+				if_mvm
+				{
+					"ypos"			"17"
+				}
 			}
 			
 			"chargeamount"
@@ -131,8 +225,25 @@
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
 			}
+			
+			if_mvm
+			{
+				"wide"		"55"
+				"tall"		"35"
+			}
 		}
+		
+		if_mvm
+		{
+			"xpos"					"c-250"
+			"ypos"					"6"
+			"wide"					"500"
+			"tall"					"180"
+	
+			"team1_player_delta_x"			"52"
+		}		
 	}
+
 	"topbar"
 	{
 		"ControlName"	"Panel"
@@ -170,6 +281,37 @@
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"		"center"
 		"font"			"HudFontSmall"
+		
+		if_mvm
+		{
+			"xpos"			"c-190"
+			"ypos"			"1"
+			"wide"			"380"
+			"textAlignment"		"center"
+		}
+	}
+	"BuyBackLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BuyBackLabel"
+		"xpos"			"c-190"
+		"ypos"			"16"
+		"wide"			"380"
+		"tall"			"14"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_PVE_Buyback"
+		"textAlignment"	"center"
+		"font"			"HudFontSmall"
+		"wrap"			"1"
+		"centerwrap"	"1"
+	
+		if_mvm
+		{
+			"visible"		"1"
+		}	
 	}
 	"MapLabel"
 	{
