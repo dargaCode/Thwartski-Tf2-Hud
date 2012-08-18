@@ -3,19 +3,27 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v1.0.1 (PUBLIC RELEASE) - June 28, 2012.
+Thwartski Hud v1.1.0 (PUBLIC RELEASE) - Aug 18, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Added support for the Special Delivery game mode.
-	2) Added support for the Hitman's Heatmaker weapon meter.
-	3) Updated health and ammo UI to work with the new update.
+	1) Fixed all kmown bugs resulting from the Mann vs Machine patch.
+	2) First pass ui tweaks for MvM game mode (needs more work).
+	3) Temporarily removed multiple scoreboard variants until next version.
+	
+	Thanks to T-Triple-8 for reporting bugs!
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
+
+v1.0.1 (PUBLIC RELEASE) - June 28, 2012.
+	
+	1) Added support for the Special Delivery game mode.
+	2) Added support for the Hitman's Heatmaker weapon meter.
+	3) Updated health and ammo UI to work with the new update.
 	
 v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
 	
