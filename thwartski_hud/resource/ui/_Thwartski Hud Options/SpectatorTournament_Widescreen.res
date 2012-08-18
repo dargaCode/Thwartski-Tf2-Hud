@@ -23,8 +23,8 @@
 		"team2_player_base_y"				"152"
 		"team2_player_delta_x"				"0"
 		"team2_player_delta_y"				"35"
+		
 		"playerpanels_kv"
-
 		{
 			"visible"		"0"
 			"wide"			"55"
@@ -228,6 +228,19 @@
 				//"fgcolor"		"235 226 202 255"
 			}
 		}
+	
+		if_mvm
+		{
+			"xpos"					"c-250"
+			"ypos"					"6"
+			"wide"					"500"
+			"tall"					"180"
+			
+			"team1_player_base_offset_x"		"260"
+			"team1_player_base_y"				"152"
+			"team1_player_delta_x"				"53"
+			"team1_player_delta_y"				"0"
+		}		
 	}
 	"topbar"
 	{
@@ -242,6 +255,11 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"		"0"
+		
+		if_mvm
+		{
+			"tall"			"32"
+		}
 	}
 	"BottomBar"
 	{
@@ -286,6 +304,37 @@
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"	"west"
 		"font"			"HudFontMediumSmallSecondary"
+		
+		if_mvm
+		{
+			"xpos"				"c-300"
+			"ypos"				"2"
+			"textAlignment"		"center"
+			"font"				"HudFontMediumSmallSecondary"
+		}
+	}
+	"BuyBackLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"BuyBackLabel"
+		"xpos"			"c-190"
+		"ypos"			"18"
+		"wide"			"380"
+		"tall"			"14"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"labelText"		"#TF_PVE_Buyback"
+		"textAlignment"	"center"
+		"font"			"HudFontSmallest"//"HudFontSmall"
+		"wrap"			"1"
+		"centerwrap"	"1"
+	
+		if_mvm
+		{
+			"visible"		"1"
+		}	
 	}
 	
 	"SpectatorLabelThwartski"
@@ -305,7 +354,6 @@
 		"font"			"HudFontMediumBold"//"HudFontMediumBigBold"//"HudFontBiggerBold"//"HudFontGiantBold"
 		"fgcolor"		"255 0 0 200"
 	}
-	
 	
 	"MapLabel"
 	{
@@ -367,25 +415,25 @@
 		"ControlName"	"CItemModelPanel"
 		"fieldName"		"itempanel"
 		"xpos"			"0"
-		"ypos"			"0"
+		"ypos"			"28"
 		"zpos"			"1"
-		"wide"			"270"
+		"wide"			"180"
 		"tall"			"180"
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
 		
-		"model_xpos"		"10"
-		"model_center_y"	"1"
-		"model_wide"		"90"
-		"model_tall"		"55"
+		"model_xpos"		"400"
+		"model_center_y"	"0"
+		"model_wide"		"0"
+		"model_tall"		"0"
 		
-		"text_xpos"		"90"
-		"text_wide"		"170"
+		"text_xpos"		"0"
+		"text_wide"		"180"
 		"text_center"	"1"
 		
 		"max_text_height"	"90"
-		"padding_height"	"40"
+		"padding_height"	"30"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
 		
@@ -402,13 +450,13 @@
 			"fieldName"		"ItemLabel"
 			"font"			"DefaultSmall"
 			"xpos"			"10"
-			"ypos"			"3"
+			"ypos"			"13"
 			"zpos"			"1"
 			"wide"			"270"
 			"tall"			"9"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"labelText"		"#FreezePanel_Item"
 			"textAlignment"	"Left"
@@ -422,7 +470,7 @@
 			"fieldName"		"attriblabel"
 			"font"			"ItemFontAttribLarge"
 			"xpos"			"0"
-			"ypos"			"30"
+			"ypos"			"40"
 			"zpos"			"2"
 			"wide"			"140"
 			"tall"			"60"
@@ -434,6 +482,11 @@
 			"textAlignment"	"south"
 			"fgcolor"		"235 226 202 255"
 			"centerwrap"	"1"
+		}
+		
+		if_mvm
+		{
+			"ypos"			"32"
 		}
 	}			
 }
