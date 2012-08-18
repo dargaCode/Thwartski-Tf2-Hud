@@ -2,34 +2,30 @@
 //			       1. HOW DO I INSTALL THE HUD?
 //-------------------------------------------------------------------
 
-See thwartski_hud__README.txt
-
-//-------------------------------------------------------------------
-//						  HOW TO INSTALL
-//-------------------------------------------------------------------
-
 1.  Find your Team Fortress 2 folder. It will be something like: 
-	C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\
+		C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\
 
 2.  Copy \TF\ from this folder into your \TEAM FORTRESS 2\ folder. 
 	When prompted, Merge all folders, and Copy and Replace all files. 
 	
-3.  Have fun!
-
-
+3.  Join the Steam group and post your feedback:
+		http://steamcommunity.com/groups/thwartskihud
 
 //-------------------------------------------------------------------
-//			     2. HOW DO I CHANGE MY SCOREBOARD?
+//			       2. HOW DO I UNINSTALL THE HUD?
 //-------------------------------------------------------------------
 
-32-player scoreboard is used by default. 
+1.  Delete your \tf\Resource\ folder. 
 
-To use a smaller one, go to \UI\THWARTSKI_SCOREBOARDS\ to find 
-the version of ScoreBoard.res you want, and then paste it into the 
-\RESOURCE\UI\ folder, overwriting the file. 
+2.  Delete your \tf\Scripts\ folder.
 	
+3.  You now have the default Valve hud again.
+
+4.	Let me know why you decided not to use it: 
+		thwartski@gmail.com
+		
 //-------------------------------------------------------------------
-//	     2. WHY IS ONE TEAM CUT OFF FROM MY TOURNAMENT HUD?
+//	     3. WHY IS ONE TEAM CUT OFF FROM MY TOURNAMENT HUD?
 //-------------------------------------------------------------------
 
 The 16:9/16:10 tournament hud is used by default, and is too wide for
@@ -40,34 +36,21 @@ to find the version you want, and then paste it into the \RESOURCE\UI\
 folder, overwriting the file. 	
 
 //-------------------------------------------------------------------
-//		     3. WHY IS THERE A BUTTON BLOCKING MY MOTD?
-//-------------------------------------------------------------------
-
-By default, the continue button is right in the center of the screen, which
-blocks the html motd. 
-
-If you have html motds turned on, you can set "cl_hud_minmode 1" in your 
-console or autoexec to move that button.  
-
-That's the only thing Thwartski Hud ever uses minmode for. 
-
-//-------------------------------------------------------------------
-//	    4. CAN I GET RID OF THOSE ANNOYING MOTD INSTRUCTIONS?
-//-------------------------------------------------------------------
-
-If you're tired of seeing the red text reminding you how to move that button
-out of the way of the motd, you can replace the file to remove it. 
-
-To use the motd with no instructions, go to \UI\THWARTSKI_MOTDS\ 
-to find the version you want, and then paste it into the \RESOURCE\UI\
-folder, overwriting the file. 	
-
-//-------------------------------------------------------------------
-//	             5. HOW DO I CHANGE MY CROSSHAIRS?
+//	             4. HOW DO I CHANGE MY CROSSHAIRS?
 //-------------------------------------------------------------------
 
 Thwartski Hud won't change your crosshairs at all. You can modify your
 crosshairs and viewmodels with my other mod, Thwartski Weapon Swapper:
+	http://code.google.com/p/thwartski-tf2-hud/ 	
 
-http://code.google.com/p/thwartski-tf2-hud/ 	
+//-------------------------------------------------------------------
+//	   5. DID YOUR HUD MESS UP MY CONFIGS/SCRIPTS/CROSSHAIRS?
+//-------------------------------------------------------------------
+
+Hud files have nothing to do with scripts and configs, which live in the
+\tf\cfg\ folder. There should be no way for the hud to affect them. 
+
+Crosshair settings usually live in the \tf\cfg\ folder, but there are
+a few custom huds which include custom crosshairs. If you switch to my
+hud you'll lose "hud crosshairs" but crosshair swappers can't be damaged.
 

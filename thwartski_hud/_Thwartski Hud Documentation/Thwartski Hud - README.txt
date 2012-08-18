@@ -15,7 +15,7 @@ Thwartski Hud is for advanced players of TF2 who want their ui to be simpler
 and more efficient, while remaining as attractive and user-friendly as possible.
 
 Thwartski Hud places extreme emphasis on important tactical information,
-minimizes strategic information to where it's not so obtrusive, and generally 
+minimizes strategic information to where it's not so obtrusive, and usually 
 removes explanatory or decorative elements entirely.
 
 Thwartski Hud uses no custom art assets and is 100% compatible with sv_pure 2.
@@ -24,8 +24,8 @@ Thwartski Hud uses no custom art assets and is 100% compatible with sv_pure 2.
 //						  	 THANK YOU
 //-------------------------------------------------------------------
 
-Thanks to Miles Kay, Tobias Funke, AndyJ, Saberreap, OpticBarrel, Snakeyface, 
-T-Triple-8, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
+Thanks to T-Triple-8, Miles Kay, Tobias Funke, AndyJ, Saberreap, OpticBarrel, 
+Snakeyface, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
 
 Thanks to the authors of the following huds, some of which I used as 
 visual inspiration, and some of which I used as technical reference:
