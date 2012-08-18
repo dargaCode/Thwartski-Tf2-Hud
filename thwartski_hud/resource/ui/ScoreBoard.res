@@ -1,6 +1,6 @@
 //Scoreboard with multiple settings based on cl_hud_minmode
 //Maxmode = Pub32
-//Minmode = Comp9 (disabled for fixing in this version)
+//Minmode = Comp9
 
 //inspired by maco (layout) and pvhud (minmode)
 

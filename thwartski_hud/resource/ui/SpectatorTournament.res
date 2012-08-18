@@ -23,8 +23,8 @@
 		"team2_player_base_y"				"152"
 		"team2_player_delta_x"				"0"
 		"team2_player_delta_y"				"35"
+		
 		"playerpanels_kv"
-
 		{
 			"visible"		"0"
 			"wide"			"55"

@@ -28,9 +28,9 @@
 			"tall"			"33"
 			"zpos"			"1"
 			
-			"color_ready"	"0 255 0 220"
+			"color_ready"		"0 255 0 220"
 			"color_notready"	"0 0 0 220"
-										  			
+			
 			"playername"
 			{
 				"ControlName"	"CExLabel"
@@ -47,7 +47,7 @@
 				"labelText"		"%playername%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
-					
+				
 				if_mvm
 				{
 					"xpos"				"4"
@@ -243,7 +243,7 @@
 			"tall"					"480"
 
 			"team1_player_base_y"			"66"
-			"team2_player_delta_x"			"52"
+			"team2_player_delta_x"			"53"
 		}		
 	}
 
@@ -529,6 +529,8 @@
 		"labelText"		"%readylabel%"
 		"textAlignment"		"center"
 		
+		
+		
 	}
 	
 	"CountdownBG"
@@ -551,21 +553,6 @@
 		
 		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
 		"draw_corner_height" "0"	
-	}
-	
-	"BlackBGThwartski"
-	{
-		"ControlName"		"Imagepanel"
-		"fieldName"			"BlackBGThwartski"
-		"xpos"				"230"
-		"ypos"				"r32"
-		"zpos"				"-2"
-		"wide"				"40"
-		"tall"				"32"
-		"visible"			"1"
-		"enabled"			"1"
-		"scaleImage"		"1"	
-		"fillcolor"			"0 0 0 255"
 	}
 
 	"CountdownLabel"
