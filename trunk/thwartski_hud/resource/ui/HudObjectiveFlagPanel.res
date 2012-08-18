@@ -496,7 +496,12 @@
 		
 		"if_specialdelivery"
 		{
-			"xpos"			"c-51"
+			"xpos"		"c-51"
+		}
+		
+		"if_mvm"
+		{
+			"xpos"		"c-104"
 		}
 	}
 			
