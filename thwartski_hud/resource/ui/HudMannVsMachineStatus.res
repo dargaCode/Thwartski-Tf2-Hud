@@ -9,7 +9,6 @@
 		"zpos"				"0"
 		"wide"				"400"
 		"tall"				"67"
-		"ypos_minmode"		"-7"
 		"visible"			"1"
 		"enabled"			"1"
 	}
@@ -31,17 +30,17 @@
 	{
 		"ControlName"		"CTankStatusPanel"
 		"fieldName"			"TankStatusPanel"
-		"xpos"				"0"
-		"ypos"				"0"
+		"xpos"				"c-200"
+		"ypos"				"12"
 		"zpos"				"0"
-		"wide"				"200"
-		"tall"				"100"
+		"wide"				"400"
+		"tall"				"19"
 		"visible"			"1"
 		"enabled"			"1"
 		
-		"pin_to_sibling"               "WaveStatusPanel"
-		"pin_corner_to_sibling"        "4"          
-		"pin_to_sibling_corner"        "6"  
+		//"pin_to_sibling"               "WaveStatusPanel"
+		//"pin_corner_to_sibling"        "4"          
+		//"pin_to_sibling_corner"        "6"  
 	}
 	
 	"CurrencyStatusPanel"
