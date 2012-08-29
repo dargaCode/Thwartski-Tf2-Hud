@@ -28,42 +28,40 @@
 		"tall"			"20"
 		"fgcolor"		"tanlight"
 	}
-		
-	"MannUpContainer"
+
+	"DifficultyContainer"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldName"		"MannUpContainer"
-		"xpos"			"400"
-		"ypos"			"20"
+		"fieldName"		"DifficultyContainer"
+		"xpos"			"425"
+		"ypos"			"0"
 		"wide"			"200"
 		"tall"			"100"
-		"visible"		"0"
+		"visible"		"1"
 		
-		"MannUpLabel"
+		"DifficultyLabel"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"MannUpLabel"
-			"font"			"HudFontSmallBold"
-			"labelText"		"Mann-Up : On"
-			"textAlignment" "center"
+			"fieldName"		"DifficultyLabel"
+			"font"			"HudFontSmallest"
+			"labelText"		"#TF_MvM_Difficulty"
+			"textAlignment"	"center"
 			"xpos"			"0"
 			"ypos"			"0"
-			"wide"			"200"
-			"tall"			"20"
+			"wide"			"150"
 			"fgcolor"		"tanlight"
 		}
 		
-		"SquadSurplusLabel"
+		"DifficultyValue"
 		{
 			"ControlName"	"CExLabel"
-			"fieldName"		"SquadSurplusLabel"
+			"fieldName"		"DifficultyValue"
 			"font"			"HudFontSmallBold"
-			"labelText"		"Squad Surplus : x6"
-			"textAlignment" "center"
+			"labelText"		"%difficultyvalue%"
+			"textAlignment"	"center"
 			"xpos"			"0"
-			"ypos"			"12"
-			"wide"			"200"
-			"tall"			"20"
+			"ypos"			"9"
+			"wide"			"150"
 			"fgcolor"		"tanlight"
 		}
 	}
