@@ -49,6 +49,24 @@
 				"fgcolor"		"235 226 202 255"
 			}
 			
+			"ReadyUpTextThwartski"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"ReadyUpTextThwartski"
+				"font"			"HudFontSmallishBold"
+				"xpos"			"21"
+				"ypos"			"0"
+				"zpos"			"-2"
+				"wide"			"40"
+				"tall"			"26"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"F4"
+				"textAlignment"	"center"
+				"fgcolor"		"0 0 0 155"//"235 226 202 255"
+			}
+			
 			"classimage"
 			{
 				"ControlName"	"CTFClassImage"
