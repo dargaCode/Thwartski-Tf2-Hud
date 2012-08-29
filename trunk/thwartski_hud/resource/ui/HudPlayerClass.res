@@ -22,7 +22,7 @@
 		"ypos"			"r40"
 		"zpos"			"1"		
 		"wide"			"87"
-		"tall"			"27"
+		"tall"			"23"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/character_red_bg"
