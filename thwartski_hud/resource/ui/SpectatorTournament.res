@@ -238,7 +238,7 @@
 			
 			"team1_player_base_offset_x"		"260"
 			"team1_player_base_y"				"152"
-			"team1_player_delta_x"				"53"
+			"team1_player_delta_x"				"52"
 			"team1_player_delta_y"				"0"
 		}		
 	}
