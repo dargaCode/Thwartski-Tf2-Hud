@@ -67,4 +67,22 @@
 		"draw_corner_width"	"0"				
 		"draw_corner_height" "0"	
 	}
+	
+	"BGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGThwartski"
+		"xpos"			"95"
+		"ypos"			"0"
+		"zpos"			"-1"
+		"wide"			"232"
+		"tall"			"14"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"54 51 52 255"
+		"PaintBackgroundType"	"0"
+	}
 }

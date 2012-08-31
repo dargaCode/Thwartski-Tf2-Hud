@@ -260,7 +260,7 @@
 			"tall"					"480"
 
 			"team1_player_base_y"			"66"
-			"team2_player_delta_x"			"58"
+			"team2_player_delta_x"			"57"
 		}		
 	}
 
