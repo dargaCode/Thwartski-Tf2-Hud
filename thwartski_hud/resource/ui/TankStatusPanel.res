@@ -2,16 +2,16 @@
 {
 	"Background"
 	{
-		"ControlName"		"ScalableImagePanel"
+		"ControlName"	"ScalableImagePanel"
 		"fieldName"		"Background"
 		"xpos"			"100"
 		"ypos"			"5"
 		"zpos"			"-1"
-		"wide"			"232"
-		"tall"			"12"
+		"wide"			""
+		"tall"			""
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"			"../HUD/tournament_panel_brown"
 

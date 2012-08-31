@@ -18,7 +18,7 @@
 		"ControlName"		"CWaveCompleteSummaryPanel"
 		"fieldName"			"WaveCompleteSummaryPanel"
 		"xpos"				"c-80"
-		"ypos"				"106"
+		"ypos"				"102"
 		"zpos"				"0"
 		"wide"				"160"
 		"tall"				"400"

@@ -22,10 +22,10 @@
 		"draw_corner_height" "0"	
 	}
 	
-	"BackgroundThwartski" 
+	"BGThwartski"
 	{
-		"ControlName"	"ScalableImagePanel"
-		"fieldName"		"BackgroundThwartski"
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGThwartski"
 		"xpos"			"100"
 		"ypos"			"0"
 		"zpos"			"-1"
@@ -35,13 +35,9 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"../HUD/tournament_panel_brown"
-
-		"src_corner_height"	"40"
-		"src_corner_width"	"40"
-	
-		"draw_corner_width"	"0"
-		"draw_corner_height" "0"	
+		"tabPosition"	"0"	
+		"fillcolor"		"54 51 52 255"
+		"PaintBackgroundType"	"0"
 	}
 	
 	
