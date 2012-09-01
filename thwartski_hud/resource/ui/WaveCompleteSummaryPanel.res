@@ -55,7 +55,7 @@
 			"fieldName"		"WaveCompleteLabel"
 			"font"			"HudFontMediumSmall"
 			"textAlignment"	"center"
-			"labelText"		"Success!"//"%titletext%"
+			"labelText"		"Success"//"%titletext%"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"

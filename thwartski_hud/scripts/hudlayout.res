@@ -791,8 +791,8 @@
 		"fieldName"				"PVEWinPanel"
 		"visible"				"1"
 		"enabled"				"1"
-		"xpos"					"c-150"
-		"ypos"					"255"
+		"xpos"					"c-80"
+		"ypos"					"130"
 		"wide"					"300"
 		"tall"					"215"
 	}
