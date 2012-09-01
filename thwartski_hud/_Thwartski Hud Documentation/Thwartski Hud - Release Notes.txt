@@ -3,13 +3,13 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v1.1.0 (PUBLIC RELEASE) - Aug 18, 2012.
+Thwartski Hud v1.1.0 (MANN VS MACHINE) - Aug 18, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Fixed all kmown bugs resulting from the Mann vs Machine patch.
+	1) Fixed all known bugs resulting from the Mann vs Machine patch.
 	2) First pass ui tweaks for MvM game mode (needs more work).
 	3) Temporarily removed multiple scoreboard variants until next version.
 	
