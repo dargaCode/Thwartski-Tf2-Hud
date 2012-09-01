@@ -58,6 +58,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"WinningTeamLabel"
 			"font"			"HudFontMediumSmallBold"
+			"fgcolor"		"255 0 0 255"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
