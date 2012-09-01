@@ -73,7 +73,7 @@
 		//breaks without a command so it just echoes a blank string to console
         "command"   "engine echo "
 		//only shown at main menu so that it can be replaced by scoreboard buttons ingame
-		"OnlyAtMenu"    "0"
+		"OnlyAtMenu"    "1"
     }
 	"ReplayBrowserButton"
 	{
@@ -81,14 +81,14 @@
 		"command" "engine replay_reloadbrowser"
 		"subimage" "glyph_tv"
 		//only shown at main menu so that it can be replaced by scoreboard buttons in game
-		"OnlyAtMenu"    "0"
+		"OnlyAtMenu"    "1"
 	}
 	"DemoMiniButton"
 	{
 		"command" "engine demoui"
 		"tooltip" "Play Demos"
 		//only shown at main menu so that it can be replaced by scoreboard buttons in game
-		"OnlyAtMenu"    "0"
+		"OnlyAtMenu"    "1"
 	}
 	//faked this label as a button so that it can have special settings applied to it
 	"FakeScoreboardLabelButton"
@@ -97,7 +97,7 @@
 		//breaks without a command so it just echoes a blank string to console
         "command"   "engine echo "
 		//only shown ingame so it can be replaced by recordings on the main menu
-		"OnlyInGame"    "0"
+		"OnlyInGame"    "1"
     }
 	"MaxmodeScoreboardButton"
     {
