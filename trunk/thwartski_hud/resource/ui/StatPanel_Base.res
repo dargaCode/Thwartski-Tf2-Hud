@@ -126,7 +126,7 @@
 		"fieldName"		"StatLabelSmall"
 		"font"			"TFFontMedium"
 		"xpos"			"48"
-		"ypos"			"35"
+		"ypos"			"36"
 		"zpos"			"3"
 		"wide"			"148"
 		"tall"			"20"
