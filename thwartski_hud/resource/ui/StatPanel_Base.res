@@ -20,8 +20,28 @@
 		"src_corner_width"		"40"			
 		"draw_corner_width"		"0"
 		"draw_corner_height" 	"0"
-		
 	}
+	
+	"BGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BGThwartski"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"192"
+		"tall"			"48"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"54 51 52 255"
+		"PaintBackgroundType"	"0"
+	}
+	
+	
+	
 	"StatPanelClassImage"
 	{
 		"ControlName"		"ImagePanel"
@@ -67,7 +87,7 @@
 		"xpos"			"48"
 		"ypos"			"3"
 		"zpos"			"2"
-		"wide"			"148"
+		"wide"			"144"
 		"tall"			"40"
 		"autoResize"	"0"
 		"pinCorner"		"0"
