@@ -56,6 +56,7 @@
 			"font"			"HudFontMediumSmall"
 			"textAlignment"	"center"
 			"labelText"		"Success"//"%titletext%"
+			"fgcolor"		"0 255 0 255"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"1"
@@ -72,7 +73,7 @@
 			"fieldName"		"WaveCompleteLabelShadow"
 			"font"			"HudFontMediumSmall"
 			"textAlignment"	"center"
-			"labelText"		"Success!"//"%titletextshadow%"
+			"labelText"		"Success"//"%titletextshadow%"
 			"xpos"			"1"
 			"ypos"			"1"
 			"zpos"			"0"
@@ -119,7 +120,7 @@
 			"xpos"			"75"
 			"ypos"			"5"
 			"wide"			"30"
-			"fgcolor"		"CreditsGreen"
+			"fgcolor"		"0 255 0 255"
 		}
 		
 		"CreditMissedTextLabel"
@@ -145,7 +146,7 @@
 			"xpos"			"75"
 			"ypos"			"16"
 			"wide"			"30"
-			"fgcolor"		"RedSolid"
+			"fgcolor"		"255 0 0 255"
 		}
 		
 		"CreditBonusTextLabel"
@@ -171,7 +172,7 @@
 			"xpos"			"75"
 			"ypos"			"27"
 			"wide"			"30"
-			"fgcolor"		"CreditsGreen"
+			"fgcolor"		"0 255 0 255"
 		}
 	}
 	
