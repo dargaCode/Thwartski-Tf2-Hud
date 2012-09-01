@@ -1456,10 +1456,10 @@
 		"fieldname"		"FakeScoreboardLabelButton"
 		"xpos"			"110"
 		"ypos"			"331"
-		"zpos"			"-11"
+		"zpos"			"11"
 		"wide"			"140"
 		"tall"			"30"
-		"visible"		"0"
+		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		"SubButton"
 		{
@@ -1576,7 +1576,7 @@
 		"zpos"			"11"
 		"wide"			"134"
 		"tall"			"36"
-		"visible"		"0"
+		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		"SubButton"
 		{
@@ -1635,7 +1635,7 @@
 		"zpos"			"11"
 		"wide"			"134"
 		"tall"			"36"
-		"visible"		"0"
+		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		"SubButton"
 		{
