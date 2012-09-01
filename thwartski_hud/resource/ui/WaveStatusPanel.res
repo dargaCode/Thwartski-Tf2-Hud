@@ -84,7 +84,7 @@
 		"fieldName"		"ProgressBar"
 		"xpos"			"100"
 		"ypos"			"0"
-		"zpos"			"3"
+		"zpos"			"4"
 		"wide"			"200"
 		"tall"			"14"
 		"visible"		"1"
