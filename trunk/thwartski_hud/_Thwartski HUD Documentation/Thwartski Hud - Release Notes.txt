@@ -1,0 +1,84 @@
+	
+//-------------------------------------------------------------------
+//						  CURRENT VERSION
+//-------------------------------------------------------------------
+
+Thwartski Hud v1.1.5 (MVM POLISH) - Sep 2, 2012.
+
+//-------------------------------------------------------------------
+//					        CHANGE LOG
+//-------------------------------------------------------------------
+
+	1) Tweaked and Polished all aspects of the hud for MvM mode.
+	2) Added support for multiple scoreboards for cl_hud_minmode 0/1.
+	3) Added buttons to the in-game escape menu to swap between scoreboards.
+	4) Fixed some small alignment problems with the Engineer and Spy huds.
+	5) Updated documentation.
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+
+v1.1.0 (MANN VS MACHINE) - Aug 18, 2012.
+
+	1) Fixed all known bugs resulting from the Mann vs Machine patch.
+	2) First pass ui tweaks for MvM game mode (needs more work).
+	3) Temporarily removed multiple scoreboard variants until next version.
+	
+	Thanks to T-Triple-8 for reporting bugs!
+
+v1.0.1 (PUBLIC RELEASE) - June 28, 2012.
+	
+	1) Added support for the Special Delivery game mode.
+	2) Added support for the Hitman's Heatmaker weapon meter.
+	3) Updated health and ammo UI to work with the new update.
+	
+v1.0.0 (PUBLIC RELEASE) - June 17, 2012.
+	
+	1) Fixed health and ammo fonts for OSX.
+	2) Adjusted KOTH panel to work with new cap point size.
+	3) Fixed missing health warning on kill cam.
+	4) Adjusted animations for overheal, low health, and low ammo.
+	5) Adjusted placement of tournament ready-up dialog.
+	6) Added Arena support.
+	
+	Thanks to Tobias Funke for feedback!
+	
+v0.9.6 (BETA) - June 6, 2012.	
+	
+	1) Adjusted pda text for available engineer buildings. 
+	2) Fixed cart cap fonts for payload race.
+	3) Adjusted spy disguise info to work better at all resolutions.
+	4) Added low ammo warning. 
+	5) Increased opacity for loadout quickswitch background.
+	
+v0.9.5 (BETA) - June 5, 2012.
+
+	1) Fixed cap points not displaying an icon when being capped with less than 2x. 
+	
+	Thanks to T-Triple-8 for finding this bug!
+	
+v0.9.3 (BETA) - June 4, 2012.
+	
+	1) Fixed reserve ammo using the wrong font.
+
+v0.9.2 (BETA) - June 3, 2012.
+
+	1) Adjusted spectator text for Gravelpit.
+	2) Fixed capture points interfering with scout bars on Gravelpit.
+	3) Reworked MOTD and added instructions for minmode.
+	4) Added alternate versions of MOTD and Tournament Hud
+	
+	Thanks to AndyJ for feedback!
+
+v0.9.1 (BETA) - June 2, 2012.
+
+	1) Made 32 person pub scoreboard the default. 
+	2) Added screenshots of each scoreboard.
+	3) Adding some more documentation.
+
+v0.9.0 (BETA) - June 2, 2012.
+
+	First release!
+	
+	
