@@ -3,10 +3,11 @@
 //-------------------------------------------------------------------
 
 1.  Find your Team Fortress 2 folder. It will be something like: 
-		C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\
+		C:\Program Files (x86)\Steam\steamapps\[YOURNAME]\team fortress 2\TF\
 
-2.  Copy \TF\ from this folder into your \TEAM FORTRESS 2\ folder. 
-	When prompted, Merge all folders, and Copy and Replace all files. 
+2. 	With the game closed, delete your \TF\Resource\ and \TF\Scripts\ folders.
+		
+2.  Copy the contents of this folder into your \TF\ directory. 
 	
 3.  Join the Steam group and post your feedback:
 		http://steamcommunity.com/groups/thwartskihud
@@ -15,9 +16,9 @@
 //			       2. HOW DO I UNINSTALL THE HUD?
 //-------------------------------------------------------------------
 
-1.  Delete your \tf\Resource\ folder. 
+1.  Delete your \TF\Resource\ folder. 
 
-2.  Delete your \tf\Scripts\ folder.
+2.  Delete your \TF\Scripts\ folder.
 	
 3.  You now have the default Valve hud again.
 
@@ -25,16 +26,19 @@
 		thwartski@gmail.com
 		
 //-------------------------------------------------------------------
-//	     3. WHY IS ONE TEAM CUT OFF FROM MY TOURNAMENT HUD?
-//-------------------------------------------------------------------
+//		  3. HOW DO I ENABLE THE ADVANCED SPECTATOR HUD?
+//-------------------------------------------------------------------	
+		
+How do I turn on this cool hud all the time?
+	http://i.imgur.com/9y2wz.jpg
+	
+You can't turn it on for every game, it's only for games with mp_tournament
+set to 1 (this includes competitive matches, tf2 lobby, and MvM mode).
 
-The 16:9/16:10 tournament hud is used by default, and is too wide for
-some smaller resolutions. 
-
-To use the 4:3 tournament hud, go to \UI\THWARTSKI_TOURNAMENT_HUDS\ 
-to find the version you want, and then paste it into the \RESOURCE\UI\
-folder, overwriting the file. 	
-
+To turn it on, go to your Advanced Options and enable the checkbox for 
+"use advanced spectator hud in tournament mode" under the "Hud Options" section.
+	http://i.imgur.com/CJdjl.jpg
+	
 //-------------------------------------------------------------------
 //	             4. HOW DO I CHANGE MY CROSSHAIRS?
 //-------------------------------------------------------------------
@@ -48,7 +52,7 @@ crosshairs and viewmodels with my other mod, Thwartski Weapon Swapper:
 //-------------------------------------------------------------------
 
 Hud files have nothing to do with scripts and configs, which live in the
-\tf\cfg\ folder. There should be no way for the hud to affect them. 
+\TF\CFG\ folder. There should be no way for the hud to affect them. 
 
 Crosshair settings usually live in the \tf\cfg\ folder, but there are
 a few custom huds which include custom crosshairs. If you switch to my

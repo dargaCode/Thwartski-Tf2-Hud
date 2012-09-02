@@ -24,20 +24,22 @@ Thwartski Hud uses no custom art assets and is 100% compatible with sv_pure 2.
 //						  	 THANK YOU
 //-------------------------------------------------------------------
 
-Thanks to T-Triple-8, Miles Kay, Tobias Funke, AndyJ, Saberreap, OpticBarrel, 
-Snakeyface, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
+Thanks to Sgt. Blackhawk, T-Triple-8, Myles, Tobias Funke, AndyJ, Saberreap,
+OpticBarrel, Snakeyface, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
 
 Thanks to the authors of the following huds, some of which I used as 
 visual inspiration, and some of which I used as technical reference:
 
+	   _Hud_			_Author(s)_
 1. 	Broesel Hud 	(Broesel)
 2. 	Community Hud	(Flame)
 3. 	E.V.E. Hud 		(Sinders)
 4. 	Franken Hud 	(6000 Angry Bees)
 5. 	Maco Hud 	 	(Maco)
 6. 	Oxide Hud		(Oxide)
-7. 	RevanXP Hud 	(RevanXP)
-8. 	Toasty Hud 	 	(Toasty)
+7.  P.V. Hud		(Povohat, Barrakketh)
+8. 	RevanXP Hud 	(RevanXP)
+9. 	Toasty Hud 	 	(Toasty)
 
 Thanks again to Flame for his guide to editing hud files:
 flamehud.googlecode.com/files/FlameHUD.pdf
@@ -47,7 +49,8 @@ flamehud.googlecode.com/files/FlameHUD.pdf
 //-------------------------------------------------------------------
 
 I'm a professional game designer who loves TF2 and tinkering with stuff like this.
-My comp career is nothing impressive, but I know enough to design for comp play.
+I'm a very low level comp player, but I make mods that much better players than me
+can hopefully benefit from.
 
 I'm one of those people who has jumped around a lot between classes. My main is 
 soldier (pocket), but I originally mained pyro, then engie, then sniper, then spy.

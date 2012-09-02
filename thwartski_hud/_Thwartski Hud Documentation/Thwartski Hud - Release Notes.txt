@@ -3,21 +3,29 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski Hud v1.1.0 (MANN VS MACHINE) - Aug 18, 2012.
+Thwartski Hud v1.1.5 (MVM POLISH) - Sep 2, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
+
+	1) Tweaked and Polished all aspects of the hud for MvM mode.
+	2) Added support for multiple scoreboards for cl_hud_minmode 0/1.
+	3) Added buttons to the in-game escape menu to swap between scoreboards.
+	4) Fixed some small alignment problems with the Engineer and Spy huds.
+	5) Updated documentation.
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+
+v1.1.0 (MANN VS MACHINE) - Aug 18, 2012.
 
 	1) Fixed all known bugs resulting from the Mann vs Machine patch.
 	2) First pass ui tweaks for MvM game mode (needs more work).
 	3) Temporarily removed multiple scoreboard variants until next version.
 	
 	Thanks to T-Triple-8 for reporting bugs!
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 
 v1.0.1 (PUBLIC RELEASE) - June 28, 2012.
 	
