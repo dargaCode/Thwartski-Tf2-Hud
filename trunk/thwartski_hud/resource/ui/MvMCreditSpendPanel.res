@@ -12,6 +12,7 @@
 		"wide"			"300"
 		"tall"			"15"
 		"fgcolor"		"tanlight"
+		"visible"		"0"
 	}
 		
 	"TableBackground"
@@ -19,12 +20,12 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"TableBackground"
 		"xpos"			"0"
-		"ypos"			"12"
+		"ypos"			"14"
 		"zpos"			"-1"
 		"wide"			"190"
-		"tall"			"45"
+		"tall"			"42"
 		"visible"		"1"
-		"bgcolor_override"		"0 0 0 255"//"20 20 20 50"
+		"bgcolor_override"		"0 0 0 255"
 	}
 	
 	"UpgradesLabel"
