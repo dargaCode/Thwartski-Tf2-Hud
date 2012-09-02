@@ -29,7 +29,7 @@
 //		  3. HOW DO I ENABLE THE ADVANCED SPECTATOR HUD?
 //-------------------------------------------------------------------	
 		
-How do I turn on this cool hud all the time?
+How do I turn on this cool spectator hud all the time?
 	http://i.imgur.com/9y2wz.jpg
 	
 You can't turn it on for every game, it's only for games with mp_tournament
@@ -43,7 +43,7 @@ To turn it on, go to your Advanced Options and enable the checkbox for
 //	             4. HOW DO I CHANGE MY CROSSHAIRS?
 //-------------------------------------------------------------------
 
-Thwartski Hud won't change your crosshairs at all. You can modify your
+Thwartski HUD won't change your crosshairs at all. You can modify your
 crosshairs and viewmodels with my other mod, Thwartski Weapon Swapper:
 	http://code.google.com/p/thwartski-tf2-hud/ 	
 
