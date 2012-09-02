@@ -11,14 +11,14 @@ Youtube: 						http://www.youtube.com/user/ThwartskiTF2
 //						ABOUT THWARTSKI HUD
 //-------------------------------------------------------------------
 
-Thwartski Hud is for advanced players of TF2 who want their ui to be simpler 
+Thwartski HUD is for advanced players of TF2 who want their ui to be simpler 
 and more efficient, while remaining as attractive and user-friendly as possible.
 
-Thwartski Hud places extreme emphasis on important tactical information,
+Thwartski HUD places extreme emphasis on important tactical information,
 minimizes strategic information to where it's not so obtrusive, and usually 
 removes explanatory or decorative elements entirely.
 
-Thwartski Hud uses no custom art assets and is 100% compatible with sv_pure 2.
+Thwartski HUD uses no custom art assets and is 100% compatible with sv_pure 2.
 
 //-------------------------------------------------------------------
 //						  	 THANK YOU
@@ -30,16 +30,16 @@ OpticBarrel, Snakeyface, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
 Thanks to the authors of the following huds, some of which I used as 
 visual inspiration, and some of which I used as technical reference:
 
-	   _Hud_			_Author(s)_
-1. 	Broesel Hud 	(Broesel)
-2. 	Community Hud	(Flame)
-3. 	E.V.E. Hud 		(Sinders)
-4. 	Franken Hud 	(6000 Angry Bees)
-5. 	Maco Hud 	 	(Maco)
-6. 	Oxide Hud		(Oxide)
-7.  P.V. Hud		(Povohat, Barrakketh)
-8. 	RevanXP Hud 	(RevanXP)
-9. 	Toasty Hud 	 	(Toasty)
+	   _HUD_			_Author(s)_
+1. 	Broesel HUD 	(Broesel)
+2. 	Community HUD	(Flame)
+3. 	E.V.E. HUD 		(Sinders)
+4. 	Franken HUD 	(6000 Angry Bees)
+5. 	Maco HUD 	 	(Maco)
+6. 	Oxide HUD		(Oxide)
+7.  P.V. HUD		(Povohat, Barrakketh)
+8. 	RevanXP HUD 	(RevanXP)
+9. 	Toasty HUD 	 	(Toasty)
 
 Thanks again to Flame for his guide to editing hud files:
 flamehud.googlecode.com/files/FlameHUD.pdf
