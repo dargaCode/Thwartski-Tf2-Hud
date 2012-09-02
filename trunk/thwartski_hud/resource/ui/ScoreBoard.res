@@ -100,7 +100,6 @@
 			"tall"			"396"
 		}
 	}
-
 	"PlayerStatsBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -128,7 +127,7 @@
 	}
 	"MainVerticalLine"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"MainVerticalLine"
 		"xpos"			"300"
 		"ypos"			"64"
@@ -171,7 +170,7 @@
 	}
 	"PlayerScoreLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerScoreLabel"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playerscore%"
@@ -191,7 +190,7 @@
 	}				
 	"BlueTeamLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamLabel"
 		"font"			"ScoreboardTeamNameLarge"
 		//"labelText"	"REALLYLONGTEAMNAME"
@@ -214,11 +213,11 @@
 	}							
 	"BlueTeamScore"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamScore"
 		"font"			"ScoreboardTeamScore"
 		"labelText"		"%blueteamscore%"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"194"
 		"ypos"			"10" 
 		"zpos"			"5"
@@ -236,7 +235,7 @@
 	}
 	"BlueTeamScoreDropshadow"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamScoreDropshadow"
 		"font"			"ScoreboardTeamScore"
 		"fgcolor"		"Black"
@@ -259,7 +258,7 @@
 	}							
 	"BlueTeamPlayerCount"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamPlayerCount"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%blueteamplayercount%"
@@ -281,12 +280,12 @@
 	}							
 	"RedTeamLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamLabel"
 		"font"			"ScoreboardTeamNameLarge"
 		"labelText"		"%redteamname%"
 		//"labelText"	"REALLYLONGTEAMNAME"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"328"//"448"
 		"ypos"			"10"//"28"
 		"zpos"			"3"	
@@ -304,11 +303,11 @@
 	}							
 	"RedTeamScore"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamScore"
 		"font"			"ScoreboardTeamScore"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"310"
 		"ypos"			"10" 
 		"zpos"			"5"
@@ -326,12 +325,12 @@
 	}
 	"RedTeamScoreDropshadow"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamScoreDropshadow"
 		"font"			"ScoreboardTeamScore"
 		"fgcolor"		"Black"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"311"
 		"ypos"			"11"
 		"zpos"			"4"
@@ -349,11 +348,11 @@
 	}							
 	"RedTeamPlayerCount"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamPlayerCount"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%redteamplayercount%"
-		"textAlignment"		"center"
+		"textAlignment"	"center"
 		"xpos"			"301"//"375"
 		"ypos"			"35"
 		"zpos"			"3"
@@ -384,9 +383,9 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"0"
-		"autoresize"		"3"
-		"linespacing"		"19" //"22"
+		"tabPosition"	"0"
+		"autoresize"	"3"
+		"linespacing"	"19" //"22"
 		"fgcolor"		"blue"
 	}
 	"RedPlayerList"
@@ -406,17 +405,17 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"		"19"//"22"
+		"linespacing"	"19"//"22"
 		"textcolor"		"red"
 	}
 
 	"Spectators"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"Spectators"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%spectators%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"20"
 		"ypos"			"c+121"	
 		"zpos"			"4"
@@ -425,7 +424,7 @@
 
 		"ypos_minmode"			"c-12"	
 
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -485,11 +484,11 @@
 	}
 	"ServerTimeLeft"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"ServerTimeLeft"
 		"font"			"ScoreboardTiny"
 		"labelText"		"%servertimeleft%"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"20"
 		"ypos"			"373"
 		"wide"			"560"
@@ -511,7 +510,7 @@
 	}
 	"ClassImage"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"ClassImage"
 		"xpos"			"22"
 		"ypos"			"423"	
@@ -520,16 +519,16 @@
 		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"1"
-		//"image"			"../hud/class_scoutred"
-		"scaleImage"		"1"	
+		//"image"		"../hud/class_scoutred"
+		"scaleImage"	"1"	
 	}
 	"PlayerNameLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerNameLabel"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playername%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"115"
 		"ypos"			"450"	
 		"zpos"			"3"
@@ -542,7 +541,7 @@
 	}							
 	"LocalPlayerDuelStatsPanel"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
 		"ypos"			"429"
@@ -559,7 +558,7 @@
 
 		"DuelingLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DuelingLabel"
 			"font"			"ScoreboardSmall"
 			"labelText"		"#TF_ScoreBoard_Dueling"
@@ -569,7 +568,7 @@
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -591,7 +590,7 @@
 		}
 		"LocalPlayerData"
 		{
-			"ControlName"		"EditablePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"LocalPlayerData"
 			"xpos"			"75"
 			"ypos"			"0"
@@ -669,7 +668,7 @@
 		}
 		"OpponentData"
 		{
-			"ControlName"		"EditablePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"OpponentData"
 			"xpos"			"325"
 			"ypos"			"0"
@@ -748,7 +747,7 @@
 	}
 	"LocalPlayerStatsPanel"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
 		"ypos"			"346"
@@ -769,7 +768,7 @@
 			"fieldName"		"mapname"
 			"font"			"ScoreboardTiny"
 			"labelText"		"%mapname%"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"xpos"			"228"
 			"ypos"			"28"
 			"zpos"			"13"
@@ -791,7 +790,7 @@
 		}	
 		"Kills"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Kills"
 			"font"			"HudFontBig"
 			"labelText"		"%kills%"
@@ -805,10 +804,15 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}						
 		"KDRatio"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"KDRatio"
 			"font"			"HudFontBig"
 			"labelText"		":"
@@ -822,6 +826,11 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}	
 		"Deaths"
 		{
@@ -829,7 +838,7 @@
 			"fieldName"		"Deaths"
 			"font"			"HudFontBig"
 			"labelText"		"%deaths%"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"308"
 			"ypos"			"87"	
 			"zpos"			"3"
@@ -839,6 +848,11 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}	
 		"PlayerStatsVerticalLine"
 		{
@@ -860,7 +874,7 @@
 		}				
 		"ClassStatsVerticalLine"
 		{
-			"ControlName"		"ImagePanel"
+			"ControlName"	"ImagePanel"
 			"fieldName"		"ClassStatsVerticalLine"
 			"xpos"			"376	"
 			"ypos"			"70"
@@ -878,11 +892,11 @@
 		}
 		"CapturesLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"CapturesLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"80"//"60"	
 			"zpos"			"3"
@@ -895,11 +909,11 @@
 		}						
 		"Captures"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Captures"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%captures%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"80"//"60"	
 			"zpos"			"3"
@@ -912,11 +926,11 @@
 		}						
 		"DefensesLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DefensesLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"90"//"70"	
 			"zpos"			"3"
@@ -929,11 +943,11 @@
 		}	
 		"Defenses"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Defenses"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%defenses%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"90"//"70"	
 			"zpos"			"3"
@@ -946,11 +960,11 @@
 		}						
 		"AssistsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"AssistsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"60"//"80"	
 			"zpos"			"3"
@@ -963,11 +977,11 @@
 		}
 		"Assists"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Assists"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%assists%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"
 			"ypos"			"60"//"80"	
 			"zpos"			"3"
@@ -980,11 +994,11 @@
 		}
 		"DestructionLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DestructionLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"70"//"90"	
 			"zpos"			"3"
@@ -997,11 +1011,11 @@
 		}
 		"Destruction"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Destruction"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%destruction%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"
 			"ypos"			"70"//"90"	
 			"zpos"			"3"
@@ -1014,11 +1028,11 @@
 		}
 		"DominationLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DominationLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"100"	
 			"zpos"			"3"
@@ -1031,11 +1045,11 @@
 		}
 		"Domination"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Domination"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%dominations%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"100"	
 			"zpos"			"3"
@@ -1048,11 +1062,11 @@
 		}						
 		"RevengeLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"RevengeLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"110"	
 			"zpos"			"3"
@@ -1065,11 +1079,11 @@
 		}		
 		"Revenge"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Revenge"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%Revenge%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"110"	
 			"zpos"			"3"
@@ -1082,11 +1096,11 @@
 		}						
 		"InvulnLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"InvulnLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"Ubers:"//"#TF_ScoreBoard_InvulnLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"60"	
 			"zpos"			"3"
@@ -1099,11 +1113,11 @@
 		}						
 		"Invuln"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Invuln"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%invulns%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"60"	
 			"zpos"			"3"
@@ -1116,7 +1130,7 @@
 		}				
 		"Healing"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Healing"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%healing%"
@@ -1133,11 +1147,11 @@
 		}						
 		"HealingLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"HealingLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"70"	
 			"zpos"			"3"
@@ -1150,11 +1164,11 @@
 		}
 		"HeadshotsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"HeadshotsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"80"	
 			"zpos"			"3"
@@ -1167,11 +1181,11 @@
 		}			
 		"Headshots"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Headshots"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%headshots%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"80"	
 			"zpos"			"3"
@@ -1184,11 +1198,11 @@
 		}						
 		"BackstabsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"BackstabsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"
 			"ypos"			"90"
 			"zpos"			"5"
@@ -1201,28 +1215,28 @@
 		}
 		"Backstabs"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Backstabs"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%backstabs%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"
 			"ypos"			"90"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-			"autoResize"		"0"
+			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
 		"TeleportsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"TeleportsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"100"	
 			"zpos"			"3"
@@ -1235,11 +1249,11 @@
 		}
 		"Teleports"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Teleports"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%teleports%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"100"	
 			"zpos"			"3"
@@ -1252,11 +1266,11 @@
 		}		
 		"BonusLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"BonusLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"
 			"ypos"			"110"
 			"zpos"			"3"
@@ -1269,28 +1283,28 @@
 		}
 		"Bonus"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Bonus"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%bonus%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"
 			"ypos"			"110"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-			"autoResize"		"0"
+			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
 		"KillsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"KillsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_KillsLabel"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"	
 			"zpos"			"3"
@@ -1303,11 +1317,11 @@
 		}						
 		"DeathsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DeathsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DeathsLabel"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"	
 			"zpos"			"3"
@@ -1324,7 +1338,7 @@
 			"fieldName"		"gametype"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%gametype%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"3"
@@ -1340,10 +1354,9 @@
 		//this is the position of the entire bottom stats box (not including background)
 		if_mvm
 		{
-			"ypos"			"213"
+			"ypos"			"346"
 		}
 	}
-
 	"MvMScoreboard"
 	{
 		"ControlName"		"CTFHudMannVsMachineScoreboard"
@@ -1362,5 +1375,4 @@
 			"visible"		"1"
 		}
 	}
-	
 }
