@@ -15,15 +15,16 @@
 		"verbose"			"0"
 	}
 	
+	//mission name
 	"PopFileLabel"
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PopFileLabel"
-		"font"			"ScoreboardVerySmall"//"ScoreboardMedium"
+		"font"			"ScoreboardTiny"//"ScoreboardVerySmall"//"ScoreboardMedium"
 		"labelText"		"%popfile%"
 		"textAlignment"	"center"
 		"xpos"			"228"
-		"ypos"			"381"
+		"ypos"			"378"//"373"
 		"zpos"			"13"
 		"wide"			"146"
 		"tall"			"20"
@@ -82,11 +83,28 @@
 		
 		"scaleImage"		"1"
 		
-		"src_corner_height"	"22"				// pixels inside the image
-		"src_corner_width"	"22"
+		"src_corner_height"		"40"
+		"src_corner_width"		"40"
+		"draw_corner_width"		"0"				
+		"draw_corner_height" 	"0"	
+	}
 	
-		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"5"	
+	"PlayerListBGThwartski"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"PlayerListBGThwartski"
+		"xpos"			"100"
+		"ypos"			"72"
+		"zpos"			"-1"
+		"wide"			"400"
+		"tall"			"150"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+		"tabPosition"	"0"	
+		"fillcolor"		"54 51 52 255"
+		"PaintBackgroundType"	"0"
 	}
 	
 	"MvMPlayerList"
@@ -111,7 +129,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditStatsContainer"
 		"xpos"			"100"
-		"ypos"			"230"
+		"ypos"			"232"
 		"wide"			"400"
 		"tall"			"205"
 		"visible"		"1"
@@ -121,21 +139,38 @@
 			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"CreditStatsBackground"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"1"
 			"zpos"			"-1"
 			"wide"			"400"
-			"tall"			"135"
+			"tall"			"132"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../HUD/tournament_panel_brown"
 
-			"src_corner_height"	"22"				// pixels inside the image
-			"src_corner_width"	"22"
+			"src_corner_height"		"40"
+			"src_corner_width"		"40"
+			"draw_corner_width"		"0"				
+			"draw_corner_height" 	"0"		
+		}
 		
-			"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
-			"draw_corner_height" 	"5"	
+		"CreditStatsBGThwartski"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"CreditStatsBGThwartski"
+			"xpos"			"0"
+			"ypos"			"1"
+			"zpos"			"-2"
+			"wide"			"400"
+			"tall"			"132"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"0"
+			"enabled"		"1"
+			"tabPosition"	"0"	
+			"fillcolor"		"54 51 52 255"
+			"PaintBackgroundType"	"0"
 		}
 		
 		"CreditsLabel"
@@ -147,6 +182,7 @@
 			"textAlignment" "north-west"
 			"xpos"			"8"
 			"ypos"			"8"
+			"zpos"			"3"
 			"wide"			"200"
 			"fgcolor"		"tanlight"
 		}
@@ -155,10 +191,10 @@
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"PreviousWaveCreditInfoPanel"
-			"xpos"			"8"
-			"ypos"			"30"
+			"xpos"			"10"
+			"ypos"			"9"
 			"wide"			"184"
-			"tall"			"60"
+			"tall"			"80"
 			"wide"			"200"
 			"visible"		"1"
 		}
@@ -167,10 +203,10 @@
 		{
 			"ControlName"	"CCreditDisplayPanel"
 			"fieldName"		"TotalGameCreditInfoPanel"
-			"xpos"			"208"
-			"ypos"			"30"
+			"xpos"			"206"
+			"ypos"			"9"
 			"wide"			"184"
-			"tall"			"60"
+			"tall"			"80"
 			"wide"			"200"
 			"visible"		"1"
 		}
@@ -179,10 +215,10 @@
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"PreviousWaveCreditSpendPanel"
-			"xpos"			"8"
-			"ypos"			"75"
+			"xpos"			"10"
+			"ypos"			"68"
 			"wide"			"184"
-			"tall"			"60"
+			"tall"			"70"
 			"wide"			"200"
 			"visible"		"1"
 		}
@@ -191,10 +227,10 @@
 		{
 			"ControlName"	"CCreditSpendPanel"
 			"fieldName"		"TotalGameCreditSpendPanel"
-			"xpos"			"208"
-			"ypos"			"75"
+			"xpos"			"206"
+			"ypos"			"68"
 			"wide"			"184"
-			"tall"			"60"
+			"tall"			"70"
 			"wide"			"200"
 			"visible"		"1"
 		}
