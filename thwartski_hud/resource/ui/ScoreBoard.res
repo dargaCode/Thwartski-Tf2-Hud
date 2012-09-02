@@ -115,7 +115,12 @@
 		"enabled"		"1"
 		//"border"		"TFThinLineBorder"
 		"fillcolor"		"0 0 0 220"
-
+		
+		if_mvm
+		{
+			"xpos"			"54"//"14"
+			"wide"			"493"//"573"
+		}
 	}
 
 	"PlayerStatsBG"
@@ -517,6 +522,13 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"362"
+			"xpos"			"60"
+			"wide"			"480"
+		}
 	}	
 	"SpectatorsInQueue"
 	{
@@ -563,6 +575,15 @@
 		"pinCorner"		"0"
 		"visible"		"1"	
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"370"
+			"xpos"			"60"
+			"wide"			"260"
+		}
+		
+		
 	}
 	"ServerTimeLeft"
 	{
@@ -585,6 +606,13 @@
 		"pinCorner"		"0"
 		"visible"		"1"	
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"369"
+			"xpos"			"60"
+			"wide"			"480"
+		}
 	}
 
 
@@ -962,6 +990,11 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"fgcolor"		"236 227 203 255"
+			
+			if_mvm
+			{
+				"ypos"			"24"
+			}
 		}	
 		
 
@@ -1245,7 +1278,7 @@
 			"xpos"			"159"	
 			"ypos"			"70"//"90"	
 			"zpos"			"3"
-			"wide"			"40"
+			"wide"			"44"
 			"tall"			"20"
 
 			//"xpos_minmode"			"159"	
@@ -1292,7 +1325,7 @@
 			"xpos"			"159"		
 			"ypos"			"100"	
 			"zpos"			"3"
-			"wide"			"40"
+			"wide"			"44"
 			"tall"			"20"
 
 			//"xpos_minmode"			"159"		
