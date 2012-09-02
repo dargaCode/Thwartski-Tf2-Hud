@@ -378,7 +378,7 @@
 		"wide"			"290"
 		"tall"			"400"	
 
-		"tall_minmode"			"182"	
+		"tall_minmode"			"179"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -398,7 +398,7 @@
 		"wide"			"290"
 		"tall"			"400"	
 
-		"tall_minmode"			"182"	
+		"tall_minmode"			"179"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -408,7 +408,6 @@
 		"linespacing"	"19"//"22"
 		"textcolor"		"red"
 	}
-
 	"Spectators"
 	{
 		"ControlName"	"CExLabel"
