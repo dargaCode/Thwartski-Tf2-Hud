@@ -8,96 +8,83 @@
 {
 	"scores"
 	{
-		"ControlName"		"CTFClientScoreBoardDialog"
+		"ControlName"	"CTFClientScoreBoardDialog"
 		"fieldName"		"scoreinfo"
 		"xpos"			"c-300"
 		"ypos"			"c-224"
 		"wide"			"600"
 		"tall"			"490"
 
-		"xpos_minmode"			"c-300"
-		"ypos_minmode"			"c-224"
-		"wide_minmode"			"600"
-		"tall_minmode"			"444"
-
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"avatar_width"		"58"	
-		"name_width"		"134"//"139"	
-		"status_width"		"15"//"15"	
-		"nemesis_width"		"14"//"15"	
-		"class_width"		"14"//"15"	
-		"score_width"		"26"
-		"ping_width"		"23"		
-	}
-	"BlueScoreBG"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"BlueScoreBG"
-		"xpos"			"14"//"0"
-		"ypos"			"10"
-		"zpos"			"2"
-		"wide"			"286"
-		"tall"			"54"
-
-		"xpos_minmode"			"14"//"0"
-		"ypos_minmode"			"10"
-		"wide_minmode"			"286"
-		"tall_minmode"			"54"
-
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		//"image"			"../hud/score_panel_blue_bg"
-		//"scaleImage"		"1"
-
-		"fillcolor"		"91 122 140 255"
-	
-	}
-
-	"RedScoreBG"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"RedScoreBG"
-		"xpos"			"301"
-		"ypos"			"10"
-		"zpos"			"2"
-		"wide"			"286"//"300"
-		"tall"			"54"
-
-		"xpos_minmode"			"301"
-		"ypos_minmode"			"10"
-		"wide_minmode"			"286"//"300"
-		"tall_minmode"			"54"
+		//"tall_minmode"			"490"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		//"image"			"../hud/score_panel_red_bg"
-		//"scaleImage"		"1"
-
+		"tabPosition"	"0"
+		"avatar_width"	"58"	
+		"name_width"	"134"//"139"	
+		"status_width"	"15"//"15"	
+		"nemesis_width"	"14"//"15"	
+		"class_width"	"14"//"15"	
+		"score_width"	"26"
+		"ping_width"	"23"		
+	}
+	"BlueScoreBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"BlueScoreBG"
+		"xpos"			"14"//"0"
+		"ypos"			"0"
+		"zpos"			"2"
+		"wide"			"286"
+		"tall"			"64"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		//"image"		"../hud/score_panel_blue_bg"
+		//"scaleImage"	"1"
+		"fillcolor"		"91 122 140 255"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	"RedScoreBG"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"RedScoreBG"
+		"xpos"			"301"
+		"ypos"			"0"
+		"zpos"			"2"
+		"wide"			"286"//"300"
+		"tall"			"64"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		//"image"		"../hud/score_panel_red_bg"
+		//"scaleImage"	"1"
 		"fillcolor"		"189 59 59 255"
-
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	"MainBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"MainBG"
 		"xpos"			"14"//"0"
-		"ypos"			"10"
+		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"573"//"600"
-		"tall"			"384"
+		"tall"			"396"
 
-		"xpos_minmode"			"14"//"0"
-		"ypos_minmode"			"10"
-		"wide_minmode"			"573"
-		"tall_minmode"			"254"
+		"tall_minmode"			"263"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -105,12 +92,17 @@
 		"enabled"		"1"
 		//"border"		"TFThinLineBorder"
 		"fillcolor"		"0 0 0 220"
-
+		
+		if_mvm
+		{
+			"xpos"			"54"
+			"wide"			"493"
+			"tall"			"396"
+		}
 	}
-
 	"PlayerStatsBG"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
 		"xpos"			"150"
 		"ypos"			"406"	
@@ -118,12 +110,9 @@
 		"wide"			"300"
 		"tall"			"70"
 
-		"xpos_minmode"			"150"
-		"ypos_minmode"			"284"	
-		"wide_minmode"			"300"
-		"tall_minmode"			"70"
+		"ypos_minmode"			"273"	
 
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -131,11 +120,14 @@
 		"fillcolor"		"0 0 0 255" //220	
 		"PaintBackgroundType"	"0"
 	
+		if_mvm
+		{
+			"ypos"			"406"	
+		}
 	}
-	
 	"MainVerticalLine"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"MainVerticalLine"
 		"xpos"			"300"
 		"ypos"			"64"
@@ -143,10 +135,7 @@
 		"wide"			"1"
 		"tall"			"299"
 
-		"xpos_minmode"			"300"
-		"ypos_minmode"			"64"
-		"wide_minmode"			"1"
-		"tall_minmode"			"170"
+		"tall_minmode"			"166"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -156,23 +145,22 @@
 		"fillcolor"		"255 255 255 200"
 		//"fillcolor"		"127 127 127 153"
 		"PaintBackgroundType"	"0"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	"HorizontalLine"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"HorizontalLine"
 		"xpos"			"115"
 		"ypos"			"397"	
 		"zpos"			"3"
 		"wide"			"464"
 		"tall"			"1"
-
-		"xpos_minmode"			"115"
-		"ypos_minmode"			"397"	
-		"wide_minmode"			"464"
-		"tall_minmode"			"1"
-
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
@@ -180,25 +168,21 @@
 		"fillcolor"		"127 127 127 153"
 		"PaintBackgroundType"	"0"
 	}
-
 	"PlayerScoreLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerScoreLabel"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playerscore%"
-		"textAlignment"		"Center"
+		"textAlignment"	"Center"
 		"xpos"			"231"
 		"ypos"			"413"
+		
+		"ypos_minmode"	"280"
+		
 		"zpos"			"3"
 		"wide"			"140"
 		"tall"			"20"
-
-		"xpos_minmode"			"231"
-		"ypos_minmode"			"291"
-		"wide_minmode"			"140"
-		"tall_minmode"			"20"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -206,78 +190,75 @@
 	}				
 	"BlueTeamLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamLabel"
 		"font"			"ScoreboardTeamNameLarge"
-		//"labelText"		"REALLYLONGTEAMNAME"
+		//"labelText"	"REALLYLONGTEAMNAME"
 		"labelText"		"%blueteamname%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"24"//"15"
 		"ypos"			"10"//"28"
 		"zpos"			"3"	
 		"wide"			"250"
 		"tall"			"34"
-
-		"xpos_minmode"			"24"//"15"
-		"ypos_minmode"			"10"//"28"
-		"wide_minmode"			"250"
-		"tall_minmode"			"34"
-
 		"autoResize"    "0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
 	"BlueTeamScore"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamScore"
 		"font"			"ScoreboardTeamScore"
 		"labelText"		"%blueteamscore%"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"194"
 		"ypos"			"10" 
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"55"
-
-		"xpos_minmode"			"194"
-		"ypos_minmode"			"10" 
-		"wide_minmode"			"100"
-		"tall_minmode"			"55"
-
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	"BlueTeamScoreDropshadow"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamScoreDropshadow"
 		"font"			"ScoreboardTeamScore"
 		"fgcolor"		"Black"
 		"labelText"		"%blueteamscore%"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"195"
 		"ypos"			"11" 
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
-
-		"xpos_minmode"			"195"
-		"ypos_minmode"			"11" 
-		"wide_minmode"			"100"
-		"tall_minmode"			"55"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
 	"BlueTeamPlayerCount"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"BlueTeamPlayerCount"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%blueteamplayercount%"
@@ -287,112 +268,106 @@
 		"zpos"			"3"
 		"wide"			"286"//"100"
 		"tall"			"29"
-
-		"xpos_minmode"			"14"//"110"	
-		"ypos_minmode"			"35"
-		"wide_minmode"			"286"//"100"
-		"tall_minmode"			"29"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
 	"RedTeamLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamLabel"
 		"font"			"ScoreboardTeamNameLarge"
 		"labelText"		"%redteamname%"
 		//"labelText"	"REALLYLONGTEAMNAME"
-		"textAlignment"		"east"
+		"textAlignment"	"east"
 		"xpos"			"328"//"448"
 		"ypos"			"10"//"28"
 		"zpos"			"3"	
 		"wide"			"250"
 		"tall"			"34"
-
-		"xpos_minmode"			"328"//"448"
-		"ypos_minmode"			"10"//"28"
-		"wide_minmode"			"250"
-		"tall_minmode"			"34"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
 	"RedTeamScore"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamScore"
 		"font"			"ScoreboardTeamScore"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"310"
 		"ypos"			"10" 
 		"zpos"			"5"
 		"wide"			"100"
 		"tall"			"55"
-
-		"xpos_minmode"			"310"
-		"ypos_minmode"			"10" 
-		"wide_minmode"			"100"
-		"tall_minmode"			"55"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}
 	"RedTeamScoreDropshadow"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamScoreDropshadow"
 		"font"			"ScoreboardTeamScore"
 		"fgcolor"		"Black"
 		"labelText"		"%redteamscore%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"311"
 		"ypos"			"11"
 		"zpos"			"4"
 		"wide"			"100"
 		"tall"			"55"
-
-		"xpos_minmode"			"311"
-		"ypos_minmode"			"11"
-		"wide_minmode"			"100"
-		"tall_minmode"			"55"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
 	"RedTeamPlayerCount"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"RedTeamPlayerCount"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%redteamplayercount%"
-		"textAlignment"		"center"
+		"textAlignment"	"center"
 		"xpos"			"301"//"375"
 		"ypos"			"35"
 		"zpos"			"3"
 		"wide"			"286"//"100"
 		"tall"			"29"
-
-		"xpos_minmode"			"301"//"375"
-		"ypos_minmode"			"35"
-		"wide_minmode"			"286"//"100"
-		"tall_minmode"			"29"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"visible"		"0"
+		}
 	}							
-							
 	"BluePlayerList"
 	{
 		"ControlName"	"SectionedListPanel"
@@ -403,17 +378,14 @@
 		"wide"			"290"
 		"tall"			"400"	
 
-		"xpos_minmode"			"12"//"6"
-		"ypos_minmode"			"51"
-		"wide_minmode"			"290"
 		"tall_minmode"			"182"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"		"0"
-		"autoresize"		"3"
-		"linespacing"		"19" //"22"
+		"tabPosition"	"0"
+		"autoresize"	"3"
+		"linespacing"	"19" //"22"
 		"fgcolor"		"blue"
 	}
 	"RedPlayerList"
@@ -426,9 +398,6 @@
 		"wide"			"290"
 		"tall"			"400"	
 
-		"xpos_minmode"			"299"//"305"
-		"ypos_minmode"			"51"
-		"wide_minmode"			"290"
 		"tall_minmode"			"182"	
 
 		"pinCorner"		"0"
@@ -436,36 +405,40 @@
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"autoresize"	"3"
-		"linespacing"		"19"//"22"
+		"linespacing"	"19"//"22"
 		"textcolor"		"red"
 	}
 
 	"Spectators"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"Spectators"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%spectators%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"20"
 		"ypos"			"c+121"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
 
-		"xpos_minmode"			"20"
-		"ypos_minmode"			"c-9"	
-		"wide_minmode"			"560"
-		"tall_minmode"			"20"
+		"ypos_minmode"			"c-12"	
 
-		"autoResize"		"0"
+		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"362"
+			"xpos"			"60"
+			"wide"			"480"
+		}
 	}	
 	"SpectatorsInQueue"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"SpectatorsInQueue"
 		"font"			"ScoreboardVerySmall"
 		"labelText"		"%waitingtoplay%"
@@ -476,112 +449,99 @@
 		"wide"			"560"
 		"tall"			"20"
 
-		"xpos_minmode"			"20"
-		"ypos_minmode"			"c-9"	
-		"wide_minmode"			"560"
-		"tall_minmode"			"20"
+		"ypos_minmode"			"c-12"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-	}							
-
+	}		
 	"ServerLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"ServerLabel"
 		"font"			"ScoreboardTiny"
 		"labelText"		"%server%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"20"
 		"ypos"			"374"
 		"wide"			"300"
 		"tall"			"20"
 
-		"xpos_minmode"			"20"
-		"ypos_minmode"			"244"
-		"wide_minmode"			"300"
-		"tall_minmode"			"20"
-
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"	
-		"enabled"		"1"
-	}
-	"ServerTimeLeft"
-	{
-		"ControlName"		"CExLabel"
-		"fieldName"		"ServerTimeLeft"
-		"font"			"ScoreboardTiny"
-		"labelText"		"%servertimeleft%"
-		"textAlignment"		"east"
-		"xpos"			"20"
-		"ypos"			"373"
-		"wide"			"560"
-		"tall"			"20"
-
-		"xpos_minmode"			"20"
-		"ypos_minmode"			"243"
-		"wide_minmode"			"560"
-		"tall_minmode"			"20"
+		"ypos_minmode"			"241"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"	
 		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"370"
+			"xpos"			"60"
+			"wide"			"260"
+		}
 	}
+	"ServerTimeLeft"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ServerTimeLeft"
+		"font"			"ScoreboardTiny"
+		"labelText"		"%servertimeleft%"
+		"textAlignment"	"east"
+		"xpos"			"20"
+		"ypos"			"373"
+		"wide"			"560"
+		"tall"			"20"
 
+		"ypos_minmode"			"240"
 
-	
-	
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"	
+		"enabled"		"1"
+		
+		if_mvm
+		{
+			"ypos"			"369"
+			"xpos"			"60"
+			"wide"			"480"
+		}
+	}
 	"ClassImage"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"ClassImage"
 		"xpos"			"22"
 		"ypos"			"423"	
 		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
-
-		"xpos_minmode"			"22"
-		"ypos_minmode"			"350"	
-		"wide_minmode"			"0"
-		"tall_minmode"			"0"
-
 		"visible"		"0"
 		"enabled"		"1"
-		//"image"			"../hud/class_scoutred"
-		"scaleImage"		"1"	
+		//"image"		"../hud/class_scoutred"
+		"scaleImage"	"1"	
 	}
 	"PlayerNameLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerNameLabel"
 		"font"			"ScoreboardMedium"
 		"labelText"		"%playername%"
-		"textAlignment"		"west"
+		"textAlignment"	"west"
 		"xpos"			"115"
 		"ypos"			"450"	
 		"zpos"			"3"
 		"wide"			"325"	
 		"tall"			"20"
-
-		"xpos_minmode"			"115"
-		"ypos_minmode"			"377"	
-		"wide_minmode"			"325"	
-		"tall_minmode"			"20"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 	}							
-
 	"LocalPlayerDuelStatsPanel"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
 		"ypos"			"429"
@@ -589,10 +549,7 @@
 		"wide"			"600"
 		"tall"			"53"
 
-		"xpos_minmode"			"0"
-		"ypos_minmode"			"307"
-		"wide_minmode"			"600"
-		"tall_minmode"			"53"
+		"ypos_minmode"			"467"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -601,29 +558,22 @@
 
 		"DuelingLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DuelingLabel"
 			"font"			"ScoreboardSmall"
 			"labelText"		"#TF_ScoreBoard_Dueling"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"xpos"			"250"
 			"ypos"			"2"
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"20"
-
-			"textAlignment"		"center"
-			"xpos_minmode"			"250"
-			"ypos_minmode"			"2"
-			"wide_minmode"			"100"
-			"tall_minmode"			"20"
-
+			"textAlignment"	"center"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
 		"DuelingIcon"
 		{
 			"ControlName"	"ImagePanel"
@@ -633,32 +583,19 @@
 			"zpos"			"2"
 			"wide"			"32"
 			"tall"			"32"
-
-			"xpos_minmode"			"284"
-			"ypos_minmode"			"15"
-			"wide_minmode"			"32"
-			"tall_minmode"			"32"
-
 			"visible"		"1"
 			"enabled"		"1"
 			"image"			"../backpack/player/items/crafting/icon_dueling"
 			"scaleImage"	"1"
 		}
-
 		"LocalPlayerData"
 		{
-			"ControlName"		"EditablePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"LocalPlayerData"
 			"xpos"			"75"
 			"ypos"			"0"
 			"wide"			"200"
 			"tall"			"53"
-
-			"xpos_minmode"			"75"
-			"ypos_minmode"			"0"
-			"wide_minmode"			"200"
-			"tall_minmode"			"53"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -673,12 +610,6 @@
 				"zpos"			"-1"
 				"wide"			"36"
 				"tall"			"36"
-
-				"xpos_minmode"			"157"
-				"ypos_minmode"			"7"
-				"wide_minmode"			"36"
-				"tall_minmode"			"36"
-
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
 				"bgcolor_override"	"117 107 94 255"
@@ -692,12 +623,6 @@
 				"zpos"			"0"
 				"wide"			"32"
 				"tall"			"32"
-
-				"xpos_minmode"			"159"
-				"ypos_minmode"			"9"
-				"wide_minmode"			"32"
-				"tall_minmode"			"32"
-
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			""
@@ -714,12 +639,6 @@
 				"zpos"			"2"
 				"wide"			"100"
 				"tall"			"18"
-
-				"xpos_minmode"			"50"
-				"ypos_minmode"			"7"
-				"wide_minmode"			"100"
-				"tall_minmode"			"18"
-
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -740,12 +659,6 @@
 				"zpos"			"3"
 				"wide"			"100"
 				"tall"			"20"
-
-				"xpos_minmode"			"50"
-				"ypos_minmode"			"23"
-				"wide_minmode"			"100"
-				"tall_minmode"			"20"
-
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -753,21 +666,14 @@
 				"font"			"ScoreboardMedium"
 			}
 		}
-
 		"OpponentData"
 		{
-			"ControlName"		"EditablePanel"
+			"ControlName"	"EditablePanel"
 			"fieldName"		"OpponentData"
 			"xpos"			"325"
 			"ypos"			"0"
 			"wide"			"200"
 			"tall"			"53"
-
-			"xpos_minmode"			"325"
-			"ypos_minmode"			"0"
-			"wide_minmode"			"200"
-			"tall_minmode"			"53"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -782,12 +688,6 @@
 				"zpos"			"-1"
 				"wide"			"36"
 				"tall"			"36"
-
-				"xpos_minmode"			"7"
-				"ypos_minmode"			"7"
-				"wide_minmode"			"36"
-				"tall_minmode"			"36"
-
 				"visible"		"1"
 				"PaintBackgroundType"	"2"
 				"bgcolor_override"	"117 107 94 255"
@@ -801,12 +701,6 @@
 				"zpos"			"0"
 				"wide"			"32"
 				"tall"			"32"
-
-				"xpos_minmode"			"9"
-				"ypos_minmode"			"9"
-				"wide_minmode"			"32"
-				"tall_minmode"			"32"
-
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			""
@@ -823,12 +717,6 @@
 				"zpos"			"2"
 				"wide"			"100"
 				"tall"			"18"
-
-				"xpos_minmode"			"50"
-				"ypos_minmode"			"7"
-				"wide_minmode"			"100"
-				"tall_minmode"			"18"
-
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -849,12 +737,6 @@
 				"zpos"			"3"
 				"wide"			"200"
 				"tall"			"20"
-
-				"xpos_minmode"			"50"
-				"ypos_minmode"			"23"
-				"wide_minmode"			"200"
-				"tall_minmode"			"20"
-
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
@@ -863,22 +745,18 @@
 			}
 		}		
 	}
-
 	"LocalPlayerStatsPanel"
 	{
-		"ControlName"		"EditablePanel"
+		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
 		"ypos"			"346"
+		
+		"ypos_minmode"	"213"
+		
 		"zpos"			"5"
 		"wide"			"600"
 		"tall"			"448"
-
-		"xpos_minmode"			"0"
-		"ypos_minmode"			"224"
-		"wide_minmode"			"600"
-		"tall_minmode"			"448"
-
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -890,34 +768,29 @@
 			"fieldName"		"mapname"
 			"font"			"ScoreboardTiny"
 			"labelText"		"%mapname%"
-			"textAlignment"		"center"
+			"textAlignment"	"center"
 			"xpos"			"228"
 			"ypos"			"28"
 			"zpos"			"13"
 			"wide"			"146"
 			"tall"			"20"
 
-			"xpos_minmode"			"228"
-			"ypos_minmode"			"20"//"0"
-			"wide_minmode"			"146"
-			"tall_minmode"			"20"
+			//"ypos_minmode"			"28"
 
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"fgcolor"		"236 227 203 255"
+			
+			if_mvm
+			{
+				"ypos"			"24"
+			}
 		}	
-		
-
-
-
-
-			
-			
 		"Kills"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Kills"
 			"font"			"HudFontBig"
 			"labelText"		"%kills%"
@@ -927,20 +800,19 @@
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"40"
-
-			"xpos_minmode"			"196"
-			"ypos_minmode"			"87"	
-			"wide_minmode"			"100"
-			"tall_minmode"			"40"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}						
 		"KDRatio"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"KDRatio"
 			"font"			"HudFontBig"
 			"labelText"		":"
@@ -950,42 +822,38 @@
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"40"
-
-			"xpos_minmode"			"282"
-			"ypos_minmode"			"87"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"40"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}	
-
 		"Deaths"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"Deaths"
 			"font"			"HudFontBig"
 			"labelText"		"%deaths%"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"308"
 			"ypos"			"87"	
 			"zpos"			"3"
 			"wide"			"100"
 			"tall"			"40"
-
-			"xpos_minmode"			"308"
-			"ypos_minmode"			"87"	
-			"wide_minmode"			"100"
-			"tall_minmode"			"40"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
+			
+			if_mvm
+			{
+				"ypos"			"77"
+			}
 		}	
-							
 		"PlayerStatsVerticalLine"
 		{
 			"ControlName"	"ImagePanel"
@@ -995,12 +863,6 @@
 			"zpos"			"3"
 			"wide"			"1"
 			"tall"			"50"
-
-			"xpos_minmode"			"223"
-			"ypos_minmode"			"70"
-			"wide_minmode"			"1"
-			"tall_minmode"			"50"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1010,22 +872,15 @@
 			//"fillcolor"		"127 127 127 153"
 			"PaintBackgroundType"	"0"
 		}				
-		
 		"ClassStatsVerticalLine"
 		{
-			"ControlName"		"ImagePanel"
+			"ControlName"	"ImagePanel"
 			"fieldName"		"ClassStatsVerticalLine"
 			"xpos"			"376	"
 			"ypos"			"70"
 			"zpos"			"3"
 			"wide"			"1"
 			"tall"			"50"
-
-			"xpos_minmode"			"376"
-			"ypos_minmode"			"70"
-			"wide_minmode"			"1"
-			"tall_minmode"			"50"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1035,99 +890,69 @@
 			//"fillcolor"		"127 127 127 153"
 			"PaintBackgroundType"	"0"
 		}
-	
 		"CapturesLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"CapturesLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"80"//"60"	
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"		
-			"ypos_minmode"			"80"//"60"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-								
 		}						
-						
 		"Captures"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Captures"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%captures%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"80"//"60"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"	
-			"ypos_minmode"			"80"//"60"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}						
-		
 		"DefensesLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DefensesLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"90"//"70"	
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"		
-			"ypos_minmode"			"90"//"70"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}	
-
-
 		"Defenses"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Defenses"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%defenses%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"90"//"70"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"	
-			"ypos_minmode"			"90"//"70"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1135,46 +960,33 @@
 		}						
 		"AssistsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"AssistsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"60"//"80"	
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"	
-			"ypos_minmode"			"60"//"80"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
 		"Assists"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Assists"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%assists%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"
 			"ypos"			"60"//"80"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"
-			"ypos_minmode"			"60"//"80"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1182,22 +994,16 @@
 		}
 		"DestructionLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DestructionLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"70"//"90"	
 			"zpos"			"3"
-			"wide"			"40"
+			"wide"			"44"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"	
-			"ypos_minmode"			"70"//"90"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1205,72 +1011,50 @@
 		}
 		"Destruction"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Destruction"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%destruction%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"
 			"ypos"			"70"//"90"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"
-			"ypos_minmode"			"70"//"90"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
 		"DominationLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DominationLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"		
 			"ypos"			"100"	
 			"zpos"			"3"
-			"wide"			"40"
+			"wide"			"44"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"		
-			"ypos_minmode"			"100"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
-
-
 		"Domination"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Domination"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%dominations%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"100"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"	
-			"ypos_minmode"			"100"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1278,73 +1062,50 @@
 		}						
 		"RevengeLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"RevengeLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"159"	
 			"ypos"			"110"	
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"159"	
-			"ypos_minmode"			"110"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}		
-
 		"Revenge"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Revenge"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%Revenge%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"179"	
 			"ypos"			"110"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"179"	
-			"ypos_minmode"			"110"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}						
-		
-		
-				
 		"InvulnLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"InvulnLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"Ubers:"//"#TF_ScoreBoard_InvulnLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"60"	
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-
-			"xpos_minmode"			"387"	
-			"ypos_minmode"			"60"	
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1352,31 +1113,24 @@
 		}						
 		"Invuln"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Invuln"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%invulns%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"60"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"	
-			"ypos_minmode"			"60"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}				
-						
 		"Healing"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Healing"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%healing%"
@@ -1386,36 +1140,23 @@
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"	
-			"ypos_minmode"			"70"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}						
-						
 		"HealingLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"HealingLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"70"	
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
-
-			"xpos_minmode"			"387"	
-			"ypos_minmode"			"70"	
-			"wide_minmode"			"40"	
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1423,22 +1164,16 @@
 		}
 		"HeadshotsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"HeadshotsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"80"	
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
-
-			"xpos_minmode"			"387"	
-			"ypos_minmode"			"80"	
-			"wide_minmode"			"40"	
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1446,22 +1181,16 @@
 		}			
 		"Headshots"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Headshots"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%headshots%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"80"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"	
-			"ypos_minmode"			"80"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1469,22 +1198,16 @@
 		}						
 		"BackstabsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"BackstabsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"
 			"ypos"			"90"
 			"zpos"			"5"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"387"
-			"ypos_minmode"			"90"
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1492,46 +1215,33 @@
 		}
 		"Backstabs"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Backstabs"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%backstabs%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"
 			"ypos"			"90"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"
-			"ypos_minmode"			"90"
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
-			"autoResize"		"0"
+			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
 		"TeleportsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"TeleportsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"	
 			"ypos"			"100"	
 			"zpos"			"3"
 			"wide"			"40"	
 			"tall"			"20"
-
-			"xpos_minmode"			"387"	
-			"ypos_minmode"			"100"	
-			"wide_minmode"			"40"	
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1539,22 +1249,16 @@
 		}
 		"Teleports"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Teleports"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%teleports%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"	
 			"ypos"			"100"	
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"	
-			"ypos_minmode"			"100"	
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1562,22 +1266,16 @@
 		}		
 		"BonusLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"BonusLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BonusLabel"
-			"textAlignment"		"west"
+			"textAlignment"	"west"
 			"xpos"			"387"
 			"ypos"			"110"
 			"zpos"			"3"
 			"wide"			"40"
 			"tall"			"20"
-
-			"xpos_minmode"			"387"
-			"ypos_minmode"			"110"
-			"wide_minmode"			"40"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1585,48 +1283,33 @@
 		}
 		"Bonus"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"Bonus"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%bonus%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"405"
 			"ypos"			"110"
 			"zpos"			"3"
 			"wide"			"35"
 			"tall"			"20"
-
-			"xpos_minmode"			"405"
-			"ypos_minmode"			"110"
-			"wide_minmode"			"35"
-			"tall_minmode"			"20"
-
-			"autoResize"		"0"
+			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 		}
-
-	
-
-			"KillsLabel"
+		"KillsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"KillsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_KillsLabel"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"	
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
-
-			"xpos_minmode"			"0"
-			"ypos_minmode"			"0"	
-			"wide_minmode"			"95"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -1634,23 +1317,16 @@
 		}						
 		"DeathsLabel"
 		{
-			"ControlName"		"CExLabel"
+			"ControlName"	"CExLabel"
 			"fieldName"		"DeathsLabel"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DeathsLabel"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"	
 			"zpos"			"3"
 			"wide"			"95"
 			"tall"			"20"
-
-			"xpos_minmode"			"0"
-			"ypos_minmode"			"0"	
-			"wide_minmode"			"95"
-			"tall_minmode"			"20"
-
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -1662,18 +1338,12 @@
 			"fieldName"		"gametype"
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%gametype%"
-			"textAlignment"		"east"
+			"textAlignment"	"east"
 			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"3"
 			"wide"			"145"
 			"tall"			"20"
-
-			"xpos_minmode"			"0"
-			"ypos_minmode"			"0"
-			"wide_minmode"			"145"
-			"tall_minmode"			"20"
-
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"0"
@@ -1681,6 +1351,28 @@
 			"fgcolor"		"185 177 153 255"
 		}
 		
+		//this is the position of the entire bottom stats box (not including background)
+		if_mvm
+		{
+			"ypos"			"346"
+		}
 	}
-
+	"MvMScoreboard"
+	{
+		"ControlName"		"CTFHudMannVsMachineScoreboard"
+		"fieldName"			"MvMScoreboard"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"10"
+		"wide"				"f0"
+		"tall"				"480"
+		"visible"			"0"
+		"enabled"			"1"
+		"verbose"			"1"
+		
+		if_mvm
+		{
+			"visible"		"1"
+		}
+	}
 }
