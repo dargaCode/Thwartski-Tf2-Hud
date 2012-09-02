@@ -1571,7 +1571,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MaxmodeScoreBoardButton"
-		"xpos"			"102"
+		"xpos"			"227"//"102"
 		"ypos"			"356"
 		"zpos"			"11"
 		"wide"			"134"
@@ -1630,7 +1630,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MinmodeScoreBoardButton"
-		"xpos"			"227"
+		"xpos"			"102"//"227"
 		"ypos"			"356"
 		"zpos"			"11"
 		"wide"			"134"
