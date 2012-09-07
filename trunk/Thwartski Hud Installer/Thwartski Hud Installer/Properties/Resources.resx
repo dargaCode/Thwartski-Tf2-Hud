@@ -139,4 +139,148 @@
   <data name="scoreboardImagePub32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\_resourceImages\ScoreBoard_Pub32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="stringButtonInstallFreshMode" xml:space="preserve">
+    <value>Install Hud</value>
+    <comment>//display text for install button modes</comment>
+  </data>
+  <data name="stringButtonInstallLaunchMode" xml:space="preserve">
+    <value>Launch TF2</value>
+    <comment>//display text for install button modes</comment>
+  </data>
+  <data name="stringButtonInstallOptionsMode" xml:space="preserve">
+    <value>Save Options</value>
+    <comment>//display text for install button modes</comment>
+  </data>
+  <data name="stringComboboxAspectNormal" xml:space="preserve">
+    <value>Normal</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringComboboxAspectWidescreen" xml:space="preserve">
+    <value>Widescreen</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringComboboxScoreboardComp6" xml:space="preserve">
+    <value>6v6</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringComboboxScoreboardComp9" xml:space="preserve">
+    <value>Highlander</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringComboboxScoreboardPub24" xml:space="preserve">
+    <value>24 Player</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringComboboxScoreboardPub32" xml:space="preserve">
+    <value>32 Player</value>
+    <comment>//display text for comboboxes arrays</comment>
+  </data>
+  <data name="stringFilenameAssetAspectNormal" xml:space="preserve">
+    <value>SpectatorTournament_Normal.res</value>
+    <comment>//names of custom asset files for aspect options</comment>
+  </data>
+  <data name="stringFilenameAssetAspectWidescreen" xml:space="preserve">
+    <value>SpectatorTournament_Widescreen.res</value>
+    <comment>//names of custom asset files for aspect options</comment>
+  </data>
+  <data name="stringFilenameInstallAspect" xml:space="preserve">
+    <value>SpectatorTournament.res</value>
+    <comment>//names of custom install files to write the asset options to</comment>
+  </data>
+  <data name="stringFilenameInstallMenu" xml:space="preserve">
+    <value>GameMenu.res</value>
+    <comment>//names of custom install files to write the asset options to</comment>
+  </data>
+  <data name="stringFilenameInstallScoreboard" xml:space="preserve">
+    <value>ScoreBoard.res</value>
+    <comment>//names of custom install files to write the asset options to</comment>
+  </data>
+  <data name="stringFilenameAssetMenuPub24Comp6" xml:space="preserve">
+    <value>GameMenu_Pub24Comp6.res</value>
+    <comment>//names of custom asset files for menu options</comment>
+  </data>
+  <data name="stringFilenameAssetMenuPub24Comp9" xml:space="preserve">
+    <value>GameMenu_Pub24Comp9.res</value>
+    <comment>//names of custom asset files for menu options</comment>
+  </data>
+  <data name="stringFilenameAssetMenuPub32Comp6" xml:space="preserve">
+    <value>GameMenu_Pub32Comp6.res</value>
+    <comment>//names of custom asset files for menu options</comment>
+  </data>
+  <data name="stringFilenameAssetMenuPub32Comp9" xml:space="preserve">
+    <value>GameMenu_Pub32Comp9.res</value>
+    <comment>//names of custom asset files for menu options</comment>
+  </data>
+  <data name="stringFilenameAssetScoreboardPub32Comp9" xml:space="preserve">
+    <value>ScoreBoard_Pub32Comp9.res</value>
+    <comment>//names of custom asset files for scoreboard options</comment>
+  </data>
+  <data name="stringFilenameAssetScoreboardPub24Comp6" xml:space="preserve">
+    <value>ScoreBoard_Pub24Comp6.res</value>
+    <comment>//names of custom asset files for scoreboard options</comment>
+  </data>
+  <data name="stringFilenameAssetScoreboardPub24Comp9" xml:space="preserve">
+    <value>ScoreBoard_Pub24Comp9.res</value>
+    <comment>//names of custom asset files for scoreboard options</comment>
+  </data>
+  <data name="stringFilenameAssetScoreboardPub32Comp6" xml:space="preserve">
+    <value>ScoreBoard_Pub32Comp6.res</value>
+    <comment>//names of custom asset files for scoreboard options</comment>
+  </data>
+  <data name="stringFolderAssetOptions" xml:space="preserve">
+    <value>_Thwartski Hud Options\</value>
+    <comment>//paths for copying assets and installing them</comment>
+  </data>
+  <data name="stringFolderBackup" xml:space="preserve">
+    <value>_HUD BACKUPS\</value>
+    <comment>//paths for copying assets and installing them</comment>
+  </data>
+  <data name="stringFolderDefaultSteamapps64Bit" xml:space="preserve">
+    <value>C:\Program Files\Steam\steamapps\</value>
+    <comment>//paths for populating the folder browser</comment>
+  </data>
+  <data name="stringFolderDefaultSteamapps32Bit" xml:space="preserve">
+    <value>C:\Program Files (x86)\Steam\steamapps\</value>
+    <comment>//paths for populating the folder browser</comment>
+  </data>
+  <data name="stringFolderSteamappsUnknown" xml:space="preserve">
+    <value>\YOUR_STEAM_FOLDER\steamapps\</value>
+    <comment>//paths for populating the folder browser</comment>
+  </data>
+  <data name="stringFolderSteamUserUnknown" xml:space="preserve">
+    <value>YOUR_USERNAME</value>
+    <comment>//paths for populating the folder browser</comment>
+  </data>
+  <data name="stringFolderTeamFortress2" xml:space="preserve">
+    <value>\team fortress 2</value>
+    <comment>//paths for populating the folder browser</comment>
+  </data>
+  <data name="stringFolderInstallPathResource" xml:space="preserve">
+    <value>resource\</value>
+    <comment>//paths for copying assets and installing them</comment>
+  </data>
+  <data name="stringFolderInstallPathTf" xml:space="preserve">
+    <value>\tf\</value>
+    <comment>//paths for copying assets and installing them</comment>
+  </data>
+  <data name="stringFolderInstallPathUi" xml:space="preserve">
+    <value>ui\</value>
+    <comment>//paths for copying assets and installing them</comment>
+  </data>
+  <data name="stringMessageUninstallComplete" xml:space="preserve">
+    <value>All hud files are now reverted to Valve defaults.</value>
+    <comment>//success messages</comment>
+  </data>
+  <data name="stringMessageUpdateSettingsComplete" xml:space="preserve">
+    <value>Your custom options have been installed.</value>
+    <comment>//success messages</comment>
+  </data>
+  <data name="stringFilenameInstallChecker" xml:space="preserve">
+    <value>Thwartski Hud Installed.txt</value>
+    <comment>//file and path to let the buttons know the hud is installed</comment>
+  </data>
+  <data name="stringTeamFortressLaunchCommand" xml:space="preserve">
+    <value>steam://rungameid/440</value>
+    <comment>//private string for launching tf2</comment>
+  </data>
 </root>
