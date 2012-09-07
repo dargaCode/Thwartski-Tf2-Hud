@@ -19,74 +19,37 @@ namespace Thwartski_Hud_Installer
     {
         
 
-
-        //TONS OF GLOBAL VARIABLES, MOSTLY STRINGS
-
-
-
         //defining tooltips for the form
         static ToolTip HudInstallerTooltips = new ToolTip();
-        
 
 
-        string tooltipInstallButton = "asdf";    //overridden in installButtonMode
-        string tooltipUninstallButton = "asdf"; //overridden in installButtonMode
+        static Version currentAssetVersion;
+        static Version latestAssetVersion;
+        static Version currentInstallVersion;
 
-        
+        //used for cycling through assetfolder directory
+        static DirectoryInfo assetFolderDir = new DirectoryInfo(GlobalStrings.AssetPath);
+
+
+
+
+
+
+
+
+
         //paths for populating the folder browser
-        static string defaultSteamappsFolder32Bit =     @"C:\Program Files (x86)\Steam\steamapps\";
-        static string defaultSteamappsFolder64Bit =     @"C:\Program Files\Steam\steamapps\";
-        static string unknownSteamappsFolder =          @"\YOUR_STEAM_FOLDER\steamapps\";
-        static string unknownSteamUser =                @"YOUR_USERNAME";
-        static string teamFortress2Subfolder =          @"\team fortress 2";
+
         static string steamappsFolder;                  //written at runtime
         static string steamUser;                        //written at runtime
 
         //paths for browsing folders
         static string partialTeamFortress2Location;     //written at runtime
-        static string unknownTeamFortress2Location =    unknownSteamappsFolder + unknownSteamUser + teamFortress2Subfolder;
 
-        //forder browser descriptions and errors
-        static string unknownFolderBrowserDesc =        @"Please select " + unknownTeamFortress2Location;
-        static string partialFolderBrowserDesc =        @"Please select your \steamapps\" + unknownSteamUser + teamFortress2Subfolder + " folder";
-        static string validFolderBrowserDesc =          @"Please select your Team Fortress 2 folder.";
-        static string badFolderSelectedMessage =        @"Please select " + unknownTeamFortress2Location;
-
-        //see where the exe is running from
-        static string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\"; 
-        
         //paths for copying assets and installing them
-        static string assetPath =                       exeFolder + @"Thwartski Hud Install Files\";
-        static string installPathTfSubFolder =          @"\tf\";
-        static string installPathResourceSubfolder =    @"resource\";
-        static string installPathUiSubfolder =          @"ui\";
         static string installPath;                      //written at runtime
-        static string assetOptionsSubfolder =           @"_Thwartski Hud Options\";
         static string assetOptionsPath;                 //written at runtime
-        static string backupSubFolder =                 @"_HUD BACKUPS\";
         static string backupPath;                       //written at runtime
-
-        //used for cycling through assetfolder directory
-        static DirectoryInfo assetFolderDir = new DirectoryInfo(assetPath);
-
-        //array of filenames that valve automatically generates, so they can be left out from backups
-        static string[] forcedValveFiles = { "game.ico", "tf.ttf", "tf2.ttf", "tf2build.ttf", "tf2professor.ttf", "tf2secondary.ttf", "tfd.ttf" };
-
-        //names of custom asset files for aspect options
-        static string aspectAssetFileNormal =           "SpectatorTournament_Normal.res";
-        static string aspectAssetFileWidescreen =       "SpectatorTournament_Widescreen.res";
-
-        //names of custom asset files for scoreboard options
-        static string scoreboardAssetFilePub24Comp6 =   "ScoreBoard_Pub24Comp6.res";
-        static string scoreboardAssetFilePub24Comp9 =   "ScoreBoard_Pub24Comp9.res";
-        static string scoreboardAssetFilePub32Comp6 =   "ScoreBoard_Pub32Comp6.res";
-        static string scoreboardAsserFilePub32Comp9 =   "ScoreBoard_Pub32Comp9.res";
-
-        //names of custom asset files for menu options
-        static string menuAssetFilePub24Comp6 =         "GameMenu_Pub24Comp6.res";
-        static string menuAssetFilePub24Comp9 =         "GameMenu_Pub24Comp9.res";
-        static string menuAssetFilePub32Comp6 =         "GameMenu_Pub32Comp6.res";
-        static string menuAssetFilePub32Comp9 =         "GameMenu_Pub32Comp9.res";
 
         //which custom assets were selected to be installed in the comboboxes
         static string aspectSelectedAssetFile;          //written at runtime
@@ -97,9 +60,6 @@ namespace Thwartski_Hud_Installer
         static string menuSelectedAssetPath;            //written at runtime
 
         //names of custom install files to write the asset options to
-        static string aspectInstallFile =               "SpectatorTournament.res";
-        static string scoreboardInstallFile =           "ScoreBoard.res";
-        static string menuInstallFile =                 "GameMenu.res";
 
         //paths to write custom files to
         static string customInstallPathResource;        //written at runtime
@@ -109,28 +69,12 @@ namespace Thwartski_Hud_Installer
         static string menuFileDestination;              //written at runtime
 
         //file and path to let the buttons know the hud is installed
-        static string installCheckerFile =              "Thwartski Hud Installed.txt";
         static string installCheckerDestination;        //written at runtime
 
-        //string for launching tf2
-        static string teamFortressLaunchCommand =       "steam://rungameid/440";
-
-
-
-        static string zipFileLocation =                 assetPath + "AssetFiles.zip";
-
-        static Version currentAssetVersion;
-        static Version latestAssetVersion;
-        static Version currentInstallVersion;
 
 
 
         //FORM EVENTS BELOW THIS POINT
-
-
-
-        UiStrings uistrings = new UiStrings; 
-        
 
 
         public Form1()
@@ -141,13 +85,16 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
+            //see where the exe is running from
+            GlobalStrings.ExeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\"; 
+
             //generate tooltips for the form
             updateTooltips();
 
             //create arrays of combobox strings
-            string[] aspects = { UiStrings.ComboboxAspectNormalText, UiStrings.ComboboxAspectWidescreenText };
-            string[] scoreboardsMaxmode = { UiStrings.ComboboxScoreboardPub24Text, UiStrings.ComboboxScoreboardPub32Text };
-            string[] scoreboardsMinmode = { UiStrings.ComboboxScoreboardComp6Text, UiStrings.ComboboxScoreboardComp9Text };
+            string[] aspects = { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
+            string[] scoreboardsMaxmode = { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
+            string[] scoreboardsMinmode = { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
 
             //populate the comboboxes with the correct options
             aspectSelector.Items.AddRange(aspects);
@@ -161,7 +108,7 @@ namespace Thwartski_Hud_Installer
 
             //decide whether to use the saved install path setting or to start generating one
             string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
-            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(teamFortress2Subfolder))
+            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
             {
                 //allow the hud to be installed at the saved location
                 setInstallLocation(savedBrowserPath);
@@ -183,14 +130,14 @@ namespace Thwartski_Hud_Installer
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 //the player selected a valid folder
-                if (folderBrowserDialog1.SelectedPath.EndsWith(teamFortress2Subfolder))
+                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
                 {
                     setInstallLocation(folderBrowserDialog1.SelectedPath);
                 }
                 //the player didn't select a valid folder
                 else
                 {
-                    errorWindow(badFolderSelectedMessage);
+                    errorWindow(GlobalStrings.MessageBadFolderSelected);
                 }
             }
         }
@@ -204,7 +151,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageNormal;
 
                 //load the matching file into a bit array for later copying
-                aspectSelectedAssetFile = aspectAssetFileNormal;
+                aspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectNormal;
             }
             //widescreen aspect ratio
             else if (aspectSelector.SelectedIndex == 1)
@@ -213,7 +160,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
 
                 //load the matching file into a bit array for later copying
-                aspectSelectedAssetFile = aspectAssetFileWidescreen;
+                aspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectWidescreen;
             }
             //something went wrong
             else
@@ -313,7 +260,7 @@ namespace Thwartski_Hud_Installer
             //attempt to update the custom files (has its own validation)
             if (updateCustomFiles())
             {
-                MessageBox.Show(UiStrings.MessageUpdateSettingsComplete);
+                MessageBox.Show(Properties.Resources.stringMessageUpdateSettingsComplete);
             }
 
             //enable form contents
@@ -354,7 +301,7 @@ namespace Thwartski_Hud_Installer
             if (wipeHudFiles(false))
             {
                 //show the success message (but only if the function returned true)
-                MessageBox.Show(UiStrings.MessageUninstallComplete);
+                MessageBox.Show(Properties.Resources.stringMessageUninstallComplete);
 
                 //update and save the custom file settings
                 saveOptions();
@@ -384,27 +331,27 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         private void SetDefaultFolder()
         {
-            if (Directory.Exists(defaultSteamappsFolder32Bit))
+            if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps32Bit))
             {
                 //a steam folder was fond
-                steamappsFolder = defaultSteamappsFolder32Bit;
+                steamappsFolder = Properties.Resources.stringFolderDefaultSteamapps32Bit;
 
                 //try to guess your username
                 guessSteamUser(steamappsFolder); 
             }
-            else if (Directory.Exists(defaultSteamappsFolder64Bit))
+            else if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps64Bit))
 	        {
                 //a steam folder was found
-                steamappsFolder = defaultSteamappsFolder64Bit;
+                steamappsFolder = Properties.Resources.stringFolderDefaultSteamapps64Bit;
 
                 //try to guess your username
-                guessSteamUser(defaultSteamappsFolder64Bit); 
+                guessSteamUser(Properties.Resources.stringFolderDefaultSteamapps64Bit); 
 	        }
             else
             {
                 //no obvious steam install was found
-                folderBrowserBoxLabel.Text = unknownTeamFortress2Location;
-                folderBrowserDialog1.Description = unknownFolderBrowserDesc;
+                folderBrowserBoxLabel.Text = GlobalStrings.PathUnknownTeamFortress2;
+                folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescUnknown;
             }
         }
 
@@ -441,7 +388,7 @@ namespace Thwartski_Hud_Installer
                 else
                 {
                     //whatever's left is likely to be a userfolder.
-                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + teamFortress2Subfolder);
+                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + Properties.Resources.stringFolderTeamFortress2);
 
                     //the possible user contains the right folders
                     if (possibleTeamFortress2PathDir.Exists)
@@ -470,15 +417,15 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show("no users were found with " + teamFortress2Folder);
 
             //build the partial path
-            steamUser = unknownSteamUser;
-            partialTeamFortress2Location = steamappsFolder + steamUser + teamFortress2Subfolder;
+            steamUser = Properties.Resources.stringFolderSteamUserUnknown;
+            partialTeamFortress2Location = steamappsFolder + steamUser + Properties.Resources.stringFolderTeamFortress2;
 
             //update the textbox and folder browser with the partial path to get the player started.
             folderBrowserDialog1.SelectedPath = steamappsFolder;
             folderBrowserBoxLabel.Text = partialTeamFortress2Location;
 
             //change the text in the folder browser dialog
-            folderBrowserDialog1.Description = partialFolderBrowserDesc;
+            folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescPartial;
         }
 
         /// <summary>
@@ -489,7 +436,7 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //global variable used for actually installing the files
-            installPath = validInstallLocation + installPathTfSubFolder;
+            installPath = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
 
             //prepare the rest of the the strings for install paths, filenames, etc.
             updateStrings();
@@ -500,7 +447,7 @@ namespace Thwartski_Hud_Installer
 
             //update the folder browser dialog
             folderBrowserDialog1.SelectedPath = validInstallLocation;
-            folderBrowserDialog1.Description = validFolderBrowserDesc;
+            folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescValid;
 
             //update the install path setting
             Properties.Settings.Default.settingFolderBrowserPath = validInstallLocation;
@@ -522,32 +469,32 @@ namespace Thwartski_Hud_Installer
             if (maxmodeIndex == 0 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = scoreboardAssetFilePub24Comp6;
-                menuSelectedAssetFile = menuAssetFilePub24Comp6;
+                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
+                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
                 //MessageBox.Show("pub24/comp6");
             }
             //pub24 maxmode, comp9 minmode
             else if (maxmodeIndex == 0 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = scoreboardAssetFilePub24Comp9;
-                menuSelectedAssetFile = menuAssetFilePub24Comp9;
+                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
+                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
                 //MessageBox.Show("pub24/comp9");
             }
             //pub32 maxmode, comp6 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = scoreboardAssetFilePub32Comp6;
-                menuSelectedAssetFile = menuAssetFilePub32Comp6;
+                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
+                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
                 //MessageBox.Show("pub32/comp6");
             }
             //pub32 maxmode, comp9 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = scoreboardAsserFilePub32Comp9;
-                menuSelectedAssetFile = menuAssetFilePub32Comp9;
+                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
+                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
                 //MessageBox.Show("pub32/comp9");
             }
             //something went wrong
@@ -564,25 +511,25 @@ namespace Thwartski_Hud_Installer
         private void updateStrings()
         {
             //the paths of the custom asset files
-            assetOptionsPath = assetPath + installPathResourceSubfolder + installPathUiSubfolder + assetOptionsSubfolder;
+            assetOptionsPath = GlobalStrings.AssetPath + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
             aspectSelectedAssetPath = assetOptionsPath + aspectSelectedAssetFile;
             scoreboardSelectedAssetPath = assetOptionsPath + scoreboardSelectedAssetFile;
             menuSelectedAssetPath = assetOptionsPath + menuSelectedAssetFile;
 
             //the paths the custom asset files will be installed to
-            customInstallPathResource = installPath + installPathResourceSubfolder;
-            customInstallPathUi = customInstallPathResource + installPathUiSubfolder;
+            customInstallPathResource = installPath + Properties.Resources.stringFolderInstallPathResource;
+            customInstallPathUi = customInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
 
             //the names and paths of the custom install files
-            menuFileDestination = customInstallPathResource + menuInstallFile;
-            aspectFileDestination = customInstallPathUi + aspectInstallFile;
-            scoreboardFileDestination = customInstallPathUi + scoreboardInstallFile;
+            menuFileDestination = customInstallPathResource + Properties.Resources.stringFilenameInstallMenu;
+            aspectFileDestination = customInstallPathUi + Properties.Resources.stringFilenameInstallAspect;
+            scoreboardFileDestination = customInstallPathUi + Properties.Resources.stringFilenameInstallScoreboard;
 
             //name and path of the "hud is installed" tracking file
-            installCheckerDestination = customInstallPathResource + installCheckerFile;
+            installCheckerDestination = customInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
 
             //the path for backup files
-            backupPath = installPath + backupSubFolder;
+            backupPath = installPath + Properties.Resources.stringFolderBackup;
 
             //MessageBox.Show("installPath: \n" + installPath);
             //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);
@@ -691,20 +638,20 @@ namespace Thwartski_Hud_Installer
                 if (detectOptionsChanges())
                 {
                     //options mode changes the event on the button and its text
-                    installButtonMode(UiStrings.ButtonInstallOptionsMode);
+                    installButtonMode(Properties.Resources.stringButtonInstallOptionsMode);
                 }
                 //if the hud is installed and no options have changed, it's redundant
                 else
                 {
                     //launch mode changes the event on the button and its text
-                    installButtonMode(UiStrings.ButtonInstallLaunchMode);
+                    installButtonMode(Properties.Resources.stringButtonInstallLaunchMode);
                 }
             }
             //the hud is not currently installed
             else
             {
                 //freshMode is the default functionality of allowing a fresh install
-                installButtonMode(UiStrings.ButtonInstallFreshMode);
+                installButtonMode(Properties.Resources.stringButtonInstallFreshMode);
 
                 //disable uninstall when nothing to uninstall
                 uninstallButton.Enabled = false;
@@ -734,7 +681,7 @@ namespace Thwartski_Hud_Installer
         private void installButtonMode(string modeSetting)
         {
             //fresh mode
-            if (modeSetting == UiStrings.ButtonInstallFreshMode)
+            if (modeSetting == Properties.Resources.stringButtonInstallFreshMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
@@ -751,14 +698,14 @@ namespace Thwartski_Hud_Installer
                 installButton.Enabled = true;
 
                 //update tooltips for fresh mode
-                tooltipInstallButton = UiStrings.TooltipInstallFreshMode;
-                tooltipUninstallButton = UiStrings.TooltipUninstallFreshMode;
+                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallFreshMode;
+                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallFreshMode;
 
                 //generate tooltips with the updated strings
                 updateTooltips();
             }
             //update options mode
-            else if (modeSetting == UiStrings.ButtonInstallOptionsMode)
+            else if (modeSetting == Properties.Resources.stringButtonInstallOptionsMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
@@ -775,14 +722,14 @@ namespace Thwartski_Hud_Installer
                 installButton.Enabled = true;
 
                 //update tooltips for options mode
-                tooltipInstallButton = UiStrings.TooltipInstallOptionsMode;
-                tooltipUninstallButton = UiStrings.TooltipUninstallOptionsMode;
+                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallOptionsMode;
+                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallOptionsMode;
 
                 //generate tooltips with the updated strings
                 updateTooltips();
             }
             //launch mode
-            else if (modeSetting == UiStrings.ButtonInstallLaunchMode)
+            else if (modeSetting == Properties.Resources.stringButtonInstallLaunchMode)
             {
                 //update the button text to match the mode
                 installButton.Text = modeSetting;
@@ -799,8 +746,8 @@ namespace Thwartski_Hud_Installer
                 installButton.Enabled = true;
 
                 //update tooltips for launch mode
-                tooltipInstallButton = UiStrings.TooltipInstallLaunchMode;
-                tooltipUninstallButton = UiStrings.TooltipUninstallFreshMode;
+                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallLaunchMode;
+                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallFreshMode;
 
                 //generate tooltips with the updated strings
                 updateTooltips();
@@ -822,24 +769,24 @@ namespace Thwartski_Hud_Installer
             HudInstallerTooltips.RemoveAll();
 
             //assign browser tooltips
-            HudInstallerTooltips.SetToolTip(this.browseFolderInstructionsLabel, UiStrings.TooltipFolderBrowse);
-            HudInstallerTooltips.SetToolTip(this.folderBrowserBoxLabel, UiStrings.TooltipFolderBrowse);
-            HudInstallerTooltips.SetToolTip(this.folderBrowserButton, UiStrings.TooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.browseFolderInstructionsLabel, GlobalStrings.TooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.folderBrowserBoxLabel, GlobalStrings.TooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.folderBrowserButton, GlobalStrings.TooltipFolderBrowse);
             //assign aspect ratio tooltips
-            HudInstallerTooltips.SetToolTip(this.aspectImageBox, UiStrings.TooltipAspectRatio);
-            HudInstallerTooltips.SetToolTip(this.aspectLabel, UiStrings.TooltipAspectRatio);
-            HudInstallerTooltips.SetToolTip(this.aspectSelector, UiStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectImageBox, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectLabel, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectSelector, GlobalStrings.TooltipAspectRatio);
             //assign maxmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMaxmode, UiStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, UiStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMaxmode, UiStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMaxmode, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMaxmode, GlobalStrings.TooltipMaxmode);
             //assign minmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMinmode, UiStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, UiStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMinmode, UiStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMinmode, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMinmode, GlobalStrings.TooltipMinmode);
             //assign install and uninstall tooltips
-            HudInstallerTooltips.SetToolTip(this.installButton, tooltipInstallButton);
-            HudInstallerTooltips.SetToolTip(this.uninstallButton, tooltipUninstallButton);
+            HudInstallerTooltips.SetToolTip(this.installButton, GlobalStrings.TooltipInstallButton);
+            HudInstallerTooltips.SetToolTip(this.uninstallButton, GlobalStrings.TooltipUninstallButton);
         }
 
         /// <summary>
@@ -923,7 +870,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.IO.DirectoryNotFoundException)
                 {
                     //happens when the gameassets folder has been deleted or moved away from the exe
-                    errorWindow(UiStrings.ExceptionAssetsMissing);
+                    errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -931,7 +878,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.UnauthorizedAccessException)
                 {
                     //happens when tf2 is running (and therefore keeping the font files in use).
-                    errorWindow(UiStrings.ExceptionGameRunning);
+                    errorWindow(GlobalStrings.ExceptionGameRunning);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -939,7 +886,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.IO.IOException)
                 {
                     //usually happens when the user tries to delete a folder they are viewing.
-                    errorWindow(UiStrings.ExceptionFolderOpen);
+                    errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -988,7 +935,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                errorWindow(UiStrings.ExceptionAssetsMissing);
+                errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -996,7 +943,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                errorWindow(UiStrings.ExceptionGameRunning);
+                errorWindow(GlobalStrings.ExceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1004,7 +951,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                errorWindow(UiStrings.ExceptionFolderOpen);
+                errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1033,7 +980,7 @@ namespace Thwartski_Hud_Installer
             try
             {
                 //go through the list of valve fonts/icons and delete them if they exist
-                foreach (string forcedValveFile in forcedValveFiles)
+                foreach (string forcedValveFile in GlobalStrings.ForcedValveFiles)
                 {
                     if (File.Exists(Resource + forcedValveFile))
                     {
@@ -1148,7 +1095,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                errorWindow(UiStrings.ExceptionAssetsMissing);
+                errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1156,7 +1103,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                errorWindow(UiStrings.ExceptionGameRunning);
+                errorWindow(GlobalStrings.ExceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1164,7 +1111,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                errorWindow(UiStrings.ExceptionFolderOpen);
+                errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -1197,7 +1144,7 @@ namespace Thwartski_Hud_Installer
             try
             {
                 //launch tf2
-                System.Diagnostics.Process.Start(teamFortressLaunchCommand);
+                System.Diagnostics.Process.Start(Properties.Resources.stringTeamFortressLaunchCommand);
             }
             //not sure what can go wrong here
             catch (System.Exception problem)
@@ -1324,16 +1271,16 @@ namespace Thwartski_Hud_Installer
 
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", zipFileLocation);
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", GlobalStrings.ZipFileLocation);
                 }
 
 
-                unZip(zipFileLocation, exeFolder);
+                unZip(GlobalStrings.ZipFileLocation, GlobalStrings.ExeFolder);
 
 
-                if (File.Exists(zipFileLocation))
+                if (File.Exists(GlobalStrings.ZipFileLocation))
                 {
-                    File.Delete(zipFileLocation);
+                    File.Delete(GlobalStrings.ZipFileLocation);
                 }
 
 

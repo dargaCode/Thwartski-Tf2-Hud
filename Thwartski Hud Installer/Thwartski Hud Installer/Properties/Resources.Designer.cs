@@ -108,5 +108,329 @@ namespace Thwartski_Hud_Installer.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install Hud.
+        /// </summary>
+        internal static string stringButtonInstallFreshMode {
+            get {
+                return ResourceManager.GetString("stringButtonInstallFreshMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Launch TF2.
+        /// </summary>
+        internal static string stringButtonInstallLaunchMode {
+            get {
+                return ResourceManager.GetString("stringButtonInstallLaunchMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Options.
+        /// </summary>
+        internal static string stringButtonInstallOptionsMode {
+            get {
+                return ResourceManager.GetString("stringButtonInstallOptionsMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Normal.
+        /// </summary>
+        internal static string stringComboboxAspectNormal {
+            get {
+                return ResourceManager.GetString("stringComboboxAspectNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Widescreen.
+        /// </summary>
+        internal static string stringComboboxAspectWidescreen {
+            get {
+                return ResourceManager.GetString("stringComboboxAspectWidescreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6v6.
+        /// </summary>
+        internal static string stringComboboxScoreboardComp6 {
+            get {
+                return ResourceManager.GetString("stringComboboxScoreboardComp6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Highlander.
+        /// </summary>
+        internal static string stringComboboxScoreboardComp9 {
+            get {
+                return ResourceManager.GetString("stringComboboxScoreboardComp9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 24 Player.
+        /// </summary>
+        internal static string stringComboboxScoreboardPub24 {
+            get {
+                return ResourceManager.GetString("stringComboboxScoreboardPub24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 32 Player.
+        /// </summary>
+        internal static string stringComboboxScoreboardPub32 {
+            get {
+                return ResourceManager.GetString("stringComboboxScoreboardPub32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SpectatorTournament_Normal.res.
+        /// </summary>
+        internal static string stringFilenameAssetAspectNormal {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetAspectNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SpectatorTournament_Widescreen.res.
+        /// </summary>
+        internal static string stringFilenameAssetAspectWidescreen {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetAspectWidescreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu_Pub24Comp6.res.
+        /// </summary>
+        internal static string stringFilenameAssetMenuPub24Comp6 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetMenuPub24Comp6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu_Pub24Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetMenuPub24Comp9 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetMenuPub24Comp9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu_Pub32Comp6.res.
+        /// </summary>
+        internal static string stringFilenameAssetMenuPub32Comp6 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetMenuPub32Comp6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu_Pub32Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetMenuPub32Comp9 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetMenuPub32Comp9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp6.res.
+        /// </summary>
+        internal static string stringFilenameAssetScoreboardPub24Comp6 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetScoreboardPub24Comp6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetScoreboardPub24Comp9 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetScoreboardPub24Comp9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard_Pub32Comp6.res.
+        /// </summary>
+        internal static string stringFilenameAssetScoreboardPub32Comp6 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetScoreboardPub32Comp6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard_Pub32Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetScoreboardPub32Comp9 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetScoreboardPub32Comp9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SpectatorTournament.res.
+        /// </summary>
+        internal static string stringFilenameInstallAspect {
+            get {
+                return ResourceManager.GetString("stringFilenameInstallAspect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thwartski Hud Installed.txt.
+        /// </summary>
+        internal static string stringFilenameInstallChecker {
+            get {
+                return ResourceManager.GetString("stringFilenameInstallChecker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu.res.
+        /// </summary>
+        internal static string stringFilenameInstallMenu {
+            get {
+                return ResourceManager.GetString("stringFilenameInstallMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard.res.
+        /// </summary>
+        internal static string stringFilenameInstallScoreboard {
+            get {
+                return ResourceManager.GetString("stringFilenameInstallScoreboard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _Thwartski Hud Options\.
+        /// </summary>
+        internal static string stringFolderAssetOptions {
+            get {
+                return ResourceManager.GetString("stringFolderAssetOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to _HUD BACKUPS\.
+        /// </summary>
+        internal static string stringFolderBackup {
+            get {
+                return ResourceManager.GetString("stringFolderBackup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Program Files (x86)\Steam\steamapps\.
+        /// </summary>
+        internal static string stringFolderDefaultSteamapps32Bit {
+            get {
+                return ResourceManager.GetString("stringFolderDefaultSteamapps32Bit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to C:\Program Files\Steam\steamapps\.
+        /// </summary>
+        internal static string stringFolderDefaultSteamapps64Bit {
+            get {
+                return ResourceManager.GetString("stringFolderDefaultSteamapps64Bit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to resource\.
+        /// </summary>
+        internal static string stringFolderInstallPathResource {
+            get {
+                return ResourceManager.GetString("stringFolderInstallPathResource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to \tf\.
+        /// </summary>
+        internal static string stringFolderInstallPathTf {
+            get {
+                return ResourceManager.GetString("stringFolderInstallPathTf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ui\.
+        /// </summary>
+        internal static string stringFolderInstallPathUi {
+            get {
+                return ResourceManager.GetString("stringFolderInstallPathUi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to \YOUR_STEAM_FOLDER\steamapps\.
+        /// </summary>
+        internal static string stringFolderSteamappsUnknown {
+            get {
+                return ResourceManager.GetString("stringFolderSteamappsUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to YOUR_USERNAME.
+        /// </summary>
+        internal static string stringFolderSteamUserUnknown {
+            get {
+                return ResourceManager.GetString("stringFolderSteamUserUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to \team fortress 2.
+        /// </summary>
+        internal static string stringFolderTeamFortress2 {
+            get {
+                return ResourceManager.GetString("stringFolderTeamFortress2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All hud files are now reverted to Valve defaults..
+        /// </summary>
+        internal static string stringMessageUninstallComplete {
+            get {
+                return ResourceManager.GetString("stringMessageUninstallComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your custom options have been installed..
+        /// </summary>
+        internal static string stringMessageUpdateSettingsComplete {
+            get {
+                return ResourceManager.GetString("stringMessageUpdateSettingsComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to steam://rungameid/440.
+        /// </summary>
+        internal static string stringTeamFortressLaunchCommand {
+            get {
+                return ResourceManager.GetString("stringTeamFortressLaunchCommand", resourceCulture);
+            }
+        }
     }
 }

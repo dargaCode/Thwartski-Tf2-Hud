@@ -9,10 +9,10 @@ using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 
 namespace Thwartski_Hud_Installer
 {
-    static class Downloader
+    class Downloader
     {
 
-        //string zipFileLocation = assetPath + "AssetFiles.zip";
+
 
         Version currentAssetVersion;
         Version latestAssetVersion;
