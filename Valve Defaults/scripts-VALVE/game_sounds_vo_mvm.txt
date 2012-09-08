@@ -14282,7 +14282,7 @@
 	"wave"			"vo/mvm/norm/sniper_mvm_Yes03.mp3"
 }
 
-"sniper.MedicFollow01"
+"sniper.MVM_MedicFollow01"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14293,7 +14293,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_medicfollow01.mp3"
 }
  
-"sniper.MedicFollow02"
+"sniper.MVM_MedicFollow02"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14304,7 +14304,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_medicfollow02.mp3"
 }
  
-"sniper.MedicFollow03"
+"sniper.MVM_MedicFollow03"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14315,7 +14315,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_medicfollow03.mp3"
 }
  
-"sniper.MedicFollow04"
+"sniper.MVM_MedicFollow04"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14326,7 +14326,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_medicfollow04.mp3"
 }
  
-"sniper.MedicFollow05"
+"sniper.MVM_MedicFollow05"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14337,7 +14337,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_medicfollow05.mp3"
 }
 
-"sniper.MeleeDare01"
+"sniper.MVM_MeleeDare01"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14348,7 +14348,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare01.mp3"
 }
 
-"sniper.MeleeDare02"
+"sniper.MVM_MeleeDare02"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14359,7 +14359,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare02.mp3"
 }
 
-"sniper.MeleeDare03"
+"sniper.MVM_MeleeDare03"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14370,7 +14370,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare03.mp3"
 }
 
-"sniper.MeleeDare04"
+"sniper.MVM_MeleeDare04"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14381,7 +14381,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare04.mp3"
 }
 
-"sniper.MeleeDare05"
+"sniper.MVM_MeleeDare05"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14392,7 +14392,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare05.mp3"
 }
 
-"sniper.MeleeDare06"
+"sniper.MVM_MeleeDare06"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14403,7 +14403,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare06.mp3"
 }
 
-"sniper.MeleeDare07"
+"sniper.MVM_MeleeDare07"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14414,7 +14414,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare07.mp3"
 }
 
-"sniper.MeleeDare08"
+"sniper.MVM_MeleeDare08"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14425,7 +14425,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare08.mp3"
 }
 
-"sniper.MeleeDare09"
+"sniper.MVM_MeleeDare09"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14436,7 +14436,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_meleedare09.mp3"
 }
 
-"sniper.Award01"
+"sniper.MVM_Award01"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14447,7 +14447,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award01.mp3"
 }
 
-"sniper.Award02"
+"sniper.MVM_Award02"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14458,7 +14458,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award02.mp3"
 }
 
-"sniper.Award03"
+"sniper.MVM_Award03"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14469,7 +14469,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award03.mp3"
 }
 
-"sniper.Award04"
+"sniper.MVM_Award04"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14480,7 +14480,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award04.mp3"
 }
 
-"sniper.Award05"
+"sniper.MVM_Award05"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14491,7 +14491,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award05.mp3"
 }
 
-"sniper.Award06"
+"sniper.MVM_Award06"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14502,7 +14502,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award06.mp3"
 }
 
-"sniper.Award07"
+"sniper.MVM_Award07"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14513,7 +14513,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award07.mp3"
 }
 
-"sniper.Award08"
+"sniper.MVM_Award08"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14524,7 +14524,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award08.mp3"
 }
 
-"sniper.Award09"
+"sniper.MVM_Award09"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14535,7 +14535,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award09.mp3"
 }
 
-"sniper.Award10"
+"sniper.MVM_Award10"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14546,7 +14546,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award10.mp3"
 }
 
-"sniper.Award11"
+"sniper.MVM_Award11"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14557,7 +14557,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award11.mp3"
 }
 
-"sniper.Award12"
+"sniper.MVM_Award12"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14568,7 +14568,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award12.mp3"
 }
 
-"sniper.Award13"
+"sniper.MVM_Award13"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"
@@ -14579,7 +14579,7 @@
 	"wave"  "vo/mvm/norm/sniper_mvm_award13.mp3"
 }
 
-"sniper.Award14"
+"sniper.MVM_Award14"
 {
 	"channel"  "CHAN_VOICE"
 	"volume"  "0.820"

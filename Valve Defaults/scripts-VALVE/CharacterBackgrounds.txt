@@ -237,68 +237,52 @@
 		"store_text"		"#TF_Trial_MainMenu_Upsell_Spy"
 		"holiday_restriction"	"christmas"
 	}
-
-	"robot_heavy"
+	"robot_demoman"
 	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
+		"image"	"../console/characters/mvm_demoman_bot"
+		"item_url"	"demoman"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Demoman"
+	}
+	"robot_medic"
+	{
+		"image"	"../console/characters/mvm_medic_bot"
+		"item_url"	"medic"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Medic"
+	}
+	"robot_pyro"
+	{
+		"image"	"../console/characters/mvm_pyro_bot"
+		"item_url"	"pyro"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Pyro"
+	}
+	"robot_scout"
+	{
+		"image"	"../console/characters/mvm_scout_bot"
+		"item_url"	"scout"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Scout"
+	}
+	"robot_sniper"
+	{
+		"image"	"../console/characters/mvm_sniper_bot"
+		"item_url"	"sniper"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Sniper"
+	}
+	"robot_soldier"
+	{
+		"image"	"../console/characters/mvm_soldier_bot"
+		"item_url"	"soldier"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Soldier"
+	}
+	"robot_spy"
+	{
+		"image"	"../console/characters/mvm_spy_bot"
+		"item_url"	"spy"
+		"store_text"		"#TF_Trial_MainMenu_Upsell_Spy"
 	}
 	"robot_heavy"
 	{
 		"image"	"../console/characters/mvm_heavy_bot"
 		"item_url"	"heavy"
 		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
-	}
-	"robot_heavy"
-	{
-		"image"	"../console/characters/mvm_heavy_bot"
-		"item_url"	"heavy"
-		"store_text"		"#TF_Trial_MainMenu_Upsell_Robot_Heavy"
-		"holiday_restriction"	"mann_vs_machine"
 	}
 }

@@ -1622,8 +1622,8 @@
 		"wave"		"vo/spy_Revenge01.wav"
 		"wave"		"vo/spy_Revenge02.wav"
 		"wave"		"vo/spy_Revenge03.wav"
-		"wave"		"vo/spy_specialcomplete04.wav"
-		"wave"		"vo/spy_specialcomplete10.wav"
-		"wave"		"vo/spy_specialcomplete12.wav"		
+		"wave"		"vo/spy_SpecialCompleted04.wav"
+		"wave"		"vo/spy_SpecialCompleted10.wav"
+		"wave"		"vo/spy_SpecialCompleted12.wav"		
 	}
 }

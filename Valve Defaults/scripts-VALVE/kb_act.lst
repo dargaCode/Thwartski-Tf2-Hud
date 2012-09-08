@@ -39,6 +39,7 @@
 "showmapinfo"	"#TF_MapInfo"
 "inspect"		"#TF_Inspect"
 "callvote"		"#TF_call_vote"
+"player_ready_toggle"	"#TF_Player_ReadyToggle"
 "blank"			"=========================="
 "blank"			"#TF_ClassSpecific_Keys"
 "blank"			"=========================="

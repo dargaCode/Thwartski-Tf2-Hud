@@ -889,9 +889,14 @@
 		criteria ConceptHighFiveReady IsSoldier
 		response SoldierHighFiveReady
 	}
-	rule SoldierTauntPickaxe
+	rule SoldierTauntEqualizer
 	{
-		criteria ConceptPlayerTaunt IsSoldier WeaponIsPickaxe
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsEqualizer
+		response SoldierTauntPickaxe
+	}
+	rule SoldierTauntEscapePlan
+	{
+		criteria ConceptPlayerTaunt IsSoldier WeaponIsEscapePlan
 		response SoldierTauntPickaxe
 	}
 	rule SoldierTauntDirectHit

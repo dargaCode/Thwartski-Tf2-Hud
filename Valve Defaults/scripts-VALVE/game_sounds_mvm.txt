@@ -207,11 +207,11 @@
 "MVM.Mothership"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.85"
+	"volume"		"0.0"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_85dB"
 
-	"wave"			"mvm/mvm_mothership_loop.wav"
+	"wave"			"misc\null.wav"
 }
 
 // Baseball bat replacement
@@ -1321,6 +1321,24 @@
 	}
 }
 
+"Spy.M_MVM_ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/spy_PainSevere01.wav"
+		"wave"		"vo/Spy_PainSevere02.wav"
+		"wave"		"vo/Spy_PainSevere03.wav"
+		"wave"		"vo/Spy_PainSevere04.wav"
+		"wave"		"vo/Spy_PainSevere05.wav"
+	}
+}
+
 "Engineer.MVM_Death"
 {
 	"channel"		"CHAN_VOICE"
@@ -1361,6 +1379,25 @@
 }
 
 "Engineer.MVM_MeleeDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/engineer_PainCrticialDeath01.wav"
+		"wave"		"vo/engineer_PainCrticialDeath02.wav"
+		"wave"		"vo/engineer_PainCrticialDeath03.wav"
+		"wave"		"vo/engineer_PainCrticialDeath04.wav"
+		"wave"		"vo/engineer_PainCrticialDeath05.wav"
+		"wave"		"vo/engineer_PainCrticialDeath06.wav"
+	}
+}
+
+"Engineer.MVM_ExplosionDeath"
 {
 	"channel"		"CHAN_VOICE"
 	"volume"		"VOL_NORM"
@@ -1437,6 +1474,25 @@
 	}
 }
 
+"Engineer.M_MVM_ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/engineer_PainCrticialDeath01.wav"
+		"wave"		"vo/engineer_PainCrticialDeath02.wav"
+		"wave"		"vo/engineer_PainCrticialDeath03.wav"
+		"wave"		"vo/engineer_PainCrticialDeath04.wav"
+		"wave"		"vo/engineer_PainCrticialDeath05.wav"
+		"wave"		"vo/engineer_PainCrticialDeath06.wav"
+	}
+}
+
 "Civilian.MVM_Death"
 {
 	"channel"		"CHAN_VOICE"
@@ -1488,6 +1544,22 @@
 	}
 }
 
+"Civilian.MVM_ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/scout_PainCrticialDeath01.wav"
+		"wave"		"vo/scout_PainCrticialDeath02.wav"
+		"wave"		"vo/scout_PainCrticialDeath03.wav"
+	}
+}
+
 "Civilian.M_MVM_Death"
 {
 	"channel"		"CHAN_VOICE"
@@ -1524,6 +1596,22 @@
 }
 
 "Civilian.M_MVM_MeleeDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"rndwave"			
+	{
+		"wave"		"vo/scout_PainCrticialDeath01.wav"
+		"wave"		"vo/scout_PainCrticialDeath02.wav"
+		"wave"		"vo/scout_PainCrticialDeath03.wav"
+	}
+}
+
+"Civilian.M_MVM_ExplosionDeath"
 {
 	"channel"		"CHAN_VOICE"
 	"volume"		"VOL_NORM"
