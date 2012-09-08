@@ -20,57 +20,71 @@ namespace Thwartski_Hud_Installer
             public static string TooltipInstallButton { get { return _tooltipInstallButton; } set { _tooltipInstallButton = value; } }
             public static string TooltipUninstallButton { get { return _tooltipUninstallButton; } set { _tooltipUninstallButton = value; } }
 
-        //see where the exe is running from
-        private static string _exeFolder; //written at runtime
-
-            //getters and setters
-            public static string ExeFolder { get { return _exeFolder; } set { _exeFolder = value; } }
-
         //paths for copying assets and installing them
+        private static string _exeFolder; //written at runtime
         private static string _assetPath = _exeFolder + @"Thwartski Hud Install Files\";
         private static string _zipFileLocation = _assetPath + "AssetFiles.zip";
 
             //getters and setters
+            public static string ExeFolder { get { return _exeFolder; } set { _exeFolder = value; } }
             public static string AssetPath { get { return _assetPath; } set { _assetPath = value; } }
             public static string ZipFileLocation { get { return _zipFileLocation; } set { _assetPath = value; } }
 
-
-
-
-
-
-
-
-        private static string installPath;                      //written at runtime
-        private static string assetOptionsPath;                 //written at runtime
-        private static string backupPath;                       //written at runtime
-
         //which custom assets were selected to be installed in the comboboxes
-        private static string aspectSelectedAssetFile;          //written at runtime
-        private static string scoreboardSelectedAssetFile;      //written at runtime
-        private static string menuSelectedAssetFile;            //written at runtime
-        private static string aspectSelectedAssetPath;          //written at runtime
-        private static string scoreboardSelectedAssetPath;      //written at runtime
-        private static string menuSelectedAssetPath;            //written at runtime
+        private static string _aspectSelectedAssetFile;          //written at runtime
+        private static string _scoreboardSelectedAssetFile;      //written at runtime
+        private static string _menuSelectedAssetFile;            //written at runtime
+        private static string _aspectSelectedAssetPath;          //written at runtime
+        private static string _scoreboardSelectedAssetPath;      //written at runtime
+        private static string _menuSelectedAssetPath;            //written at runtime
+
+            //getters and setters
+            public static string AspectSelectedAssetFile { get { return _aspectSelectedAssetFile; } set { _aspectSelectedAssetFile = value; } }
+            public static string ScoreboardSelectedAssetFile { get { return _scoreboardSelectedAssetFile; } set { _scoreboardSelectedAssetFile = value; } }
+            public static string MenuSelectedAssetFile { get { return _menuSelectedAssetFile; } set { _menuSelectedAssetFile = value; } }
+            public static string AspectSelectedAssetPath { get { return _aspectSelectedAssetPath; } set { _aspectSelectedAssetPath = value; } }
+            public static string ScoreboardSelectedAssetPath { get { return _scoreboardSelectedAssetPath; } set { _scoreboardSelectedAssetPath = value; } }
+            public static string MenuSelectedAssetPath { get { return _menuSelectedAssetPath; } set { _menuSelectedAssetPath = value; } }
+
+        //copy and installing assets
+        private static string _installPath;                      //written at runtime
+        private static string _assetOptionsPath;                 //written at runtime
+        private static string _backupPath;                       //written at runtime
+
+            //getters and setters
+            public static string InstallPath { get { return _installPath; } set { _installPath = value; } }
+            public static string AssetOptionsPath { get { return _assetOptionsPath; } set { _assetOptionsPath = value; } }
+            public static string BackupPath { get { return _backupPath; } set { _backupPath = value; } }
 
         //paths to write custom files to
-        private static string customInstallPathResource;        //written at runtime
-        private static string customInstallPathUi;              //written at runtime
-        private static string aspectFileDestination;            //written at runtime
-        private static string scoreboardFileDestination;        //written at runtime
-        private static string menuFileDestination;              //written at runtime
+        private static string _customInstallPathResource;        //written at runtime
+        private static string _customInstallPathUi;              //written at runtime
+        private static string _aspectFileDestination;            //written at runtime
+        private static string _scoreboardFileDestination;        //written at runtime
+        private static string _menuFileDestination;              //written at runtime
 
-        //file and path to let the buttons know the hud is installed
-        private static string installCheckerDestination;        //written at runtime
-
-        private static string folderSteamapps;                  //written at runtime
-        private static string folderSteamUser;                  //written at runtime
+            //getters and setters
+            public static string CustomInstallPathResource { get { return _customInstallPathResource; } set { _customInstallPathResource = value; } }
+            public static string CustomInstallPathUi { get { return _customInstallPathUi; } set { _customInstallPathUi = value; } }
+            public static string AspectFileDestination { get { return _aspectFileDestination; } set { _aspectFileDestination = value; } }
+            public static string ScoreboardFileDestination { get { return _scoreboardFileDestination; } set { _scoreboardFileDestination = value; } }
+            public static string MenuFileDestination { get { return _menuFileDestination; } set { _menuFileDestination = value; } }
 
         //paths for browsing folders
-        private static string pathPartialTeamFortress2;     //written at runtime
+        private static string _folderSteamapps;                  //written at runtime
+        private static string _folderSteamUser;                  //written at runtime
+        private static string _pathPartialTeamFortress2;     //written at runtime
 
+        //getters and setters
+        public static string FolderSteamapps { get { return _folderSteamapps; } set { _folderSteamapps = value; } }
+        public static string FolderSteamUser { get { return _folderSteamUser; } set { _folderSteamUser = value; } }
+        public static string PathPartialTeamFortress2 { get { return _pathPartialTeamFortress2; } set { _pathPartialTeamFortress2 = value; } }
 
+        //file and path to let the buttons know the hud is installed
+        private static string _installCheckerDestination;        //written at runtime
 
+            //getters and setters
+            public static string InstallCheckerDestination { get { return _installCheckerDestination; } set { _installCheckerDestination = value; } }
 
 
         //READ ONLY
