@@ -129,7 +129,7 @@ WaveSchedule
 			TotalCount 12
 			SpawnCount 6
 			MaxActive 10
-			WaitBetweenSpawns 60
+			WaitBetweenSpawns 45
 			WaitBeforeStarting 0
 			
 			TFBot
@@ -150,7 +150,7 @@ WaveSchedule
 			TotalCount 12
 			SpawnCount 6
 			MaxActive 10
-			WaitBetweenSpawns 60
+			WaitBetweenSpawns 45
 			WaitBeforeStarting 30
 			
 			TFBot
@@ -164,8 +164,6 @@ WaveSchedule
 		WaveSpawn // Scout
 		{
 			TotalCurrency 100
-			
-			StartWaveWarningSound "Scout.BattleCry02"  // Can't hear this.
 			
 			Name "waveScout1"
 			WaitForAllSpawned "waveSoldierLeft"
@@ -539,7 +537,6 @@ WaveSchedule
 				WeaponRestrictions PrimaryOnly
 			}
 		}
-		
 	}
 
 // WAVE 06 600

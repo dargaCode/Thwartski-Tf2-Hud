@@ -147,6 +147,7 @@
 		
 		"medigun_backpack"	"1"
 		"medic_hip"			"1"			
+		"medic_pipe"		"1"
 		
 		"left_shoulder"		"1"			
 		
@@ -207,6 +208,23 @@
 	"prefabs"
 	{
 
+		"promo"
+		{
+			"craft_class"			""
+			"capabilities"
+			{
+				"can_gift_wrap" 	"0"
+			}
+			"attributes"
+			{
+				"cannot trade"
+				{
+					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+			}
+		}
+		
 		"cosmetic"
 		{
 			"loadondemand"			"1"
@@ -223,108 +241,10 @@
 			"drop_type"				"none"
 			"craft_class"			"hat"
 			"craft_material_type"	"hat"
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 			"ui/item_hat_pickup.wav"
+			"mouse_pressed_sound" 	"ui/item_default_pickup.wav"
+			"drop_sound" 		"ui/item_default_drop.wav"
 		}
 		"hat"
-		{
-			"item_class"			"tf_wearable"
-			"loadondemand"			"1"
-			"craft_class"			"hat"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"			"1"
-				"can_gift_wrap" 	"1"
-			}
-			"show_in_armory"		"1"
-			"item_type_name"		"#TF_Wearable_Hat"
-			"item_slot"				"head"
-			"equip_region"			"hat"
-			"item_quality"			"unique"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"drop_type"				"none"
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 			"ui/item_hat_pickup.wav"
-		}
-		"promo_hat"
-		{
-			"item_class"			"tf_wearable"
-			"loadondemand"			"1"
-			"craft_material_type"	"hat"
-			"capabilities"
-			{
-				"nameable"			"1"
-			}
-			"show_in_armory"		"1"
-			"item_type_name"		"#TF_Wearable_Hat"
-			"item_slot"				"head"
-			"equip_region"			"hat"
-			"item_quality"			"unique"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"drop_type"				"none"
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 			"ui/item_hat_pickup.wav"
-		}
-		"score_reward_hat"
-		{
-			"item_class"			"tf_wearable"
-			"loadondemand"			"1"
-			"capabilities"
-			{
-				"nameable"			"1"
-				"paintable"			"1"
-			}
-			"show_in_armory"		"1"
-			"item_type_name"		"#TF_Wearable_Hat"
-			"item_slot"				"head"
-			"equip_region"			"hat"
-			"item_quality"			"unique"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"drop_type"				"none"
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 			"ui/item_hat_pickup.wav"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-					"headphones"	"1"
-				}
-			}
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
-			}
-		}
-		"hat_new"
 		{
 			"prefab"				"cosmetic"
 			"item_type_name"		"#TF_Wearable_Hat"
@@ -337,27 +257,12 @@
 					"hat"			"1"
 				}
 			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 			"ui/item_hat_drop.wav"
 		}
-		"promo_hat_new"
+		"score_reward_hat"
 		{
-			"prefab"				"hat"
-			"craft_class"			""
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0"
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
-		}
-		"score_reward_hat_new"
-		{
-			"prefab"				"promo_hat"
+			"prefab"				"promo hat"
 			"craft_material_type"	""
 			"capabilities"
 			{
@@ -384,6 +289,27 @@
 				"pyro" "1"
 			}
 		}
+		"hat_decoration"
+		{
+			"prefab"				"cosmetic"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"item_slot"				"head"
+			"equip_region"			"hat"
+		}
+		"mask"
+		{
+			"prefab"				"cosmetic"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"item_slot"				"misc"
+			"equip_region"			"head_skin"
+		}
+		"beard"
+		{
+			"prefab"				"cosmetic"
+			"item_type_name"		"#TF_Wearable_Hat"
+			"item_slot"				"misc"
+			"equip_region"			"beard"
+		}
 		"backpack"
 		{
 			"prefab"				"cosmetic"
@@ -396,22 +322,6 @@
 				{
 					"backpack"			"1"
 					"medic_backpack"	"1"
-				}
-			}
-		}
-		"promo_backpack"
-		{
-			"prefab"				"backpack"
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0"
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
 				}
 			}
 		}
@@ -1074,7 +984,6 @@
 				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 			}
-			"first_sale_date"	"2010/09/29"
 			"item_class"	"tf_weapon_sapper"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -1112,15 +1021,10 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_SECONDARY_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_SECONDARY_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_SECONDARY_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_SECONDARY_VM_DRAW"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
@@ -1774,31 +1678,14 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_FISTS_VM_IDLE"
+					"ACT_VM_IDLE"	"ACT_FISTS_VM_IDLE"
+					"ACT_VM_HITLEFT"	"ACT_FISTS_VM_HITLEFT"
+					"ACT_VM_HITRIGHT"	"ACT_FISTS_VM_HITRIGHT"
+					"ACT_VM_SWINGHARD"	"ACT_FISTS_VM_SWINGHARD"
+					"ACT_VM_DRAW"	"ACT_FISTS_VM_DRAW"
 				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITLEFT"
-					"replacement"		"ACT_FISTS_VM_HITLEFT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITRIGHT"
-					"replacement"		"ACT_FISTS_VM_HITRIGHT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_FISTS_VM_SWINGHARD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_FISTS_VM_DRAW"
-				}				
 			}
 		}
 		"6"
@@ -2302,15 +2189,10 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ENGINEER_PDA2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ENGINEER_PDA2_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ENGINEER_PDA2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ENGINEER_PDA2_VM_DRAW"
 				}
 			}
 		}
@@ -2342,15 +2224,10 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ENGINEER_PDA1_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ENGINEER_PDA1_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ENGINEER_PDA1_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ENGINEER_PDA1_VM_DRAW"
 				}
 			}
 		}
@@ -2406,15 +2283,10 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ENGINEER_BLD_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ENGINEER_BLD_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ENGINEER_BLD_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ENGINEER_BLD_VM_DRAW"
 				}
 			}
 		}
@@ -2555,18 +2427,14 @@
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ENGINEER_PDA2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ENGINEER_PDA2_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ENGINEER_PDA2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ENGINEER_PDA2_VM_DRAW"
 				}
 			}
 		}
+
 
 
 
@@ -3244,7 +3112,7 @@
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.4"
+					"value" "0.34"
 				}
 				"scattergun no reload single"
 				{
@@ -3325,7 +3193,7 @@
 		{
 			"name"	"Mining Light"
 			"first_sale_date"	"2010/09/29"
-			"prefab"	"hat"
+			"prefab"	"hat_decoration"
 			"item_name"	"#TF_Engineer_Hat_1"
 			"item_description"	"#TF_Engineer_Hat_1_Desc"
 			"image_inventory"	"backpack/player/items/engineer/mining_hat"
@@ -3538,35 +3406,21 @@
 		"55"
 		{
 			"name"	"Fancy Fedora"
+			"prefab"	"hat"
 			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_wearable"
-			"loadondemand" "1"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
 			"capabilities"
 			{
-				"nameable"		"1"
 				"paintable"		"1"
-				"can_gift_wrap" 	"1"
 			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_Spy_Hat_1"
 			"item_description"	"#TF_Spy_Hat_1_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/spy/spy_hat"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
 			"model_player"	"models/player/items/spy/spy_hat.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
 				"spy"	"1"
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"56"
 		{
@@ -3974,36 +3828,22 @@
 		}
 		"96"
 		{
+			"prefab"	"hat"
 			"name"	"Officer's Ushanka"
 			"first_sale_date"	"2010/09/29"
-			"item_class"	"tf_wearable"
-			"loadondemand" "1"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
 			"capabilities"
 			{
-				"nameable"		"1"
 				"paintable"		"1"
-				"can_gift_wrap" 	"1"
 			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_Heavy_Ushanka_Hat"
 			"item_description"	"#TF_Heavy_Ushanka_Hat_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/heavy/heavy_ushanka"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
 			"model_player"	"models/player/items/heavy/heavy_ushanka.mdl"
 			"drop_type"	"drop"
 			"used_by_classes"
 			{
 				"heavy"	"1"
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"97"
 		{
@@ -5293,48 +5133,22 @@
 			}
 			"visuals_blu"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
 				}
 			}
 			"visuals_red"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1"
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
@@ -6167,15 +5981,18 @@
 			}
 			"visuals"
 			{
-				"attached_particlesystem"
+				"attached_particlesystems"
 				{
-					"system"	"headphone_notes"
-					"attachment" "ear_R"
-				}
-				"attached_particlesystem"
-				{
-					"system"	"headphone_notes"
-					"attachment" "ear_L"
+					"0"
+					{
+						"system"	"headphone_notes"
+						"attachment" "ear_R"
+					}
+					"1"
+					{
+						"system"	"headphone_notes"
+						"attachment" "ear_L"
+					}
 				}
 			}
 			"capabilities"
@@ -6375,20 +6192,11 @@
 				{
 					"hat"			"1"
 				}
-				"animation"
+				"playback_activity"
 				{
-					"activity"		"ACT_IDLE"
-					"playback"		"on_spawn"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RUN"
-					"playback"		"start_building"
-				}
-				"animation"
-				{
-					"activity"		"ACT_IDLE"
-					"playback"		"stop_building"
+					"on_spawn"	"ACT_IDLE"
+					"start_building"	"ACT_RUN"
+					"stop_building"	"ACT_IDLE"
 				}
 			}
 			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
@@ -6652,6 +6460,13 @@
 					"value"	"1.1"
 				}
 			}
+			"visuals"
+			{
+				"sound_melee_miss"	"Weapon_PickAxe.Swing"
+				"sound_melee_hit"	"Weapon_PickAxe.HitFlesh"
+				"sound_melee_burst"	"Weapon_PickAxe.SwingCrit"
+				"sound_melee_hit_world"	"Weapon_Machete.HitWorld"
+			}
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
 		}
@@ -6712,25 +6527,12 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ITEM3_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ITEM3_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"		"ACT_ITEM3_VM_HITCENTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_ITEM3_VM_SWINGHARD"
+					"ACT_VM_IDLE"	"ACT_ITEM3_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ITEM3_VM_DRAW"
+					"ACT_VM_HITCENTER"	"ACT_ITEM3_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM3_VM_SWINGHARD"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
@@ -7212,12 +7014,17 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"			"taunt_concept"
-					"replacement"		"TLK_HIGHFIVE_READY"
-					"sequence"			"taunt_highFiveStart"
-					"scene"				"taunt_highfivesuccessfull.vcd"
+					"taunt_concept"	"TLK_HIGHFIVE_READY"
+				}
+				"animation_sequence"
+				{
+					"taunt_concept"	"taunt_highFiveStart"
+				}
+				"animation_scene"
+				{
+					"taunt_concept"	"taunt_highfivesuccessfull.vcd"
 				}
 			}
 			"attributes"
@@ -7575,11 +7382,7 @@
 			"show_in_armory"	"1"
 			"item_type_name" "#TF_Wearable_FacialHair"
 			"item_name"	"#TF_PyroMonocle"
-			"equip_regions"
-			{
-				"face"			"1"
-				"beard"			"1"
-			}
+			"equip_region"	"beard"
 			"item_description"	"#TF_PyroMonocle_Desc"
 			"item_slot"	"misc"
 			"item_quality"	"unique"
@@ -9176,45 +8979,16 @@
 				"sound_burst"	"Weapon_Short_Stop.Single"
 				"muzzle_flash"	"muzzle_bignasty"
 				"tracer_effect"	"bullet_bignasty_tracer01"
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_SECONDARY_VM_IDLE_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_SECONDARY_VM_DRAW_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"		"ACT_SECONDARY_VM_PRIMARYATTACK_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_RELOAD"
-					"replacement"		"ACT_SECONDARY_VM_RELOAD_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND"
-					"replacement"		"ACT_MP_RELOAD_STAND_SECONDARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_SECONDARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_SWIM"
-					"replacement"		"ACT_MP_RELOAD_SWIM_SECONDARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_SECONDARY_2"
+					"ACT_VM_IDLE"	"ACT_SECONDARY_VM_IDLE_2"
+					"ACT_VM_DRAW"	"ACT_SECONDARY_VM_DRAW_2"
+					"ACT_VM_PRIMARYATTACK"	"ACT_SECONDARY_VM_PRIMARYATTACK_2"
+					"ACT_VM_RELOAD"	"ACT_SECONDARY_VM_RELOAD_2"
+					"ACT_MP_RELOAD_STAND"	"ACT_MP_RELOAD_STAND_SECONDARY_2"
+					"ACT_MP_RELOAD_CROUCH"	"ACT_MP_RELOAD_CROUCH_SECONDARY_2"
+					"ACT_MP_RELOAD_SWIM"	"ACT_MP_RELOAD_SWIM_SECONDARY_2"
+					"ACT_MP_RELOAD_AIRWALK"	"ACT_MP_RELOAD_AIRWALK_SECONDARY_2"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
@@ -9468,15 +9242,10 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"		"ACT_MELEE_VM_HITCENTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_MELEE_VM_SWINGHARD"
+					"ACT_VM_HITCENTER"	"ACT_MELEE_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_MELEE_VM_SWINGHARD"
 				}
 			}
 			"attributes"
@@ -9554,48 +9323,22 @@
 			}
 			"visuals_blu"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
 				}
 			}
 			"visuals_red"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1"
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_PRIMARY"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM1_SECONDARY"
 				}
 			}
 		}
@@ -9701,70 +9444,20 @@
 			{
 				"sound_single_shot"	"Weapon_RPG_BlackBox.Single"
 				"sound_burst"	"Weapon_RPG_BlackBox.SingleCrit"
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_RELOAD"
-					"replacement"		"ACT_PRIMARY_VM_RELOAD_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_START"
-					"replacement"		"ACT_PRIMARY_RELOAD_START_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_FINISH"
-					"replacement"		"ACT_PRIMARY_RELOAD_FINISH_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_LOOP"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_END"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY_END_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_LOOP"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY_LOOP_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_END"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY_END_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_LOOP"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY_LOOP_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_END"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY_END_2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_LOOP"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY_LOOP_2"
+					"ACT_VM_RELOAD"	"ACT_PRIMARY_VM_RELOAD_2"
+					"ACT_RELOAD_START"	"ACT_PRIMARY_RELOAD_START_2"
+					"ACT_RELOAD_FINISH"	"ACT_PRIMARY_RELOAD_FINISH_2"
+					"ACT_MP_RELOAD_STAND"	"ACT_MP_RELOAD_STAND_PRIMARY_2"
+					"ACT_MP_RELOAD_STAND_LOOP"	"ACT_MP_RELOAD_STAND_PRIMARY_2"
+					"ACT_MP_RELOAD_STAND_END"	"ACT_MP_RELOAD_STAND_PRIMARY_END_2"
+					"ACT_MP_RELOAD_CROUCH"	"ACT_MP_RELOAD_CROUCH_PRIMARY_2"
+					"ACT_MP_RELOAD_CROUCH_END"	"ACT_MP_RELOAD_CROUCH_PRIMARY_END_2"
+					"ACT_MP_RELOAD_CROUCH_LOOP"	"ACT_MP_RELOAD_CROUCH_PRIMARY_LOOP_2"
+					"ACT_MP_RELOAD_AIRWALK"	"ACT_MP_RELOAD_AIRWALK_PRIMARY_2"
+					"ACT_MP_RELOAD_AIRWALK_END"	"ACT_MP_RELOAD_AIRWALK_PRIMARY_END_2"
+					"ACT_MP_RELOAD_AIRWALK_LOOP"	"ACT_MP_RELOAD_AIRWALK_PRIMARY_LOOP_2"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -10209,9 +9902,7 @@
 				{
 					"hands"			"1"
 				}
-			}
-			"visuals"
-			{
+
 				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
 				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
 				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
@@ -11331,8 +11022,8 @@
 			"visuals"
 			{
 				"sound_melee_miss"	"Weapon_Sword.Swing"
-				"sound_melee_hit"	"Weapon_Sword.HitFlesh"
-				"sound_melee_hit_world"	"Weapon_Sword.HitWorld"
+				"sound_melee_hit"	"Halloween.HeadlessBossAxeHitFlesh"
+				"sound_melee_hit_world"	"Halloween.HeadlessBossAxeHitWorld"
 				"sound_melee_burst"	"Weapon_Sword.SwingCrit"
 				"sound_special1"	"Sword.Hit"
 				"sound_special2"	"Sword.Idle"
@@ -13233,10 +12924,6 @@
 					"value"	"3"
 				}
 			}
-			"visuals"
-			{
-				"custom_sound1"	"Weapon_UberSaw.HitFlesh"
-			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 			"item_set"	"medieval_medic"
@@ -13433,7 +13120,7 @@
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.4"
+					"value" "0.5"
 				}
 				"damage bonus"
 				{
@@ -13546,30 +13233,13 @@
 				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
 				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
 				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_FISTS_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITLEFT"
-					"replacement"		"ACT_FISTS_VM_HITLEFT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITRIGHT"
-					"replacement"		"ACT_FISTS_VM_HITRIGHT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_FISTS_VM_SWINGHARD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_FISTS_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_FISTS_VM_IDLE"
+					"ACT_VM_HITLEFT"	"ACT_FISTS_VM_HITLEFT"
+					"ACT_VM_HITRIGHT"	"ACT_FISTS_VM_HITRIGHT"
+					"ACT_VM_SWINGHARD"	"ACT_FISTS_VM_SWINGHARD"
+					"ACT_VM_DRAW"	"ACT_FISTS_VM_DRAW"
 				}				
 			}
 			"mouse_pressed_sound" "ui/item_boxing_gloves_pickup.wav"
@@ -14653,10 +14323,13 @@
 					"hat"			"1"
 					"headphones"	"1"
 				}
-				"attached_particlesystem"
+				"attached_particlesystems"
 				{
-					"system"	"coin_spin"
-					"attachment" "root"
+					"0"
+					{
+						"system"	"coin_spin"
+						"attachment" "root"
+					}
 				}
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
@@ -14715,6 +14388,11 @@
 				"cannot trade"
 				{
 					"attribute_class"	"cannot_trade"
+					"value"				"1"
+				}
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
 					"value"				"1"
 				}
 			}
@@ -14854,10 +14532,8 @@
 		{
 			"name"	"Le Party Phantom"
 			"first_sale_date"	"2010/12/20"
-			"prefab"	"hat"
+			"prefab"	"mask"
 			"item_name"	"#TF_PartyPhantom"
-			"item_slot"	"misc"
-			"equip_region"	"head_skin"
 			"image_inventory"	"backpack/player/items/spy/spy_party_phantom"
 			"model_player"	"models/player/items/spy/spy_party_phantom.mdl"
 			"used_by_classes"
@@ -14869,7 +14545,7 @@
 		{
 			"name"	"Industrial Festivizer"
 			"first_sale_date"	"2010/12/20"
-			"prefab"	"hat"
+			"prefab"	"hat_decoration"
 			"item_name"	"#TF_ColoredLights"
 			"image_inventory"	"backpack/player/items/engineer/engineer_colored_lights"
 			"model_player"	"models/player/items/engineer/engineer_colored_lights.mdl"
@@ -14882,7 +14558,7 @@
 		{
 			"name"	"Exquisite Rack"
 			"first_sale_date"	"2010/12/20"
-			"prefab"	"hat"
+			"prefab"	"hat_decoration"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -14917,20 +14593,12 @@
 			{
 				"soldier"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"341"
 		{
 			"name"	"A Rather Festive Tree"
 			"first_sale_date"	"2010/12/20"
 			"prefab"	"hat"
-			"loadondemand"	"1"
 			"item_name"	"#TF_FestiveTree"
 			"image_inventory"	"backpack/player/items/all_class/oh_xmas_tree"
 			"model_player_per_class"
@@ -15072,13 +14740,6 @@
 			{
 				"sniper"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 			"mouse_pressed_sound" 	"ui/item_helmet_pickup.wav"
 			"drop_sound" 		"ui/item_helmet_drop.wav"
 		}
@@ -15087,7 +14748,6 @@
 		{
 			"name"	"MNC Hat"
 			"prefab"	"hat"
-			"loadondemand"	"1"
 			"item_name"	"#TF_MNC_Hat"
 			"item_description"	"#TF_MNC_Hat_Desc"
 			"min_ilevel"	"10"
@@ -15131,7 +14791,6 @@
 		{
 			"name"	"MNC Mascot Hat"
 			"prefab"	"hat"
-			"loadondemand"	"1"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -15205,6 +14864,7 @@
 		{
 			"name"	"Sharpened Volcano Fragment"
 			"item_class"	"tf_weapon_fireaxe"
+			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
 			{
@@ -15257,6 +14917,7 @@
 		{
 			"name"	"Sun-on-a-Stick"
 			"item_class"	"tf_weapon_bat"
+			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
 			{
@@ -15408,45 +15069,16 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_ITEM1_VM_DRAW"
-					"replacement"		"ACT_ITEM2_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_ITEM1_VM_IDLE"
-					"replacement"		"ACT_ITEM2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_ITEM1_VM_PRIMARYATTACK"
-					"replacement"		"ACT_ITEM2_VM_PRIMARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_ITEM1_VM_SECONDARYATTACK"
-					"replacement"		"ACT_ITEM2_VM_SECONDARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
+					"ACT_ITEM1_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_ITEM1_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_ITEM1_VM_PRIMARYATTACK"	"ACT_ITEM2_VM_PRIMARYATTACK"
+					"ACT_ITEM1_VM_SECONDARYATTACK"	"ACT_ITEM2_VM_SECONDARYATTACK"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM2"
+					"ACT_MP_ATTACK_STAND_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM2"
+					"ACT_MP_ATTACK_CROUCH_SECONDARYFIRE"	"ACT_MP_ATTACK_STAND_ITEM2_SECONDARY"
 				}
 			}
 			"attributes"
@@ -15551,15 +15183,10 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"		"ACT_MELEE_VM_HITCENTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_MELEE_VM_SWINGHARD"
+					"ACT_VM_HITCENTER"	"ACT_MELEE_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_MELEE_VM_SWINGHARD"
 				}
 			}
 			"attributes"
@@ -16034,13 +15661,6 @@
 			{
 				"pyro"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"378"
 		{
@@ -16236,28 +15856,15 @@
 		{
 			"name"	"Big Country"
 			"first_sale_date"	"2011/03/22"
-			"item_class"	"tf_wearable"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
+			"prefab"	"hat"
 			"capabilities"
 			{
-				"nameable"		"1"
 				"paintable"		"1"
-				"can_gift_wrap" 	"1"
 			}
-			"loadondemand" "1"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_BigCountry"
 			"item_description"	"#TF_BigCountry_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/crafting/mullet_hat_icon"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
 			"model_player"	"models/player/items/engineer/mullet_hat.mdl"
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"engineer"	"1"
@@ -16266,11 +15873,24 @@
 			{
 				"player_bodygroups"
 				{
-					"hat"			"1"
+					"hat"			"0"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"	"#TF_BigCountry_Style0"
+						"additional_hidden_bodygroups"
+						{
+							"hat"			"1"
+						}
+					}
+					"1"
+					{
+						"name"	"#TF_BigCountry_Style1"
+					}
 				}
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"383"
 		{
@@ -16315,31 +15935,20 @@
 		{
 			"name"	"Professor's Peculiarity"
 			"first_sale_date"	"2011/03/21"
-			"item_class"	"tf_wearable"
-			"craft_material_type"	"hat"
+			"prefab"	"hat"
 			"capabilities"
 			{
-				"nameable"		"1"
 				"paintable"		"1"
-				"can_gift_wrap" 	"1"
 			}
-			"loadondemand" "1"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_ProfessorHair"
 			"item_description"	"#TF_ProfessorHair_Desc"
-			"item_slot"	"head"
+			"image_inventory"	"backpack/player/items/crafting/professor_hair_icon"
+			"model_player"	"models/player/items/engineer/professor_hair.mdl"
 			"equip_regions"
 			{
 				"hat"			"1"
 				"glasses"		"1"
 			}
-			"item_quality"	"unique"
-			"image_inventory"	"backpack/player/items/crafting/professor_hair_icon"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/player/items/engineer/professor_hair.mdl"
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"engineer"	"1"
@@ -16348,11 +15957,24 @@
 			{
 				"player_bodygroups"
 				{
-					"hat"			"1"
+					"hat"			"0"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"name"	"#TF_ProfessorHair_Style0"
+						"additional_hidden_bodygroups"
+						{
+							"hat"			"1"
+						}
+					}
+					"1"
+					{
+						"name"	"#TF_ProfessorHair_Style1"
+					}
 				}
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"386"
 		{
@@ -16412,11 +16034,7 @@
 			"item_name"	"#TF_SoreEyes"
 			"item_description"	"#TF_SoreEyes_Desc"
 			"item_slot"	"misc"
-			"equip_regions"
-			{
-				"glasses"		"1"
-				"lenses"		"1"
-			}
+			"equip_region"	"lenses"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/pyro/sore_eyes"
 			"image_inventory_size_w"		"128"
@@ -16484,11 +16102,7 @@
 			"item_name"	"#TF_GooglyGazer"
 			"item_description"	"#TF_GooglyGazer_Desc"
 			"item_slot"	"misc"
-			"equip_regions"
-			{
-				"glasses"		"1"
-				"lenses"		"1"
-			}
+			"equip_region"	"lenses"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/engineer/mad_eye"
 			"image_inventory_size_w"		"128"
@@ -16499,8 +16113,6 @@
 			{
 				"engineer"	"1"
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 			"visuals"
 			{
 				"styles"
@@ -16519,6 +16131,8 @@
 					}
 				}
 			}
+			"mouse_pressed_sound"	"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
 		}
 		"390"
 		{
@@ -17769,7 +17383,7 @@
 			}
 			"visuals"
 			{
-				"custom_sound1"	"Weapon_UberSaw.HitFlesh"
+				"custom_sound1"	"Weapon_Wrench.HitFlesh"
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
@@ -17958,12 +17572,6 @@
 					"attribute_class"	"mult_crit_chance"
 					"value"	"0"
 				}
-			}
-			"visuals"
-			{
-				"sound_melee_miss"	"Weapon_PickAxe.Swing"
-				"sound_melee_hit"	"Weapon_PickAxe.HitFlesh"
-				"sound_melee_burst"	"Weapon_PickAxe.SwingCrit"
 			}
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
@@ -18310,7 +17918,7 @@
 				"clip size bonus"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "1.4"
+					"value" "1.33"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -18373,30 +17981,13 @@
 				"sound_melee_hit"		"EvictionNotice.Impact"
 				"sound_melee_hit_world"	"EvictionNotice.HitWorld"
 				"sound_melee_burst"		"EvictionNotice.ImpactCrit"
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_FISTS_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITLEFT"
-					"replacement"		"ACT_FISTS_VM_HITLEFT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITRIGHT"
-					"replacement"		"ACT_FISTS_VM_HITRIGHT"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_FISTS_VM_SWINGHARD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_FISTS_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_FISTS_VM_IDLE"
+					"ACT_VM_HITLEFT"	"ACT_FISTS_VM_HITLEFT"
+					"ACT_VM_HITRIGHT"	"ACT_FISTS_VM_HITRIGHT"
+					"ACT_VM_SWINGHARD"	"ACT_FISTS_VM_SWINGHARD"
+					"ACT_VM_DRAW"	"ACT_FISTS_VM_DRAW"
 				}				
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
@@ -18787,11 +18378,13 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"taunt_concept"
-					"replacement"		"TLK_TAUNT_REPLAY"
-					"scene"			"taunt_replay.vcd"
+					"taunt_concept"	"TLK_TAUNT_REPLAY"
+				}
+				"animation_scene"
+				{
+					"taunt_concept"	"taunt_replay.vcd"
 				}
 			}
 		}
@@ -19358,7 +18951,7 @@
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
-					"value" "0.4"
+					"value" "0.34"
 				}
 				"scattergun no reload single"
 				{
@@ -19373,60 +18966,19 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ITEM2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ITEM2_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HOLSTER"
-					"replacement"		"ACT_ITEM2_VM_HOLSTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PULLBACK"
-					"replacement"		"ACT_ITEM2_VM_PULLBACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"		"ACT_ITEM2_VM_PRIMARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SECONDARYATTACK"
-					"replacement"		"ACT_ITEM2_VM_SECONDARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_RELOAD"
-					"replacement"		"ACT_ITEM2_VM_RELOAD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRYFIRE"
-					"replacement"		"ACT_ITEM2_VM_DRYFIRE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_IDLE_TO_LOWERED"
-					"replacement"		"ACT_ITEM2_VM_IDLE_TO_LOWERED"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_IDLE_LOWERED"
-					"replacement"		"ACT_ITEM2_VM_IDLE_LOWERED"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_LOWERED_TO_IDLE"
-					"replacement"		"ACT_ITEM2_VM_LOWERED_TO_IDLE"
+					"ACT_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_VM_HOLSTER"	"ACT_ITEM2_VM_HOLSTER"
+					"ACT_VM_PULLBACK"	"ACT_ITEM2_VM_PULLBACK"
+					"ACT_VM_PRIMARYATTACK"	"ACT_ITEM2_VM_PRIMARYATTACK"
+					"ACT_VM_SECONDARYATTACK"	"ACT_ITEM2_VM_SECONDARYATTACK"
+					"ACT_VM_RELOAD"	"ACT_ITEM2_VM_RELOAD"
+					"ACT_VM_DRYFIRE"	"ACT_ITEM2_VM_DRYFIRE"
+					"ACT_VM_IDLE_TO_LOWERED"	"ACT_ITEM2_VM_IDLE_TO_LOWERED"
+					"ACT_VM_IDLE_LOWERED"	"ACT_ITEM2_VM_IDLE_LOWERED"
+					"ACT_VM_LOWERED_TO_IDLE"	"ACT_ITEM2_VM_LOWERED_TO_IDLE"
 				}
 			
 			
@@ -20057,12 +19609,17 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"taunt_concept"
-					"replacement"		"TLK_TAUNT_LAUGH"
-					"sequence"			"taunt_laugh"
-					"scene"				"taunt_laugh.vcd"
+					"taunt_concept"	"TLK_TAUNT_LAUGH"
+				}
+				"animation_sequence"
+				{
+					"taunt_concept"	"taunt_laugh"
+				}
+				"animation_scene"
+				{
+					"taunt_concept"	"taunt_laugh.vcd"
 				}
 			}
 		}
@@ -20508,6 +20065,13 @@
 				"heavy"	"1"
 				"pyro" "1"
 			}
+			"visuals"
+			{
+				"sound_melee_hit_world"	"Weapon_Machete.HitWorld"
+				"sound_melee_miss"	"Weapon_Machete.Miss"
+				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
+				"sound_melee_burst"	"Weapon_Machete.MissCrit"
+			}
 			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
 			"drop_sound"		"ui/item_wood_pole_drop.wav"
 			"custom_texture_blend_steps"
@@ -20548,13 +20112,21 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"			"taunt_concept"
-					"replacement"		"TLK_TAUNT_HEROIC_POSE"
-					"sequence"			"taunt09"
-					"scene"				"taunt09.vcd"
-					"required_item"		"secondary"
+					"taunt_concept"	"TLK_TAUNT_HEROIC_POSE"
+				}
+				"animation_sequence"
+				{
+					"taunt_concept"	"taunt_taunt09"
+				}
+				"animation_scene"
+				{
+					"taunt_concept"	"taunt_taunt09.vcd"
+				}
+				"animation_required_item"
+				{
+					"taunt_concept"	"secondary"
 				}
 			}
 		}
@@ -20563,35 +20135,40 @@
 		{
 			"name"	"Copper's Hard Top"
 			"first_sale_date"	"2011/07/05"
-			"loadondemand" "1"
-			"item_class"	"tf_wearable"
-			"craft_material_type"	"hat"
-			"craft_class"	"hat"
+			"prefab"	"hat"
 			"capabilities"
 			{
-				"nameable"				"1"
 				"can_craft_count"		"1"
-				"can_gift_wrap" 		"1"
 			}
-			"show_in_armory"	"1"
-			"item_type_name" "#TF_Wearable_Hat"
 			"item_name"	"#TF_CopHelmet"
 			"item_description"	"#TF_CopHelmet_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
 			"item_quality"	"unique"
 			"image_inventory"	"backpack/player/items/heavy/cop_helmet"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
 			"model_player"	"models/player/items/heavy/cop_helmet.mdl"
 			"drop_type"	"drop"
-			"propername"	"0"
 			"used_by_classes"
 			{
 				"heavy"		"1"
 			}
-			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
-			"drop_sound"		"ui/item_hat_drop.wav"
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"name"	"#TF_CopHelmet_Style0"
+						"skin_red"	"0"
+						"skin_blu"	"1"
+
+					}
+					"1"
+					{
+						"name"	"#TF_CopHelmet_Style1"
+						"skin_red"	"2"
+						"skin_blu"	"2"
+					}
+				}
+			}
 		}
 		"479"
 		{
@@ -20803,8 +20380,8 @@
 			{
 				"spy"	"1"
 			}
-			"mouse_pressed_sound"	"ui/item_medal_pickup.wav"
-			"drop_sound"		"ui/item_medal_pickup.wav"
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_drop.wav"
 		}
 		"484"
 		{
@@ -21303,90 +20880,25 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_VM_DRAW_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_VM_IDLE_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PULLBACK"
-					"replacement"		"ACT_VM_PULLBACK_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"		"ACT_VM_PRIMARYATTACK_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_RELOAD"
-					"replacement"		"ACT_VM_RELOAD_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_START"
-					"replacement"		"ACT_VM_RELOAD_START_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_FINISH"
-					"replacement"		"ACT_VM_RELOAD_FINISH_QRL"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_PRIMARY"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY3"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_PRIMARY"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY3"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_PRIMARY"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY3"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_PRIMARY_LOOP"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY3_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_PRIMARY_LOOP"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY3_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_PRIMARY_LOOP"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY3_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_PRIMARY_END"
-					"replacement"		"ACT_MP_RELOAD_STAND_PRIMARY3_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_PRIMARY_END"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_PRIMARY3_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_PRIMARY_END"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_PRIMARY3_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_SWIM_PRIMARY"
-					"replacement"		"ACT_MP_RELOAD_SWIM_PRIMARY3"
+					"ACT_VM_DRAW"	"ACT_VM_DRAW_QRL"
+					"ACT_VM_IDLE"	"ACT_VM_IDLE_QRL"
+					"ACT_VM_PULLBACK"	"ACT_VM_PULLBACK_QRL"
+					"ACT_VM_PRIMARYATTACK"	"ACT_VM_PRIMARYATTACK_QRL"
+					"ACT_VM_RELOAD"	"ACT_VM_RELOAD_QRL"
+					"ACT_RELOAD_START"	"ACT_VM_RELOAD_START_QRL"
+					"ACT_RELOAD_FINISH"	"ACT_VM_RELOAD_FINISH_QRL"
+					"ACT_MP_RELOAD_STAND_PRIMARY"	"ACT_MP_RELOAD_STAND_PRIMARY3"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"	"ACT_MP_RELOAD_CROUCH_PRIMARY3"
+					"ACT_MP_RELOAD_AIRWALK_PRIMARY"	"ACT_MP_RELOAD_AIRWALK_PRIMARY3"
+					"ACT_MP_RELOAD_STAND_PRIMARY_LOOP"	"ACT_MP_RELOAD_STAND_PRIMARY3_LOOP"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_LOOP"	"ACT_MP_RELOAD_CROUCH_PRIMARY3_LOOP"
+					"ACT_MP_RELOAD_AIRWALK_PRIMARY_LOOP"	"ACT_MP_RELOAD_AIRWALK_PRIMARY3_LOOP"
+					"ACT_MP_RELOAD_STAND_PRIMARY_END"	"ACT_MP_RELOAD_STAND_PRIMARY3_END"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_END"	"ACT_MP_RELOAD_CROUCH_PRIMARY3_END"
+					"ACT_MP_RELOAD_AIRWALK_PRIMARY_END"	"ACT_MP_RELOAD_AIRWALK_PRIMARY3_END"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"	"ACT_MP_RELOAD_SWIM_PRIMARY3"
 				}
 				"sound_single_shot"		"Weapon_QuakeRPG.Single"
 				"sound_burst"			"Weapon_QuakeRPG.SingleCrit"
@@ -22138,10 +21650,9 @@
 				"sound_burst"		"Weapon_WidowMaker.SingleCrit"
 				"sound_deploy"		"Weapon_WidowMaker.Draw"
 				"sound_empty"		"Weapon_WidowMaker.Empty"
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"	"ACT_VM_PRIMARYATTACK_SPECIAL"
+					"ACT_VM_PRIMARYATTACK"	"ACT_VM_PRIMARYATTACK_SPECIAL"
 				}
 			}			
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
@@ -22496,8 +22007,8 @@
 					"value"				"1"
 				}
 			}
-			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
-			"drop_sound"		"ui/item_hat_pickup.wav"
+			"mouse_pressed_sound"	"ui/item_paper_pickup.wav"
+			"drop_sound"		"ui/item_paper_pickup.wav"
 		}
 		"538"
 		{
@@ -23323,7 +22834,6 @@
 			"item_description"	"#TF_Hwn_PyroGasmask_Desc"
 			"min_ilevel"	"13"
 			"max_ilevel"	"13"
-			"propername"	"0"
 			"item_slot"	"misc"
 			"equip_region"	"pyro_head_replacement"
 			"item_quality"	"unique"
@@ -24044,8 +23554,8 @@
 					"headphones"	"1"
 				}
 			}
-			"mouse_pressed_sound" 	"ui/item_default_pickup.wav"
-			"drop_sound" 		"ui/item_default_drop.wav"
+			"mouse_pressed_sound"	"ui/item_gooey_pickup.wav"
+			"drop_sound"		"ui/item_gooey_pickup.wav"
 		}
 		"582"
 		{
@@ -24239,7 +23749,7 @@
 		"585"
 		{
 			"name"	"Cold War Luchador"
-			"prefab"	"hat"
+			"prefab"	"mask"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -24250,8 +23760,6 @@
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
 			"propername"	"1"
-			"item_slot"	"misc"
-			"equip_region"	"head_skin"
 			"image_inventory"	"backpack/player/items/heavy/sr3_heavy_mask"
 			"model_player"	"models/player/items/heavy/sr3_heavy_mask.mdl"
 			"used_by_classes"
@@ -24429,95 +23937,26 @@
 				"sound_reload"		"Weapon_Pomson.Reload"
 				"muzzle_flash"		"drg_pomson_muzzleflash"
 				
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_SECONDARY2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_SECONDARY2_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"		"ACT_SECONDARY2_VM_PRIMARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_START"
-					"replacement"		"ACT_SECONDARY2_RELOAD_START"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RELOAD_FINISH"
-					"replacement"		"ACT_SECONDARY2_RELOAD_FINISH"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_RELOAD"
-					"replacement"		"ACT_SECONDARY2_VM_RELOAD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND"
-					"replacement"		"ACT_MP_RELOAD_STAND_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_LOOP"
-					"replacement"		"ACT_MP_RELOAD_STAND_SECONDARY2_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_STAND_END"
-					"replacement"		"ACT_MP_RELOAD_STAND_SECONDARY2_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_LOOP"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_SECONDARY2_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_CROUCH_END"
-					"replacement"		"ACT_MP_RELOAD_CROUCH_SECONDARY2_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK"
-					"replacement"		"ACT_MP_RELOAD_SWIM_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_LOOP"
-					"replacement"		"ACT_MP_RELOAD_SWIM_SECONDARY2_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_END"
-					"replacement"		"ACT_MP_RELOAD_SWIM_SECONDARY2_END"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_LOOP"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_SECONDARY2_LOOP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_RELOAD_AIRWALK_END"
-					"replacement"		"ACT_MP_RELOAD_AIRWALK_SECONDARY2_END"
+					"ACT_VM_IDLE"	"ACT_SECONDARY2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_SECONDARY2_VM_DRAW"
+					"ACT_VM_PRIMARYATTACK"	"ACT_SECONDARY2_VM_PRIMARYATTACK"
+					"ACT_RELOAD_START"	"ACT_SECONDARY2_RELOAD_START"
+					"ACT_RELOAD_FINISH"	"ACT_SECONDARY2_RELOAD_FINISH"
+					"ACT_VM_RELOAD"	"ACT_SECONDARY2_VM_RELOAD"
+					"ACT_MP_RELOAD_STAND"	"ACT_MP_RELOAD_STAND_SECONDARY2"
+					"ACT_MP_RELOAD_STAND_LOOP"	"ACT_MP_RELOAD_STAND_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_STAND_END"	"ACT_MP_RELOAD_STAND_SECONDARY2_END"
+					"ACT_MP_RELOAD_CROUCH"	"ACT_MP_RELOAD_CROUCH_SECONDARY2"
+					"ACT_MP_RELOAD_CROUCH_LOOP"	"ACT_MP_RELOAD_CROUCH_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_CROUCH_END"	"ACT_MP_RELOAD_CROUCH_SECONDARY2_END"
+					"ACT_MP_RELOAD_SWIM"	"ACT_MP_RELOAD_SWIM_SECONDARY2"
+					"ACT_MP_RELOAD_SWIM_LOOP"	"ACT_MP_RELOAD_SWIM_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_SWIM_END"	"ACT_MP_RELOAD_SWIM_SECONDARY2_END"
+					"ACT_MP_RELOAD_AIRWALK"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2"
+					"ACT_MP_RELOAD_AIRWALK_LOOP"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2_LOOP"
+					"ACT_MP_RELOAD_AIRWALK_END"	"ACT_MP_RELOAD_AIRWALK_SECONDARY2_END"
 				}
 			}
 			"item_set"	"drg_brainiac"
@@ -24581,10 +24020,13 @@
 			}
 			"visuals"
 			{
-				"attached_particlesystem"
+				"attached_particlesystems"
 				{
-					"system"	"drg_wrenchmotron_idle"
-					"attachment" "electrode_0"
+					"0"
+					{
+						"system"	"drg_wrenchmotron_idle"
+						"attachment" "electrode_0"
+					}
 				}
 			}
 			"item_set"	"drg_brainiac"
@@ -24749,6 +24191,11 @@
 				{
 					"attribute_class"	"damage_all_connected"
 					"value" "1"
+				}
+				"ragdolls become ash"
+				{
+					"attribute_class"	"ragdolls_become_ash"
+					"value"	"1"
 				}
 			}
 			"visuals"
@@ -24933,40 +24380,15 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_SECONDARY2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_SECONDARY2_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_PRIMARYATTACK"
-					"replacement"		"ACT_SECONDARY2_VM_PRIMARYATTACK"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STAND_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_STAND_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_CROUCH_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_SWIM_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_SWIM_SECONDARY2"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MP_ATTACK_STANDACT_MP_ATTACK_AIRWALK_PRIMARYFIRE_PRIMARYFIRE"
-					"replacement"		"ACT_MP_ATTACK_AIRWALK_SECONDARY2"
+					"ACT_VM_IDLE"	"ACT_SECONDARY2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_SECONDARY2_VM_DRAW"
+					"ACT_VM_PRIMARYATTACK"	"ACT_SECONDARY2_VM_PRIMARYATTACK"
+					"ACT_MP_ATTACK_STAND_PRIMARYFIRE"	"ACT_MP_ATTACK_STAND_SECONDARY2"
+					"ACT_MP_ATTACK_CROUCH_PRIMARYFIRE"	"ACT_MP_ATTACK_CROUCH_SECONDARY2"
+					"ACT_MP_ATTACK_SWIM_PRIMARYFIRE"	"ACT_MP_ATTACK_SWIM_SECONDARY2"
+					"ACT_MP_ATTACK_STANDACT_MP_ATTACK_AIRWALK_PRIMARYFIRE_PRIMARYFIRE"	"ACT_MP_ATTACK_AIRWALK_SECONDARY2"
 				}
 			}
 			"item_set"	"drg_moonman"
@@ -24977,29 +24399,17 @@
 		{		
 			"name"	"The Moonman Backpack"
 			"first_sale_date"	"2011/12/15"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
+			"prefab"	"backpack"
 			"capabilities"
 			{
-				"nameable"		"1"
-				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 			}
-			"loadondemand"	"1"
-			"item_class"	"tf_wearable"
-			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Wearable_FuelTank"
 			"item_name"	"#TF_GrordbortPyro_Tank"
 			"item_description"	"#TF_GrordbortPyro_Tank_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"back"
 			"image_inventory"	"backpack/player/items/pyro/drg_pyro_fueltank"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
 			"propername"	"1"
 			"model_player"	"models/player/items/pyro/drg_pyro_fuelTank.mdl"
-			"drop_type"		"none"
 			"min_ilevel"	"15"
 			"max_ilevel"	"15"
 			"used_by_classes"
@@ -25007,8 +24417,6 @@
 				"pyro"	"1"
 			}
 			"item_set"	"drg_moonman"
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"597"
 		{
@@ -25021,8 +24429,6 @@
 			}
 			"item_name"	"#TF_Bubble_Helmet"
 			"item_description"	"#TF_Bubble_Helmet_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/pyro/drg_pyro_bubblehelmet"
 			"model_player"	"models/player/items/pyro/drg_pyro_bubbleHelmet.mdl"
@@ -25083,6 +24489,8 @@
 					"headphones"	"1"
 				}
 			}
+			"mouse_pressed_sound"	"ui/item_paper_pickup.wav"
+			"drop_sound"		"ui/item_paper_pickup.wav"
 		}
 		"599"
 		{
@@ -25150,13 +24558,6 @@
 			{
 				"sniper"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"601"
 		{
@@ -25201,13 +24602,6 @@
 			"used_by_classes"
 			{
 				"spy"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
 			}
 		}
 		"603"
@@ -25255,13 +24649,6 @@
 			{
 				"demoman"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"605"
 		{
@@ -25283,13 +24670,6 @@
 			"used_by_classes"
 			{
 				"engineer"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
 			}
 		}
 		"606"
@@ -25464,52 +24844,31 @@
 			{
 				"demoman"	"1"
 			}
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
 			"item_set"	"swashbucklers_swag"
 		}
 		"610"
 		{
 			"name"	"A Whiff of the Old Brimstone"
+			"prefab"	"grenades"
 			"first_sale_date"	"2011/09/07"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
 			"loadondemand"	"0"						
-			"item_class"	"tf_wearable"
 			"capabilities"
 			{
-				"nameable"		"1"
-				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Bombs"
 			"item_name"	"#TF_OldBrimstone"
 			"item_description"	"#TF_OldBrimstone_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"
 			"image_inventory"	"backpack/player/items/demo/bombs"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
 			"model_player"	"models/player/items/demo/demo_bombs.mdl"
 			"model_vision_filtered"	"models/player/items/all_class/mtp_bottle_demo.mdl"
-			"drop_type"	"none"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"			"1"
-				}
-			}
 			"used_by_classes"
 			{
 				"demoman"	"1"
 			}
-			"mouse_pressed_sound"	"ui/item_hat_pickup.wav"
-			"drop_sound"		"ui/item_hat_drop.wav"
 			"item_set"	"swashbucklers_swag"
 		}
 		"611"
@@ -25534,13 +24893,6 @@
 			{
 				"soldier"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"612"
 		{
@@ -25563,13 +24915,6 @@
 			"used_by_classes"
 			{
 				"pyro"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
 			}
 		}
 		"613"
@@ -25647,11 +24992,12 @@
 			{
 				"pyro"	"1"
 			}
-			"visuals"
+			"attributes"
 			{
-				"player_bodygroups"
+				"counts as assister is some kind of pet this update is going to be awesome"
 				{
-					"hat"			"1"
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
 				}
 			}
 		}
@@ -25676,13 +25022,6 @@
 			"used_by_classes"
 			{
 				"medic"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
 			}
 		}
 		"617"
@@ -25929,13 +25268,6 @@
 			{
 				"spy"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"623"
 		{
@@ -26051,13 +25383,6 @@
 			{
 				"sniper"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"627"
 		{
@@ -26081,13 +25406,6 @@
 			{
 				"pyro"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"628"
 		{
@@ -26110,13 +25428,6 @@
 			"used_by_classes"
 			{
 				"engineer"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
 			}
 			"mouse_pressed_sound"	"ui/item_robot_arm_pickup.wav"
 			"drop_sound"		"ui/item_robot_arm_drop.wav"
@@ -26217,54 +25528,28 @@
 			{
 				"soldier"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"632"
 		{
 			"name"	"The Cremator's Conscience"
 			"first_sale_date"	"2011/09/21"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"loadondemand"	"1"
+			"prefab"	"grenades"
 			"capabilities"
 			{
-				"nameable"		"1"
-				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 				"paintable"			"1"
 			}
-			"item_class"	"tf_wearable"
-			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Wearable_Conscience"
 			"item_name"	"#TF_PyroConscience"
 			"item_description"	"#TF_PyroConscience_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"
 			"image_inventory"	"backpack/player/items/pyro/fwk_pyro_conscience"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
-			"propername"	"1"
 			"model_player"	"models/player/items/pyro/fwk_pyro_conscience.mdl"
-			"drop_type"		"none"
+			"propername"	"1"
 			"min_ilevel"	"15"
 			"max_ilevel"	"15"
 			"used_by_classes"
 			{
 				"pyro"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"			"1"
-				}
 			}
 			"attributes"
 			{
@@ -26274,8 +25559,6 @@
 					"value"				"1"
 				}
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"633"
 		{
@@ -26467,13 +25750,6 @@
 			{
 				"spy" "1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 		}
 		"638"
 		{		
@@ -26517,50 +25793,17 @@
 			{
 				"sound_melee_hit"	"Weapon_Assassin_Knife.HitFlesh"
 
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"		"ACT_ITEM1_VM_DRAW"
-				}	
-				"animation"
-				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"		"ACT_ITEM1_VM_IDLE"
-				}		
-				"animation"
-				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"		"ACT_ITEM1_VM_HITCENTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITCENTER2"
-					"replacement"		"ACT_ITEM1_VM_HITCENTER2"
-				}				
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_ITEM1_VM_SWINGHARD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_UP"
-					"replacement"		"ACT_ITEM1_BACKSTAB_VM_UP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_DOWN"
-					"replacement"		"ACT_ITEM1_BACKSTAB_VM_DOWN"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_IDLE"
-					"replacement"		"ACT_ITEM1_BACKSTAB_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MELEE_VM_STUN"
-					"replacement"		"ACT_MELEE_VM_ITEM1_STUN"
+					"ACT_VM_DRAW"	"ACT_ITEM1_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM1_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM1_VM_HITCENTER"
+					"ACT_VM_HITCENTER2"	"ACT_ITEM1_VM_HITCENTER2"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM1_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM1_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM1_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM1_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM1_STUN"
 				}
 			}
 			"attributes"
@@ -26688,28 +25931,16 @@
 		"641"
 		{
 			"name"	"The Ornament Armament"
+			"prefab"	"grenades"
 			"first_sale_date"	"2011/12/19"
-			"craft_class"	"hat"
-			"craft_material_type"	"hat"
-			"loadondemand"	"1"
 			"capabilities"
 			{
-				"nameable"		"1"
 				"paintable"		"1"
-				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 			}
-			"item_class"	"tf_wearable"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Wearable_Bombs"
 			"item_name"	"#TF_ShinyBauls"
 			"item_description"	"#TF_ShinyBauls_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"
 			"image_inventory"	"backpack/player/items/soldier/xms_soldier_ornaments"
-			"image_inventory_size_w"	"128"
-			"image_inventory_size_h"	"82"
-			"item_quality"		"unique"
 			"propername" "1"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
@@ -26719,19 +25950,11 @@
 				"demoman"	"models/player/items/soldier/xms_demo_ornaments.mdl"
 				"pyro"		"models/player/items/soldier/xms_pyro_ornaments.mdl"
 			}
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"soldier"	"1"
 				"demoman"	"1"
 				"pyro" "1"
-			}			
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"		"1"
-				}
 			}
 			"mouse_pressed_sound"	"ui/item_helmet_pickup.wav"
 			"drop_sound"		"ui/item_helmet_drop.wav"
@@ -26741,6 +25964,7 @@
 			"name"			"The Cozy Camper"
 			"first_sale_date"	"2012/03/15"
 			"item_class"		"tf_wearable"
+			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
 			"capabilities"
 			{
@@ -26791,8 +26015,8 @@
 					"value" "1"
 				}
 			}
-			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
-			"drop_sound" 			"ui/item_hat_pickup.wav"
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
 		}		
 		"643"
 		{
@@ -27133,22 +26357,19 @@
 			}
 			"visuals"
 			{
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"		"ACT_MELEE_VM_HITCENTER"
+					"ACT_VM_HITCENTER"	"ACT_MELEE_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_MELEE_VM_SWINGHARD"
 				}
 
-				"animation"
+				"attached_particlesystems"
 				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"		"ACT_MELEE_VM_SWINGHARD"
-				}
-
-				"attached_particlesystem"
-				{
-					"system"	"xms_icicle_idle"
-					"attachment" "bip_middle_0_R"
+					"0"
+					{
+						"system"	"xms_icicle_idle"
+						"attachment" "bip_middle_0_R"
+					}
 				}
 
 				"sound_melee_miss"		""
@@ -27162,7 +26383,7 @@
 		{
 			"name"	"The Kringle Collection"
 			"first_sale_date"	"2011/12/19"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -27184,7 +26405,7 @@
 		{
 			"name"	"The Jingle Belt"
 			"first_sale_date"	"2011/12/19"
-			"prefab"	"hat"
+			"prefab"	"grenades"
 			"loadondemand"	"0"						
 			"capabilities"
 			{
@@ -27194,8 +26415,6 @@
 			"item_name"	"#TF_JingleHell"
 			"item_description"	"#TF_JingleHell_Desc"
 			"item_type_name"	"#TF_Wearable_Bells"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"		
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/pyro/xms_pyro_bells"
 			"model_player"	"models/player/items/pyro/xms_pyro_bells.mdl"
@@ -27210,13 +26429,6 @@
 				{
 					"attribute_class"	"add_jingle_to_footsteps"
 					"value"				"1"
-				}
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"			"1"
 				}
 			}
 		}
@@ -27446,7 +26658,6 @@
 			"model_player"	"models/weapons/c_models/c_xms_gloves/c_xms_gloves.mdl"
 			"attach_to_hands"	"1"
 			"item_quality"	"unique"
-			"propername" "1"
 			"propername"	"1"
 			"min_ilevel"	"10"
 			"max_ilevel"	"10"
@@ -27506,9 +26717,9 @@
 		{
 			"name"	"The Nine-Pipe Problem"
 			"first_sale_date"	"2012/03/08"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
-			"equip_region"	"lenses"
+			"equip_region"	"medic_pipe"
 			"item_type_name"	"#TF_Wearable_Pipe"
 			"item_name"	"#TF_MedicSmokingPipe"
 			"item_description"	"#TF_MedicSmokingPipe_Desc"
@@ -27973,7 +27184,7 @@
 		{
 			"name"	"The Stocking Stuffer"
 			"first_sale_date"	"2011/12/19"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -28207,13 +27418,6 @@
 			"model_player"	"models/player/items/soldier/luckyShot.mdl"
 			"propername"	"1"
 			"drop_type"	"drop"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
-			}
 			"used_by_classes"
 			{
 				"soldier"	"1"
@@ -28293,13 +27497,6 @@
 				"hat"		"1"
 				"face"		"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"			"1"
-				}
-			}
 			"used_by_classes"
 			{
 				"demoman"	"1"
@@ -28309,7 +27506,7 @@
 		{
 			"name"	"The Bolgan Family Crest"
 			"first_sale_date"	"2012/01/13"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"medal"
 			"item_name"	"#TF_ReckoningBadge"
@@ -28338,7 +27535,7 @@
 		{
 			"name"	"The Boston Boom-Bringer"
 			"first_sale_date"	"2012/02/09"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"scout_backpack"
 			"item_name"	"#TF_ScoutBoombox"
@@ -28365,7 +27562,7 @@
 		{
 			"name"	"Aladdin's Private Reserve"
 			"first_sale_date"	"2012/01/26"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"demo_belt"
 			"item_name"	"#TF_DemoLamp"
@@ -28392,7 +27589,7 @@
 		{
 			"name"	"The Snapped Pupil"
 			"first_sale_date"	"2012/02/14"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"glasses"
 			"item_name"	"#TF_DemoSnappedPupil"
@@ -28521,7 +27718,7 @@
 		{
 			"name"	"The Battle Bob"
 			"first_sale_date"	"2012/01/31"
-			"prefab"	"hat"
+			"prefab"	"hat_decoration"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -28568,13 +27765,6 @@
 			"image_inventory"	"backpack/player/items/sniper/jag_shadow"
 			"model_player"	"models/player/items/sniper/jag_shadow.mdl"
 			"propername"	"1"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
-			}
 			"used_by_classes"
 			{
 				"sniper"	"1"
@@ -28592,13 +27782,6 @@
 			"model_player"	"models/player/items/soldier/morion.mdl"
 			"propername"	"1"
 			"drop_type"	"drop"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
-			}
 			"used_by_classes"
 			{
 				"soldier"	"1"
@@ -28608,7 +27791,7 @@
 		{
 			"name"	"The Fast Learner"
 			"first_sale_date"	"2012/02/22"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -28662,6 +27845,14 @@
 			"image_inventory"	"backpack/crafting/mvm_ticket"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
+			"attributes"
+			{
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+			}
 			"item_quality"	"unique"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
@@ -28762,45 +27953,16 @@
 						"name"	"#TF_BlackRose_Style_Black"
 					}
 				}
-				"animation"
+				"animation_replacement"
 				{
-					"activity"		"ACT_VM_DRAW"
-					"replacement"	"ACT_ITEM2_VM_DRAW"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_IDLE"
-					"replacement"	"ACT_ITEM2_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_HITCENTER"
-					"replacement"	"ACT_ITEM2_VM_HITCENTER"
-				}
-				"animation"
-				{
-					"activity"		"ACT_VM_SWINGHARD"
-					"replacement"	"ACT_ITEM2_VM_SWINGHARD"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_UP"
-					"replacement"	"ACT_ITEM2_BACKSTAB_VM_UP"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_DOWN"
-					"replacement"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
-				}
-				"animation"
-				{
-					"activity"		"ACT_BACKSTAB_VM_IDLE"
-					"replacement"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
-				}
-				"animation"
-				{
-					"activity"		"ACT_MELEE_VM_STUN"
-					"replacement"	"ACT_MELEE_VM_ITEM2_STUN"
+					"ACT_VM_DRAW"	"ACT_ITEM2_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM2_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM2_VM_HITCENTER"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM2_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM2_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM2_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM2_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM2_STUN"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
@@ -28952,7 +28114,7 @@
 		{
 			"name"	"The Captain's Cocktails"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"grenades"
 			"loadondemand"	"0"						
 			"propername"	"1"
 			"capabilities"
@@ -28961,23 +28123,13 @@
 			}
 			"item_name"	"#TF_DS_CanGrenades"
 			"item_description"	"#TF_DS_CanGrenades_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/soldier/ds_can_grenades"
 			"model_player"	"models/player/items/soldier/ds_can_grenades.mdl"
 			"model_vision_filtered"	"models/player/items/all_class/mtp_bottle_soldier.mdl"
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"soldier"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"		"1"
-				}
 			}
 		}		
 		"732"
@@ -28993,22 +28145,12 @@
 			"propername"	"1"
 			"item_name"	"#TF_DS_FootballHelmet"
 			"item_description"	"#TF_DS_FootballHelmet_Desc"
-			"item_slot"	"head"
-			"equip_region"	"hat"
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/soldier/ds_football_helmet"
 			"model_player"	"models/player/items/soldier/ds_football_helmet.mdl"
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"soldier"	"1"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
 			}
 		}	
 		
@@ -29072,6 +28214,7 @@
 			"first_sale_date"	"2012/03/01"
 			"item_class"	"tf_wearable"
 			"loadondemand" "1"
+			"craft_class"	"hat"
 			"craft_material_type"	"hat"
 			"capabilities"
 			{
@@ -29132,7 +28275,6 @@
 			"item_class"	"tf_wearable"
 			"craft_class"	"hat"
 			"craft_material_type"	"hat"
-			"equip_region"		"disconnected_floating_item"
 			"capabilities"
 			{
 				"nameable"		"1"
@@ -29147,7 +28289,7 @@
 			"item_name"	"#TF_Pet_Balloonicorn"
 			"item_description"	"#TF_Pet_Balloonicorn_Desc"
 			"item_slot"	"misc"
-			"equip_region"	"medal"
+			"equip_region"		"disconnected_floating_item"
 			"item_quality"	"unique"
 			"min_ilevel"	"20"
 			"max_ilevel"	"20"
@@ -29458,20 +28600,11 @@
 				{
 					"backpack"			"1"
 				}
-				"animation"
+				"playback_activity"
 				{
-					"activity"		"ACT_IDLE"
-					"playback"		"on_spawn"
-				}
-				"animation"
-				{
-					"activity"		"ACT_RUN"
-					"playback"		"start_taunting"
-				}
-				"animation"
-				{
-					"activity"		"ACT_IDLE"
-					"playback"		"stop_taunting"
+					"on_spawn"	"ACT_IDLE"
+					"start_taunting"	"ACT_RUN"
+					"stop_taunting"	"ACT_IDLE"
 				}
 			}
 			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
@@ -29481,9 +28614,7 @@
 		{
 			"name"	"The Burning Bongos"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
-			"item_slot"	"misc"			
-			"equip_region"	"grenades"
+			"prefab"	"grenades"
 			"vision_filter_flags" "1"
 			"capabilities"
 			{
@@ -29513,13 +28644,6 @@
 				{
 					"attribute_class"	"pyrovision_only_display"
 					"value"				"1"
-				}
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"			"1"
 				}
 			}
 		}		
@@ -29680,13 +28804,11 @@
 			"name"	"The Waxy Wayfinder"
 			"first_sale_date"	"2012/03/22"
 			"prefab"	"hat"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_PyroCandle"
 			"item_description"	"#TF_PyroCandle_Desc"
 			"image_inventory"	"backpack/player/items/pyro/pyro_candle"
 			"model_player"	"models/player/items/pyro/pyro_candle.mdl"
 			"propername"	"1"
-			"drop_type"	"none"
 			"capabilities"
 			{
 				"can_craft_count" "1"
@@ -29709,9 +28831,7 @@
 		"754"
 		{
 			"name"	"The Scrap Pack"
-			"prefab"	"hat"
-			"item_slot"	"misc"
-			"equip_region"	"back"
+			"prefab"	"backpack"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -29732,21 +28852,23 @@
 				"medic"	"1"
 				"pyro" "1"
 			}
-			"visuals"
+			"attributes"
 			{
-				"player_bodygroups"
+				"counts as assister is some kind of pet this update is going to be awesome"
 				{
-					"backpack"			"1"
-					"medic_backpack"	"1"
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
 				}
 			}
+			"mouse_pressed_sound"	"ui/item_robot_arm_pickup.wav"
+			"drop_sound"		"ui/item_robot_arm_drop.wav"
 		}
 		
 		"755"
 		{
 			"name"	"The Texas Half-Pants"
 			"first_sale_date"	"2012/04/17"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -29847,7 +28969,7 @@
 		{
 			"name"	"The Toss-Proof Towel"
 			"first_sale_date"	"2012/04/26"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -29883,6 +29005,14 @@
 			"image_inventory"	"backpack/crafting/mvm_squad_surplus"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
+			"attributes"
+			{
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+			}
 			"item_quality"	"unique"
 			"min_ilevel"	"1"
 			"max_ilevel"	"1"
@@ -29894,7 +29024,6 @@
 			"name"	"The Fruit Shoot"
 			"first_sale_date"	"2012/05/03"
 			"prefab"	"hat"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_SniperAppleArrow"
 			"item_description"	"#TF_SniperAppleArrow_Desc"
 			"image_inventory"	"backpack/player/items/sniper/sniper_applearrow"
@@ -30006,7 +29135,7 @@
 		"761"
 		{
 			"name"	"The Triclops"
-			"prefab"	"promo_hat"
+			"prefab"	"promo hat"
 			"capabilities"
 			{
 				"paintable"			"1"
@@ -30045,7 +29174,7 @@
 		"762"
 		{
 			"name"	"The Flamingo Kid"
-			"prefab"	"promo_hat"
+			"prefab"	"promo hat"
 			"capabilities"
 			{
 			}
@@ -30073,7 +29202,7 @@
 		{
 			"name"	"The Sneaky Spats of Sneaking"
 			"first_sale_date"	"2012/05/17"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"	"1"
@@ -30095,7 +29224,7 @@
 		"764"
 		{
 			"name"	"The Cross-Comm Crash Helmet"
-			"prefab"	"hat"
+			"prefab"	"hat_decoration"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -30141,7 +29270,7 @@
 		"766"
 		{
 			"name"	"The Doublecross-Comm"
-			"prefab"	"hat"
+			"prefab"	"beard"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -30149,8 +29278,6 @@
 			}
 			"item_name"	"#TF_GRFS_3"
 			"item_description"	"#TF_GRFS_3_Desc"
-			"item_slot"	"misc"
-			"equip_region"	"beard"
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/sniper/grfs_sniper"
 			"model_player_per_class"
@@ -30169,7 +29296,7 @@
 		{
 			"name"	"The Atomic Accolade"
 			"first_sale_date"	"2012/05/30"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -30203,7 +29330,7 @@
 		{
 			"name"	"The Professor's Pineapple"
 			"first_sale_date"	"2012/05/30"
-			"prefab"	"hat"
+			"prefab"	"grenades"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -30212,8 +29339,6 @@
 			"item_name"	"#TF_QC_Flasks"
 			"item_description"	"#TF_QC_Flasks_Desc"
 			"item_type_name"	"#TF_Wearable_ScienceProject"
-			"item_slot"	"misc"
-			"equip_region"	"grenades"		
 			"propername"	"1"
 			"image_inventory"	"backpack/player/items/all_class/qc_flask_demo"
 			"model_player_per_class"
@@ -30227,20 +29352,15 @@
 				"soldier"	"1"
 				"demoman"	"1"
 				"pyro"	"1"
-			}		
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"grenades"			"1"
-				}
 			}
+			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
+			"drop_sound"		"ui/item_bottle_drop.wav"
 		}
 		"769"
 		{
 			"name"	"The Quadwrangler"
 			"first_sale_date"	"2012/05/30"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -30262,7 +29382,7 @@
 		{
 			"name"	"The Surgeon's Side Satchel"
 			"first_sale_date"	"2012/05/31"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"	"1"
@@ -30285,7 +29405,7 @@
 		{
 			"name"	"The Liquor Locker"
 			"first_sale_date"	"2012/06/07"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"back"
 			"item_type_name"	"#TF_Wearable_Treasure"
@@ -30342,8 +29462,8 @@
 					}
 				}				
 			}
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"mouse_pressed_sound"	"ui/item_crate_pickup.wav"
+			"drop_sound"		"ui/item_crate_drop.wav"
 		}	
 		"772"
 		{
@@ -30508,7 +29628,6 @@
 				"engineer"	"models/player/items/all_class/sd_rocket_engineer.mdl"
 				"pyro"		"models/player/items/all_class/sd_rocket_pyro.mdl"
 			}
-			"drop_type"	"none"
 			"used_by_classes"
 			{
 				"scout"	"1"
@@ -30600,7 +29719,7 @@
 		{
 			"name"	"The Bird-Man of Aberdeen"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"left_shoulder"
 			"item_type_name"	"#TF_Wearable_Animal"
@@ -30652,7 +29771,7 @@
 		{
 			"name"	"The Apparatchik's Apparel"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_regions"
 			{
@@ -30706,18 +29825,14 @@
 		}
 		"778"
 		{
+			"prefab"	"hat"
 			"name"	"The Gentleman's Ushanka"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
-			"item_slot"	"head"
-			"equip_region"	"hat"
-			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_MedicUshanka"
 			"item_description"	"#TF_MedicUshanka_Desc"
 			"image_inventory"	"backpack/player/items/medic/medic_ushanka"
 			"model_player"	"models/player/items/medic/medic_ushanka.mdl"
 			"propername"	"1"
-			"drop_type"	"none"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -30733,14 +29848,11 @@
 			"name"	"Liquidator's Lid"
 			"first_sale_date"	"2012/07/10"
 			"prefab"	"hat"
-			"item_slot"	"head"
-			"equip_region"	"hat"
 			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"			"#TF_Pro_SniperHat"
 			"item_description"	"#TF_Pro_SniperHat_Desc"
 			"image_inventory"	"backpack/player/items/sniper/pro_hat"
 			"model_player"	"models/player/items/sniper/pro_hat.mdl"
-			"drop_type"	"none"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -30749,28 +29861,18 @@
 			{
 				"sniper"	"1"
 			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hat"		"1"
-				}
-			}
 		}
 		"780"
 		{
 			"name"	"The Fed-Fightin' Fedora"
 			"first_sale_date"	"2012/07/10"
 			"prefab"	"hat"
-			"item_slot"	"head"
-			"equip_region"	"hat"
 			"item_type_name"	"#TF_Wearable_Hat"
 			"item_name"	"#TF_PEP_ScoutHat"
 			"item_description"	"#TF_PEP_ScoutHat_Desc"
 			"image_inventory"	"backpack/player/items/scout/pep_hat"
 			"model_player"	"models/player/items/scout/pep_hat.mdl"
 			"propername"	"1"
-			"drop_type"	"none"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -30793,7 +29895,7 @@
 		{
 			"name"	"Dillinger's Duffel"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"scout_backpack"
 			"item_type_name"	"#TF_Wearable_Backpack"
@@ -30816,7 +29918,7 @@
 		{
 			"name"	"The Business Casual"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"shirt"
 			"item_type_name"	"#TF_Wearable_Shirt"
@@ -30840,7 +29942,7 @@
 		{
 			"name"	"The HazMat Headcase"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"item_slot"	"misc"
 			"equip_region"	"pyro_head_replacement"
 			"item_type_name"	"#TF_Wearable_Hat"
@@ -30915,7 +30017,7 @@
 		{
 			"name"	"The Idea Tube"
 			"first_sale_date"	"2012/07/10"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"paintable"		"1"
@@ -30937,7 +30039,7 @@
 		"785"
 		{
 			"name"	"Robot Chicken Hat"
-			"prefab"	"promo_hat"
+			"prefab"	"promo hat"
 			"craft_class"		""
 			"capabilities"
 			{
@@ -31044,13 +30146,14 @@
 		"787"
 		{
 			"name"	"The Tribal Bones"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"first_sale_date"	"2012/08/09"
 			"craft_class"	""			
 			"capabilities"
 			{
 				"paintable"			"1"
 			}
+			"item_type_name"	"#TF_Wearable_Bones"
 			"item_name"	"#TF_HA_Pyro"
 			"item_description"	"#TF_HA_Pyro_Desc"
 			"propername"	"1"
@@ -31669,7 +30772,7 @@
 		"818"
 		{
 			"name"	"Awesomenauts Badge"
-			"prefab"	"promo_hat"
+			"prefab"	"promo cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -31699,7 +30802,7 @@
 		"819"
 		{
 			"name"	"The Lone Star"
-			"prefab"	"promo_hat"
+			"prefab"	"promo hat"
 			"capabilities"
 			{
 				"paintable"			"1"
@@ -31725,36 +30828,204 @@
 		"820"
 		{
 			"name"	"The Russian Rocketeer"
-			"prefab"	"promo_hat"
+			"prefab"	"promo backpack"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
 			}
-			"item_type_name"	"#TF_Wearable_Backpack"
 			"item_name"	"#TF_Awes_Pyro"
 			"item_description"	"#TF_Awes_Pyro_Desc"
-			"item_slot"	"misc"			
-			"equip_region"	"back"
 			"propername" "1"
 			"image_inventory"	"backpack/player/items/pyro/awes_jetpack"
 			"model_player"	"models/player/items/pyro/awes_jetpack.mdl"
 			"used_by_classes"
 			{
-				"pyro"	"1"
+				"pyro" "1"
+			}
+		}
+
+		"821"
+		{
+			"name"	"The Soviet Gentleman"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Hat"
+			"item_name"	"#TF_HeavyMustacheHat"
+			"item_description"	"#TF_HeavyMustacheHat_Desc"
+			"image_inventory"	"backpack/player/items/heavy/heavy_mustachehat"
+			"model_player"	"models/player/items/heavy/heavy_mustachehat.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"823"
+		{
+			"name"	"The Pocket Purrer"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"cosmetic"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_slot"	"misc"
+			"equip_region"	"engineer_pocket"
+			"item_type_name"	"#TF_Wearable_Satchel"
+			"item_name"	"#TF_EngineerPocketCat"
+			"item_description"	"#TF_EngineerPocketCat_Desc"
+			"image_inventory"	"backpack/player/items/engineer/engineer_pocketcat"
+			"model_player"	"models/player/items/engineer/engineer_pocketcat.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_gooey_pickup.wav"
+			"drop_sound"			"ui/item_gooey_pickup.wav"
+		}
+		"824"
+		{
+			"name"	"The Koala Compact"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"cosmetic"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_slot"	"misc"
+			"equip_region"	"engineer_pocket"
+			"item_type_name"	"#TF_Wearable_Satchel"
+			"item_name"	"#TF_SniperPocketKoala"
+			"item_description"	"#TF_SniperPocketKoala_Desc"
+			"image_inventory"	"backpack/player/items/sniper/sniper_pocketkoala"
+			"model_player"	"models/player/items/sniper/sniper_pocketkoala.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"sniper"	"1"
 			}
 			"visuals"
 			{
-				"player_bodygroups"
+				"styles"
 				{
-					"backpack"			"1"
+					"0"
+					{
+						"model_player_per_class"	
+						{
+							"sniper"		"models/player/items/sniper/sniper_pocketkoala.mdl"
+						}						
+						"name"	"#TF_SniperPocketKoala_Style0"
+					}
+					"1"
+					{
+						"model_player_per_class"	
+						{
+							"sniper"		"models/player/items/sniper/sniper_pocketkoala_s2.mdl"
+						}
+						"name"	"#TF_SniperPocketKoala_Style1"
+					}
 				}
+			}
+			"attributes"
+			{
+				"counts as assister is some kind of pet this update is going to be awesome"
+				{
+					"attribute_class"	"counts_as_assister"
+					"value"				"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_gooey_pickup.wav"
+			"drop_sound"			"ui/item_gooey_pickup.wav"
+		}
+		"825"
+		{
+			"name"	"Hat of Cards"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_SpyCardHat"
+			"item_description"	"#TF_SpyCardHat_Desc"
+			"image_inventory"	"backpack/player/items/spy/spy_cardhat"
+			"model_player"	"models/player/items/spy/spy_cardhat.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+		}
+		"826"
+		{
+			"name"	"Medi-Mask"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"cosmetic"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_slot"	"misc"
+			"equip_region"	"face"
+			"item_type_name"	"#TF_Wearable_Mask"
+			"item_name"	"#TF_MedicGasMask"
+			"item_description"	"#TF_MedicGasMask_Desc"
+			"image_inventory"	"backpack/player/items/medic/medic_gasmask"
+			"model_player"	"models/player/items/medic/medic_gasmask.mdl"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+		}
+		"827"
+		{
+			"name"	"The Track Terrorizer"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"cosmetic"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_slot"	"misc"
+			"equip_regions"
+			{
+				"scout_or_heavy_shirt"	"1"
+				"arm_tatoos" "1"
+			}
+			"item_type_name"	"#TF_Wearable_Shirt"
+			"item_name"	"#TF_ScoutTrackJacket"
+			"item_description"	"#TF_ScoutTrackJacket_Desc"
+			"image_inventory"	"backpack/player/items/scout/scout_trackjacket"
+			"model_player"	"models/player/items/scout/scout_trackjacket.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"scout"	"1"
 			}
 		}
 		"828"
 		{
 			"name"	"Archimedes"
 			"first_sale_date"	"2012/08/15"
-			"prefab"	"hat"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -31780,6 +31051,103 @@
 			}
 			"mouse_pressed_sound"	"ui/item_gooey_pickup.wav"
 			"drop_sound"			"ui/item_gooey_pickup.wav"
+		}
+		"829"
+		{
+			"name"	"The War Pig"
+			"first_sale_date"	"2012/02/22"
+			"prefab"	"hat"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_SoldierWarPig"
+			"item_description"	"#TF_SoldierWarPig_Desc"
+			"image_inventory"	"backpack/player/items/soldier/soldier_warpig"
+			"model_player"	"models/player/items/soldier/soldier_warpig.mdl"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"soldier"	"1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"		"1"
+				}
+				"styles"
+				{
+					"0"
+					{
+						"model_player_per_class"	
+						{
+							"soldier"		"models/player/items/soldier/soldier_warpig.mdl"
+						}						
+						"name"	"#TF_SoldierWarPig_Style0"
+					}
+					"1"
+					{
+						"model_player_per_class"	
+						{
+							"soldier"		"models/player/items/soldier/soldier_warpig_s2.mdl"
+						}
+						"name"	"#TF_SoldierWarPig_Style1"
+					}
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_helmet_drop.wav"
+			"drop_sound"			"ui/item_helmet_pickup.wav"
+		}
+		"830"
+		{
+			"name"	"The Bearded Bombardier"
+			"first_sale_date"	"2012/07/10"
+			"prefab"	"cosmetic"
+			"item_slot"	"misc"
+			"equip_region"	"face"
+			"item_name"	"#TF_DemoBeardPipe"
+			"item_type_name"	"#TF_Wearable_FacialHair"
+			"item_description"	"#TF_DemoBeardPipe_Desc"
+			"image_inventory"	"backpack/player/items/demo/demo_beardpipe"
+			"model_player"	"models/player/items/demo/demo_beardpipe.mdl"
+			"propername"	"1"
+			"capabilities"
+			{
+				"paintable" "1"
+				"can_craft_count"	"1"
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"skin"	"0"
+						"name"	"#TF_DemoBeardPipe_Style0"
+					}
+					"1"
+					{
+						"skin"	"1"
+						"name"	"#TF_DemoBeardPipe_Style1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"attach particle effect static"
+				{
+					"attribute_class"	"set_attached_particle_static"
+					"value"	"28"
+				}
+			}	
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"mouse_pressed_sound" 	"ui/item_hat_pickup.wav"
+			"drop_sound" 		"ui/item_hat_pickup.wav"
 		}
 		"831"
 		{
@@ -31993,7 +31361,7 @@
 		"840"
 		{
 			"name"	"The U-clank-a"
-			"prefab"	"hat_new"
+			"prefab"	"hat"
 			"craft_class"	""
 			"capabilities"
 			{
@@ -32016,7 +31384,7 @@
 		"841"
 		{
 			"name"	"The Stealth Steeler"
-			"prefab"	"hat_new"
+			"prefab"	"hat"
 			"craft_class"	""
 			"capabilities"
 			{
@@ -32075,7 +31443,7 @@
 		"844"
 		{
 			"name"	"The Tin Pot"
-			"prefab"	"hat_new"
+			"prefab"	"hat"
 			"craft_class"	""
 			"item_name"	"#TF_Soldier_Robot_Helmet"
 			"item_description"	"#TF_Soldier_Robot_Helmet_Desc"
@@ -32132,7 +31500,7 @@
 		"846"
 		{
 			"name"	"The Robot Running Man"
-			"prefab"	"hat_new"
+			"prefab"	"hat"
 			"craft_class"	""
 			"item_name"	"#TF_Scout_Robot_Cap"
 			"item_description"	"#TF_Scout_Robot_Cap_Desc"
@@ -32159,7 +31527,7 @@
 		"847"
 		{
 			"name"	"The Bolted Bushman"
-			"prefab"	"hat_new"
+			"prefab"	"hat"
 			"craft_class"	""
 			"item_name"	"#TF_Sniper_Robot_Hat"
 			"item_description"	"#TF_Sniper_Robot_Hat_Desc"
@@ -32241,6 +31609,7 @@
 			"visuals"
 			{
 				"sound_single_shot"	"Weapon_AWP.Single"
+				"sound_burst"		"Weapon_AWP.SingleCrit"
 			}
 			"attributes"
 			{
@@ -32274,6 +31643,120 @@
 			"mouse_pressed_sound"	"ui/item_paper_pickup.wav"
 			"drop_sound"		"ui/item_paper_pickup.wav"
 		}
+
+		"853"
+		{
+			"name"	"The Crafty Hair"
+			"first_sale_date"	"2012/08/29"
+			"prefab"	"promo hat"
+			"capabilities"
+			{
+				"paintable"			"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Hair"
+			"item_name"	"#TF_XCOM_Hair"
+			"item_description"	"#TF_XCOM_Hair_Desc"
+			"propername" "1"
+			"image_inventory"	"backpack/player/items/all_class/xcom_flattop_engineer"
+			"model_player_per_class"
+			{
+				"scout"		"models/player/items/all_class/xcom_flattop_scout.mdl"
+				"soldier"	"models/player/items/all_class/xcom_flattop_soldier.mdl"
+				"medic"		"models/player/items/all_class/xcom_flattop_medic.mdl"
+				"heavy"		"models/player/items/all_class/xcom_flattop_heavy.mdl"
+				"engineer"	"models/player/items/all_class/xcom_flattop_engineer.mdl"
+			}
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"soldier"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"engineer" "1"
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hat"			"1"
+					"headphones"	"1"
+				}
+			}
+		}
+		"854"
+		{
+			"name"	"Area 451"
+			"first_sale_date"	"2012/08/29"
+			"prefab"	"promo hat"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_name"	"#TF_XCOM_Pyro"
+			"item_description"	"#TF_XCOM_Pyro_Desc"
+			"image_inventory"	"backpack/player/items/pyro/xcom_sectoid_mask"
+			"model_player"	"models/player/items/pyro/xcom_sectoid_mask.mdl"
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+		}
+		"855"
+		{
+			"name"	"The Vigilant Pin"
+			"first_sale_date"	"2012/08/29"
+			"prefab"	"promo cosmetic"
+			"capabilities"
+			{
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Badge"
+			"item_name"	"#TF_XCOM_Pin"
+			"item_description"	"#TF_XCOM_Pin_Desc"
+			"item_slot"	"misc"
+			"equip_region"	"medal"
+			"propername"	"1"
+			"image_inventory"	"backpack/player/items/all_class/xcom_badge"
+			"model_player"	"models/player/items/all_class/xcom_badge.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_tiny_pickup.wav"
+			"drop_sound"		"ui/item_metal_tiny_drop.wav"
+		}
+		"856"
+		{
+			"name"	"The Pyrotechnic Tote"
+			"prefab"	"backpack"
+			"capabilities"
+			{
+				"paintable"		"1"
+				"can_craft_count"	"1"
+			}
+			"item_type_name"	"#TF_Wearable_Backpack"
+			"item_name"	"#TF_Pyro_FireworksBag"
+			"item_description"	"#TF_Pyro_FireworksBag_Desc"
+			"image_inventory"	"backpack/player/items/pyro/pyro_fireworksbag"
+			"propername" "1"
+			"model_player"	"models/player/items/pyro/pyro_fireworksbag.mdl"
+			"used_by_classes"
+			{
+				"pyro" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
+
 
 
 
@@ -38075,7 +37558,7 @@
 				"set supply crate series"
 				{
 					"attribute_class"	"supply_crate_series"
-					"value" "43"
+					"value" "47"
 					"force_gc_to_generate" "1"
 				}
 			}
@@ -39324,20 +38807,8 @@
 					"value"				"1"
 				}
 			}
-			"used_by_classes"
-			{
-				"scout"	"1"
-				"sniper"	"1"
-				"soldier"	"1"
-				"demoman"	"1"
-				"medic"	"1"
-				"heavy"	"1"
-				"spy" "1"
-				"engineer" "1"
-				"pyro" "1"
-			}
-			"mouse_pressed_sound"	"ui/item_metal_scrap_pickup.wav"
-			"drop_sound"		"ui/item_metal_scrap_drop.wav"
+			"mouse_pressed_sound"	"ui/item_medal_pickup.wav"
+			"drop_sound"		"ui/item_medal_pickup.wav"
 		}
 		"5076"
 		{
@@ -39446,6 +38917,86 @@
 			"mouse_pressed_sound"	"ui/item_metal_tiny_pickup.wav"
 			"drop_sound"		"ui/item_metal_tiny_drop.wav"
 		}
+		"5080" 
+		{
+			"name"	"Fall Crate 2012"
+			"item_class"	"supply_crate"
+			"craft_class"	"supply_crate"
+			"craft_material_type"	"supply_crate"
+			"tool"
+			{
+				"type"	""
+				"usage"
+				{
+				}
+				"restriction"	"fall 2012"
+			}
+			"capabilities"
+			{
+				"decodable"		"1"
+			}
+			"armory_desc" "fall_2012_crate"
+			"show_in_armory" "1"
+			"item_type_name"	"#TF_LockedCrate"
+			"item_name"		"#TF_FallCrate2012"
+			"item_description"	"#TF_FallCrate2012_Desc"
+			"image_inventory"	"backpack/crafting/fall_crate"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"	"unique"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"attributes"
+			{
+				"set supply crate series"
+				{
+					"attribute_class"	"supply_crate_series"
+					"value" "48"
+					"force_gc_to_generate" "1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_crate_pickup.wav"
+			"drop_sound"		"ui/item_crate_drop.wav"
+		}
+		"5081" 
+		{
+			"name"	"Fall Key 2012"
+			"first_sale_date"	"2012/09/06"
+			"item_class"	"tool"
+			"craft_class"	"tool"
+			"craft_material_type"	"tool"
+			"tool"
+			{
+				"type"	"decoder_ring"
+				"usage_capabilities"
+				{
+					"decodable"	"1"
+				}
+				"restriction"	"fall 2012"
+			}
+			"attributes"
+			{
+				"always tradable"
+				{
+					"attribute_class"	"always_tradable"
+					"value"				"1"
+				}
+			}
+			"armory_desc" "key"
+			"armory_remap"		"Decoder Ring"
+			"show_in_armory"	"0"
+			"item_type_name"	"#TF_T"
+			"item_name"		"#TF_Tool_FallKey2012"
+			"item_description"	"#TF_Tool_FallKey2012_Desc"
+			"image_inventory"	"backpack/crafting/fall_key"
+			"image_inventory_size_w"	"128"
+			"image_inventory_size_h"	"82"
+			"item_quality"		"unique"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"mouse_pressed_sound"	"ui/item_metal_tiny_pickup.wav"
+			"drop_sound"		"ui/item_metal_tiny_drop.wav"
+		}		
 		
 		"5500"
 		{
@@ -39697,6 +39248,32 @@
 			"image_inventory"	"backpack/crafting/strange_part_soldiers_killed"
 			"item_name"	"#TF_StrangePart_SoldiersKilled"
 			"item_description"	"#TF_StrangePart_SoldiersKilled_Desc"
+		}
+		"6003"
+		{
+			"name"	"Strange Part: Scouts Killed"
+			"prefab"	"strange_part"
+			"tool"
+			{
+				"usage"
+				{
+					"required_tags"
+					{
+						"can_deal_damage"		"1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"strange part new counter ID"
+				{
+					"attribute_class"	"strange_part_new_counter_id"
+					"value"				"10"
+				}
+			}
+			"image_inventory"	"backpack/crafting/strange_part_scouts_killed"
+			"item_name"	"#TF_StrangePart_ScoutsKilled"
+			"item_description"	"#TF_StrangePart_ScoutsKilled_Desc"
 		}
 		
 		
@@ -40012,6 +39589,58 @@
 			"image_inventory"	"backpack/crafting/strange_part_KillWhileExplosiveJumping"
 			"item_name"	"#TF_StrangePart_KillsWhileExplosiveJumping"
 			"item_description"	"#TF_StrangePart_KillsWhileExplosiveJumping_Desc"
+		}
+		"6024"
+		{
+			"name"	"Strange Part: Cloaked Spies Killed"
+			"prefab"	"strange_part"
+			"tool"
+			{
+				"usage"
+				{
+					"required_tags"
+					{
+						"can_deal_damage"		"1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"strange part new counter ID"
+				{
+					"attribute_class"	"strange_part_new_counter_id"
+					"value"				"37"
+				}
+			}
+			"image_inventory"	"backpack/crafting/strange_part_invisibles_killed"
+			"item_name"	"#TF_StrangePart_InvisibleSpyKills"
+			"item_description"	"#TF_StrangePart_InvisibleSpyKills_Desc"
+		}
+		"6025"
+		{
+			"name"	"Strange Part: Sappers Destroyed"
+			"prefab"	"strange_part"
+			"tool"
+			{
+				"usage"
+				{
+					"required_tags"
+					{
+						"can_destroy_sappers"		"1"
+					}
+				}
+			}
+			"attributes"
+			{
+				"strange part new counter ID"
+				{
+					"attribute_class"	"strange_part_new_counter_id"
+					"value"				"36"
+				}
+			}
+			"image_inventory"	"backpack/crafting/strange_part_sappers_killed"
+			"item_name"	"#TF_StrangePart_SappersDestroyed"
+			"item_description"	"#TF_StrangePart_SappersDestroyed_Desc"
 		}
 
 
@@ -46686,6 +46315,12 @@
 			"The Scotsman's Skullcutter"		"1"
 			"The Persian Persuader"		"1"
 		}
+		"kill_eater_set_mixed_n"
+		{
+			"The Force-a-Nature"		"1"
+			"Upgradeable TF_WEAPON_FLAMETHROWER"		"1"
+			"Tomislav"		"1"
+		}
 		"supply_crate_loot_list_1"
 		{
 			"The Vita-Saw"		"1"
@@ -47034,6 +46669,16 @@
 			"The Tavish DeGroot Experience"		"1"
 			"Rimmed Raincatcher"		"1"
 		}
+		"supply_crate_loot_list_47"
+		{
+			"loot_list_header_desc"		"#Econ_Revolving_Loot_List_Strange_Weapons"
+			"kill_eater_set_mixed_n"		"1"
+			"Strange Part: Scouts Killed"		"1"
+			"Strange Part: Sappers Destroyed"		"1"
+			"Strange Part: Cloaked Spies Killed"		"1"
+			"The Backwards Ballcap"		"1"
+			"Professional's Panama"		"1"
+		}
 	}
 	"revolving_loot_lists"
 	{
@@ -47083,6 +46728,8 @@
 		"supply_crate_loot_list_44"	"44" 
 		"supply_crate_loot_list_45"	"45" 
 		"supply_crate_loot_list_pyro_2012"	"46" 
+		"supply_crate_loot_list_47"	"47" 
+		"supply_crate_loot_list_fall_2012"	"48" 
 		
 		
 		"kill_eater_set_demo_a"						"-1"
@@ -47118,6 +46765,7 @@
 		"kill_eater_set_mixed_k"						"-28"
 		"kill_eater_set_mixed_l"						"-29"
 		"kill_eater_set_mixed_m"						"-30"
+		"kill_eater_set_mixed_n"						"-31"
 	}
 	"recipes"
 	{
@@ -55383,6 +55031,10 @@
 			"type_name"	"KillEaterEventType_FeignDeaths"
 		}
 
+		"10"
+		{
+			"type_name"	"KillEaterEventType_ScoutsKilled"
+		}
 		"12"
 		{
 			"type_name"	"KillEaterEventType_SoldiersKilled"
@@ -55460,6 +55112,14 @@
 		"34"
 		{
 			"type_name"	"KillEaterEventType_KillsWhileExplosiveJumping"
+		}
+		"36"
+		{
+			"type_name"	"KillEaterEventType_SapperDestroyed"
+		}
+		"37"
+		{
+			"type_name"	"KillEaterEventType_InvisibleSpiesKilled"
 		}
 
 
