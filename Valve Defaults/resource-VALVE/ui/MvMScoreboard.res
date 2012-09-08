@@ -34,9 +34,9 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
 		"xpos"			"425"
-		"ypos"			"0"
-		"wide"			"200"
-		"tall"			"100"
+		"ypos"			"30"
+		"wide"			"150"
+		"tall"			"20"
 		"visible"		"1"
 		
 		"DifficultyLabel"
@@ -49,6 +49,7 @@
 			"xpos"			"0"
 			"ypos"			"0"
 			"wide"			"150"
+			"tall"			"10"
 			"fgcolor"		"tanlight"
 		}
 		
@@ -62,6 +63,7 @@
 			"xpos"			"0"
 			"ypos"			"9"
 			"wide"			"150"
+			"tall"			"10"
 			"fgcolor"		"tanlight"
 		}
 	}
