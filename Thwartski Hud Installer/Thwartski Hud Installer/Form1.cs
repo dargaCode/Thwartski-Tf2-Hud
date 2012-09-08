@@ -36,44 +36,6 @@ namespace Thwartski_Hud_Installer
 
 
 
-
-
-        //paths for populating the folder browser
-
-        static string steamappsFolder;                  //written at runtime
-        static string steamUser;                        //written at runtime
-
-        //paths for browsing folders
-        static string partialTeamFortress2Location;     //written at runtime
-
-        //paths for copying assets and installing them
-        static string installPath;                      //written at runtime
-        static string assetOptionsPath;                 //written at runtime
-        static string backupPath;                       //written at runtime
-
-        //which custom assets were selected to be installed in the comboboxes
-        static string aspectSelectedAssetFile;          //written at runtime
-        static string scoreboardSelectedAssetFile;      //written at runtime
-        static string menuSelectedAssetFile;            //written at runtime
-        static string aspectSelectedAssetPath;          //written at runtime
-        static string scoreboardSelectedAssetPath;      //written at runtime
-        static string menuSelectedAssetPath;            //written at runtime
-
-        //names of custom install files to write the asset options to
-
-        //paths to write custom files to
-        static string customInstallPathResource;        //written at runtime
-        static string customInstallPathUi;              //written at runtime
-        static string aspectFileDestination;            //written at runtime
-        static string scoreboardFileDestination;        //written at runtime
-        static string menuFileDestination;              //written at runtime
-
-        //file and path to let the buttons know the hud is installed
-        static string installCheckerDestination;        //written at runtime
-
-
-
-
         //FORM EVENTS BELOW THIS POINT
 
 
@@ -151,7 +113,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageNormal;
 
                 //load the matching file into a bit array for later copying
-                aspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectNormal;
+                GlobalStrings.AspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectNormal;
             }
             //widescreen aspect ratio
             else if (aspectSelector.SelectedIndex == 1)
@@ -160,7 +122,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
 
                 //load the matching file into a bit array for later copying
-                aspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectWidescreen;
+                GlobalStrings.AspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectWidescreen;
             }
             //something went wrong
             else
@@ -235,7 +197,7 @@ namespace Thwartski_Hud_Installer
             if (installHud())
             {
                 //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
-                Form2 installSuccessForm = new Form2(this, installPath);
+                Form2 installSuccessForm = new Form2(this, GlobalStrings.InstallPath);
 
                 //show form2 only if the install succeeded
                 installSuccessForm.Show();
@@ -334,15 +296,15 @@ namespace Thwartski_Hud_Installer
             if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps32Bit))
             {
                 //a steam folder was fond
-                steamappsFolder = Properties.Resources.stringFolderDefaultSteamapps32Bit;
+                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps32Bit;
 
                 //try to guess your username
-                guessSteamUser(steamappsFolder); 
+                guessSteamUser(GlobalStrings.FolderSteamapps); 
             }
             else if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps64Bit))
 	        {
                 //a steam folder was found
-                steamappsFolder = Properties.Resources.stringFolderDefaultSteamapps64Bit;
+                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps64Bit;
 
                 //try to guess your username
                 guessSteamUser(Properties.Resources.stringFolderDefaultSteamapps64Bit); 
@@ -396,7 +358,7 @@ namespace Thwartski_Hud_Installer
                         //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder);
 
                         //the username is legit
-                        steamUser = Convert.ToString(steamUserFolder);
+                        GlobalStrings.FolderSteamUser = Convert.ToString(steamUserFolder);
                         //MessageBox.Show(steamUser + " is the userfolder");
                         
                         //allow install at this location
@@ -417,12 +379,12 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show("no users were found with " + teamFortress2Folder);
 
             //build the partial path
-            steamUser = Properties.Resources.stringFolderSteamUserUnknown;
-            partialTeamFortress2Location = steamappsFolder + steamUser + Properties.Resources.stringFolderTeamFortress2;
+            GlobalStrings.FolderSteamUser = Properties.Resources.stringFolderSteamUserUnknown;
+            GlobalStrings.PathPartialTeamFortress2 = steamappsFolder + GlobalStrings.FolderSteamUser + Properties.Resources.stringFolderTeamFortress2;
 
             //update the textbox and folder browser with the partial path to get the player started.
             folderBrowserDialog1.SelectedPath = steamappsFolder;
-            folderBrowserBoxLabel.Text = partialTeamFortress2Location;
+            folderBrowserBoxLabel.Text = GlobalStrings.PathPartialTeamFortress2;
 
             //change the text in the folder browser dialog
             folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescPartial;
@@ -436,7 +398,7 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //global variable used for actually installing the files
-            installPath = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
+            GlobalStrings.InstallPath = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
 
             //prepare the rest of the the strings for install paths, filenames, etc.
             updateStrings();
@@ -469,32 +431,32 @@ namespace Thwartski_Hud_Installer
             if (maxmodeIndex == 0 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
-                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
+                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
+                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
                 //MessageBox.Show("pub24/comp6");
             }
             //pub24 maxmode, comp9 minmode
             else if (maxmodeIndex == 0 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
-                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
+                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
+                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
                 //MessageBox.Show("pub24/comp9");
             }
             //pub32 maxmode, comp6 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
-                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
+                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
+                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
                 //MessageBox.Show("pub32/comp6");
             }
             //pub32 maxmode, comp9 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                scoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
-                menuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
+                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
+                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
                 //MessageBox.Show("pub32/comp9");
             }
             //something went wrong
@@ -511,25 +473,25 @@ namespace Thwartski_Hud_Installer
         private void updateStrings()
         {
             //the paths of the custom asset files
-            assetOptionsPath = GlobalStrings.AssetPath + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
-            aspectSelectedAssetPath = assetOptionsPath + aspectSelectedAssetFile;
-            scoreboardSelectedAssetPath = assetOptionsPath + scoreboardSelectedAssetFile;
-            menuSelectedAssetPath = assetOptionsPath + menuSelectedAssetFile;
+            GlobalStrings.AssetOptionsPath = GlobalStrings.AssetPath + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
+            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.AspectSelectedAssetFile;
+            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.ScoreboardSelectedAssetFile;
+            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.MenuSelectedAssetFile;
 
             //the paths the custom asset files will be installed to
-            customInstallPathResource = installPath + Properties.Resources.stringFolderInstallPathResource;
-            customInstallPathUi = customInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
+            GlobalStrings.CustomInstallPathResource = GlobalStrings.InstallPath + Properties.Resources.stringFolderInstallPathResource;
+            GlobalStrings.CustomInstallPathUi = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
 
             //the names and paths of the custom install files
-            menuFileDestination = customInstallPathResource + Properties.Resources.stringFilenameInstallMenu;
-            aspectFileDestination = customInstallPathUi + Properties.Resources.stringFilenameInstallAspect;
-            scoreboardFileDestination = customInstallPathUi + Properties.Resources.stringFilenameInstallScoreboard;
+            GlobalStrings.MenuFileDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallMenu;
+            GlobalStrings.AspectFileDestination = GlobalStrings.CustomInstallPathUi + Properties.Resources.stringFilenameInstallAspect;
+            GlobalStrings.ScoreboardFileDestination = GlobalStrings.CustomInstallPathUi + Properties.Resources.stringFilenameInstallScoreboard;
 
             //name and path of the "hud is installed" tracking file
-            installCheckerDestination = customInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
+            GlobalStrings.InstallCheckerDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
 
             //the path for backup files
-            backupPath = installPath + Properties.Resources.stringFolderBackup;
+            GlobalStrings.BackupPath = GlobalStrings.InstallPath + Properties.Resources.stringFolderBackup;
 
             //MessageBox.Show("installPath: \n" + installPath);
             //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);
@@ -665,7 +627,7 @@ namespace Thwartski_Hud_Installer
         public bool isHudInstalled() 
         {
             //check for the dummy file in the resource folder
-            if (System.IO.File.Exists(installCheckerDestination))
+            if (System.IO.File.Exists(GlobalStrings.InstallCheckerDestination))
             {
                 return true;
             }
@@ -837,7 +799,7 @@ namespace Thwartski_Hud_Installer
         public bool installHud()
         {
             //Used for iterating through file and folder lists
-            DirectoryInfo installFolderDir = new DirectoryInfo(installPath);
+            DirectoryInfo installFolderDir = new DirectoryInfo(GlobalStrings.InstallPath);
 
             //delete the files that are automatically created on game launch
             deleteForcedValveFiles();
@@ -860,7 +822,7 @@ namespace Thwartski_Hud_Installer
                     if (!isHudInstalled())
                     {
                         //create the file, but just close it without writing any text inside
-                        using (StreamWriter versionFile = new StreamWriter(installCheckerDestination))
+                        using (StreamWriter versionFile = new StreamWriter(GlobalStrings.InstallCheckerDestination))
                         {
                             versionFile.Close();
                             versionFile.Dispose();
@@ -929,7 +891,7 @@ namespace Thwartski_Hud_Installer
                 DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
                 foreach (DirectoryInfo assetSubFolder in assetSubFolders)
                 {
-                    backupAndDeleteFolder(installPath, assetSubFolder, backupPath, saveBackups, timestampFolderName);
+                    backupAndDeleteFolder(GlobalStrings.InstallPath, assetSubFolder, GlobalStrings.BackupPath, saveBackups, timestampFolderName);
                 }
             }
             catch (System.IO.DirectoryNotFoundException)
@@ -974,7 +936,7 @@ namespace Thwartski_Hud_Installer
         static void deleteForcedValveFiles()
         {
             //shorter local string name for readability
-            string Resource = customInstallPathResource;
+            string Resource = GlobalStrings.CustomInstallPathResource;
 
             //one large try for everything since this fail isn't important
             try
@@ -1083,9 +1045,9 @@ namespace Thwartski_Hud_Installer
             try
             {
                 //copy the custom files from their asset location to their install location
-                System.IO.File.Copy(menuSelectedAssetPath, menuFileDestination, true);
-                System.IO.File.Copy(aspectSelectedAssetPath, aspectFileDestination, true);
-                System.IO.File.Copy(scoreboardSelectedAssetPath, scoreboardFileDestination, true);
+                System.IO.File.Copy(GlobalStrings.MenuSelectedAssetPath, GlobalStrings.MenuFileDestination, true);
+                System.IO.File.Copy(GlobalStrings.AspectSelectedAssetPath, GlobalStrings.AspectFileDestination, true);
+                System.IO.File.Copy(GlobalStrings.ScoreboardSelectedAssetPath, GlobalStrings.ScoreboardFileDestination, true);
 
                 //MessageBox.Show(assetFolderDir + " to " + installFolderDir);
                 //MessageBox.Show(menuSelectedAssetPath + " to " + menuFileDestination);
