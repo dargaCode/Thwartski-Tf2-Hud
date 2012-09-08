@@ -5,14 +5,10 @@ using System.Text;
 
 namespace Thwartski_Hud_Installer
 {
-    static class UiController
+    class UiController
     {
 
-        public static void IntializeUI() 
-        {
- 
-        
-        }
+
 
         
     }
