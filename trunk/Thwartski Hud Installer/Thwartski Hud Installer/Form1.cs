@@ -23,15 +23,16 @@ namespace Thwartski_Hud_Installer
         static ToolTip HudInstallerTooltips = new ToolTip();
 
 
-        static Version currentAssetVersion;
-        static Version latestAssetVersion;
-        static Version currentInstallVersion;
-
         //used for cycling through assetfolder directory
         static DirectoryInfo assetFolderDir = new DirectoryInfo(GlobalStrings.AssetPath);
 
 
-
+        //Instantiate classes
+        Options options = new Options();
+        UiController uiController = new UiController();
+        Installer installer = new Installer();
+        Downloader downloader = new Downloader();
+        Browser browser = new Browser();
 
 
 
@@ -47,62 +48,15 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
-            //see where the exe is running from
-            GlobalStrings.ExeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\"; 
-
-            //generate tooltips for the form
-            updateTooltips();
-
-            //create arrays of combobox strings
-            string[] aspects = { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
-            string[] scoreboardsMaxmode = { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
-            string[] scoreboardsMinmode = { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
-
-            //populate the comboboxes with the correct options
-            aspectSelector.Items.AddRange(aspects);
-            scoreboardSelectorMaxmode.Items.AddRange(scoreboardsMaxmode);
-            scoreboardSelectorMinmode.Items.AddRange(scoreboardsMinmode);
-
-            //load settings for comboxes
-            aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
-            scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-
-            //decide whether to use the saved install path setting or to start generating one
-            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
-            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
-            {
-                //allow the hud to be installed at the saved location
-                setInstallLocation(savedBrowserPath);
-                //MessageBox.Show("saved location good: " + savedBrowserPath);
-            }
-            else
-            {
-                //try to guess at a default install directory
-                SetDefaultFolder();
-                //MessageBox.Show("saved location no good: " + savedBrowserPath);
-            }
+            PrepareInstallerUI();
         }
 
         //browse for valid install locations
         private void folderBrowserButton_Click(object sender, EventArgs e)
         {
-            // Show the Open File dialog. If the user clicks OK, record their
-            // Folder location.
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                //the player selected a valid folder
-                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
-                {
-                    setInstallLocation(folderBrowserDialog1.SelectedPath);
-                }
-                //the player didn't select a valid folder
-                else
-                {
-                    errorWindow(GlobalStrings.MessageBadFolderSelected);
-                }
-            }
+            BrowseForInstallFolder();
         }
+
         //assign the correct image to be copied, depending on the combobox's selection
         private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -282,10 +236,83 @@ namespace Thwartski_Hud_Installer
 
 
 
+
+
+
+
+
         //CUSTOM METHODS BELOW THIS POINT
 
 
 
+
+
+
+
+        /// <summary>
+        /// Browse, then make sure user has selected a valid folder.
+        /// </summary>
+        private void BrowseForInstallFolder()
+        {
+            // Show the Open File dialog. If the user clicks OK, record their Folder location.
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //the player selected a valid folder
+                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
+                {
+                    setInstallLocation(folderBrowserDialog1.SelectedPath);
+                }
+                //the player didn't select a valid folder
+                else
+                {
+                    errorWindow(GlobalStrings.MessageBadFolderSelected);
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Generate tooltips, populate strings, comboboxes, and assets.
+        /// </summary>
+        private void PrepareInstallerUI()
+        {
+            //see where the exe is running from
+            GlobalStrings.ExeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\";
+
+            //generate tooltips for the form
+            updateTooltips();
+
+            //create arrays of combobox strings
+            string[] aspects = { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
+            string[] scoreboardsMaxmode = { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
+            string[] scoreboardsMinmode = { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
+
+            //populate the comboboxes with the correct options
+            aspectSelector.Items.AddRange(aspects);
+            scoreboardSelectorMaxmode.Items.AddRange(scoreboardsMaxmode);
+            scoreboardSelectorMinmode.Items.AddRange(scoreboardsMinmode);
+
+            //load settings for comboxes
+            aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
+            scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
+            scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
+
+            //decide whether to use the saved install path setting or to start generating one
+            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
+            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
+            {
+                //allow the hud to be installed at the saved location
+                setInstallLocation(savedBrowserPath);
+                //MessageBox.Show("saved location good: " + savedBrowserPath);
+            }
+            else
+            {
+                //try to guess at a default install directory
+                SetDefaultFolder();
+                //MessageBox.Show("saved location no good: " + savedBrowserPath);
+            }
+        
+        }
   
 
         /// <summary>
@@ -1095,12 +1122,28 @@ namespace Thwartski_Hud_Installer
         /// Show a special error window with a sound and a custom message.
         /// </summary>
         /// <param name="exceptionMessage"></param>
-        private void errorWindow(string exceptionMessage)
+        public void errorWindow(string exceptionMessage)
         {
             //open a special messagebox with Error as the window text and an icon
             MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
         }
-        //launch the game and close the installer
+
+        /// <summary>
+        /// Easier messagebox call which can be accessed from other classes.
+        /// </summary>
+        /// <param name="exceptionMessage"></param>
+        public void showMessage(string message)
+        {
+            //open a messagebox
+            MessageBox.Show(message);
+        }
+
+
+
+        /// <summary>
+        /// launch the game and close the installer
+        /// </summary>
+        /// <returns></returns>
         public bool launchGame()
         {
             try
@@ -1123,185 +1166,22 @@ namespace Thwartski_Hud_Installer
 
 
 
-
-
-
-
-
-
+        //TODO remove this button and make the check happen automatically
 
         //testing for downloading and upzipping files
         private void downloadButton_Click(object sender, EventArgs e)
         {
-
-            if (assetUpdateRequired())
+            //download current updates and check if they need to be installed
+            if (downloader.checkAndUpdate())
             {
-                updateAssets();
-                MessageBox.Show("assets updated");
-            }
-            else
-            {
-                MessageBox.Show("assets not updated");
-            }
-
-            if (installUpdateRequired())
-            {
-                //new mode and event for install button
-
-                MessageBox.Show("install button - update mode");
-            }
-            else
-            {
-                MessageBox.Show("install button - normal mode");
+                //TODO special mode for the install button
             }
 
         }
 
-        public bool assetUpdateRequired()
-        {
-
-            Version latestAssetVersion = new Version("2.0.2");
-            Version currentAssetVersion = new Version("2.0.1");
-            Version currentInstallVersion = new Version("2.0.0");
+       
 
 
-            MessageBox.Show("asset version comparison: " + Convert.ToString((currentAssetVersion.CompareTo(latestAssetVersion))));
-
-            if ((currentAssetVersion.CompareTo(latestAssetVersion)) < 0)
-            {
-                MessageBox.Show("assets out of date");
-                return true;
-            }
-            else if ((currentAssetVersion.CompareTo(latestAssetVersion)) == 0)
-            {
-                MessageBox.Show("assets match the latest version");
-                return false;
-            }
-            else
-            {
-                errorWindow("debug: current assets newer than latest assets");
-                return false;
-            }
-
-        }
-
-        public bool installUpdateRequired()
-        {
-            Version latestAssetVersion = new Version("2.0.2");
-            Version currentAssetVersion = new Version("2.0.1");
-            Version currentInstallVersion = new Version("2.0.0");
-
-
-            MessageBox.Show("install version comparison: " + Convert.ToString((currentInstallVersion.CompareTo(currentAssetVersion))));
-
-            if ((currentInstallVersion.CompareTo(currentAssetVersion)) < 0)
-            {
-                MessageBox.Show("install out of date");
-                return true;
-            }
-            else if ((currentInstallVersion.CompareTo(currentAssetVersion)) == 0)
-            {
-                MessageBox.Show("install matches the latest version");
-                return false;
-            }
-            else
-            {
-                errorWindow("debug: current install newer than latest assets");
-                return false;
-            }
-        }
-
-
-
-        /// <summary>
-        /// Download the hud assets
-        /// </summary>
-        /// <returns></returns>
-        public bool updateAssets()
-
-            //this probably shouldn't be a bool
-        {
-
-
-            try
-            {
-                if (!assetFolderDir.Exists)
-                {
-                    assetFolderDir.Create();
-                }
-
-
-                using (var client = new WebClient())
-                {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", GlobalStrings.ZipFileLocation);
-                }
-
-
-                unZip(GlobalStrings.ZipFileLocation, GlobalStrings.ExeFolder);
-
-
-                if (File.Exists(GlobalStrings.ZipFileLocation))
-                {
-                    File.Delete(GlobalStrings.ZipFileLocation);
-                }
-
-
-            }
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                errorWindow(problem.Message);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-
-            return true;
-        }
-
-
-        public static void unZip(string sourceZipFile, string DestinationFolder)
-        {
-            using (ZipInputStream s = new ZipInputStream(File.OpenRead(sourceZipFile)))
-            {
-
-                ZipEntry theEntry;
-                while ((theEntry = s.GetNextEntry()) != null)
-                {
-
-                    string directoryName = Path.GetDirectoryName(theEntry.Name);
-                    string fileName = Path.GetFileName(theEntry.Name);
-
-                    // create directory
-                    if (directoryName.Length > 0)
-                    {
-                        Directory.CreateDirectory(DestinationFolder + directoryName);
-                    }
-
-                    if (fileName != String.Empty)
-                    {
-                        using (FileStream streamWriter = File.Create(DestinationFolder + theEntry.Name))
-                        {
-
-                            int size = 2048;
-                            byte[] data = new byte[2048];
-                            while (true)
-                            {
-                                size = s.Read(data, 0, data.Length);
-                                if (size > 0)
-                                {
-                                    streamWriter.Write(data, 0, size);
-                                }
-                                else
-                                {
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
 
 
 
