@@ -24,8 +24,9 @@ Thwartski HUD uses no custom art assets and is 100% compatible with sv_pure 2.
 //						  	 THANK YOU
 //-------------------------------------------------------------------
 
-Thanks to Sgt. Blackhawk, T-Triple-8, Myles, Tobias Funke, AndyJ, Saberreap,
-OpticBarrel, Snakeyface, Baka-Baka, Kit, Dooman, and Archer for feedback so far.
+Thanks to Dark Nebula, Filly Mays, Sgt. Blackhawk, T-Triple-8, Myles, 
+Tobias Funke, AndyJ, Saberreap, OpticBarrel, Snakeyface, Baka-Baka, Kit, 
+Dooman, and Archer for feedback so far.
 
 Thanks to the authors of the following huds, some of which I used as 
 visual inspiration, and some of which I used as technical reference:

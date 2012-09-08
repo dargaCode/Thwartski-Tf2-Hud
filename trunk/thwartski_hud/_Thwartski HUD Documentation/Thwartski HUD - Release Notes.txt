@@ -3,11 +3,21 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski HUD v1.1.5 (MVM POLISH) - Sep 2, 2012.
+Thwartski HUD v1.1.6 (CRASH FIX) - Sep 2, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
+
+	1) Fixed the crash introduced by the latest TF2 patch.
+	
+	Thanks to Dark Nebula and Filly Mays for pointing out the crash!
+	
+//-------------------------------------------------------------------
+//						PREVIOUS VERSIONS
+//-------------------------------------------------------------------
+
+v1.1.5 (MVM POLISH) - Sep 2, 2012.
 
 	1) Tweaked and Polished all aspects of the hud for MvM mode.
 	2) Added support for multiple scoreboards for cl_hud_minmode 0/1.
@@ -16,10 +26,6 @@ Thwartski HUD v1.1.5 (MVM POLISH) - Sep 2, 2012.
 	5) Updated documentation.
 	
 	Thanks to Sgt. Blackhawk for feedback!
-	
-//-------------------------------------------------------------------
-//						PREVIOUS VERSIONS
-//-------------------------------------------------------------------
 
 v1.1.0 (MANN VS MACHINE) - Aug 18, 2012.
 

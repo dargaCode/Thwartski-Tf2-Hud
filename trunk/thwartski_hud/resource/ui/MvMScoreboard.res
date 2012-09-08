@@ -35,22 +35,23 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"DifficultyContainer"
-		"xpos"			"425"
-		"ypos"			"0"
-		"wide"			"200"
-		"tall"			"100"
+		"xpos"			"463"
+		"ypos"			"378"
+		"wide"			"150"
+		"tall"			"20"
 		"visible"		"1"
 		
 		"DifficultyLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyLabel"
-			"font"			"HudFontSmallest"
-			"labelText"		"#TF_MvM_Difficulty"
-			"textAlignment"	"center"
-			"xpos"			"0"
+			"font"			"ScoreboardTiny"
+			"labelText"		"Difficulty:"
+			"textAlignment"	"West"
+			"xpos"			"18"
 			"ypos"			"0"
 			"wide"			"150"
+			"tall"			"20"
 			"fgcolor"		"tanlight"
 		}
 		
@@ -58,12 +59,13 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"DifficultyValue"
-			"font"			"HudFontSmallBold"
+			"font"			"ScoreboardTiny"
 			"labelText"		"%difficultyvalue%"
-			"textAlignment"	"center"
+			"textAlignment"	"East"
 			"xpos"			"0"
-			"ypos"			"9"
-			"wide"			"150"
+			"ypos"			"0"
+			"wide"			"78"
+			"tall"			"20"
 			"fgcolor"		"tanlight"
 		}
 	}
