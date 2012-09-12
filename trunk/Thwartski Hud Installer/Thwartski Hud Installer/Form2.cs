@@ -29,6 +29,8 @@ namespace Thwartski_Hud_Installer
         //making form2 accept an argument from the form that created it
         public Form2(Form callingForm, string installationLocation)
         {
+            //TODO cleanup form above to be form1?
+
             //need to understand "as" better
             mainForm = callingForm as Form1;
             InitializeComponent();

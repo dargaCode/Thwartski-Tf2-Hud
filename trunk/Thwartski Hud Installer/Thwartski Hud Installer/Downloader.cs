@@ -6,18 +6,28 @@ using System.IO;
 using System.Net;
 using ICSharpCode.SharpZipLib.Zip;
 using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
+using System.Windows.Forms; 
+
 
 namespace Thwartski_Hud_Installer
 {
     class Downloader
     {
-        //creating a new form1 so its methods can be called
-        Form1 form = new Form1();
-
         //TODO make these actually dynamic
         Version serverVersion = new Version("2.0.4");
         Version assetVersion = new Version("2.0.4");
         Version installVersion = new Version("2.0.4");
+
+        //from to store the value being passed in
+        private Form1 mainForm = null;
+
+        //constructor?
+        public Downloader(Form1 caller)
+        {
+            //store the calling form
+            mainForm = caller;
+        } 
+
 
 
         /// <summary>
@@ -25,10 +35,12 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public bool checkAndUpdate() 
         {
+
             //need to update assets?
             if (updateRequired(assetVersion, serverVersion))
             {
-                form.showMessage("Downloading new assets!");
+
+                MessageBox.Show("Downloading new assets!");
 
                 //assets successfully updated
                 if (updateAssets())
@@ -44,20 +56,20 @@ namespace Thwartski_Hud_Installer
             }
             else
             {
-                form.showMessage("No need to update assets.");
+                MessageBox.Show("No need to update assets.");
             }
 
             //need to update install?
             if (updateRequired(installVersion, assetVersion))
             {
-                form.showMessage("Install new assets!");
+                MessageBox.Show("Install new assets!");
 
                 //new assets need to be installed
                 return true;
             }
             else
             {
-                form.showMessage("No need to install new assets.");
+                MessageBox.Show("No need to install new assets.");
 
                 //new assets don't need to be installed
                 return false;
@@ -139,7 +151,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                form.errorWindow(problem.Message);
+                mainForm.errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
