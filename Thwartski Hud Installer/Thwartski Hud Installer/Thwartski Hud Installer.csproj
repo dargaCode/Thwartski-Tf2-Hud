@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Browser.cs" />
     <Compile Include="Downloader.cs" />
+    <Compile Include="HudFiles.cs" />
     <Compile Include="Installer.cs" />
     <Compile Include="UiController.cs" />
     <Compile Include="Form1.cs">

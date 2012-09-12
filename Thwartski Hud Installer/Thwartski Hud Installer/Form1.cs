@@ -17,7 +17,17 @@ namespace Thwartski_Hud_Installer
 {
     public partial class Form1 : Form
     {
-        
+        //Instantiate classes
+        private Options options;
+        private UiController uiController;
+        private Installer installer;
+        private Downloader downloader;
+        private Browser browser;
+
+        //instances of the object to compare etc
+        private HudFiles assetFiles;
+        private HudFiles installFiles;
+
 
         //defining tooltips for the form
         static ToolTip HudInstallerTooltips = new ToolTip();
@@ -27,12 +37,7 @@ namespace Thwartski_Hud_Installer
         static DirectoryInfo assetFolderDir = new DirectoryInfo(GlobalStrings.AssetPath);
 
 
-        //Instantiate classes
-        Options options = new Options();
-        UiController uiController = new UiController();
-        Installer installer = new Installer();
-        Downloader downloader = new Downloader();
-        Browser browser = new Browser();
+
 
 
 
@@ -48,6 +53,17 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
+            //instantiate classes so they can control public functions on this form
+            this.downloader = new Downloader(this); 
+
+            this.options = new Options();
+            this.uiController = new UiController();
+            this.installer = new Installer();
+            this.browser = new Browser();
+
+
+
+
             PrepareInstallerUI();
         }
 
@@ -1127,18 +1143,6 @@ namespace Thwartski_Hud_Installer
             //open a special messagebox with Error as the window text and an icon
             MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
         }
-
-        /// <summary>
-        /// Easier messagebox call which can be accessed from other classes.
-        /// </summary>
-        /// <param name="exceptionMessage"></param>
-        public void showMessage(string message)
-        {
-            //open a messagebox
-            MessageBox.Show(message);
-        }
-
-
 
         /// <summary>
         /// launch the game and close the installer
