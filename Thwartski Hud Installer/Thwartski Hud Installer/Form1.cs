@@ -23,10 +23,11 @@ namespace Thwartski_Hud_Installer
         private Installer installer;
         private Downloader downloader;
         private Browser browser;
+        private Uninstaller uninstaller;
 
-        //instances of the object to compare etc
-        private HudFiles assetFiles;
-        private HudFiles installFiles;
+        //instances of the object to compare, install from etc
+        private HudFiles assetHud;
+        private HudFiles installHud;
 
 
         //defining tooltips for the form
@@ -55,15 +56,22 @@ namespace Thwartski_Hud_Installer
         {
             //instantiate classes so they can control public functions on this form
             this.downloader = new Downloader(this); 
+            this.options = new Options(this);
+            this.uiController = new UiController(this);
+            this.installer = new Installer(this);
+            this.browser = new Browser(this);
+            this.uninstaller = new Uninstaller(this);
 
-            this.options = new Options();
-            this.uiController = new UiController();
-            this.installer = new Installer();
-            this.browser = new Browser();
+            this.assetHud = new HudFiles(this);
+            this.installHud = new HudFiles(this);
 
 
+            //TODO make these actually dynamic
+            assetHud.VersionHud = new Version("2.0.4");
+            installHud.VersionHud = new Version("2.0.4");
 
 
+            //Generate tooltips, populate strings, comboboxes, and assets.
             PrepareInstallerUI();
         }
 
@@ -71,6 +79,7 @@ namespace Thwartski_Hud_Installer
         private void folderBrowserButton_Click(object sender, EventArgs e)
         {
             BrowseForInstallFolder();
+
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
@@ -83,7 +92,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageNormal;
 
                 //load the matching file into a bit array for later copying
-                GlobalStrings.AspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectNormal;
+                assetHud.FilenameHudAspect = Properties.Resources.stringFilenameAssetAspectNormal;
             }
             //widescreen aspect ratio
             else if (aspectSelector.SelectedIndex == 1)
@@ -92,7 +101,7 @@ namespace Thwartski_Hud_Installer
                 aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
 
                 //load the matching file into a bit array for later copying
-                GlobalStrings.AspectSelectedAssetFile = Properties.Resources.stringFilenameAssetAspectWidescreen;
+                assetHud.FilenameHudAspect = Properties.Resources.stringFilenameAssetAspectWidescreen;
             }
             //something went wrong
             else
@@ -164,7 +173,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = false;
 
             //attempt to install the hud
-            if (installHud())
+            if (performInstallation())
             {
                 //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
                 Form2 installSuccessForm = new Form2(this, GlobalStrings.InstallPath);
@@ -262,31 +271,6 @@ namespace Thwartski_Hud_Installer
 
 
 
-
-
-
-        /// <summary>
-        /// Browse, then make sure user has selected a valid folder.
-        /// </summary>
-        private void BrowseForInstallFolder()
-        {
-            // Show the Open File dialog. If the user clicks OK, record their Folder location.
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                //the player selected a valid folder
-                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
-                {
-                    setInstallLocation(folderBrowserDialog1.SelectedPath);
-                }
-                //the player didn't select a valid folder
-                else
-                {
-                    errorWindow(GlobalStrings.MessageBadFolderSelected);
-                }
-            }
-        }
-
-
         /// <summary>
         /// Generate tooltips, populate strings, comboboxes, and assets.
         /// </summary>
@@ -313,6 +297,7 @@ namespace Thwartski_Hud_Installer
             scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
             scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
 
+
             //decide whether to use the saved install path setting or to start generating one
             string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
             if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
@@ -324,119 +309,38 @@ namespace Thwartski_Hud_Installer
             else
             {
                 //try to guess at a default install directory
-                SetDefaultFolder();
+                browser.SetDefaultFolder();
                 //MessageBox.Show("saved location no good: " + savedBrowserPath);
             }
         
         }
-  
 
         /// <summary>
-        /// Take a guess where the right folder is, and set it as the default browser location if it exists.
+        /// Browse, then make sure user has selected a valid folder.
         /// </summary>
-        private void SetDefaultFolder()
+        private void BrowseForInstallFolder()
         {
-            if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps32Bit))
+            // Show the Open File dialog. If the user clicks OK, record their Folder location.
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
-                //a steam folder was fond
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps32Bit;
-
-                //try to guess your username
-                guessSteamUser(GlobalStrings.FolderSteamapps); 
-            }
-            else if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps64Bit))
-	        {
-                //a steam folder was found
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps64Bit;
-
-                //try to guess your username
-                guessSteamUser(Properties.Resources.stringFolderDefaultSteamapps64Bit); 
-	        }
-            else
-            {
-                //no obvious steam install was found
-                folderBrowserBoxLabel.Text = GlobalStrings.PathUnknownTeamFortress2;
-                folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescUnknown;
-            }
-        }
-
-        /// <summary>
-        /// Find a likely folder for the player's steam username.
-        /// </summary>
-        private void guessSteamUser(string steamappsFolder)
-        {
-            //create an array of the possible steam user folders
-            DirectoryInfo possibleSteamUserFoldersDir = new DirectoryInfo(steamappsFolder);
-            DirectoryInfo[] steamUserFolders = possibleSteamUserFoldersDir.GetDirectories();
-
-            //cycle through the steamapps folders in the default location, and eliminate obvious mismatches
-            foreach (DirectoryInfo steamUserFolder in steamUserFolders)
-            {
-                //MessageBox.Show(Convert.ToString(steamUser));
-
-                if (Convert.ToString(steamUserFolder) == "common")
+                //the player selected a valid folder
+                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
                 {
-                    //everyone has this folder; do nothing
+                    setInstallLocation(folderBrowserDialog1.SelectedPath);
                 }
-                else if (Convert.ToString(steamUserFolder) == "downloading")
-                {
-                    //everyone has this folder; do nothing
-                }
-                else if (Convert.ToString(steamUserFolder) == "sourcemods")
-                {
-                    //everyone has this folder; do nothing
-                }
-                else if (Convert.ToString(steamUserFolder) == "temp")
-                {
-                    //everyone has this folder; do nothing
-                }
+                //the player didn't select a valid folder
                 else
                 {
-                    //whatever's left is likely to be a userfolder.
-                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + Properties.Resources.stringFolderTeamFortress2);
-
-                    //the possible user contains the right folders
-                    if (possibleTeamFortress2PathDir.Exists)
-	                {
-                        //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder);
-
-                        //the username is legit
-                        GlobalStrings.FolderSteamUser = Convert.ToString(steamUserFolder);
-                        //MessageBox.Show(steamUser + " is the userfolder");
-                        
-                        //allow install at this location
-                        setInstallLocation(Convert.ToString(possibleTeamFortress2PathDir));
-
-                        //stop cycling through steam users
-                        return;
-
-	                }
-                    //this user seemed legitimate, but didn't contain the right subfolder. keep looking
-                    else
-                    {
-                        //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder + "doesn't exist");
-                    }
+                    errorWindow(GlobalStrings.MessageBadFolderSelected);
                 }
             }
-            //failed to find a steam user with tf2 obviously installed
-            //MessageBox.Show("no users were found with " + teamFortress2Folder);
-
-            //build the partial path
-            GlobalStrings.FolderSteamUser = Properties.Resources.stringFolderSteamUserUnknown;
-            GlobalStrings.PathPartialTeamFortress2 = steamappsFolder + GlobalStrings.FolderSteamUser + Properties.Resources.stringFolderTeamFortress2;
-
-            //update the textbox and folder browser with the partial path to get the player started.
-            folderBrowserDialog1.SelectedPath = steamappsFolder;
-            folderBrowserBoxLabel.Text = GlobalStrings.PathPartialTeamFortress2;
-
-            //change the text in the folder browser dialog
-            folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescPartial;
         }
+
 
         /// <summary>
         /// Once a valid location has been identified, allow the user to install.
         /// </summary>
-        private void setInstallLocation(string validInstallLocation)
+        public void setInstallLocation(string validInstallLocation)
         {
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
@@ -474,32 +378,32 @@ namespace Thwartski_Hud_Installer
             if (maxmodeIndex == 0 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
-                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
+                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
+                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
                 //MessageBox.Show("pub24/comp6");
             }
             //pub24 maxmode, comp9 minmode
             else if (maxmodeIndex == 0 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
-                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
+                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
+                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
                 //MessageBox.Show("pub24/comp9");
             }
             //pub32 maxmode, comp6 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 0)
             {
                 //load the corresponding files into bit arrays for later copying
-                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
-                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
+                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
+                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
                 //MessageBox.Show("pub32/comp6");
             }
             //pub32 maxmode, comp9 minmode
             else if (maxmodeIndex == 1 && minmodeIndex == 1)
             {
                 //load the corresponding files into bit arrays for later copying
-                GlobalStrings.ScoreboardSelectedAssetFile = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
-                GlobalStrings.MenuSelectedAssetFile = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
+                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
+                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
                 //MessageBox.Show("pub32/comp9");
             }
             //something went wrong
@@ -517,9 +421,9 @@ namespace Thwartski_Hud_Installer
         {
             //the paths of the custom asset files
             GlobalStrings.AssetOptionsPath = GlobalStrings.AssetPath + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
-            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.AspectSelectedAssetFile;
-            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.ScoreboardSelectedAssetFile;
-            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + GlobalStrings.MenuSelectedAssetFile;
+            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudAspect;
+            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudScoreboard;
+            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudMenu;
 
             //the paths the custom asset files will be installed to
             GlobalStrings.CustomInstallPathResource = GlobalStrings.InstallPath + Properties.Resources.stringFolderInstallPathResource;
@@ -839,7 +743,7 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         /// <param name="sourceFolder"></param>
         /// <param name="destinationFolder"></param>
-        public bool installHud()
+        public bool performInstallation()
         {
             //Used for iterating through file and folder lists
             DirectoryInfo installFolderDir = new DirectoryInfo(GlobalStrings.InstallPath);
@@ -1176,12 +1080,13 @@ namespace Thwartski_Hud_Installer
         private void downloadButton_Click(object sender, EventArgs e)
         {
             //download current updates and check if they need to be installed
-            if (downloader.checkAndUpdate())
+            if (downloader.checkAndUpdate(assetHud, installHud))
             {
                 //TODO special mode for the install button
             }
 
         }
+
 
        
 

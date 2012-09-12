@@ -13,12 +13,14 @@ namespace Thwartski_Hud_Installer
 {
     class Downloader
     {
-        //TODO make these actually dynamic
+        //TODO make this actually dynamic from the webserver
         Version serverVersion = new Version("2.0.4");
-        Version assetVersion = new Version("2.0.4");
-        Version installVersion = new Version("2.0.4");
 
-        //from to store the value being passed in
+
+
+
+
+        //form to store the value being passed in
         private Form1 mainForm = null;
 
         //constructor?
@@ -33,11 +35,11 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// If necessary, download and unzip new assets. Return true if install should be updated.
         /// </summary>
-        public bool checkAndUpdate() 
+        public bool checkAndUpdate(HudFiles assetHud, HudFiles installHud) 
         {
 
             //need to update assets?
-            if (updateRequired(assetVersion, serverVersion))
+            if (updateRequired(assetHud.VersionHud, serverVersion))
             {
 
                 MessageBox.Show("Downloading new assets!");
@@ -60,7 +62,7 @@ namespace Thwartski_Hud_Installer
             }
 
             //need to update install?
-            if (updateRequired(installVersion, assetVersion))
+            if (updateRequired(installHud.VersionHud, assetHud.VersionHud))
             {
                 MessageBox.Show("Install new assets!");
 
@@ -162,7 +164,7 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
-        /// Unzip file taken from sharpziplib
+        /// Unzip function taken from sharpziplib
         /// </summary>
         /// <param name="sourceZipFile"></param>
         /// <param name="DestinationFolder"></param>

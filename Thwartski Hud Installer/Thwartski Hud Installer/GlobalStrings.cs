@@ -31,17 +31,11 @@ namespace Thwartski_Hud_Installer
             public static string ZipFileLocation { get { return _zipFileLocation; } set { _assetPath = value; } }
 
         //which custom assets were selected to be installed in the comboboxes
-        private static string _aspectSelectedAssetFile;          //written at runtime
-        private static string _scoreboardSelectedAssetFile;      //written at runtime
-        private static string _menuSelectedAssetFile;            //written at runtime
         private static string _aspectSelectedAssetPath;          //written at runtime
         private static string _scoreboardSelectedAssetPath;      //written at runtime
         private static string _menuSelectedAssetPath;            //written at runtime
 
             //getters and setters
-            public static string AspectSelectedAssetFile { get { return _aspectSelectedAssetFile; } set { _aspectSelectedAssetFile = value; } }
-            public static string ScoreboardSelectedAssetFile { get { return _scoreboardSelectedAssetFile; } set { _scoreboardSelectedAssetFile = value; } }
-            public static string MenuSelectedAssetFile { get { return _menuSelectedAssetFile; } set { _menuSelectedAssetFile = value; } }
             public static string AspectSelectedAssetPath { get { return _aspectSelectedAssetPath; } set { _aspectSelectedAssetPath = value; } }
             public static string ScoreboardSelectedAssetPath { get { return _scoreboardSelectedAssetPath; } set { _scoreboardSelectedAssetPath = value; } }
             public static string MenuSelectedAssetPath { get { return _menuSelectedAssetPath; } set { _menuSelectedAssetPath = value; } }
