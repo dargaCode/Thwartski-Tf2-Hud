@@ -284,6 +284,7 @@
             this.folderBrowserButton.TabIndex = 29;
             this.folderBrowserButton.Text = "Browse";
             this.folderBrowserButton.UseVisualStyleBackColor = true;
+            this.folderBrowserButton.Click += new System.EventHandler(this.folderBrowserButton_Click);
             // 
             // panel1
             // 
@@ -344,7 +345,6 @@
 
         #endregion
 
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.TableLayoutPanel form1LayoutPanel;
         private System.Windows.Forms.Button uninstallButton;
         private System.Windows.Forms.Button installButton;
@@ -361,8 +361,9 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button folderBrowserButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label folderBrowserBoxLabel;
         private System.Windows.Forms.Button downloadButton;
+        public System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        public System.Windows.Forms.Label folderBrowserBoxLabel;
     }
 }
 
