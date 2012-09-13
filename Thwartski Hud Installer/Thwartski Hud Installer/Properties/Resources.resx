@@ -283,4 +283,12 @@
     <value>steam://rungameid/440</value>
     <comment>//private string for launching tf2</comment>
   </data>
+  <data name="stringFilenameZipfile" xml:space="preserve">
+    <value>AssetFiles.zip</value>
+    <comment>//what to name the zip file after downloading</comment>
+  </data>
+  <data name="stringFolderAsset" xml:space="preserve">
+    <value>Thwartski Hud Install Files\</value>
+    <comment>//where to unzip the zip file to</comment>
+  </data>
 </root>

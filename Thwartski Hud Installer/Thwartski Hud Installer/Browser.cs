@@ -9,7 +9,7 @@ namespace Thwartski_Hud_Installer
     class Browser
     {
 
-        //form to store the value being passed in
+        //classes to store the value being passed in
         private Form1 mainForm = null;
 
         //constructor?
@@ -19,6 +19,29 @@ namespace Thwartski_Hud_Installer
             mainForm = caller;
         }
 
+
+
+        /// <summary>
+        /// Fill the browser with a best guess default string or a saved string, if one exists.
+        /// </summary>
+        /// <returns></returns>
+        public void populateDefaultPath()
+        {
+            //decide whether to use the saved install path setting or to start generating one
+            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
+            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
+            {
+                //allow the hud to be installed at the saved location
+                mainForm.setInstallLocation(savedBrowserPath);
+                //MessageBox.Show("saved location good: " + savedBrowserPath);
+            }
+            else
+            {
+                //try to guess at a default install directory
+                SetDefaultFolder();
+                //MessageBox.Show("saved location no good: " + savedBrowserPath);
+            }
+        }
 
 
 

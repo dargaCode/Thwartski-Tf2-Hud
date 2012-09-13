@@ -18,32 +18,31 @@ namespace Thwartski_Hud_Installer
     public partial class Form1 : Form
     {
         //Instantiate classes
-        private Options options;
-        private UiController uiController;
+        private OptionsTracker optionsTracker;
         private Installer installer;
         private Downloader downloader;
         private Browser browser;
         private Uninstaller uninstaller;
 
-        //instances of the object to compare, install from etc
+        //instances of the hud to compare, install from etc
         private HudFiles assetHud;
         private HudFiles installHud;
 
+        //instances of options to update, modify files, etc
+        private HudOptions aspectOptions;
+        private HudOptions scoreboardMinmodeOptions;
+        private HudOptions scoreboardMaxmodeOptions;
+
 
         //defining tooltips for the form
-        static ToolTip HudInstallerTooltips = new ToolTip();
-
-
-        //used for cycling through assetfolder directory
-        static DirectoryInfo assetFolderDir = new DirectoryInfo(GlobalStrings.AssetPath);
-
-
+        static ToolTip HudInstallerTooltips = new ToolTip(); //TODO where should this go?
 
 
 
 
 
         //FORM EVENTS BELOW THIS POINT
+
 
 
         public Form1()
@@ -55,15 +54,23 @@ namespace Thwartski_Hud_Installer
         private void Form1_Load(object sender, EventArgs e)
         {
             //instantiate classes so they can control public functions on this form
-            this.downloader = new Downloader(this); 
-            this.options = new Options(this);
-            this.uiController = new UiController(this);
-            this.installer = new Installer(this);
-            this.browser = new Browser(this);
-            this.uninstaller = new Uninstaller(this);
-
             this.assetHud = new HudFiles(this);
             this.installHud = new HudFiles(this);
+
+            this.aspectOptions = new HudOptions(this, aspectCombobox, aspectPicturebox);
+            this.scoreboardMinmodeOptions = new HudOptions(this, scoreboardComboboxMinmode, scoreboardPictureboxMinmode);
+            this.scoreboardMaxmodeOptions = new HudOptions(this, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode);
+
+
+            //objects which reference other class objects
+            this.downloader = new Downloader(this, assetHud, installHud); 
+            this.installer = new Installer(this, assetHud, installHud);
+            this.optionsTracker = new OptionsTracker(this, assetHud, installHud, aspectOptions, scoreboardMinmodeOptions, scoreboardMaxmodeOptions);
+
+            //basic objects which only reference the form so far
+            this.uninstaller = new Uninstaller(this);
+            this.browser = new Browser(this);
+
 
 
             //TODO make these actually dynamic
@@ -71,8 +78,25 @@ namespace Thwartski_Hud_Installer
             installHud.VersionHud = new Version("2.0.4");
 
 
+
+            //generate tooltips for the form
+            updateTooltips();
+
+
+
+            optionsTracker.PopulateOptionObjects();
+
+
             //Generate tooltips, populate strings, comboboxes, and assets.
-            PrepareInstallerUI();
+            optionsTracker.PopulateComboboxes();
+
+            //Fill the browser with a best guess default string or a saved string, if one exists
+            browser.populateDefaultPath();
+
+
+
+
+
         }
 
         //browse for valid install locations
@@ -83,89 +107,26 @@ namespace Thwartski_Hud_Installer
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
-        private void aspectSelector_SelectedIndexChanged(object sender, EventArgs e)
+        private void aspectCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //normal aspect ratio
-            if (aspectSelector.SelectedIndex == 0)
-            {
-                //load image resource
-                aspectImageBox.Image = Properties.Resources.aspectImageNormal;
-
-                //load the matching file into a bit array for later copying
-                assetHud.FilenameHudAspect = Properties.Resources.stringFilenameAssetAspectNormal;
-            }
-            //widescreen aspect ratio
-            else if (aspectSelector.SelectedIndex == 1)
-            {
-                //load image resource
-                aspectImageBox.Image = Properties.Resources.aspectImageWidescreen;
-
-                //load the matching file into a bit array for later copying
-                assetHud.FilenameHudAspect = Properties.Resources.stringFilenameAssetAspectWidescreen;
-            }
-            //something went wrong
-            else
-            {
-                errorWindow("debug: variable index out of range! aspect=" + aspectSelector.SelectedIndex);
-            }
-
-            //update the text strings, buttons, etc.
-            optionsTracker();
+            //update images and file paths
+            aspectOptions.Update();
         }
 
-        //assign the correct image to the imagebox, depending on the combobox's selection
-        private void scoreboardSelectorMaxmode_SelectedIndexChanged(object sender, EventArgs e)
+        //assign the correct image to the Picturebox, depending on the combobox's selection
+        private void scoreboardComboboxMinmode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //pub24 scoreboard
-            if (scoreboardSelectorMaxmode.SelectedIndex == 0)
-            {
-                //load image resource
-                scoreboardPictureboxMaxmode.Image = Properties.Resources.scoreboardImagePub24;
-            }
-            //pub32 scoreboard
-            else if (scoreboardSelectorMaxmode.SelectedIndex == 1)
-            {
-                //load image resource
-                scoreboardPictureboxMaxmode.Image = Properties.Resources.scoreboardImagePub32;
-            }
-            //something went wrong
-            else
-            {
-                errorWindow("debug: variable index out of range! maxmode=" + scoreboardSelectorMaxmode.SelectedIndex);
-            }
-            //check both comboboxes and identify the right scoreboard files
-            updateScoreboardFiles();
-
-            //update the text strings, buttons, etc.
-            optionsTracker();
+            //update images and file paths
+            scoreboardMinmodeOptions.Update();
         }
-        //assign the correct image to the imagebox, depending on the combobox's selection
-        private void scoreboardSelectorMinmode_SelectedIndexChanged(object sender, EventArgs e)
+
+        //assign the correct image to the Picturebox, depending on the combobox's selection
+        private void scoreboardComboboxMaxmode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //comp6 scoreboard
-            if (scoreboardSelectorMinmode.SelectedIndex == 0)
-            {
-                //load image resource
-                scoreboardPictureboxMinmode.Image = Properties.Resources.scoreboardImageComp6;
-            }
-            //comp9 scoreboard
-            else if (scoreboardSelectorMinmode.SelectedIndex == 1)
-            {
-                //load image resource
-                scoreboardPictureboxMinmode.Image = Properties.Resources.scoreboardImageComp9;
-            }
-            //something went wrong
-            else
-            {
-                errorWindow("debug: variable index out of range! minmode=" + scoreboardSelectorMinmode.SelectedIndex);
-            }
-
-            //check both comboboxes and identify the right scoreboard files
-            updateScoreboardFiles();
-
-            //update the text strings, buttons, etc.
-            optionsTracker();
+            //update images and file paths
+            scoreboardMaxmodeOptions.Update();
         }
+
         //actually install the hud or update the installation with new custom files
         private void installButton_InstallClick(object sender, EventArgs e)
         {
@@ -173,10 +134,10 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = false;
 
             //attempt to install the hud
-            if (performInstallation())
+            if (installer.performInstallation())
             {
                 //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
-                Form2 installSuccessForm = new Form2(this, GlobalStrings.InstallPath);
+                Form2 installSuccessForm = new Form2(this, installHud.PathFolderHudLocation);
 
                 //show form2 only if the install succeeded
                 installSuccessForm.Show();
@@ -199,7 +160,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = false;
 
             //attempt to update the custom files (has its own validation)
-            if (updateCustomFiles())
+            if (installer.updateCustomFiles())
             {
                 MessageBox.Show(Properties.Resources.stringMessageUpdateSettingsComplete);
             }
@@ -239,7 +200,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = false;
 
             //attempt to delete the destination files (without saving backups)
-            if (wipeHudFiles(false))
+            if (installer.wipeHudFiles(false))
             {
                 //show the success message (but only if the function returned true)
                 MessageBox.Show(Properties.Resources.stringMessageUninstallComplete);
@@ -271,49 +232,7 @@ namespace Thwartski_Hud_Installer
 
 
 
-        /// <summary>
-        /// Generate tooltips, populate strings, comboboxes, and assets.
-        /// </summary>
-        private void PrepareInstallerUI()
-        {
-            //see where the exe is running from
-            GlobalStrings.ExeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\";
 
-            //generate tooltips for the form
-            updateTooltips();
-
-            //create arrays of combobox strings
-            string[] aspects = { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
-            string[] scoreboardsMaxmode = { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
-            string[] scoreboardsMinmode = { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
-
-            //populate the comboboxes with the correct options
-            aspectSelector.Items.AddRange(aspects);
-            scoreboardSelectorMaxmode.Items.AddRange(scoreboardsMaxmode);
-            scoreboardSelectorMinmode.Items.AddRange(scoreboardsMinmode);
-
-            //load settings for comboxes
-            aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
-            scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-
-
-            //decide whether to use the saved install path setting or to start generating one
-            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
-            if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
-            {
-                //allow the hud to be installed at the saved location
-                setInstallLocation(savedBrowserPath);
-                //MessageBox.Show("saved location good: " + savedBrowserPath);
-            }
-            else
-            {
-                //try to guess at a default install directory
-                browser.SetDefaultFolder();
-                //MessageBox.Show("saved location no good: " + savedBrowserPath);
-            }
-        
-        }
 
         /// <summary>
         /// Browse, then make sure user has selected a valid folder.
@@ -345,7 +264,7 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //global variable used for actually installing the files
-            GlobalStrings.InstallPath = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
+            installHud.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
 
             //prepare the rest of the the strings for install paths, filenames, etc.
             updateStrings();
@@ -369,10 +288,10 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Based on the settings for the two scoreboard comboboxes, determine which files to install.
         /// </summary>
-        private void updateScoreboardFiles()
+        public void updateScoreboardFiles()
         {
-            int maxmodeIndex = scoreboardSelectorMaxmode.SelectedIndex;
-            int minmodeIndex = scoreboardSelectorMinmode.SelectedIndex;
+            int maxmodeIndex = scoreboardComboboxMaxmode.SelectedIndex;
+            int minmodeIndex = scoreboardComboboxMinmode.SelectedIndex;
 
             //pub24 maxmode, comp6 minmode
             if (maxmodeIndex == 0 && minmodeIndex == 0)
@@ -417,16 +336,16 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Build all the strings for global variables such as install paths and filenames 
         /// </summary>
-        private void updateStrings()
+        public void updateStrings()
         {
             //the paths of the custom asset files
-            GlobalStrings.AssetOptionsPath = GlobalStrings.AssetPath + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
+            GlobalStrings.AssetOptionsPath = assetHud.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
             GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudAspect;
             GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudScoreboard;
             GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudMenu;
 
             //the paths the custom asset files will be installed to
-            GlobalStrings.CustomInstallPathResource = GlobalStrings.InstallPath + Properties.Resources.stringFolderInstallPathResource;
+            GlobalStrings.CustomInstallPathResource = installHud.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource;
             GlobalStrings.CustomInstallPathUi = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
 
             //the names and paths of the custom install files
@@ -438,7 +357,7 @@ namespace Thwartski_Hud_Installer
             GlobalStrings.InstallCheckerDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
 
             //the path for backup files
-            GlobalStrings.BackupPath = GlobalStrings.InstallPath + Properties.Resources.stringFolderBackup;
+            GlobalStrings.BackupPath = installHud.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
 
             //MessageBox.Show("installPath: \n" + installPath);
             //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);
@@ -454,20 +373,7 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show("backupPath: \n" + backupPath);
         }
 
-        /// <summary>
-        /// Update all relevant elements when an option is changed.
-        /// </summary>
-        private void optionsTracker()
-        {
-            //rebuild text strings
-            updateStrings();
 
-            //update options string background color
-            detectOptionsChanges();
-
-            //update install/uninstall buttons
-            updateButtons();
-        }
 
         /// <summary>
         /// Check if any options are different from their saved values.
@@ -478,7 +384,7 @@ namespace Thwartski_Hud_Installer
             bool optionsChanged = false;
 
             //if the hud hasn't been installed, no need to detect options changes
-            if (!isHudInstalled())
+            if (!installer.isHudInstalled())
             {
                 aspectLabel.BackColor = Color.Empty;
                 scoreboardMaxmodeLabel.BackColor = Color.Empty;
@@ -486,7 +392,7 @@ namespace Thwartski_Hud_Installer
                 return false;
             }
             //aspect ratio option is different
-            if (aspectSelector.SelectedIndex != Properties.Settings.Default.settingComboboxAspect)
+            if (aspectCombobox.SelectedIndex != Properties.Settings.Default.settingComboboxAspect)
             {
                 //highlight the background
                 aspectLabel.BackColor = Color.LightGreen;
@@ -501,7 +407,7 @@ namespace Thwartski_Hud_Installer
             }
 
             //maxmode scoreboard option is different
-            if (scoreboardSelectorMaxmode.SelectedIndex != Properties.Settings.Default.settingComboboxMaxmode)
+            if (scoreboardComboboxMaxmode.SelectedIndex != Properties.Settings.Default.settingComboboxMaxmode)
             {
                 //highlight the background
                 scoreboardMaxmodeLabel.BackColor = Color.LightGreen;
@@ -515,7 +421,7 @@ namespace Thwartski_Hud_Installer
                 scoreboardMaxmodeLabel.BackColor = Color.Empty;
             }
             //minmode scoreboard option is different
-            if (scoreboardSelectorMinmode.SelectedIndex != Properties.Settings.Default.settingComboboxMinmode)
+            if (scoreboardComboboxMinmode.SelectedIndex != Properties.Settings.Default.settingComboboxMinmode)
             {
                 //highlight the background
                 scoreboardMinmodeLabel.BackColor = Color.LightGreen;
@@ -535,10 +441,10 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Check whether to enable or disable install/uninstall/update buttons
         /// </summary>
-        private void updateButtons()
+        public void updateButtons()
         {
             //the hud is currently installed
-            if (isHudInstalled())
+            if (installer.isHudInstalled())
             {
                 //always enable the uninstall button if the hud is installed
                 uninstallButton.Enabled = true;
@@ -567,22 +473,7 @@ namespace Thwartski_Hud_Installer
             }
         }
 
-        /// <summary>
-        /// check if the hud is installed
-        /// </summary>
-        /// <returns></returns>
-        public bool isHudInstalled() 
-        {
-            //check for the dummy file in the resource folder
-            if (System.IO.File.Exists(GlobalStrings.InstallCheckerDestination))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+
 
         /// <summary>
         /// Change the install button functionality between update and install
@@ -682,20 +573,22 @@ namespace Thwartski_Hud_Installer
             HudInstallerTooltips.SetToolTip(this.folderBrowserBoxLabel, GlobalStrings.TooltipFolderBrowse);
             HudInstallerTooltips.SetToolTip(this.folderBrowserButton, GlobalStrings.TooltipFolderBrowse);
             //assign aspect ratio tooltips
-            HudInstallerTooltips.SetToolTip(this.aspectImageBox, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectPicturebox, GlobalStrings.TooltipAspectRatio);
             HudInstallerTooltips.SetToolTip(this.aspectLabel, GlobalStrings.TooltipAspectRatio);
-            HudInstallerTooltips.SetToolTip(this.aspectSelector, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectCombobox, GlobalStrings.TooltipAspectRatio);
             //assign maxmode scoreboard tooltips
             HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMaxmode, GlobalStrings.TooltipMaxmode);
             HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMaxmode, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardComboboxMaxmode, GlobalStrings.TooltipMaxmode);
             //assign minmode scoreboard tooltips
             HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMinmode, GlobalStrings.TooltipMinmode);
             HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardSelectorMinmode, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardComboboxMinmode, GlobalStrings.TooltipMinmode);
             //assign install and uninstall tooltips
             HudInstallerTooltips.SetToolTip(this.installButton, GlobalStrings.TooltipInstallButton);
             HudInstallerTooltips.SetToolTip(this.uninstallButton, GlobalStrings.TooltipUninstallButton);
+
+            //TODO only some tooltips need to be refreshed dynamically rather than just initially defined
         }
 
         /// <summary>
@@ -707,9 +600,9 @@ namespace Thwartski_Hud_Installer
             //and the install button can be enabled when options have changed.
 
             //update the settings for each combobox option (the folder browser path is saved right as it changes)
-            Properties.Settings.Default.settingComboboxAspect = aspectSelector.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMaxmode = scoreboardSelectorMaxmode.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMinmode = scoreboardSelectorMinmode.SelectedIndex;
+            Properties.Settings.Default.settingComboboxAspect = aspectCombobox.SelectedIndex;
+            Properties.Settings.Default.settingComboboxMaxmode = scoreboardComboboxMaxmode.SelectedIndex;
+            Properties.Settings.Default.settingComboboxMinmode = scoreboardComboboxMinmode.SelectedIndex;
 
             //now actually save the settings
             Properties.Settings.Default.Save();
@@ -727,9 +620,9 @@ namespace Thwartski_Hud_Installer
         private void revertOptions()
         {
             //update the settings for each combobox options (the folder browser path is saved right as it changes)
-            aspectSelector.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            scoreboardSelectorMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
-            scoreboardSelectorMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
+            aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
+            scoreboardComboboxMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
+            scoreboardComboboxMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
 
             //update options so that modified options won't remain highlighted
             detectOptionsChanges();
@@ -738,315 +631,7 @@ namespace Thwartski_Hud_Installer
             updateButtons();
         }
 
-        /// <summary>
-        /// Attempt to install the hud.
-        /// </summary>
-        /// <param name="sourceFolder"></param>
-        /// <param name="destinationFolder"></param>
-        public bool performInstallation()
-        {
-            //Used for iterating through file and folder lists
-            DirectoryInfo installFolderDir = new DirectoryInfo(GlobalStrings.InstallPath);
-
-            //delete the files that are automatically created on game launch
-            deleteForcedValveFiles();
-
-            //attempt to delete the destination files (and save backups)
-            if (!wipeHudFiles(true))
-            {
-                //wiping the hud failed; immediately return false
-                return false;
-            }
-            else
-            {
-                //exception handling for installing the hud
-                try
-                {
-                    //wiping the hud succeeded. attempt to install the new hud files
-                    copyFilesAndFolders(assetFolderDir, installFolderDir);
-
-                    //create a dummy text file to let the launcher know the hud is installed
-                    if (!isHudInstalled())
-                    {
-                        //create the file, but just close it without writing any text inside
-                        using (StreamWriter versionFile = new StreamWriter(GlobalStrings.InstallCheckerDestination))
-                        {
-                            versionFile.Close();
-                            versionFile.Dispose();
-                        }
-                    }
-                }
-                catch (System.IO.DirectoryNotFoundException)
-                {
-                    //happens when the gameassets folder has been deleted or moved away from the exe
-                    errorWindow(GlobalStrings.ExceptionAssetsMissing);
-
-                    //stop the function, send false back to stop the rest of the button functionality.
-                    return false;
-                }
-                catch (System.UnauthorizedAccessException)
-                {
-                    //happens when tf2 is running (and therefore keeping the font files in use).
-                    errorWindow(GlobalStrings.ExceptionGameRunning);
-
-                    //stop the function, send false back to stop the rest of the button functionality.
-                    return false;
-                }
-                catch (System.IO.IOException)
-                {
-                    //usually happens when the user tries to delete a folder they are viewing.
-                    errorWindow(GlobalStrings.ExceptionFolderOpen);
-
-                    //stop the function, send false back to stop the rest of the button functionality.
-                    return false;
-                }
-                //generic exception catch
-                catch (System.Exception problem)
-                {
-                    //generic exception for unexpected case
-                    errorWindow(problem.Message);
-
-                    //stop the function, send false back to stop the rest of the button functionality.
-                    return false;
-                }
-            }
-            //attempt to update the custom files (contains its own exception handling)
-            if (!updateCustomFiles())
-            {
-                //installing custom files failed; immediately return false
-                return false;
-            }
-            //uninstalling and installing worked with no exceptions; return true
-            return true;
-        }
-
-        /// <summary>
-        /// Backup and delete all relevant files from the install directory.
-        /// </summary>
-        /// <param name="sourceFolder"></param>
-        /// <param name="destinationFolder"></param>
-        public bool wipeHudFiles(bool saveBackups)
-        {
-            //Establish backup time once so different folders can't straddle multiple seconds. (this actually has been happening)
-            string timestampFolderName = String.Format(@"\Date-{0:yyyy-MM-dd_}Time.{1:HH.mm.ss}\", DateTime.Now, DateTime.Now);
-            //MessageBox.Show(timestampFolderName);
-
-            //exception handling for file deletion
-            try
-            {
-                //Iterate through all the folders in the source asset folder and back up all of them before copying.
-                DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
-                foreach (DirectoryInfo assetSubFolder in assetSubFolders)
-                {
-                    backupAndDeleteFolder(GlobalStrings.InstallPath, assetSubFolder, GlobalStrings.BackupPath, saveBackups, timestampFolderName);
-                }
-            }
-            catch (System.IO.DirectoryNotFoundException)
-            {
-                //happens when the gameassets folder has been deleted or moved away from the exe
-                errorWindow(GlobalStrings.ExceptionAssetsMissing);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.UnauthorizedAccessException)
-            {
-                //happens when tf2 is running (and therefore keeping the font files in use).
-                errorWindow(GlobalStrings.ExceptionGameRunning);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.IO.IOException)
-            {
-                //usually happens when the user tries to delete a folder they are viewing.
-                errorWindow(GlobalStrings.ExceptionFolderOpen);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                errorWindow(problem.Message);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            //if everything worked with no exceptions, return true
-            return true;
-        }
-
-        /// <summary>
-        /// Delete the valve files which are created on game launch, so they don't trigger a pointless backup.
-        /// </summary>
-        static void deleteForcedValveFiles()
-        {
-            //shorter local string name for readability
-            string Resource = GlobalStrings.CustomInstallPathResource;
-
-            //one large try for everything since this fail isn't important
-            try
-            {
-                //go through the list of valve fonts/icons and delete them if they exist
-                foreach (string forcedValveFile in GlobalStrings.ForcedValveFiles)
-                {
-                    if (File.Exists(Resource + forcedValveFile))
-                    {
-                        File.Delete(Resource + forcedValveFile);
-                        //MessageBox.Show("deleting " + ValveFile);
-                    }
-                }
-                //if resources exists but is empty, delete it so it won't generate a useless backup for one empty folder
-                if (Directory.Exists(Resource))
-                {
-                    //MessageBox.Show(String.Format(@"{0} has {1} files and {2} folders after cleanup", Resource, Convert.ToString(Directory.GetFiles(Resource).Length), Convert.ToString(Directory.GetDirectories(Resource).Length)));
-
-                    if (Directory.GetDirectories(Resource).Length == 0 && Directory.GetFiles(Resource).Length == 0)
-                    {
-                        Directory.Delete(Resource);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                //swallowing this exception
-                //if this method fails to do its job, an unnecessary backup may be created, but that's it
-                //it's not worth warning the user about
-            }
-        }
-
-        /// <summary>
-        /// Back up the folder with a timestamp, then delete it and all its contents.
-        /// </summary>
-        /// <param name="sourceFolder"></param>
-        /// <param name="destinationFolder"></param>
-        static void backupAndDeleteFolder(string sourcePath, DirectoryInfo folderName, string backupPath, bool backupDesired, string backupFolderName)
-        {
-            string existingCompletePath = sourcePath + folderName;
-            string backupCompletePath = backupPath + backupFolderName + folderName;
-
-            DirectoryInfo existingFolderDir = new DirectoryInfo(existingCompletePath);
-            DirectoryInfo backupFolderDir = new DirectoryInfo(backupCompletePath);
-
-            if (existingFolderDir.Exists)
-            {
-                //If the player hasn't deleted it, and a request for backups has been passed in, back the folder up.
-                if (backupDesired)
-                {
-                    copyFilesAndFolders(existingFolderDir, backupFolderDir);
-                }
-                //delete existing hud file either way
-                Directory.Delete(existingCompletePath, true);
-            }
-        }
-
-        /// <summary>
-        /// Copy all files and folders to a new location, overwriting all files.
-        /// </summary>
-        /// <param name="sourceFolder"></param>
-        /// <param name="destinationFolder"></param>
-        static void copyFilesAndFolders(DirectoryInfo sourceFolder, DirectoryInfo destinationFolder)
-        {
-            if (!destinationFolder.Exists)
-            {
-                destinationFolder.Create();
-            }
-            else
-            {
-                //Make the folder writeable
-                destinationFolder.Attributes = FileAttributes.Normal;
-            }
-
-            // Copy all files. 
-            FileInfo[] files = sourceFolder.GetFiles();
-            foreach (FileInfo asset in files)
-            {
-                //make the file writeable
-                asset.IsReadOnly = false;
-
-                //Copy file to new location, overwriting if it already exists.
-                asset.CopyTo(Path.Combine(destinationFolder.FullName, asset.Name), true);
-            }
-
-            // Process subdirectories. 
-            DirectoryInfo[] subfolders = sourceFolder.GetDirectories();
-            foreach (DirectoryInfo sourceSubFolder in subfolders)
-            {
-                // Get destination directory. 
-                string destinationSubFolder = Path.Combine(destinationFolder.FullName, sourceSubFolder.Name);
-
-                // Call CopyDirectory() recursively. 
-                copyFilesAndFolders(sourceSubFolder, new DirectoryInfo(destinationSubFolder));
-            }
-        }
-
-        /// <summary>
-        /// Don't install the full hud, just update the custom files.
-        /// </summary>
-        /// <param name="sourceFolder"></param>
-        /// <param name="destinationFolder"></param>
-        public bool updateCustomFiles()
-        {
-            //exception handling for installing the hud
-            try
-            {
-                //copy the custom files from their asset location to their install location
-                System.IO.File.Copy(GlobalStrings.MenuSelectedAssetPath, GlobalStrings.MenuFileDestination, true);
-                System.IO.File.Copy(GlobalStrings.AspectSelectedAssetPath, GlobalStrings.AspectFileDestination, true);
-                System.IO.File.Copy(GlobalStrings.ScoreboardSelectedAssetPath, GlobalStrings.ScoreboardFileDestination, true);
-
-                //MessageBox.Show(assetFolderDir + " to " + installFolderDir);
-                //MessageBox.Show(menuSelectedAssetPath + " to " + menuFileDestination);
-                //MessageBox.Show(aspectSelectedAssetPath + " to " + aspectFileDestination);
-                //MessageBox.Show(scoreboardSelectedAssetPath + " to " + scoreboardFileDestination);
-            }
-            catch (System.IO.DirectoryNotFoundException)
-            {
-                //happens when the gameassets folder has been deleted or moved away from the exe
-                errorWindow(GlobalStrings.ExceptionAssetsMissing);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.UnauthorizedAccessException)
-            {
-                //happens when tf2 is running (and therefore keeping the font files in use).
-                errorWindow(GlobalStrings.ExceptionGameRunning);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.IO.IOException)
-            {
-                //usually happens when the user tries to delete a folder they are viewing.
-                errorWindow(GlobalStrings.ExceptionFolderOpen);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                errorWindow(problem.Message);
-
-                //stop the function, send false back to stop the rest of the button functionality.
-                return false;
-            }
-
-            //installing the custom files worked with no exceptions; return true
-            return true;
-        }
-
-        /// <summary>
-        /// Show a special error window with a sound and a custom message.
-        /// </summary>
-        /// <param name="exceptionMessage"></param>
-        public void errorWindow(string exceptionMessage)
-        {
-            //open a special messagebox with Error as the window text and an icon
-            MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-        }
+        
 
         /// <summary>
         /// launch the game and close the installer
@@ -1072,6 +657,15 @@ namespace Thwartski_Hud_Installer
             return true;
         }
 
+        /// <summary>
+        /// Show a special error window with a sound and a custom message.
+        /// </summary>
+        /// <param name="exceptionMessage"></param>
+        public void errorWindow(string exceptionMessage)
+        {
+            //open a special messagebox with Error as the window text and an icon
+            MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+        }
 
 
         //TODO remove this button and make the check happen automatically
@@ -1079,8 +673,9 @@ namespace Thwartski_Hud_Installer
         //testing for downloading and upzipping files
         private void downloadButton_Click(object sender, EventArgs e)
         {
+
             //download current updates and check if they need to be installed
-            if (downloader.checkAndUpdate(assetHud, installHud))
+            if (downloader.checkAndUpdate())
             {
                 //TODO special mode for the install button
             }

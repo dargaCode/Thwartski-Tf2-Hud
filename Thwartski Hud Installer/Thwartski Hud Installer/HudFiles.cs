@@ -7,6 +7,19 @@ namespace Thwartski_Hud_Installer
 {
     class HudFiles
     {
+        //classes to store the value being passed in
+        private Form1 mainForm = null;
+
+        //constructor?
+        public HudFiles(Form1 caller)
+        {
+            //store the calling form
+            mainForm = caller;
+        } 
+
+
+
+
         //should contain: 
 
         private string _pathFolderHudLocation;
@@ -25,15 +38,7 @@ namespace Thwartski_Hud_Installer
 
 
 
-        //form to store the value being passed in
-        private Form1 mainForm = null;
 
-        //constructor?
-        public HudFiles(Form1 caller)
-        {
-            //store the calling form
-            mainForm = caller;
-        } 
 
 
 

@@ -8,7 +8,7 @@ namespace Thwartski_Hud_Installer
     class Uninstaller
     {
 
-        //form to store the value being passed in
+        //classes to store the value being passed in
         private Form1 mainForm = null;
 
         //constructor?

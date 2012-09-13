@@ -8,28 +8,16 @@ namespace Thwartski_Hud_Installer
     static class GlobalStrings
     {
 
-
-        //WRITABLE
-
+        //TODO move all these writable strings into other objects
 
         //default install/uninstall button tooltips
-        private static string _tooltipInstallButton = _tooltipInstallFreshMode;    //overridden in installButtonMode
+        private static string _tooltipInstallButton = _tooltipInstallFreshMode;      //overridden in installButtonMode
         private static string _tooltipUninstallButton = _tooltipInstallOptionsMode;  //overridden in installButtonMode
 
             //getters and setters
             public static string TooltipInstallButton { get { return _tooltipInstallButton; } set { _tooltipInstallButton = value; } }
             public static string TooltipUninstallButton { get { return _tooltipUninstallButton; } set { _tooltipUninstallButton = value; } }
-
-        //paths for copying assets and installing them
-        private static string _exeFolder; //written at runtime
-        private static string _assetPath = _exeFolder + @"Thwartski Hud Install Files\";
-        private static string _zipFileLocation = _assetPath + "AssetFiles.zip";
-
-            //getters and setters
-            public static string ExeFolder { get { return _exeFolder; } set { _exeFolder = value; } }
-            public static string AssetPath { get { return _assetPath; } set { _assetPath = value; } }
-            public static string ZipFileLocation { get { return _zipFileLocation; } set { _assetPath = value; } }
-
+           
         //which custom assets were selected to be installed in the comboboxes
         private static string _aspectSelectedAssetPath;          //written at runtime
         private static string _scoreboardSelectedAssetPath;      //written at runtime
@@ -41,12 +29,10 @@ namespace Thwartski_Hud_Installer
             public static string MenuSelectedAssetPath { get { return _menuSelectedAssetPath; } set { _menuSelectedAssetPath = value; } }
 
         //copy and installing assets
-        private static string _installPath;                      //written at runtime
         private static string _assetOptionsPath;                 //written at runtime
         private static string _backupPath;                       //written at runtime
 
             //getters and setters
-            public static string InstallPath { get { return _installPath; } set { _installPath = value; } }
             public static string AssetOptionsPath { get { return _assetOptionsPath; } set { _assetOptionsPath = value; } }
             public static string BackupPath { get { return _backupPath; } set { _backupPath = value; } }
 
@@ -67,12 +53,12 @@ namespace Thwartski_Hud_Installer
         //paths for browsing folders
         private static string _folderSteamapps;                  //written at runtime
         private static string _folderSteamUser;                  //written at runtime
-        private static string _pathPartialTeamFortress2;     //written at runtime
+        private static string _pathPartialTeamFortress2;         //written at runtime
 
-        //getters and setters
-        public static string FolderSteamapps { get { return _folderSteamapps; } set { _folderSteamapps = value; } }
-        public static string FolderSteamUser { get { return _folderSteamUser; } set { _folderSteamUser = value; } }
-        public static string PathPartialTeamFortress2 { get { return _pathPartialTeamFortress2; } set { _pathPartialTeamFortress2 = value; } }
+            //getters and setters
+            public static string FolderSteamapps { get { return _folderSteamapps; } set { _folderSteamapps = value; } }
+            public static string FolderSteamUser { get { return _folderSteamUser; } set { _folderSteamUser = value; } }
+            public static string PathPartialTeamFortress2 { get { return _pathPartialTeamFortress2; } set { _pathPartialTeamFortress2 = value; } }
 
         //file and path to let the buttons know the hud is installed
         private static string _installCheckerDestination;        //written at runtime
@@ -81,7 +67,11 @@ namespace Thwartski_Hud_Installer
             public static string InstallCheckerDestination { get { return _installCheckerDestination; } set { _installCheckerDestination = value; } }
 
 
+
+
         //READ ONLY
+
+
 
 
         //array of filenames that valve automatically generates, so they can be left out from backups
