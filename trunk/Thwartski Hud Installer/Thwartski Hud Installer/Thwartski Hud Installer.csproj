@@ -59,7 +59,7 @@
     <Compile Include="Downloader.cs" />
     <Compile Include="HudFiles.cs" />
     <Compile Include="Installer.cs" />
-    <Compile Include="UiController.cs" />
+    <Compile Include="OptionsTracker.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +74,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Options.cs" />
+    <Compile Include="HudOptions.cs" />
     <Compile Include="GlobalStrings.cs" />
     <Compile Include="Uninstaller.cs" />
     <EmbeddedResource Include="Form1.resx">

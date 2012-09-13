@@ -13,33 +13,46 @@ namespace Thwartski_Hud_Installer
 {
     class Downloader
     {
-        //TODO make this actually dynamic from the webserver
-        Version serverVersion = new Version("2.0.4");
-
-
-
-
-
-        //form to store the value being passed in
+        //classes to store the value being passed in
         private Form1 mainForm = null;
+        private HudFiles assetHud = null;
+        private HudFiles installHud = null;
 
         //constructor?
-        public Downloader(Form1 caller)
+        public Downloader(Form1 caller, HudFiles assets, HudFiles install)
         {
             //store the calling form
             mainForm = caller;
-        } 
 
+            //assign the hud objects
+            assetHud = assets;
+            installHud = install;
+        }
+
+
+
+        /// <summary>
+        /// Check the server version and return its value.
+        /// </summary>
+        /// <returns></returns>
+        private Version checkServerVersion()
+        {
+
+            //TODO make this actually check the webserver
+            Version serverVersion = new Version("2.0.4");
+
+            return serverVersion;
+        }
 
 
         /// <summary>
         /// If necessary, download and unzip new assets. Return true if install should be updated.
         /// </summary>
-        public bool checkAndUpdate(HudFiles assetHud, HudFiles installHud) 
+        public bool checkAndUpdate() 
         {
 
             //need to update assets?
-            if (updateRequired(assetHud.VersionHud, serverVersion))
+            if (updateRequired(assetHud.VersionHud, checkServerVersion()))
             {
 
                 MessageBox.Show("Downloading new assets!");
@@ -84,12 +97,12 @@ namespace Thwartski_Hud_Installer
         /// Compare an active version with a latest version, return true if update required.
         /// </summary>
         /// <param name="active"></param>
-        /// <param name="latest"></param>
+        /// <param name="ideal"></param>
         /// <returns></returns>
-        private bool updateRequired(Version active, Version latest)
+        private bool updateRequired(Version active, Version ideal)
         {
             //active older than latest
-            if ((active.CompareTo(latest)) < 0)
+            if ((active.CompareTo(ideal)) < 0)
             {
                 //MessageBox.Show("Version comparison: " + Convert.ToString((active.CompareTo(latest))) + "\n \nVersion out of date.");
                 
@@ -97,7 +110,7 @@ namespace Thwartski_Hud_Installer
                 return true;
             }
             //active equal to latest
-            else if ((active.CompareTo(latest)) == 0)
+            else if ((active.CompareTo(ideal)) == 0)
             {
                 //MessageBox.Show("Version comparison: " + Convert.ToString((active.CompareTo(latest))) + "\n \nVersion up to date.");
                 
@@ -121,9 +134,20 @@ namespace Thwartski_Hud_Installer
         /// <returns></returns>
         private bool updateAssets()
         {
+            //where is the exe running from (so we can put files near it)
+            string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\";
+            
+            //where to put the zipfile
+            string PathZipfile = exeFolder + Properties.Resources.stringFilenameZipfile;
+
+            //define the asset location
+            assetHud.PathFolderHudLocation = exeFolder + Properties.Resources.stringFolderAsset;
 
             //used for cycling through assetfolder directory
-            DirectoryInfo assetFolderDir = new DirectoryInfo(GlobalStrings.AssetPath);
+            DirectoryInfo assetFolderDir = new DirectoryInfo(assetHud.PathFolderHudLocation);
+
+
+
 
             //try to download and unzip
             try
@@ -137,16 +161,16 @@ namespace Thwartski_Hud_Installer
                 //download the most recent file
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", GlobalStrings.ZipFileLocation); //TODO needs to eventually be dynamic
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", PathZipfile); //TODO needs to eventually be dynamic
                 }
 
                 //unzip the files to wherever the exe is
-                unZip(GlobalStrings.ZipFileLocation, GlobalStrings.ExeFolder);
+                unZip(PathZipfile, exeFolder);
 
                 //remove the zip file when done
-                if (File.Exists(GlobalStrings.ZipFileLocation))
+                if (File.Exists(PathZipfile))
                 {
-                    File.Delete(GlobalStrings.ZipFileLocation);
+                    File.Delete(PathZipfile);
                 }
             }
             //something went wrong with creating the folder, unzipping, or cleaning up

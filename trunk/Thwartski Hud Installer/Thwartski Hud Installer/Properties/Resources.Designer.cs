@@ -317,6 +317,24 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AssetFiles.zip.
+        /// </summary>
+        internal static string stringFilenameZipfile {
+            get {
+                return ResourceManager.GetString("stringFilenameZipfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thwartski Hud Install Files\.
+        /// </summary>
+        internal static string stringFolderAsset {
+            get {
+                return ResourceManager.GetString("stringFolderAsset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to _Thwartski Hud Options\.
         /// </summary>
         internal static string stringFolderAssetOptions {
