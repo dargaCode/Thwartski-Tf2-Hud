@@ -25,13 +25,13 @@ namespace Thwartski_Hud_Installer
         private Uninstaller uninstaller;
 
         //instances of the hud to compare, install from etc
-        private HudFiles assetHud;
-        private HudFiles installHud;
+        private Location assetLocation;
+        private Location installLocation;
 
         //instances of options to update, modify files, etc
-        private HudOptions aspectOptions;
-        private HudOptions scoreboardMinmodeOptions;
-        private HudOptions scoreboardMaxmodeOptions;
+        private Option aspectOption;
+        private Option scoreboardMinmodeOption;
+        private Option scoreboardMaxmodeOption;
 
 
         //defining tooltips for the form
@@ -54,18 +54,18 @@ namespace Thwartski_Hud_Installer
         private void Form1_Load(object sender, EventArgs e)
         {
             //instantiate classes so they can control public functions on this form
-            this.assetHud = new HudFiles(this);
-            this.installHud = new HudFiles(this);
+            this.assetLocation = new Location(this);
+            this.installLocation = new Location(this);
 
-            this.aspectOptions = new HudOptions(this, aspectCombobox, aspectPicturebox);
-            this.scoreboardMinmodeOptions = new HudOptions(this, scoreboardComboboxMinmode, scoreboardPictureboxMinmode);
-            this.scoreboardMaxmodeOptions = new HudOptions(this, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode);
+            this.aspectOption = new Option(this, aspectCombobox, aspectPicturebox);
+            this.scoreboardMinmodeOption = new Option(this, scoreboardComboboxMinmode, scoreboardPictureboxMinmode);
+            this.scoreboardMaxmodeOption = new Option(this, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode);
 
 
             //objects which reference other class objects
-            this.downloader = new Downloader(this, assetHud, installHud); 
-            this.installer = new Installer(this, assetHud, installHud);
-            this.optionsTracker = new OptionsTracker(this, assetHud, installHud, aspectOptions, scoreboardMinmodeOptions, scoreboardMaxmodeOptions);
+            this.downloader = new Downloader(this, assetLocation, installLocation); 
+            this.installer = new Installer(this, assetLocation, installLocation);
+            this.optionsTracker = new OptionsTracker(this, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
 
             //basic objects which only reference the form so far
             this.uninstaller = new Uninstaller(this);
@@ -74,8 +74,8 @@ namespace Thwartski_Hud_Installer
 
 
             //TODO make these actually dynamic
-            assetHud.VersionHud = new Version("2.0.4");
-            installHud.VersionHud = new Version("2.0.4");
+            assetLocation.VersionHud = new Version("2.0.4");
+            installLocation.VersionHud = new Version("2.0.4");
 
 
 
@@ -83,12 +83,9 @@ namespace Thwartski_Hud_Installer
             updateTooltips();
 
 
-
-            optionsTracker.PopulateOptionObjects();
-
-
             //Generate tooltips, populate strings, comboboxes, and assets.
-            optionsTracker.PopulateComboboxes();
+            optionsTracker.Setup();
+
 
             //Fill the browser with a best guess default string or a saved string, if one exists
             browser.populateDefaultPath();
@@ -110,21 +107,21 @@ namespace Thwartski_Hud_Installer
         private void aspectCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            aspectOptions.Update();
+            optionsTracker.updateOption(aspectOption);
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardComboboxMinmode_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            scoreboardMinmodeOptions.Update();
+            optionsTracker.updateOption(scoreboardMinmodeOption);
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardComboboxMaxmode_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            scoreboardMaxmodeOptions.Update();
+            optionsTracker.updateOption(scoreboardMaxmodeOption);
         }
 
         //actually install the hud or update the installation with new custom files
@@ -137,7 +134,7 @@ namespace Thwartski_Hud_Installer
             if (installer.performInstallation())
             {
                 //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
-                Form2 installSuccessForm = new Form2(this, installHud.PathFolderHudLocation);
+                Form2 installSuccessForm = new Form2(this, installLocation.PathFolderHudLocation);
 
                 //show form2 only if the install succeeded
                 installSuccessForm.Show();
@@ -264,7 +261,7 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show(validInstallLocation + " is the location to install");
 
             //global variable used for actually installing the files
-            installHud.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
+            installLocation.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
 
             //prepare the rest of the the strings for install paths, filenames, etc.
             updateStrings();
@@ -286,66 +283,18 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
-        /// Based on the settings for the two scoreboard comboboxes, determine which files to install.
-        /// </summary>
-        public void updateScoreboardFiles()
-        {
-            int maxmodeIndex = scoreboardComboboxMaxmode.SelectedIndex;
-            int minmodeIndex = scoreboardComboboxMinmode.SelectedIndex;
-
-            //pub24 maxmode, comp6 minmode
-            if (maxmodeIndex == 0 && minmodeIndex == 0)
-            {
-                //load the corresponding files into bit arrays for later copying
-                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub24Comp6;
-                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub24Comp6;
-                //MessageBox.Show("pub24/comp6");
-            }
-            //pub24 maxmode, comp9 minmode
-            else if (maxmodeIndex == 0 && minmodeIndex == 1)
-            {
-                //load the corresponding files into bit arrays for later copying
-                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub24Comp9;
-                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub24Comp9;
-                //MessageBox.Show("pub24/comp9");
-            }
-            //pub32 maxmode, comp6 minmode
-            else if (maxmodeIndex == 1 && minmodeIndex == 0)
-            {
-                //load the corresponding files into bit arrays for later copying
-                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub32Comp6;
-                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub32Comp6;
-                //MessageBox.Show("pub32/comp6");
-            }
-            //pub32 maxmode, comp9 minmode
-            else if (maxmodeIndex == 1 && minmodeIndex == 1)
-            {
-                //load the corresponding files into bit arrays for later copying
-                assetHud.FilenameHudScoreboard = Properties.Resources.stringFilenameAssetScoreboardPub32Comp9;
-                assetHud.FilenameHudMenu = Properties.Resources.stringFilenameAssetMenuPub32Comp9;
-                //MessageBox.Show("pub32/comp9");
-            }
-            //something went wrong
-            else
-            {
-                //this case is triggered legitimately when the initial values are being set and the second is -1
-                //the error messages in each combobox event above should handle everything else
-            }
-        }
-
-        /// <summary>
         /// Build all the strings for global variables such as install paths and filenames 
         /// </summary>
         public void updateStrings()
         {
             //the paths of the custom asset files
-            GlobalStrings.AssetOptionsPath = assetHud.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
-            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudAspect;
-            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudScoreboard;
-            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetHud.FilenameHudMenu;
+            GlobalStrings.AssetOptionsPath = assetLocation.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
+            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudAspect;
+            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudScoreboard;
+            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudMenu;
 
             //the paths the custom asset files will be installed to
-            GlobalStrings.CustomInstallPathResource = installHud.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource;
+            GlobalStrings.CustomInstallPathResource = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource;
             GlobalStrings.CustomInstallPathUi = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
 
             //the names and paths of the custom install files
@@ -357,7 +306,7 @@ namespace Thwartski_Hud_Installer
             GlobalStrings.InstallCheckerDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
 
             //the path for backup files
-            GlobalStrings.BackupPath = installHud.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
+            GlobalStrings.BackupPath = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
 
             //MessageBox.Show("installPath: \n" + installPath);
             //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);

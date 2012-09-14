@@ -10,11 +10,11 @@ namespace Thwartski_Hud_Installer
     {
         //classes to store the value being passed in
         private Form1 mainForm = null;
-        private HudFiles assetHud = null;
-        private HudFiles installHud = null;
+        private Location assetHud = null;
+        private Location installHud = null;
 
         //constructor?
-        public Installer(Form1 caller, HudFiles assets, HudFiles install)
+        public Installer(Form1 caller, Location assets, Location install)
         {
             //store the calling form
             mainForm = caller;
