@@ -211,72 +211,72 @@ namespace Thwartski_Hud_Installer.Properties {
         /// <summary>
         ///   Looks up a localized string similar to GameMenu_Pub24Comp6.res.
         /// </summary>
-        internal static string stringFilenameAssetMenuPub24Comp6 {
+        internal static string stringFilenameAssetMenuComp6Pub24 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetMenuPub24Comp6", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to GameMenu_Pub24Comp9.res.
-        /// </summary>
-        internal static string stringFilenameAssetMenuPub24Comp9 {
-            get {
-                return ResourceManager.GetString("stringFilenameAssetMenuPub24Comp9", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetMenuComp6Pub24", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to GameMenu_Pub32Comp6.res.
         /// </summary>
-        internal static string stringFilenameAssetMenuPub32Comp6 {
+        internal static string stringFilenameAssetMenuComp6Pub32 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetMenuPub32Comp6", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetMenuComp6Pub32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GameMenu_Pub24Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetMenuComp9Pub24 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetMenuComp9Pub24", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to GameMenu_Pub32Comp9.res.
         /// </summary>
-        internal static string stringFilenameAssetMenuPub32Comp9 {
+        internal static string stringFilenameAssetMenuComp9Pub32 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetMenuPub32Comp9", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetMenuComp9Pub32", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ScoreBoard_Pub24Comp6.res.
         /// </summary>
-        internal static string stringFilenameAssetScoreboardPub24Comp6 {
+        internal static string stringFilenameAssetScoreboardComp6Pub24 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetScoreboardPub24Comp6", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp9.res.
-        /// </summary>
-        internal static string stringFilenameAssetScoreboardPub24Comp9 {
-            get {
-                return ResourceManager.GetString("stringFilenameAssetScoreboardPub24Comp9", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetScoreboardComp6Pub24", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ScoreBoard_Pub32Comp6.res.
         /// </summary>
-        internal static string stringFilenameAssetScoreboardPub32Comp6 {
+        internal static string stringFilenameAssetScoreboardComp6Pub32 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetScoreboardPub32Comp6", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetScoreboardComp6Pub32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp9.res.
+        /// </summary>
+        internal static string stringFilenameAssetScoreboardComp9Pub24 {
+            get {
+                return ResourceManager.GetString("stringFilenameAssetScoreboardComp9Pub24", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ScoreBoard_Pub32Comp9.res.
         /// </summary>
-        internal static string stringFilenameAssetScoreboardPub32Comp9 {
+        internal static string stringFilenameAssetScoreboardComp9Pub32 {
             get {
-                return ResourceManager.GetString("stringFilenameAssetScoreboardPub32Comp9", resourceCulture);
+                return ResourceManager.GetString("stringFilenameAssetScoreboardComp9Pub32", resourceCulture);
             }
         }
         

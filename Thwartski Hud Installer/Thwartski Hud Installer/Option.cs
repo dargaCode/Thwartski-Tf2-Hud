@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Thwartski_Hud_Installer
 {
-    class HudOptions
+    class Option
     {
         //classes to store the value being passed in
         private Form1 mainForm = null;
@@ -15,22 +15,6 @@ namespace Thwartski_Hud_Installer
         //reference to which combox and imagebox they are linked to
         private ComboBox myCombobox = null;
         private PictureBox myPicturebox = null;
-
-        //constructor?
-        public HudOptions(Form1 caller, ComboBox combo, PictureBox picture)
-        {
-            //store the calling form
-            mainForm = caller;
-
-            //assign the hud objects
-            myCombobox = combo;
-            myPicturebox = picture;
-        }
-
-
-
-        //should contain: 
-
 
         //dictionaries of display text to filenames and display text to images
         private Dictionary<string, string> _dictionaryFiles = new Dictionary<string, string>();
@@ -41,17 +25,18 @@ namespace Thwartski_Hud_Installer
             public Dictionary<string, Bitmap> DictionaryPictures { get { return _dictionaryPictures; } set { _dictionaryPictures = value; } }
 
 
-        //current filename
-        //current image
+        //constructor?
+        public Option(Form1 caller, ComboBox combo, PictureBox picture)
+        {
+            //store the calling form
+            mainForm = caller;
 
-        //return current filename to hudfiles
+            //assign the hud objects
+            myCombobox = combo;
+            myPicturebox = picture;
+        }
 
-        //array of strings for comboboxes?
 
-
-
-
-        //does scoreboard need to be a child class so it can add one more field? (scoreboard and menu)
 
         /// <summary>
         /// Update all settings based on the selection, and return a string with the correct filename

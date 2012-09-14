@@ -5,20 +5,17 @@ using System.Text;
 
 namespace Thwartski_Hud_Installer
 {
-    class HudFiles
+    class Location
     {
         //classes to store the value being passed in
         private Form1 mainForm = null;
 
         //constructor?
-        public HudFiles(Form1 caller)
+        public Location(Form1 caller)
         {
             //store the calling form
             mainForm = caller;
         } 
-
-
-
 
         //should contain: 
 
@@ -34,13 +31,6 @@ namespace Thwartski_Hud_Installer
             public string FilenameHudScoreboard { get { return _filenameHudScoreboard; } set { _filenameHudScoreboard = value; } }
             public string FilenameHudMenu { get { return _filenameHudMenu; } set { _filenameHudMenu = value; } }
             public Version VersionHud { get { return _versionHud; } set { _versionHud = value; } }
-
-
-
-
-
-
-
 
 
     }

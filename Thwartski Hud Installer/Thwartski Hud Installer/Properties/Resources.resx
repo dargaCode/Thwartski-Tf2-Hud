@@ -195,35 +195,35 @@
     <value>ScoreBoard.res</value>
     <comment>//names of custom install files to write the asset options to</comment>
   </data>
-  <data name="stringFilenameAssetMenuPub24Comp6" xml:space="preserve">
+  <data name="stringFilenameAssetMenuComp6Pub24" xml:space="preserve">
     <value>GameMenu_Pub24Comp6.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
-  <data name="stringFilenameAssetMenuPub24Comp9" xml:space="preserve">
+  <data name="stringFilenameAssetMenuComp9Pub24" xml:space="preserve">
     <value>GameMenu_Pub24Comp9.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
-  <data name="stringFilenameAssetMenuPub32Comp6" xml:space="preserve">
+  <data name="stringFilenameAssetMenuComp6Pub32" xml:space="preserve">
     <value>GameMenu_Pub32Comp6.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
-  <data name="stringFilenameAssetMenuPub32Comp9" xml:space="preserve">
+  <data name="stringFilenameAssetMenuComp9Pub32" xml:space="preserve">
     <value>GameMenu_Pub32Comp9.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
-  <data name="stringFilenameAssetScoreboardPub32Comp9" xml:space="preserve">
+  <data name="stringFilenameAssetScoreboardComp9Pub32" xml:space="preserve">
     <value>ScoreBoard_Pub32Comp9.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
-  <data name="stringFilenameAssetScoreboardPub24Comp6" xml:space="preserve">
+  <data name="stringFilenameAssetScoreboardComp6Pub24" xml:space="preserve">
     <value>ScoreBoard_Pub24Comp6.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
-  <data name="stringFilenameAssetScoreboardPub24Comp9" xml:space="preserve">
+  <data name="stringFilenameAssetScoreboardComp9Pub24" xml:space="preserve">
     <value>ScoreBoard_Pub24Comp9.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
-  <data name="stringFilenameAssetScoreboardPub32Comp6" xml:space="preserve">
+  <data name="stringFilenameAssetScoreboardComp6Pub32" xml:space="preserve">
     <value>ScoreBoard_Pub32Comp6.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
