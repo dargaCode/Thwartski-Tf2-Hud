@@ -11,10 +11,10 @@ namespace Thwartski_Hud_Installer
         private Form1 mainForm = null;
 
         //constructor?
-        public Location(Form1 caller)
+        public Location(Form1 f)
         {
             //store the calling form
-            mainForm = caller;
+            mainForm = f;
         } 
 
         //should contain: 
@@ -33,5 +33,5 @@ namespace Thwartski_Hud_Installer
             public Version VersionHud { get { return _versionHud; } set { _versionHud = value; } }
 
 
-    }
-}
+    } //namespace
+} //class

@@ -19,13 +19,13 @@ namespace Thwartski_Hud_Installer
         private Location installHud = null;
 
         //constructor?
-        public Downloader(Form1 caller, Location assets, Location install)
+        public Downloader(Form1 f, Location asset, Location install)
         {
             //store the calling form
-            mainForm = caller;
+            mainForm = f;
 
             //assign the hud objects
-            assetHud = assets;
+            assetHud = asset;
             installHud = install;
         }
 
@@ -240,5 +240,5 @@ namespace Thwartski_Hud_Installer
 
 
 
-    }
-}
+    } //namespace
+} //class

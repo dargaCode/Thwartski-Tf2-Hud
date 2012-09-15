@@ -18,5 +18,5 @@ namespace Thwartski_Hud_Installer
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-    }
-}
+    } //namespace
+} //class

@@ -19,6 +19,7 @@ namespace Thwartski_Hud_Installer
     {
         //Instantiate classes
         private OptionsTracker optionsTracker;
+        private UiTracker uiTracker;
         private Installer installer;
         private Downloader downloader;
         private Browser browser;
@@ -56,11 +57,12 @@ namespace Thwartski_Hud_Installer
             //instantiate classes so they can control public functions on this form
             this.assetLocation = new Location(this);
             this.installLocation = new Location(this);
+            this.uiTracker = new UiTracker(this);
 
-            this.aspectOption = new Option(this, aspectCombobox, aspectPicturebox);
-            this.scoreboardMinmodeOption = new Option(this, scoreboardComboboxMinmode, scoreboardPictureboxMinmode);
-            this.scoreboardMaxmodeOption = new Option(this, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode);
-
+            //option objects
+            this.aspectOption = new Option(this, installer, aspectCombobox, aspectPicturebox, aspectLabel, Properties.Settings.Default.settingComboboxAspect);
+            this.scoreboardMinmodeOption = new Option(this, installer, scoreboardComboboxMinmode, scoreboardPictureboxMinmode, scoreboardMinmodeLabel, Properties.Settings.Default.settingComboboxMinmode);
+            this.scoreboardMaxmodeOption = new Option(this, installer, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
 
             //objects which reference other class objects
             this.downloader = new Downloader(this, assetLocation, installLocation); 
@@ -147,7 +149,7 @@ namespace Thwartski_Hud_Installer
             }
 
             //save the options to the settings file
-            saveOptions();
+            optionsTracker.saveOptions();
         }
 
         //actually install the hud or update the installation with new custom files
@@ -166,7 +168,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = true;
 
             //save the options to the settings file
-            saveOptions();
+            optionsTracker.saveOptions();
         }
 
         //when there is nothing to install or save, launch the game
@@ -187,7 +189,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = true;
 
             //update and save the custom file settings
-            saveOptions();
+            optionsTracker.saveOptions();
         }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
@@ -203,7 +205,7 @@ namespace Thwartski_Hud_Installer
                 MessageBox.Show(Properties.Resources.stringMessageUninstallComplete);
 
                 //update and save the custom file settings
-                saveOptions();
+                optionsTracker.saveOptions();
             }
             //enable form contents, even if the function failed.
             form1LayoutPanel.Enabled = true;
@@ -214,7 +216,7 @@ namespace Thwartski_Hud_Installer
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             //options that have been changed but not saved at the time of install should not be saved
-            revertOptions();
+            optionsTracker.revertOptions();
         }
 
 
@@ -324,68 +326,7 @@ namespace Thwartski_Hud_Installer
 
 
 
-        /// <summary>
-        /// Check if any options are different from their saved values.
-        /// </summary>
-        public bool detectOptionsChanges()
-        {
-            //local boolean value used if the hud is installed
-            bool optionsChanged = false;
 
-            //if the hud hasn't been installed, no need to detect options changes
-            if (!installer.isHudInstalled())
-            {
-                aspectLabel.BackColor = Color.Empty;
-                scoreboardMaxmodeLabel.BackColor = Color.Empty;
-                scoreboardMinmodeLabel.BackColor = Color.Empty;
-                return false;
-            }
-            //aspect ratio option is different
-            if (aspectCombobox.SelectedIndex != Properties.Settings.Default.settingComboboxAspect)
-            {
-                //highlight the background
-                aspectLabel.BackColor = Color.LightGreen;
-                //need to update all 3 before returning true, so updating the local variable instead
-                optionsChanged = true;
-            }
-            //aspect ratio option is not different
-            else
-            {
-                //manually changing it back to empty for cases when the option was changed and then changed back
-                aspectLabel.BackColor = Color.Empty;
-            }
-
-            //maxmode scoreboard option is different
-            if (scoreboardComboboxMaxmode.SelectedIndex != Properties.Settings.Default.settingComboboxMaxmode)
-            {
-                //highlight the background
-                scoreboardMaxmodeLabel.BackColor = Color.LightGreen;
-                //need to update all 3 before returning true, so updating the local variable instead
-                optionsChanged = true;
-            }
-            //maxmode scoreboard option is not different
-            else
-            {
-                //manually changing it back to empty for cases when the option was changed and then changed back
-                scoreboardMaxmodeLabel.BackColor = Color.Empty;
-            }
-            //minmode scoreboard option is different
-            if (scoreboardComboboxMinmode.SelectedIndex != Properties.Settings.Default.settingComboboxMinmode)
-            {
-                //highlight the background
-                scoreboardMinmodeLabel.BackColor = Color.LightGreen;
-                //need to update all 3 before returning true, so updating the local variable instead
-                optionsChanged = true;
-            }
-            //minmode scoreboard option is not different
-            else
-            {
-                //manually changing it back to empty for cases when the option was changed and then changed back
-                scoreboardMinmodeLabel.BackColor = Color.Empty;
-            }
-            //if none of the options were different, this will still be false
-            return optionsChanged;
-        }
 
         /// <summary>
         /// Check whether to enable or disable install/uninstall/update buttons
@@ -399,7 +340,7 @@ namespace Thwartski_Hud_Installer
                 uninstallButton.Enabled = true;
 
                 //if the hud is installed but options have changed, install button has special rules
-                if (detectOptionsChanges())
+                if (optionsTracker.detectOptionsChanges())
                 {
                     //options mode changes the event on the button and its text
                     installButtonMode(Properties.Resources.stringButtonInstallOptionsMode);
@@ -540,45 +481,9 @@ namespace Thwartski_Hud_Installer
             //TODO only some tooltips need to be refreshed dynamically rather than just initially defined
         }
 
-        /// <summary>
-        /// Build all the strings for global variables such as install paths and filenames 
-        /// </summary>
-        private void saveOptions() //TODO move to options tracker
-        {
-            //the settings aren't saved until this method is run so the current options can be compared to the saved settings
-            //and the install button can be enabled when options have changed.
 
-            //update the settings for each combobox option (the folder browser path is saved right as it changes)
-            Properties.Settings.Default.settingComboboxAspect = aspectCombobox.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMaxmode = scoreboardComboboxMaxmode.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMinmode = scoreboardComboboxMinmode.SelectedIndex;
 
-            //now actually save the settings
-            Properties.Settings.Default.Save();
 
-            //update options so that modified options won't remain highlighted
-            detectOptionsChanges();
-
-            //updated buttons so that the install and uninstall buttons will be in the correct state
-            updateButtons();
-        }
-
-        /// <summary>
-        /// Revert the options to their state at the last save 
-        /// </summary>
-        private void revertOptions() //TODO move to options tracker
-        {
-            //update the settings for each combobox options (the folder browser path is saved right as it changes)
-            aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            scoreboardComboboxMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
-            scoreboardComboboxMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-
-            //update options so that modified options won't remain highlighted
-            detectOptionsChanges();
-
-            //updated buttons so that the install and uninstall buttons will be in the correct state
-            updateButtons();
-        }
 
         
 
@@ -632,15 +537,11 @@ namespace Thwartski_Hud_Installer
         }
 
 
-       
 
 
 
 
 
 
-
-
-
-    }
-}
+    } //namespace
+} //class

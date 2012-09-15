@@ -146,5 +146,5 @@ namespace Thwartski_Hud_Installer
             public static string MessageBadFolderSelected { get { return _messageBadFolderSelected; } }
 
 
-    }
-}
+    } //namespace
+} //class

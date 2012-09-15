@@ -19,19 +19,19 @@ namespace Thwartski_Hud_Installer
         private Option scoreboardMaxmodeOption = null;
 
         //constructor?
-        public OptionsTracker(Form1 caller, Location assets, Location install, Option aspect, Option scoreboardMin, Option scoreboardMax)
+        public OptionsTracker(Form1 f, Location asset, Location install, Option aspect, Option scoreMin, Option scoreMax)
         {
             //store the calling form
-            mainForm = caller;
+            mainForm = f;
 
             //assign the hud objects
-            assetLocation = assets;
+            assetLocation = asset;
             installLocation = install;
 
             //assign the options objects
             aspectOption = aspect;
-            scoreboardMinmodeOption = scoreboardMin;
-            scoreboardMaxmodeOption = scoreboardMax;
+            scoreboardMinmodeOption = scoreMin;
+            scoreboardMaxmodeOption = scoreMax;
         }
 
         /// <summary>
@@ -39,18 +39,15 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public void Setup()
         { 
-            //populate the correct dictionaries and images
-            PopulateOptionDictonaries();
+            //populate the correct strings, dictionaries, images, and indices
+            PopulateOptionsObjects();
 
-            //populate comboboxes
-            //has to happen after the options objects are populated, or the image lookups won't work
-            PopulateComboboxes();
         }
 
         /// <summary>
         /// Populate the 
         /// </summary>
-        private void PopulateOptionDictonaries() //TODO HOOK THIS UP
+        private void PopulateOptionsObjects()
         {
             //update asset dictionaries
             aspectOption.DictionaryPictures.Add(Properties.Resources.stringComboboxAspectNormal, Properties.Resources.aspectImageNormal);
@@ -63,27 +60,31 @@ namespace Thwartski_Hud_Installer
             //update maxmode scoreboard dictionaries
             scoreboardMaxmodeOption.DictionaryPictures.Add(Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.scoreboardImagePub24);
             scoreboardMaxmodeOption.DictionaryPictures.Add(Properties.Resources.stringComboboxScoreboardPub32, Properties.Resources.scoreboardImagePub32);
+
+            //load arrays of strings into the objects (and comboboxes)
+            aspectOption.ComboboxStrings = new string[] { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
+            scoreboardMinmodeOption.ComboboxStrings = new string[] { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
+            scoreboardMaxmodeOption.ComboboxStrings = new string[] { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
+
+            //load initial combobox values //TODO make sure this also works with resaved defaults after install
+            aspectOption.Setup();
+            scoreboardMinmodeOption.Setup();
+            scoreboardMaxmodeOption.Setup();
         }
 
         /// <summary>
-        /// Populate comboboxes with arrays and default values.
+        /// Update all relevant elements when an option is changed.
         /// </summary>
-        private void PopulateComboboxes()
+        public void Update() //TODO HOOK THIS UP
         {
-            //create arrays of combobox strings
-            string[] aspects = { Properties.Resources.stringComboboxAspectNormal, Properties.Resources.stringComboboxAspectWidescreen };
-            string[] scoreboardsMinmode = { Properties.Resources.stringComboboxScoreboardComp6, Properties.Resources.stringComboboxScoreboardComp9 };
-            string[] scoreboardsMaxmode = { Properties.Resources.stringComboboxScoreboardPub24, Properties.Resources.stringComboboxScoreboardPub32 };
- 
-            //populate the comboboxes with the correct options
-            mainForm.aspectCombobox.Items.AddRange(aspects);
-            mainForm.scoreboardComboboxMinmode.Items.AddRange(scoreboardsMinmode);
-            mainForm.scoreboardComboboxMaxmode.Items.AddRange(scoreboardsMaxmode);
+            //rebuild text strings
+            mainForm.updateStrings();  //TODO this can be deleted entirely and handled at install
 
-            //load settings for comboxes
-            mainForm.aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            mainForm.scoreboardComboboxMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-            mainForm.scoreboardComboboxMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
+            //update options string background color
+            detectOptionsChanges();
+
+            //update install/uninstall buttons
+            mainForm.updateButtons();
         }
 
         /// <summary>
@@ -176,18 +177,76 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
-        /// Update all relevant elements when an option is changed.
+        /// Build all the strings for global variables such as install paths and filenames 
         /// </summary>
-        public void Update() //TODO HOOK THIS UP
+        public void saveOptions()
         {
-            //rebuild text strings
-            mainForm.updateStrings();  //TODO this can be deleted entirely and handled at install
+            //the settings aren't saved until this method is run so the current options can be compared to the saved settings
+            //and the install button can be enabled when options have changed.
 
-            //update options string background color
-            mainForm.detectOptionsChanges();
+            //update the settings for each combobox option 
+            //(the folder browser path is saved right as it changes, so it's left out here)
+            Properties.Settings.Default.settingComboboxAspect = mainForm.aspectCombobox.SelectedIndex;
+            Properties.Settings.Default.settingComboboxMaxmode = mainForm.scoreboardComboboxMaxmode.SelectedIndex;
+            Properties.Settings.Default.settingComboboxMinmode = mainForm.scoreboardComboboxMinmode.SelectedIndex;
 
-            //update install/uninstall buttons
+            //now actually save the settings
+            Properties.Settings.Default.Save();
+
+            //update options so that modified options won't remain highlighted
+            detectOptionsChanges();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
             mainForm.updateButtons();
         }
-    }
-}
+
+        /// <summary>
+        /// Revert the options to their state at the last save 
+        /// </summary>
+        public void revertOptions()
+        {
+            //update the settings for each combobox options
+            //(the folder browser path is saved right as it changes, so it's left out here)
+            mainForm.aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
+            mainForm.scoreboardComboboxMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
+            mainForm.scoreboardComboboxMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
+
+            //update options so that modified options won't remain highlighted
+            detectOptionsChanges();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            mainForm.updateButtons();
+        }
+
+
+        /// <summary>
+        /// Check if any options are different from their saved values.
+        /// </summary>
+        public bool detectOptionsChanges()
+        {
+            bool optionsChanged = false;
+            
+            //aspect
+            if(aspectOption.Modified)
+            {
+                optionsChanged = true;
+            }
+            //minmode
+            if(scoreboardMinmodeOption.Modified)
+            {
+                optionsChanged = true;
+            }
+            //maxmode
+            if(scoreboardMaxmodeOption.Modified)
+            {
+                optionsChanged = true;
+            }
+
+            //if any options were different, this will be true
+            return optionsChanged;
+        }
+
+
+
+    } //namespace
+} //class

@@ -14,13 +14,13 @@ namespace Thwartski_Hud_Installer
         private Location installHud = null;
 
         //constructor?
-        public Installer(Form1 caller, Location assets, Location install)
+        public Installer(Form1 f, Location asset, Location install)
         {
             //store the calling form
-            mainForm = caller;
+            mainForm = f;
 
             //assign the hud objects
-            assetHud = assets;
+            assetHud = asset;
             installHud = install;
         }
 
@@ -34,6 +34,7 @@ namespace Thwartski_Hud_Installer
         /// <returns></returns>
         public bool isHudInstalled()
         {
+
             //check for the dummy file in the resource folder
             if (System.IO.File.Exists(GlobalStrings.InstallCheckerDestination))
             {
@@ -356,5 +357,5 @@ namespace Thwartski_Hud_Installer
 
 
 
-    }
-}
+    } //namespace
+} //class
