@@ -92,7 +92,7 @@ namespace Thwartski_Hud_Installer
 
 
 
-
+            //optionsTracker.Update(); //TODO is this necesary?
 
         }
 
@@ -107,21 +107,21 @@ namespace Thwartski_Hud_Installer
         private void aspectCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateOption(aspectOption);
+            optionsTracker.updateAspect();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardComboboxMinmode_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateOption(scoreboardMinmodeOption);
+            optionsTracker.updateScoreboard();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardComboboxMaxmode_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateOption(scoreboardMaxmodeOption);
+            optionsTracker.updateScoreboard();
         }
 
         //actually install the hud or update the installation with new custom files
@@ -543,7 +543,7 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Build all the strings for global variables such as install paths and filenames 
         /// </summary>
-        private void saveOptions()
+        private void saveOptions() //TODO move to options tracker
         {
             //the settings aren't saved until this method is run so the current options can be compared to the saved settings
             //and the install button can be enabled when options have changed.
@@ -566,7 +566,7 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Revert the options to their state at the last save 
         /// </summary>
-        private void revertOptions()
+        private void revertOptions() //TODO move to options tracker
         {
             //update the settings for each combobox options (the folder browser path is saved right as it changes)
             aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
