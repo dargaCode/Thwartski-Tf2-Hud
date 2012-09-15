@@ -13,10 +13,10 @@ namespace Thwartski_Hud_Installer
         private Form1 mainForm = null;
 
         //constructor?
-        public Browser(Form1 caller)
+        public Browser(Form1 f)
         {
             //store the calling form
-            mainForm = caller;
+            mainForm = f;
         }
 
 
@@ -150,5 +150,5 @@ namespace Thwartski_Hud_Installer
 
 
 
-    }
-}
+    } //namespace
+} //class
