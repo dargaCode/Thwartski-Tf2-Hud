@@ -10,7 +10,6 @@ namespace Thwartski_Hud_Installer
     class Option
     {
         //classes to store the value being passed in
-        private Form1 mainForm = null;
         private Installer installer = null;
 
         //reference to which combox and imagebox they are linked to
@@ -44,11 +43,8 @@ namespace Thwartski_Hud_Installer
 
 
         //constructor?
-        public Option(Form1 f, Installer i, ComboBox c, PictureBox p, Label l, int index)
+        public Option(Installer i, ComboBox c, PictureBox p, Label l, int index)
         {
-            //store the calling form
-            mainForm = f;
-
             //store the UiTracker
             installer = i;
 
@@ -119,7 +115,7 @@ namespace Thwartski_Hud_Installer
                 //something went wrong with the dictionary lookup
                 else
                 {
-                    mainForm.errorWindow("No match in dictionary! Object: " + this + " Item: " + currentOption);
+                    GlobalStrings.errorWindow("No match in dictionary! Object: " + this + " Item: " + currentOption);
 
                     //don't use this value to modify any other strings
                     return null;

@@ -14,15 +14,12 @@ namespace Thwartski_Hud_Installer
     class Downloader
     {
         //classes to store the value being passed in
-        private Form1 mainForm = null;
         private Location assetLocation = null;
         private Location installLocation = null;
 
         //constructor?
-        public Downloader(Form1 f, Location asset, Location install)
+        public Downloader(Location asset, Location install)
         {
-            //store the calling form
-            mainForm = f;
 
             //assign the hud objects
             assetLocation = asset;
@@ -177,7 +174,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                mainForm.errorWindow(problem.Message);
+                GlobalStrings.errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;

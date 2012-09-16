@@ -62,12 +62,12 @@ namespace Thwartski_Hud_Installer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string settingFolderBrowserPath {
+        public string settingInstallBrowserPath {
             get {
-                return ((string)(this["settingFolderBrowserPath"]));
+                return ((string)(this["settingInstallBrowserPath"]));
             }
             set {
-                this["settingFolderBrowserPath"] = value;
+                this["settingInstallBrowserPath"] = value;
             }
         }
     }

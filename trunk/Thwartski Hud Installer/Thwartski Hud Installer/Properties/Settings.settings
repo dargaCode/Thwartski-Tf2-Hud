@@ -11,7 +11,7 @@
     <Setting Name="settingComboboxMinmode" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="settingFolderBrowserPath" Type="System.String" Scope="User">
+    <Setting Name="settingInstallBrowserPath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

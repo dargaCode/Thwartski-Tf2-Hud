@@ -12,17 +12,30 @@ namespace Thwartski_Hud_Installer
     {
 
         //classes to store the value being passed in
-        private Form1 mainForm = null;
-        private Location installLocation = null;
+        private Installer installer = null;
+
+        //reference to which combox and imagebox they are linked to
+        private FolderBrowserDialog myFolderBrowser = null;
+        private Label myPathLabel = null;
+        private Label myInstructLabel = null;
+        private string savedSetting = null;
+
+        //new Browser(this, installer, installLocation, InstallBrowserDialog, InstallBrowserPathLabel, InstallBrowserInstructLabel, Properties.Settings.Default.settingInstallBrowserPath
 
         //constructor?
-        public Browser(Form1 f, Location install)
+        public Browser(Installer i, FolderBrowserDialog b, Label path, Label instruct, string setting)
         {
-            //store the calling form
-            mainForm = f;
+            //store the installer
+            installer = i;
 
-            //store the install location
-            installLocation = install;
+            //assign the hud objects
+            myFolderBrowser = b;
+            myPathLabel = path;
+            myInstructLabel = instruct;
+
+            //assign the default setting
+            savedSetting = setting;
+
         }
 
 
@@ -31,10 +44,10 @@ namespace Thwartski_Hud_Installer
         /// Fill the browser with a best guess default string or a saved string, if one exists.
         /// </summary>
         /// <returns></returns>
-        public void populateDefaultPath()
+        public void Setup()
         {
             //decide whether to use the saved install path setting or to start generating one
-            string savedBrowserPath = Properties.Settings.Default.settingFolderBrowserPath;
+            string savedBrowserPath = Properties.Settings.Default.settingInstallBrowserPath;
             if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
             {
                 //allow the hud to be installed at the saved location
@@ -56,17 +69,17 @@ namespace Thwartski_Hud_Installer
         public void BrowseForInstallFolder()
         {
             // Show the Open File dialog. If the user clicks OK, record their Folder location.
-            if (mainForm.folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            if (myFolderBrowser.ShowDialog() == DialogResult.OK)
             {
                 //the player selected a valid folder
-                if (mainForm.folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
+                if (myFolderBrowser.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
                 {
-                    setInstallLocation(mainForm.folderBrowserDialog1.SelectedPath);
+                    setInstallLocation(myFolderBrowser.SelectedPath);
                 }
                 //the player didn't select a valid folder
                 else
                 {
-                    mainForm.errorWindow(GlobalStrings.MessageBadFolderSelected);
+                    GlobalStrings.errorWindow(GlobalStrings.MessageBadFolderSelected);
                 }
             }
         }
@@ -78,43 +91,49 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public void SetDefaultFolder()
         {
+            string folderSteamapps;
+
             if (Directory.Exists(Properties.Resources.stringFolderSteamapps32Bit))
             {
                 //a steam folder was fond
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderSteamapps32Bit;
+                folderSteamapps = Properties.Resources.stringFolderSteamapps32Bit;
 
                 //try to guess your username
-                guessSteamUser(GlobalStrings.FolderSteamapps);
+                guessSteamUser(folderSteamapps);
             }
             else if (Directory.Exists(Properties.Resources.stringFolderSteamapps64Bit))
             {
                 //a steam folder was found
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderSteamapps64Bit;
+                folderSteamapps = Properties.Resources.stringFolderSteamapps64Bit;
 
                 //try to guess your username
-                guessSteamUser(Properties.Resources.stringFolderSteamapps64Bit);
+                guessSteamUser(folderSteamapps);
             }
             else
             {
                 //no obvious steam install was found
-                mainForm.folderBrowserBoxLabel.Text = GlobalStrings.PathUnknownTeamFortress2;
-                mainForm.folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescUnknown;
+                myPathLabel.Text = GlobalStrings.PathUnknownTeamFortress2;
+                myFolderBrowser.Description = GlobalStrings.FolderBrowserDescUnknown;
             }
         }
 
         /// <summary>
         /// Find a likely folder for the player's steam username.
         /// </summary>
-        private void guessSteamUser(string steamappsFolder)
+        private void guessSteamUser(string folderSteamapps)
         {
+            //used for building the install path
+            string steamUser = null;
+            string partialKnownPath = null;
+
             //create an array of the possible steam user folders
-            DirectoryInfo possibleSteamUserFoldersDir = new DirectoryInfo(steamappsFolder);
+            DirectoryInfo possibleSteamUserFoldersDir = new DirectoryInfo(folderSteamapps);
             DirectoryInfo[] steamUserFolders = possibleSteamUserFoldersDir.GetDirectories();
 
             //cycle through the steamapps folders in the default location, and eliminate obvious mismatches
             foreach (DirectoryInfo steamUserFolder in steamUserFolders)
             {
-                //MessageBox.Show(Convert.ToString(steamUser));
+                //MessageBox.Show(Convert.ToString(steamUserFolder));
 
                 if (Convert.ToString(steamUserFolder) == "common")
                 {
@@ -135,16 +154,16 @@ namespace Thwartski_Hud_Installer
                 else
                 {
                     //whatever's left is likely to be a userfolder.
-                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(steamappsFolder + steamUserFolder + Properties.Resources.stringFolderTeamFortress2);
+                    DirectoryInfo possibleTeamFortress2PathDir = new DirectoryInfo(folderSteamapps + steamUserFolder + Properties.Resources.stringFolderTeamFortress2);
 
                     //the possible user contains the right folders
                     if (possibleTeamFortress2PathDir.Exists)
                     {
-                        //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder);
+                        //MessageBox.Show(defaultFolder + steamUserFolder + teamFortress2Folder);
 
                         //the username is legit
-                        GlobalStrings.FolderSteamUser = Convert.ToString(steamUserFolder);
-                        //MessageBox.Show(steamUser + " is the userfolder");
+                        steamUser = Convert.ToString(steamUserFolder);
+                        //MessageBox.Show(steamUserFolder + " is the userfolder");
 
                         //allow install at this location
                         setInstallLocation(Convert.ToString(possibleTeamFortress2PathDir));
@@ -156,7 +175,7 @@ namespace Thwartski_Hud_Installer
                     //this user seemed legitimate, but didn't contain the right subfolder. keep looking
                     else
                     {
-                        //MessageBox.Show(defaultFolder + steamUser + teamFortress2Folder + "doesn't exist");
+                        //MessageBox.Show(defaultFolder + steamUserFolder + teamFortress2Folder + "doesn't exist");
                     }
                 }
             }
@@ -164,45 +183,42 @@ namespace Thwartski_Hud_Installer
             //MessageBox.Show("no users were found with " + teamFortress2Folder);
 
             //build the partial path
-            GlobalStrings.FolderSteamUser = Properties.Resources.stringFolderSteamUserUnknown;
-            GlobalStrings.PathPartialTeamFortress2 = steamappsFolder + GlobalStrings.FolderSteamUser + Properties.Resources.stringFolderTeamFortress2;
+            steamUser = Properties.Resources.stringFolderSteamUserUnknown;
+            partialKnownPath = folderSteamapps + steamUser + Properties.Resources.stringFolderTeamFortress2;
 
             //update the textbox and folder browser with the partial path to get the player started.
-            mainForm.folderBrowserDialog1.SelectedPath = steamappsFolder;
-            mainForm.folderBrowserBoxLabel.Text = GlobalStrings.PathPartialTeamFortress2;
+            myFolderBrowser.SelectedPath = folderSteamapps;
+            myPathLabel.Text = partialKnownPath;  //TODO don't modify these objects directly, pass them in
 
             //change the text in the folder browser dialog
-            mainForm.folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescPartial;
+            myFolderBrowser.Description = GlobalStrings.FolderBrowserDescPartial;
         }
 
 
         /// <summary>
         /// Once a valid location has been identified, allow the user to install.
         /// </summary>
-        public void setInstallLocation(string validInstallLocation)
+        public void setInstallLocation(string validFolder) //TODO hook up or delete
         {
-            //MessageBox.Show(validInstallLocation + " is the location to install");
+            //MessageBox.Show(validFolder + " is the location to install");
 
-            //global variable used for actually installing the files
-            installLocation.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderTf;
-
-            //prepare the rest of the the strings for install paths, filenames, etc.
-            mainForm.updateStrings();
 
             //update the install path box
-            mainForm.folderBrowserBoxLabel.Text = validInstallLocation;
-            mainForm.folderBrowserBoxLabel.BackColor = Color.White;
+            myPathLabel.Text = validFolder;
+            myPathLabel.BackColor = Color.White;
 
             //update the folder browser dialog
-            mainForm.folderBrowserDialog1.SelectedPath = validInstallLocation;
-            mainForm.folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescValid;
+            myFolderBrowser.SelectedPath = validFolder;
+            myFolderBrowser.Description = GlobalStrings.FolderBrowserDescValid;
 
             //update the install path setting
-            Properties.Settings.Default.settingFolderBrowserPath = validInstallLocation;
+            Properties.Settings.Default.settingInstallBrowserPath = validFolder;
             //MessageBox.Show("changing path setting: " + Properties.Settings.Default.folderBrowserPath);
 
-            //check whether the install and uninstall buttons should be enabled
-            mainForm.updateButtons();
+
+            //let the installer know that a valid location has been found
+            installer.ValidLocation = validFolder;
+
         }
 
 

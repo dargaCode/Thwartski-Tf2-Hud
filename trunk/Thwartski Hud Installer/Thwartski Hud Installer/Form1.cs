@@ -18,8 +18,8 @@ namespace Thwartski_Hud_Installer
     public partial class Form1 : Form
     {
         //Instantiate classes
-        private OptionsTracker optionsTracker;
-        private UiTracker uiTracker;
+        private Tracker tracker;
+        private Buttons buttons;
         private Installer installer;
         private Downloader downloader;
         private Browser browser;
@@ -33,6 +33,11 @@ namespace Thwartski_Hud_Installer
         private Option aspectOption;
         private Option scoreboardMinmodeOption;
         private Option scoreboardMaxmodeOption;
+
+        //instance of form2 to launch after install
+        private Form2 form2;
+
+
 
 
         //defining tooltips for the form
@@ -54,25 +59,29 @@ namespace Thwartski_Hud_Installer
         //default functionality as form loads
         private void Form1_Load(object sender, EventArgs e)
         {
-            //instantiate classes so they can control public functions on this form
-            this.assetLocation = new Location(this);
-            this.installLocation = new Location(this);
-            this.uiTracker = new UiTracker(this);
+
+            //objects which reference the form and/or other class objects
 
             //option objects
-            this.aspectOption = new Option(this, installer, aspectCombobox, aspectPicturebox, aspectLabel, Properties.Settings.Default.settingComboboxAspect);
-            this.scoreboardMinmodeOption = new Option(this, installer, scoreboardMinmodeCombobox, scoreboardMinmodePicturebox, scoreboardMinmodeLabel, Properties.Settings.Default.settingComboboxMinmode);
-            this.scoreboardMaxmodeOption = new Option(this, installer, scoreboardMaxmodeCombobox, scoreboardMaxmodePicturebox, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
+            this.aspectOption = new Option(installer, aspectCombobox, aspectPicturebox, aspectLabel, Properties.Settings.Default.settingComboboxAspect);
+            this.scoreboardMinmodeOption = new Option(installer, scoreboardMinmodeCombobox, scoreboardMinmodePicturebox, scoreboardMinmodeLabel, Properties.Settings.Default.settingComboboxMinmode);
+            this.scoreboardMaxmodeOption = new Option(installer, scoreboardMaxmodeCombobox, scoreboardMaxmodePicturebox, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
 
-            //objects which reference other class objects
-            this.browser = new Browser(this, installLocation);
-            this.downloader = new Downloader(this, assetLocation, installLocation); 
-            this.installer = new Installer(this, assetLocation, installLocation);
-            this.optionsTracker = new OptionsTracker(this, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
+            //hud location objects
+            this.assetLocation = new Location();
+            this.installLocation = new Location();
+            
+            //one-off class objects
+            this.buttons = new Buttons(this, tracker, uninstallButton, installButton);
+            this.installer = new Installer(buttons, tracker, assetLocation, installLocation);
+            this.uninstaller = new Uninstaller();
+            this.browser = new Browser(installer, InstallBrowserDialog, InstallBrowserPathLabel, InstallBrowserInstructLabel, Properties.Settings.Default.settingInstallBrowserPath);
+            this.downloader = new Downloader(assetLocation, installLocation); 
 
-            //basic objects which only reference the form so far
-            this.uninstaller = new Uninstaller(this);
+            this.tracker = new Tracker(buttons, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
 
+            //form2, passing this form so the buttons can be reenabled and the install path for documentation
+            this.form2 = new Form2(this, installLocation.PathFolderHudLocation);
 
 
 
@@ -87,11 +96,11 @@ namespace Thwartski_Hud_Installer
 
 
             //Generate tooltips, populate strings, comboboxes, and assets.
-            optionsTracker.Setup();
+            tracker.Setup();
 
 
             //Fill the browser with a best guess default string or a saved string, if one exists
-            browser.populateDefaultPath();
+            browser.Setup();
 
 
 
@@ -100,7 +109,7 @@ namespace Thwartski_Hud_Installer
         }
 
         //browse for valid install locations
-        private void folderBrowserButton_Click(object sender, EventArgs e)
+        private void InstallBrowserButton_Click(object sender, EventArgs e)
         {
             browser.BrowseForInstallFolder();
 
@@ -110,25 +119,27 @@ namespace Thwartski_Hud_Installer
         private void aspectCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateAspect();
+            tracker.updateAspect();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardMaxmodeCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateScoreboard();
+            tracker.updateScoreboard();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
         private void scoreboardMinmodeCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
-            optionsTracker.updateScoreboard();
+            tracker.updateScoreboard();
         }
 
+
+
         //actually install the hud or update the installation with new custom files
-        private void installButton_InstallClick(object sender, EventArgs e)
+        public void installButton_InstallClick(object sender, EventArgs e)
         {
             //disable form contents
             form1LayoutPanel.Enabled = false;
@@ -136,11 +147,8 @@ namespace Thwartski_Hud_Installer
             //attempt to install the hud
             if (installer.performInstallation())
             {
-                //initialize form2, passing this form so the buttons can be reenabled and the install path for documentation
-                Form2 installSuccessForm = new Form2(this, installLocation.PathFolderHudLocation);
-
                 //show form2 only if the install succeeded
-                installSuccessForm.Show();
+                form2.Show();
                 //form contents will be enabled when the success form is closed
             }
             else
@@ -150,11 +158,11 @@ namespace Thwartski_Hud_Installer
             }
 
             //save the options to the settings file
-            optionsTracker.saveOptions();
+            tracker.saveOptions();
         }
 
         //actually install the hud or update the installation with new custom files
-        private void installButton_OptionsClick(object sender, EventArgs e)
+        public void installButton_OptionsClick(object sender, EventArgs e)
         {
             //disable form contents
             form1LayoutPanel.Enabled = false;
@@ -169,14 +177,14 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = true;
 
             //save the options to the settings file
-            optionsTracker.saveOptions();
+            tracker.saveOptions();
         }
 
         //when there is nothing to install or save, launch the game
-        private void installButton_LaunchClick(object sender, EventArgs e)
+        public void installButton_LaunchClick(object sender, EventArgs e)
         {
             //try to launch the game
-            if (launchGame())
+            if (installer.launchGame())
             {
                 //close form1
                 this.Close();
@@ -190,7 +198,7 @@ namespace Thwartski_Hud_Installer
             form1LayoutPanel.Enabled = true;
 
             //update and save the custom file settings
-            optionsTracker.saveOptions();
+            tracker.saveOptions();
         }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
@@ -206,7 +214,7 @@ namespace Thwartski_Hud_Installer
                 MessageBox.Show(Properties.Resources.stringMessageUninstallComplete);
 
                 //update and save the custom file settings
-                optionsTracker.saveOptions();
+                tracker.saveOptions();
             }
             //enable form contents, even if the function failed.
             form1LayoutPanel.Enabled = true;
@@ -217,236 +225,8 @@ namespace Thwartski_Hud_Installer
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             //options that have been changed but not saved at the time of install should not be saved
-            optionsTracker.revertOptions();
+            tracker.revertOptions();
         }
-
-
-
-
-
-
-        //CUSTOM METHODS BELOW THIS POINT
-
-
-
-
-
-
-
-
-
-
-
-        /// <summary>
-        /// Build all the strings for global variables such as install paths and filenames 
-        /// </summary>
-        public void updateStrings()  //TODO REMOVE ENTIRELY
-        {
-
-
-            //the path for backup files
-            GlobalStrings.BackupPath = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
-        }
-
-
-
-
-
-        /// <summary>
-        /// Check whether to enable or disable install/uninstall/update buttons
-        /// </summary>
-        public void updateButtons()
-        {
-            //the hud is currently installed
-            if (installer.isHudInstalled())
-            {
-                //always enable the uninstall button if the hud is installed
-                uninstallButton.Enabled = true;
-
-                //if the hud is installed but options have changed, install button has special rules
-                if (optionsTracker.detectOptionsChanges())
-                {
-                    //options mode changes the event on the button and its text
-                    installButtonMode(Properties.Resources.stringButtonInstallOptionsMode);
-                }
-                //if the hud is installed and no options have changed, it's redundant
-                else
-                {
-                    //launch mode changes the event on the button and its text
-                    installButtonMode(Properties.Resources.stringButtonInstallLaunchMode);
-                }
-            }
-            //the hud is not currently installed
-            else
-            {
-                //freshMode is the default functionality of allowing a fresh install
-                installButtonMode(Properties.Resources.stringButtonInstallFreshMode);
-
-                //disable uninstall when nothing to uninstall
-                uninstallButton.Enabled = false;
-            }
-        }
-
-
-
-        /// <summary>
-        /// Change the install button functionality between update and install
-        /// </summary>
-        private void installButtonMode(string modeSetting)
-        {
-            //fresh mode
-            if (modeSetting == Properties.Resources.stringButtonInstallFreshMode)
-            {
-                //update the button text to match the mode
-                installButton.Text = modeSetting;
-
-                //clean up old events on the install button
-                this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
-
-                //change the install button click event to the normal install event
-                this.installButton.Click += new System.EventHandler(this.installButton_InstallClick);
-
-                //enable the install button
-                installButton.Enabled = true;
-
-                //update tooltips for fresh mode
-                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallFreshMode;
-                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallFreshMode;
-
-                //generate tooltips with the updated strings
-                updateTooltips();
-            }
-            //update options mode
-            else if (modeSetting == Properties.Resources.stringButtonInstallOptionsMode)
-            {
-                //update the button text to match the mode
-                installButton.Text = modeSetting;
-
-                //clean up old events on the install button
-                this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
-
-                //change the install button click event to the special options event
-                this.installButton.Click += new System.EventHandler(this.installButton_OptionsClick);
-
-                //enable the install button
-                installButton.Enabled = true;
-
-                //update tooltips for options mode
-                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallOptionsMode;
-                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallOptionsMode;
-
-                //generate tooltips with the updated strings
-                updateTooltips();
-            }
-            //launch mode
-            else if (modeSetting == Properties.Resources.stringButtonInstallLaunchMode)
-            {
-                //update the button text to match the mode
-                installButton.Text = modeSetting;
-
-                //clean up old events on the install button
-                this.installButton.Click -= new System.EventHandler(this.installButton_InstallClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_OptionsClick);
-                this.installButton.Click -= new System.EventHandler(this.installButton_LaunchClick);
-
-                //change the install button click event to the special update event
-                this.installButton.Click += new System.EventHandler(this.installButton_LaunchClick);
-
-                //enable the install button
-                installButton.Enabled = true;
-
-                //update tooltips for launch mode
-                GlobalStrings.TooltipInstallButton = GlobalStrings.TooltipInstallLaunchMode;
-                GlobalStrings.TooltipUninstallButton = GlobalStrings.TooltipUninstallFreshMode;
-
-                //generate tooltips with the updated strings
-                updateTooltips();
-            }
-
-            //something broke
-            else
-            {
-                errorWindow("debug: invalid install mode! modesetting=" + modeSetting);
-            }
-        }
-
-        /// <summary>
-        /// Generate tooltips or update them if strings have changed
-        /// </summary>
-        private void updateTooltips()
-        {
-            //clear all the tooltips so duplicates can't be created
-            HudInstallerTooltips.RemoveAll();
-
-            //assign browser tooltips
-            HudInstallerTooltips.SetToolTip(this.browseFolderInstructionsLabel, GlobalStrings.TooltipFolderBrowse);
-            HudInstallerTooltips.SetToolTip(this.folderBrowserBoxLabel, GlobalStrings.TooltipFolderBrowse);
-            HudInstallerTooltips.SetToolTip(this.folderBrowserButton, GlobalStrings.TooltipFolderBrowse);
-            //assign aspect ratio tooltips
-            HudInstallerTooltips.SetToolTip(this.aspectPicturebox, GlobalStrings.TooltipAspectRatio);
-            HudInstallerTooltips.SetToolTip(this.aspectLabel, GlobalStrings.TooltipAspectRatio);
-            HudInstallerTooltips.SetToolTip(this.aspectCombobox, GlobalStrings.TooltipAspectRatio);
-            //assign maxmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodePicturebox, GlobalStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeCombobox, GlobalStrings.TooltipMaxmode);
-            //assign minmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodePicturebox, GlobalStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeCombobox, GlobalStrings.TooltipMinmode);
-            //assign install and uninstall tooltips
-            HudInstallerTooltips.SetToolTip(this.installButton, GlobalStrings.TooltipInstallButton);
-            HudInstallerTooltips.SetToolTip(this.uninstallButton, GlobalStrings.TooltipUninstallButton);
-
-            //TODO only some tooltips need to be refreshed dynamically rather than just initially defined
-        }
-
-
-
-
-
-        
-
-        /// <summary>
-        /// launch the game and close the installer
-        /// </summary>
-        /// <returns></returns>
-        public bool launchGame()
-        {
-            try
-            {
-                //launch tf2
-                System.Diagnostics.Process.Start(Properties.Resources.stringTeamFortressLaunchCommand);
-            }
-            //not sure what can go wrong here
-            catch (System.Exception problem)
-            {
-                //generic exception for unexpected case
-                errorWindow(problem.Message);
-
-                //return false so the app doesn't close
-                return false;
-            }
-            //if the game is launching properly, allow the app to close
-            return true;
-        }
-
-        /// <summary>
-        /// Show a special error window with a sound and a custom message.
-        /// </summary>
-        /// <param name="exceptionMessage"></param>
-        public void errorWindow(string exceptionMessage)
-        {
-            //open a special messagebox with Error as the window text and an icon
-            MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-        }
-
-
-
 
 
 
@@ -467,6 +247,58 @@ namespace Thwartski_Hud_Installer
 
 
 
+
+
+
+
+
+
+        //CUSTOM METHODS BELOW THIS POINT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Generate tooltips or update them if strings have changed
+        /// </summary>
+        public void updateTooltips() //TODO hook this back up
+        {
+            //clear all the tooltips so duplicates can't be created
+            HudInstallerTooltips.RemoveAll();
+
+            //assign browser tooltips
+            HudInstallerTooltips.SetToolTip(this.InstallBrowserInstructLabel, GlobalStrings.TooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.InstallBrowserPathLabel, GlobalStrings.TooltipFolderBrowse);
+            HudInstallerTooltips.SetToolTip(this.InstallBrowserButton, GlobalStrings.TooltipFolderBrowse);
+            //assign aspect ratio tooltips
+            HudInstallerTooltips.SetToolTip(this.aspectPicturebox, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectLabel, GlobalStrings.TooltipAspectRatio);
+            HudInstallerTooltips.SetToolTip(this.aspectCombobox, GlobalStrings.TooltipAspectRatio);
+            //assign maxmode scoreboard tooltips
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodePicturebox, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeCombobox, GlobalStrings.TooltipMaxmode);
+            //assign minmode scoreboard tooltips
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodePicturebox, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeCombobox, GlobalStrings.TooltipMinmode);
+            //assign install and uninstall tooltips
+            HudInstallerTooltips.SetToolTip(this.installButton, GlobalStrings.TooltipInstallButton);
+            HudInstallerTooltips.SetToolTip(this.uninstallButton, GlobalStrings.TooltipUninstallButton);
+
+            //TODO only some tooltips need to be refreshed dynamically rather than just initially defined
+        }
 
 
 

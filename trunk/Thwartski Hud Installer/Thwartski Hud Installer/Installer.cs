@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Thwartski_Hud_Installer
 {
     class Installer
     {
         //classes to store the value being passed in
-        private Form1 mainForm = null;
+        private Buttons buttons = null;
+        private Tracker tracker = null;
         private Location assetLocation = null;
         private Location installLocation = null;
 
@@ -18,36 +20,26 @@ namespace Thwartski_Hud_Installer
         string ui = Properties.Resources.stringFolderUi;
         string options = Properties.Resources.stringFolderOptions;
 
+        //verified install location from the browser
+        private string _validLocation = null;
+
+            //getters and setters
+            public string ValidLocation { get { return _validLocation; } set { _validLocation = value; Enable(value); } } //also performs Enable
+
 
         //constructor?
-        public Installer(Form1 f, Location asset, Location install)
+        public Installer(Buttons b, Tracker t, Location asset, Location install)
         {
-            //store the calling form
-            mainForm = f;
+            //assign the buttons object
+            buttons = b;
 
+            //assign the tracker object
+            tracker = t;
+            
             //assign the hud objects
             assetLocation = asset;
             installLocation = install;
         }
-
-
-        /// <summary>
-        /// check if the hud is installed
-        /// </summary>
-        /// <returns></returns>
-        public bool isHudInstalled()
-        {
-            //check for the version file in the resource folder
-            if (System.IO.File.Exists(installLocation.PathFolderHudLocation + resource + Properties.Resources.stringFilenameInstallVersion))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
 
 
         /// <summary>
@@ -81,7 +73,7 @@ namespace Thwartski_Hud_Installer
                     copyFilesAndFolders(assetFolderDir, installFolderDir);
 
                     //create a dummy text file to let the launcher know the hud is installed
-                    if (!isHudInstalled())
+                    if (tracker.hudInstalled())
                     {
                         //create the file, but just close it without writing any text inside
                         using (StreamWriter versionFile = new StreamWriter(installLocation.PathFolderHudLocation + resource + Properties.Resources.stringFilenameInstallVersion))
@@ -94,7 +86,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.IO.DirectoryNotFoundException)
                 {
                     //happens when the gameassets folder has been deleted or moved away from the exe
-                    mainForm.errorWindow(GlobalStrings.ExceptionAssetsMissing);
+                    GlobalStrings.errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -102,7 +94,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.UnauthorizedAccessException)
                 {
                     //happens when tf2 is running (and therefore keeping the font files in use).
-                    mainForm.errorWindow(GlobalStrings.ExceptionGameRunning);
+                    GlobalStrings.errorWindow(GlobalStrings.ExceptionGameRunning);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -110,7 +102,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.IO.IOException)
                 {
                     //usually happens when the user tries to delete a folder they are viewing.
-                    mainForm.errorWindow(GlobalStrings.ExceptionFolderOpen);
+                    GlobalStrings.errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -119,7 +111,7 @@ namespace Thwartski_Hud_Installer
                 catch (System.Exception problem)
                 {
                     //generic exception for unexpected case
-                    mainForm.errorWindow(problem.Message);
+                    GlobalStrings.errorWindow(problem.Message);
 
                     //stop the function, send false back to stop the rest of the button functionality.
                     return false;
@@ -142,6 +134,9 @@ namespace Thwartski_Hud_Installer
         /// <param name="destinationFolder"></param>
         public bool wipeHudFiles(bool saveBackups)
         {
+            //string for where to put the backups
+            string backupPath = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
+
             //Establish backup time once so different folders can't straddle multiple seconds. (this actually has been happening)
             string timestampFolderName = String.Format(@"\Date-{0:yyyy-MM-dd_}Time.{1:HH.mm.ss}\", DateTime.Now, DateTime.Now);
             //MessageBox.Show(timestampFolderName);
@@ -156,13 +151,13 @@ namespace Thwartski_Hud_Installer
                 DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
                 foreach (DirectoryInfo assetSubFolder in assetSubFolders)
                 {
-                    backupAndDeleteFolder(installLocation.PathFolderHudLocation, assetSubFolder, GlobalStrings.BackupPath, saveBackups, timestampFolderName);
+                    backupAndDeleteFolder(installLocation.PathFolderHudLocation, assetSubFolder, backupPath, saveBackups, timestampFolderName);
                 }
             }
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                mainForm.errorWindow(GlobalStrings.ExceptionAssetsMissing);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -170,7 +165,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                mainForm.errorWindow(GlobalStrings.ExceptionGameRunning);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -178,7 +173,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                mainForm.errorWindow(GlobalStrings.ExceptionFolderOpen);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -186,7 +181,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                mainForm.errorWindow(problem.Message);
+                GlobalStrings.errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -326,7 +321,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.DirectoryNotFoundException)
             {
                 //happens when the gameassets folder has been deleted or moved away from the exe
-                mainForm.errorWindow(GlobalStrings.ExceptionAssetsMissing);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionAssetsMissing);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -334,7 +329,7 @@ namespace Thwartski_Hud_Installer
             catch (System.UnauthorizedAccessException)
             {
                 //happens when tf2 is running (and therefore keeping the font files in use).
-                mainForm.errorWindow(GlobalStrings.ExceptionGameRunning);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionGameRunning);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -342,7 +337,7 @@ namespace Thwartski_Hud_Installer
             catch (System.IO.IOException)
             {
                 //usually happens when the user tries to delete a folder they are viewing.
-                mainForm.errorWindow(GlobalStrings.ExceptionFolderOpen);
+                GlobalStrings.errorWindow(GlobalStrings.ExceptionFolderOpen);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -350,7 +345,7 @@ namespace Thwartski_Hud_Installer
             catch (System.Exception problem)
             {
                 //generic exception for unexpected case
-                mainForm.errorWindow(problem.Message);
+                GlobalStrings.errorWindow(problem.Message);
 
                 //stop the function, send false back to stop the rest of the button functionality.
                 return false;
@@ -358,6 +353,45 @@ namespace Thwartski_Hud_Installer
 
             //installing the custom files worked with no exceptions; return true
             return true;
+        }
+
+
+        /// <summary>
+        /// launch the game and close the installer
+        /// </summary>
+        /// <returns></returns>
+        public bool launchGame()
+        {
+            try
+            {
+                //launch tf2
+                System.Diagnostics.Process.Start(Properties.Resources.stringTeamFortressLaunchCommand);
+            }
+            //not sure what can go wrong here
+            catch (System.Exception problem)
+            {
+                //generic exception for unexpected case
+                GlobalStrings.errorWindow(problem.Message);
+
+                //return false so the app doesn't close
+                return false;
+            }
+            //if the game is launching properly, allow the app to close
+            return true;
+        }
+
+
+        /// <summary>
+        /// Enable the hud to be installed
+        /// </summary>
+        /// <param name="validFolder"></param>
+        private void Enable(string validFolder)
+        {
+            //tell the install location where the proper /tf location will be
+            installLocation.PathFolderHudLocation = validFolder + Properties.Resources.stringFolderTf;
+
+            //update the install and uninstall buttons
+            buttons.Update();
         }
 
 
