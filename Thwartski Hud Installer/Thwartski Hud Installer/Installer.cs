@@ -10,8 +10,14 @@ namespace Thwartski_Hud_Installer
     {
         //classes to store the value being passed in
         private Form1 mainForm = null;
-        private Location assetHud = null;
-        private Location installHud = null;
+        private Location assetLocation = null;
+        private Location installLocation = null;
+
+        //commonly used strings for copying etc
+        string resource = Properties.Resources.stringFolderResource;
+        string ui = Properties.Resources.stringFolderUi;
+        string options = Properties.Resources.stringFolderOptions;
+
 
         //constructor?
         public Installer(Form1 f, Location asset, Location install)
@@ -20,12 +26,9 @@ namespace Thwartski_Hud_Installer
             mainForm = f;
 
             //assign the hud objects
-            assetHud = asset;
-            installHud = install;
+            assetLocation = asset;
+            installLocation = install;
         }
-
-
-
 
 
         /// <summary>
@@ -34,9 +37,8 @@ namespace Thwartski_Hud_Installer
         /// <returns></returns>
         public bool isHudInstalled()
         {
-
-            //check for the dummy file in the resource folder
-            if (System.IO.File.Exists(GlobalStrings.InstallCheckerDestination))
+            //check for the version file in the resource folder
+            if (System.IO.File.Exists(installLocation.PathFolderHudLocation + resource + Properties.Resources.stringFilenameInstallVersion))
             {
                 return true;
             }
@@ -56,10 +58,10 @@ namespace Thwartski_Hud_Installer
         public bool performInstallation()
         {
             //used for cycling through assetfolder directory
-            DirectoryInfo assetFolderDir = new DirectoryInfo(assetHud.PathFolderHudLocation); //TODO figure out where this should actually be
+            DirectoryInfo assetFolderDir = new DirectoryInfo(assetLocation.PathFolderHudLocation); //TODO figure out where this should actually be
 
             //Used for iterating through file and folder lists
-            DirectoryInfo installFolderDir = new DirectoryInfo(installHud.PathFolderHudLocation);
+            DirectoryInfo installFolderDir = new DirectoryInfo(installLocation.PathFolderHudLocation);
 
             //delete the files that are automatically created on game launch
             deleteForcedValveFiles();
@@ -82,7 +84,7 @@ namespace Thwartski_Hud_Installer
                     if (!isHudInstalled())
                     {
                         //create the file, but just close it without writing any text inside
-                        using (StreamWriter versionFile = new StreamWriter(GlobalStrings.InstallCheckerDestination))
+                        using (StreamWriter versionFile = new StreamWriter(installLocation.PathFolderHudLocation + resource + Properties.Resources.stringFilenameInstallVersion))
                         {
                             versionFile.Close();
                             versionFile.Dispose();
@@ -148,13 +150,13 @@ namespace Thwartski_Hud_Installer
             try
             {
                 //used for cycling through assetfolder directory
-                DirectoryInfo assetFolderDir = new DirectoryInfo(assetHud.PathFolderHudLocation); //TODO figure out where this should actually be
+                DirectoryInfo assetFolderDir = new DirectoryInfo(assetLocation.PathFolderHudLocation); //TODO figure out where this should actually be
 
                 //Iterate through all the folders in the source asset folder and back up all of them before copying.
                 DirectoryInfo[] assetSubFolders = assetFolderDir.GetDirectories();
                 foreach (DirectoryInfo assetSubFolder in assetSubFolders)
                 {
-                    backupAndDeleteFolder(installHud.PathFolderHudLocation, assetSubFolder, GlobalStrings.BackupPath, saveBackups, timestampFolderName);
+                    backupAndDeleteFolder(installLocation.PathFolderHudLocation, assetSubFolder, GlobalStrings.BackupPath, saveBackups, timestampFolderName);
                 }
             }
             catch (System.IO.DirectoryNotFoundException)
@@ -196,10 +198,10 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Delete the valve files which are created on game launch, so they don't trigger a pointless backup.
         /// </summary>
-        static void deleteForcedValveFiles()
+        private void deleteForcedValveFiles()
         {
             //shorter local string name for readability
-            string Resource = GlobalStrings.CustomInstallPathResource;
+            string resourcePath = installLocation.PathFolderHudLocation + resource;
 
             //one large try for everything since this fail isn't important
             try
@@ -207,20 +209,20 @@ namespace Thwartski_Hud_Installer
                 //go through the list of valve fonts/icons and delete them if they exist
                 foreach (string forcedValveFile in GlobalStrings.ForcedValveFiles)
                 {
-                    if (File.Exists(Resource + forcedValveFile))
+                    if (File.Exists(resourcePath + forcedValveFile))
                     {
-                        File.Delete(Resource + forcedValveFile);
+                        File.Delete(resourcePath + forcedValveFile);
                         //MessageBox.Show("deleting " + ValveFile);
                     }
                 }
                 //if resources exists but is empty, delete it so it won't generate a useless backup for one empty folder
-                if (Directory.Exists(Resource))
+                if (Directory.Exists(resourcePath))
                 {
                     //MessageBox.Show(String.Format(@"{0} has {1} files and {2} folders after cleanup", Resource, Convert.ToString(Directory.GetFiles(Resource).Length), Convert.ToString(Directory.GetDirectories(Resource).Length)));
 
-                    if (Directory.GetDirectories(Resource).Length == 0 && Directory.GetFiles(Resource).Length == 0)
+                    if (Directory.GetDirectories(resourcePath).Length == 0 && Directory.GetFiles(resourcePath).Length == 0)
                     {
-                        Directory.Delete(Resource);
+                        Directory.Delete(resourcePath);
                     }
                 }
             }
@@ -304,18 +306,22 @@ namespace Thwartski_Hud_Installer
         /// <param name="destinationFolder"></param>
         public bool updateCustomFiles()
         {
+            //where to install from
+            string customAssetPath = assetLocation.PathFolderHudLocation + resource + ui + Properties.Resources.stringFolderOptions;
+            
+            //where to install to
+            string customInstallPathResource = installLocation.PathFolderHudLocation + resource; //for the menu file
+            string customInstallPathResourceUi = installLocation.PathFolderHudLocation + resource + ui; //for aspect and scoreboard
+
+
             //exception handling for installing the hud
             try
             {
                 //copy the custom files from their asset location to their install location
-                System.IO.File.Copy(GlobalStrings.MenuSelectedAssetPath, GlobalStrings.MenuFileDestination, true);
-                System.IO.File.Copy(GlobalStrings.AspectSelectedAssetPath, GlobalStrings.AspectFileDestination, true);
-                System.IO.File.Copy(GlobalStrings.ScoreboardSelectedAssetPath, GlobalStrings.ScoreboardFileDestination, true);
+                System.IO.File.Copy(customAssetPath + assetLocation.FilenameHudMenu, customInstallPathResource + Properties.Resources.stringFilenameInstallMenu, true);
+                System.IO.File.Copy(customAssetPath + assetLocation.FilenameHudAspect, customInstallPathResourceUi + Properties.Resources.stringFilenameInstallAspect, true);
+                System.IO.File.Copy(customAssetPath + assetLocation.FilenameHudScoreboard, customInstallPathResourceUi + Properties.Resources.stringFilenameInstallScoreboard, true);
 
-                //MessageBox.Show(assetFolderDir + " to " + installFolderDir);
-                //MessageBox.Show(menuSelectedAssetPath + " to " + menuFileDestination);
-                //MessageBox.Show(aspectSelectedAssetPath + " to " + aspectFileDestination);
-                //MessageBox.Show(scoreboardSelectedAssetPath + " to " + scoreboardFileDestination);
             }
             catch (System.IO.DirectoryNotFoundException)
             {

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace Thwartski_Hud_Installer
 {
@@ -11,12 +13,16 @@ namespace Thwartski_Hud_Installer
 
         //classes to store the value being passed in
         private Form1 mainForm = null;
+        private Location installLocation = null;
 
         //constructor?
-        public Browser(Form1 f)
+        public Browser(Form1 f, Location install)
         {
             //store the calling form
             mainForm = f;
+
+            //store the install location
+            installLocation = install;
         }
 
 
@@ -32,7 +38,7 @@ namespace Thwartski_Hud_Installer
             if (Directory.Exists(savedBrowserPath) && savedBrowserPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
             {
                 //allow the hud to be installed at the saved location
-                mainForm.setInstallLocation(savedBrowserPath);
+                setInstallLocation(savedBrowserPath);
                 //MessageBox.Show("saved location good: " + savedBrowserPath);
             }
             else
@@ -44,6 +50,27 @@ namespace Thwartski_Hud_Installer
         }
 
 
+        /// <summary>
+        /// Browse, then make sure user has selected a valid folder.
+        /// </summary>
+        public void BrowseForInstallFolder()
+        {
+            // Show the Open File dialog. If the user clicks OK, record their Folder location.
+            if (mainForm.folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //the player selected a valid folder
+                if (mainForm.folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
+                {
+                    setInstallLocation(mainForm.folderBrowserDialog1.SelectedPath);
+                }
+                //the player didn't select a valid folder
+                else
+                {
+                    mainForm.errorWindow(GlobalStrings.MessageBadFolderSelected);
+                }
+            }
+        }
+
 
 
         /// <summary>
@@ -51,21 +78,21 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public void SetDefaultFolder()
         {
-            if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps32Bit))
+            if (Directory.Exists(Properties.Resources.stringFolderSteamapps32Bit))
             {
                 //a steam folder was fond
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps32Bit;
+                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderSteamapps32Bit;
 
                 //try to guess your username
                 guessSteamUser(GlobalStrings.FolderSteamapps);
             }
-            else if (Directory.Exists(Properties.Resources.stringFolderDefaultSteamapps64Bit))
+            else if (Directory.Exists(Properties.Resources.stringFolderSteamapps64Bit))
             {
                 //a steam folder was found
-                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderDefaultSteamapps64Bit;
+                GlobalStrings.FolderSteamapps = Properties.Resources.stringFolderSteamapps64Bit;
 
                 //try to guess your username
-                guessSteamUser(Properties.Resources.stringFolderDefaultSteamapps64Bit);
+                guessSteamUser(Properties.Resources.stringFolderSteamapps64Bit);
             }
             else
             {
@@ -120,7 +147,7 @@ namespace Thwartski_Hud_Installer
                         //MessageBox.Show(steamUser + " is the userfolder");
 
                         //allow install at this location
-                        mainForm.setInstallLocation(Convert.ToString(possibleTeamFortress2PathDir));
+                        setInstallLocation(Convert.ToString(possibleTeamFortress2PathDir));
 
                         //stop cycling through steam users
                         return;
@@ -147,6 +174,37 @@ namespace Thwartski_Hud_Installer
             //change the text in the folder browser dialog
             mainForm.folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescPartial;
         }
+
+
+        /// <summary>
+        /// Once a valid location has been identified, allow the user to install.
+        /// </summary>
+        public void setInstallLocation(string validInstallLocation)
+        {
+            //MessageBox.Show(validInstallLocation + " is the location to install");
+
+            //global variable used for actually installing the files
+            installLocation.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderTf;
+
+            //prepare the rest of the the strings for install paths, filenames, etc.
+            mainForm.updateStrings();
+
+            //update the install path box
+            mainForm.folderBrowserBoxLabel.Text = validInstallLocation;
+            mainForm.folderBrowserBoxLabel.BackColor = Color.White;
+
+            //update the folder browser dialog
+            mainForm.folderBrowserDialog1.SelectedPath = validInstallLocation;
+            mainForm.folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescValid;
+
+            //update the install path setting
+            Properties.Settings.Default.settingFolderBrowserPath = validInstallLocation;
+            //MessageBox.Show("changing path setting: " + Properties.Settings.Default.folderBrowserPath);
+
+            //check whether the install and uninstall buttons should be enabled
+            mainForm.updateButtons();
+        }
+
 
 
 

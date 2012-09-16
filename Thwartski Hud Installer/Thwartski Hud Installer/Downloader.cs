@@ -15,8 +15,8 @@ namespace Thwartski_Hud_Installer
     {
         //classes to store the value being passed in
         private Form1 mainForm = null;
-        private Location assetHud = null;
-        private Location installHud = null;
+        private Location assetLocation = null;
+        private Location installLocation = null;
 
         //constructor?
         public Downloader(Form1 f, Location asset, Location install)
@@ -25,8 +25,8 @@ namespace Thwartski_Hud_Installer
             mainForm = f;
 
             //assign the hud objects
-            assetHud = asset;
-            installHud = install;
+            assetLocation = asset;
+            installLocation = install;
         }
 
 
@@ -52,7 +52,7 @@ namespace Thwartski_Hud_Installer
         {
 
             //need to update assets?
-            if (updateRequired(assetHud.VersionHud, checkServerVersion()))
+            if (updateRequired(assetLocation.VersionHud, checkServerVersion()))
             {
 
                 MessageBox.Show("Downloading new assets!");
@@ -75,7 +75,7 @@ namespace Thwartski_Hud_Installer
             }
 
             //need to update install?
-            if (updateRequired(installHud.VersionHud, assetHud.VersionHud))
+            if (updateRequired(installLocation.VersionHud, assetLocation.VersionHud))
             {
                 MessageBox.Show("Install new assets!");
 
@@ -141,10 +141,10 @@ namespace Thwartski_Hud_Installer
             string PathZipfile = exeFolder + Properties.Resources.stringFilenameZipfile;
 
             //define the asset location
-            assetHud.PathFolderHudLocation = exeFolder + Properties.Resources.stringFolderAsset;
+            assetLocation.PathFolderHudLocation = exeFolder + Properties.Resources.stringFolderAsset;
 
             //used for cycling through assetfolder directory
-            DirectoryInfo assetFolderDir = new DirectoryInfo(assetHud.PathFolderHudLocation);
+            DirectoryInfo assetFolderDir = new DirectoryInfo(assetLocation.PathFolderHudLocation);
 
 
 

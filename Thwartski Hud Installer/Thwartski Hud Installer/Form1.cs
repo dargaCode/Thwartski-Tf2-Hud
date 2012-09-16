@@ -65,13 +65,14 @@ namespace Thwartski_Hud_Installer
             this.scoreboardMaxmodeOption = new Option(this, installer, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
 
             //objects which reference other class objects
+            this.browser = new Browser(this, installLocation);
             this.downloader = new Downloader(this, assetLocation, installLocation); 
             this.installer = new Installer(this, assetLocation, installLocation);
             this.optionsTracker = new OptionsTracker(this, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
 
             //basic objects which only reference the form so far
             this.uninstaller = new Uninstaller(this);
-            this.browser = new Browser(this);
+
 
 
 
@@ -101,7 +102,7 @@ namespace Thwartski_Hud_Installer
         //browse for valid install locations
         private void folderBrowserButton_Click(object sender, EventArgs e)
         {
-            BrowseForInstallFolder();
+            browser.BrowseForInstallFolder();
 
         }
 
@@ -224,8 +225,6 @@ namespace Thwartski_Hud_Installer
 
 
 
-
-
         //CUSTOM METHODS BELOW THIS POINT
 
 
@@ -233,95 +232,20 @@ namespace Thwartski_Hud_Installer
 
 
 
-        /// <summary>
-        /// Browse, then make sure user has selected a valid folder.
-        /// </summary>
-        private void BrowseForInstallFolder()
-        {
-            // Show the Open File dialog. If the user clicks OK, record their Folder location.
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            {
-                //the player selected a valid folder
-                if (folderBrowserDialog1.SelectedPath.EndsWith(Properties.Resources.stringFolderTeamFortress2))
-                {
-                    setInstallLocation(folderBrowserDialog1.SelectedPath);
-                }
-                //the player didn't select a valid folder
-                else
-                {
-                    errorWindow(GlobalStrings.MessageBadFolderSelected);
-                }
-            }
-        }
 
 
-        /// <summary>
-        /// Once a valid location has been identified, allow the user to install.
-        /// </summary>
-        public void setInstallLocation(string validInstallLocation)
-        {
-            //MessageBox.Show(validInstallLocation + " is the location to install");
 
-            //global variable used for actually installing the files
-            installLocation.PathFolderHudLocation = validInstallLocation + Properties.Resources.stringFolderInstallPathTf;
 
-            //prepare the rest of the the strings for install paths, filenames, etc.
-            updateStrings();
-
-            //update the install path box
-            folderBrowserBoxLabel.Text = validInstallLocation;
-            folderBrowserBoxLabel.BackColor = Color.White;
-
-            //update the folder browser dialog
-            folderBrowserDialog1.SelectedPath = validInstallLocation;
-            folderBrowserDialog1.Description = GlobalStrings.FolderBrowserDescValid;
-
-            //update the install path setting
-            Properties.Settings.Default.settingFolderBrowserPath = validInstallLocation;
-            //MessageBox.Show("changing path setting: " + Properties.Settings.Default.folderBrowserPath);
-
-            //check whether the install and uninstall buttons should be enabled
-            updateButtons();
-        }
 
         /// <summary>
         /// Build all the strings for global variables such as install paths and filenames 
         /// </summary>
-        public void updateStrings()
+        public void updateStrings()  //TODO REMOVE ENTIRELY
         {
-            //the paths of the custom asset files
-            GlobalStrings.AssetOptionsPath = assetLocation.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource + Properties.Resources.stringFolderInstallPathUi + Properties.Resources.stringFolderAssetOptions;
-            GlobalStrings.AspectSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudAspect;
-            GlobalStrings.ScoreboardSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudScoreboard;
-            GlobalStrings.MenuSelectedAssetPath = GlobalStrings.AssetOptionsPath + assetLocation.FilenameHudMenu;
 
-            //the paths the custom asset files will be installed to
-            GlobalStrings.CustomInstallPathResource = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderInstallPathResource;
-            GlobalStrings.CustomInstallPathUi = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFolderInstallPathUi;
-
-            //the names and paths of the custom install files
-            GlobalStrings.MenuFileDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallMenu;
-            GlobalStrings.AspectFileDestination = GlobalStrings.CustomInstallPathUi + Properties.Resources.stringFilenameInstallAspect;
-            GlobalStrings.ScoreboardFileDestination = GlobalStrings.CustomInstallPathUi + Properties.Resources.stringFilenameInstallScoreboard;
-
-            //name and path of the "hud is installed" tracking file
-            GlobalStrings.InstallCheckerDestination = GlobalStrings.CustomInstallPathResource + Properties.Resources.stringFilenameInstallChecker;
 
             //the path for backup files
             GlobalStrings.BackupPath = installLocation.PathFolderHudLocation + Properties.Resources.stringFolderBackup;
-
-            //MessageBox.Show("installPath: \n" + installPath);
-            //MessageBox.Show("assetOptionsPath: \n" + assetOptionsPath);
-            //MessageBox.Show("aspectSelectedAssetPath: \n" + aspectSelectedAssetPath);
-            //MessageBox.Show("scoreboardSelectedAssetPath: \n" + scoreboardSelectedAssetPath);
-            //MessageBox.Show("menuSelectedAssetPath: \n" + menuSelectedAssetPath);
-            //MessageBox.Show("customInstallPathResource: \n" + customInstallPathResource);
-            //MessageBox.Show("customInstallPathUi: \n" + customInstallPathUi);
-            //MessageBox.Show("menuFileDestination: \n" + menuFileDestination);
-            //MessageBox.Show("aspectFileDestination: \n" + aspectFileDestination);
-            //MessageBox.Show("scoreboardFileDestination: \n" + scoreboardFileDestination);
-            //MessageBox.Show("installCheckerDestination: \n" + installCheckerDestination);
-            //MessageBox.Show("backupPath: \n" + backupPath);
         }
 
 
@@ -520,6 +444,11 @@ namespace Thwartski_Hud_Installer
             //open a special messagebox with Error as the window text and an icon
             MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
         }
+
+
+
+
+
 
 
         //TODO remove this button and make the check happen automatically
