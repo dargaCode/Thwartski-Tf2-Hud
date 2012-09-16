@@ -33,15 +33,15 @@
             this.browseFolderInstructionsLabel = new System.Windows.Forms.Label();
             this.aspectLabel = new System.Windows.Forms.Label();
             this.aspectCombobox = new System.Windows.Forms.ComboBox();
-            this.scoreboardMaxmodeLabel = new System.Windows.Forms.Label();
+            this.scoreboardMinmodeLabel = new System.Windows.Forms.Label();
             this.installButton = new System.Windows.Forms.Button();
             this.uninstallButton = new System.Windows.Forms.Button();
             this.form1LayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.scoreboardMinmodeLabel = new System.Windows.Forms.Label();
-            this.scoreboardComboboxMinmode = new System.Windows.Forms.ComboBox();
-            this.scoreboardComboboxMaxmode = new System.Windows.Forms.ComboBox();
-            this.scoreboardPictureboxMaxmode = new System.Windows.Forms.PictureBox();
-            this.scoreboardPictureboxMinmode = new System.Windows.Forms.PictureBox();
+            this.scoreboardMaxmodeLabel = new System.Windows.Forms.Label();
+            this.scoreboardMaxmodeCombobox = new System.Windows.Forms.ComboBox();
+            this.scoreboardMinmodeCombobox = new System.Windows.Forms.ComboBox();
+            this.scoreboardMinmodePicturebox = new System.Windows.Forms.PictureBox();
+            this.scoreboardMaxmodePicturebox = new System.Windows.Forms.PictureBox();
             this.aspectPicturebox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.folderBrowserButton = new System.Windows.Forms.Button();
@@ -49,8 +49,8 @@
             this.folderBrowserBoxLabel = new System.Windows.Forms.Label();
             this.downloadButton = new System.Windows.Forms.Button();
             this.form1LayoutPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMaxmode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMinmode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardMinmodePicturebox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardMaxmodePicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspectPicturebox)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -101,18 +101,18 @@
             this.aspectCombobox.TabIndex = 2;
             this.aspectCombobox.SelectedIndexChanged += new System.EventHandler(this.aspectCombobox_SelectedIndexChanged);
             // 
-            // scoreboardMaxmodeLabel
+            // scoreboardMinmodeLabel
             // 
-            this.scoreboardMaxmodeLabel.AutoSize = true;
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMaxmodeLabel, 4);
-            this.scoreboardMaxmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardMaxmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreboardMaxmodeLabel.Location = new System.Drawing.Point(27, 451);
-            this.scoreboardMaxmodeLabel.Name = "scoreboardMaxmodeLabel";
-            this.scoreboardMaxmodeLabel.Size = new System.Drawing.Size(218, 25);
-            this.scoreboardMaxmodeLabel.TabIndex = 12;
-            this.scoreboardMaxmodeLabel.Text = "Pub Server Scoreboard:";
-            this.scoreboardMaxmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scoreboardMinmodeLabel.AutoSize = true;
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMinmodeLabel, 4);
+            this.scoreboardMinmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMinmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreboardMinmodeLabel.Location = new System.Drawing.Point(27, 451);
+            this.scoreboardMinmodeLabel.Name = "scoreboardMinmodeLabel";
+            this.scoreboardMinmodeLabel.Size = new System.Drawing.Size(218, 25);
+            this.scoreboardMinmodeLabel.TabIndex = 12;
+            this.scoreboardMinmodeLabel.Text = "Competitive Scoreboard:";
+            this.scoreboardMinmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // installButton
             // 
@@ -155,15 +155,15 @@
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.form1LayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeLabel, 5, 7);
-            this.form1LayoutPanel.Controls.Add(this.scoreboardComboboxMinmode, 6, 8);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMaxmodeLabel, 5, 7);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMaxmodeCombobox, 6, 8);
             this.form1LayoutPanel.Controls.Add(this.uninstallButton, 1, 9);
-            this.form1LayoutPanel.Controls.Add(this.scoreboardComboboxMaxmode, 2, 8);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeCombobox, 2, 8);
             this.form1LayoutPanel.Controls.Add(this.installButton, 5, 9);
-            this.form1LayoutPanel.Controls.Add(this.scoreboardPictureboxMaxmode, 1, 6);
-            this.form1LayoutPanel.Controls.Add(this.scoreboardPictureboxMinmode, 4, 6);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodePicturebox, 1, 6);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMaxmodePicturebox, 4, 6);
             this.form1LayoutPanel.Controls.Add(this.aspectPicturebox, 2, 3);
-            this.form1LayoutPanel.Controls.Add(this.scoreboardMaxmodeLabel, 1, 7);
+            this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeLabel, 1, 7);
             this.form1LayoutPanel.Controls.Add(this.aspectCombobox, 4, 5);
             this.form1LayoutPanel.Controls.Add(this.aspectLabel, 3, 4);
             this.form1LayoutPanel.Controls.Add(this.browseFolderInstructionsLabel, 2, 0);
@@ -187,64 +187,64 @@
             this.form1LayoutPanel.Size = new System.Drawing.Size(498, 578);
             this.form1LayoutPanel.TabIndex = 21;
             // 
-            // scoreboardMinmodeLabel
+            // scoreboardMaxmodeLabel
             // 
-            this.scoreboardMinmodeLabel.AutoSize = true;
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMinmodeLabel, 4);
-            this.scoreboardMinmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardMinmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scoreboardMinmodeLabel.Location = new System.Drawing.Point(251, 451);
-            this.scoreboardMinmodeLabel.Name = "scoreboardMinmodeLabel";
-            this.scoreboardMinmodeLabel.Size = new System.Drawing.Size(218, 25);
-            this.scoreboardMinmodeLabel.TabIndex = 28;
-            this.scoreboardMinmodeLabel.Text = "Competitive Scoreboard:";
-            this.scoreboardMinmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scoreboardMaxmodeLabel.AutoSize = true;
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMaxmodeLabel, 4);
+            this.scoreboardMaxmodeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMaxmodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreboardMaxmodeLabel.Location = new System.Drawing.Point(251, 451);
+            this.scoreboardMaxmodeLabel.Name = "scoreboardMaxmodeLabel";
+            this.scoreboardMaxmodeLabel.Size = new System.Drawing.Size(218, 25);
+            this.scoreboardMaxmodeLabel.TabIndex = 28;
+            this.scoreboardMaxmodeLabel.Text = "Pub Server Scoreboard:";
+            this.scoreboardMaxmodeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // scoreboardComboboxMinmode
+            // scoreboardMaxmodeCombobox
             // 
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardComboboxMinmode, 2);
-            this.scoreboardComboboxMinmode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardComboboxMinmode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.scoreboardComboboxMinmode.FormattingEnabled = true;
-            this.scoreboardComboboxMinmode.Location = new System.Drawing.Point(307, 479);
-            this.scoreboardComboboxMinmode.Name = "scoreboardComboboxMinmode";
-            this.scoreboardComboboxMinmode.Size = new System.Drawing.Size(106, 21);
-            this.scoreboardComboboxMinmode.TabIndex = 4;
-            this.scoreboardComboboxMinmode.SelectedIndexChanged += new System.EventHandler(this.scoreboardComboboxMinmode_SelectedIndexChanged);
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMaxmodeCombobox, 2);
+            this.scoreboardMaxmodeCombobox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMaxmodeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.scoreboardMaxmodeCombobox.FormattingEnabled = true;
+            this.scoreboardMaxmodeCombobox.Location = new System.Drawing.Point(307, 479);
+            this.scoreboardMaxmodeCombobox.Name = "scoreboardMaxmodeCombobox";
+            this.scoreboardMaxmodeCombobox.Size = new System.Drawing.Size(106, 21);
+            this.scoreboardMaxmodeCombobox.TabIndex = 4;
+            this.scoreboardMaxmodeCombobox.SelectedIndexChanged += new System.EventHandler(this.scoreboardMaxmodeCombobox_SelectedIndexChanged);
             // 
-            // scoreboardComboboxMaxmode
+            // scoreboardMinmodeCombobox
             // 
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardComboboxMaxmode, 2);
-            this.scoreboardComboboxMaxmode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardComboboxMaxmode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.scoreboardComboboxMaxmode.FormattingEnabled = true;
-            this.scoreboardComboboxMaxmode.Location = new System.Drawing.Point(83, 479);
-            this.scoreboardComboboxMaxmode.Name = "scoreboardComboboxMaxmode";
-            this.scoreboardComboboxMaxmode.Size = new System.Drawing.Size(106, 21);
-            this.scoreboardComboboxMaxmode.TabIndex = 3;
-            this.scoreboardComboboxMaxmode.SelectedIndexChanged += new System.EventHandler(this.scoreboardComboboxMaxmode_SelectedIndexChanged);
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMinmodeCombobox, 2);
+            this.scoreboardMinmodeCombobox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMinmodeCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.scoreboardMinmodeCombobox.FormattingEnabled = true;
+            this.scoreboardMinmodeCombobox.Location = new System.Drawing.Point(83, 479);
+            this.scoreboardMinmodeCombobox.Name = "scoreboardMinmodeCombobox";
+            this.scoreboardMinmodeCombobox.Size = new System.Drawing.Size(106, 21);
+            this.scoreboardMinmodeCombobox.TabIndex = 3;
+            this.scoreboardMinmodeCombobox.SelectedIndexChanged += new System.EventHandler(this.scoreboardMinmodeCombobox_SelectedIndexChanged);
             // 
-            // scoreboardPictureboxMaxmode
+            // scoreboardMinmodePicturebox
             // 
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardPictureboxMaxmode, 4);
-            this.scoreboardPictureboxMaxmode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardPictureboxMaxmode.Location = new System.Drawing.Point(27, 303);
-            this.scoreboardPictureboxMaxmode.Name = "scoreboardPictureboxMaxmode";
-            this.scoreboardPictureboxMaxmode.Size = new System.Drawing.Size(218, 145);
-            this.scoreboardPictureboxMaxmode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.scoreboardPictureboxMaxmode.TabIndex = 19;
-            this.scoreboardPictureboxMaxmode.TabStop = false;
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMinmodePicturebox, 4);
+            this.scoreboardMinmodePicturebox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMinmodePicturebox.Location = new System.Drawing.Point(27, 303);
+            this.scoreboardMinmodePicturebox.Name = "scoreboardMinmodePicturebox";
+            this.scoreboardMinmodePicturebox.Size = new System.Drawing.Size(218, 145);
+            this.scoreboardMinmodePicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.scoreboardMinmodePicturebox.TabIndex = 19;
+            this.scoreboardMinmodePicturebox.TabStop = false;
             // 
-            // scoreboardPictureboxMinmode
+            // scoreboardMaxmodePicturebox
             // 
-            this.form1LayoutPanel.SetColumnSpan(this.scoreboardPictureboxMinmode, 4);
-            this.scoreboardPictureboxMinmode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scoreboardPictureboxMinmode.Location = new System.Drawing.Point(251, 303);
-            this.scoreboardPictureboxMinmode.Name = "scoreboardPictureboxMinmode";
-            this.scoreboardPictureboxMinmode.Size = new System.Drawing.Size(218, 145);
-            this.scoreboardPictureboxMinmode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.scoreboardPictureboxMinmode.TabIndex = 26;
-            this.scoreboardPictureboxMinmode.TabStop = false;
+            this.form1LayoutPanel.SetColumnSpan(this.scoreboardMaxmodePicturebox, 4);
+            this.scoreboardMaxmodePicturebox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scoreboardMaxmodePicturebox.Location = new System.Drawing.Point(251, 303);
+            this.scoreboardMaxmodePicturebox.Name = "scoreboardMaxmodePicturebox";
+            this.scoreboardMaxmodePicturebox.Size = new System.Drawing.Size(218, 145);
+            this.scoreboardMaxmodePicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.scoreboardMaxmodePicturebox.TabIndex = 26;
+            this.scoreboardMaxmodePicturebox.TabStop = false;
             // 
             // aspectPicturebox
             // 
@@ -334,8 +334,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.form1LayoutPanel.ResumeLayout(false);
             this.form1LayoutPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMaxmode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scoreboardPictureboxMinmode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardMinmodePicturebox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scoreboardMaxmodePicturebox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aspectPicturebox)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -348,13 +348,13 @@
         private System.Windows.Forms.TableLayoutPanel form1LayoutPanel;
         private System.Windows.Forms.Button uninstallButton;
         private System.Windows.Forms.Button installButton;
-        private System.Windows.Forms.PictureBox scoreboardPictureboxMaxmode;
+        private System.Windows.Forms.PictureBox scoreboardMinmodePicturebox;
         private System.Windows.Forms.PictureBox aspectPicturebox;
-        private System.Windows.Forms.Label scoreboardMaxmodeLabel;
+        private System.Windows.Forms.Label scoreboardMinmodeLabel;
         private System.Windows.Forms.Label aspectLabel;
         private System.Windows.Forms.Label browseFolderInstructionsLabel;
-        private System.Windows.Forms.PictureBox scoreboardPictureboxMinmode;
-        private System.Windows.Forms.Label scoreboardMinmodeLabel;
+        private System.Windows.Forms.PictureBox scoreboardMaxmodePicturebox;
+        private System.Windows.Forms.Label scoreboardMaxmodeLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button folderBrowserButton;
         private System.Windows.Forms.Panel panel1;
@@ -362,8 +362,8 @@
         public System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         public System.Windows.Forms.Label folderBrowserBoxLabel;
         public System.Windows.Forms.ComboBox aspectCombobox;
-        public System.Windows.Forms.ComboBox scoreboardComboboxMaxmode;
-        public System.Windows.Forms.ComboBox scoreboardComboboxMinmode;
+        public System.Windows.Forms.ComboBox scoreboardMinmodeCombobox;
+        public System.Windows.Forms.ComboBox scoreboardMaxmodeCombobox;
     }
 }
 

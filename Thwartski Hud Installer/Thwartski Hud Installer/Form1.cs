@@ -61,8 +61,8 @@ namespace Thwartski_Hud_Installer
 
             //option objects
             this.aspectOption = new Option(this, installer, aspectCombobox, aspectPicturebox, aspectLabel, Properties.Settings.Default.settingComboboxAspect);
-            this.scoreboardMinmodeOption = new Option(this, installer, scoreboardComboboxMinmode, scoreboardPictureboxMinmode, scoreboardMinmodeLabel, Properties.Settings.Default.settingComboboxMinmode);
-            this.scoreboardMaxmodeOption = new Option(this, installer, scoreboardComboboxMaxmode, scoreboardPictureboxMaxmode, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
+            this.scoreboardMinmodeOption = new Option(this, installer, scoreboardMinmodeCombobox, scoreboardMinmodePicturebox, scoreboardMinmodeLabel, Properties.Settings.Default.settingComboboxMinmode);
+            this.scoreboardMaxmodeOption = new Option(this, installer, scoreboardMaxmodeCombobox, scoreboardMaxmodePicturebox, scoreboardMaxmodeLabel, Properties.Settings.Default.settingComboboxMaxmode);
 
             //objects which reference other class objects
             this.browser = new Browser(this, installLocation);
@@ -114,14 +114,14 @@ namespace Thwartski_Hud_Installer
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
-        private void scoreboardComboboxMinmode_SelectedIndexChanged(object sender, EventArgs e)
+        private void scoreboardMaxmodeCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
             optionsTracker.updateScoreboard();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
-        private void scoreboardComboboxMaxmode_SelectedIndexChanged(object sender, EventArgs e)
+        private void scoreboardMinmodeCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //update images and file paths
             optionsTracker.updateScoreboard();
@@ -391,13 +391,13 @@ namespace Thwartski_Hud_Installer
             HudInstallerTooltips.SetToolTip(this.aspectLabel, GlobalStrings.TooltipAspectRatio);
             HudInstallerTooltips.SetToolTip(this.aspectCombobox, GlobalStrings.TooltipAspectRatio);
             //assign maxmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMaxmode, GlobalStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMaxmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardComboboxMaxmode, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodePicturebox, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMaxmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeCombobox, GlobalStrings.TooltipMaxmode);
             //assign minmode scoreboard tooltips
-            HudInstallerTooltips.SetToolTip(this.scoreboardPictureboxMinmode, GlobalStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardMinmodeLabel, GlobalStrings.TooltipMinmode);
-            HudInstallerTooltips.SetToolTip(this.scoreboardComboboxMinmode, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodePicturebox, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeLabel, GlobalStrings.TooltipMinmode);
+            HudInstallerTooltips.SetToolTip(this.scoreboardMaxmodeCombobox, GlobalStrings.TooltipMinmode);
             //assign install and uninstall tooltips
             HudInstallerTooltips.SetToolTip(this.installButton, GlobalStrings.TooltipInstallButton);
             HudInstallerTooltips.SetToolTip(this.uninstallButton, GlobalStrings.TooltipUninstallButton);
