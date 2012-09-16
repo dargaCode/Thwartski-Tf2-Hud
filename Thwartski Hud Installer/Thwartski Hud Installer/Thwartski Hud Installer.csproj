@@ -59,7 +59,7 @@
     <Compile Include="Downloader.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Installer.cs" />
-    <Compile Include="OptionsTracker.cs" />
+    <Compile Include="Tracker.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,10 +76,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="GlobalStrings.cs" />
-    <Compile Include="UiTracker.cs" />
+    <Compile Include="Buttons.cs" />
     <Compile Include="Uninstaller.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

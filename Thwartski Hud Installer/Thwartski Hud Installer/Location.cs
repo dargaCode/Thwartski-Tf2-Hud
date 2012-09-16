@@ -7,14 +7,10 @@ namespace Thwartski_Hud_Installer
 {
     class Location
     {
-        //classes to store the value being passed in
-        private Form1 mainForm = null;
-
         //constructor?
-        public Location(Form1 f)
+        public Location()
         {
-            //store the calling form
-            mainForm = f;
+
         } 
 
         //should contain: 

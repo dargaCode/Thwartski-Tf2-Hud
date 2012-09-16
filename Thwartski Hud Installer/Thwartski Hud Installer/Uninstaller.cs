@@ -7,15 +7,12 @@ namespace Thwartski_Hud_Installer
 {
     class Uninstaller
     {
-
-        //classes to store the value being passed in
-        private Form1 mainForm = null;
-
         //constructor?
-        public Uninstaller(Form1 f)
+        public Uninstaller()
         {
-            //store the calling form
-            mainForm = f;
+
         }
+
+
     } //namespace
 } //class

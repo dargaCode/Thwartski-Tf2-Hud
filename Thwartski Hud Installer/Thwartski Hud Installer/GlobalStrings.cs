@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Thwartski_Hud_Installer
 {
@@ -18,27 +19,28 @@ namespace Thwartski_Hud_Installer
             public static string TooltipInstallButton { get { return _tooltipInstallButton; } set { _tooltipInstallButton = value; } }
             public static string TooltipUninstallButton { get { return _tooltipUninstallButton; } set { _tooltipUninstallButton = value; } }
 
-        //copy and installing assets
-        private static string _backupPath;                       //written at runtime
 
-            //getters and setters
-            public static string BackupPath { get { return _backupPath; } set { _backupPath = value; } }
 
-        //paths for browsing folders
-        private static string _folderSteamapps;                  //written at runtime
-        private static string _folderSteamUser;                  //written at runtime
-        private static string _pathPartialTeamFortress2;         //written at runtime
 
-            //getters and setters
-            public static string FolderSteamapps { get { return _folderSteamapps; } set { _folderSteamapps = value; } }
-            public static string FolderSteamUser { get { return _folderSteamUser; } set { _folderSteamUser = value; } }
-            public static string PathPartialTeamFortress2 { get { return _pathPartialTeamFortress2; } set { _pathPartialTeamFortress2 = value; } }
+        /// <summary>
+        /// Show a special error window with a sound and a custom message.
+        /// </summary>
+        /// <param name="exceptionMessage"></param>
+        public static void errorWindow(string exceptionMessage)
+        {
+            //open a special messagebox with Error as the window text and an icon
+            MessageBox.Show(exceptionMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+        }
 
 
 
 
 
-        //READ ONLY
+
+
+        //TODO make a function to handle these complex string assemblies (so the strings can go into resources)
+
+
 
 
 

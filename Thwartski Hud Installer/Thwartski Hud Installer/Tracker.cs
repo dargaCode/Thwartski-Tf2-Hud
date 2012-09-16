@@ -8,10 +8,10 @@ using System.Windows.Forms;
 
 namespace Thwartski_Hud_Installer
 {
-    class OptionsTracker
+    class Tracker
     {
         //classes to store the value being passed in
-        private Form1 mainForm = null;
+        private Buttons buttons = null;
         private Location assetLocation = null;
         private Location installLocation = null;
         private Option aspectOption = null;
@@ -19,10 +19,10 @@ namespace Thwartski_Hud_Installer
         private Option scoreboardMaxmodeOption = null;
 
         //constructor?
-        public OptionsTracker(Form1 f, Location asset, Location install, Option aspect, Option scoreMin, Option scoreMax)
+        public Tracker(Buttons b, Location asset, Location install, Option aspect, Option scoreMin, Option scoreMax)
         {
-            //store the calling form
-            mainForm = f;
+            //assign the buttons object
+            buttons = b;
 
             //assign the hud objects
             assetLocation = asset;
@@ -74,18 +74,6 @@ namespace Thwartski_Hud_Installer
         }
 
         /// <summary>
-        /// Update all relevant elements when an option is changed.
-        /// </summary>
-        public void Update() //TODO HOOK THIS UP
-        {
-            //rebuild text strings
-            mainForm.updateStrings();  //TODO this can be deleted entirely and handled at install
-
-            //update install/uninstall buttons
-            mainForm.updateButtons();
-        }
-
-        /// <summary>
         /// Get the new string from the aspect option and update the assets
         /// </summary>
         /// <param name="option"></param>
@@ -112,7 +100,7 @@ namespace Thwartski_Hud_Installer
                 //something went wrong
                 else
                 {
-                    mainForm.errorWindow("No match for asset file: " + aspectRatio);
+                    GlobalStrings.errorWindow("No match for asset file: " + aspectRatio);
                 }
             }
         }
@@ -191,7 +179,7 @@ namespace Thwartski_Hud_Installer
             Properties.Settings.Default.Save();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            mainForm.updateButtons();
+            buttons.Update();
         }
 
         /// <summary>
@@ -205,35 +193,52 @@ namespace Thwartski_Hud_Installer
             scoreboardMaxmodeOption.Revert();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            mainForm.updateButtons();
+            buttons.Update();
         }
 
 
         /// <summary>
         /// Check if any options are different from their saved values.
         /// </summary>
-        public bool detectOptionsChanges()
+        public bool Modified()
         {
-            bool optionsChanged = false;
+            bool optionsModified = false;
             
             //aspect
             if(aspectOption.Modified)
             {
-                optionsChanged = true;
+                optionsModified = true;
             }
             //minmode
             if(scoreboardMinmodeOption.Modified)
             {
-                optionsChanged = true;
+                optionsModified = true;
             }
             //maxmode
             if(scoreboardMaxmodeOption.Modified)
             {
-                optionsChanged = true;
+                optionsModified = true;
             }
 
             //if any options were different, this will be true
-            return optionsChanged;
+            return optionsModified;
+        }
+
+        /// <summary>
+        /// check if the hud is installed
+        /// </summary>
+        /// <returns></returns>
+        public bool hudInstalled()
+        {
+            //check for the version file in the resource folder
+            if (System.IO.File.Exists(installLocation.PathFolderHudLocation + Properties.Resources.stringFolderResource + Properties.Resources.stringFilenameInstallVersion))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 

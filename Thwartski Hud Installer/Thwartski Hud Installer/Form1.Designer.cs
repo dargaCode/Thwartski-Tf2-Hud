@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.browseFolderInstructionsLabel = new System.Windows.Forms.Label();
+            this.InstallBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.InstallBrowserInstructLabel = new System.Windows.Forms.Label();
             this.aspectLabel = new System.Windows.Forms.Label();
             this.aspectCombobox = new System.Windows.Forms.ComboBox();
             this.scoreboardMinmodeLabel = new System.Windows.Forms.Label();
@@ -44,9 +44,9 @@
             this.scoreboardMaxmodePicturebox = new System.Windows.Forms.PictureBox();
             this.aspectPicturebox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.folderBrowserButton = new System.Windows.Forms.Button();
+            this.InstallBrowserButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.folderBrowserBoxLabel = new System.Windows.Forms.Label();
+            this.InstallBrowserPathLabel = new System.Windows.Forms.Label();
             this.downloadButton = new System.Windows.Forms.Button();
             this.form1LayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardMinmodePicturebox)).BeginInit();
@@ -56,22 +56,22 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // folderBrowserDialog1
+            // InstallBrowserDialog
             // 
-            this.folderBrowserDialog1.ShowNewFolderButton = false;
+            this.InstallBrowserDialog.ShowNewFolderButton = false;
             // 
-            // browseFolderInstructionsLabel
+            // InstallBrowserInstructLabel
             // 
-            this.browseFolderInstructionsLabel.AutoSize = true;
-            this.form1LayoutPanel.SetColumnSpan(this.browseFolderInstructionsLabel, 6);
-            this.browseFolderInstructionsLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.browseFolderInstructionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.browseFolderInstructionsLabel.Location = new System.Drawing.Point(83, 13);
-            this.browseFolderInstructionsLabel.Name = "browseFolderInstructionsLabel";
-            this.browseFolderInstructionsLabel.Size = new System.Drawing.Size(330, 15);
-            this.browseFolderInstructionsLabel.TabIndex = 3;
-            this.browseFolderInstructionsLabel.Text = "Please select your Team Fortress 2 folder:";
-            this.browseFolderInstructionsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.InstallBrowserInstructLabel.AutoSize = true;
+            this.form1LayoutPanel.SetColumnSpan(this.InstallBrowserInstructLabel, 6);
+            this.InstallBrowserInstructLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InstallBrowserInstructLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstallBrowserInstructLabel.Location = new System.Drawing.Point(83, 13);
+            this.InstallBrowserInstructLabel.Name = "InstallBrowserInstructLabel";
+            this.InstallBrowserInstructLabel.Size = new System.Drawing.Size(330, 15);
+            this.InstallBrowserInstructLabel.TabIndex = 3;
+            this.InstallBrowserInstructLabel.Text = "Please select your Team Fortress 2 folder:";
+            this.InstallBrowserInstructLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // aspectLabel
             // 
@@ -166,7 +166,7 @@
             this.form1LayoutPanel.Controls.Add(this.scoreboardMinmodeLabel, 1, 7);
             this.form1LayoutPanel.Controls.Add(this.aspectCombobox, 4, 5);
             this.form1LayoutPanel.Controls.Add(this.aspectLabel, 3, 4);
-            this.form1LayoutPanel.Controls.Add(this.browseFolderInstructionsLabel, 2, 0);
+            this.form1LayoutPanel.Controls.Add(this.InstallBrowserInstructLabel, 2, 0);
             this.form1LayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 1);
             this.form1LayoutPanel.Controls.Add(this.downloadButton, 4, 8);
             this.form1LayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -265,7 +265,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 385F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel1.Controls.Add(this.folderBrowserButton, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.InstallBrowserButton, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 31);
@@ -275,35 +275,35 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(492, 29);
             this.tableLayoutPanel1.TabIndex = 30;
             // 
-            // folderBrowserButton
+            // InstallBrowserButton
             // 
-            this.folderBrowserButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.folderBrowserButton.Location = new System.Drawing.Point(403, 3);
-            this.folderBrowserButton.Name = "folderBrowserButton";
-            this.folderBrowserButton.Size = new System.Drawing.Size(72, 23);
-            this.folderBrowserButton.TabIndex = 29;
-            this.folderBrowserButton.Text = "Browse";
-            this.folderBrowserButton.UseVisualStyleBackColor = true;
-            this.folderBrowserButton.Click += new System.EventHandler(this.folderBrowserButton_Click);
+            this.InstallBrowserButton.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.InstallBrowserButton.Location = new System.Drawing.Point(403, 3);
+            this.InstallBrowserButton.Name = "InstallBrowserButton";
+            this.InstallBrowserButton.Size = new System.Drawing.Size(72, 23);
+            this.InstallBrowserButton.TabIndex = 29;
+            this.InstallBrowserButton.Text = "Browse";
+            this.InstallBrowserButton.UseVisualStyleBackColor = true;
+            this.InstallBrowserButton.Click += new System.EventHandler(this.InstallBrowserButton_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.folderBrowserBoxLabel);
+            this.panel1.Controls.Add(this.InstallBrowserPathLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(18, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(379, 23);
             this.panel1.TabIndex = 30;
             // 
-            // folderBrowserBoxLabel
+            // InstallBrowserPathLabel
             // 
-            this.folderBrowserBoxLabel.BackColor = System.Drawing.Color.LightPink;
-            this.folderBrowserBoxLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.folderBrowserBoxLabel.Location = new System.Drawing.Point(0, 0);
-            this.folderBrowserBoxLabel.Name = "folderBrowserBoxLabel";
-            this.folderBrowserBoxLabel.Size = new System.Drawing.Size(379, 23);
-            this.folderBrowserBoxLabel.TabIndex = 32;
-            this.folderBrowserBoxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.InstallBrowserPathLabel.BackColor = System.Drawing.Color.LightPink;
+            this.InstallBrowserPathLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.InstallBrowserPathLabel.Location = new System.Drawing.Point(0, 0);
+            this.InstallBrowserPathLabel.Name = "InstallBrowserPathLabel";
+            this.InstallBrowserPathLabel.Size = new System.Drawing.Size(379, 23);
+            this.InstallBrowserPathLabel.TabIndex = 32;
+            this.InstallBrowserPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // downloadButton
             // 
@@ -352,15 +352,15 @@
         private System.Windows.Forms.PictureBox aspectPicturebox;
         private System.Windows.Forms.Label scoreboardMinmodeLabel;
         private System.Windows.Forms.Label aspectLabel;
-        private System.Windows.Forms.Label browseFolderInstructionsLabel;
+        private System.Windows.Forms.Label InstallBrowserInstructLabel;
         private System.Windows.Forms.PictureBox scoreboardMaxmodePicturebox;
         private System.Windows.Forms.Label scoreboardMaxmodeLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button folderBrowserButton;
+        private System.Windows.Forms.Button InstallBrowserButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button downloadButton;
-        public System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        public System.Windows.Forms.Label folderBrowserBoxLabel;
+        public System.Windows.Forms.FolderBrowserDialog InstallBrowserDialog;
+        public System.Windows.Forms.Label InstallBrowserPathLabel;
         public System.Windows.Forms.ComboBox aspectCombobox;
         public System.Windows.Forms.ComboBox scoreboardMinmodeCombobox;
         public System.Windows.Forms.ComboBox scoreboardMaxmodeCombobox;
