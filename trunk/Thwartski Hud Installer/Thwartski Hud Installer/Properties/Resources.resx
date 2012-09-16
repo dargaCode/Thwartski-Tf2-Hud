@@ -227,7 +227,7 @@
     <value>ScoreBoard_Pub32Comp6.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
-  <data name="stringFolderAssetOptions" xml:space="preserve">
+  <data name="stringFolderOptions" xml:space="preserve">
     <value>_Thwartski Hud Options\</value>
     <comment>//paths for copying assets and installing them</comment>
   </data>
@@ -235,11 +235,11 @@
     <value>_HUD BACKUPS\</value>
     <comment>//paths for copying assets and installing them</comment>
   </data>
-  <data name="stringFolderDefaultSteamapps64Bit" xml:space="preserve">
+  <data name="stringFolderSteamapps64Bit" xml:space="preserve">
     <value>C:\Program Files\Steam\steamapps\</value>
     <comment>//paths for populating the folder browser</comment>
   </data>
-  <data name="stringFolderDefaultSteamapps32Bit" xml:space="preserve">
+  <data name="stringFolderSteamapps32Bit" xml:space="preserve">
     <value>C:\Program Files (x86)\Steam\steamapps\</value>
     <comment>//paths for populating the folder browser</comment>
   </data>
@@ -255,15 +255,15 @@
     <value>\team fortress 2</value>
     <comment>//paths for populating the folder browser</comment>
   </data>
-  <data name="stringFolderInstallPathResource" xml:space="preserve">
+  <data name="stringFolderResource" xml:space="preserve">
     <value>resource\</value>
     <comment>//paths for copying assets and installing them</comment>
   </data>
-  <data name="stringFolderInstallPathTf" xml:space="preserve">
+  <data name="stringFolderTf" xml:space="preserve">
     <value>\tf\</value>
     <comment>//paths for copying assets and installing them</comment>
   </data>
-  <data name="stringFolderInstallPathUi" xml:space="preserve">
+  <data name="stringFolderUi" xml:space="preserve">
     <value>ui\</value>
     <comment>//paths for copying assets and installing them</comment>
   </data>
@@ -275,7 +275,7 @@
     <value>Your custom options have been installed.</value>
     <comment>//success messages</comment>
   </data>
-  <data name="stringFilenameInstallChecker" xml:space="preserve">
+  <data name="stringFilenameInstallVersion" xml:space="preserve">
     <value>Thwartski Hud Installed.txt</value>
     <comment>//file and path to let the buttons know the hud is installed</comment>
   </data>
@@ -288,7 +288,7 @@
     <comment>//what to name the zip file after downloading</comment>
   </data>
   <data name="stringFolderAsset" xml:space="preserve">
-    <value>Thwartski Hud Install Files\</value>
+    <value>Thwartski Hud Assets\</value>
     <comment>//where to unzip the zip file to</comment>
   </data>
 </root>

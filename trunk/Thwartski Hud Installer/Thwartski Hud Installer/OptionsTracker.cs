@@ -42,6 +42,7 @@ namespace Thwartski_Hud_Installer
             //populate the correct strings, dictionaries, images, and indices
             PopulateOptionsObjects();
 
+            //TODO does anything else happen here? can just cut out the middle man if not
         }
 
         /// <summary>
@@ -79,9 +80,6 @@ namespace Thwartski_Hud_Installer
         {
             //rebuild text strings
             mainForm.updateStrings();  //TODO this can be deleted entirely and handled at install
-
-            //update options string background color
-            detectOptionsChanges();
 
             //update install/uninstall buttons
             mainForm.updateButtons();
@@ -184,17 +182,13 @@ namespace Thwartski_Hud_Installer
             //the settings aren't saved until this method is run so the current options can be compared to the saved settings
             //and the install button can be enabled when options have changed.
 
-            //update the settings for each combobox option 
             //(the folder browser path is saved right as it changes, so it's left out here)
-            Properties.Settings.Default.settingComboboxAspect = mainForm.aspectCombobox.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMaxmode = mainForm.scoreboardComboboxMaxmode.SelectedIndex;
-            Properties.Settings.Default.settingComboboxMinmode = mainForm.scoreboardComboboxMinmode.SelectedIndex;
+            aspectOption.Save();
+            scoreboardMinmodeOption.Save();
+            scoreboardMaxmodeOption.Save();
 
             //now actually save the settings
             Properties.Settings.Default.Save();
-
-            //update options so that modified options won't remain highlighted
-            detectOptionsChanges();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
             mainForm.updateButtons();
@@ -205,14 +199,10 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public void revertOptions()
         {
-            //update the settings for each combobox options
-            //(the folder browser path is saved right as it changes, so it's left out here)
-            mainForm.aspectCombobox.SelectedIndex = Properties.Settings.Default.settingComboboxAspect;
-            mainForm.scoreboardComboboxMaxmode.SelectedIndex = Properties.Settings.Default.settingComboboxMaxmode;
-            mainForm.scoreboardComboboxMinmode.SelectedIndex = Properties.Settings.Default.settingComboboxMinmode;
-
-            //update options so that modified options won't remain highlighted
-            detectOptionsChanges();
+            //(the folder browser path is saved right as it changes, so it's left out here
+            aspectOption.Revert();
+            scoreboardMinmodeOption.Revert();
+            scoreboardMaxmodeOption.Revert();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
             mainForm.updateButtons();

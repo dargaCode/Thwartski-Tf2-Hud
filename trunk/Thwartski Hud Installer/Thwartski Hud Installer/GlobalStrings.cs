@@ -17,38 +17,12 @@ namespace Thwartski_Hud_Installer
             //getters and setters
             public static string TooltipInstallButton { get { return _tooltipInstallButton; } set { _tooltipInstallButton = value; } }
             public static string TooltipUninstallButton { get { return _tooltipUninstallButton; } set { _tooltipUninstallButton = value; } }
-           
-        //which custom assets were selected to be installed in the comboboxes
-        private static string _aspectSelectedAssetPath;          //written at runtime
-        private static string _scoreboardSelectedAssetPath;      //written at runtime
-        private static string _menuSelectedAssetPath;            //written at runtime
-
-            //getters and setters
-            public static string AspectSelectedAssetPath { get { return _aspectSelectedAssetPath; } set { _aspectSelectedAssetPath = value; } }
-            public static string ScoreboardSelectedAssetPath { get { return _scoreboardSelectedAssetPath; } set { _scoreboardSelectedAssetPath = value; } }
-            public static string MenuSelectedAssetPath { get { return _menuSelectedAssetPath; } set { _menuSelectedAssetPath = value; } }
 
         //copy and installing assets
-        private static string _assetOptionsPath;                 //written at runtime
         private static string _backupPath;                       //written at runtime
 
             //getters and setters
-            public static string AssetOptionsPath { get { return _assetOptionsPath; } set { _assetOptionsPath = value; } }
             public static string BackupPath { get { return _backupPath; } set { _backupPath = value; } }
-
-        //paths to write custom files to
-        private static string _customInstallPathResource;        //written at runtime
-        private static string _customInstallPathUi;              //written at runtime
-        private static string _aspectFileDestination;            //written at runtime
-        private static string _scoreboardFileDestination;        //written at runtime
-        private static string _menuFileDestination;              //written at runtime
-
-            //getters and setters
-            public static string CustomInstallPathResource { get { return _customInstallPathResource; } set { _customInstallPathResource = value; } }
-            public static string CustomInstallPathUi { get { return _customInstallPathUi; } set { _customInstallPathUi = value; } }
-            public static string AspectFileDestination { get { return _aspectFileDestination; } set { _aspectFileDestination = value; } }
-            public static string ScoreboardFileDestination { get { return _scoreboardFileDestination; } set { _scoreboardFileDestination = value; } }
-            public static string MenuFileDestination { get { return _menuFileDestination; } set { _menuFileDestination = value; } }
 
         //paths for browsing folders
         private static string _folderSteamapps;                  //written at runtime
@@ -60,11 +34,6 @@ namespace Thwartski_Hud_Installer
             public static string FolderSteamUser { get { return _folderSteamUser; } set { _folderSteamUser = value; } }
             public static string PathPartialTeamFortress2 { get { return _pathPartialTeamFortress2; } set { _pathPartialTeamFortress2 = value; } }
 
-        //file and path to let the buttons know the hud is installed
-        private static string _installCheckerDestination;        //written at runtime
-
-            //getters and setters
-            public static string InstallCheckerDestination { get { return _installCheckerDestination; } set { _installCheckerDestination = value; } }
 
 
 

@@ -290,15 +290,6 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thwartski Hud Installed.txt.
-        /// </summary>
-        internal static string stringFilenameInstallChecker {
-            get {
-                return ResourceManager.GetString("stringFilenameInstallChecker", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to GameMenu.res.
         /// </summary>
         internal static string stringFilenameInstallMenu {
@@ -317,6 +308,15 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Thwartski Hud Installed.txt.
+        /// </summary>
+        internal static string stringFilenameInstallVersion {
+            get {
+                return ResourceManager.GetString("stringFilenameInstallVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AssetFiles.zip.
         /// </summary>
         internal static string stringFilenameZipfile {
@@ -326,20 +326,11 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thwartski Hud Install Files\.
+        ///   Looks up a localized string similar to Thwartski Hud Assets\.
         /// </summary>
         internal static string stringFolderAsset {
             get {
                 return ResourceManager.GetString("stringFolderAsset", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to _Thwartski Hud Options\.
-        /// </summary>
-        internal static string stringFolderAssetOptions {
-            get {
-                return ResourceManager.GetString("stringFolderAssetOptions", resourceCulture);
             }
         }
         
@@ -353,47 +344,38 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Program Files (x86)\Steam\steamapps\.
+        ///   Looks up a localized string similar to _Thwartski Hud Options\.
         /// </summary>
-        internal static string stringFolderDefaultSteamapps32Bit {
+        internal static string stringFolderOptions {
             get {
-                return ResourceManager.GetString("stringFolderDefaultSteamapps32Bit", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to C:\Program Files\Steam\steamapps\.
-        /// </summary>
-        internal static string stringFolderDefaultSteamapps64Bit {
-            get {
-                return ResourceManager.GetString("stringFolderDefaultSteamapps64Bit", resourceCulture);
+                return ResourceManager.GetString("stringFolderOptions", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to resource\.
         /// </summary>
-        internal static string stringFolderInstallPathResource {
+        internal static string stringFolderResource {
             get {
-                return ResourceManager.GetString("stringFolderInstallPathResource", resourceCulture);
+                return ResourceManager.GetString("stringFolderResource", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to \tf\.
+        ///   Looks up a localized string similar to C:\Program Files (x86)\Steam\steamapps\.
         /// </summary>
-        internal static string stringFolderInstallPathTf {
+        internal static string stringFolderSteamapps32Bit {
             get {
-                return ResourceManager.GetString("stringFolderInstallPathTf", resourceCulture);
+                return ResourceManager.GetString("stringFolderSteamapps32Bit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ui\.
+        ///   Looks up a localized string similar to C:\Program Files\Steam\steamapps\.
         /// </summary>
-        internal static string stringFolderInstallPathUi {
+        internal static string stringFolderSteamapps64Bit {
             get {
-                return ResourceManager.GetString("stringFolderInstallPathUi", resourceCulture);
+                return ResourceManager.GetString("stringFolderSteamapps64Bit", resourceCulture);
             }
         }
         
@@ -421,6 +403,24 @@ namespace Thwartski_Hud_Installer.Properties {
         internal static string stringFolderTeamFortress2 {
             get {
                 return ResourceManager.GetString("stringFolderTeamFortress2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to \tf\.
+        /// </summary>
+        internal static string stringFolderTf {
+            get {
+                return ResourceManager.GetString("stringFolderTf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ui\.
+        /// </summary>
+        internal static string stringFolderUi {
+            get {
+                return ResourceManager.GetString("stringFolderUi", resourceCulture);
             }
         }
         

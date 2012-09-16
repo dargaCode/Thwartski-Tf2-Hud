@@ -137,7 +137,7 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         private void UiUpdate() 
             
-            //TODO implement
+        //TODO implement
         {
             ////if the hud hasn't been installed, no need to detect options changes
             //if (!installer.isHudInstalled())
@@ -167,6 +167,23 @@ namespace Thwartski_Hud_Installer
             }
         }
 
+        /// <summary>
+        /// Set the option's current setting as its new default setting
+        /// </summary>
+        public void Save()
+        {
+            //by using the setter, uiUpdate is called automatically
+            this.DefaultSetting = myCombobox.SelectedIndex;
+        }
+
+        /// <summary>
+        /// Set the option's current setting to its default setting
+        /// </summary>
+        public void Revert()
+        {
+            //don't need the setter here.  //TODO always use setters internally?
+             myCombobox.SelectedIndex = _defaultSetting;
+        }
 
 
     } //namespace
