@@ -1,6 +1,6 @@
 //Scoreboard with multiple settings based on cl_hud_minmode
+//Minmode = Comp9
 //Maxmode = Pub24
-//Minmode = Comp6
 
 //inspired by maco (layout) and pvhud (minmode)
 
@@ -84,7 +84,7 @@
 		"wide"			"573"//"600"
 		"tall"			"319"
 
-		"tall_minmode"			"208"
+		"tall_minmode"			"263"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -110,7 +110,7 @@
 		"wide"			"300"
 		"tall"			"70"
 
-		"ypos_minmode"			"218"	
+		"ypos_minmode"			"273"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -135,7 +135,7 @@
 		"wide"			"1"
 		"tall"			"222"
 
-		"tall_minmode"			"111"
+		"tall_minmode"			"166"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -178,7 +178,7 @@
 		"xpos"			"231"
 		"ypos"			"336"
 		
-		"ypos_minmode"	"225"
+		"ypos_minmode"	"280"
 		
 		"zpos"			"3"
 		"wide"			"140"
@@ -378,7 +378,7 @@
 		"wide"			"290"
 		"tall"			"235"	
 
-		"tall_minmode"			"123"	
+		"tall_minmode"			"179"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -398,7 +398,7 @@
 		"wide"			"290"
 		"tall"			"235"	
 
-		"tall_minmode"			"123"	
+		"tall_minmode"			"179"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -421,7 +421,7 @@
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"c-67"	
+		"ypos_minmode"			"c-12"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -448,7 +448,7 @@
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"c-67"	
+		"ypos_minmode"			"c-12"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -467,7 +467,7 @@
 		"wide"			"300"
 		"tall"			"20"
 
-		"ypos_minmode"			"186"
+		"ypos_minmode"			"241"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -493,7 +493,7 @@
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"185"
+		"ypos_minmode"			"240"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -548,7 +548,7 @@
 		"wide"			"600"
 		"tall"			"53"
 
-		"ypos_minmode"			"241"
+		"ypos_minmode"			"467"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -751,7 +751,7 @@
 		"xpos"			"0"
 		"ypos"			"269"
 		
-		"ypos_minmode"	"158"
+		"ypos_minmode"	"213"
 		
 		"zpos"			"5"
 		"wide"			"600"
