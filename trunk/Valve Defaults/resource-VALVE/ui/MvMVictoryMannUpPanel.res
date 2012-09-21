@@ -72,11 +72,49 @@
 			"draw_corner_height" 	"5"	
 		}
 			
-		//Header
-		"Header"
+		"NoItemServerContainer"
 		{
 			"ControlName"	"EditablePanel"
-			"fieldName"		"Header"
+			"fieldName"		"NoItemServerContainer"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"530"
+			"tall"			"480"
+			"visible"		"1"
+			
+			"NoItemServerHeader"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"NoItemServer"
+				"font"			"HudFontMediumSmallBold"
+				"labelText"		"#TF_PVE_Server_GCDownHeader"
+				"textAlignment" "center"
+				"xpos"			"0"
+				"ypos"			"100"
+				"wide"			"530"
+				"fgcolor"		"tanlight"
+			}
+			
+			"NoItemServerMessage"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"NoItemServer"
+				"font"			"HudFontSmall"
+				"labelText"		"#TF_PVE_Server_GCDownMessage"
+				"textAlignment" "center"
+				"xpos"			"0"
+				"ypos"			"120"
+				"wide"			"530"
+				"centerwrap"		"1"
+				"fgcolor"		"tanlight"
+			}
+		}
+		
+		//Header
+		"ItemTableHeader"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"ItemTableHeader"
 			"xpos"			"0"
 			"ypos"			"0"
 			"wide"			"600"
