@@ -122,7 +122,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"LevelLabelDropShadow"
 		"font"			"HudFontSmallestBold"
-		"labelText"		"%leveldropshadow%"
+		"labelText"		"%level%"
 		"textAlignment" "center"
 		"xpos"			"159"
 		"ypos"			"3"
@@ -227,7 +227,20 @@
 		}
 	}
 	
-	
+	"MissingVoucher"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"MissingVoucher"
+		"font"			"HudFontSmallest"
+		"labelText"		"#TF_PVE_Server_SquadVoucherMissing"
+		"textAlignment" "center"
+		"xpos"			"320"
+		"ypos"			"5"
+		"wide"			"200"
+		"fgcolor"		"tanlight"
+		"centerwrap"	"1"
+		"visible"		"0"
+	}
 	
 	"SquadSurplusLoot01"
 	{
