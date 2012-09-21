@@ -126,7 +126,7 @@
 				"ControlName"	"CExLabel"
 				"fieldName"		"RatingTextShadow"
 				"font"			"HudFontGiantBold"
-				"labelText"		"%ratingscoreshadow%"
+				"labelText"		"%ratingscore%"
 				"textAlignment" "center"
 				"xpos"			"1"
 				"ypos"			"41"
