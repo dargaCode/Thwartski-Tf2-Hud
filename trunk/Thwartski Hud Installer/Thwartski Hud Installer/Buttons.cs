@@ -9,7 +9,6 @@ namespace Thwartski_Hud_Installer
     class Buttons
     {
         //classes to store the value being passed in
-        private Tracker tracker = null;
         private Form1 mainForm = null;
 
         //reference to which buttons it is linked to
@@ -24,11 +23,8 @@ namespace Thwartski_Hud_Installer
 
 
         //constructor?
-        public Buttons(Form1 f, Tracker t, Button uninstall, Button install)
+        public Buttons(Form1 f, Button uninstall, Button install)
         {
-            //assign the buttons object
-            tracker = t;
-
             //assign the buttons
             uninstallButton = uninstall;
             installButton = install;
@@ -39,20 +35,19 @@ namespace Thwartski_Hud_Installer
 
 
 
-
         /// <summary>
         /// Check whether to enable or disable install/uninstall/update buttons
         /// </summary>
-        public void Update()
+        public void Update(bool hudInstalled, bool optionsModified)
         {
             //the hud is currently installed
-            if (tracker.hudInstalled())
+            if (hudInstalled)
             {
                 //always enable the uninstall button if the hud is installed
                 uninstallButton.Enabled = true;
 
                 //if the hud is installed but options have changed, install button has special rules
-                if (tracker.Modified())
+                if (optionsModified)
                 {
                     //options mode changes the event on the button and its text
                     installButtonMode(modifiedOptions);

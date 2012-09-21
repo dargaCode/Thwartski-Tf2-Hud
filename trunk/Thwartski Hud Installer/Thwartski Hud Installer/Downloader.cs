@@ -158,7 +158,7 @@ namespace Thwartski_Hud_Installer
                 //download the most recent file
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_Hud_v2.0.1_test.zip", PathZipfile); //TODO needs to eventually be dynamic
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_HUD_v3.0.1_test.zip", PathZipfile); //TODO needs to eventually be dynamic
                 }
 
                 //unzip the files to wherever the exe is

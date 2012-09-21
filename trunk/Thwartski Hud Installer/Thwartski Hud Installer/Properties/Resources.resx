@@ -196,35 +196,35 @@
     <comment>//names of custom install files to write the asset options to</comment>
   </data>
   <data name="stringFilenameAssetMenuComp6Pub24" xml:space="preserve">
-    <value>GameMenu_Pub24Comp6.res</value>
+    <value>GameMenu_Comp6Pub24.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
   <data name="stringFilenameAssetMenuComp9Pub24" xml:space="preserve">
-    <value>GameMenu_Pub24Comp9.res</value>
+    <value>GameMenu_Comp9Pub24.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
   <data name="stringFilenameAssetMenuComp6Pub32" xml:space="preserve">
-    <value>GameMenu_Pub32Comp6.res</value>
+    <value>GameMenu_Comp6Pub32.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
   <data name="stringFilenameAssetMenuComp9Pub32" xml:space="preserve">
-    <value>GameMenu_Pub32Comp9.res</value>
+    <value>GameMenu_Comp9Pub32.res</value>
     <comment>//names of custom asset files for menu options</comment>
   </data>
   <data name="stringFilenameAssetScoreboardComp9Pub32" xml:space="preserve">
-    <value>ScoreBoard_Pub32Comp9.res</value>
+    <value>ScoreBoard_Comp9Pub32.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
   <data name="stringFilenameAssetScoreboardComp6Pub24" xml:space="preserve">
-    <value>ScoreBoard_Pub24Comp6.res</value>
+    <value>ScoreBoard_Comp6Pub24.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
   <data name="stringFilenameAssetScoreboardComp9Pub24" xml:space="preserve">
-    <value>ScoreBoard_Pub24Comp9.res</value>
+    <value>ScoreBoard_Comp9Pub24.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
   <data name="stringFilenameAssetScoreboardComp6Pub32" xml:space="preserve">
-    <value>ScoreBoard_Pub32Comp6.res</value>
+    <value>ScoreBoard_Comp6Pub32.res</value>
     <comment>//names of custom asset files for scoreboard options</comment>
   </data>
   <data name="stringFolderOptions" xml:space="preserve">
@@ -276,7 +276,7 @@
     <comment>//success messages</comment>
   </data>
   <data name="stringFilenameInstallVersion" xml:space="preserve">
-    <value>Thwartski Hud Installed.txt</value>
+    <value>Thwartski Hud Version.txt</value>
     <comment>//file and path to let the buttons know the hud is installed</comment>
   </data>
   <data name="stringTeamFortressLaunchCommand" xml:space="preserve">

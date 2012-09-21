@@ -12,6 +12,7 @@ namespace Thwartski_Hud_Installer
     {
         //classes to store the value being passed in
         private Buttons buttons = null;
+        private Installer installer = null;
         private Location assetLocation = null;
         private Location installLocation = null;
         private Option aspectOption = null;
@@ -19,10 +20,13 @@ namespace Thwartski_Hud_Installer
         private Option scoreboardMaxmodeOption = null;
 
         //constructor?
-        public Tracker(Buttons b, Location asset, Location install, Option aspect, Option scoreMin, Option scoreMax)
+        public Tracker(Buttons b, Installer i, Location asset, Location install, Option aspect, Option scoreMin, Option scoreMax)
         {
             //assign the buttons object
             buttons = b;
+
+            //assign the installer object
+            installer = i;
 
             //assign the hud objects
             assetLocation = asset;
@@ -177,9 +181,6 @@ namespace Thwartski_Hud_Installer
 
             //now actually save the settings
             Properties.Settings.Default.Save();
-
-            //updated buttons so that the install and uninstall buttons will be in the correct state
-            buttons.Update();
         }
 
         /// <summary>
@@ -191,55 +192,46 @@ namespace Thwartski_Hud_Installer
             aspectOption.Revert();
             scoreboardMinmodeOption.Revert();
             scoreboardMaxmodeOption.Revert();
-
-            //updated buttons so that the install and uninstall buttons will be in the correct state
-            buttons.Update();
         }
 
 
         /// <summary>
         /// Check if any options are different from their saved values.
         /// </summary>
-        public bool Modified()
+        public bool optionsModified()
         {
-            bool optionsModified = false;
+            bool modified = false;
             
             //aspect
             if(aspectOption.Modified)
             {
-                optionsModified = true;
+                modified = true;
             }
             //minmode
             if(scoreboardMinmodeOption.Modified)
             {
-                optionsModified = true;
+                modified = true;
             }
             //maxmode
             if(scoreboardMaxmodeOption.Modified)
             {
-                optionsModified = true;
+                modified = true;
             }
 
             //if any options were different, this will be true
-            return optionsModified;
+            return modified;
         }
 
         /// <summary>
-        /// check if the hud is installed
+        /// update the ui, passing in whether the hud is installed and options have been modified
         /// </summary>
-        /// <returns></returns>
-        public bool hudInstalled()
+        public void uiUpdate()
         {
-            //check for the version file in the resource folder
-            if (System.IO.File.Exists(installLocation.PathFolderHudLocation + Properties.Resources.stringFolderResource + Properties.Resources.stringFilenameInstallVersion))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            //update the install and uninstall buttons
+            buttons.Update(installer.hudInstalled(), optionsModified());
+        
         }
+
 
 
 

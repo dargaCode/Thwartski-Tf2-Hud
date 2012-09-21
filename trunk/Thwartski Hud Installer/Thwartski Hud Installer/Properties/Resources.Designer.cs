@@ -209,7 +209,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GameMenu_Pub24Comp6.res.
+        ///   Looks up a localized string similar to GameMenu_Comp6Pub24.res.
         /// </summary>
         internal static string stringFilenameAssetMenuComp6Pub24 {
             get {
@@ -218,7 +218,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GameMenu_Pub32Comp6.res.
+        ///   Looks up a localized string similar to GameMenu_Comp6Pub32.res.
         /// </summary>
         internal static string stringFilenameAssetMenuComp6Pub32 {
             get {
@@ -227,7 +227,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GameMenu_Pub24Comp9.res.
+        ///   Looks up a localized string similar to GameMenu_Comp9Pub24.res.
         /// </summary>
         internal static string stringFilenameAssetMenuComp9Pub24 {
             get {
@@ -236,7 +236,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GameMenu_Pub32Comp9.res.
+        ///   Looks up a localized string similar to GameMenu_Comp9Pub32.res.
         /// </summary>
         internal static string stringFilenameAssetMenuComp9Pub32 {
             get {
@@ -245,7 +245,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp6.res.
+        ///   Looks up a localized string similar to ScoreBoard_Comp6Pub24.res.
         /// </summary>
         internal static string stringFilenameAssetScoreboardComp6Pub24 {
             get {
@@ -254,7 +254,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScoreBoard_Pub32Comp6.res.
+        ///   Looks up a localized string similar to ScoreBoard_Comp6Pub32.res.
         /// </summary>
         internal static string stringFilenameAssetScoreboardComp6Pub32 {
             get {
@@ -263,7 +263,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScoreBoard_Pub24Comp9.res.
+        ///   Looks up a localized string similar to ScoreBoard_Comp9Pub24.res.
         /// </summary>
         internal static string stringFilenameAssetScoreboardComp9Pub24 {
             get {
@@ -272,7 +272,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScoreBoard_Pub32Comp9.res.
+        ///   Looks up a localized string similar to ScoreBoard_Comp9Pub32.res.
         /// </summary>
         internal static string stringFilenameAssetScoreboardComp9Pub32 {
             get {
@@ -308,7 +308,7 @@ namespace Thwartski_Hud_Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thwartski Hud Installed.txt.
+        ///   Looks up a localized string similar to Thwartski Hud Version.txt.
         /// </summary>
         internal static string stringFilenameInstallVersion {
             get {
