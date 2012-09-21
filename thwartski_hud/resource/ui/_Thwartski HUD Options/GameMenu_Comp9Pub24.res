@@ -1,6 +1,6 @@
 //GameMenu with buttons for custom scoreboards based on cl_hud_minmode
-//Maxmode = Pub24
 //Minmode = Comp9
+//Maxmode = Pub24
 
 //modified from valve, inspired by eve, frankenhud, more (which included the demoui), and pvhud (which included hud buttons)
 

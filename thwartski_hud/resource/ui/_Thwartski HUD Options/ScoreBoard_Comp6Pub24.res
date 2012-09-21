@@ -1,6 +1,6 @@
 //Scoreboard with multiple settings based on cl_hud_minmode
-//Maxmode = Pub32
-//Minmode = Comp9
+//Minmode = Comp6
+//Maxmode = Pub24
 
 //inspired by maco (layout) and pvhud (minmode)
 
@@ -82,9 +82,9 @@
 		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"573"//"600"
-		"tall"			"396"
+		"tall"			"319"
 
-		"tall_minmode"			"263"
+		"tall_minmode"			"208"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -105,12 +105,12 @@
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatsBG"
 		"xpos"			"150"
-		"ypos"			"406"	
+		"ypos"			"329"	
 		"zpos"			"-10"
 		"wide"			"300"
 		"tall"			"70"
 
-		"ypos_minmode"			"273"	
+		"ypos_minmode"			"218"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -133,9 +133,9 @@
 		"ypos"			"64"
 		"zpos"			"3"
 		"wide"			"1"
-		"tall"			"299"
+		"tall"			"222"
 
-		"tall_minmode"			"166"
+		"tall_minmode"			"111"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -176,9 +176,9 @@
 		"labelText"		"%playerscore%"
 		"textAlignment"	"Center"
 		"xpos"			"231"
-		"ypos"			"413"
+		"ypos"			"336"
 		
-		"ypos_minmode"	"280"
+		"ypos_minmode"	"225"
 		
 		"zpos"			"3"
 		"wide"			"140"
@@ -376,9 +376,9 @@
 		"ypos"			"51"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"400"	
+		"tall"			"235"	
 
-		"tall_minmode"			"179"	
+		"tall_minmode"			"123"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -396,9 +396,9 @@
 		"ypos"			"51"
 		"zpos"			"1"
 		"wide"			"290"
-		"tall"			"400"	
+		"tall"			"235"	
 
-		"tall_minmode"			"179"	
+		"tall_minmode"			"123"	
 
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -416,12 +416,12 @@
 		"labelText"		"%spectators%"
 		"textAlignment"	"west"
 		"xpos"			"20"
-		"ypos"			"c+121"	
+		"ypos"			"c+44"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"c-12"	
+		"ypos_minmode"			"c-67"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -443,12 +443,12 @@
 		"labelText"		"%waitingtoplay%"
 		"textAlignment"	"east"
 		"xpos"			"20"
-		"ypos"			"c+121"	
+		"ypos"			"c+44"	
 		"zpos"			"4"
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"c-12"	
+		"ypos_minmode"			"c-67"	
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -463,11 +463,11 @@
 		"labelText"		"%server%"
 		"textAlignment"	"west"
 		"xpos"			"20"
-		"ypos"			"374"
+		"ypos"			"297"
 		"wide"			"300"
 		"tall"			"20"
 
-		"ypos_minmode"			"241"
+		"ypos_minmode"			"186"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -489,11 +489,11 @@
 		"labelText"		"%servertimeleft%"
 		"textAlignment"	"east"
 		"xpos"			"20"
-		"ypos"			"373"
+		"ypos"			"296"
 		"wide"			"560"
 		"tall"			"20"
 
-		"ypos_minmode"			"240"
+		"ypos_minmode"			"185"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -543,12 +543,12 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerDuelStatsPanel"
 		"xpos"			"0"
-		"ypos"			"429"
+		"ypos"			"352"
 		"zpos"			"3"
 		"wide"			"600"
 		"tall"			"53"
 
-		"ypos_minmode"			"467"
+		"ypos_minmode"			"241"
 
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -749,9 +749,9 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"LocalPlayerStatsPanel"
 		"xpos"			"0"
-		"ypos"			"346"
+		"ypos"			"269"
 		
-		"ypos_minmode"	"213"
+		"ypos_minmode"	"158"
 		
 		"zpos"			"5"
 		"wide"			"600"
