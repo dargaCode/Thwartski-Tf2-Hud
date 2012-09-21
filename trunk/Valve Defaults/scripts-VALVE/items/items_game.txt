@@ -30219,9 +30219,25 @@
 		"790"
 		{
 			"name"	"Sandvich Promo Package" 
-			"item_class"	"craft_item"
-			"craft_material_type"	""
+			"item_class"	"tf_wearable"
+			"tool"
+			{
+				"type"	"gift"
+				"usage"
+				{
+					"loot_list"		"sandvich_promo_package_loot_list"
+					"num_items"		"1"
+					"max_recipients"	"1"
+					"target_rule"	"only_self"
+				}
+			}
+			"capabilities"
+			{
+				"usable_gc"				"1"
+				"usable_out_of_game"	"1"
+			}
 			"show_in_armory"	"0"
+			"item_slot"	"action"
 			"image_inventory"	"backpack/crafting/gift_mystery"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -30232,15 +30248,43 @@
 			"item_type_name"	"#TF_Package_Type"
 			"item_name"	"#TF_Sandvich_Promo_Package"
 			"item_description"	"#TF_Sandvich_Promo_Package_Desc"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
 			"mouse_pressed_sound" 	"ui/item_paper_pickup.wav"
 			"drop_sound" 		"ui/item_paper_pickup.wav"
 		}
 		"791"
 		{
 			"name"	"Companion Square Promo Package" 
-			"item_class"	"craft_item"
-			"craft_material_type"	""
+			"item_class"	"tf_wearable"
+			"tool"
+			{
+				"type"	"gift"
+				"usage"
+				{
+					"loot_list"		"companion_square_promo_package_loot_list"
+					"num_items"		"1"
+					"max_recipients"	"1"
+					"target_rule"	"only_self"
+				}
+			}
+			"capabilities"
+			{
+				"usable_gc"				"1"
+				"usable_out_of_game"	"1"
+			}
 			"show_in_armory"	"0"
+			"item_slot"	"action"
 			"image_inventory"	"backpack/crafting/gift_mystery"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
@@ -30251,6 +30295,18 @@
 			"item_type_name"	"#TF_Package_Type"
 			"item_name"	"#TF_Companion_Square_Promo_Package"
 			"item_description"	"#TF_Companion_Square_Promo_Package_Desc"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
 			"mouse_pressed_sound" 	"ui/item_paper_pickup.wav"
 			"drop_sound" 		"ui/item_paper_pickup.wav"
 		}
@@ -30772,7 +30828,7 @@
 		"818"
 		{
 			"name"	"Awesomenauts Badge"
-			"prefab"	"promo cosmetic"
+			"prefab"	"cosmetic"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -30802,7 +30858,7 @@
 		"819"
 		{
 			"name"	"The Lone Star"
-			"prefab"	"promo hat"
+			"prefab"	"hat"
 			"capabilities"
 			{
 				"paintable"			"1"
@@ -30828,7 +30884,7 @@
 		"820"
 		{
 			"name"	"The Russian Rocketeer"
-			"prefab"	"promo backpack"
+			"prefab"	"backpack"
 			"capabilities"
 			{
 				"can_craft_count"	"1"
@@ -31155,18 +31211,6 @@
 			"prefab"		"recorder"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
 		"832"
 		{
@@ -31174,18 +31218,6 @@
 			"prefab"		"long_heatmaker"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
  		"833"
 		{
@@ -31193,18 +31225,6 @@
 			"prefab"		"guillotine"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
  		"834"
 		{
@@ -31212,18 +31232,6 @@
 			"prefab"		"annihilator"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
 		"835"
 		{
@@ -31231,18 +31239,6 @@
 			"prefab"		"triad_trinket"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
  		"836"
 		{
@@ -31250,18 +31246,6 @@
 			"prefab"		"champ_stamp"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
  		"837"
 		{
@@ -31269,18 +31253,6 @@
 			"prefab"		"marxman"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
   		"838"
 		{
@@ -31288,18 +31260,6 @@
 			"prefab"		"cannonball"
 			"show_in_armory"	"0"
 			"craft_class"	""			
-			"capabilities"
-			{
-				"can_gift_wrap" 	"0" 
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
-			}
 		}
 
 		"839"
@@ -31459,6 +31419,8 @@
 						{
 							"soldier"	"models/player/items/mvm_loot/soldier/robot_helmet_bullet.mdl"
 						}
+						"skin_red"	"0"
+						"skin_blu"	"1"	
 						"name"	"#TF_Soldier_Robot_Helmet_Style0"
 					}
 					"1"
@@ -31467,6 +31429,8 @@
 						{
 							"soldier"	"models/player/items/mvm_loot/soldier/robot_helmet.mdl"
 						}
+						"skin_red"	"0"
+						"skin_blu"	"1"	
 						"name"	"#TF_Soldier_Robot_Helmet_Style1"
 					}
 				}
@@ -31591,10 +31555,10 @@
 		{
 			"name"	"The AWPer Hand"
 			"prefab"	"weapon_sniperrifle"
-			"craft_class"	""
+			"craft_class"	"weapon"
 			"capabilities"
 			{
-				"can_gift_wrap" 	"0" 	
+				"can_gift_wrap" 	"1"
 				"can_craft_count"	"1"
 			}
 			"item_name"	"#TF_CSGO_AWP"
@@ -31610,14 +31574,6 @@
 			{
 				"sound_single_shot"	"Weapon_AWP.Single"
 				"sound_burst"		"Weapon_AWP.SingleCrit"
-			}
-			"attributes"
-			{
-				"cannot trade"
-				{
-					"attribute_class"	"cannot_trade"
-					"value"				"1"
-				}
 			}
 		}
 		"852"
@@ -31757,6 +31713,183 @@
 			"drop_sound"		"ui/item_pack_drop.wav"
 		}
 
+		"863"
+		{
+			"name"	"The Robo-Sandvich"
+			"first_sale_date"	"2012/09/19"
+			"item_class"	"tf_weapon_lunchbox"
+			"craft_class"	""		
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+				"can_gift_wrap" 	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_LunchBox"
+			"item_name"	"#TF_Robot_Sandvich"
+			"item_description"	"#TF_Robot_Sandvich_Desc"
+			"item_slot"	"secondary"
+			"anim_slot"	"ITEM1"
+			"image_inventory"	"backpack/weapons/c_models/c_sandwich/c_robo_sandwich"
+			"image_inventory_size_w"		"128"				   
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_sandwich/c_robo_sandwich.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"3"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+		}
+		"864"
+		{
+			"name"	"The Friends Forever Companion Square Badge"
+			"first_sale_date"	"2012/09/19"
+			"prefab"	"cosmetic"
+			"craft_class"	""		
+			"item_type_name"	"#TF_Wearable_Badge"
+			"item_name"	"#TF_CompanionSquare_Badge"
+			"item_description"	"#TF_CompanionSquare_Badge_Desc"
+			"equip_region"	"medal"
+			"item_slot"	"misc"
+			"image_inventory"	"backpack/player/items/all_class/3a_cube"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"propername"	"1"
+			"model_player"	"models/player/items/all_class/3a_cube.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+		}
+		"865"
+		{
+			"name"	"The Triple A Badge"
+			"first_sale_date"	"2012/09/19"
+			"prefab"	"cosmetic"
+			"craft_class"	""		
+			"item_type_name"	"#TF_Wearable_Badge"
+			"item_name"	"#TF_ThreeA_Badge"
+			"item_description"	"#TF_ThreeA_Badge_Desc"
+			"equip_region"	"medal"
+			"item_slot"	"misc"
+			"image_inventory"	"backpack/player/items/all_class/3a_badge"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"propername"	"1"
+			"model_player"	"models/player/items/all_class/3a_badge.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+		}
+		"866"
+		{
+			"name"	"The Heavy Artillery Officer's Cap"
+			"prefab"	"promo hat"
+			"item_name"	"#TF_COH2_Heavy"
+			"item_description"	"#TF_COH2_Heavy_Desc"
+			"image_inventory"	"backpack/player/items/heavy/coh_heavyhat"
+			"model_player"	"models/player/items/heavy/coh_heavyhat.mdl"
+			"drop_type"	"drop"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+		}
+		"867"
+		{
+			"name"	"The Combat Medic's Crusher Cap"
+			"prefab"	"promo hat"
+			"item_name"	"#TF_COH2_Medic"
+			"item_description"	"#TF_COH2_Medic_Desc"
+			"image_inventory"	"backpack/player/items/medic/coh_medichat"
+			"model_player"	"models/player/items/medic/coh_medichat.mdl"
+			"drop_type"	"drop"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+		}
+		"868"
+		{
+			"name"	"The Heroic Companion Badge"
+			"prefab"	"promo cosmetic"
+			"item_type_name"	"#TF_Wearable_Badge"
+			"item_name"	"#TF_COH2_Badge"
+			"item_description"	"#TF_COH2_Badge_Desc"
+			"equip_region"	"medal"
+			"item_slot"	"misc"
+			"image_inventory"	"backpack/player/items/all_class/coh_badge_sovjet"
+			"min_ilevel"	"20"
+			"max_ilevel"	"20"
+			"propername"	"1"
+			"model_player"	"models/player/items/all_class/coh_badge_sovjet.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"sniper"	"1"
+				"soldier"	"1"
+				"demoman"	"1"
+				"medic"	"1"
+				"heavy"	"1"
+				"spy" "1"
+				"engineer" "1"
+				"pyro" "1"
+			}
+			"visuals"
+			{
+				"styles"
+				{
+					"0"
+					{
+						"model_player"	"models/player/items/all_class/coh_badge_sovjet.mdl"
+						"skin_red"	"0"
+						"skin_blu"	"1"	
+						"name"	"#TF_COH2_Badge_Style1"
+					}
+					"1"
+					{
+						"model_player"	"models/player/items/all_class/coh_badge_german.mdl"
+						"skin_red"	"0"
+						"skin_blu"	"1"	
+						"name"	"#TF_COH2_Badge_Style2"
+					}
+				}
+			}
+		}
 
 
 
@@ -38923,6 +39056,7 @@
 			"item_class"	"supply_crate"
 			"craft_class"	"supply_crate"
 			"craft_material_type"	"supply_crate"
+			"expiration_date"	"2012-09-21 06:00:00"
 			"tool"
 			{
 				"type"	""
@@ -38960,11 +39094,9 @@
 		}
 		"5081" 
 		{
-			"name"	"Fall Key 2012"
-			"first_sale_date"	"2012/09/06"
+			"name"	"Fall Key 2012"   
 			"item_class"	"tool"
 			"craft_class"	"tool"
-			"craft_material_type"	"tool"
 			"tool"
 			{
 				"type"	"decoder_ring"
@@ -38972,7 +39104,6 @@
 				{
 					"decodable"	"1"
 				}
-				"restriction"	"fall 2012"
 			}
 			"attributes"
 			{
@@ -38983,12 +39114,11 @@
 				}
 			}
 			"armory_desc" "key"
-			"armory_remap"		"Decoder Ring"
-			"show_in_armory"	"0"
+			"show_in_armory"	"1"
 			"item_type_name"	"#TF_T"
-			"item_name"		"#TF_Tool_FallKey2012"
-			"item_description"	"#TF_Tool_FallKey2012_Desc"
-			"image_inventory"	"backpack/crafting/fall_key"
+			"item_name"		"#TF_Tool_DecoderRing"
+			"item_description"	"#TF_Tool_DecoderRing_Desc"
+			"image_inventory"	"backpack/player/items/crafting/key"
 			"image_inventory_size_w"	"128"
 			"image_inventory_size_h"	"82"
 			"item_quality"		"unique"
@@ -55139,7 +55269,7 @@
 					"tour_name"		"#TF_MvM_Tour_0"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"-1"
-					"difficulty"	"1"
+					"difficulty"	"normal"
 				}
 				"mvm_decoy_advanced"
 				{
@@ -55147,7 +55277,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"8"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 				"mvm_decoy_advanced2"
 				{
@@ -55155,7 +55285,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"9"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 			}
 		}
@@ -55172,7 +55302,7 @@
 					"tour_name"		"#TF_MvM_Tour_0"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"-1"
-					"difficulty"	"1"
+					"difficulty"	"normal"
 				}
 				"mvm_coaltown_advanced"
 				{
@@ -55180,7 +55310,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"1"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 				"mvm_coaltown_advanced2"
 				{
@@ -55188,7 +55318,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"2"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 			}
 		}
@@ -55205,7 +55335,7 @@
 					"tour_name"		"#TF_MvM_Tour_0"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"-1"
-					"difficulty"	"1"
+					"difficulty"	"normal"
 				}
 				"mvm_mannworks_advanced"
 				{
@@ -55213,7 +55343,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Invasion"
 					"badge_slot"	"15"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 				"mvm_mannworks_ironman"
 				{
@@ -55221,7 +55351,7 @@
 					"tour_name"		"#TF_MvM_Tour_1"
 					"mode"			"#TF_MVM_Challenge_Endurance"
 					"badge_slot"	"16"
-					"difficulty"	"2"
+					"difficulty"	"advanced"
 				}
 			}
 		}
