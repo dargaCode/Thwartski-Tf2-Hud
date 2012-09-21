@@ -47,7 +47,6 @@
             this.InstallBrowserButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.InstallBrowserPathLabel = new System.Windows.Forms.Label();
-            this.downloadButton = new System.Windows.Forms.Button();
             this.form1LayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardMinmodePicturebox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scoreboardMaxmodePicturebox)).BeginInit();
@@ -168,7 +167,6 @@
             this.form1LayoutPanel.Controls.Add(this.aspectLabel, 3, 4);
             this.form1LayoutPanel.Controls.Add(this.InstallBrowserInstructLabel, 2, 0);
             this.form1LayoutPanel.Controls.Add(this.tableLayoutPanel1, 0, 1);
-            this.form1LayoutPanel.Controls.Add(this.downloadButton, 4, 8);
             this.form1LayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.form1LayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.form1LayoutPanel.Name = "form1LayoutPanel";
@@ -305,18 +303,6 @@
             this.InstallBrowserPathLabel.TabIndex = 32;
             this.InstallBrowserPathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // downloadButton
-            // 
-            this.form1LayoutPanel.SetColumnSpan(this.downloadButton, 2);
-            this.downloadButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.downloadButton.Location = new System.Drawing.Point(195, 479);
-            this.downloadButton.Name = "downloadButton";
-            this.downloadButton.Size = new System.Drawing.Size(106, 38);
-            this.downloadButton.TabIndex = 31;
-            this.downloadButton.Text = "Download Test";
-            this.downloadButton.UseVisualStyleBackColor = true;
-            this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,7 +344,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button InstallBrowserButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button downloadButton;
         public System.Windows.Forms.FolderBrowserDialog InstallBrowserDialog;
         public System.Windows.Forms.Label InstallBrowserPathLabel;
         public System.Windows.Forms.ComboBox aspectCombobox;

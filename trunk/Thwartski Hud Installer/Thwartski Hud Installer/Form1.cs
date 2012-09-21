@@ -104,8 +104,12 @@ namespace Thwartski_Hud_Installer
             browser.Setup();
 
 
+            //download current updates and check if they need to be installed
+            if (downloader.checkAndUpdate())
+            {
+                //TODO special mode for the install button
+            }
 
-            //optionsTracker.Update(); //TODO is this necesary?
 
         }
 
@@ -242,20 +246,6 @@ namespace Thwartski_Hud_Installer
 
 
 
-
-        //TODO remove this button and make the check happen automatically
-
-        //testing for downloading and upzipping files
-        private void downloadButton_Click(object sender, EventArgs e)
-        {
-
-            //download current updates and check if they need to be installed
-            if (downloader.checkAndUpdate())
-            {
-                //TODO special mode for the install button
-            }
-
-        }
 
 
 
