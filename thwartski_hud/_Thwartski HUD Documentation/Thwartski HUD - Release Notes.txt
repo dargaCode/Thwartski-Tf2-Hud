@@ -3,20 +3,24 @@
 //						  CURRENT VERSION
 //-------------------------------------------------------------------
 
-Thwartski HUD v1.1.6 (CRASH FIX) - Sep 2, 2012.
+Thwartski HUD v1.1.7 (MVM POLISH) - Sep 21, 2012.
 
 //-------------------------------------------------------------------
 //					        CHANGE LOG
 //-------------------------------------------------------------------
 
-	1) Fixed the crash introduced by the latest TF2 patch.
-	
-	Thanks to Dark Nebula and Filly Mays for pointing out the crash!
+	1) MvM - Incorporated Valve's new UI additions from today's patch.
 	
 //-------------------------------------------------------------------
 //						PREVIOUS VERSIONS
 //-------------------------------------------------------------------
 
+v1.1.6 (CRASH FIX) - Sep 2, 2012.
+
+	1) Fixed the crash introduced by the latest TF2 patch.
+	
+	Thanks to Dark Nebula and Filly Mays for pointing out the crash!
+	
 v1.1.5 (MVM POLISH) - Sep 2, 2012.
 
 	1) Tweaked and Polished all aspects of the hud for MvM mode.
