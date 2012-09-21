@@ -393,6 +393,7 @@ criterion "WeaponIsShovel" "playerweapon" "tf_weapon_shovel" "required"
 criterion "WeaponIsFlaregun" "playerweapon" "tf_weapon_flaregun" "required"
 // Lunchbox modified to fire for Sandvich only, so we don't share lines.
 criterion "WeaponIsSandvich" "item_name" "The Sandvich" "required"
+criterion "WeaponIsRobotSandvich" "item_name" "The Robo-Sandvich" "required"
 criterion "WeaponIsLunchboxDrink" "playerweapon" "tf_weapon_lunchbox_drink" "required"
 criterion "WeaponIsGloves" "item_type_name" "#TF_Weapon_Gloves" "required" weight 10
 criterion "WeaponIsKritzkrieg" "item_name" "The Kritzkrieg" "required" weight 10

@@ -258,6 +258,11 @@
 		criteria ConceptPlayerTaunt IsHeavy WeaponIsSandvich
 		response HeavyTauntPlayerItem1
 	}
+	rule HeavyTauntPlayerRobotSandvich
+	{
+		criteria ConceptPlayerTaunt IsHeavy WeaponIsRobotSandvich
+		response HeavyTauntPlayerItem1
+	}
 	// Custom stuff
 	// This is to let you taunt with the items.
 	rule HeavyTauntPlayerItem2
@@ -407,6 +412,11 @@
 	Rule AteSandwichHeavy
 	{
 		criteria ConceptAteFood IsHeavy WeaponIsSandvich
+		Response AteSandwichHeavy
+	}
+	Rule AteRobotSandwichHeavy
+	{
+		criteria ConceptAteFood IsHeavy WeaponIsRobotSandvich
 		Response AteSandwichHeavy
 	}
 	// Custom stuff
