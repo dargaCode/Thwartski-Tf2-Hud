@@ -821,7 +821,7 @@
 				"ypos"			"5"
 				"zpos"			"0"
 				"wide"			"330"
-				"tall"			"200"
+				"tall"			"192"
 				"linespacing"	"12"
 			}
 		}
