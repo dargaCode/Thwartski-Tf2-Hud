@@ -11,7 +11,6 @@ namespace Thwartski_Hud_Installer
     {
         //classes to store the value being passed in
         private Buttons buttons = null;
-        private Tracker tracker = null;
         private Location assetLocation = null;
         private Location installLocation = null;
 
@@ -28,13 +27,10 @@ namespace Thwartski_Hud_Installer
 
 
         //constructor?
-        public Installer(Buttons b, Tracker t, Location asset, Location install)
+        public Installer(Buttons b, Location asset, Location install)
         {
             //assign the buttons object
             buttons = b;
-
-            //assign the tracker object
-            tracker = t;
             
             //assign the hud objects
             assetLocation = asset;
@@ -71,17 +67,6 @@ namespace Thwartski_Hud_Installer
                 {
                     //wiping the hud succeeded. attempt to install the new hud files
                     copyFilesAndFolders(assetFolderDir, installFolderDir);
-
-                    //create a dummy text file to let the launcher know the hud is installed
-                    if (tracker.hudInstalled())
-                    {
-                        //create the file, but just close it without writing any text inside
-                        using (StreamWriter versionFile = new StreamWriter(installLocation.PathFolderHudLocation + resource + Properties.Resources.stringFilenameInstallVersion))
-                        {
-                            versionFile.Close();
-                            versionFile.Dispose();
-                        }
-                    }
                 }
                 catch (System.IO.DirectoryNotFoundException)
                 {
@@ -389,11 +374,36 @@ namespace Thwartski_Hud_Installer
         {
             //tell the install location where the proper /tf location will be
             installLocation.PathFolderHudLocation = validFolder + Properties.Resources.stringFolderTf;
-
-            //update the install and uninstall buttons
-            buttons.Update();
         }
 
+
+        /// <summary>
+        /// check the hud version and return if it's installed or not
+        /// </summary>
+        /// <returns></returns>
+        public bool hudInstalled()
+        {
+            Version notInstalled = new Version("0.0.0");
+
+            //hud is not installed
+            if (installLocation.VersionHud.Equals(notInstalled))
+            {
+                MessageBox.Show("hud not installed");
+                return false;
+            }
+            //hud is installed
+            else if (installLocation.VersionHud.CompareTo(notInstalled) < 0)
+            {
+                MessageBox.Show("hud is installed");
+                return true;
+            }
+            //something is wrong with the installation, ignore it
+            else
+            {
+                return false;
+            }
+
+        }
 
 
 

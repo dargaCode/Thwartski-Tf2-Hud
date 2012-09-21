@@ -72,13 +72,13 @@ namespace Thwartski_Hud_Installer
             this.installLocation = new Location();
             
             //one-off class objects
-            this.buttons = new Buttons(this, tracker, uninstallButton, installButton);
-            this.installer = new Installer(buttons, tracker, assetLocation, installLocation);
+            this.buttons = new Buttons(this, uninstallButton, installButton);
+            this.installer = new Installer(buttons, assetLocation, installLocation);
             this.uninstaller = new Uninstaller();
             this.browser = new Browser(installer, InstallBrowserDialog, InstallBrowserPathLabel, InstallBrowserInstructLabel, Properties.Settings.Default.settingInstallBrowserPath);
             this.downloader = new Downloader(assetLocation, installLocation); 
 
-            this.tracker = new Tracker(buttons, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
+            this.tracker = new Tracker(buttons, installer, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
 
             //form2, passing this form so the buttons can be reenabled and the install path for documentation
             this.form2 = new Form2(this, installLocation.PathFolderHudLocation);
@@ -86,10 +86,11 @@ namespace Thwartski_Hud_Installer
 
 
             //TODO make these actually dynamic
-            assetLocation.VersionHud = new Version("2.0.4");
-            installLocation.VersionHud = new Version("2.0.4");
+            //assetLocation.VersionHud = new Version("2.0.4");
+            //installLocation.VersionHud = new Version("2.0.4");
 
-
+            //MessageBox.Show(Convert.ToString("asset version " + assetLocation.VersionHud));
+            //MessageBox.Show(Convert.ToString("install version " + installLocation.VersionHud));
 
             //generate tooltips for the form
             updateTooltips();
@@ -113,6 +114,8 @@ namespace Thwartski_Hud_Installer
         {
             browser.BrowseForInstallFolder();
 
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.uiUpdate();
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
@@ -120,6 +123,9 @@ namespace Thwartski_Hud_Installer
         {
             //update images and file paths
             tracker.updateAspect();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.uiUpdate();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
@@ -127,6 +133,9 @@ namespace Thwartski_Hud_Installer
         {
             //update images and file paths
             tracker.updateScoreboard();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.uiUpdate();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
@@ -134,6 +143,9 @@ namespace Thwartski_Hud_Installer
         {
             //update images and file paths
             tracker.updateScoreboard();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.uiUpdate();
         }
 
 
