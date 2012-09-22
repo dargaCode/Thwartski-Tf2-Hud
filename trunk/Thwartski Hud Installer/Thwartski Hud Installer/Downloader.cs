@@ -36,7 +36,7 @@ namespace Thwartski_Hud_Installer
         {
 
             //TODO make this actually check the webserver
-            Version serverVersion = new Version("2.0.4");
+            Version serverVersion = new Version("1.0.0");
 
             return serverVersion;
         }
@@ -47,6 +47,15 @@ namespace Thwartski_Hud_Installer
         /// </summary>
         public bool checkAndUpdate() 
         {
+            //where is the exe running from (so we can put files near it)
+            string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\";
+
+            //where to put the zipfile
+            string pathZipfile = exeFolder + Properties.Resources.stringFilenameZipfile;
+
+            //define the asset location
+            assetLocation.PathFolderHudLocation = exeFolder + Properties.Resources.stringFolderAsset;
+
 
             //need to update assets?
             if (updateRequired(assetLocation.VersionHud, checkServerVersion()))
@@ -55,7 +64,7 @@ namespace Thwartski_Hud_Installer
                 MessageBox.Show("Downloading new assets!");
 
                 //assets successfully updated
-                if (updateAssets())
+                if (updateAssets(exeFolder, pathZipfile))
                 {
                     //don't return true, because the assets you just downloaded might not actually be newer than the install (if the player deleted them)
                 }
@@ -129,21 +138,11 @@ namespace Thwartski_Hud_Installer
         /// Download the hud assets, return true if it worked.
         /// </summary>
         /// <returns></returns>
-        private bool updateAssets()
+        private bool updateAssets(string exeFolder, string pathZipFile)
         {
-            //where is the exe running from (so we can put files near it)
-            string exeFolder = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\";
-            
-            //where to put the zipfile
-            string PathZipfile = exeFolder + Properties.Resources.stringFilenameZipfile;
-
-            //define the asset location
-            assetLocation.PathFolderHudLocation = exeFolder + Properties.Resources.stringFolderAsset;
 
             //used for cycling through assetfolder directory
             DirectoryInfo assetFolderDir = new DirectoryInfo(assetLocation.PathFolderHudLocation);
-
-
 
 
             //try to download and unzip
@@ -158,16 +157,16 @@ namespace Thwartski_Hud_Installer
                 //download the most recent file
                 using (var client = new WebClient())
                 {
-                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_HUD_v3.0.1_test.zip", PathZipfile); //TODO needs to eventually be dynamic
+                    client.DownloadFile("http://thwartski-tf2-hud.googlecode.com/files/Thwartski_HUD_v3.0.1_test.zip", pathZipFile); //TODO needs to eventually be dynamic
                 }
 
                 //unzip the files to wherever the exe is
-                unZip(PathZipfile, exeFolder);
+                unZip(pathZipFile, exeFolder);
 
                 //remove the zip file when done
-                if (File.Exists(PathZipfile))
+                if (File.Exists(pathZipFile))
                 {
-                    File.Delete(PathZipfile);
+                    File.Delete(pathZipFile);
                 }
             }
             //something went wrong with creating the folder, unzipping, or cleaning up

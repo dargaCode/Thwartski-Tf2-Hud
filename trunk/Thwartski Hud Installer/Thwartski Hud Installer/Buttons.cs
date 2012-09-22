@@ -38,7 +38,7 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Check whether to enable or disable install/uninstall/update buttons
         /// </summary>
-        public void Update(bool hudInstalled, bool optionsModified)
+        public void UpdateState(bool hudInstalled, bool optionsModified)
         {
             //the hud is currently installed
             if (hudInstalled)

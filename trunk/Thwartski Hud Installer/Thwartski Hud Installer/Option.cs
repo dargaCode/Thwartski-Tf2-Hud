@@ -33,7 +33,7 @@ namespace Thwartski_Hud_Installer
         private int _defaultSetting = -1;
 
             //getters and setters
-            public int DefaultSetting { get { return _defaultSetting; } set { _defaultSetting = value; UiUpdate(); } } //also refreshes the UI
+            public int DefaultSetting { get { return _defaultSetting; } set { _defaultSetting = value; } }
 
         //whether the option has been updated from its default settings
         private bool _modified = false;
@@ -68,7 +68,7 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// Update all settings based on the selection, and return a string with the correct filename
         /// </summary>
-        public string Update()
+        public string Update(bool hudInstalled)
         {
             string validResult = PictureDictionaryLookup();
 
@@ -76,7 +76,7 @@ namespace Thwartski_Hud_Installer
             if (validResult != null)
             {
                 //decide whether to update the ui to highlight the new changes
-                UiUpdate();
+                UiUpdate(hudInstalled);
 
                 //return the new setting, which will be sent to the asset object
                 return validResult;
@@ -131,21 +131,19 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// decide whether to update the ui to highlight the new changes
         /// </summary>
-        private void UiUpdate() 
+        private void UiUpdate(bool hudInstalled) 
             
-        //TODO implement
         {
-            ////if the hud hasn't been installed, no need to detect options changes
-            //if (!installer.isHudInstalled())
-            //{
-            //    myLabel.BackColor = Color.Empty;
-            //
-            //    //it doesn't matter yet if the setting has been modified, because it will just refert if not installed
-            //    _modified = false;
-            //}
+            //if the hud hasn't been installed, no need to detect options changes
+            if (!hudInstalled)
+            {
+                myLabel.BackColor = Color.Empty;
 
+                //it doesn't matter yet if the setting has been modified, because it will just refert if not installed
+                _modified = false;
+            }
             //the option's setting is different from the saved default
-            if (myCombobox.SelectedIndex != _defaultSetting)
+            else if (myCombobox.SelectedIndex != _defaultSetting)
             {
                 //highlight the background
                 myLabel.BackColor = Color.LightGreen;

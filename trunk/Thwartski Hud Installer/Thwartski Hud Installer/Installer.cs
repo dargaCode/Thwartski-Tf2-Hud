@@ -342,7 +342,7 @@ namespace Thwartski_Hud_Installer
 
 
         /// <summary>
-        /// launch the game and close the installer
+        /// launch the game and return if it was successful
         /// </summary>
         /// <returns></returns>
         public bool launchGame()
@@ -388,13 +388,13 @@ namespace Thwartski_Hud_Installer
             //hud is not installed
             if (installLocation.VersionHud.Equals(notInstalled))
             {
-                MessageBox.Show("hud not installed");
+                //MessageBox.Show("hud not installed");
                 return false;
             }
             //hud is installed
-            else if (installLocation.VersionHud.CompareTo(notInstalled) < 0)
+            else if (installLocation.VersionHud.CompareTo(notInstalled) > 0)
             {
-                MessageBox.Show("hud is installed");
+                //MessageBox.Show("hud is installed");
                 return true;
             }
             //something is wrong with the installation, ignore it
