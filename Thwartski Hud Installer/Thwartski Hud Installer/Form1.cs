@@ -80,8 +80,7 @@ namespace Thwartski_Hud_Installer
 
             this.tracker = new Tracker(buttons, installer, assetLocation, installLocation, aspectOption, scoreboardMinmodeOption, scoreboardMaxmodeOption);
 
-            //form2, passing this form so the buttons can be reenabled and the install path for documentation
-            this.form2 = new Form2(this, installLocation.PathFolderHudLocation);
+
 
 
 
@@ -119,7 +118,7 @@ namespace Thwartski_Hud_Installer
             browser.BrowseForInstallFolder();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            tracker.uiUpdate();
+            tracker.UpdateUi();
         }
 
         //assign the correct image to be copied, depending on the combobox's selection
@@ -129,7 +128,7 @@ namespace Thwartski_Hud_Installer
             tracker.updateAspect();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            tracker.uiUpdate();
+            tracker.UpdateUi();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
@@ -139,7 +138,7 @@ namespace Thwartski_Hud_Installer
             tracker.updateScoreboard();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            tracker.uiUpdate();
+            tracker.UpdateUi();
         }
 
         //assign the correct image to the Picturebox, depending on the combobox's selection
@@ -149,8 +148,11 @@ namespace Thwartski_Hud_Installer
             tracker.updateScoreboard();
 
             //updated buttons so that the install and uninstall buttons will be in the correct state
-            tracker.uiUpdate();
+            tracker.UpdateUi();
         }
+
+
+
 
 
 
@@ -163,6 +165,9 @@ namespace Thwartski_Hud_Installer
             //attempt to install the hud
             if (installer.performInstallation())
             {
+                //form2, passing this form so the buttons can be reenabled and the install path for documentation
+                this.form2 = new Form2(this, installLocation.PathFolderHudLocation);
+
                 //show form2 only if the install succeeded
                 form2.Show();
                 //form contents will be enabled when the success form is closed
@@ -175,6 +180,9 @@ namespace Thwartski_Hud_Installer
 
             //save the options to the settings file
             tracker.saveOptions();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.UpdateUi();
         }
 
         //actually install the hud or update the installation with new custom files
@@ -194,6 +202,9 @@ namespace Thwartski_Hud_Installer
 
             //save the options to the settings file
             tracker.saveOptions();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.UpdateUi();
         }
 
         //when there is nothing to install or save, launch the game
@@ -207,15 +218,6 @@ namespace Thwartski_Hud_Installer
             }
         }
 
-        //public custom event called by form2 as it closes
-        public void Form1_ReenabledByForm2(object sender, EventArgs e)
-        {
-            //enable form content
-            form1LayoutPanel.Enabled = true;
-
-            //update and save the custom file settings
-            tracker.saveOptions();
-        }
 
         //delete and back up whatever hud files are in the destination folder, whether thwartski hud or other
         private void uninstallButton_Click(object sender, EventArgs e)
@@ -235,6 +237,27 @@ namespace Thwartski_Hud_Installer
             //enable form contents, even if the function failed.
             form1LayoutPanel.Enabled = true;
 
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.UpdateUi();
+
+        }
+
+
+
+
+
+
+        //public custom event called by form2 as it closes
+        public void Form1_ReenabledByForm2(object sender, EventArgs e)
+        {
+            //enable form content
+            form1LayoutPanel.Enabled = true;
+
+            //update and save the custom file settings
+            tracker.saveOptions();
+
+            //updated buttons so that the install and uninstall buttons will be in the correct state
+            tracker.UpdateUi();
         }
 
         //save settings on program close

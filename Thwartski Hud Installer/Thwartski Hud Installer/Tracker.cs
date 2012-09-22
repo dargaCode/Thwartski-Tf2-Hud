@@ -83,8 +83,8 @@ namespace Thwartski_Hud_Installer
         /// <param name="option"></param>
         public void updateAspect()
         {
-            //get the new string from the option
-            string aspectRatio = aspectOption.Update();
+            //get the new string from the option, passing in whether or not the hud is installed
+            string aspectRatio = aspectOption.Update(installer.hudInstalled());
 
             //don't update if the value wasn't legitimage
             if (aspectRatio != null)
@@ -119,8 +119,9 @@ namespace Thwartski_Hud_Installer
             string pub24 = Properties.Resources.stringComboboxScoreboardPub24;
             string pub32 = Properties.Resources.stringComboboxScoreboardPub32;
 
-            string minmodeScoreboard = scoreboardMinmodeOption.Update();
-            string maxmodeScoreboard = scoreboardMaxmodeOption.Update();
+            //as the option is updated, pass in whether the hud is installed
+            string minmodeScoreboard = scoreboardMinmodeOption.Update(installer.hudInstalled());
+            string maxmodeScoreboard = scoreboardMaxmodeOption.Update(installer.hudInstalled());
 
             //don't update if one of the values wasn't legitimage
             if (minmodeScoreboard != null && maxmodeScoreboard != null)
@@ -225,11 +226,10 @@ namespace Thwartski_Hud_Installer
         /// <summary>
         /// update the ui, passing in whether the hud is installed and options have been modified
         /// </summary>
-        public void uiUpdate()
+        public void UpdateUi()
         {
-            //update the install and uninstall buttons
-            buttons.Update(installer.hudInstalled(), optionsModified());
-        
+            //update the install and uninstall buttons, passsing in whether the hud is installed and the options have been modified
+            buttons.UpdateState(installer.hudInstalled(), optionsModified());
         }
 
 
