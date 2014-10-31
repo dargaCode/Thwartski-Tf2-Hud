@@ -1002,17 +1002,6 @@
 		"tall"					"100"
 	}
 	
-	"HudAlert"
-	{
-		"fieldName"		"HudAlert"
-		"visible"		"0"
-		"enable"		"1"
-		"xpos"			"c-160"
-		"ypos"			"100"
-		"wide"			"320"
-		"tall"			"150"
-	}
-	
 	HudArenaNotification
 	{
 		"fieldName"				"HudArenaNotification"
@@ -1277,6 +1266,18 @@
 		"enabled"		"1"
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
+	}
+
+	"HudAlert"
+	{
+		"fieldName"				"HudAlert"
+		"visible"				"0"
+		"enable"				"1"
+		"xpos"					"c-80"
+		"ypos"					"48"
+		"zpos"					"-1"		
+		"wide"					"320"
+		"tall"					"150"
 	}
 
 	"CTFKillStreakNotice"
