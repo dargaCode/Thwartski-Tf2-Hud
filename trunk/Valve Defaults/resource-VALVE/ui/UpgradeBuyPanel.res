@@ -15,7 +15,7 @@
 		"tabPosition"	"0"
 		
 		"upgradebutton_xpos"	"37"
-		"upgradebutton_ypos"	"17"
+		"upgradebutton_ypos"	"26"
 		
 		"skilltreebuttons_kv"
 		{
@@ -119,18 +119,19 @@
 		"ControlName"	"Label"
 		"fieldName"		"ShortDescriptionLabel"
 		"xpos"			"37"
-		"ypos"			"2"
+		"ypos"			"4"
 		"wide"			"97"
-		"tall"			"16"
+		"tall"			"22"
 		"zpos"			"25"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"tabPosition"	"0"
+		"wrap"			"1"
 		
 		"labelText"		""
-		"textAlignment"	"west"
+		"textAlignment"	"center-west"
 		"font"			"HudFontSmallest"
 	}
 	
