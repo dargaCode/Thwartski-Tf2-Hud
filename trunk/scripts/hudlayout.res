@@ -195,6 +195,7 @@
 		"PaintBackgroundType"	"2"
 	}
 	
+	
 	DisguiseStatus
 	{
 		"fieldName" "DisguiseStatus"
@@ -222,7 +223,6 @@
 			"ypos"		"370"
 			"x_offset"	"20"
 		}
-
 	}
 	
 	CSpectatorTargetID
@@ -256,6 +256,7 @@
 			"ypos"		"330"
 			"x_offset"	"20"
 		}
+
 	}
 	
 	BuildingStatus_Spy
@@ -297,7 +298,7 @@
 		
 		"PaintBackgroundType"	"2"
 	}
-
+	
 	HudProgressBar
 	{
 		"fieldName" "HudProgressBar"
@@ -517,7 +518,6 @@
 		"TextFont"				"Default"
 		"ItemFont"				"Default"
 		"ItemFontPulsing"		"Default"
-
 	}
 
 	HudSpellMenu
@@ -535,7 +535,7 @@
 		"ItemFont"				"Default"
 		"ItemFontPulsing"		"Default"
 	}
-
+	
 	HudCloseCaption
 	{
 		"fieldName" "HudCloseCaption"
@@ -813,7 +813,7 @@
 		"wide"					"450"
 		"tall"					"218"
 	}
-
+	
 	PVEWinPanel
 	{
 		"fieldName"				"PVEWinPanel"
@@ -883,6 +883,17 @@
 		"ypos"					"10"
 		"wide"					"292"
 		"tall"					"64"
+	}
+	
+	"HudUpgradePanel"
+	{
+		"fieldName"		"HudUpgradePanel"
+		"visible"		"0"
+		"enable"		"1"
+		"xpos"			"c-200"
+		"ypos"			"260"
+		"wide"			"400"
+		"tall"			"160"		
 	}
 
 	"HudChat"
@@ -956,7 +967,7 @@
 		"wide"			"200"
 		"tall"			"250"
 	}	
-	
+
 	HudTeamGoal
 	{
 		"fieldName"				"HudTeamGoal"
@@ -967,6 +978,7 @@
 		"wide"					"320"
 		"tall"					"100"
 	}
+
 
 	HudTeamGoalTournament
 	{
@@ -992,14 +1004,13 @@
 	
 	"HudAlert"
 	{
-		"fieldName"				"HudAlert"
-		"visible"				"0"
-		"enable"				"1"
-		"xpos"					"c-80"
-		"ypos"					"48"
-		"zpos"					"-1"		
-		"wide"					"320"
-		"tall"					"150"
+		"fieldName"		"HudAlert"
+		"visible"		"0"
+		"enable"		"1"
+		"xpos"			"c-160"
+		"ypos"			"100"
+		"wide"			"320"
+		"tall"			"150"
 	}
 	
 	HudArenaNotification
@@ -1036,7 +1047,6 @@
 		"wide"					"320"
 		"tall"					"150"
 	}
-
 	HudTournament
 	{
 		"fieldName"				"HudTournament"
@@ -1269,17 +1279,6 @@
 		"PaintBackgroundType"	"0" // rounded corners
 	}
 
-	"HudAlert"
-	{
-		"fieldName"		"HudAlert"
-		"visible"		"0"
-		"enable"		"1"
-		"xpos"			"c-160"
-		"ypos"			"100"
-		"wide"			"320"
-		"tall"			"150"
-	}
-
 	"CTFKillStreakNotice"
 	{
 		"fieldName"		"CTFKillStreakNotice"
@@ -1319,6 +1318,7 @@
 		"PaintBackgroundType"	"0"
 	}
 
+
 	HudMiniGame
 	{
 		"fieldName" "HudMiniGame"
@@ -1329,3 +1329,4 @@
 		"wide"	"f0"
 		"tall"	"480"
 	}
+}
