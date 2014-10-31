@@ -1,5 +1,12 @@
 "GameMenu" [$WIN32]
 {
+	"ResumeGameButton"
+	{
+		"label"			"#MMenu_ResumeGame"
+		"command"		"ResumeGame"
+		"OnlyInGame"	"1"
+		"subimage" "icon_resume"
+	}
 	"QuickplayButton"
 	{
 		"label" "#MMenu_PlayMultiplayer" 
@@ -47,6 +54,13 @@
 		"command" "engine OpenSteamWorkshopDialog"
 		"subimage" "glyph_steamworkshop"
 	}
+	"VRModeButton"
+	{
+		"label" "#MMenu_VRMode_Activate"
+		"command" "engine vr_toggle"
+		"subimage" "glyph_vr"
+		"OnlyWhenVREnabled" "1"
+	}
 	"TrainingButton"
 	{
 		"label" "#TF_Training"
@@ -78,13 +92,6 @@
 
 	// These buttons are only shown while in-game
 	// and also are positioned by the .res file
-	"ResumeGameButton"
-	{
-		"label"			"#MMenu_ResumeGame"
-		"command"		"ResumeGame"
-		"OnlyInGame"	"1"
-		"subimage" "icon_resume"
-	}
 	"CallVoteButton"
 	{
 		"label"			""
