@@ -76,6 +76,11 @@
 		"silent_kill"	"bool"
 		"playerpenetratecount"	"short"
 		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
+		"kill_streak_total" 	"short"	// Kill streak count (level)
+		"kill_streak_wep" 	"short"	// Kill streak for killing weapon
+		"kill_streak_assist" "short"	// Kill streak for assister count
+		"kill_streak_victim" "short"	// Victims kill streak
+		"rocket_jump"		"bool"		// was the victim rocket jumping
 		
 	//	"dominated"	"short"		// did killer dominate victim with this kill
 	//	"assister_dominated" "short"	// did assister dominate victim with this kill
@@ -83,25 +88,6 @@
 	//	"assister_revenge" "short"	// did assister get revenge on victim with this kill
 	//	"first_blood"	"bool"		// was this a first blood kill
 	//	"feign_death"	"bool"	// the victim is feign death
-	}
-	
-	"object_removed"
-	{
-		"userid"		"short"     // user ID of the object owner
-		"objecttype"	"short"     // type of object removed
-		"index"			"short"     // index of the object removed
-	}
-	
-	"object_destroyed"
-	{			
-		"userid"	"short"   	// user ID who died				
-		"attacker"	"short"	 	// user ID who killed
-		"assister"	"short"		// user ID of assister
-		"weapon"	"string" 	// weapon name killer used 
-		"weaponid"	"short"		// id of the weapon used
-		"objecttype"	"short"		// type of object destroyed
-		"index"		"short"		// index of the object destroyed
-		"was_building"	"bool"		// object was being built when it died
 	}
 
 	"tf_map_time_remaining"
@@ -267,8 +253,9 @@
 
 	"teamplay_broadcast_audio"
 	{
-		"team"		"byte"		// which team should hear the broadcast. 0 will make everyone hear it.
-		"sound"		"string"	//sound to play
+		"team"				"byte"		// which team should hear the broadcast. 0 will make everyone hear it.
+		"sound"				"string"	// sound to play
+		"additional_flags"	"short"		// additional sound flags to pass through to sound system
 	}
 
 	"teamplay_timer_flash"
@@ -333,6 +320,7 @@
 		"carrier"	"short"			// the carrier if needed
 		"eventtype"	"short"			// pick up, capture, defend, dropped
 		"home"		"byte"			// whether or not the flag was home (only set for TF_FLAGEVENT_PICKUP) 
+		"team"		"byte"			// which team the flag belongs to
 	}
 	"teamplay_win_panel"		
 	{
@@ -353,6 +341,8 @@
 		"player_2_points"	"short"
 		"player_3"		"short"
 		"player_3_points"	"short"
+		"killstreak_player_1"		"short"
+		"killstreak_player_1_count"	"short"
 	}
 	"teamplay_teambalanced_player"
 	{
@@ -446,36 +436,69 @@
 		"userid"	"short"		// user ID of medic who deployed charge
 		"targetid"	"short"		// user ID of who the medic charged
 	}
-	
+
+	//
+	// Objects built by players (sentry gun, teleporter, etc.)
+	//
+	// Some object events have "object" and some have "objecttype".
+	//   We can't change them as there are third-party
+	//   scripts that listen for these events.
+	//
 	"player_builtobject"
 	{
-		"userid"	"short"		// user ID of the builder
-		"object"	"byte"
-		"index"		"short"		// index of the object
+		"userid"		"short"		// user ID of the builder
+		"object"		"short"		// type of object built
+		"index"			"short"		// index of the object
 	}
-	
+
 	"player_upgradedobject"
 	{
-		"userid"	"short"
-		"object"	"byte"
-		"index"		"short"
-		"isbuilder"	"bool"
+		"userid"		"short"		// user ID of the builder
+		"object"		"short"		// type of object built
+		"index"			"short"		// index of the object
+		"isbuilder"		"bool"
 	}
 
 	"player_carryobject"
 	{
-		"userid"	"short"
-		"object"	"byte"
-		"index"		"short"
+		"userid"		"short"		// user ID of the builder
+		"object"		"short"		// type of object built
+		"index"			"short"		// index of the object
 	}
 
 	"player_dropobject"
 	{
-		"userid"	"short"
-		"object"	"byte"
-		"index"		"short"
+		"userid"		"short"		// user ID of the builder
+		"object"		"short"		// type of object built
+		"index"			"short"		// index of the object
+	}
+
+	"object_removed"
+	{
+		"userid"		"short"		// user ID of the object owner
+		"objecttype"	"short"		// type of object removed
+		"index"			"short"		// index of the object removed
 	}
 	
+	"object_destroyed"
+	{			
+		"userid"	"short"			// user ID who died
+		"attacker"	"short"			// user ID who killed
+		"assister"	"short"			// user ID of assister
+		"weapon"	"string" 		// weapon name killer used 
+		"weaponid"	"short"			// id of the weapon used
+		"objecttype"	"short"		// type of object destroyed
+		"index"		"short"			// index of the object destroyed
+		"was_building"	"bool"		// object was being built when it died
+	}
+
+	"object_detonated"
+	{
+		"userid"		"short"		// user ID of the object owner
+		"objecttype"	"short"		// type of object removed
+		"index"			"short"		// index of the object removed
+	}
+
 	"achievement_earned"
 	{
 		"player"	"byte"		// entindex of the player
@@ -628,6 +651,7 @@
 		"minicrit" "bool"
 		"allseecrit" "bool"
 		"weaponid" "short"
+		"bonuseffect" "byte"
 	}
 
 	"arena_player_notification"
@@ -753,6 +777,8 @@
 		"boneAnglesX" "float"
 		"boneAnglesY" "float"
 		"boneAnglesZ" "float"
+		"projectileType" "short"
+		"isCrit" 	"bool"
 	}
 	
 	"player_jarated"			// sent when a player is jarated, only to the two players involved
@@ -913,7 +939,7 @@
 		"userid"	"short"		// player who deflected the object
 		"ownerid"	"short"		// owner of the object
 		"weaponid"	"short"		// weapon id (0 means the player in ownerid was pushed)
-		"object_entindex" "byte"	// entindex of the object that got deflected
+		"object_entindex" "short"	// entindex of the object that got deflected
 	}
 	
 	"player_mvp"
@@ -959,6 +985,14 @@
 	"stats_resetround"
 	{
 	}
+
+	"scorestats_accumulated_update"
+	{
+	}
+
+	"scorestats_accumulated_reset"
+	{
+	}
 	
 	"achievement_earned_local"
 	{
@@ -968,6 +1002,13 @@
 	"player_healed"
 	{
 		"patient"	"short"
+		"healer"	"short"
+		"amount"	"short"
+	}
+	
+	"building_healed"
+	{
+		"building"	"short"
 		"healer"	"short"
 		"amount"	"short"
 	}
@@ -1026,12 +1067,53 @@
 		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
 	}
 	
+	// clone of "player_death" with added counts
+	"throwable_hit"
+	{
+		"userid"	"short"   	// user ID who died				
+		"victim_entindex"	"long"
+		"inflictor_entindex"	"long"	// ent index of inflictor (a sentry, for example)
+		"attacker"	"short"	 	// user ID who killed
+		"weapon"	"string" 	// weapon name killer used 
+		"weaponid"	"short"		// ID of weapon killed used
+		"damagebits"	"long"		// bits of type of damage
+		"customkill"	"short"		// type of custom kill
+		"assister"	"short"		// user ID of assister
+		"weapon_logclassname"	"string" 	// weapon name that should be printed on the log
+		"stun_flags"	"short"	// victim's stun flags at the moment of death
+		"death_flags"	"short" //death flags.
+		"silent_kill"	"bool"
+		"assister_fallback"	"string"	// contains a string to use if "assister" is -1
+		"totalhits"		"short"	// Number of hits his player has done
+	}
+
 	"pumpkin_lord_summoned"
 	{
 	}
 
 	"pumpkin_lord_killed"
 	{
+	}
+
+	"merasmus_summoned"
+	{
+		"level" "short"
+	}
+
+	"merasmus_killed"
+	{
+		"level" "short"
+	}
+
+	"merasmus_escape_warning"
+	{
+		"level" "short"
+		"time_remaining"	"byte"
+	}
+
+	"merasmus_escaped"
+	{
+		"level" "short"
 	}
 	
 	"eyeball_boss_summoned"
@@ -1228,6 +1310,7 @@
 	
 	"mvm_wave_complete"
 	{
+		"advanced"		"bool"		// is this an advanced popfile
 	}
 
 	"mvm_mission_complete"
@@ -1248,7 +1331,172 @@
 	{
 		"player"		"short"
 	}
+
+	"mvm_wave_failed"
+	{
+	}
+
+	"mvm_reset_stats"
+	{
+	}
+
+	"damage_resisted"
+	{
+		"entindex"		"byte"
+	}
+
+	"revive_player_notify"
+	{
+		"entindex"			"short"
+		"marker_entindex"	"short"
+	}
+
+	"revive_player_stopped"
+	{
+		"entindex"	"short"
+	}
+
+	"revive_player_complete"
+	{
+		"entindex"			"short"		// entindex of the medic
+	}
+
+	"player_turned_to_ghost"
+	{
+		"userid"	"short"		// user ID of the player who changed to a ghost
+	}
+
+	"medigun_shield_blocked_damage"
+	{
+		"userid"	"short"		// user ID of the player using the shield
+		"damage"	"float"		// damage that was blocked
+	}
+
+	"mvm_adv_wave_complete_no_gates"
+	{
+		"index"		"short"		// wave index
+	}
+
+	"mvm_sniper_headshot_currency"
+	{
+		"userid"	"short"		// user ID of the player 
+		"currency"	"short"		// currency collected
+	}
+
+	"mvm_mannhattan_pit"
+	{
+	}
+
+	"flag_carried_in_detection_zone"
+	{
+	}
+
+	"mvm_adv_wave_killed_stun_radio"
+	{
+	}
+
+	"player_directhit_stun"
+	{
+		"attacker"	"short"		// entindex of the attacker
+		"victim"	"short"		// entindex of the victim
+	}
+
+	"mvm_sentrybuster_killed"
+	{
+		"sentry_buster"	"short"	// entindex
+	}
+
+	"upgrades_file_changed"
+	{
+		"path"		"string"
+	}
+
+	"rd_team_points_changed"
+	{
+		"points"			"short"	
+		"team"				"byte"
+		"method"			"byte"
+	}
+
+	"rd_rules_state_changed"
+	{
+	}
+
+	"rd_robot_killed"
+	{
+		// this extends the original player_death 
+		"userid"	"short"   	// user ID who died				
+		"victim_entindex"	"long"
+		"inflictor_entindex"	"long"	// ent index of inflictor (a sentry, for example)
+		"attacker"	"short"	 	// user ID who killed
+		"weapon"	"string" 	// weapon name killer used 
+		"weaponid"	"short"		// ID of weapon killed used
+		"damagebits"	"long"		// bits of type of damage
+		"customkill"	"short"		// type of custom kill
+		"weapon_logclassname"	"string" 	// weapon name that should be printed on the log
+	}
+
+	"rd_robot_impact"
+	{
+		"entindex" "short"
+		"impulse_x" "float"
+		"impulse_y"	"float"
+		"impulse_z"	"float"
+	}
+
+	"teamplay_pre_round_time_left"
+	{
+		"time"		"short"
+	}
+
+	"parachute_deploy"
+	{
+		"index"	"short"		// entindex of the player
+	}
+
+	"parachute_holster"
+	{
+		"index"	"short"		// entindex of the player
+	}
+
+	"kill_refills_meter"
+	{
+		"index"	"short"		// entindex of the player
+	}
+
+	"rps_taunt_event"
+	{
+		"winner"		"short"		// entindex of the winning player
+		"winner_rps"	"byte"		// winner's selection 
+		"loser"			"short"		// entindex of the losing player
+		"loser_rps"		"byte"		// loser's selection 
+	}
+
+	"conga_kill"
+	{
+		"index"	"short"		// entindex of the player
+	}
+
+	"player_initial_spawn"
+	{
+		"index"	"short"		// entindex of the player
+	}
+
+	"competitive_victory"		
+	{
+	}
+
+	"competitive_skillrating_update"
+	{
+		"index"		"short"		// entindex of the player
+		"rating"	"short"		// skillrating
+		"delta"		"short"		// skillrating adjustment
+	}
+
+	"minigame_win"
+	{
+		"team"		"byte"		// which team won the minigame
+		"type"		"byte"		// what type of minigame was won
+	}
 }
-
-
 
