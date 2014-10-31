@@ -74,6 +74,9 @@
 			
 			"inset_eq_x"	"2"
 			"inset_eq_y"	"2"
+
+			"deferred_description"	"1"
+			"deferred_icon"			"1"
 			
 			"itemmodelpanel"
 			{
@@ -151,16 +154,38 @@
 			"use_item_sounds" "1"		
 		}
 	}
+
+	"NameFilterTextEntry"
+	{
+		"ControlName"		"TextEntry"
+		"fieldName"		"NameFilterTextEntry"
+		"xpos"		"c-70"
+		"ypos"		"30"
+		"wide"		"90"
+		"tall"		"19"
+		"autoResize"		"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"		"1"
+		"textHidden"		"0"
+		"editable"		"1"
+		"unicode"		"1"
+		"fgcolor_override"	"117 107 94 255"
+		"bgcolor_override"	"251 235 202 255"
+		"paintbackgroundtype" "2"
+		"font"		"HudFontSmall"
+	}
 	
 	"SubcategoryFilterComboBox"
 	{
 		"ControlName"		"ComboBox"
 		"fieldName"			"SubcategoryFilterComboBox"
 		"Font"				"HudFontSmallestBold"
-		"xpos"				"c0"
+		"xpos"				"c30"
 		"ypos"				"30"
 		"zpos"				"1"
-		"wide"				"142"
+		"wide"				"112"
 		"tall"				"19"
 		"autoResize"		"0"
 		"pinCorner"			"0"
@@ -385,6 +410,25 @@
 		"centerwrap"	"1"
 	}		
 	
+	"NameFilterLabel"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"NameFilterLabel"
+		"font"			"HudFontSmallestBold"
+		"labelText"		"#Store_NameFilterLabel"
+		"textAlignment"	"west"
+		"xpos"			"c-70"
+		"ypos"			"12"
+		"zpos"			"1"
+		"wide"			"90"
+		"tall"			"20"
+		"autoResize"	"1"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"fgcolor"		"StoreDarkTan"
+	}
+	
 	"SubcategoryFiltersLabel"
 	{
 		"ControlName"	"CExLabel"
@@ -392,10 +436,10 @@
 		"font"			"HudFontSmallestBold"
 		"labelText"		"#Store_ItemTypeFilterLabel"
 		"textAlignment"	"west"
-		"xpos"			"c0"
+		"xpos"			"c30"
 		"ypos"			"12"
 		"zpos"			"1"
-		"wide"			"200"
+		"wide"			"100"
 		"tall"			"20"
 		"autoResize"	"1"
 		"pinCorner"		"0"

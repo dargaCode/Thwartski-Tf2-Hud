@@ -13,7 +13,6 @@
 			
 			"itemmodelpanel"
 			{
-				"inventory_image_type" "2"
 				"force_square_image"	"1"
 			}
 		}
@@ -30,6 +29,16 @@
 	}
 	
 	"ClassFilterLabel"
+	{
+		"visible"		"0"
+	}
+
+	"NameFilterLabel"
+	{
+		"visible"		"0"
+	}
+
+	"NameFilterTextEntry"
 	{
 		"visible"		"0"
 	}
@@ -70,7 +79,7 @@
 		"labelText"		"#Store_Maps_SubTitle"
 		"textAlignment"	"south-west"
 		"xpos"			"c-292"
-		"ypos"			"20"
+		"ypos"			"30"
 		"zpos"			"5"
 		"wide"			"500"
 		"tall"			"25"
