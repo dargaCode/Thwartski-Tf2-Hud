@@ -1273,42 +1273,6 @@
 }
 
 // ------------------------------------------------------------------------------------ //
-// GRIEF BLOWER 
-// ------------------------------------------------------------------------------------ //
-
-"Weapon_GriefBlower.FireStart"
-{
-	"channel"	"CHAN_ITEM"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/flame_thrower_gb_start.wav"
-}
-
-"Weapon_GriefBlower.FireLoop"	
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/flame_thrower_gb_loop.wav"
-}
-
-"Weapon_GriefBlower.FireLoopCrit"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/flame_thrower_gb_loop_crit.wav"
-}
-
-"Weapon_GriefBlower.FireEnd"	
-{
-	"channel"	"CHAN_ITEM"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/flame_thrower_gb_end.wav"
-}
-
-// ------------------------------------------------------------------------------------ //
 // Flare Gun
 // ------------------------------------------------------------------------------------ //
 "Weapon_FlareGun.Single"
@@ -1957,75 +1921,6 @@
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"0.700000"
 	"wave"		"weapons/tomislav_wind_up.wav"
-}
-
-
-// ------------------------------------------------------------------------------------ //
-// GoALKEEPER
-// ------------------------------------------------------------------------------------ //
-
-"Weapon_Goal_Keeper.Fire"	
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/goal_keeper_shoot.wav"
-}
-
-"Weapon_Goal_Keeper.FireCrit"	
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/goal_keeper_shoot_crit.wav"
-}
-
-"Weapon_Goal_Keeper.Reload"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_NORM"
-	"volume"	"0.700000"
-	"wave"		"weapons/default_reload.wav"
-}
-
-"Weapon_Goal_Keeper.ClipEmpty"	
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_NORM"
-	"volume"	"0.700000"
-	"wave"		")weapons/minigun_empty.wav"
-}
-
-"Weapon_Goal_Keeper.Spin"	
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_NORM"
-	"volume"	"0.700000"
-	"wave"		")weapons/minigun_spin.wav"
-}
-
-"Weapon_Goal_Keeper.WindUp"	
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/minigun_wind_up.wav"
-}
-
-"Weapon_Goal_Keeper.WindDown"	
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_94dB"
-	"volume"	"0.700000"
-	"wave"		")weapons/minigun_wind_down.wav"
-}
-
-"Weapon_Goal_Keeper.Draw"
-{
-	"channel"	"CHAN_AUTO"
-	"soundlevel"	"SNDLVL_74dB"
-	"volume"	"0.350000"
-	"wave"		"weapons/draw_minigun_heavy.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
@@ -2893,6 +2788,25 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// CLASSIC SNIPER RIFLE
+// ------------------------------------------------------------------------------------ //
+"Weapon_ClassicSniperRifle.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/sniper_rifle_classic_shoot.wav"
+}
+
+"Weapon_ClassicSniperRifle.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/sniper_rifle_classic_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
 // SNIPER RIFLE
 // ------------------------------------------------------------------------------------ //
 "Weapon_SniperRifle.Single"
@@ -3269,9 +3183,6 @@
 		"wave"	")weapons\cow_mangler_explosion_normal_01.wav"
 		"wave"	")weapons\cow_mangler_explosion_normal_02.wav"
 		"wave"	")weapons\cow_mangler_explosion_normal_03.wav"
-		"wave"	")weapons\cow_mangler_explosion_normal_04.wav"
-		"wave"	")weapons\cow_mangler_explosion_normal_05.wav"
-		"wave"	")weapons\cow_mangler_explosion_normal_06.wav"
 	}
 }
 
@@ -3286,9 +3197,6 @@
 		"wave"	")weapons\cow_mangler_explosion_charge_01.wav"
 		"wave"	")weapons\cow_mangler_explosion_charge_02.wav"
 		"wave"	")weapons\cow_mangler_explosion_charge_03.wav"
-		"wave"	")weapons\cow_mangler_explosion_charge_04.wav"
-		"wave"	")weapons\cow_mangler_explosion_charge_05.wav"
-		"wave"	")weapons\cow_mangler_explosion_charge_06.wav"
 	}
 }
 
@@ -3332,7 +3240,7 @@
 {
 	"channel"	"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_NORM"
-	"volume"	"0.175000"
+	"volume"	"0.455000"
 	"wave"	"weapons\cow_mangler_reload_final.wav"
 }
 
@@ -4728,25 +4636,6 @@
 	"wave"		"weapons/buff_off.wav"
 }
 
-"Weapon_BuffBanner.HornRedFast"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_NONE"
-	"volume"	"0.700000"
-	"pitch"		"125"
-	"wave"		"weapons/buff_banner_horn_red.wav"
-}
-
-"Weapon_BuffBanner.HornBlueFast"
-{
-	"channel"	"CHAN_WEAPON"
-	"soundlevel"	"SNDLVL_NONE"
-	"volume"	"0.700000"
-	"pitch"		"125"
-	"wave"		"weapons/buff_banner_horn_blue.wav"
-}
-
-
 // ------------------------------------------------------------------------------------ //
 // DEMO CHARGE
 // ------------------------------------------------------------------------------------ //
@@ -4792,7 +4681,7 @@
 
 "DemoCharge.Charging"
 {
-	"channel"	"CHAN_ITEM"
+	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"0.700000"
 	"rndwave"
@@ -5241,6 +5130,64 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"0.700000"
+	"rndwave"
+	{
+		"wave"		")weapons\boxing_gloves_swing1.wav"
+		"wave"		")weapons\boxing_gloves_swing2.wav"
+		"wave"		")weapons\boxing_gloves_swing4.wav"
+		"wave"		")weapons\boxing_gloves_swing5.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// BOSTON BASHER
+// ------------------------------------------------------------------------------------ //
+
+"BostonBasher.Impact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01.wav"
+		"wave"		")weapons\eviction_notice_02.wav"
+		"wave"		")weapons\eviction_notice_03.wav"
+		"wave"		")weapons\eviction_notice_04.wav"
+	}
+}
+
+"BostonBasher.ImpactCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01_crit.wav"
+		"wave"		")weapons\eviction_notice_02_crit.wav"
+		"wave"		")weapons\eviction_notice_03_crit.wav"
+		"wave"		")weapons\eviction_notice_04_crit.wav"
+	}
+}
+
+"BostonBasher.HitWorld"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\demo_sword_hit_world1.wav"
+		"wave"		")weapons\demo_sword_hit_world2.wav"
+	}
+}
+
+"BostonBasher.Swing"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
 	"rndwave"
 	{
 		"wave"		")weapons\boxing_gloves_swing1.wav"
@@ -6195,6 +6142,402 @@
 	"volume"	"0.700000"
 	"wave"		")weapons/doom_flare_gun_crit.wav"
 }
+
+//-----------------------------------------//
+// Cleaver
+//-----------------------------------------//
+"Cleaver.ImpactFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\cleaver_hit_01.wav"
+		"wave"		")weapons\cleaver_hit_02.wav"
+		"wave"		")weapons\cleaver_hit_03.wav"
+		"wave"		")weapons\cleaver_hit_04.wav"
+		"wave"		")weapons\cleaver_hit_05.wav"
+		"wave"		")weapons\cleaver_hit_06.wav"
+		"wave"		")weapons\cleaver_hit_07.wav"
+	}
+}
+
+"Cleaver.ImpactWorld"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\cleaver_hit_world_01.wav"
+		"wave"		")weapons\cleaver_hit_world_02.wav"
+		"wave"		")weapons\cleaver_hit_world_03.wav"
+		"wave"		")weapons\cleaver_hit_world_04.wav"
+		"wave"		")weapons\cleaver_hit_world_05.wav"
+	}
+}
+
+//-----------------------------------------//
+// Neon Sign
+//-----------------------------------------//
+"Neon_Sign.ImpactFlesh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\neon_sign_hit_01.wav"
+		"wave"		")weapons\neon_sign_hit_02.wav"
+		"wave"		")weapons\neon_sign_hit_03.wav"
+		"wave"		")weapons\neon_sign_hit_04.wav"
+	}
+}
+
+"Neon_Sign.ImpactWorld"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\neon_sign_hit_world_01.wav"
+		"wave"		")weapons\neon_sign_hit_world_02.wav"
+		"wave"		")weapons\neon_sign_hit_world_03.wav"
+		"wave"		")weapons\neon_sign_hit_world_04.wav"
+	}
+}
+
+//-----------------------------------------//
+// SD Sapper
+//-----------------------------------------//
+"Weapon_sd_sapper.Timer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_75dB"
+	
+	"rndwave"
+	{
+		"wave"		")weapons\spy_tape_01.wav"
+		"wave"		")weapons\spy_tape_02.wav"
+		"wave"		")weapons\spy_tape_03.wav"
+		"wave"		")weapons\spy_tape_04.wav"
+		"wave"		")weapons\spy_tape_05.wav"
+	}
+}
+
+//-----------------------------------------//
+// Wheatley Sapper
+//-----------------------------------------//
+"Weapon_p2rec.Timer"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_74dB"
+	"wave"		"weapons/sapper_timer.wav"
+}
+
+//-----------------------------------------//
+// Dragon Minigun
+//-----------------------------------------//
+"Dragon_Minigun.Spin"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.700000"
+	"wave"		")weapons/dragon_gun_motor_loop_dry.wav"
+}
+
+"Dragon_Minigun.WindUp"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/dragon_gun_motor_start.wav"
+}
+
+"Dragon_Minigun.WindDown"	
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/dragon_gun_motor_stop.wav"
+}
+
+"Dragon_Minigun.Fire"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/dragon_gun_motor_loop.wav"
+}
+
+"Dragon_Minigun.FireCrit"	
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/dragon_gun_motor_loop_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// CSGO AWP
+// ------------------------------------------------------------------------------------ //
+"Weapon_AWP.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/csgo_awp_shoot.wav"
+}
+
+"Weapon_AWP.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons/csgo_awp_shoot_crit.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// RESCUE RANGER
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_RescueRanger.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\rescue_ranger_fire.wav"
+}
+
+"Weapon_RescueRanger.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\rescue_ranger_fire_crit.wav"
+}
+
+"Weapon_RescueRanger.charge_01"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\rescue_ranger_charge_01.wav"
+}
+
+"Weapon_RescueRanger.charge_02"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\rescue_ranger_charge_02.wav"
+}
+
+"RescueRanger_Teleporter.Send"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"pitch"		"PITCH_NORM"
+	"volume"	"0.490000"
+	"rndwave"
+	{
+		"wave"		")weapons\rescue_ranger_teleport_send_01.wav"
+		"wave"		")weapons\rescue_ranger_teleport_send_02.wav"
+	}
+}
+
+"RescueRanger_Teleporter.Receive"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.490000"
+	"soundlevel"	"SNDLVL_74dB"
+	"rndwave"
+	{
+		"wave"		")weapons\rescue_ranger_teleport_receive_01.wav"
+		"wave"		")weapons\rescue_ranger_teleport_receive_02.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// Vaccinator
+// ------------------------------------------------------------------------------------ //
+"WeaponMedigun_Vaccinator.Healing"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_heal.wav"
+}
+
+"WeaponMedigun_Vaccinator.Charged_tier_01"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_charge_tier_01.wav"
+}
+
+"WeaponMedigun_Vaccinator.Charged_tier_02"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_charge_tier_02.wav"
+}
+
+"WeaponMedigun_Vaccinator.Charged_tier_03"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_charge_tier_03.wav"
+}
+
+"WeaponMedigun_Vaccinator.Charged_tier_04"
+{
+	"channel"		"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_charge_tier_04.wav"
+}
+
+"WeaponMedigun_Vaccinator.InvulnerableOn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_86dB"
+	"wave"		")player\invuln_on_vaccinator.wav"
+}
+
+"WeaponMedigun_Vaccinator.InvulnerableOff"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_86dB"
+	"wave"		")player\invuln_off_vaccinator.wav"
+}
+
+"WeaponMedigun_Vaccinator.Toggle"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_86dB"
+	"wave"		")weapons\vaccinator_toggle.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Loose Cannon
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_LooseCannon.Shoot"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"			")weapons/loose_cannon_shoot.wav"
+}
+
+"Weapon_LooseCannon.Shootcrit"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"0.700000"
+	"wave"			")weapons/loose_cannon_shootcrit.wav"
+}
+
+"Weapon_LooseCannon.Explode"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_95dB"
+	"volume"	"0.700000"
+	"pitch"			"95, 105"
+	"wave"			")weapons/loose_cannon_explode.wav"
+}
+
+"Weapon_LooseCannon.Charge"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"0.315000"
+	"wave"			"weapons/loose_cannon_charge.wav"
+}
+
+"Weapon_LooseCannon.BallImpact"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_85dB"
+	"volume"	"0.490000"
+	"pitch"			"95, 105"
+	"wave"			"weapons/loose_cannon_ball_impact.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// MEDI_SHIELD
+// ------------------------------------------------------------------------------------ //
+"WeaponMedi_Shield.Protection"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"0.700000"
+	"wave"		")weapons\vaccinator_heal.wav"
+}
+
+"WeaponMedi_Shield.Deploy"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_95dB"
+	"wave"		")weapons\medi_shield_deploy.wav"
+}
+
+"WeaponMedi_Shield.Retract"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"0.700000"
+	"soundlevel"	"SNDLVL_95dB"
+	"wave"		")weapons\medi_shield_retract.wav"
+}
+
+"WeaponMedi_Shield.Burn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.490000"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"		"90, 100"
+
+	"rndwave"
+	{
+		"wave"	"weapons\medi_shield_burn_01.wav"
+		"wave"	"weapons\medi_shield_burn_02.wav"
+		"wave"	"weapons\medi_shield_burn_03.wav"
+		"wave"	"weapons\medi_shield_burn_04.wav"
+		"wave"	"weapons\medi_shield_burn_05.wav"
+		"wave"	"weapons\medi_shield_burn_06.wav"
+		"wave"	"weapons\medi_shield_burn_07.wav"
+		"wave"	"weapons\medi_shield_burn_08.wav"
+		"wave"	"weapons\medi_shield_burn_09.wav"
+		"wave"	"weapons\medi_shield_burn_10.wav"
+		"wave"	"weapons\medi_shield_burn_11.wav"
+	}
+}
+
+"WeaponMedi_Shield.Burn_lp"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_94dB"
+	"pitch"			"PITCH_NORM"
+
+	"wave"	")weapons\medi_burn_lp.wav"
+}
 // Channels
 //	CHAN_AUTO		= 0,
 //	CHAN_WEAPON		= 1,
@@ -6785,6 +7128,14 @@
 	}
 }
 
+"TFPlayer.DoubleDonk"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"		")player\doubledonk.wav"
+}
+
 "TFPlayer.FreezeCam"
 {
 	"channel"	"CHAN_STATIC"
@@ -6879,14 +7230,6 @@
 	"volume"	"0.525000"
 	"soundlevel"  	"SNDLVL_75dB"
 	"wave"		"player/taunt_pistol_twirl.wav"
-}
-
-"Taunt.Engineer10FlyVomit"
-{
-	"channel"	"CHAN_STATIC"
-	"volume"	"0.700000"
-	"soundlevel"  	"SNDLVL_75dB"
-	"wave"		")player\taunt_eng_fly_vomit.wav"
 }
 
 "Selection.EngineerWrenchShoulder"
@@ -7093,6 +7436,15 @@
 	"soundlevel"  "SNDLVL_95dB"
 
 	"wave"		")player/taunt_medic_heroic.wav"
+}
+
+"Taunt.GuitarRiff"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  "SNDLVL_95dB"
+
+	"wave"		")player\brutal_legend_taunt.wav"
 }
 
 "Taunt.WormsHHG"
@@ -8036,23 +8388,6 @@
 	"wave"			")misc\high_five.wav"
 }
 
-"soccer.announcer"
-{
-	"channel"	"CHAN_STATIC"
-	"volume"	"0.700000"
-	"soundlevel"	"SNDLVL_85dB"
-	"rndwave"
-	{
-		"wave"		")items\football_manager\gooaal_01.wav"
-		"wave"		")items\football_manager\gooaal_02.wav"
-		"wave"		")items\football_manager\gooaal_03.wav"
-		"wave"		")items\football_manager\gooaal_04.wav"
-		"wave"		")items\football_manager\gooaal_05.wav"
-		"wave"		")items\football_manager\gooaal_06.wav"
-		"wave"		")items\football_manager\gooaal_07.wav"
-	}
-}
-
 "soccer.vuvezela"
 {
 	"channel"	"CHAN_STATIC"
@@ -8341,13 +8676,48 @@
 	}
 }
 
-
 "pyro.music_backpack"
 {
 	"channel"	"CHAN_STATIC"
 	"volume"	"0.700000"
 	"soundlevel"	"SNDLVL_85dB"
 	"wave"		")items/pyro_music_tube.wav"
+}
+
+"Taunt.PyroAnnihilator"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.245000"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"	"player/sign_bass_solo.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Halloween 2012
+// ------------------------------------------------------------------------------------ //
+
+"Player.bomb_attach"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_bomb_attach.wav"
+}
+
+"Player.bomb_fuse"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.350000"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_bomb_fuse.wav"
+}
+
+"Player.bomb_flash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.140000"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_bomb_flash.wav"
 }
 // Channels
 //	CHAN_AUTO		= 0,
@@ -13592,27 +13962,6 @@
 	"wave"		"#misc/your_team_won.wav"	[$X360]
 }
 
-"Game.YourTeamLostQuiet"
-{
-	"channel"	"CHAN_AUTO"
-	"volume"	"0.350000"
-	"soundlevel"	"SNDLVL_140dB"
-	"pitch"		"PITCH_NORM"
-
-	"wave"		"#misc/your_team_lost.mp3"	[$WIN32]
-	"wave"		"#misc/your_team_lost.wav"	[$X360]
-}
-
-"Game.YourTeamWonQuiet"
-{
-	"channel"	"CHAN_AUTO"
-	"volume"	"0.350000"
-	"soundlevel"	"SNDLVL_140dB"
-	"pitch"		"PITCH_NORM"
-
-	"wave"		"#misc/your_team_won.mp3"	[$WIN32]
-	"wave"		"#misc/your_team_won.wav"	[$X360]
-}
 
 "Game.Revenge"
 {
@@ -14088,7 +14437,7 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"	"0.700000"
-	"soundlevel"  	"SNDLVL_105dB"
+	"soundlevel"  	"SNDLVL_115dB"
 	"pitch"		"PITCH_NORM"
 	"rndwave"
 	{
@@ -14139,24 +14488,13 @@
 	"wave"		")ambient/lightsoff.wav"
 }
 
-"Raid.SquadSpawn"
+"Halloween.MerasmusLoop"
 {
-	"channel"	"CHAN_STATIC"
+	"channel"		"CHAN_STATIC"
 	"volume"	"0.700000"
-	"soundlevel"  	"SNDLVL_NONE"
-	"pitch"		"PITCH_NORM"
-
-	"wave"		")vo/squad_spawn1.wav"
-}
-
-"Raid.MobSpawn"
-{
-	"channel"	"CHAN_STATIC"
-	"volume"	"0.700000"
-	"soundlevel"  	"SNDLVL_NONE"
-	"pitch"		"PITCH_NORM"
-
-	"wave"		")vo/squad_spawn1.wav"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"		"ambient/hallowloop.wav"
 }
 
 "Vote.Created"
@@ -14203,298 +14541,6 @@
 
 	"wave"		"UI/vote_no.wav"
 }
-
-
-// ------------------------------------------------------------------------------------ //
-// PvE
-// ------------------------------------------------------------------------------------ //
-"Minion.Bounce"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"95,105"
-
-	"rndwave"
-	{
-		"wave"			"weapons/sentry_upgrading1.wav"
-		"wave"			"weapons/sentry_upgrading2.wav"
-		"wave"			"weapons/sentry_upgrading3.wav"
-		"wave"			"weapons/sentry_upgrading4.wav"
-		"wave"			"weapons/sentry_upgrading5.wav"
-		"wave"			"weapons/sentry_upgrading6.wav"
-		"wave"			"weapons/sentry_upgrading7.wav"
-	}
-}
-
-"Minion.Ping.Roam"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"80"
-
-	"wave"			"weapons/det_pack_timer.wav"
-}
-
-"Minion.Notice"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_80dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"weapons/sentry_spot.wav"
-}
-
-"Minion.Recognize"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_80dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"weapons/sentry_spot_client.wav"
-}
-
-"Minion.Ping.Acquire"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_80dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"weapons/det_pack_timer.wav"
-}
-
-"Minion.Explode"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"95,105"
-
-	"wave"			"weapons/sapper_removed.wav"
-}
-
-"Minion.ChargeUpStun"
-{
-	"channel"		"CHAN_VOICE"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			")npc/minion_stun_charge_up.wav"
-}
-
-"Minion.Stun"
-{
-	"channel"		"CHAN_VOICE"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			")npc/minion_stun_launch.wav"
-}
-
-"Minion.StunKill"
-{
-	"channel"		"CHAN_VOICE"
-	"soundlevel" 	"SNDLVL_90dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			")npc/minion_stun_kill.wav"
-}
-
-"Minion.Building"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/minion_start_build.wav"
-}
-
-"RobotBoss.StunStart"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_stun_start.wav"
-}
-
-"RobotBoss.Stunned"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_NORM"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_stunned.wav"
-}
-
-"RobotBoss.StunRecover"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_stun_recover.wav"
-}
-
-"RobotBoss.Acquire"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_acquire.wav"
-}
-
-"RobotBoss.Vocalize"
-{
-	"channel"		"CHAN_VOICE"
-	"soundlevel" 	"SNDLVL_100dB"
-	"pitch"			"80,105"
-
-	"rndwave"
-	{
-		"wave"			"npc/robot_boss_voice_01.wav"
-		"wave"			"npc/robot_boss_voice_02.wav"
-		"wave"			"npc/robot_boss_voice_03.wav"
-	}
-}
-
-"RobotBoss.Hurt"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_hurt_01.wav"
-}
-
-"RobotBoss.Vulnerable"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_vulnerable_01.wav"
-}
-
-"RobotBoss.Footstep"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_footstep_01.wav"
-}
-
-"RobotBoss.LaunchGrenades"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			")npc/robot_boss_launch_grenades.wav"
-}
-
-"RobotBoss.LaunchRockets"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_launch_rockets.wav"
-}
-
-"RobotBoss.ChargeUpNukeAttack"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"	"0.700000"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_150dB"
-
-	"wave"			")npc/robot_boss_charge_up_nuke_attack02.wav"
-}
-
-"RobotBoss.NukeAttack"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"	"0.700000"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_150dB"
-
-	"wave"			"npc/robot_boss_nuke_attack.wav"
-}
-
-"RobotBoss.Scanning"
-{
-	"channel"		"CHAN_VOICE"
-	"volume"	"0.700000"
-	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_130dB"
-
-	"wave"			"npc/robot_boss_scanning.wav"
-}
-
-"RobotMiniBoss.LaunchRocket"
-{
-	"channel"	"CHAN_WEAPON"
-	"volume"	"0.700000"
-	"soundlevel"	"SNDLVL_94dB"
-	"pitch"			"150"
-	"wave"		")weapons/rocket_shoot.wav"
-}
-
-"RobotBoss.ReinforcementsArrived"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/reinforcements_arrived.wav"
-}
-
-"RobotBoss.HardHitSkillShot"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_hard_hit_01.wav"
-}
-
-"RobotBoss.DamageSpongeSkillShot"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_hurt_03.wav"
-}
-
-"RobotBoss.PreciseHit1SkillShot"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_precise_hit_01.wav"
-}
-
-"RobotBoss.PreciseHit2SkillShot"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_precise_hit_02.wav"
-}
-
-"RobotBoss.PreciseHit3SkillShot"
-{
-	"channel"		"CHAN_STATIC"
-	"soundlevel" 	"SNDLVL_130dB"
-	"pitch"			"PITCH_NORM"
-
-	"wave"			"npc/robot_boss_precise_hit_03.wav"
-}
-
 
 
 //
@@ -14798,4 +14844,272 @@
 	
 	"wave"		")misc\doomsday_missile_explosion.wav"
 }
+
+// ------------------------------------------------------------------------------------ //
+// Halloween 2012
+// ------------------------------------------------------------------------------------ //
+
+"Halloween.WheelofFate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_wheel_of_fate.wav"
+}
+
+"Halloween.Merasmus_Spell"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_spell.wav"
+}
+"Halloween.Merasmus_TP_In"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_appear.wav"
+}
+
+"Halloween.Merasmus_TP_Out"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_disappear.wav"
+}
+
+"Halloween.Merasmus_Float"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_95dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_float.wav"
+}
+
+"Halloween.Merasmus_Hiding_Explode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_hiding_explode.wav"
+}
+
+"Halloween.Merasmus_Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_stun.wav"
+}
+
+
+"Halloween.Merasmus_Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_death.wav"
+}
+
+"Halloween.dance_loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.350000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_dance_loop.wav"
+}
+
+"Halloween.dance_howl"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.350000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_dance_howl.wav"
+}
+
+"Halloween.plumes_long"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.490000"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_plumes_capture.wav"
+}
+
+"Halloween.plumes_short"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.490000"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_plumes_short.wav"
+}
+
+
+
+"Ambient.metrotrain_passby"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"rndwave"
+	{
+		"wave"	"ambient/metrotrain_passby_01.wav"
+		"wave"	"ambient/metrotrain_passby_02.wav"
+	}
+}
+
+"General.banana_slip" 
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"	")misc/banana_slip.wav"
+
+}
+
+
+// Rottenburg map - Large metal door sounds
+
+"Hugedoor.openstart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_140dB"
+	"wave"			")ambient/rottenburg/tunneldoor_open.wav"
+}
+
+"Hugedoor.opencomplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.560000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"			")ambient/rottenburg/tunneldoor_open_complete.wav"
+}
+
+"Hugedoor.closedloud"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_140dB"
+	"wave"			")ambient/rottenburg/tunneldoor_closed_loud.wav"
+}
+
+"Hugedoor.closedsoft"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.560000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"			")ambient/rottenburg/tunneldoor_closed_quiet.wav"
+}
+
+// Rottenburg map - Portcullis over upgrades shop
+
+"Portcullis.down_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.490000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_down.wav"
+}
+
+"Portcullis.down_slam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.560000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_slam.wav"
+}
+
+"Portcullis.up_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.560000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_up.wav"
+}
+
+// Rottenburg map - Bomb carrier pushed into pit under bell tower
+
+"Belltower.Ring"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")ambient/rottenburg/rottenburg_belltower.wav"
+}
+
+// Rottenburg map - Palisade barrier smash
+
+"MVM.BarrierSmash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")ambient/rottenburg/barrier_smash.wav"
+}
+
+// New item drop crates
+
+"ui.cratesmash_common"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.490000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_common.wav"
+}
+
+
+"ui.cratesmash_rare"
+
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.560000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_rare.wav"
+}
+
+"ui.cratesmash_ultrarare_short"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_ultrarare_short.wav"
+}
+
+"ui.cratesmash_ultrarare_long"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"	"0.700000"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_ultrarare.wav"
+}
+
 
