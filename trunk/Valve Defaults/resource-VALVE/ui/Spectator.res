@@ -11,6 +11,9 @@
 		"enabled"		"1"
 		"tabPosition"		"0"
 	}
+	"specgui"
+	{
+	}
 	"topbar"
 	{
 		"ControlName"		"Panel"
@@ -289,16 +292,16 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"TipLabel"
-		"xpos"			"20"
+		"xpos"			"15"
 		"xpos_hidef"	"60"
 		"xpos_lodef"	"45"
-		"ypos"			"r60"
+		"ypos"			"r67"
 		"ypos_lodef"		"28"
 		"ypos_hidef"		"35"
-		"wide"			"130"
+		"wide"			"145"
 		"wide_hidef"	"230"
 		"wide_lodef"	"240"
-		"tall"			"54"
+		"tall"			"64"
 		"tall_hidef"	"70"
 		"tall_lodef"	"70"
 		"autoResize"		"0"
@@ -366,26 +369,6 @@
 			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
-		}
-		
-		"attriblabel"
-		{
-			"ControlName"	"CExLabel"
-			"fieldName"		"attriblabel"
-			"font"			"ItemFontAttribLarge"
-			"xpos"			"0"
-			"ypos"			"30"
-			"zpos"			"2"
-			"wide"			"140"
-			"tall"			"60"
-			"autoResize"	"0"
-			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
-			"labelText"		"%attriblist%"
-			"textAlignment"	"south"
-			"fgcolor"		"235 226 202 255"
-			"centerwrap"	"1"
 		}
 	}	
 }
