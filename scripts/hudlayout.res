@@ -216,6 +216,13 @@
 		"wide"	 	"252"
 		"tall"	 	"40"
 		"priority"	"40"
+
+		if_vr
+		{
+			"ypos"		"370"
+			"x_offset"	"20"
+		}
+
 	}
 	
 	CSpectatorTargetID
@@ -243,6 +250,12 @@
 		"wide"	 	"252"
 		"tall"	 	"40"
 		"priority"	"35"
+
+		if_vr
+		{
+			"ypos"		"330"
+			"x_offset"	"20"
+		}
 	}
 	
 	BuildingStatus_Spy
@@ -491,6 +504,22 @@
 		"ItemFont"				"Default"
 		"ItemFontPulsing"		"Default"
 
+	}
+
+	HudSpellMenu
+	{
+		"fieldName" "HudSpellMenu"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+		"zpos" 	"2"
+		"xpos"			"130"
+		"ypos"			"r61"
+		
+		"TextFont"				"Default"
+		"ItemFont"				"Default"
+		"ItemFontPulsing"		"Default"
 	}
 
 	HudCloseCaption
@@ -856,6 +885,18 @@
 		"tall"			"200"
 		"PaintBackgroundType"	"0"
 	}
+
+	"HudEurekaEffectTeleportMenu"
+	{
+		"fieldName" 	"HudEurekaEffectTeleportMenu"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"c-125"
+		"ypos"			"c-55"
+		"wide"			"250"
+		"tall"			"195"
+		"PaintBackgroundType"	"0"
+	}
 	
 	"HudMenuSpyDisguise"
 	{
@@ -1204,4 +1245,64 @@
 		"bgcolor_override"	"0 0 0 0"
 		"PaintBackgroundType"	"0" // rounded corners
 	}
-}
+
+	"HudAlert"
+	{
+		"fieldName"		"HudAlert"
+		"visible"		"0"
+		"enable"		"1"
+		"xpos"			"c-160"
+		"ypos"			"100"
+		"wide"			"320"
+		"tall"			"150"
+	}
+
+	"CTFKillStreakNotice"
+	{
+		"fieldName"		"CTFKillStreakNotice"
+		"xpos"			"0"			
+		"ypos"			"0"
+		"wide"			"640"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"	"0 0 0 0"
+		"PaintBackgroundType"	"0" // rounded corners
+	}
+
+	CTFFlagCalloutPanel
+	{
+		"fieldName"		"CTFFlagCalloutPanel"
+		"visible" 		"0"
+		"enabled" 		"1"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"	 		"40"
+		"tall"	 		"40"
+		"priority"		"40"
+	}
+
+	"HudMenuTauntSelection"
+	{
+		"fieldName" 	"HudMenuTauntSelection"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"c-235"
+		"ypos"			"c-52"
+		"ypos_hidef"	"c-42"
+		"ypos_lodef"	"c-42"
+		"wide"			"470"
+		"tall"			"200"
+		"PaintBackgroundType"	"0"
+	}
+
+	HudMiniGame
+	{
+		"fieldName" "HudMiniGame"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"wide"	"f0"
+		"tall"	"480"
+	}
