@@ -28,6 +28,8 @@ Criterion "NotGunTauntHeavy" "GunTauntHeavy" "!=1" "required" weight 0
 Criterion "IsNotDaring" "IsDaring" "!=1" "required" weight 0
 Criterion "HeavyNotKillSpeechObject" "HeavyKillSpeechObject" "!=1" "required" weight 0
 Criterion "HeavyNotShinySpeech" "HeavyShinySpeech" "!=1" "required" weight 0
+Criterion "HeavyNotFairyNoises" "HeavyFairyNoises" "!=1" "required" weight 0
+
 
 Response PlayerCloakedSpyDemomanHeavy
 {

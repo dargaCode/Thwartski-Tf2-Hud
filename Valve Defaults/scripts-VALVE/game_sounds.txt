@@ -718,6 +718,14 @@
  	"soundlevel"   "SNDLVL_NORM"
 	"wave"  "#misc/tf_nemesis.wav"
 }
+"Game.KillStreak"
+{
+ 	"channel"  "CHAN_STATIC"
+ 	"volume"  ".65"
+ 	"pitch"  "100"
+ 	"soundlevel"   "SNDLVL_NORM"
+	"wave"  "#misc/killstreak.wav"
+}
 
 "Game.PenetrationKill"
 {
@@ -1166,7 +1174,7 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_105dB"
+	"soundlevel"  	"SNDLVL_115dB"
 	"pitch"		"PITCH_NORM"
 	"rndwave"
 	{
@@ -1217,6 +1225,14 @@
 	"wave"		")ambient/lightsoff.wav"
 }
 
+"Halloween.MerasmusLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"		"ambient/hallowloop.wav"
+}
 
 "Vote.Created"
 {
@@ -1370,6 +1386,15 @@
 	"pitch"		"PITCH_NORM"
 
 	"wave"		")misc\cp_harbor_red_whistle.wav"
+}
+
+"Tournament.PlayerReady"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel" 	"SNDLVL_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		"UI/vote_started.wav"
 }
 
 // ------------------------------------------------------------------------------------ //
@@ -1557,3 +1582,815 @@
 	"wave"		")misc\doomsday_missile_explosion.wav"
 }
 
+// ------------------------------------------------------------------------------------ //
+// Halloween 2012
+// ------------------------------------------------------------------------------------ //
+
+"Halloween.WheelofFate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_wheel_of_fate.wav"
+}
+"Halloween.WheelofFateQuiet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_40dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_wheel_of_fate.wav"
+}
+
+"Halloween.Merasmus_Spell"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_spell.wav"
+}
+"Halloween.Merasmus_TP_In"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_appear.wav"
+}
+
+"Halloween.Merasmus_TP_Out"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_disappear.wav"
+}
+
+"Halloween.Merasmus_Float"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_95dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_float.wav"
+}
+
+"Halloween.Merasmus_Hiding_Explode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/merasmus_hiding_explode.wav"
+}
+
+"Halloween.Merasmus_Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_stun.wav"
+}
+
+
+"Halloween.Merasmus_Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/merasmus_death.wav"
+}
+
+"Halloween.dance_loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_dance_loop.wav"
+}
+
+"Halloween.dance_howl"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_dance_howl.wav"
+}
+
+"Halloween.plumes_long"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_plumes_capture.wav"
+}
+
+"Halloween.plumes_short"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_plumes_short.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Halloween 2013
+// ------------------------------------------------------------------------------------ //
+
+
+"Halloween.ClockTick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_150dB"
+	"pitch"		"PITCH_NORM"
+
+	"wave"		")misc/halloween/clock_tick.wav"
+}
+
+"Halloween.hellride"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/gotohell.wav"
+}
+
+"Halloween.spell_pickup"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_100dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_pickup.wav"
+}
+
+"Halloween.spell_pickup_rare"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_100dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_pickup_rare.wav"
+}
+
+"Halloween.spelltick_a"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_100dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/spelltick_01.wav"
+}
+
+"Halloween.spelltick_b"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_100dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/spelltick_02.wav"
+}
+
+"Halloween.spelltick_set"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".25"
+	"soundlevel"  	"SNDLVL_100dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/spelltick_set.wav"
+}
+
+"Halloween.skeleton_break"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/skeleton_break.wav"
+}
+
+"Halloween.skeleton_laugh_small"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"misc\halloween\skeletons\skelly_small_01.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_02.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_03.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_04.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_05.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_06.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_07.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_08.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_09.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_10.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_11.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_12.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_13.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_14.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_15.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_16.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_17.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_18.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_19.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_20.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_21.wav"
+		"wave"		"misc\halloween\skeletons\skelly_small_22.wav"
+	}
+}
+
+"Halloween.skeleton_laugh_medium"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"misc\halloween\skeletons\skelly_medium_01.wav"
+		"wave"		"misc\halloween\skeletons\skelly_medium_02.wav"
+		"wave"		"misc\halloween\skeletons\skelly_medium_03.wav"
+		"wave"		"misc\halloween\skeletons\skelly_medium_04.wav"
+	}
+}
+
+"Halloween.skeleton_laugh_giant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		"misc\halloween\skeletons\skelly_giant_01.wav"
+		"wave"		"misc\halloween\skeletons\skelly_giant_02.wav"
+		"wave"		"misc\halloween\skeletons\skelly_giant_03.wav"
+	}
+
+}
+
+
+"Halloween.spell_athletic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_athletic.wav"
+}
+
+"Halloween.spell_bat_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_bat_cast.wav"
+}
+
+"Halloween.spell_bat_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_bat_impact.wav"
+}
+
+"Halloween.spell_blastjump"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_blast_jump.wav"
+}
+
+"Halloween.spell_fireball_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_fireball_cast.wav"
+}
+
+"Halloween.spell_fireball_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_fireball_impact.wav"
+}
+
+"Halloween.spell_lightning_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_lightning_ball_cast.wav"
+}
+
+"Halloween.spell_lightning_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_lightning_ball_impact.wav"
+}
+
+"Halloween.spell_meteor_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_meteor_cast.wav"
+}
+
+"Halloween.spell_meteor_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".5"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_meteor_impact.wav"
+}
+
+"Halloween.spell_mirv_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_mirv_cast.wav"
+}
+
+"Halloween.spell_mirv_explode_primary"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_mirv_explode_primary.wav"
+}
+
+"Halloween.spell_mirv_explode_secondary"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".25"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_mirv_explode_secondary.wav"
+}
+
+"Halloween.spell_overheal"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_overheal.wav"
+}
+
+"Halloween.spell_skeleton_horde_cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_skeleton_horde_cast.wav"
+}
+
+"Halloween.spell_skeleton_horde_rise"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_skeleton_horde_rise.wav"
+}
+
+"Halloween.spell_spawn_boss"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_spawn_boss.wav"
+}
+
+"Halloween.spell_spawn_boss_disappear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_spawn_boss_disappear.wav"
+}
+
+"Halloween.spell_stealth"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_stealth.wav"
+}
+
+"Halloween.spell_teleport"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_140dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")misc/halloween/spell_teleport.wav"
+}
+
+
+// Misc
+
+"Ambient.metrotrain_passby"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"rndwave"
+	{
+		"wave"	"ambient/metrotrain_passby_01.wav"
+		"wave"	"ambient/metrotrain_passby_02.wav"
+	}
+}
+
+"General.banana_slip" 
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"	")misc/banana_slip.wav"
+
+}
+
+
+// Rottenburg map - Large metal door sounds
+
+"Hugedoor.openstart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_140dB"
+	"wave"			")ambient/rottenburg/tunneldoor_open.wav"
+}
+
+"Hugedoor.opencomplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"			")ambient/rottenburg/tunneldoor_open_complete.wav"
+}
+
+"Hugedoor.closedloud"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_140dB"
+	"wave"			")ambient/rottenburg/tunneldoor_closed_loud.wav"
+}
+
+"Hugedoor.closedsoft"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"			")ambient/rottenburg/tunneldoor_closed_quiet.wav"
+}
+
+// Rottenburg map - Portcullis over upgrades shop
+
+"Portcullis.down_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_down.wav"
+}
+
+"Portcullis.down_slam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_slam.wav"
+}
+
+"Portcullis.up_start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_85dB"
+	"wave"			")ambient/rottenburg/portcullis_up.wav"
+}
+
+// Rottenburg map - Bomb carrier pushed into pit under bell tower
+
+"Belltower.Ring"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")ambient/rottenburg/rottenburg_belltower.wav"
+}
+
+// Rottenburg map - Palisade barrier smash
+
+"MVM.BarrierSmash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")ambient/rottenburg/barrier_smash.wav"
+}
+
+// New item drop crates
+
+"ui.cratesmash_common"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_common.wav"
+}
+
+"ui.cratesmash_rare_long"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_mid.wav"
+}
+
+"ui.cratesmash_ultrarare_short"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_ultrarare_short.wav"
+}
+
+"ui.cratesmash_ultrarare_long"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_ultrarare.wav"
+}
+
+"ui.cratesmash_ultrarare_long_fireworks"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/itemcrate_smash_ultrarare_fireworks.wav"
+}
+
+"Equipment.RocketPack_Activate"
+{
+	"channel"	"CHAN_WEAPON"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_94dB"
+	"wave"		")weapons/rocket_ll_shoot.wav"
+}
+"Parachute_open"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			")items/para_open.wav"
+}
+"Parachute_close"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			")items/para_close.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// Halloween 2014
+// ------------------------------------------------------------------------------------ //
+
+"Halloween.CarCheer"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_cheer1.wav"
+		"wave"	")ambient/bumper_car_cheer2.wav"
+		"wave"	")ambient/bumper_car_cheer3.wav"
+	}
+}
+
+"Halloween.CarBoo"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_boo1.wav"
+		"wave"	")ambient/bumper_car_boo2.wav"
+		"wave"	")ambient/bumper_car_boo3.wav"
+	}
+}
+
+"Halloween.Quack"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1"
+	"pitch"		"90, 110"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_quack1.wav"
+		"wave"	")ambient/bumper_car_quack2.wav"
+		"wave"	")ambient/bumper_car_quack3.wav"
+		"wave"	")ambient/bumper_car_quack4.wav"
+		"wave"	")ambient/bumper_car_quack5.wav"
+		"wave"	")ambient/bumper_car_quack9.wav"
+		"wave"	")ambient/bumper_car_quack10.wav"
+		"wave"	")ambient/bumper_car_quack11.wav"
+		"wave"	")ambient/bumper_car_quack12.wav"
+	}
+}
+
+"Halloween.FloorBreak"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_110dB"
+	"volume"	"1"
+	"wave"	")ambient/bumper_car_floor_break.wav"
+}
+"Halloween.FloorBreakReverse"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_110dB"
+	"volume"	"1"
+	"wave"	")ambient/bumper_car_floor_break_reverse.wav"
+}
+
+"Halloween.HammerGearCrankSlow"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerGearCrankFast"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactLarge"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactSmall"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactSmall2"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactBloodyBoneCrunch"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.PlatformAlarm"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/alarms/klaxon1.wav"
+}
+
+"Halloween.BellRing.Scout"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.Heman"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.PushOver"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.Wizard"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.WoodImpact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.DuckPickup.Pos"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/duck_pickup_pos_01.wav"
+}
+
+"Halloween.DuckPickup.Neg"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/duck_pickup_neg_01.wav"
+}
+"Halloween.HammerImpact"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_150dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/strongman_fast_impact_01.wav"
+}

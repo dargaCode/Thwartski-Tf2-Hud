@@ -128,84 +128,84 @@
 	}
 }
 
-// "Engineer.MVM_Death"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "rndwave"			
-	// {
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere01.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere02.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere03.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere04.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere05.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere06.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSevere07.mp3"
-	// }
-// }
+	"rndwave"			
+	{
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere01.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere02.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere03.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere04.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere05.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere06.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSevere07.mp3"
+	}
+}
 
-// "Engineer.MVM_CritDeath"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CritDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "rndwave"			
-	// {
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
-	// }
-// }
+	"rndwave"			
+	{
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
+	}
+}
 
-// "Engineer.MVM_MeleeDeath"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_MeleeDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "rndwave"			
-	// {
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
-	// }
-// }
+	"rndwave"			
+	{
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
+	}
+}
 
-// "Engineer.MVM_ExplosionDeath"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ExplosionDeath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "rndwave"			
-	// {
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp01.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp02.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp03.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp04.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp05.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp06.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp07.mp3"
-		// "wave"		"vo/mvm/norm/engineer_mvm_PainSharp08.mp3"
-	// }
-// }
+	"rndwave"			
+	{
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp01.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp02.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp03.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp04.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp05.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp06.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp07.mp3"
+		"wave"		"vo/mvm/norm/engineer_mvm_PainSharp08.mp3"
+	}
+}
 
 
 
@@ -2726,1996 +2726,2017 @@
 	"wave"			"vo/mvm/norm/demoman_mvm_Yes03.mp3"
 }
 
-// "Engineer.MVM_ActivateCharge01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ActivateCharge01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge01.mp3"
+}
 
-// "Engineer.MVM_ActivateCharge02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ActivateCharge02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge02.mp3"
+}
 
-// "Engineer.MVM_ActivateCharge03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ActivateCharge03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ActivateCharge03.mp3"
+}
 
-// "Engineer.MVM_AutoAttackedBySpy01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoAttackedBySpy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy01.mp3"
+}
 
-// "Engineer.MVM_AutoAttackedBySpy02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoAttackedBySpy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy02.mp3"
+}
 
-// "Engineer.MVM_AutoAttackedBySpy03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoAttackedBySpy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoAttackedBySpy03.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingDispenser01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingDispenser01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingDispenser01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingDispenser01.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingDispenser02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingDispenser02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingDispenser02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingDispenser02.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingSentry01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingSentry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingSentry01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingSentry01.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingSentry02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingSentry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingSentry02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingSentry02.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingTeleporter01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingTeleporter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingTeleporter01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingTeleporter01.mp3"
+}
 
-// "Engineer.MVM_AutoBuildingTeleporter02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoBuildingTeleporter02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingTeleporter02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoBuildingTeleporter02.mp3"
+}
 
-// "Engineer.MVM_AutoCappedControlPoint01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedControlPoint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint01.mp3"
+}
 
-// "Engineer.MVM_AutoCappedControlPoint02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedControlPoint02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint02.mp3"
+}
 
-// "Engineer.MVM_AutoCappedControlPoint03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedControlPoint03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedControlPoint03.mp3"
+}
 
-// "Engineer.MVM_AutoCappedIntelligence01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedIntelligence01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence01.mp3"
+}
 
-// "Engineer.MVM_AutoCappedIntelligence02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedIntelligence02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence02.mp3"
+}
 
-// "Engineer.MVM_AutoCappedIntelligence03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoCappedIntelligence03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoCappedIntelligence03.mp3"
+}
 
-// "Engineer.MVM_AutoDejectedTie01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDejectedTie01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie01.mp3"
+}
 
-// "Engineer.MVM_AutoDejectedTie02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDejectedTie02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie02.mp3"
+}
 
-// "Engineer.MVM_AutoDejectedTie03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDejectedTie03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDejectedTie03.mp3"
+}
 
-// "Engineer.MVM_AutoDestroyedDispenser01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDestroyedDispenser01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedDispenser01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedDispenser01.mp3"
+}
 
-// "Engineer.MVM_AutoDestroyedSentry01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDestroyedSentry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedSentry01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedSentry01.mp3"
+}
 
-// "Engineer.MVM_AutoDestroyedTeleporter01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoDestroyedTeleporter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedTeleporter01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoDestroyedTeleporter01.mp3"
+}
 
-// "Engineer.MVM_AutoOnFire01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoOnFire01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire01.mp3"
+}
 
-// "Engineer.MVM_AutoOnFire02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoOnFire02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire02.mp3"
+}
 
-// "Engineer.MVM_AutoOnFire03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_AutoOnFire03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_AutoOnFire03.mp3"
+}
 
-// "Engineer.MVM_BattleCry01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry01.mp3"
+}
 
-// "Engineer.MVM_BattleCry02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry02.mp3"
+}
 
-// "Engineer.MVM_BattleCry03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry03.mp3"
+}
 
-// "Engineer.MVM_BattleCry04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry04.mp3"
+}
 
-// "Engineer.MVM_BattleCry05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry05.mp3"
+}
 
-// "Engineer.MVM_BattleCry06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry06.mp3"
+}
 
-// "Engineer.MVM_BattleCry07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_BattleCry07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_BattleCry07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_BattleCry07.mp3"
+}
 
-// "Engineer.MVM_Cheers01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers01.mp3"
+}
 
-// "Engineer.MVM_Cheers02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers02.mp3"
+}
 
-// "Engineer.MVM_Cheers03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers03.mp3"
+}
 
-// "Engineer.MVM_Cheers04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers04.mp3"
+}
 
-// "Engineer.MVM_Cheers05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers05.mp3"
+}
 
-// "Engineer.MVM_Cheers06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers06.mp3"
+}
 
-// "Engineer.MVM_Cheers07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Cheers07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Cheers07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Cheers07.mp3"
+}
 
-// "Engineer.MVM_CloakedSpy01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy01.mp3"
+}
 
-// "Engineer.MVM_CloakedSpy02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy02.mp3"
+}
 
-// "Engineer.MVM_CloakedSpy03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpy03.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify01.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify02.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify03.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify04.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify05.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify06.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify07.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify08"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify08.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify08.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify09"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify09.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify09.mp3"
+}
 
-// "Engineer.MVM_CloakedSpyIdentify10"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_CloakedSpyIdentify10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify10.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_CloakedSpyIdentify10.mp3"
+}
 
-// "Engineer.MVM_Go01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Go01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Go01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Go01.mp3"
+}
 
-// "Engineer.MVM_Go02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Go02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Go02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Go02.mp3"
+}
 
-// "Engineer.MVM_Go03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Go03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Go03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Go03.mp3"
+}
 
-// "Engineer.MVM_GoodJob01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_GoodJob01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_GoodJob01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_GoodJob01.mp3"
+}
 
-// "Engineer.MVM_GoodJob02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_GoodJob02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_GoodJob02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_GoodJob02.mp3"
+}
 
-// "Engineer.MVM_GoodJob03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_GoodJob03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_GoodJob03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_GoodJob03.mp3"
+}
 
-// "Engineer.MVM_HeadLeft01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HeadLeft01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HeadLeft01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HeadLeft01.mp3"
+}
 
-// "Engineer.MVM_HeadLeft02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HeadLeft02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HeadLeft02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HeadLeft02.mp3"
+}
 
-// "Engineer.MVM_HeadRight01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HeadRight01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HeadRight01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HeadRight01.mp3"
+}
 
-// "Engineer.MVM_HeadRight02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HeadRight02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HeadRight02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HeadRight02.mp3"
+}
 
-// "Engineer.MVM_HeadRight03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HeadRight03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HeadRight03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HeadRight03.mp3"
+}
 
-// "Engineer.MVM_HelpMe01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMe01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMe01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMe01.mp3"
+}
 
-// "Engineer.MVM_HelpMe02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMe02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMe02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMe02.mp3"
+}
 
-// "Engineer.MVM_HelpMe03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMe03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMe03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMe03.mp3"
+}
 
-// "Engineer.MVM_HelpMeCapture01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeCapture01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture01.mp3"
+}
 
-// "Engineer.MVM_HelpMeCapture02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeCapture02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture02.mp3"
+}
 
-// "Engineer.MVM_HelpMeCapture03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeCapture03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeCapture03.mp3"
+}
 
-// "Engineer.MVM_HelpMeDefend01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeDefend01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend01.mp3"
+}
 
-// "Engineer.MVM_HelpMeDefend02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeDefend02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend02.mp3"
+}
 
-// "Engineer.MVM_HelpMeDefend03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_HelpMeDefend03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_HelpMeDefend03.mp3"
+}
 
-// "Engineer.MVM_Incoming01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Incoming01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Incoming01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Incoming01.mp3"
+}
 
-// "Engineer.MVM_Incoming02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Incoming02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Incoming02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Incoming02.mp3"
+}
 
-// "Engineer.MVM_Incoming03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Incoming03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Incoming03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Incoming03.mp3"
+}
 
-// "Engineer.MVM_Jeers01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Jeers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Jeers01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Jeers01.mp3"
+}
 
-// "Engineer.MVM_Jeers02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Jeers02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Jeers02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Jeers02.mp3"
+}
 
-// "Engineer.MVM_Jeers03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Jeers03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Jeers03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Jeers03.mp3"
+}
 
-// "Engineer.MVM_Jeers04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Jeers04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Jeers04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Jeers04.mp3"
+}
 
-// "Engineer.MVM_LaughEvil01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil01.mp3"
+}
 
-// "Engineer.MVM_LaughEvil02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil02.mp3"
+}
 
-// "Engineer.MVM_LaughEvil03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil03.mp3"
+}
 
-// "Engineer.MVM_LaughEvil04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil04.mp3"
+}
 
-// "Engineer.MVM_LaughEvil05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil05.mp3"
+}
 
-// "Engineer.MVM_LaughEvil06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughEvil06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughEvil06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughEvil06.mp3"
+}
 
-// "Engineer.MVM_LaughHappy01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughHappy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughHappy01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughHappy01.mp3"
+}
 
-// "Engineer.MVM_LaughHappy02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughHappy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughHappy02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughHappy02.mp3"
+}
 
-// "Engineer.MVM_LaughHappy03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughHappy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughHappy03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughHappy03.mp3"
+}
 
-// "Engineer.MVM_LaughLong01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughLong01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughLong01.mp3"
-// }
-// "Engineer.MVM_LaughLong02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughLong01.mp3"
+}
+"Engineer.MVM_LaughLong02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughLong02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughLong02.mp3"
+}
 
 
-// "Engineer.MVM_LaughShort01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughShort01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughShort01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughShort01.mp3"
+}
 
-// "Engineer.MVM_LaughShort02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughShort02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughShort02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughShort02.mp3"
+}
 
-// "Engineer.MVM_LaughShort03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughShort03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughShort03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughShort03.mp3"
+}
 
-// "Engineer.MVM_LaughShort04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_LaughShort04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_LaughShort04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_LaughShort04.mp3"
+}
 
-// "Engineer.MVM_Medic01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Medic01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Medic01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Medic01.mp3"
+}
 
-// "Engineer.MVM_Medic02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Medic02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Medic02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Medic02.mp3"
+}
 
-// "Engineer.MVM_Medic03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Medic03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Medic03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Medic03.mp3"
+}
 
-// "Engineer.MVM_MoveUp01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_MoveUp01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_MoveUp01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_MoveUp01.mp3"
+}
 
-// "Engineer.MVM_NeedDispenser01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NeedDispenser01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NeedDispenser01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NeedDispenser01.mp3"
+}
 
-// "Engineer.MVM_NeedSentry01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NeedSentry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NeedSentry01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NeedSentry01.mp3"
+}
 
-// "Engineer.MVM_NeedTeleporter01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NeedTeleporter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NeedTeleporter01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NeedTeleporter01.mp3"
+}
 
-// "Engineer.MVM_NeedTeleporter02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NeedTeleporter02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NeedTeleporter02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NeedTeleporter02.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization01.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization02.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization03.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization04.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization05.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization06.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization07.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization08"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization08.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization08.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization09"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization09.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization09.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization10"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization10.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization10.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization11"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization11.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization11.mp3"
+}
 
-// "Engineer.MVM_NegativeVocalization12"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NegativeVocalization12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization12.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NegativeVocalization12.mp3"
+}
 
-// "Engineer.MVM_NiceShot01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NiceShot01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NiceShot01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NiceShot01.mp3"
+}
 
-// "Engineer.MVM_NiceShot02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NiceShot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NiceShot02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NiceShot02.mp3"
+}
 
-// "Engineer.MVM_NiceShot03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_NiceShot03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_NiceShot03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_NiceShot03.mp3"
+}
 
-// "Engineer.MVM_No01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_No01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_No01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_No01.mp3"
+}
 
-// "Engineer.MVM_No02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_No02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_No02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_No02.mp3"
+}
 
-// "Engineer.MVM_No03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_No03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_No03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_No03.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath01"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath01.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath02"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath02.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath03"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath03.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath04"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath04.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath05"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath05.mp3"
+}
 
-// "Engineer.MVM_PainCrticialDeath06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainCrticialDeath06"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainCrticialDeath06.mp3"
+}
 
-// "Engineer.MVM_PainSevere01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere01"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere01.mp3"
+}
 
-// "Engineer.MVM_PainSevere02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere02"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere02.mp3"
+}
 
-// "Engineer.MVM_PainSevere03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere03"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere03.mp3"
+}
 
-// "Engineer.MVM_PainSevere04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere04"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere04.mp3"
+}
 
-// "Engineer.MVM_PainSevere05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere05"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere05.mp3"
+}
 
-// "Engineer.MVM_PainSevere06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere06"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere06.mp3"
+}
 
-// "Engineer.MVM_PainSevere07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSevere07"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSevere07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSevere07.mp3"
+}
 
-// "Engineer.MVM_PainSharp01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp01"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp01.mp3"
+}
 
-// "Engineer.MVM_PainSharp02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp02"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp02.mp3"
+}
 
-// "Engineer.MVM_PainSharp03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp03"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp03.mp3"
+}
 
-// "Engineer.MVM_PainSharp04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp04"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp04.mp3"
+}
 
-// "Engineer.MVM_PainSharp05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp05"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp05.mp3"
+}
 
-// "Engineer.MVM_PainSharp06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp06"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp06.mp3"
+}
 
-// "Engineer.MVM_PainSharp07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp07"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp07.mp3"
+}
 
-// "Engineer.MVM_PainSharp08"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"VOL_NORM"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PainSharp08"
+{
+	"channel"		"CHAN_VOICE"
+//	"volume"		"VOL_NORM"
+	"volume"	"0.86"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PainSharp08.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PainSharp08.mp3"
+}
 
-// "Engineer.MVM_PositiveVocalization01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_PositiveVocalization01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_PositiveVocalization01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_PositiveVocalization01.mp3"
+}
 
-// "Engineer.MVM_SentryAhead01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SentryAhead01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SentryAhead01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SentryAhead01.mp3"
+}
 
-// "Engineer.MVM_SentryAhead02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SentryAhead02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SentryAhead02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SentryAhead02.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted-AssistedKill01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted-AssistedKill01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted-AssistedKill01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted-AssistedKill01.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted-AssistedKill02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted-AssistedKill02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted-AssistedKill02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted-AssistedKill02.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted01.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted02.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted03.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted04.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted04.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted05.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted05.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted06.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted06.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted07.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted07.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted08"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted08.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted08.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted09"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted09.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted09.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted10"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted10.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted10.mp3"
+}
 
-// "Engineer.MVM_SpecialCompleted11"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_SpecialCompleted11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted11.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_SpecialCompleted11.mp3"
+}
 
-// "Engineer.MVM_StandOnThePoint01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_StandOnThePoint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_StandOnThePoint01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_StandOnThePoint01.mp3"
+}
 
-// "Engineer.MVM_StandOnThePoint02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_StandOnThePoint02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_StandOnThePoint02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_StandOnThePoint02.mp3"
+}
 
-// "Engineer.MVM_Taunts01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts01.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts01.mp3"
+}
 
-// "Engineer.MVM_Taunts02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts02.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts02.mp3"
+}
 
-// "Engineer.MVM_Taunts03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts03.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts03.mp3"
+}
 
-// "Engineer.MVM_Taunts04"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts04.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts04.mp3"
+}
 
-// "Engineer.MVM_Taunts05"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts05.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts05.mp3"
+}
 
-// "Engineer.MVM_Taunts06"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts06.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts06.mp3"
+}
 
-// "Engineer.MVM_Taunts07"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts07.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts07.mp3"
+}
 
-// "Engineer.MVM_Taunts08"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts08.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts08.mp3"
+}
 
-// "Engineer.MVM_Taunts09"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts09.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts09.mp3"
+}
 
-// "Engineer.MVM_Taunts10"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts10.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts10.mp3"
+}
 
-// "Engineer.MVM_Taunts11"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts11.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts11.mp3"
+}
 
-// "Engineer.MVM_Taunts12"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Taunts12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts12.mp3"
-// }
+	"wave"			"vo/mvm/norm/taunts/engineer_mvm_Taunts12.mp3"
+}
 
-// "Engineer.MVM_Thanks01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Thanks01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Thanks01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Thanks01.mp3"
+}
 
-// "Engineer.MVM_ThanksForTheHeal01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ThanksForTheHeal01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheHeal01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheHeal01.mp3"
+}
 
-// "Engineer.MVM_ThanksForTheHeal02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ThanksForTheHeal02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheHeal02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheHeal02.mp3"
+}
 
-// "Engineer.MVM_ThanksForTheTeleporter01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ThanksForTheTeleporter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheTeleporter01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheTeleporter01.mp3"
+}
 
-// "Engineer.MVM_ThanksForTheTeleporter02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.620"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_ThanksForTheTeleporter02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.620"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheTeleporter02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_ThanksForTheTeleporter02.mp3"
+}
 
-// "Engineer.MVM_Yes01"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Yes01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Yes01.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Yes01.mp3"
+}
 
-// "Engineer.MVM_Yes02"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Yes02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Yes02.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Yes02.mp3"
+}
 
-// "Engineer.MVM_Yes03"
-// {
-	// "channel"		"CHAN_VOICE"
-	// "volume"		"0.820"
-	// "pitch"			"PITCH_NORM"
+"Engineer.MVM_Yes03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
 
-	// "soundlevel"	"SNDLVL_95dB"
+	"soundlevel"	"SNDLVL_95dB"
 
-	// "wave"			"vo/mvm/norm/engineer_mvm_Yes03.mp3"
-// }
+	"wave"			"vo/mvm/norm/engineer_mvm_Yes03.mp3"
+}
 
 "Heavy.MVM_ActivateCharge01"
 {
@@ -25263,4 +25284,84 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 	"wave"		"ui/credits_updated.wav"
+}
+
+"Announcer.MVM_Engineer_Teleporter_Activated"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_mvm_eng_tele_activated01.wav"
+		"wave"	"vo/announcer_mvm_eng_tele_activated02.wav"
+		"wave"	"vo/announcer_mvm_eng_tele_activated03.wav"
+		"wave"	"vo/announcer_mvm_eng_tele_activated04.wav"
+		"wave"	"vo/announcer_mvm_eng_tele_activated05.wav"
+	}
+}
+
+"Announcer.MVM_Another_Engineer_Teleport_Spawned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_mvm_engbot_another01.wav"
+		"wave"	"vo/announcer_mvm_engbot_another02.wav"
+	}
+}
+
+"Announcer.MVM_First_Engineer_Teleport_Spawned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_mvm_engbot_arrive01.wav"
+		"wave"	"vo/announcer_mvm_engbot_arrive02.wav"
+		"wave"	"vo/announcer_mvm_engbot_arrive03.wav"
+	}
+}
+
+"Announcer.MVM_An_Engineer_Bot_Is_Dead"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_mvm_engbot_dead_notele01.wav"
+		"wave"	"vo/announcer_mvm_engbot_dead_notele02.wav"
+		"wave"	"vo/announcer_mvm_engbot_dead_notele03.wav"
+	}
+}
+
+"Announcer.MVM_An_Engineer_Bot_Is_Dead_But_Not_Teleporter"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_mvm_engbot_dead_tele01.wav"
+		"wave"	"vo/announcer_mvm_engbot_dead_tele02.wav"
+	}
 }

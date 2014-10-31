@@ -553,9 +553,13 @@ WaveSchedule
 					Class Medic
 					ClassIcon medic_uber
 					Skill Normal
+					ItemAttributes 
+					{
+						ItemName "TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus" 5
+					}
 					CharacterAttributes
 					{
-						"ubercharge rate bonus" 5
 						"heal rate bonus" 0.1
 					}                                              
 				}
@@ -632,9 +636,13 @@ WaveSchedule
 					Class Medic
 					ClassIcon medic_uber
 					Skill Normal
+					ItemAttributes 
+					{
+						ItemName "TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus" 5
+					}
 					CharacterAttributes
 					{
-						"ubercharge rate bonus" 5
 						"heal rate bonus" 0.1
 					}                                              
 				}
@@ -643,9 +651,13 @@ WaveSchedule
 					Class Medic
 					ClassIcon medic_uber
 					Skill Normal
+					ItemAttributes 
+					{
+						ItemName "TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus" 5
+					}
 					CharacterAttributes
 					{
-						"ubercharge rate bonus" 5
 						"heal rate bonus" 0.1
 					}                                              
 				}
@@ -655,9 +667,13 @@ WaveSchedule
 					ClassIcon medic_uber
 					Skill Normal
 					Attributes SpawnWithFullCharge
+					ItemAttributes 
+					{
+						ItemName "TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus" 5
+					}
 					CharacterAttributes
 					{
-						"ubercharge rate bonus" 5
 						"heal rate bonus" 0.1
 					}                                              
 				}
@@ -937,9 +953,13 @@ WaveSchedule
 					ClassIcon medic_uber
 					Skill Normal
 					Attributes SpawnWithFullCharge
+					ItemAttributes 
+					{
+						ItemName "TF_WEAPON_MEDIGUN"
+						"ubercharge rate bonus" 5
+					}
 					CharacterAttributes
 					{
-						"ubercharge rate bonus" 5
 						"heal rate bonus" 0.1
 					}                                              
 				}
