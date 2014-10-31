@@ -162,6 +162,36 @@
 		"visible"		"0"
 		"enabled"		"1"
 	}
+
+	"SupportCommunityMapMakersCheckButton"
+	{
+		"ControlName"	"CheckButton"
+		"fieldName"		"SupportCommunityMapMakersCheckButton"
+		"xpos"			"c275"
+		"ypos"			"437"
+		"zpos"			"5"
+		"wide"			"25"
+		"tall"			"25"
+		"font"			"HudFontSmall"
+		"labelText"		""
+		"visible"		"0"
+	}
+
+	"SupportCommunityMapMakersLabel"
+	{
+		"ControlName"		"CExLabel"
+		"fieldName"			"SupportCommunityMapMakersLabel"
+		"textAlignment"		"north-west"
+		"xpos"				"c304"
+		"ypos"				"440"
+		"zpos"				"5"
+		"wide"				"70"
+		"tall"				"100"
+		"font"				"HudFontSmallest"
+		"wrap"				"1"
+		"labelText"			"#Store_ConfirmStampDonationAddTitle"
+		"visible"			"0"
+	}
 	
 	"CheckoutButton"
 	{

@@ -31,7 +31,8 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-
+		
+		"render_texture"	"0"
 		"fov"			"40"
 		"allow_rot"		"0"
 

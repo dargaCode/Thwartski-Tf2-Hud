@@ -116,6 +116,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		
+		"render_texture"	"0"
 		"fov"			"40"
 		"allow_rot"		"0"
 
@@ -220,7 +221,7 @@
 		
 		"itemmodelpanel"
 		{
-			"inventory_image_type" "1"
+			"inventory_image_type" "3"
 			"allow_rot"				"0"
 			"force_square_image"	"1"
 		}

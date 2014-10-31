@@ -537,6 +537,7 @@
 		"visible"		"1"
 		"enabled"		"1"
 		
+		"render_texture"	"0"
 		"fov"			"40"
 		"allow_rot"		"0"
 
@@ -1120,6 +1121,7 @@
 		"defaultFgColor_override"	"118 107 94 255"
 		"armedFgColor_override"		"128 117 104 255"
 		"depressedFgColor_override"	"236 227 203 255"
+		"button_activation_type"	"0"
 	}		
 	
 	"RotRightButton"
@@ -1148,6 +1150,7 @@
 		"defaultFgColor_override"	"118 107 94 255"
 		"armedFgColor_override"		"128 117 104 255"
 		"depressedFgColor_override"	"236 227 203 255"
+		"button_activation_type"	"0"
 	}	
 				
 	"NextWeaponButton"
