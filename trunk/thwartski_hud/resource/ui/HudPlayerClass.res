@@ -53,7 +53,7 @@
 	
 	"PlayerStatusClassImage"
 	{
-		"ControlName"	"CTFImagePanel"
+		"ControlName"	"CTFClassImage"
 		"fieldName"		"PlayerStatusClassImage"
 		"xpos"			"r67"
 		"ypos"			"r66"
