@@ -1,4 +1,4 @@
-#base "../../hl2/resource/SourceScheme.res"
+#base "SourceSchemeBase.res"
 
 Scheme
 {
