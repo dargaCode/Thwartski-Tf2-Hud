@@ -41,4 +41,18 @@
 	{
 		"ideal_key"				"F7"
 	}
+
+	"vr_reset_home_pos"
+	{
+		"ideal_key"				"p"			
+	}
+
+	"+attack3"
+	{
+		"ideal_key"				"mouse3"
+	}
+	"vr_toggle"
+	{
+		"ideal_key"				"F9"
+	}
 }

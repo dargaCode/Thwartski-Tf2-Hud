@@ -22,8 +22,8 @@ objects
 		IconInactive		obj_sentrygun
 		IconMenu		hud_menu_sentry_build
 		UseItemInfo		1
-		Viewmodel			"models/weapons/v_models/v_toolbox_engineer.mdl"
-		Playermodel			"models/weapons/w_models/w_toolbox.mdl"
+		Viewmodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
+		Playermodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
 		DisplayPriority		4
 		HudStatusIcon		"obj_status_sentrygun_1"
 		VisibleInWeaponSelection 0
@@ -32,6 +32,7 @@ objects
 		MetalToDropInGibs	60		
 		UpgradeSound		"Building_Sentrygun.Built"
 		BuildCount		1
+		RequiresOwnBuilder	0
 	}
 	
 	OBJ_DISPENSER
@@ -54,8 +55,8 @@ objects
 		IconInactive		obj_dispenser
 		IconMenu		hud_menu_dispenser_build
 		UseItemInfo		1
-		Viewmodel			"models/weapons/v_models/v_toolbox_engineer.mdl"
-		Playermodel			"models/weapons/w_models/w_toolbox.mdl"
+		Viewmodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
+		Playermodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
 		DisplayPriority		3
 		HudStatusIcon		"obj_status_dispenser"
 		VisibleInWeaponSelection 0
@@ -64,6 +65,7 @@ objects
 		MetalToDropInGibs	50
 		UpgradeSound		"Building_Sentrygun.Built"
 		BuildCount		1
+		RequiresOwnBuilder	0
 	}
 		
 	OBJ_TELEPORTER
@@ -87,8 +89,8 @@ objects
 		IconMenu		hud_menu_tele_entrance_build
 		SolidToPlayerMovement	1
 		UseItemInfo		1
-		Viewmodel			"models/weapons/v_models/v_toolbox_engineer.mdl"
-		Playermodel			"models/weapons/w_models/w_toolbox.mdl"
+		Viewmodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
+		Playermodel			"models/weapons/c_models/c_toolbox/c_toolbox.mdl"
 		DisplayPriority		2
 		HudStatusIcon		"obj_status_tele_entrance"
 		VisibleInWeaponSelection 0
@@ -97,6 +99,7 @@ objects
 		MetalToDropInGibs	60
 		UpgradeSound		"Building_Sentrygun.Built"
 		BuildCount		1
+		RequiresOwnBuilder	0
 		AltModes
 		{
 			AltMode0
@@ -133,9 +136,9 @@ objects
 		IconActive			obj_attachment_sapper
 		IconInactive		obj_attachment_sapper
 		IconMenu			hud_menu_tele_entrance_build
-		UseItemInfo		0
-		Viewmodel			"models/weapons/v_models/v_sapper_spy.mdl"
-		Playermodel			"models/weapons/w_models/w_sapper.mdl"
+		UseItemInfo			1
+		Viewmodel			"models/weapons/c_models/c_sapper/c_sapper.mdl"
+		Playermodel			"models/weapons/c_models/c_sapper/c_sapper.mdl"
 		DisplayPriority		1
 		HudStatusIcon		"obj_status_sapper"
 		VisibleInWeaponSelection 1
@@ -145,5 +148,6 @@ objects
 		MetalToDropInGibs	10		
 		UpgradeSound		"Building_Sentrygun.Built"
 		BuildCount		1
+		RequiresOwnBuilder	0
 	}
 }

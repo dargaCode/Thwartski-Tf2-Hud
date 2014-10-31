@@ -1,0 +1,16 @@
+// Choreo version 1
+actor <CLASS_NAME>
+{
+	channel <CLASS_NAME>
+	{
+		event sequence <ITEMTEST_SEQUENCE_NAME>
+		{
+			time 0.000000 <MAX_SEQUENCE_LENGTH>
+			param <ITEMTEST_SEQUENCE_NAME>
+		}
+	}
+}
+
+fps 60
+snap off
+ignorePhonemes off
