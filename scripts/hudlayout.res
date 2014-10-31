@@ -966,18 +966,6 @@
 		"tall"					"150"
 	}
 	
-	HudStalemate
-	{
-		"fieldName"				"HudStalemate"
-		"visible"				"0"
-		"enable"				"1"
-		"xpos"					"c-80"
-		"ypos"					"48"
-		"zpos"					"-2"
-		"wide"					"320"
-		"tall"					"150"
-	}
-	
 	StatPanel
 	{
 		"fieldName"				"StatPanel"
@@ -989,7 +977,6 @@
 		"tall"					"150"
 	}
 	
-
 	HudArenaNotification
 	{
 		"fieldName"				"HudArenaNotification"
@@ -1013,6 +1000,17 @@
 		"zpos"					"99"
 	}
 
+	HudStalemate
+	{
+		"fieldName"				"HudStalemate"
+		"visible"				"0"
+		"enable"				"1"
+		"xpos"					"c-80"
+		"ypos"					"48"
+		"zpos"					"-2"
+		"wide"					"320"
+		"tall"					"150"
+	}
 
 	HudTournament
 	{
