@@ -245,3 +245,76 @@
 	"wave"		"#*music/mvm_lost_wave.wav"
 }
 
+"music.fortress_reel"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_110dB"
+	"volume"		"1.0"
+	"wave"		")*music/fortress_reel.wav"
+}
+"music.fortress_reel_intro"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_90dB"
+	"volume"		"1.0"
+	"wave"		")*music/fortress_reel_intro.wav"
+}
+"music.fortress_reel_loop"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_90dB"
+	"volume"		"1.0"
+	"wave"		")*music/fortress_reel_loop.wav"
+}
+"music.fortress_reel_intro2"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_90dB"
+	"volume"		"1.0"
+	"wave"		")*music/fortress_reel_intro2.wav"
+}
+
+"music.fortress_reel_loop2"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"		"SNDLVL_90dB"
+	"volume"		"1.0"
+	"wave"		")*music/fortress_reel_loop2.wav"
+}
+
+"music.conga_loop"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_90dB"
+	 "volume"		    "1.0"
+	 "wave" 			  ")*music/conga_sketch_167bpm_01-04.wav"
+}
+
+"music.carousel_of_curses"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_NONE"
+	 "volume"		    "1.0"
+	 "wave" 			  "#*music/carousel_of_curses.wav"
+}
+"music.kart_football"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_NONE"
+	 "volume"		    "1.0"
+	 "wave" 			  "#*music/misfortune_teller.wav"
+}
+"music.kart_racetrack"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_NONE"
+	 "volume"		    "1.0"
+	 "wave" 			  "#*music/misfortune_teller.wav"
+}
+"music.kart_platform"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_NONE"
+	 "volume"		    "1.0"
+	 "wave" 			  "#*music/bump_in_the_night.wav"
+}

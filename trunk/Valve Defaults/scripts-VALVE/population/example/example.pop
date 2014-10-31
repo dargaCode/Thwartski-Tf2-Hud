@@ -119,9 +119,15 @@ ExamplePopulation
 	// A "mission" defines a set of TFBots that the "AI Director" can send in to accomplish certain context-specific goals	
 	Mission
 	{
-		Objective Sniper							// The mission objective. Available missions: "Sniper" (add harassing snipers), "Spy" (add harassing spies), and "DestroySentries" (send in bots who focus on killing overly successful sentry guns)
+		Objective Sniper							// The mission objective. Available missions: 
+													//    "Sniper" (add harassing snipers)
+													//    "Spy" (add harassing spies)
+													//    "DestroySentries" (send in bots who focus on killing overly successful sentry guns)
+													//    "Engineer" (add harassing engineers who will build sentry nests on bot_hint_sentrygun entities)
 
 		Where spawn_sniper_mission					// Where the mission bots will spawn
+
+		TeleportWhere								// For Engineer missions. When the bot builds a teleporter, that teleporter will become a spawn point for bots with a Where name matching this TeleportWhere name.
 
 		BeginAtWave 4								// The wave number (1 to N) at which this mission becomes active
 		RunForThisManyWaves 3						// How many waves this mission is active. This example would have snipers active for waves 4, 5, and 6
@@ -165,6 +171,8 @@ ExamplePopulation
 											//		SpawnWithFullCharge (any weapons that build up a charge over time will spawn fully charged)
 											//		AlwaysCrit (all shots will be critical hits)
 											//		HoldFireUntilFullReload (dont fire until our weapon is fully reloaded after a barrage - for rocket launchers, grenade launchers, shotguns, etc)
+											//		DefensiveBuffHigh (takes 90% less damage, has a particle effect)
+											//		AlwaysFireWeapon (constantly fire our weapon)
 											
 			WeaponRestrictions MeleeOnly	// if specified, restricts the weapons this bot is allowed to use. Restrictions can be: MeleeOnly, PrimaryOnly, or SecondaryOnly
 			BehaviorModifiers Idler			// if specified, sets this bot's initial behavior. Allowed values:
@@ -214,6 +222,8 @@ ExamplePopulation
 		{
 			Squad		// choice 1: a Squad Spawner which, in this case, creates a squad of 4 TFBots: Soldier, Pyro, Demoman, and Heavyweapons
 			{
+				FormationSize 125	// the size of the formation (for a circle formation, this is the radius)
+
 				TFBot
 				{
 					Class Soldier
