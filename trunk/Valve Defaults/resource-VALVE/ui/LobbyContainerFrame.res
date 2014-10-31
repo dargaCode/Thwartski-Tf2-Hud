@@ -29,6 +29,8 @@
 		
 		"clientinsetx_override"			"0"
 		"sheetinset_bottom"				"40"
+
+		"NavToRelay"			"BackButton"
 	}
 	
 	"BackgroundHeader"
@@ -131,6 +133,10 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"back"
+
+		"NavUp"			"PlayNowButton"
+		"NavRight"		"LearnMoreButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
@@ -184,6 +190,11 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"learn_more"
+
+		"NavUp"			"PracticeButton"
+		"NavLeft"		"BackButton"
+		"NavRight"		"NextButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
@@ -207,6 +218,11 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"next"
+
+		"NavUp"			"StartPartyButton"
+		"NavDown"		"LearnMoreButton"
+		"NavLeft"		"LearnMoreButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
@@ -232,6 +248,12 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"mannup"
+
+		"NavUp"			"Sheet"
+		"NavDown"		"BackButton"
+		"NavLeft"		"Sheet"
+		"NavRight"		"PracticeButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
@@ -283,6 +305,12 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"practice"
+
+		"NavUp"			"Sheet"
+		"NavDown"		"LearnMoreButton"
+		"NavLeft"		"PlayNowButton"
+		"NavRight"		"StartPartyButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 
@@ -375,6 +403,11 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"Command"		"start_party"
+
+		"NavUp"			"Sheet"
+		"NavDown"		"NextButton"
+		"NavLeft"		"PracticeButton"
+
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
 	}
